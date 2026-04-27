@@ -1,19 +1,19 @@
 import requests
 import base64
 import re
-import json
+import urllib.parse
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 }
 
 SOURCES = {
-    "🏴 ЧС полный (ПК)":         "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
-    "🏴 ЧС мобильный":           "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt",
-    "⚪ БС CIDR полный (ПК)":    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE_VLESS_CIDR_RUS.txt",
-    "⚪ БС CIDR мобильный":      "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE_VLESS_CIDR_RUS_mobile.txt",
-    "⚪ БС SNI":                  "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE_VLESS_SNI_RUS.txt",
-    "🌐 Yebekhe VLESS":          "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vless",
+    "BL_full":    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
+    "BL_mobile":  "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt",
+    "WL_CIDR":    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE_VLESS_CIDR_RUS.txt",
+    "WL_CIDR_m":  "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE_VLESS_CIDR_RUS_mobile.txt",
+    "WL_SNI":     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE_VLESS_SNI_RUS.txt",
+    "Yebekhe":    "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vless",
 }
 
 def try_decode_base64(content):
@@ -28,31 +28,42 @@ def try_decode_base64(content):
     except Exception:
         return content
 
-def parse_vless_to_clash(vless_url, index):
-    """Конвертирует vless:// строку в словарь для Clash YAML"""
+def clean_proxy_name(raw_name, index):
+    """Безопасное имя для YAML — только ASCII буквы, цифры, дефис, пробел"""
+    # Декодируем URL-encoding (%20 → пробел и т.д.)
     try:
-        # vless://uuid@host:port?params#name
+        name = urllib.parse.unquote(raw_name)
+    except Exception:
+        name = raw_name
+    # Убираем emoji и всё не-ASCII
+    name = name.encode('ascii', errors='ignore').decode('ascii')
+    # Оставляем только безопасные символы
+    name = re.sub(r'[^a-zA-Z0-9 \-_.,]', '', name)
+    name = name.strip()
+    if not name or len(name) < 2:
+        name = f"proxy-{index}"
+    return name[:80]  # обрезаем длинные имена
+
+def parse_vless_to_clash(vless_url, index):
+    try:
         match = re.match(r'vless://([^@]+)@([^:]+):(\d+)\??([^#]*)#?(.*)', vless_url)
         if not match:
             return None
 
-        uuid, host, port, params_str, name = match.groups()
+        uuid, host, port, params_str, raw_name = match.groups()
         port = int(port)
 
-        # Парсим параметры
         params = {}
         if params_str:
             for p in params_str.split('&'):
                 if '=' in p:
                     k, v = p.split('=', 1)
-                    params[k] = v
+                    params[k] = urllib.parse.unquote(v)
 
-        # Имя прокси — берём из #name или генерируем
-        proxy_name = name.strip() if name.strip() else f"vless-{index}"
-        # Убираем emoji и спецсимволы из имени для совместимости
-        proxy_name = re.sub(r'[^\w\s\-\.,@#\[\]()]', '', proxy_name).strip()
-        if not proxy_name:
-            proxy_name = f"vless-{index}"
+        proxy_name = clean_proxy_name(raw_name, index)
+
+        security = params.get("security", "none")
+        is_tls = security in ("tls", "reality")
 
         proxy = {
             "name": proxy_name,
@@ -60,33 +71,38 @@ def parse_vless_to_clash(vless_url, index):
             "server": host,
             "port": port,
             "uuid": uuid,
-            "tls": params.get("security") in ("tls", "reality"),
+            "tls": is_tls,
             "udp": True,
             "skip-cert-verify": True,
         }
 
-        # Network type (tcp/ws/grpc)
         network = params.get("type", "tcp")
         if network == "ws":
             proxy["network"] = "ws"
+            path = params.get("path", "")
+            ws_host = params.get("host", "")
+            ws_sni = params.get("sni", "")
             ws_opts = {}
-            if params.get("path"):
-                ws_opts["path"] = params["path"]
-            if params.get("host"):
-                ws_opts["headers"] = {"Host": params["host"]}
+            if path:
+                # Убираем двойное URL-кодирование
+                clean_path = urllib.parse.unquote(path)
+                ws_opts["path"] = clean_path
+            if ws_host:
+                ws_opts["headers"] = {"Host": ws_host}
             if ws_opts:
                 proxy["ws-opts"] = ws_opts
+            if ws_sni:
+                proxy["servername"] = ws_sni
         elif network == "grpc":
             proxy["network"] = "grpc"
-            if params.get("serviceName"):
-                proxy["grpc-opts"] = {"grpc-service-name": params["serviceName"]}
+            svc = params.get("serviceName", "")
+            if svc:
+                proxy["grpc-opts"] = {"grpc-service-name": urllib.parse.unquote(svc)}
 
-        # XTLS / flow
         if params.get("flow"):
             proxy["flow"] = params["flow"]
 
-        # Reality
-        if params.get("security") == "reality":
+        if security == "reality":
             proxy["reality-opts"] = {
                 "public-key": params.get("pbk", ""),
                 "short-id": params.get("sid", ""),
@@ -95,8 +111,6 @@ def parse_vless_to_clash(vless_url, index):
                 proxy["servername"] = params["sni"]
             if params.get("fp"):
                 proxy["client-fingerprint"] = params["fp"]
-
-        # SNI для обычного TLS
         elif params.get("sni"):
             proxy["servername"] = params["sni"]
 
@@ -105,11 +119,13 @@ def parse_vless_to_clash(vless_url, index):
     except Exception:
         return None
 
-def generate_clash_yaml(proxies):
-    """Генерирует минимальный рабочий Clash YAML"""
-    names = [p["name"] for p in proxies]
+def yaml_str(val):
+    """Оборачивает строку в кавычки и экранирует для YAML"""
+    val = str(val).replace('\\', '\\\\').replace('"', '\\"')
+    return f'"{val}"'
 
-    # Вручную строим YAML (без внешних библиотек)
+def generate_clash_yaml(proxies):
+    names = [p["name"] for p in proxies]
     lines = []
     lines.append("mixed-port: 7890")
     lines.append("allow-lan: false")
@@ -126,7 +142,7 @@ def generate_clash_yaml(proxies):
     lines.append("proxies:")
 
     for p in proxies:
-        lines.append(f"  - name: \"{p['name']}\"")
+        lines.append(f"  - name: {yaml_str(p['name'])}")
         lines.append(f"    type: {p['type']}")
         lines.append(f"    server: {p['server']}")
         lines.append(f"    port: {p['port']}")
@@ -139,105 +155,98 @@ def generate_clash_yaml(proxies):
         if p.get("network"):
             lines.append(f"    network: {p['network']}")
         if p.get("servername"):
-            lines.append(f"    servername: {p['servername']}")
+            lines.append(f"    servername: {yaml_str(p['servername'])}")
         if p.get("client-fingerprint"):
             lines.append(f"    client-fingerprint: {p['client-fingerprint']}")
         if p.get("reality-opts"):
             ro = p["reality-opts"]
             lines.append(f"    reality-opts:")
             lines.append(f"      public-key: {ro.get('public-key', '')}")
-            lines.append(f"      short-id: {ro.get('short-id', '')}")
+            lines.append(f"      short-id: {yaml_str(ro.get('short-id', ''))}")
         if p.get("ws-opts"):
             wo = p["ws-opts"]
             lines.append(f"    ws-opts:")
             if wo.get("path"):
-                lines.append(f"      path: \"{wo['path']}\"")
+                lines.append(f"      path: {yaml_str(wo['path'])}")
             if wo.get("headers"):
                 lines.append(f"      headers:")
                 for hk, hv in wo["headers"].items():
-                    lines.append(f"        {hk}: {hv}")
+                    lines.append(f"        {hk}: {yaml_str(hv)}")
         if p.get("grpc-opts"):
             lines.append(f"    grpc-opts:")
-            lines.append(f"      grpc-service-name: {p['grpc-opts']['grpc-service-name']}")
+            lines.append(f"      grpc-service-name: {yaml_str(p['grpc-opts']['grpc-service-name'])}")
 
     lines.append("")
     lines.append("proxy-groups:")
-    lines.append("  - name: \"PROXY\"")
+    lines.append(f"  - name: {yaml_str('PROXY')}")
     lines.append("    type: select")
     lines.append("    proxies:")
-    for n in names[:200]:  # FClash тормозит с тысячей узлов — берём первые 200
-        lines.append(f"      - \"{n}\"")
+    for n in names[:200]:
+        lines.append(f"      - {yaml_str(n)}")
     lines.append("")
-    lines.append("  - name: \"Auto\"")
+    lines.append(f"  - name: {yaml_str('Auto')}")
     lines.append("    type: url-test")
     lines.append("    url: http://www.gstatic.com/generate_204")
     lines.append("    interval: 300")
     lines.append("    proxies:")
     for n in names[:200]:
-        lines.append(f"      - \"{n}\"")
+        lines.append(f"      - {yaml_str(n)}")
     lines.append("")
     lines.append("rules:")
-    lines.append("  - MATCH,PROXY")
+    lines.append(f"  - MATCH,PROXY")
 
     return "\n".join(lines)
 
 def collect():
     unique_nodes = set()
-    print("🚀 Старт сборки конфигов...\n")
+    print("Старт сборки...\n")
 
     for name, url in SOURCES.items():
         try:
             res = requests.get(url, headers=HEADERS, timeout=20)
             if res.status_code != 200:
-                print(f"❌ [{name}] HTTP {res.status_code}")
+                print(f"FAIL [{name}] HTTP {res.status_code}")
                 continue
-
             content = try_decode_base64(res.text)
             found = re.findall(r'vless://[^\s\r\n]+', content)
-            print(f"✅ [{name}] найдено: {len(found)} узлов")
+            print(f"OK [{name}] {len(found)} узлов")
             unique_nodes.update(found)
-
         except Exception as e:
-            print(f"⚠️ [{name}] ошибка: {e}")
+            print(f"ERR [{name}]: {e}")
 
     if not unique_nodes:
-        print("\n⛔ Список пустой!")
+        print("Пусто!")
         return
 
     node_list = sorted(unique_nodes)
 
-    # --- Файл 1: sub.txt для Happ и v2ray-клиентов ---
+    # sub.txt для Happ
     encoded = base64.b64encode("\n".join(node_list).encode('utf-8')).decode('utf-8')
     with open("sub.txt", "w") as f:
         f.write(encoded)
+    print(f"sub.txt: {len(node_list)} узлов")
 
-    # --- Файл 2: clash.yaml для FClash ---
-    print("\n⚙️ Конвертация в Clash формат...")
+    # clash.yaml для FClash
     proxies = []
+    seen_names = set()
     for i, node in enumerate(node_list):
         proxy = parse_vless_to_clash(node, i)
-        if proxy:
-            proxies.append(proxy)
+        if not proxy:
+            continue
+        base = proxy["name"]
+        name = base
+        counter = 1
+        while name in seen_names:
+            name = f"{base}-{counter}"
+            counter += 1
+        proxy["name"] = name
+        seen_names.add(name)
+        proxies.append(proxy)
 
-    # Убираем дубли по имени
-    seen_names = set()
-    unique_proxies = []
-    for p in proxies:
-        if p["name"] not in seen_names:
-            seen_names.add(p["name"])
-            unique_proxies.append(p)
-        else:
-            p["name"] = f"{p['name']}-{len(seen_names)}"
-            seen_names.add(p["name"])
-            unique_proxies.append(p)
-
-    clash_content = generate_clash_yaml(unique_proxies)
+    clash_content = generate_clash_yaml(proxies)
     with open("clash.yaml", "w", encoding="utf-8") as f:
         f.write(clash_content)
-
-    print(f"\n🎉 Готово!")
-    print(f"   sub.txt  → {len(node_list)} узлов (для Happ)")
-    print(f"   clash.yaml → {len(unique_proxies)} узлов (для FClash)")
+    print(f"clash.yaml: {len(proxies)} узлов")
 
 if __name__ == "__main__":
     collect()
