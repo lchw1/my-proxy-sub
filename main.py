@@ -8,12 +8,13 @@ HEADERS = {
 }
 
 SOURCES = {
+    # Чёрные списки (для тебя основные)
     "BL_full":    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
     "BL_mobile":  "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt",
-    "WL_CIDR":    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE_VLESS_CIDR_RUS.txt",
-    "WL_CIDR_m":  "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE_VLESS_CIDR_RUS_mobile.txt",
-    "WL_SNI":     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE_VLESS_SNI_RUS.txt",
-    "Yebekhe":    "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vless",
+
+    # Белые списки (на случай если оператор режет всё)
+    "WL_CIDR":    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus.txt",
+    "WL_mobile":  "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt",
 }
 
 def try_decode_base64(content):
