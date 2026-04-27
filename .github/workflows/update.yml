@@ -2,11 +2,11 @@ name: Update Proxy Nodes
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Автозапуск каждые 6 часов
-  workflow_dispatch: # Позволяет запускать скрипт вручную кнопкой
+    - cron: '0 */2 * * *'  # каждые 2 часа
+  workflow_dispatch:
 
 permissions:
-  contents: write # Дает боту права на создание и перезапись файла sub.txt
+  contents: write
 
 jobs:
   build:
