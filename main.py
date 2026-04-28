@@ -79,32 +79,84 @@ def parse_vless(url, idx):
 
 def make_clash(proxies):
     names = [p['name'] for p in proxies]
+    # Используем только классический многострочный формат без фигурных скобок
     out = [
-        "mixed-port: 7890", "allow-lan: false", "mode: global", "log-level: info",
-        "dns: {enable: true, nameserver: ['8.8.8.8', '1.1.1.1']}", "", "proxies:"
+        "mixed-port: 7890",
+        "allow-lan: false",
+        "mode: global",
+        "log-level: info",
+        "external-controller: 127.0.0.1:9090",
+        "",
+        "dns:",
+        "  enable: true",
+        "  nameserver:",
+        "    - 8.8.8.8",
+        "    - 1.1.1.1",
+        "",
+        "proxies:"
     ]
+    
     for p in proxies:
-        out.append(f"  - name: \"{p['name']}\"\n    type: vless\n    server: {p['server']}\n    port: {p['port']}\n    uuid: {p['uuid']}\n    tls: {str(p['tls']).lower()}\n    udp: true\n    skip-cert-verify: true")
-        for key in ('flow', 'network', 'client-fingerprint'):
-            if p.get(key): out.append(f"    {key}: {p[key]}")
+        # Каждый параметр добавляем отдельной строкой с четкими 2/4 пробелами
+        out.append(f"  - name: \"{p['name']}\"")
+        out.append(f"    type: vless")
+        out.append(f"    server: {p['server']}")
+        out.append(f"    port: {p['port']}")
+        out.append(f"    uuid: {p['uuid']}")
+        out.append(f"    tls: {str(p['tls']).lower()}")
+        out.append(f"    udp: true")
+        out.append(f"    skip-cert-verify: true")
+        
+        if p.get('flow'): out.append(f"    flow: {p['flow']}")
+        if p.get('network'): out.append(f"    network: {p['network']}")
+        if p.get('client-fingerprint'): out.append(f"    client-fingerprint: {p['client-fingerprint']}")
         if p.get('servername'): out.append(f"    servername: \"{p['servername']}\"")
+        
         if p.get('reality-opts'):
             ro = p['reality-opts']
-            out.append(f"    reality-opts:\n      public-key: {ro['public-key']}\n      short-id: \"{ro['short-id']}\"")
+            out.append("    reality-opts:")
+            out.append(f"      public-key: {ro['public-key']}")
+            out.append(f"      short-id: \"{ro['short-id']}\"")
+            
         if p.get('ws-opts'):
             wo = p['ws-opts']
-            out.append(f"    ws-opts:\n      path: \"{wo['path']}\"")
+            out.append("    ws-opts:")
+            out.append(f"      path: \"{wo['path']}\"")
             if wo.get('headers'):
                 out.append("      headers:")
-                for k, v in wo['headers'].items(): out.append(f"        {k}: \"{v}\"")
+                for k, v in wo['headers'].items():
+                    out.append(f"        {k}: \"{v}\"")
+                    
         if p.get('grpc-opts'):
-            out.append(f"    grpc-opts:\n      grpc-service-name: \"{p['grpc-opts']['grpc-service-name']}\"")
-            
-    out += ["", "proxy-groups:", f"  - name: \"Auto\"\n    type: url-test\n    url: http://www.gstatic.com/generate_204\n    interval: 180\n    proxies:"]
-    out += [f"      - \"{n}\"" for n in names]
-    out += ["", f"  - name: \"PROXY\"\n    type: select\n    proxies:\n      - \"Auto\""]
-    out += [f"      - \"{n}\"" for n in names]
-    out += ["", "rules:", "  - MATCH,Auto"]
+            out.append("    grpc-opts:")
+            out.append(f"      grpc-service-name: \"{p['grpc-opts']['grpc-service-name']}\"")
+
+    # Секция групп
+    out.append("")
+    out.append("proxy-groups:")
+    
+    # Группа Auto
+    out.append("  - name: \"Auto\"")
+    out.append("    type: url-test")
+    out.append("    url: http://www.gstatic.com/generate_204")
+    out.append("    interval: 180")
+    out.append("    proxies:")
+    for n in names:
+        out.append(f"      - \"{n}\"")
+        
+    # Группа PROXY
+    out.append("")
+    out.append("  - name: \"PROXY\"")
+    out.append("    type: select")
+    out.append("    proxies:")
+    out.append("      - \"Auto\"")
+    for n in names:
+        out.append(f"      - \"{n}\"")
+        
+    out.append("")
+    out.append("rules:")
+    out.append("  - MATCH,Auto")
+    
     return "\n".join(out)
 
 def main():
