@@ -11,6 +11,6037 @@ dns:
     - 1.1.1.1
 
 proxies:
+  - name: "Hong Kong, Hong Kong  BL"
+    type: vmess
+    server: "47.242.163.203"
+    port: 443
+    uuid: "78f61544-3393-4e6b-9c77-5deaa0c7471d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+    tls: true
+    servername: "n1761296878.4u9ma.icu"
+    network: "ws"
+    ws-opts:
+      path: "/"
+  - name: "The Netherlands, Amsterdam  BL"
+    type: vmess
+    server: "v30.hdacd.com"
+    port: 30830
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+  - name: "The Netherlands, Amsterdam  BL-1"
+    type: vmess
+    server: "v30.hdacd.com"
+    port: 30830
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+  - name: "The Netherlands, Amsterdam  BL-2"
+    type: vmess
+    server: "v30.hdacd.com"
+    port: 30830
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+    network: "raw"
+  - name: "The Netherlands, Amsterdam  BL-3"
+    type: vmess
+    server: "v30.hdacd.com"
+    port: 30830
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+  - name: "The Netherlands, Amsterdam  BL-4"
+    type: vmess
+    server: "v30.hdacd.com"
+    port: 30830
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+  - name: "The Netherlands, Amsterdam  BL-5"
+    type: vmess
+    server: "v30.hdacd.com"
+    port: 30830
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+  - name: "The Netherlands, Amsterdam  BL-6"
+    type: vmess
+    server: "v30.hdacd.com"
+    port: 30830
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+    network: "raw"
+  - name: "United States, Redmond (Downtown)  BL"
+    type: vmess
+    server: "216.167.38.98"
+    port: 41037
+    uuid: "29fe2b50-4387-4e2f-a453-f63cc617a15c"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+  - name: "United States, Santa Clara  BL"
+    type: vmess
+    server: "us1-ss.flyparts.cn"
+    port: 10022
+    uuid: "941a7999-68bc-45d8-bb7f-b0a2f1d16fe4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "us1-ss.flyparts.cn"
+  - name: "United States, Santa Clara  BL-1"
+    type: vmess
+    server: "us1-ss.flyparts.cn"
+    port: 10022
+    uuid: "51cfc665-a557-4809-8ead-90d4bbd2ac81"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "us1-ss.flyparts.cn"
+  - name: "Kazakhstan, Pavlodar  BL"
+    type: trojan
+    server: "kz-1.bexum.fun"
+    port: 5443
+    password: "BmVb9TGoytYhaLnZhkrVCtx8khbQFTA_"
+    udp: true
+    skip-cert-verify: true
+    sni: "kz-1.bexum.fun"
+  - name: "Kazakhstan, Pavlodar  BL-1"
+    type: trojan
+    server: "kz-1.bexum.fun"
+    port: 5443
+    password: "BmVb9TGoytYhaLnZhkrVCtx8khbQFTA_"
+    udp: true
+    skip-cert-verify: true
+  - name: "The Netherlands, Amsterdam  BL-7"
+    type: trojan
+    server: "hl-freedom-1.undef.network"
+    port: 443
+    password: "JaFKnqNcvnBT63t3rquidGsln"
+    udp: true
+    skip-cert-verify: true
+    sni: "HL-FREEDOM-1.UNDEF.NETWORK"
+    network: "ws"
+    ws-opts:
+      path: "/f2fc2a1f"
+      headers:
+        Host: "hl-freedom-1.undef.network"
+  - name: "United States, Los Angeles  BL"
+    type: trojan
+    server: "216.105.168.58"
+    port: 443
+    password: "aQkYQBHazt3KPgXxdd4chw"
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "telegram.org"
+  - name: "Anycast-IP  IPv6  BL"
+    type: trojan
+    server: "217.60.248.94"
+    port: 8443
+    password: "162534"
+    udp: true
+    skip-cert-verify: true
+    sni: "cchh2.pages.dev"
+    network: "ws"
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-1"
+    type: trojan
+    server: "217.60.38.249"
+    port: 8443
+    password: "162534"
+    udp: true
+    skip-cert-verify: true
+    sni: "cchh2.pages.dev"
+    network: "ws"
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-2"
+    type: trojan
+    server: "5.223.56.239"
+    port: 8443
+    password: "162534"
+    udp: true
+    skip-cert-verify: true
+    sni: "cchh2.pages.dev"
+    network: "ws"
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "Canada, Toronto  BL"
+    type: vless
+    server: "lol-can-0001.api.neuralrelay.stream"
+    port: 443
+    uuid: "f189684b-6213-4c0d-a2e3-cb8860f5d4c5"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "hls-svod.itunes.apple.com"
+    reality-opts:
+      public-key: "9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA"
+      short-id: "b7031d292d5d"
+  - name: "Czechia, Prague    IPv6  BL"
+    type: vless
+    server: "ch-1.bexum.fun"
+    port: 443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "randomized"
+    servername: "ch-1.bexum.fun"
+    reality-opts:
+      public-key: "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng"
+      short-id: "5dd747e98058584b"
+  - name: "Estonia, Tallinn    IPv6  BL"
+    type: vless
+    server: "ee.keepsecured.net"
+    port: 8443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "cdn.kwork.com"
+    reality-opts:
+      public-key: "J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk"
+      short-id: "10f786a2491b2cd5"
+    grpc-opts:
+      grpc-service-name: "buysec.ru"
+  - name: "Estonia, Tallinn    IPv6  BL-1"
+    type: vless
+    server: "ee.keepsecured.net"
+    port: 8443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "qq"
+    servername: "cdn.kwork.com"
+    reality-opts:
+      public-key: "J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk"
+      short-id: "10f786a2491b2cd5"
+    grpc-opts:
+      grpc-service-name: "buysec.ru"
+  - name: "Finland, Helsinki  BL"
+    type: vless
+    server: "node-fi.dostup-est.info"
+    port: 8443
+    uuid: "c931f737-cafe-4e4f-998a-a65517941256"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "cdnjs.com"
+    reality-opts:
+      public-key: "Ubibgn_MlW_zHo9LwjNH_b6SLNWwTJFwq7wW2ggLtUs"
+      short-id: "88ce6b586fcaf681"
+  - name: "Finland, Helsinki    IPv6  BL"
+    type: vless
+    server: "fine3.keepsecured.net"
+    port: 8443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "cdn.kwork.com"
+    reality-opts:
+      public-key: "J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk"
+      short-id: "10f786a2491b2cd5"
+    grpc-opts:
+      grpc-service-name: "buysec.ru"
+  - name: "Finland, Helsinki    IPv6  BL-1"
+    type: vless
+    server: "fine3.keepsecured.net"
+    port: 8443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "qq"
+    servername: "cdn.kwork.com"
+    reality-opts:
+      public-key: "J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk"
+      short-id: "10f786a2491b2cd5"
+    grpc-opts:
+      grpc-service-name: "buysec.ru"
+  - name: "Germany    IPv6  BL"
+    type: vless
+    server: "bero-2.bexum.fun"
+    port: 9443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Germany    IPv6  BL-1"
+    type: vless
+    server: "bero-3.bexum.fun"
+    port: 9443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "bero-3.bexum.fun"
+  - name: "Germany    IPv6  BL-2"
+    type: vless
+    server: "bero-3.bexum.fun"
+    port: 9443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Germany, Falkenstein    IPv6  BL"
+    type: vless
+    server: "159.194.199.190"
+    port: 8443
+    uuid: "c27edd52-f249-4460-bfee-bdd3e29c0b3f"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "chrome"
+    servername: "www.siemens.com"
+    reality-opts:
+      public-key: "F2MKDw5CCtP1oXIej2EgNxB01k3eyNu7tKCFfucgnRA"
+      short-id: "6ba85179e30d4fc3"
+  - name: "proxy-29"
+    type: vless
+    server: "de5.safepass.click"
+    port: 443
+    uuid: "7d3e6808-d105-4ee4-b904-1f6ed8417f4d"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Germany, Frankfurt am Main    IPv6  BL"
+    type: vless
+    server: "bero-1.bexum.fun"
+    port: 9443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "bero-1.bexum.fun"
+  - name: "Hong Kong, Hong Kong  BL-1"
+    type: vless
+    server: "s5.db-link.in"
+    port: 17820
+    uuid: "75d4d24d-ba8d-3676-a5c6-edd6ea6dbfb6"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "48afa0c5c9.shopify.com"
+    ws-opts:
+      path: "/db102448afa0c5c9fp=chrome"
+      headers:
+        Host: "48afa0c5c9.shopify.com"
+  - name: "Hong Kong, Hong Kong  BL-2"
+    type: vless
+    server: "8.217.231.146"
+    port: 46964
+    uuid: "7c15de26-a4f2-44cb-ba0c-7ee822e6696e"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/7c15de26"
+  - name: "India, New Delhi  BL"
+    type: vless
+    server: "ind8.keepsecured.net"
+    port: 8443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "cdn.kwork.com"
+    reality-opts:
+      public-key: "J07yFEBPsic7-hLTS2KSxVqI7v4gpfkG6_a2cGKNVFk"
+      short-id: "10f786a2491b2cd5"
+    grpc-opts:
+      grpc-service-name: "buysec.ru"
+  - name: "Moldova, Chisinau  BL"
+    type: vless
+    server: "176.123.8.28"
+    port: 443
+    uuid: "7b13eaac-882d-43a0-b19e-6d2e867d624e"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "hcaptcha.com"
+    reality-opts:
+      public-key: "h7CCbT_1gwxhQGM-4_pZkNRbAe_I6YFQM6jO9x6uORw"
+      short-id: ""
+  - name: "Poland, Warsaw    BL"
+    type: vless
+    server: "lol-pol-0001.api.neuralrelay.stream"
+    port: 443
+    uuid: "f189684b-6213-4c0d-a2e3-cb8860f5d4c5"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "hls-svod.itunes.apple.com"
+    reality-opts:
+      public-key: "9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA"
+      short-id: "b211e46c93"
+  - name: "Poland, Warsaw (Mokotw)    IPv6  BL"
+    type: vless
+    server: "193.34.212.80.vhub.pro"
+    port: 443
+    uuid: "7c1d17f5-4f43-4f78-9505-d50c38efc40b"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "193.34.212.80.vhub.pro"
+    grpc-opts:
+      grpc-service-name: "/sequre/grpc/"
+  - name: "Poland, Warsaw (Mokotw)    IPv6  BL-1"
+    type: vless
+    server: "193.34.212.80.vhub.pro"
+    port: 443
+    uuid: "7c1d17f5-4f43-4f78-9505-d50c38efc40b"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    grpc-opts:
+      grpc-service-name: "/sequre/grpc/"
+  - name: "Poland, Warsaw (Mokotw)    IPv6  BL-2"
+    type: vless
+    server: "193.34.212.80.vhub.pro"
+    port: 443
+    uuid: "7c1d17f5-4f43-4f78-9505-d50c38efc40b"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    servername: "193.34.212.80.vhub.pro"
+    grpc-opts:
+      grpc-service-name: "/sequre/grpc/"
+  - name: "Poland, Warsaw (Mokotw)    IPv6  BL-3"
+    type: vless
+    server: "193.34.212.80.vhub.pro"
+    port: 443
+    uuid: "7c1d17f5-4f43-4f78-9505-d50c38efc40b"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "safari"
+    servername: "193.34.212.80.vhub.pro"
+    grpc-opts:
+      grpc-service-name: "/sequre/grpc/"
+  - name: "Poland, Warsaw (Mokotw)    IPv6  BL-4"
+    type: vless
+    server: "193.34.212.80.vhub.pro"
+    port: 443
+    uuid: "7c1d17f5-4f43-4f78-9505-d50c38efc40b"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "safari"
+    servername: "193.34.212.80.vhub.pro"
+    grpc-opts:
+      grpc-service-name: "/sequre/grpc/"
+  - name: "Poland, Warsaw (Mokotw)    IPv6  BL-5"
+    type: vless
+    server: "193.34.212.80.vhub.pro"
+    port: 443
+    uuid: "7c1d17f5-4f43-4f78-9505-d50c38efc40b"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    servername: "193.34.212.80.vhub.pro"
+    grpc-opts:
+      grpc-service-name: "/sequre/grpc/"
+  - name: "Poland, Warsaw (Mokotw)    IPv6  BL-6"
+    type: vless
+    server: "193.34.212.80"
+    port: 443
+    uuid: "7c1d17f5-4f43-4f78-9505-d50c38efc40b"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "193.34.212.80.vhub.pro"
+    grpc-opts:
+      grpc-service-name: "/sequre/grpc/"
+  - name: "Thailand, Bangkok  BL"
+    type: vless
+    server: "47.81.12.38"
+    port: 443
+    uuid: "3e7f67de-648e-4871-b51a-a225214d41ee"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "chrome"
+    servername: "api.digital-help-prd.autodesk.com"
+    reality-opts:
+      public-key: "TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw"
+      short-id: ""
+  - name: "The Netherlands, Amsterdam    IPv6  BL"
+    type: vless
+    server: "nl-2.bexum.fun"
+    port: 443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "randomized"
+    servername: "nl-2.bexum.fun"
+    reality-opts:
+      public-key: "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng"
+      short-id: "68abb912e89c95bd"
+  - name: "Turkey, Istanbul  BL"
+    type: vless
+    server: "trtc.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "trtc.ksnodes.net"
+  - name: "United Arab Emirates, Abu Dhabi  BL"
+    type: vless
+    server: "nlety.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "nlety.ksnodes.net"
+  - name: "United Arab Emirates, Abu Dhabi  BL-1"
+    type: vless
+    server: "nlety.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision-udp443"
+    client-fingerprint: "chrome"
+  - name: "United Arab Emirates, Abu Dhabi  BL-2"
+    type: vless
+    server: "nlety.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision-udp443"
+    client-fingerprint: "chrome"
+    servername: "nlety.ksnodes.net"
+  - name: "United Arab Emirates, Dubai  BL"
+    type: vless
+    server: "lol-are-0001.api.neuralrelay.stream"
+    port: 443
+    uuid: "c603d9a2-a89a-4b62-ac96-346d3b52620c"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "hls-svod.itunes.apple.com"
+    reality-opts:
+      public-key: "9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA"
+      short-id: "1dc69d21a7077443"
+  - name: "United Kingdom, Fareham  BL"
+    type: vless
+    server: "ukos.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ukos.ksnodes.net"
+  - name: "United Kingdom, Fareham  BL-1"
+    type: vless
+    server: "ukos.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "ukos.ksnodes.net"
+  - name: "United Kingdom, Fareham  BL-2"
+    type: vless
+    server: "ukos2.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ukos2.ksnodes.net"
+  - name: "United Kingdom, Fareham  BL-3"
+    type: vless
+    server: "ukos2.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ukos2.ksnodes.net"
+  - name: "United Kingdom, Fareham  BL-4"
+    type: vless
+    server: "ukos2.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "ukos2.ksnodes.net"
+  - name: "United Kingdom, Fareham  BL-5"
+    type: vless
+    server: "ukos2.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "ukos2.ksnodes.net"
+  - name: "United States, Los Angeles  BL-1"
+    type: vless
+    server: "64.81.32.47"
+    port: 24409
+    uuid: "88803e4c-330f-4263-b31a-5a6db7329814"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+  - name: "United States, Piscataway  BL"
+    type: vless
+    server: "lol-usa-0001.api.neuralrelay.stream"
+    port: 443
+    uuid: "cead26ce-f4e0-4820-aa2c-96cf3e61fb4c"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "hls-svod.itunes.apple.com"
+    reality-opts:
+      public-key: "9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA"
+      short-id: "0f7e"
+  - name: "United States, Piscataway  BL-1"
+    type: vless
+    server: "lol-usa-0001.api.neuralrelay.stream"
+    port: 443
+    uuid: "f189684b-6213-4c0d-a2e3-cb8860f5d4c5"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "hls-svod.itunes.apple.com"
+    reality-opts:
+      public-key: "9WnuH4KUb9-cCqbApq4bVLDhrqhPbpnd5eTn14bGciA"
+      short-id: "c25bd5a0bfdc06"
+  - name: "United States, Redmond (Downtown)  BL-1"
+    type: vless
+    server: "216.167.43.25"
+    port: 19181
+    uuid: "60957b7b-9161-4828-f782-c1a482253054"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Anycast-IP  BL"
+    type: vless
+    server: "119.193.103.8"
+    port: 16993
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  BL-1"
+    type: vless
+    server: "47.91.31.4"
+    port: 39738
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  BL-2"
+    type: vless
+    server: "46.243.211.17"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "market.yandex.ru"
+  - name: "Anycast-IP  BL-3"
+    type: vless
+    server: "46.243.211.17"
+    port: 8443
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+  - name: "Anycast-IP  IPv6  BL-3"
+    type: vless
+    server: "43.160.251.110"
+    port: 443
+    uuid: "06b65903-406d-4a41-8463-6fd5c0ee7798"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "sn1.skylee5.cloudns.ch"
+    ws-opts:
+      headers:
+        Host: "sn1.skylee5.cloudns.ch"
+  - name: "Anycast-IP  IPv6  BL-4"
+    type: vless
+    server: "43.160.251.110"
+    port: 443
+    uuid: "06b65903-406d-4a41-8463-6fd5c0ee7798"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "sn1.skylee5.cloudns.ch"
+    ws-opts:
+      headers:
+        Host: "sn1.skylee5.cloudns.ch"
+  - name: "Anycast-IP  IPv6  BL-5"
+    type: vless
+    server: "103.91.219.252"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-6"
+    type: vless
+    server: "108.247.217.195"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "e43zyc.cdn-edge-jp.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "e43zyc.cdn-edge-jp.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-7"
+    type: vless
+    server: "112.165.88.232"
+    port: 10002
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-8"
+    type: vless
+    server: "112.173.209.206"
+    port: 14430
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-9"
+    type: vless
+    server: "113.192.61.199"
+    port: 2053
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-10"
+    type: vless
+    server: "121.179.212.16"
+    port: 10001
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-11"
+    type: vless
+    server: "151.242.164.33"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-12"
+    type: vless
+    server: "151.242.164.33"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-13"
+    type: vless
+    server: "151.242.164.33"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-14"
+    type: vless
+    server: "156.246.88.223"
+    port: 35561
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-15"
+    type: vless
+    server: "160.16.72.181"
+    port: 8081
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-16"
+    type: vless
+    server: "167.88.182.86"
+    port: 34237
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-17"
+    type: vless
+    server: "174.136.204.87"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-18"
+    type: vless
+    server: "174.136.204.87"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-19"
+    type: vless
+    server: "175.206.85.140"
+    port: 31337
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-20"
+    type: vless
+    server: "175.206.85.140"
+    port: 31337
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-21"
+    type: vless
+    server: "175.206.85.140"
+    port: 31337
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-22"
+    type: vless
+    server: "183.102.55.197"
+    port: 10003
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-23"
+    type: vless
+    server: "183.102.55.197"
+    port: 29999
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-24"
+    type: vless
+    server: "185.186.147.31"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-25"
+    type: vless
+    server: "185.239.224.106"
+    port: 19597
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-26"
+    type: vless
+    server: "188.253.123.71"
+    port: 7228
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "snippet.gfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-27"
+    type: vless
+    server: "20.249.24.202"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-28"
+    type: vless
+    server: "205.196.81.159"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "gso9r.gateway-edge.chinav.indevs.in"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "gso9r.gateway-edge.chinav.indevs.in"
+  - name: "Anycast-IP  IPv6  BL-29"
+    type: vless
+    server: "205.196.83.167"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-30"
+    type: vless
+    server: "209.151.155.155"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-31"
+    type: vless
+    server: "211.228.69.243"
+    port: 20000
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "yvl5fy.data-cache.chinam.indevs.in"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "yvl5fy.data-cache.chinam.indevs.in"
+  - name: "Anycast-IP  IPv6  BL-32"
+    type: vless
+    server: "216.173.64.197"
+    port: 587
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "e43zyc.cdn-edge-jp.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "e43zyc.cdn-edge-jp.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-33"
+    type: vless
+    server: "218.150.34.228"
+    port: 10912
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-34"
+    type: vless
+    server: "218.150.34.228"
+    port: 10912
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-35"
+    type: vless
+    server: "218.150.34.228"
+    port: 10912
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-36"
+    type: vless
+    server: "218.155.125.99"
+    port: 10001
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-37"
+    type: vless
+    server: "218.155.125.99"
+    port: 10001
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-38"
+    type: vless
+    server: "221.156.27.142"
+    port: 18979
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-39"
+    type: vless
+    server: "222.102.234.186"
+    port: 18888
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-40"
+    type: vless
+    server: "222.118.65.115"
+    port: 10909
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-41"
+    type: vless
+    server: "31.57.172.199"
+    port: 20002
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-42"
+    type: vless
+    server: "38.143.19.208"
+    port: 8443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-43"
+    type: vless
+    server: "38.143.19.208"
+    port: 8443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-44"
+    type: vless
+    server: "43.162.119.244"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-45"
+    type: vless
+    server: "45.192.248.34"
+    port: 24044
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-46"
+    type: vless
+    server: "45.207.213.93"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-47"
+    type: vless
+    server: "46.8.78.121"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-48"
+    type: vless
+    server: "46.8.78.121"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfengfp=chrome"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-49"
+    type: vless
+    server: "47.74.14.140"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "yvl5fy.data-cache.chinam.indevs.in"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "yvl5fy.data-cache.chinam.indevs.in"
+  - name: "Anycast-IP  IPv6  BL-50"
+    type: vless
+    server: "5.34.222.227"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-51"
+    type: vless
+    server: "60.249.21.50"
+    port: 8818
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "yvl5fy.data-cache.chinam.indevs.in"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "yvl5fy.data-cache.chinam.indevs.in"
+  - name: "Anycast-IP  IPv6  BL-52"
+    type: vless
+    server: "72.249.204.208"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng?ed=2560"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-53"
+    type: vless
+    server: "74.211.99.50"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "e43zyc.cdn-edge-jp.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "e43zyc.cdn-edge-jp.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-54"
+    type: vless
+    server: "74.211.99.50"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "e43zyc.cdn-edge-jp.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng?ed=2560fp=chrome"
+      headers:
+        Host: "e43zyc.cdn-edge-jp.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-55"
+    type: vless
+    server: "77.223.215.167"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "ynwta9.api-edge.fgfw.qzz.io"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "ynwta9.api-edge.fgfw.qzz.io"
+  - name: "Anycast-IP  IPv6  BL-56"
+    type: vless
+    server: "78.159.131.224"
+    port: 8443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-57"
+    type: vless
+    server: "78.159.131.224"
+    port: 8443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-58"
+    type: vless
+    server: "88.218.77.174"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-59"
+    type: vless
+    server: "89.208.254.23"
+    port: 443
+    uuid: "26524cce-d514-4014-a426-365fb266a14d"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "mug.support.gfw.hidns.co"
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "mug.support.gfw.hidns.co"
+  - name: "Anycast-IP  IPv6  BL-60"
+    type: vless
+    server: "46.243.211.17"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+  - name: "Anycast-IP  IPv6  BL-61"
+    type: vless
+    server: "193.233.90.146"
+    port: 443
+    uuid: "7fbeb76f-2fa1-4a5a-9f99-4dbfaafb4da2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "www.google.com"
+    reality-opts:
+      public-key: "4v_4RSmE8ztHfQ4EV8Ym6J-6C8ACtYiznTHcdWJw6WA"
+      short-id: "aabbccdd"
+  - name: "Anycast-IP  IPv6  BL-62"
+    type: vless
+    server: "142.171.48.211"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-63"
+    type: vless
+    server: "142.171.48.211"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-64"
+    type: vless
+    server: "193.124.24.213"
+    port: 8443
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-65"
+    type: vless
+    server: "193.124.24.213"
+    port: 8443
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-66"
+    type: vless
+    server: "193.124.24.213"
+    port: 8443
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-67"
+    type: vless
+    server: "193.233.87.9"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-68"
+    type: vless
+    server: "193.233.87.9"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-69"
+    type: vless
+    server: "193.46.217.233"
+    port: 8443
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-70"
+    type: vless
+    server: "199.119.137.109"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-71"
+    type: vless
+    server: "199.119.137.109"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-72"
+    type: vless
+    server: "199.119.137.77"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-73"
+    type: vless
+    server: "199.119.137.77"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-74"
+    type: vless
+    server: "199.119.137.78"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳+@WangCai2"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-75"
+    type: vless
+    server: "199.119.137.78"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-76"
+    type: vless
+    server: "199.119.137.78"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560&Telegram🇨🇳@WangCai2"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-77"
+    type: vless
+    server: "94.183.184.239"
+    port: 2053
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "babayaga-6i7.pages.dev"
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "babayaga-6i7.pages.dev"
+  - name: "Anycast-IP  IPv6  BL-78"
+    type: vless
+    server: "154.92.9.156"
+    port: 443
+    uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    servername: "Worker-Dry-Heart-073a.Eqoniqaq.Workers.Dev"
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "workEr-dRy-heaRt-073A.eqoniqAq.workeRs.dEv"
+  - name: "The Netherlands, Amsterdam  BL-8"
+    type: vmess
+    server: "v30.hdacd.com"
+    port: 30830
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    skip-cert-verify: true
+  - name: "Finland    IPv6 CIDR"
+    type: vless
+    server: "finl9.keepsecured.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "finl9.keepsecured.net"
+  - name: "Finland    IPv6 CIDR-1"
+    type: vless
+    server: "finl9.keepsecured.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "finl9.keepsecured.net"
+  - name: "Germany   CIDR"
+    type: vless
+    server: "cluster-de-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "cluster-de-1.firstvideocdn.ru"
+  - name: "Germany    IPv6 CIDR"
+    type: vless
+    server: "178.72.181.132"
+    port: 52006
+    uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "cluster-de-1.firstvideocdn.ru"
+  - name: "Germany    IPv6 CIDR-1"
+    type: vless
+    server: "cluster-de-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "cluster-de-1.firstvideocdn.ru"
+  - name: "Germany    IPv6 CIDR-2"
+    type: vless
+    server: "cluster-de-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "cluster-de-1.firstvideocdn.ru"
+  - name: "Germany    IPv6 CIDR-3"
+    type: vless
+    server: "178.72.181.49"
+    port: 52006
+    uuid: "75807638-6f19-03e8-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Poland    IPv6 CIDR"
+    type: vless
+    server: "178.72.181.132"
+    port: 52006
+    uuid: "75807638-6f19-2710-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "cluster-de-1.firstvideocdn.ru"
+  - name: "Poland    IPv6 CIDR-1"
+    type: vless
+    server: "178.72.181.132"
+    port: 52006
+    uuid: "75807638-6f19-2710-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "cluster-de-1.firstvideocdn.ru"
+  - name: "Poland    IPv6 CIDR-2"
+    type: vless
+    server: "cluster-de-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-2710-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "cluster-de-1.firstvideocdn.ru"
+  - name: "Poland    IPv6 CIDR-3"
+    type: vless
+    server: "cluster-de-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-2710-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Poland    IPv6 CIDR-4"
+    type: vless
+    server: "cluster-de-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-2710-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Poland    IPv6 CIDR YA"
+    type: vless
+    server: "158.160.51.188"
+    port: 6444
+    uuid: "8822e9a7-9b61-4b5e-9efd-a483c7322b00"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "qq"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "kFiHVL1rkURP6u8UVc0v7L_9uYiEKK3YaQak51nxuXY"
+      short-id: "bad5722c72a038"
+  - name: "Poland CIDR YA"
+    type: vless
+    server: "158.160.51.188"
+    port: 6445
+    uuid: "8822e9a7-9b61-4b5e-9efd-a483c7322b00"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "qq"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "lU1yF2A1b0lM9DZbXWPpLfoU7_KQpXOYX0NFrPEIJy8"
+      short-id: "bad5722c72a0"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "Romania CIDR YA"
+    type: vless
+    server: "158.160.120.24"
+    port: 443
+    uuid: "eba7d29f-a6b9-4c34-8285-77385e243456"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: "WYroN5_KU_6GrkBVATev8W3pd_uZitHiDC2-7A8lqjY"
+      short-id: "1e59f047"
+  - name: "The Netherlands CIDR"
+    type: vless
+    server: "v546965.hosted-by-vdsina.com"
+    port: 8443
+    uuid: "1cb91b20-49cc-59ff-8393-91808a4deede"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "chrome"
+    servername: "www.ozon.ru"
+    reality-opts:
+      public-key: "bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM"
+      short-id: "ffffffffff"
+  - name: "The Netherlands   CIDR YA"
+    type: vless
+    server: "158.160.255.15"
+    port: 443
+    uuid: "ba3778db-bd1d-4b84-94e8-f10551d15514"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "v6rib0-2FxBd1MnBxdylbIRIhvXywSj56QEtCkaEuBo"
+      short-id: "27e53bbcab7593d7"
+  - name: "The Netherlands   CIDR YA-1"
+    type: vless
+    server: "158.160.255.15"
+    port: 443
+    uuid: "ba3778db-bd1d-4b84-94e8-f10551d15514"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: "xwusQ4IEWdYyuPLCc4LOA89P6HyQDNT7xo_75v2YW2I"
+      short-id: "27e53bbcab7593d7"
+  - name: "The Netherlands    IPv6 CIDR YA"
+    type: vless
+    server: "158.160.160.33"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
+      short-id: "111111"
+  - name: "The Netherlands    IPv6 CIDR YA-1"
+    type: vless
+    server: "158.160.218.153"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
+      short-id: "111111"
+  - name: "The Netherlands    IPv6 CIDR YA-2"
+    type: vless
+    server: "158.160.248.232"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
+      short-id: "111111"
+  - name: "The Netherlands    IPv6 CIDR YA-3"
+    type: vless
+    server: "158.160.248.32"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
+      short-id: "111111"
+  - name: "The Netherlands CIDR YA"
+    type: vless
+    server: "158.160.220.7"
+    port: 443
+    uuid: "4ae3653b-1a69-4c80-8301-887b430cce88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "YKDxvQImldrUfVaJM_Hr49gpEqrDE66j7Psw4vOZuyI"
+      short-id: "6ba85179e30d4fc2"
+  - name: "The Netherlands CIDR YA-1"
+    type: vless
+    server: "158.160.220.7"
+    port: 4443
+    uuid: "4ae3653b-1a69-4c80-8301-887b430cce88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "YKDxvQImldrUfVaJM_Hr49gpEqrDE66j7Psw4vOZuyI"
+      short-id: "6ba85179e30d4fc2"
+  - name: "The Netherlands CIDR YA-2"
+    type: vless
+    server: "158.160.220.7"
+    port: 8443
+    uuid: "4ae3653b-1a69-4c80-8301-887b430cce88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "YKDxvQImldrUfVaJM_Hr49gpEqrDE66j7Psw4vOZuyI"
+      short-id: "6ba85179e30d4fc2"
+  - name: "United Arab Emirates CIDR"
+    type: vless
+    server: "31.59.39.125"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "nlety.ksnodes.net"
+  - name: "United Arab Emirates CIDR-1"
+    type: vless
+    server: "nlety.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision-udp443"
+    client-fingerprint: "chrome"
+    servername: "nlety.ksnodes.net"
+  - name: "United Kingdom CIDR"
+    type: vless
+    server: "130.78.219.82"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ukos2.ksnodes.net"
+  - name: "United Kingdom CIDR-1"
+    type: vless
+    server: "ukos2.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ukos2.ksnodes.net"
+  - name: "United Kingdom CIDR-2"
+    type: vless
+    server: "ukos2.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ukos2.ksnodes.net"
+  - name: "United Kingdom CIDR-3"
+    type: vless
+    server: "ukos2.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "ukos2.ksnodes.net"
+  - name: "United Kingdom CIDR-4"
+    type: vless
+    server: "ukos2.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "ukos2.ksnodes.net"
+  - name: "Russia CIDR"
+    type: vless
+    server: "87.228.124.196"
+    port: 4443
+    uuid: "2cbd01de-4c6b-4b7a-89b2-2da483c9d314"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Russia CIDR-1"
+    type: vless
+    server: "ru7.frostmotiveseed.net"
+    port: 4443
+    uuid: "2cbd01de-4c6b-4b7a-89b2-2da483c9d314"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Russia CIDR-2"
+    type: vless
+    server: "5.188.224.167"
+    port: 2083
+    uuid: "408c57ff-f67f-49c7-856a-56bff6ac26e0"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-3"
+    type: vless
+    server: "5.188.224.68"
+    port: 2083
+    uuid: "408c57ff-f67f-49c7-856a-56bff6ac26e0"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-4"
+    type: vless
+    server: "5.188.224.135"
+    port: 2083
+    uuid: "52a4263d-2ad0-452d-a669-c2d2776f4c34"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-5"
+    type: vless
+    server: "5.188.224.116"
+    port: 2083
+    uuid: "60ae82da-f839-4125-aa1e-3df0e2a5c30c"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-6"
+    type: vless
+    server: "5.188.224.135"
+    port: 2083
+    uuid: "60ae82da-f839-4125-aa1e-3df0e2a5c30c"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-7"
+    type: vless
+    server: "5.188.224.167"
+    port: 2083
+    uuid: "60ae82da-f839-4125-aa1e-3df0e2a5c30c"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-8"
+    type: vless
+    server: "5.188.224.116"
+    port: 2083
+    uuid: "74d3057f-5d2b-4d21-8819-3b387d47c0a4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-9"
+    type: vless
+    server: "5.188.224.137"
+    port: 2083
+    uuid: "74d3057f-5d2b-4d21-8819-3b387d47c0a4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-10"
+    type: vless
+    server: "5.188.224.167"
+    port: 2083
+    uuid: "74d3057f-5d2b-4d21-8819-3b387d47c0a4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-11"
+    type: vless
+    server: "178.72.186.76"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+  - name: "Russia CIDR-12"
+    type: vless
+    server: "st.xbs54as9c6.ru"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "market.yandex.ru"
+  - name: "Russia CIDR-13"
+    type: vless
+    server: "st.xbs54as9c6.ru"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "st.xbs54as9c6.ru"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "market.yandex.ru"
+  - name: "Russia CIDR-14"
+    type: vless
+    server: "st.xbs54as9c6.ru"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "market.yandex.ru"
+  - name: "Russia CIDR-15"
+    type: vless
+    server: "st.xbs54as9c6.ru"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/stream"
+  - name: "Russia CIDR-16"
+    type: vless
+    server: "178.72.181.41"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-17"
+    type: vless
+    server: "212.41.8.216"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-18"
+    type: vless
+    server: "212.41.8.216"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Russia CIDR-19"
+    type: vless
+    server: "80.93.187.210"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-20"
+    type: vless
+    server: "5.188.224.166"
+    port: 2083
+    uuid: "960eb19c-3238-44f2-ae20-dfbba5f1f778"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+  - name: "Russia CIDR-21"
+    type: vless
+    server: "5.188.224.166"
+    port: 2083
+    uuid: "960eb19c-3238-44f2-ae20-dfbba5f1f778"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+  - name: "Russia CIDR-22"
+    type: vless
+    server: "5.188.224.166"
+    port: 2083
+    uuid: "960eb19c-3238-44f2-ae20-dfbba5f1f778"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-23"
+    type: vless
+    server: "5.188.224.116"
+    port: 2083
+    uuid: "b2433762-ba4f-4f50-b963-32cbc430ca36"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-24"
+    type: vless
+    server: "5.188.224.167"
+    port: 2083
+    uuid: "b2433762-ba4f-4f50-b963-32cbc430ca36"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-25"
+    type: vless
+    server: "5.188.224.116"
+    port: 2083
+    uuid: "e68aab34-64bb-4052-a1a0-5e26b04f68c1"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-26"
+    type: vless
+    server: "5.188.224.135"
+    port: 2083
+    uuid: "e68aab34-64bb-4052-a1a0-5e26b04f68c1"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-27"
+    type: vless
+    server: "5.188.224.137"
+    port: 2083
+    uuid: "e68aab34-64bb-4052-a1a0-5e26b04f68c1"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-28"
+    type: vless
+    server: "5.188.224.166"
+    port: 2083
+    uuid: "e68aab34-64bb-4052-a1a0-5e26b04f68c1"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-29"
+    type: vless
+    server: "5.188.224.135"
+    port: 2083
+    uuid: "f6b71e78-e065-4cf8-9fbb-b9e25ff67eff"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-30"
+    type: vless
+    server: "5.188.224.137"
+    port: 2083
+    uuid: "f6b71e78-e065-4cf8-9fbb-b9e25ff67eff"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-31"
+    type: vless
+    server: "5.188.224.137"
+    port: 2083
+    uuid: "f6b71e78-e065-4cf8-9fbb-b9e25ff67eff"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+  - name: "Russia CIDR-32"
+    type: vless
+    server: "5.188.224.167"
+    port: 2083
+    uuid: "f6b71e78-e065-4cf8-9fbb-b9e25ff67eff"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-33"
+    type: vless
+    server: "5.188.224.68"
+    port: 2083
+    uuid: "f6b71e78-e065-4cf8-9fbb-b9e25ff67eff"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-34"
+    type: vless
+    server: "5.188.224.116"
+    port: 2083
+    uuid: "f993de15-4cc2-49bb-b64b-2d248687b819"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-35"
+    type: vless
+    server: "5.188.224.137"
+    port: 2083
+    uuid: "f993de15-4cc2-49bb-b64b-2d248687b819"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-36"
+    type: vless
+    server: "5.188.224.166"
+    port: 2083
+    uuid: "f993de15-4cc2-49bb-b64b-2d248687b819"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-37"
+    type: vless
+    server: "5.188.224.167"
+    port: 2083
+    uuid: "f993de15-4cc2-49bb-b64b-2d248687b819"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-38"
+    type: vless
+    server: "5.188.224.167"
+    port: 2083
+    uuid: "f993de15-4cc2-49bb-b64b-2d248687b819"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia   CIDR YA"
+    type: vless
+    server: "158.160.168.132"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "id.x5.ru"
+    reality-opts:
+      public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
+      short-id: "111111"
+  - name: "Russia   CIDR YA-1"
+    type: vless
+    server: "158.160.224.84"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "id.x5.ru"
+    reality-opts:
+      public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
+      short-id: "111111"
+  - name: "Russia   CIDR YA-2"
+    type: vless
+    server: "158.160.231.91"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
+      short-id: "111111"
+  - name: "Russia   CIDR YA-3"
+    type: vless
+    server: "158.160.231.91"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "id.x5.ru"
+    reality-opts:
+      public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
+      short-id: "111111"
+  - name: "Russia   CIDR YA-4"
+    type: vless
+    server: "158.160.241.112"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "id.x5.ru"
+    reality-opts:
+      public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
+      short-id: "111111"
+  - name: "Russia   CIDR YA-5"
+    type: vless
+    server: "158.160.245.33"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "id.x5.ru"
+    reality-opts:
+      public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
+      short-id: "111111"
+  - name: "Russia    IPv6 CIDR"
+    type: vless
+    server: "tn.xbs54as9c6.ru"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP CIDR"
+    type: vless
+    server: "cluster-other-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-0190-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision-udp443"
+    client-fingerprint: "chrome"
+    servername: "cluster-other-1.firstvideocdn.ru"
+  - name: "Anycast-IP CIDR-1"
+    type: vless
+    server: "cluster-other-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-0190-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "cluster-other-1.firstvideocdn.ru"
+  - name: "Anycast-IP CIDR-2"
+    type: vless
+    server: "cluster-other-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-0190-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "cluster-other-1.firstvideocdn.ru"
+  - name: "Anycast-IP CIDR-3"
+    type: vless
+    server: "cluster-other-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-0898-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Anycast-IP CIDR-4"
+    type: vless
+    server: "cluster-other-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-0898-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "cluster-other-1.firstvideocdn.ru"
+  - name: "Anycast-IP CIDR-5"
+    type: vless
+    server: "cluster-other-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-0898-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "cluster-other-1.firstvideocdn.ru"
+  - name: "Anycast-IP CIDR-6"
+    type: vless
+    server: "dnb.herumhas.shop"
+    port: 443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "dnb.herumhas.shop"
+  - name: "Anycast-IP CIDR YA"
+    type: vless
+    server: "158.160.5.176"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+  - name: "Anycast-IP CIDR YA-1"
+    type: vless
+    server: "158.160.5.176"
+    port: 8443
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+  - name: "Anycast-IP CIDR YA-2"
+    type: vless
+    server: "158.160.5.176"
+    port: 8443
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "rbc.ru"
+  - name: "Anycast-IP CIDR YA-3"
+    type: vless
+    server: "158.160.5.176"
+    port: 8443
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+  - name: "Czechia    IPv6 CIDR"
+    type: vless
+    server: "150.241.121.66"
+    port: 443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "randomized"
+    servername: "ch-1.bexum.fun"
+    reality-opts:
+      public-key: "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng"
+      short-id: "5dd747e98058584b"
+  - name: "Czechia    IPv6 CIDR-1"
+    type: vless
+    server: "ch-1.bexum.fun"
+    port: 443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "randomized"
+    servername: "ch-1.bexum.fun"
+    reality-opts:
+      public-key: "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng"
+      short-id: "5dd747e98058584b"
+  - name: "Czechia CIDR YA"
+    type: vless
+    server: "51.250.111.194"
+    port: 7443
+    uuid: "4ae3653b-1a69-4c80-8301-887b430cce88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "7ibca15-im9GR65wrb0N-ij1qdUftpcxTwNxHn9HPUw"
+      short-id: "6ba85179e30d4fc2"
+  - name: "Finland CIDR"
+    type: vless
+    server: "45.12.70.195"
+    port: 8443
+    uuid: "98b476af-84e3-491f-bacc-d9da9478418a"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "banners-website.wildberries.ru"
+    reality-opts:
+      public-key: "UlenDPH6hbO33zzlf2YREOndGJnWAimz_JVPmWvfDEw"
+      short-id: "7bf4"
+  - name: "Finland    IPv6 CIDR-2"
+    type: vless
+    server: "45.38.143.119"
+    port: 443
+    uuid: "5458507c-40e7-4883-baa2-3c33e31fb790"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "sosok.vk.com"
+    reality-opts:
+      public-key: "HkLK62c3szw51gYtORRnPlO0v6kxOSd_aCd0J4rTKzo"
+      short-id: "1a"
+  - name: "Finland    IPv6 CIDR-3"
+    type: vless
+    server: "finl9.keepsecured.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision-udp443"
+    client-fingerprint: "chrome"
+    servername: "finl9.keepsecured.net"
+  - name: "Finland    IPv6 CIDR-4"
+    type: vless
+    server: "finl9.keepsecured.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision-udp443"
+    client-fingerprint: "chrome"
+    servername: "finl9.keepsecured.net"
+  - name: "Finland CIDR VK"
+    type: vless
+    server: "91.219.227.253"
+    port: 8083
+    uuid: "d0ca2925-57c3-4b00-8422-535deb55ecfe"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "qq"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw"
+      short-id: "7dbf7d3233971d5c"
+  - name: "France    IPv6 CIDR"
+    type: vless
+    server: "89.208.113.196"
+    port: 443
+    uuid: "72cfe84b-f84f-4211-a7a2-7eb013a08674"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "www.yahoo.com"
+    reality-opts:
+      public-key: "5kJyRKIuU0yIsJiQPnI8YFvP_1d9nNB09RXcEBVy9hU"
+      short-id: "12345678"
+  - name: "France    IPv6 CIDR VK"
+    type: vless
+    server: "90.156.219.164"
+    port: 443
+    uuid: "364bd583-58c3-492a-8051-94b896bb33ed"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "yandex.ru"
+    reality-opts:
+      public-key: "pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U"
+      short-id: "6aa2d2e950441a9a"
+  - name: "Germany CIDR"
+    type: vless
+    server: "213.171.26.10"
+    port: 3443
+    uuid: "9629fbb0-f78e-44de-880b-786cbeeefe63"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "firefox"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
+      short-id: "ab"
+  - name: "Germany CIDR-1"
+    type: vless
+    server: "213.171.26.10"
+    port: 3443
+    uuid: "9629fbb0-f78e-44de-880b-786cbeeefe63"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "firefox"
+    servername: "sun6-21.userapi.com"
+    reality-opts:
+      public-key: "XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM"
+      short-id: "abcdef0123456789"
+  - name: "Germany    IPv6 CIDR-4"
+    type: vless
+    server: "5.188.114.44"
+    port: 443
+    uuid: "3a3f672d-1161-42b2-bff7-d43b345c7298"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "firefox"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "h6gpE3mCwKFwTx7nn_hAtAIF1pHFIuXWdNVyYrokqkI"
+      short-id: "dcbaae96dfd126d0"
+  - name: "Germany    IPv6 CIDR-5"
+    type: vless
+    server: "178.72.181.103"
+    port: 52006
+    uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Germany    IPv6 CIDR-6"
+    type: vless
+    server: "178.72.181.132"
+    port: 52006
+    uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "cluster-de-1.firstvideocdn.ru"
+  - name: "Germany    IPv6 CIDR-7"
+    type: vless
+    server: "212.41.30.45"
+    port: 52006
+    uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Germany    IPv6 CIDR-8"
+    type: vless
+    server: "82.202.197.68"
+    port: 52006
+    uuid: "75807638-6f19-01f4-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Germany    IPv6 CIDR-9"
+    type: vless
+    server: "178.72.181.49"
+    port: 52006
+    uuid: "75807638-6f19-03e8-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Germany    IPv6 CIDR-10"
+    type: vless
+    server: "5.188.114.44"
+    port: 443
+    uuid: "832f76f8-fca3-4efa-80be-870e123ad764"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "firefox"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "h6gpE3mCwKFwTx7nn_hAtAIF1pHFIuXWdNVyYrokqkI"
+      short-id: "dcbaae96dfd126d0"
+  - name: "Germany    IPv6 CIDR-11"
+    type: vless
+    server: "62.60.217.95"
+    port: 443
+    uuid: "8ef19221-6d5e-4bce-baa1-7c043eae3309"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "stats.vk-portal.net"
+    reality-opts:
+      public-key: "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do"
+      short-id: "3c6fc84d"
+  - name: "Germany    IPv6 CIDR-12"
+    type: vless
+    server: "159.195.46.55"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "cdn.kwork.com"
+    reality-opts:
+      public-key: "mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4"
+      short-id: "ad7dab462a323acb"
+  - name: "Germany    IPv6 CIDR-13"
+    type: vless
+    server: "berocd.herumhas.shop"
+    port: 9443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "berocd.herumhas.shop"
+  - name: "Germany    IPv6 CIDR-14"
+    type: vless
+    server: "berocd.herumhas.shop"
+    port: 9443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Germany    IPv6 CIDR YA"
+    type: vless
+    server: "158.160.235.223"
+    port: 993
+    uuid: "8822e9a7-9b61-4b5e-9efd-a483c7322b00"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "thz2uZE7rsLT609yRqqHsw9slQmCohEpFqRaoCoKLCs"
+      short-id: "ad7dab462a323a"
+  - name: "Lithuania CIDR"
+    type: vless
+    server: "84.32.209.6"
+    port: 443
+    uuid: "37253a6a-2a9b-42bb-992c-b5f1b1ef1791"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "vltch.mostserv.xyz"
+    reality-opts:
+      public-key: "3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI"
+      short-id: "226509f017e4c36d"
+  - name: "Lithuania CIDR-1"
+    type: vless
+    server: "84.32.209.6"
+    port: 443
+    uuid: "37253a6a-2a9b-42bb-992c-b5f1b1ef1791"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "vltch.mostserv.xyz"
+    reality-opts:
+      public-key: "3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI"
+      short-id: "226509f017e4c36d"
+  - name: "Poland    IPv6 CIDR-5"
+    type: vless
+    server: "cluster-de-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-2710-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "cluster-de-1.firstvideocdn.ru"
+  - name: "Poland    IPv6 CIDR-6"
+    type: vless
+    server: "p0land.gxcore.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "p0land.gxcore.net"
+    reality-opts:
+      public-key: "VM2nI0r9lXd6rKDA-_5sZc28qcDPTvZaJMOnxDDYUmc"
+      short-id: "a1ab5a56bc42"
+  - name: "Poland    IPv6 CIDR YA-1"
+    type: vless
+    server: "158.160.51.188"
+    port: 6445
+    uuid: "8822e9a7-9b61-4b5e-9efd-a483c7322b00"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "lU1yF2A1b0lM9DZbXWPpLfoU7_KQpXOYX0NFrPEIJy8"
+      short-id: "bad5722c72a0"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "Poland CIDR YA-1"
+    type: vless
+    server: "51.250.111.194"
+    port: 443
+    uuid: "4ae3653b-1a69-4c80-8301-887b430cce88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "y9hgkaFKFTgKL5PHsksGNKuSrd7jBysJ6rBHktu2k1o"
+      short-id: "6ba85179e30d4fc2"
+  - name: "Poland CIDR YA-2"
+    type: vless
+    server: "51.250.7.125"
+    port: 443
+    uuid: "4ae3653b-1a69-4c80-8301-887b430cce88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "hxpWlr-5EgNUPr__9gnoDdF9spsl4W4sfNKv_NJM_FY"
+      short-id: "6ba85179e30d4fc2"
+  - name: "Poland CIDR YA-3"
+    type: vless
+    server: "51.250.7.125"
+    port: 5443
+    uuid: "4ae3653b-1a69-4c80-8301-887b430cce88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: "7ibca15-im9GR65wrb0N-ij1qdUftpcxTwNxHn9HPUw"
+      short-id: "6ba85179e30d4fc2"
+  - name: "Romania CIDR YA-1"
+    type: vless
+    server: "158.160.38.209"
+    port: 443
+    uuid: "eba7d29f-a6b9-4c34-8285-77385e243456"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: "WYroN5_KU_6GrkBVATev8W3pd_uZitHiDC2-7A8lqjY"
+      short-id: "1e59f047"
+  - name: "Sweden CIDR YA"
+    type: vless
+    server: "51.250.23.243"
+    port: 443
+    uuid: "e8d84590-a5cb-4b76-b964-eafd1742443a"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "XSyv5Fi_gW72GREh-PyGjfNfN4_Zyuuq6A-klKEU2Hc"
+      short-id: ""
+  - name: "Thailand CIDR"
+    type: vless
+    server: "47.81.36.237"
+    port: 443
+    uuid: "3e7f67de-648e-4871-b51a-a225214d41ee"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "chrome"
+    servername: "api.digital-help-prd.autodesk.com"
+    reality-opts:
+      public-key: "TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw"
+      short-id: ""
+  - name: "The Netherlands CIDR-1"
+    type: vless
+    server: "37.49.225.246"
+    port: 8443
+    uuid: "0813a102-fb6c-4f4d-b720-7bcf7c360488"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "randomized"
+    servername: "hello.opengate.tech"
+    reality-opts:
+      public-key: "rV_kmYWTBJPPMTS2Fo7garwmvLkyjwVP_4_gbx6nLh8"
+      short-id: "3f9f20cdf5d2fa5e"
+  - name: "The Netherlands CIDR-2"
+    type: vless
+    server: "144.124.253.4"
+    port: 8443
+    uuid: "1cb91b20-49cc-59ff-8393-91808a4deede"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "random"
+    servername: "www.ozon.ru"
+    reality-opts:
+      public-key: "bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM"
+      short-id: "ffffffffff"
+  - name: "The Netherlands CIDR-3"
+    type: vless
+    server: "185.22.235.29"
+    port: 443
+    uuid: "364bd583-58c3-492a-8051-94b896bb33ed"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "m.vk.com"
+    reality-opts:
+      public-key: "pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U"
+      short-id: "b2a6e3d42f05c3d1"
+  - name: "The Netherlands CIDR-4"
+    type: vless
+    server: "37.49.225.247"
+    port: 8443
+    uuid: "4e07128f-0f50-45eb-9724-b4f40ddc96ec"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "randomized"
+    servername: "hello.opengate.tech"
+    reality-opts:
+      public-key: "rV_kmYWTBJPPMTS2Fo7garwmvLkyjwVP_4_gbx6nLh8"
+      short-id: "3f9f20cdf5d2fa5e"
+  - name: "The Netherlands CIDR-5"
+    type: vless
+    server: "212.34.145.199"
+    port: 39676
+    uuid: "4fb706d9-a6a2-4470-94af-ffb37c424916"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "penis.userapi.com"
+    reality-opts:
+      public-key: "HkLK62c3szw51gYtORRnPlO0v6kxOSd_aCd0J4rTKzo"
+      short-id: "628da9aed237"
+  - name: "The Netherlands CIDR-6"
+    type: vless
+    server: "212.34.145.199"
+    port: 23916
+    uuid: "4fc32ded-ef1f-4e30-ac2e-24da6e5f141b"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "vt-1.ozone.ru"
+    reality-opts:
+      public-key: "HkLK62c3szw51gYtORRnPlO0v6kxOSd_aCd0J4rTKzo"
+      short-id: "2ee3a5b4ed37e2"
+  - name: "The Netherlands CIDR-7"
+    type: vless
+    server: "5.252.153.148"
+    port: 17917
+    uuid: "50e4c335-c59d-49d4-a580-10f8e5b740b4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "m.vk.ru"
+    reality-opts:
+      public-key: "AJNM3xXr0XI_VejKBe9iX5NbcSyDk-MaebTY31TkhwM"
+      short-id: "873f01"
+  - name: "The Netherlands CIDR-8"
+    type: vless
+    server: "vaganzavpn.top"
+    port: 17917
+    uuid: "50e4c335-c59d-49d4-a580-10f8e5b740b4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "m.vk.ru"
+    reality-opts:
+      public-key: "AJNM3xXr0XI_VejKBe9iX5NbcSyDk-MaebTY31TkhwM"
+      short-id: "873f01"
+  - name: "The Netherlands CIDR-9"
+    type: vless
+    server: "212.34.145.199"
+    port: 37199
+    uuid: "5b5d2be1-87b7-4c81-9d2e-ba5753e06dcc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "firefox"
+    servername: "ozon.ru"
+    reality-opts:
+      public-key: "HkLK62c3szw51gYtORRnPlO0v6kxOSd_aCd0J4rTKzo"
+      short-id: "628da9aed237"
+  - name: "The Netherlands CIDR-10"
+    type: vless
+    server: "212.34.145.199"
+    port: 443
+    uuid: "6bc93967-18ce-441a-9ee3-006fe068c095"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "www.tbank.ru"
+    reality-opts:
+      public-key: "HkLK62c3szw51gYtORRnPlO0v6kxOSd_aCd0J4rTKzo"
+      short-id: "a79ee9d365da7d81"
+  - name: "The Netherlands CIDR-11"
+    type: vless
+    server: "157.22.178.210"
+    port: 443
+    uuid: "8ef19221-6d5e-4bce-baa1-7c043eae3309"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "stats.vk-portal.net"
+    reality-opts:
+      public-key: "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do"
+      short-id: "3c6fc84d"
+  - name: "The Netherlands CIDR-12"
+    type: vless
+    server: "157.22.178.212"
+    port: 443
+    uuid: "8ef19221-6d5e-4bce-baa1-7c043eae3309"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "stats.vk-portal.net"
+    reality-opts:
+      public-key: "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do"
+      short-id: "3c6fc84d"
+  - name: "The Netherlands CIDR-13"
+    type: vless
+    server: "64.188.58.186"
+    port: 443
+    uuid: "8ef19221-6d5e-4bce-baa1-7c043eae3309"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "stats.vk-portal.net"
+    reality-opts:
+      public-key: "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do"
+      short-id: "3c6fc84d"
+  - name: "The Netherlands CIDR-14"
+    type: vless
+    server: "nl.bundo.su"
+    port: 443
+    uuid: "8ef19221-6d5e-4bce-baa1-7c043eae3309"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "stats.vk-portal.net"
+    reality-opts:
+      public-key: "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do"
+      short-id: "3c6fc84d"
+  - name: "The Netherlands CIDR-15"
+    type: vless
+    server: "nl.bundo.su"
+    port: 443
+    uuid: "8ef19221-6d5e-4bce-baa1-7c043eae3309"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "stats.vk-portal.net"
+    reality-opts:
+      public-key: "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do"
+      short-id: "3c6fc84d"
+  - name: "The Netherlands CIDR-16"
+    type: vless
+    server: "212.34.145.199"
+    port: 36023
+    uuid: "ceecb83b-9694-4fbe-acdb-7b9e3d02e389"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "firefox"
+    servername: "m.vk.ru"
+    reality-opts:
+      public-key: "HkLK62c3szw51gYtORRnPlO0v6kxOSd_aCd0J4rTKzo"
+      short-id: "9d32c1"
+  - name: "The Netherlands CIDR-17"
+    type: vless
+    server: "v546965.hosted-by-vdsina.com"
+    port: 8443
+    uuid: "TrueVPN_92001293"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "random"
+    servername: "www.ozon.ru"
+    reality-opts:
+      public-key: "bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM"
+      short-id: "ffffffffff"
+  - name: "The Netherlands   CIDR YA-2"
+    type: vless
+    server: "51.250.19.156"
+    port: 443
+    uuid: "ba3778db-bd1d-4b84-94e8-f10551d15514"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "v6rib0-2FxBd1MnBxdylbIRIhvXywSj56QEtCkaEuBo"
+      short-id: "27e53bbcab7593d7"
+  - name: "The Netherlands   CIDR YA-3"
+    type: vless
+    server: "84.201.167.190"
+    port: 443
+    uuid: "ba3778db-bd1d-4b84-94e8-f10551d15514"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "WN0XIJgR2qVAMwaEgH3ps5msTGFAHFcuH0VHnfao83Y"
+      short-id: "27e53bbcab7593d3"
+  - name: "The Netherlands   CIDR YA-4"
+    type: vless
+    server: "84.201.170.224"
+    port: 443
+    uuid: "ba3778db-bd1d-4b84-94e8-f10551d15514"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: "A-Osft0F8ZlHRA6D3rjuEebeac_-vGIOZkrTOdEZjiA"
+      short-id: "f9b6823bf4858816"
+  - name: "The Netherlands    IPv6 CIDR"
+    type: vless
+    server: "157.22.179.6"
+    port: 443
+    uuid: "8ef19221-6d5e-4bce-baa1-7c043eae3309"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "stats.vk-portal.net"
+    reality-opts:
+      public-key: "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do"
+      short-id: "3c6fc84d"
+  - name: "The Netherlands    IPv6 CIDR YA-4"
+    type: vless
+    server: "158.160.218.153"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
+      short-id: "111111"
+  - name: "The Netherlands    IPv6 CIDR YA-5"
+    type: vless
+    server: "158.160.251.31"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
+      short-id: "111111"
+  - name: "The Netherlands    IPv6 CIDR YA-6"
+    type: vless
+    server: "158.160.254.27"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
+      short-id: "111111"
+  - name: "The Netherlands    IPv6 CIDR YA-7"
+    type: vless
+    server: "84.201.151.181"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
+      short-id: "111111"
+  - name: "The Netherlands CIDR YA-3"
+    type: vless
+    server: "158.160.220.7"
+    port: 6443
+    uuid: "4ae3653b-1a69-4c80-8301-887b430cce88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "EagleFOEX2C-aS-78Ivg8U6tCxOJ7X1IovccktpXNzI"
+      short-id: "6ba85179e30d4fc2"
+  - name: "Turkey   CIDR"
+    type: vless
+    server: "87.228.124.212"
+    port: 52006
+    uuid: "75807638-6f19-0fa0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Turkey   CIDR-1"
+    type: vless
+    server: "87.228.124.212"
+    port: 52006
+    uuid: "75807638-6f19-0fa0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "United Arab Emirates CIDR-2"
+    type: vless
+    server: "nlety.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "nlety.ksnodes.net"
+  - name: "United Arab Emirates CIDR-3"
+    type: vless
+    server: "nlety.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision-udp443"
+    client-fingerprint: "chrome"
+    servername: "nlety.ksnodes.net"
+  - name: "United Kingdom CIDR-5"
+    type: vless
+    server: "178.250.242.143"
+    port: 443
+    uuid: "364bd583-58c3-492a-8051-94b896bb33ed"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "m.vk.com"
+    reality-opts:
+      public-key: "pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U"
+      short-id: "b2a6e3d42f05c3d1"
+  - name: "United Kingdom CIDR-6"
+    type: vless
+    server: "178.250.243.220"
+    port: 443
+    uuid: "364bd583-58c3-492a-8051-94b896bb33ed"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "m.vk.com"
+    reality-opts:
+      public-key: "pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U"
+      short-id: "b2a6e3d42f05c3d1"
+  - name: "United Kingdom CIDR-7"
+    type: vless
+    server: "130.78.219.82"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "ukos2.ksnodes.net"
+  - name: "United Kingdom CIDR-8"
+    type: vless
+    server: "ukos.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ukos.ksnodes.net"
+  - name: "United Kingdom CIDR-9"
+    type: vless
+    server: "ukos.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "ukos.ksnodes.net"
+  - name: "United Kingdom CIDR-10"
+    type: vless
+    server: "ukos2.ksnodes.net"
+    port: 443
+    uuid: "b6ce8a51-19b9-4979-91ba-b4298c26d5fc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "ukos2.ksnodes.net"
+  - name: "United States   CIDR"
+    type: vless
+    server: "89.23.112.217"
+    port: 443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    servername: "dnb.herumhas.shop"
+  - name: "Russia CIDR-39"
+    type: vless
+    server: "185.175.47.238"
+    port: 4443
+    uuid: "2cbd01de-4c6b-4b7a-89b2-2da483c9d314"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Russia CIDR-40"
+    type: vless
+    server: "212.41.28.109"
+    port: 4443
+    uuid: "2cbd01de-4c6b-4b7a-89b2-2da483c9d314"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Russia CIDR-41"
+    type: vless
+    server: "5.188.156.138"
+    port: 4443
+    uuid: "2cbd01de-4c6b-4b7a-89b2-2da483c9d314"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Russia CIDR-42"
+    type: vless
+    server: "ru2.frostmotiveseed.net"
+    port: 4443
+    uuid: "2cbd01de-4c6b-4b7a-89b2-2da483c9d314"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Russia CIDR-43"
+    type: vless
+    server: "ru3.frostmotiveseed.net"
+    port: 4443
+    uuid: "2cbd01de-4c6b-4b7a-89b2-2da483c9d314"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Russia CIDR-44"
+    type: vless
+    server: "ru7.frostmotiveseed.net"
+    port: 4443
+    uuid: "2cbd01de-4c6b-4b7a-89b2-2da483c9d314"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Russia CIDR-45"
+    type: vless
+    server: "ru7.frostmotiveseed.net"
+    port: 4443
+    uuid: "2cbd01de-4c6b-4b7a-89b2-2da483c9d314"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Russia CIDR-46"
+    type: vless
+    server: "ru8.frostmotiveseed.net"
+    port: 4443
+    uuid: "2cbd01de-4c6b-4b7a-89b2-2da483c9d314"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Russia CIDR-47"
+    type: vless
+    server: "5.188.224.166"
+    port: 2083
+    uuid: "408c57ff-f67f-49c7-856a-56bff6ac26e0"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-48"
+    type: vless
+    server: "5.188.224.68"
+    port: 2083
+    uuid: "52a4263d-2ad0-452d-a669-c2d2776f4c34"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-49"
+    type: vless
+    server: "178.72.186.76"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "market.yandex.ru"
+  - name: "Russia CIDR-50"
+    type: vless
+    server: "178.72.186.76"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+  - name: "Russia CIDR-51"
+    type: vless
+    server: "217.114.9.170"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Russia CIDR-52"
+    type: vless
+    server: "83.222.19.45"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Russia CIDR-53"
+    type: vless
+    server: "91.229.90.52"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Russia CIDR-54"
+    type: vless
+    server: "178.72.181.41"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-55"
+    type: vless
+    server: "178.72.181.41"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Russia CIDR-56"
+    type: vless
+    server: "188.246.226.14"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-57"
+    type: vless
+    server: "188.246.226.14"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-58"
+    type: vless
+    server: "212.41.8.216"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Russia CIDR-59"
+    type: vless
+    server: "212.41.8.216"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-60"
+    type: vless
+    server: "80.93.187.210"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Russia CIDR-61"
+    type: vless
+    server: "80.93.187.210"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-62"
+    type: vless
+    server: "82.202.249.96"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-63"
+    type: vless
+    server: "95.213.184.3"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-64"
+    type: vless
+    server: "95.213.184.3"
+    port: 52006
+    uuid: "75807638-6f19-07d0-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Russia CIDR-65"
+    type: vless
+    server: "5.188.224.116"
+    port: 2083
+    uuid: "960eb19c-3238-44f2-ae20-dfbba5f1f778"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-66"
+    type: vless
+    server: "5.188.224.135"
+    port: 2083
+    uuid: "960eb19c-3238-44f2-ae20-dfbba5f1f778"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-67"
+    type: vless
+    server: "31.192.111.158"
+    port: 24207
+    uuid: "a6f85c9b-169b-4a1e-b051-2011bcfa2c23"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "web.max.ru"
+    reality-opts:
+      public-key: "V8s9nXxrXloDwOOGNdceeMJAvggTjWG-Ax9R9Y0muEk"
+      short-id: "69"
+  - name: "Russia CIDR-68"
+    type: vless
+    server: "5.188.224.137"
+    port: 2083
+    uuid: "b2433762-ba4f-4f50-b963-32cbc430ca36"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-69"
+    type: vless
+    server: "5.188.224.167"
+    port: 2083
+    uuid: "e68aab34-64bb-4052-a1a0-5e26b04f68c1"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia CIDR-70"
+    type: vless
+    server: "5.188.224.65"
+    port: 2083
+    uuid: "f6b71e78-e065-4cf8-9fbb-b9e25ff67eff"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "ir.ozone.ru"
+    reality-opts:
+      public-key: "J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ"
+      short-id: "6da16b1335651b38"
+    grpc-opts:
+      grpc-service-name: "UpdateService"
+  - name: "Russia   CIDR YA-6"
+    type: vless
+    server: "158.160.159.180"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "id.x5.ru"
+    reality-opts:
+      public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
+      short-id: "111111"
+  - name: "Russia   CIDR YA-7"
+    type: vless
+    server: "158.160.240.20"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "id.x5.ru"
+    reality-opts:
+      public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
+      short-id: "111111"
+  - name: "Russia   CIDR YA-8"
+    type: vless
+    server: "84.201.137.212"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "id.x5.ru"
+    reality-opts:
+      public-key: "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA"
+      short-id: "111111"
+  - name: "Russia    IPv6 CIDR-1"
+    type: vless
+    server: "212.113.121.161"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Russia    IPv6 CIDR-2"
+    type: vless
+    server: "91.198.220.226"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Russia    IPv6 CIDR-3"
+    type: vless
+    server: "91.210.168.147"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Russia    IPv6 CIDR-4"
+    type: vless
+    server: "tn.xbs54as9c6.ru"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "tn.xbs54as9c6.ru"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Russia    IPv6 CIDR-5"
+    type: vless
+    server: "147.45.44.126"
+    port: 8443
+    uuid: "bcb1d557-85e4-4dc2-b051-3dfb0defea0a"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "grpc"
+    client-fingerprint: "chrome"
+    servername: "m.vk.com"
+    reality-opts:
+      public-key: "G_RqCTuul0T90d2vSlUqtrm1mZnfN1kKq5h22TLEzko"
+      short-id: "dd98aa"
+  - name: "Russia CIDR VK"
+    type: vless
+    server: "91.219.227.253"
+    port: 80
+    uuid: "d0ca2925-57c3-4b00-8422-535deb55ecfe"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "qq"
+    servername: "eh.vk.com"
+    reality-opts:
+      public-key: "Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw"
+      short-id: "7dbf7d3233971d5c"
+  - name: "Russia CIDR YA"
+    type: vless
+    server: "89.169.131.213"
+    port: 8443
+    uuid: "1ad02168-e517-450b-9613-67f82ebb6239"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "chrome"
+    servername: "www.microsoft.com"
+    reality-opts:
+      public-key: "aQmnm5f3EpfYsnO74y1auQeRaX3MeyLl_EcIdVijoTk"
+      short-id: "8ec06ed089e89937"
+  - name: "Russia CIDR YA-1"
+    type: vless
+    server: "ru2.bundo.su"
+    port: 443
+    uuid: "8ef19221-6d5e-4bce-baa1-7c043eae3309"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "stats.vk-portal.net"
+    reality-opts:
+      public-key: "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do"
+      short-id: "3c6fc84d"
+  - name: "Anycast-IP CIDR-7"
+    type: vless
+    server: "cluster-other-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-0898-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "cluster-other-1.firstvideocdn.ru"
+  - name: "Anycast-IP CIDR-8"
+    type: vless
+    server: "cluster-other-1.firstvideocdn.ru"
+    port: 52006
+    uuid: "75807638-6f19-0898-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Anycast-IP CIDR-9"
+    type: vless
+    server: "dnb.herumhas.shop"
+    port: 443
+    uuid: "cbf10015-d51a-4a7c-b13a-3c6091135d93"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+  - name: "Anycast-IP  IPv6 CIDR"
+    type: vless
+    server: "109.172.47.214"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 CIDR-1"
+    type: vless
+    server: "185.247.16.42"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 CIDR-2"
+    type: vless
+    server: "185.247.16.5"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 CIDR-3"
+    type: vless
+    server: "185.247.16.63"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 CIDR-4"
+    type: vless
+    server: "185.247.16.7"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 CIDR-5"
+    type: vless
+    server: "31.129.101.32"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 CIDR-6"
+    type: vless
+    server: "83.222.10.107"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 CIDR-7"
+    type: vless
+    server: "83.222.10.131"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 CIDR-8"
+    type: vless
+    server: "83.222.9.244"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 CIDR-9"
+    type: vless
+    server: "89.223.120.216"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 CIDR-10"
+    type: vless
+    server: "178.72.181.125"
+    port: 52006
+    uuid: "75807638-6f19-0bb8-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Anycast-IP  IPv6 CIDR-11"
+    type: vless
+    server: "178.72.181.129"
+    port: 52006
+    uuid: "75807638-6f19-0bb8-ae08-38492ee85c88"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+  - name: "Anycast-IP  IPv6 CIDR YA"
+    type: vless
+    server: "158.160.145.14"
+    port: 443
+    uuid: "0a9c8d56-7e20-4133-af3c-397dd843bee4"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "5post-gate.x5.ru"
+    reality-opts:
+      public-key: "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE"
+      short-id: "111111"
+  - name: "Anycast-IP  IPv6 CIDR YA-1"
+    type: vless
+    server: "yy.xbs54as9c6.ru"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "market.yandex.ru"
+  - name: "Anycast-IP  IPv6 CIDR YA-2"
+    type: vless
+    server: "yy.xbs54as9c6.ru"
+    port: 8443
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "yy.xbs54as9c6.ru"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "rbc.ru"
+  - name: "Anycast-IP CIDR YA-4"
+    type: vless
+    server: "158.160.5.176"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "market.yandex.ru"
+  - name: "Anycast-IP CIDR YA-5"
+    type: vless
+    server: "yy.xbs54as9c6.ru"
+    port: 7000
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    servername: "yy.xbs54as9c6.ru"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "market.yandex.ru"
+  - name: "Anycast-IP CIDR YA-6"
+    type: vless
+    server: "yy.xbs54as9c6.ru"
+    port: 8443
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "rbc.ru"
+  - name: "Czechia CIDR"
+    type: trojan
+    server: "ch-2.bexum.fun"
+    port: 443
+    password: "BmVb9TGoytYhaLnZhkrVCtx8khbQFTA_"
+    udp: true
+    skip-cert-verify: true
+    sni: "ch-2.bexum.fun"
+  - name: "Czechia CIDR-1"
+    type: trojan
+    server: "ch-2.bexum.fun"
+    port: 443
+    password: "BmVb9TGoytYhaLnZhkrVCtx8khbQFTA_"
+    udp: true
+    skip-cert-verify: true
+  - name: "Denmark SNI-RU www.kinopoisk.ru"
+    type: vless
+    server: "81.17.159.63"
+    port: 443
+    uuid: "c8b6167c-615a-53ec-ae23-87054336339e"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "chrome"
+    servername: "www.kinopoisk.ru"
+    reality-opts:
+      public-key: "XDBvi6U6TnvlyuCdsIUtQ_yjrjyTEvr0KLHvuo-pF0Q"
+      short-id: "cf53a10184e17998"
+  - name: "Denmark SNI-RU www.kinopoisk.ru-1"
+    type: vless
+    server: "81.17.159.63"
+    port: 443
+    uuid: "TMG_b2c82aeaf61"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "chrome"
+    servername: "www.kinopoisk.ru"
+    reality-opts:
+      public-key: "XDBvi6U6TnvlyuCdsIUtQ_yjrjyTEvr0KLHvuo-pF0Q"
+      short-id: "cf53a10184e17998"
+  - name: "Estonia SNI-RU web.max.ru"
+    type: vless
+    server: "185.88.37.251"
+    port: 21491
+    uuid: "45ab08c0-f943-4f8a-a7a6-d779ba72c42e"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "web.max.ru"
+    reality-opts:
+      public-key: "VXZTtCQoAyFCqgNpimgbQx9lcnmSy5CDzoEdifCtmEs"
+      short-id: "0bde"
+  - name: "France    IPv6 SNI-RU ads.x5.ru"
+    type: vless
+    server: "213.176.73.37"
+    port: 443
+    uuid: "367c6258-9975-49f3-9367-a3634c42f102"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "8SMrdhtgl0fWgtMUK_t1sXjQ1QV-U0pabgQ2gkc6cG4"
+      short-id: "4f7e8ce8972c08ae"
+  - name: "Germany    IPv6 SNI-RU ozon.ru"
+    type: vless
+    server: "f2.biglocal.club"
+    port: 8080
+    uuid: "bd52c9f6-56d5-42da-82f1-53f5e86e9b53"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "chrome"
+    servername: "ozon.ru"
+    reality-opts:
+      public-key: "XBePIY00JetBf0pbmcx-Dvu8XsZ-l079GiHf93HhS0Y"
+      short-id: "6d6f13013d3e1d0c"
+  - name: "Germany    IPv6 SNI-RU vk.com"
+    type: vless
+    server: "109.248.168.81"
+    port: 443
+    uuid: "2d4cc8f5-6670-4ef4-8728-4d9e8a39b1a2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "vk.com"
+    reality-opts:
+      public-key: "82T2G1fUpXnrWXcriZxD0_O22QOvtQRIun_Cu6m6l2E"
+      short-id: ""
+  - name: "Germany SNI-RU ads.x5.ru"
+    type: vless
+    server: "rudostup.tgflovv.ru"
+    port: 443
+    uuid: "a231c089-9065-4525-a226-bb4f4fd487d2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "ufunjvjwHQ5AbHAF03i3RxjOof5P23ALLsbGlrU7Uik"
+      short-id: "e90fc4a152dd45"
+  - name: "Germany SNI-RU ads.x5.ru-1"
+    type: vless
+    server: "rudostup.tgflovv.ru"
+    port: 443
+    uuid: "a231c089-9065-4525-a226-bb4f4fd487d2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "ufunjvjwHQ5AbHAF03i3RxjOof5P23ALLsbGlrU7Uik"
+      short-id: "e90fc4a152dd45"
+  - name: "Germany SNI-RU ads.x5.ru-2"
+    type: vless
+    server: "rudostup.tgflovv.ru"
+    port: 443
+    uuid: "a231c089-9065-4525-a226-bb4f4fd487d2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "ufunjvjwHQ5AbHAF03i3RxjOof5P23ALLsbGlrU7Uik"
+      short-id: "e90fc4a152dd45"
+  - name: "Germany SNI-RU ads.x5.ru-3"
+    type: vless
+    server: "rudostup.tgflovv.ru"
+    port: 443
+    uuid: "a231c089-9065-4525-a226-bb4f4fd487d2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "ufunjvjwHQ5AbHAF03i3RxjOof5P23ALLsbGlrU7Uik"
+      short-id: "e90fc4a152dd45"
+  - name: "Germany SNI-RU ads.x5.ru-4"
+    type: vless
+    server: "rudostup.tgflovv.ru"
+    port: 443
+    uuid: "a231c089-9065-4525-a226-bb4f4fd487d2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "ufunjvjwHQ5AbHAF03i3RxjOof5P23ALLsbGlrU7Uik"
+      short-id: "e90fc4a152dd45"
+  - name: "Germany SNI-RU ads.x5.ru-5"
+    type: vless
+    server: "rudostup.tgflovv.ru"
+    port: 443
+    uuid: "a231c089-9065-4525-a226-bb4f4fd487d2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "ufunjvjwHQ5AbHAF03i3RxjOof5P23ALLsbGlrU7Uik"
+      short-id: "e90fc4a152dd45"
+  - name: "Germany SNI-RU ads.x5.ru-6"
+    type: vless
+    server: "rudostup.tgflovv.ru"
+    port: 443
+    uuid: "a231c089-9065-4525-a226-bb4f4fd487d2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "ufunjvjwHQ5AbHAF03i3RxjOof5P23ALLsbGlrU7Uik"
+      short-id: "e90fc4a152dd45"
+  - name: "Germany SNI-RU ads.x5.ru-7"
+    type: vless
+    server: "rudostup.tgflovv.ru"
+    port: 443
+    uuid: "a231c089-9065-4525-a226-bb4f4fd487d2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "ufunjvjwHQ5AbHAF03i3RxjOof5P23ALLsbGlrU7Uik"
+      short-id: "e90fc4a152dd45"
+  - name: "Germany SNI-RU ads.x5.ru-8"
+    type: vless
+    server: "rudostup.tgflovv.ru"
+    port: 443
+    uuid: "a231c089-9065-4525-a226-bb4f4fd487d2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "ufunjvjwHQ5AbHAF03i3RxjOof5P23ALLsbGlrU7Uik"
+      short-id: "e90fc4a152dd45"
+  - name: "Germany SNI-RU ads.x5.ru-9"
+    type: vless
+    server: "rudostup.tgflovv.ru"
+    port: 443
+    uuid: "a231c089-9065-4525-a226-bb4f4fd487d2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "ufunjvjwHQ5AbHAF03i3RxjOof5P23ALLsbGlrU7Uik"
+      short-id: "e90fc4a152dd45"
+  - name: "Indonesia SNI-RU rbc.ru"
+    type: vless
+    server: "81.26.191.37"
+    port: 443
+    uuid: "324e54cc-60ac-4fbf-a97c-24d5101a1020"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "rbc.ru"
+    reality-opts:
+      public-key: "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg"
+      short-id: "48fccabc158a4c22"
+  - name: "Indonesia SNI-RU rbc.ru-1"
+    type: vless
+    server: "81.26.191.37"
+    port: 8443
+    uuid: "324e54cc-60ac-4fbf-a97c-24d5101a1020"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "rbc.ru"
+    reality-opts:
+      public-key: "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg"
+      short-id: "04bf0403f96e5b4b"
+  - name: "Indonesia SNI-RU rbc.ru-2"
+    type: vless
+    server: "81.26.191.37"
+    port: 8443
+    uuid: "324e54cc-60ac-4fbf-a97c-24d5101a1020"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "rbc.ru"
+    reality-opts:
+      public-key: "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg"
+      short-id: "28047c78b3f5ee2c"
+  - name: "Indonesia SNI-RU rbc.ru-3"
+    type: vless
+    server: "81.26.191.37"
+    port: 443
+    uuid: "a47db771-2a97-4f1a-8955-ab7e469d0629"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "rbc.ru"
+    reality-opts:
+      public-key: "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg"
+      short-id: "28047c78b3f5ee2c"
+  - name: "Indonesia SNI-RU rbc.ru-4"
+    type: vless
+    server: "81.26.191.37"
+    port: 8443
+    uuid: "a47db771-2a97-4f1a-8955-ab7e469d0629"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "rbc.ru"
+    reality-opts:
+      public-key: "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg"
+      short-id: "04bf0403f96e5b4b"
+  - name: "Lithuania SNI-RU rbc.ru"
+    type: vless
+    server: "81.26.177.206"
+    port: 8443
+    uuid: "ac0700b3-382d-431a-bca8-1fd250736891"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "rbc.ru"
+    reality-opts:
+      public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+      short-id: "e0ef3d5c0aacb615"
+  - name: "Lithuania SNI-RU rbc.ru-1"
+    type: vless
+    server: "81.26.177.206"
+    port: 8443
+    uuid: "bc2cc252-e4b8-410a-8815-9e4956e70e84"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "rbc.ru"
+    reality-opts:
+      public-key: "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA"
+      short-id: "2cfb5a0ae8ab0cb0"
+  - name: "Pakistan SNI-RU www.m.vk.ru"
+    type: vless
+    server: "111.88.146.74"
+    port: 25462
+    uuid: "b58a4390-6aba-451a-8010-61916ebe6bb3"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: "chrome"
+    servername: "www.m.vk.ru"
+    reality-opts:
+      public-key: "PKfGbpZj-i7I76rfgEDgJIsXZ_TqE0B2ntNN6g3qTXI"
+      short-id: "9a694cfa8ebd15"
+  - name: "Poland    IPv6 SNI-RU max.ru"
+    type: vless
+    server: "95.85.253.153"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Poland    IPv6 SNI-RU max.ru-1"
+    type: vless
+    server: "95.85.253.153"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Sweden SNI-RU eh.vk.com"
+    type: vless
+    server: "138.124.71.144"
+    port: 8443
+    uuid: "a3672256-e3ba-40c0-81a8-dcd8b159dcd2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "chrome"
+    servername: "eh.vk.com"
+    reality-opts:
+      public-key: "_tBiRkButwPxxa2HHuNufy0Tyr_0SViQZReJT75JVTI"
+      short-id: "d49d578f280fd83a"
+  - name: "Sweden SNI-RU eh.vk.com-1"
+    type: vless
+    server: "138.124.71.144"
+    port: 8443
+    uuid: "a3672256-e3ba-40c0-81a8-dcd8b159dcd2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "chrome"
+    servername: "eh.vk.com"
+    reality-opts:
+      public-key: "_tBiRkButwPxxa2HHuNufy0Tyr_0SViQZReJT75JVTI"
+      short-id: "d49d578f280fd83a"
+  - name: "Sweden SNI-RU max.ru"
+    type: vless
+    server: "185.100.157.171"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Sweden SNI-RU max.ru-1"
+    type: vless
+    server: "185.100.157.171"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Sweden SNI-RU max.ru-2"
+    type: vless
+    server: "185.100.157.173"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Sweden SNI-RU max.ru-3"
+    type: vless
+    server: "185.100.157.173"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Sweden SNI-RU max.ru-4"
+    type: vless
+    server: "185.100.157.60"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Sweden SNI-RU max.ru-5"
+    type: vless
+    server: "185.100.157.60"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Sweden SNI-RU max.ru-6"
+    type: vless
+    server: "185.107.74.163"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Switzerland SNI-RU max.ru"
+    type: vless
+    server: "178.17.62.81"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Switzerland SNI-RU max.ru-1"
+    type: vless
+    server: "95.85.239.240"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Switzerland SNI-RU max.ru-2"
+    type: vless
+    server: "95.85.239.96"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "The Netherlands   SNI-RU ads.x5.ru"
+    type: vless
+    server: "55.denditop.site"
+    port: 443
+    uuid: "ba3778db-bd1d-4b84-94e8-f10551d15514"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "random"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "v6rib0-2FxBd1MnBxdylbIRIhvXywSj56QEtCkaEuBo"
+      short-id: "27e53bbcab7593d7"
+  - name: "The Netherlands SNI-RU api-maps.yandex.ru"
+    type: vless
+    server: "171.22.133.58"
+    port: 443
+    uuid: "1acb6430-194f-4700-853a-41a8ba5f6f16"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "firefox"
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: "BfQBWkqiYIaT-v-jO6FFaGMPsBFOtfFxKOh3HJZXK3c"
+      short-id: "3de90e3535433409"
+  - name: "The Netherlands SNI-RU eh.vk.com"
+    type: vless
+    server: "2.26.109.124"
+    port: 8443
+    uuid: "a3672256-e3ba-40c0-81a8-dcd8b159dcd2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "chrome"
+    servername: "eh.vk.com"
+    reality-opts:
+      public-key: "_tBiRkButwPxxa2HHuNufy0Tyr_0SViQZReJT75JVTI"
+      short-id: "d49d578f280fd83a"
+  - name: "The Netherlands SNI-RU eh.vk.com-1"
+    type: vless
+    server: "2.26.109.124"
+    port: 8443
+    uuid: "a3672256-e3ba-40c0-81a8-dcd8b159dcd2"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "chrome"
+    servername: "eh.vk.com"
+    reality-opts:
+      public-key: "_tBiRkButwPxxa2HHuNufy0Tyr_0SViQZReJT75JVTI"
+      short-id: "d49d578f280fd83a"
+  - name: "United Kingdom SNI-RU www.io.ozone.ru"
+    type: vless
+    server: "72.56.32.79"
+    port: 9892
+    uuid: "43eea0d5-871e-4fcd-b54a-f827b62b1640"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "www.io.ozone.ru"
+    reality-opts:
+      public-key: "im7-98zxWz_OGimQfeoN_Y5p1tAy8KoZCxOe2wOeWS4"
+      short-id: ""
+  - name: "Russia SNI-RU eh.vk.com"
+    type: vless
+    server: "5.183.253.171"
+    port: 443
+    uuid: "31fb98b7-e7a1-4b56-8c6a-3f060f06393c"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "eh.vk.com"
+    reality-opts:
+      public-key: "yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28"
+      short-id: "8248954896"
+  - name: "Russia SNI-RU eh.vk.com-1"
+    type: vless
+    server: "freetg.strettenvpn.com"
+    port: 443
+    uuid: "31fb98b7-e7a1-4b56-8c6a-3f060f06393c"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "eh.vk.com"
+    reality-opts:
+      public-key: "yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28"
+      short-id: "8248954896"
+  - name: "Russia SNI-RU login.vk.ru"
+    type: vless
+    server: "141.98.191.78"
+    port: 443
+    uuid: "69a2af58-d74a-44ca-864a-e09b493f4274"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    client-fingerprint: "chrome"
+    servername: "login.vk.ru"
+    reality-opts:
+      public-key: "wpLAX1ax15YI3H8kmmE8PH6S4vCjAwE2gYw6hG6QIh4"
+      short-id: "a0"
+  - name: "Russia SNI-RU sun6-21.userapi.com"
+    type: vless
+    server: "serv21.strettenvpn.com"
+    port: 443
+    uuid: "e16052ad-518a-4cd5-b572-c4ac60c4ec65"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "sun6-21.userapi.com"
+    reality-opts:
+      public-key: "yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28"
+      short-id: "8248954896"
+  - name: "Anycast-IP  IPv6 SNI-RU ads.x5.ru"
+    type: vless
+    server: "62.60.153.179"
+    port: 6444
+    uuid: "1f1a6ea7-b2d5-4fd4-be5f-0d8b1317d6b5"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: "xhttp"
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: "FD7YTKH3QSTPqm35DGFG23jJHC_rKo_T2ry7Nitvhjs"
+      short-id: "c15a7e422151adbc"
+  - name: "Anycast-IP  IPv6 SNI-RU kinopoisk.ru"
+    type: vless
+    server: "178.18.147.230"
+    port: 9999
+    uuid: "d8dc8088-8ada-40b6-b0d9-fcc99aed3ecf"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "kinopoisk.ru"
+    reality-opts:
+      public-key: "lYKEh3ELaWSDumW4oaJrKxiGX0RzjfstFrU0Dpf2uw8"
+      short-id: "911debda80e7b51b"
+  - name: "Anycast-IP  IPv6 SNI-RU live.ok.ru"
+    type: vless
+    server: "72.56.38.48"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 SNI-RU live.ok.ru-1"
+    type: vless
+    server: "72.56.38.52"
+    port: 4100
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/v1"
+      headers:
+        Host: "live.ok.ru"
+  - name: "Anycast-IP  IPv6 SNI-RU max.ru"
+    type: vless
+    server: "144.31.171.182"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "qq"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Anycast-IP  IPv6 SNI-RU max.ru-1"
+    type: vless
+    server: "144.31.171.182"
+    port: 443
+    uuid: "41e72698-f09a-4617-8f1b-33359c2473cc"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "max.ru"
+    reality-opts:
+      public-key: "QcYJtyoXm01O0DbwCc_sXDqa0Y9D6detbg07HovecSg"
+      short-id: "a0f2b4232e34f664"
+  - name: "Anycast-IP  IPv6 SNI-RU stats.vk-portal.net"
+    type: vless
+    server: "77.221.149.208"
+    port: 443
+    uuid: "8ef19221-6d5e-4bce-baa1-7c043eae3309"
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    flow: "xtls-rprx-vision"
+    client-fingerprint: "chrome"
+    servername: "stats.vk-portal.net"
+    reality-opts:
+      public-key: "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do"
+      short-id: "3c6fc84d"
+  - name: "Anycast-IP SNI-RU rbc.ru"
+    type: vless
+    server: "46.243.211.17"
+    port: 8443
+    uuid: "75356919-6ece-455c-ba7a-9f042a60d2c5"
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: "ws"
+    ws-opts:
+      path: "/stream"
+      headers:
+        Host: "rbc.ru"
+  - name: "CUSTOMVPNSERVER"
+    type: ss
+    server: "91.99.16.244"
+    port: 443
+    cipher: "Parsashonam-298"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN7403496"
+    type: ss
+    server: "12-join.v2raytz.ru"
+    port: 443
+    cipher: "telegram-id-Arfilter"
+    password: ""
+    udp: true
+  - name: "MsV2rayWs-All"
+    type: ss
+    server: "all.msv2ray.online"
+    port: 2083
+    cipher: "--MsV2ray--MsV2ray--"
+    password: ""
+    udp: true
+  - name: "MsV2rayWs-All-1"
+    type: ss
+    server: "all.msv2ray.online"
+    port: 2095
+    cipher: "--MsV2ray-MsV2ray-MsV2ray--"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN4189668"
+    type: ss
+    server: "93.185.158.14"
+    port: 443
+    cipher: "00651706-0d2d-448b-80f2-7678f3e5187c"
+    password: ""
+    udp: true
+  - name: "Cyprus WorkTitans"
+    type: ss
+    server: "171.22.114.248"
+    port: 27394
+    cipher: "00b0d4de-b126-4511-87c1-8f1feb462fa6"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN8918657"
+    type: ss
+    server: "jg0dkrdfmq.country-18.eu-ffast.com"
+    port: 443
+    cipher: "00e236b5-328f-4dce-9e12-5d6f20e6f289"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN16117199"
+    type: ss
+    server: "net2.intfreed.ru"
+    port: 11443
+    cipher: "00f1e267-b6ca-4f48-aacf-ce5c8803f383"
+    password: ""
+    udp: true
+  - name: "mehrosaboran"
+    type: ss
+    server: "159.69.112.17"
+    port: 2095
+    cipher: "015e00a0-05c0-4476-fbed-4d1adc69e054"
+    password: ""
+    udp: true
+  - name: "mehrosaboran-1"
+    type: ss
+    server: "172.67.146.171"
+    port: 2095
+    cipher: "015e00a0-05c0-4476-fbed-4d1adc69e054"
+    password: ""
+    udp: true
+  - name: "mehrosaboran-2"
+    type: ss
+    server: "zula.ir"
+    port: 2095
+    cipher: "015e00a0-05c0-4476-fbed-4d1adc69e054"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN6326921"
+    type: ss
+    server: "finland.marzxox.shop"
+    port: 210
+    cipher: "0245889d-da1b-4956-85f4-028fd8e4f8f2"
+    password: ""
+    udp: true
+  - name: "GozargahVPN -6"
+    type: ss
+    server: "gozargahvpn-gozargahvpn-gozargahvpn.mymtn.sbs"
+    port: 443
+    cipher: "025a2602-e9d0-40db-92ea-dfc256ef2a6a"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN14306881"
+    type: ss
+    server: "128.140.14.218"
+    port: 123
+    cipher: "0267c264-2d80-4eec-fc61-6a77e3e2fa93"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN20097702"
+    type: ss
+    server: "104.18.33.36"
+    port: 443
+    cipher: "029b2274-47e2-4831-9f03-3bbe9d7ad0e8"
+    password: ""
+    udp: true
+  - name: "France 0VH"
+    type: ss
+    server: "151.101.25.242"
+    port: 80
+    cipher: "02d87d00-c769-48d8-91cb-bd05e2f62790"
+    password: ""
+    udp: true
+  - name: "REALITYGB"
+    type: ss
+    server: "91.231.186.24"
+    port: 8443
+    cipher: "02db10db44e04d6aae77331b0694ac1b"
+    password: ""
+    udp: true
+  - name: "FreakConfig"
+    type: ss
+    server: "172.64.33.91"
+    port: 443
+    cipher: "02e46039-200d-4ae4-ac90-b0d619f72034"
+    password: ""
+    udp: true
+  - name: "FreakConfig-1"
+    type: ss
+    server: "clyde.ns.cloudflare.com"
+    port: 443
+    cipher: "02e46039-200d-4ae4-ac90-b0d619f72034"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN7182943"
+    type: ss
+    server: "james2.evovpn.ru"
+    port: 443
+    cipher: "02f81d56-f7aa-4bfc-bb1a-00037e579c14"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN9428500"
+    type: ss
+    server: "ifmbv9bife41.dop100.com"
+    port: 2053
+    cipher: "032863bc-9508-01ff-1735-112282a4da83"
+    password: ""
+    udp: true
+  - name: "FreakConfig-2"
+    type: ss
+    server: "go.adslimit.info"
+    port: 2345
+    cipher: "0331b690-79fc-49d5-85f0-54faa4eff89f"
+    password: ""
+    udp: true
+  - name: "United Kingdom Digital Ocean"
+    type: ss
+    server: "46.101.57.231"
+    port: 443
+    cipher: "037e395f-f79d-4d61-bb92-dafcc27e53ba"
+    password: ""
+    udp: true
+  - name: "proxy-446"
+    type: ss
+    server: "172.66.156.81"
+    port: 80
+    cipher: "039b5ea3-2003-485c-8d71-9daf21386990"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN14368078"
+    type: ss
+    server: "france.torprospeed.ir"
+    port: 250
+    cipher: "03dd6d92-054f-409c-88c0-fad544234d6e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN12977104"
+    type: ss
+    server: "91.107.181.159"
+    port: 7443
+    cipher: "0420bd64-ee35-481b-bf7d-ca404d639037"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN12925805"
+    type: ss
+    server: "91.107.181.159"
+    port: 8443
+    cipher: "0420bd64-ee35-481b-bf7d-ca404d639037"
+    password: ""
+    udp: true
+  - name: "GB66.163.117.58-22324116.26ms"
+    type: ss
+    server: "66.163.117.58"
+    port: 22324
+    cipher: "04621baeab3611ecb9090242ac120002Og=="
+    password: ""
+    udp: true
+  - name: "AutoAiVPN20961775"
+    type: ss
+    server: "104.21.69.22"
+    port: 443
+    cipher: "04d533ee-51ba-47cc-a703-6336470898ad"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN12576954"
+    type: ss
+    server: "sweet-combination.seotoolsforyou.co.uk"
+    port: 80
+    cipher: "05020a61-3c0c-4ead-b256-7851ff905a75"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN20138981"
+    type: ss
+    server: "100.29.55.217"
+    port: 22222
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN6309352"
+    type: ss
+    server: "13.36.1.17"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN16977634"
+    type: ss
+    server: "13.36.1.246"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN10796351"
+    type: ss
+    server: "13.36.100.105"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "VlessConfig"
+    type: ss
+    server: "13.36.100.192"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN1661125"
+    type: ss
+    server: "13.36.102.158"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN21500969"
+    type: ss
+    server: "13.36.104.238"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN7980949"
+    type: ss
+    server: "13.36.105.165"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN8844012"
+    type: ss
+    server: "13.36.106.107"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN10108703"
+    type: ss
+    server: "13.36.106.4"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN1658617"
+    type: ss
+    server: "13.36.11.189"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN14974837"
+    type: ss
+    server: "13.36.126.131"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN12329047"
+    type: ss
+    server: "13.36.131.171"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN4769814"
+    type: ss
+    server: "13.36.133.103"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN15628441"
+    type: ss
+    server: "13.36.133.164"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "JoinTelegramFarah_VPN"
+    type: ss
+    server: "13.36.139.6"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN672393"
+    type: ss
+    server: "13.36.14.125"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN12118843"
+    type: ss
+    server: "13.36.141.115"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN14817202"
+    type: ss
+    server: "13.36.143.88"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "VlessConfig-1"
+    type: ss
+    server: "13.36.144.97"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN5345494"
+    type: ss
+    server: "13.36.145.127"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "VlessConfig-2"
+    type: ss
+    server: "13.36.150.189"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN10289828"
+    type: ss
+    server: "13.36.157.0"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN14082002"
+    type: ss
+    server: "13.36.162.48"
+    port: 22222
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN7704563"
+    type: ss
+    server: "13.36.17.197"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN5496955"
+    type: ss
+    server: "13.36.179.207"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN11932358"
+    type: ss
+    server: "13.36.179.32"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "VlessConfig-3"
+    type: ss
+    server: "13.36.179.38"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN12213813"
+    type: ss
+    server: "13.36.187.193"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN22078688"
+    type: ss
+    server: "13.36.190.50"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN2799176"
+    type: ss
+    server: "13.36.190.91"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN10586761"
+    type: ss
+    server: "13.36.20.247"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN7734934"
+    type: ss
+    server: "13.36.201.87"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN12595065"
+    type: ss
+    server: "13.36.205.108"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN9414076"
+    type: ss
+    server: "13.36.206.216"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN4900003"
+    type: ss
+    server: "13.36.212.134"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN9099041"
+    type: ss
+    server: "13.36.216.106"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN1670527"
+    type: ss
+    server: "13.36.217.61"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN1776698"
+    type: ss
+    server: "13.36.220.128"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN9480490"
+    type: ss
+    server: "13.36.222.54"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN6737707"
+    type: ss
+    server: "13.36.223.77"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN8770825"
+    type: ss
+    server: "13.36.23.189"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN11649705"
+    type: ss
+    server: "13.36.246.100"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "JoinTelegramFarah_VPN-1"
+    type: ss
+    server: "13.36.247.35"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN7313702"
+    type: ss
+    server: "13.36.249.38"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN3926373"
+    type: ss
+    server: "13.36.252.221"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
+  - name: "AutoAiVPN10462402"
+    type: ss
+    server: "13.36.29.242"
+    port: 22224
+    cipher: "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+    password: ""
+    udp: true
 
 proxy-groups:
   - name: "Auto"
@@ -19,11 +6050,311 @@ proxy-groups:
     interval: 180
     tolerance: 50
     proxies:
+      - "Hong Kong, Hong Kong  BL"
+      - "The Netherlands, Amsterdam  BL"
+      - "The Netherlands, Amsterdam  BL-1"
+      - "The Netherlands, Amsterdam  BL-2"
+      - "The Netherlands, Amsterdam  BL-3"
+      - "The Netherlands, Amsterdam  BL-4"
+      - "The Netherlands, Amsterdam  BL-5"
+      - "The Netherlands, Amsterdam  BL-6"
+      - "United States, Redmond (Downtown)  BL"
+      - "United States, Santa Clara  BL"
+      - "United States, Santa Clara  BL-1"
+      - "Kazakhstan, Pavlodar  BL"
+      - "Kazakhstan, Pavlodar  BL-1"
+      - "The Netherlands, Amsterdam  BL-7"
+      - "United States, Los Angeles  BL"
+      - "Anycast-IP  IPv6  BL"
+      - "Anycast-IP  IPv6  BL-1"
+      - "Anycast-IP  IPv6  BL-2"
+      - "Canada, Toronto  BL"
+      - "Czechia, Prague    IPv6  BL"
+      - "Estonia, Tallinn    IPv6  BL"
+      - "Estonia, Tallinn    IPv6  BL-1"
+      - "Finland, Helsinki  BL"
+      - "Finland, Helsinki    IPv6  BL"
+      - "Finland, Helsinki    IPv6  BL-1"
+      - "Germany    IPv6  BL"
+      - "Germany    IPv6  BL-1"
+      - "Germany    IPv6  BL-2"
+      - "Germany, Falkenstein    IPv6  BL"
+      - "proxy-29"
+      - "Germany, Frankfurt am Main    IPv6  BL"
+      - "Hong Kong, Hong Kong  BL-1"
+      - "Hong Kong, Hong Kong  BL-2"
+      - "India, New Delhi  BL"
+      - "Moldova, Chisinau  BL"
+      - "Poland, Warsaw    BL"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-1"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-2"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-3"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-4"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-5"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-6"
+      - "Thailand, Bangkok  BL"
+      - "The Netherlands, Amsterdam    IPv6  BL"
+      - "Turkey, Istanbul  BL"
+      - "United Arab Emirates, Abu Dhabi  BL"
+      - "United Arab Emirates, Abu Dhabi  BL-1"
+      - "United Arab Emirates, Abu Dhabi  BL-2"
+      - "United Arab Emirates, Dubai  BL"
+      - "United Kingdom, Fareham  BL"
+      - "United Kingdom, Fareham  BL-1"
+      - "United Kingdom, Fareham  BL-2"
+      - "United Kingdom, Fareham  BL-3"
+      - "United Kingdom, Fareham  BL-4"
+      - "United Kingdom, Fareham  BL-5"
+      - "United States, Los Angeles  BL-1"
+      - "United States, Piscataway  BL"
+      - "United States, Piscataway  BL-1"
+      - "United States, Redmond (Downtown)  BL-1"
+      - "Anycast-IP  BL"
+      - "Anycast-IP  BL-1"
+      - "Anycast-IP  BL-2"
+      - "Anycast-IP  BL-3"
+      - "Anycast-IP  IPv6  BL-3"
+      - "Anycast-IP  IPv6  BL-4"
+      - "Anycast-IP  IPv6  BL-5"
+      - "Anycast-IP  IPv6  BL-6"
+      - "Anycast-IP  IPv6  BL-7"
+      - "Anycast-IP  IPv6  BL-8"
+      - "Anycast-IP  IPv6  BL-9"
+      - "Anycast-IP  IPv6  BL-10"
+      - "Anycast-IP  IPv6  BL-11"
+      - "Anycast-IP  IPv6  BL-12"
+      - "Anycast-IP  IPv6  BL-13"
+      - "Anycast-IP  IPv6  BL-14"
+      - "Anycast-IP  IPv6  BL-15"
+      - "Anycast-IP  IPv6  BL-16"
+      - "Anycast-IP  IPv6  BL-17"
+      - "Anycast-IP  IPv6  BL-18"
+      - "Anycast-IP  IPv6  BL-19"
+      - "Anycast-IP  IPv6  BL-20"
+      - "Anycast-IP  IPv6  BL-21"
+      - "Anycast-IP  IPv6  BL-22"
+      - "Anycast-IP  IPv6  BL-23"
+      - "Anycast-IP  IPv6  BL-24"
+      - "Anycast-IP  IPv6  BL-25"
+      - "Anycast-IP  IPv6  BL-26"
+      - "Anycast-IP  IPv6  BL-27"
+      - "Anycast-IP  IPv6  BL-28"
+      - "Anycast-IP  IPv6  BL-29"
+      - "Anycast-IP  IPv6  BL-30"
+      - "Anycast-IP  IPv6  BL-31"
+      - "Anycast-IP  IPv6  BL-32"
+      - "Anycast-IP  IPv6  BL-33"
+      - "Anycast-IP  IPv6  BL-34"
+      - "Anycast-IP  IPv6  BL-35"
+      - "Anycast-IP  IPv6  BL-36"
+      - "Anycast-IP  IPv6  BL-37"
+      - "Anycast-IP  IPv6  BL-38"
+      - "Anycast-IP  IPv6  BL-39"
+      - "Anycast-IP  IPv6  BL-40"
+      - "Anycast-IP  IPv6  BL-41"
+      - "Anycast-IP  IPv6  BL-42"
+      - "Anycast-IP  IPv6  BL-43"
+      - "Anycast-IP  IPv6  BL-44"
+      - "Anycast-IP  IPv6  BL-45"
+      - "Anycast-IP  IPv6  BL-46"
+      - "Anycast-IP  IPv6  BL-47"
+      - "Anycast-IP  IPv6  BL-48"
+      - "Anycast-IP  IPv6  BL-49"
+      - "Anycast-IP  IPv6  BL-50"
+      - "Anycast-IP  IPv6  BL-51"
+      - "Anycast-IP  IPv6  BL-52"
+      - "Anycast-IP  IPv6  BL-53"
+      - "Anycast-IP  IPv6  BL-54"
+      - "Anycast-IP  IPv6  BL-55"
+      - "Anycast-IP  IPv6  BL-56"
+      - "Anycast-IP  IPv6  BL-57"
+      - "Anycast-IP  IPv6  BL-58"
+      - "Anycast-IP  IPv6  BL-59"
+      - "Anycast-IP  IPv6  BL-60"
+      - "Anycast-IP  IPv6  BL-61"
+      - "Anycast-IP  IPv6  BL-62"
+      - "Anycast-IP  IPv6  BL-63"
+      - "Anycast-IP  IPv6  BL-64"
+      - "Anycast-IP  IPv6  BL-65"
+      - "Anycast-IP  IPv6  BL-66"
+      - "Anycast-IP  IPv6  BL-67"
+      - "Anycast-IP  IPv6  BL-68"
+      - "Anycast-IP  IPv6  BL-69"
+      - "Anycast-IP  IPv6  BL-70"
+      - "Anycast-IP  IPv6  BL-71"
+      - "Anycast-IP  IPv6  BL-72"
+      - "Anycast-IP  IPv6  BL-73"
+      - "Anycast-IP  IPv6  BL-74"
+      - "Anycast-IP  IPv6  BL-75"
+      - "Anycast-IP  IPv6  BL-76"
+      - "Anycast-IP  IPv6  BL-77"
+      - "Anycast-IP  IPv6  BL-78"
+      - "The Netherlands, Amsterdam  BL-8"
+      - "Finland    IPv6 CIDR"
+      - "Finland    IPv6 CIDR-1"
+      - "Germany   CIDR"
+      - "Germany    IPv6 CIDR"
+      - "Germany    IPv6 CIDR-1"
+      - "Germany    IPv6 CIDR-2"
+      - "Germany    IPv6 CIDR-3"
+      - "Poland    IPv6 CIDR"
+      - "Poland    IPv6 CIDR-1"
 
   - name: "PROXY"
     type: select
     proxies:
       - "Auto"
+      - "Hong Kong, Hong Kong  BL"
+      - "The Netherlands, Amsterdam  BL"
+      - "The Netherlands, Amsterdam  BL-1"
+      - "The Netherlands, Amsterdam  BL-2"
+      - "The Netherlands, Amsterdam  BL-3"
+      - "The Netherlands, Amsterdam  BL-4"
+      - "The Netherlands, Amsterdam  BL-5"
+      - "The Netherlands, Amsterdam  BL-6"
+      - "United States, Redmond (Downtown)  BL"
+      - "United States, Santa Clara  BL"
+      - "United States, Santa Clara  BL-1"
+      - "Kazakhstan, Pavlodar  BL"
+      - "Kazakhstan, Pavlodar  BL-1"
+      - "The Netherlands, Amsterdam  BL-7"
+      - "United States, Los Angeles  BL"
+      - "Anycast-IP  IPv6  BL"
+      - "Anycast-IP  IPv6  BL-1"
+      - "Anycast-IP  IPv6  BL-2"
+      - "Canada, Toronto  BL"
+      - "Czechia, Prague    IPv6  BL"
+      - "Estonia, Tallinn    IPv6  BL"
+      - "Estonia, Tallinn    IPv6  BL-1"
+      - "Finland, Helsinki  BL"
+      - "Finland, Helsinki    IPv6  BL"
+      - "Finland, Helsinki    IPv6  BL-1"
+      - "Germany    IPv6  BL"
+      - "Germany    IPv6  BL-1"
+      - "Germany    IPv6  BL-2"
+      - "Germany, Falkenstein    IPv6  BL"
+      - "proxy-29"
+      - "Germany, Frankfurt am Main    IPv6  BL"
+      - "Hong Kong, Hong Kong  BL-1"
+      - "Hong Kong, Hong Kong  BL-2"
+      - "India, New Delhi  BL"
+      - "Moldova, Chisinau  BL"
+      - "Poland, Warsaw    BL"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-1"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-2"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-3"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-4"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-5"
+      - "Poland, Warsaw (Mokotw)    IPv6  BL-6"
+      - "Thailand, Bangkok  BL"
+      - "The Netherlands, Amsterdam    IPv6  BL"
+      - "Turkey, Istanbul  BL"
+      - "United Arab Emirates, Abu Dhabi  BL"
+      - "United Arab Emirates, Abu Dhabi  BL-1"
+      - "United Arab Emirates, Abu Dhabi  BL-2"
+      - "United Arab Emirates, Dubai  BL"
+      - "United Kingdom, Fareham  BL"
+      - "United Kingdom, Fareham  BL-1"
+      - "United Kingdom, Fareham  BL-2"
+      - "United Kingdom, Fareham  BL-3"
+      - "United Kingdom, Fareham  BL-4"
+      - "United Kingdom, Fareham  BL-5"
+      - "United States, Los Angeles  BL-1"
+      - "United States, Piscataway  BL"
+      - "United States, Piscataway  BL-1"
+      - "United States, Redmond (Downtown)  BL-1"
+      - "Anycast-IP  BL"
+      - "Anycast-IP  BL-1"
+      - "Anycast-IP  BL-2"
+      - "Anycast-IP  BL-3"
+      - "Anycast-IP  IPv6  BL-3"
+      - "Anycast-IP  IPv6  BL-4"
+      - "Anycast-IP  IPv6  BL-5"
+      - "Anycast-IP  IPv6  BL-6"
+      - "Anycast-IP  IPv6  BL-7"
+      - "Anycast-IP  IPv6  BL-8"
+      - "Anycast-IP  IPv6  BL-9"
+      - "Anycast-IP  IPv6  BL-10"
+      - "Anycast-IP  IPv6  BL-11"
+      - "Anycast-IP  IPv6  BL-12"
+      - "Anycast-IP  IPv6  BL-13"
+      - "Anycast-IP  IPv6  BL-14"
+      - "Anycast-IP  IPv6  BL-15"
+      - "Anycast-IP  IPv6  BL-16"
+      - "Anycast-IP  IPv6  BL-17"
+      - "Anycast-IP  IPv6  BL-18"
+      - "Anycast-IP  IPv6  BL-19"
+      - "Anycast-IP  IPv6  BL-20"
+      - "Anycast-IP  IPv6  BL-21"
+      - "Anycast-IP  IPv6  BL-22"
+      - "Anycast-IP  IPv6  BL-23"
+      - "Anycast-IP  IPv6  BL-24"
+      - "Anycast-IP  IPv6  BL-25"
+      - "Anycast-IP  IPv6  BL-26"
+      - "Anycast-IP  IPv6  BL-27"
+      - "Anycast-IP  IPv6  BL-28"
+      - "Anycast-IP  IPv6  BL-29"
+      - "Anycast-IP  IPv6  BL-30"
+      - "Anycast-IP  IPv6  BL-31"
+      - "Anycast-IP  IPv6  BL-32"
+      - "Anycast-IP  IPv6  BL-33"
+      - "Anycast-IP  IPv6  BL-34"
+      - "Anycast-IP  IPv6  BL-35"
+      - "Anycast-IP  IPv6  BL-36"
+      - "Anycast-IP  IPv6  BL-37"
+      - "Anycast-IP  IPv6  BL-38"
+      - "Anycast-IP  IPv6  BL-39"
+      - "Anycast-IP  IPv6  BL-40"
+      - "Anycast-IP  IPv6  BL-41"
+      - "Anycast-IP  IPv6  BL-42"
+      - "Anycast-IP  IPv6  BL-43"
+      - "Anycast-IP  IPv6  BL-44"
+      - "Anycast-IP  IPv6  BL-45"
+      - "Anycast-IP  IPv6  BL-46"
+      - "Anycast-IP  IPv6  BL-47"
+      - "Anycast-IP  IPv6  BL-48"
+      - "Anycast-IP  IPv6  BL-49"
+      - "Anycast-IP  IPv6  BL-50"
+      - "Anycast-IP  IPv6  BL-51"
+      - "Anycast-IP  IPv6  BL-52"
+      - "Anycast-IP  IPv6  BL-53"
+      - "Anycast-IP  IPv6  BL-54"
+      - "Anycast-IP  IPv6  BL-55"
+      - "Anycast-IP  IPv6  BL-56"
+      - "Anycast-IP  IPv6  BL-57"
+      - "Anycast-IP  IPv6  BL-58"
+      - "Anycast-IP  IPv6  BL-59"
+      - "Anycast-IP  IPv6  BL-60"
+      - "Anycast-IP  IPv6  BL-61"
+      - "Anycast-IP  IPv6  BL-62"
+      - "Anycast-IP  IPv6  BL-63"
+      - "Anycast-IP  IPv6  BL-64"
+      - "Anycast-IP  IPv6  BL-65"
+      - "Anycast-IP  IPv6  BL-66"
+      - "Anycast-IP  IPv6  BL-67"
+      - "Anycast-IP  IPv6  BL-68"
+      - "Anycast-IP  IPv6  BL-69"
+      - "Anycast-IP  IPv6  BL-70"
+      - "Anycast-IP  IPv6  BL-71"
+      - "Anycast-IP  IPv6  BL-72"
+      - "Anycast-IP  IPv6  BL-73"
+      - "Anycast-IP  IPv6  BL-74"
+      - "Anycast-IP  IPv6  BL-75"
+      - "Anycast-IP  IPv6  BL-76"
+      - "Anycast-IP  IPv6  BL-77"
+      - "Anycast-IP  IPv6  BL-78"
+      - "The Netherlands, Amsterdam  BL-8"
+      - "Finland    IPv6 CIDR"
+      - "Finland    IPv6 CIDR-1"
+      - "Germany   CIDR"
+      - "Germany    IPv6 CIDR"
+      - "Germany    IPv6 CIDR-1"
+      - "Germany    IPv6 CIDR-2"
+      - "Germany    IPv6 CIDR-3"
+      - "Poland    IPv6 CIDR"
+      - "Poland    IPv6 CIDR-1"
 
 rules:
   - MATCH,Auto
