@@ -24,27 +24,6 @@ STATIC_SOURCES = [
 # ДИНАМИЧЕСКИЙ источник — igareck (сам находит все .txt файлы)
 # ============================================================
 IGARECK_REPO = "igareck/vpn-configs-for-russia"
-
-def get_igareck_sources():
-    """Через GitHub API находит все VLESS .txt файлы в репозитории igareck"""
-    url = f"https://api.github.com/repos/{IGARECK_REPO}/contents/"
-    sources = []
-    try:
-        res = requests.get(url, headers=HEADERS, timeout=10)
-        if res.status_code != 200:
-            print(f"⚠️ GitHub API недоступен: HTTP {res.status_code}")
-            return sources
-        files = res.json()
-        for f in files:
-            name = f.get("name", "")
-            # Берём только .txt файлы с VLESS в названии
-            if name.endswith(".txt") and "VLESS" in name.upper():
-                sources.append(f["download_url"])
-                print(f"  📄 Найден файл: {name}")
-    except Exception as e:
-        print(f"⚠️ Ошибка GitHub API: {e}")
-    return sources
-
 # ============================================================
 # Утилиты
 # ============================================================
