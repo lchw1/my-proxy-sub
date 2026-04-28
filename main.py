@@ -2,268 +2,230 @@ import requests
 import base64
 import re
 import urllib.parse
+import sys
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 }
 
-# ============================================================
-# СТАТИЧНЫЕ источники (стабильные, редко меняют структуру)
-# ============================================================
-STATIC_SOURCES = [
-    # kort0881 — 1200+ узлов, обновляется каждые 15 минут
-    "https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/clean/vless.txt",
-    # igareck — дополнительные файлы из подпапок (API их не видит)
+# Все источники — прямые проверенные ссылки, без API
+SOURCES = [
+    # === igareck (проверены на РФ каждые 2 часа) ===
     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt",
     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt",
     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt",
+    # === kort0881 (1000+ узлов, обновление каждые 15 минут) ===
+    "https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/clean/vless.txt",
+    # === yebekhe (крупный международный агрегатор) ===
+    "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vless",
+    "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/base64/mix",
 ]
 
-# ============================================================
-# ДИНАМИЧЕСКИЙ источник — igareck (сам находит все .txt файлы)
-# ============================================================
-IGARECK_REPO = "igareck/vpn-configs-for-russia"
-# ============================================================
-# Утилиты
-# ============================================================
-def try_decode_base64(content):
-    if "vless://" in content[:300]:
-        return content
+# ─────────────────────────────────────────────
+def fetch(url):
     try:
-        text = content.strip().replace('\n', '').replace('\r', '')
-        pad = len(text) % 4
-        if pad:
-            text += '=' * (4 - pad)
-        return base64.b64decode(text).decode('utf-8', errors='ignore')
-    except Exception:
-        return content
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        if r.status_code == 200:
+            return r.text
+        print(f"  SKIP {url.split('/')[-1]} — HTTP {r.status_code}")
+    except Exception as e:
+        print(f"  ERR  {url.split('/')[-1]} — {e}")
+    return ""
 
-def clean_proxy_name(raw_name, index):
+def decode_if_needed(text):
+    if "vless://" in text[:500]:
+        return text
     try:
-        name = urllib.parse.unquote(raw_name)
+        t = text.strip().replace('\n','').replace('\r','')
+        t += '=' * (-len(t) % 4)
+        return base64.b64decode(t).decode('utf-8', errors='ignore')
     except Exception:
-        name = raw_name
+        return text
+
+def safe_name(raw, idx):
+    try:
+        name = urllib.parse.unquote(raw)
+    except Exception:
+        name = raw
     name = name.encode('ascii', errors='ignore').decode('ascii')
     name = re.sub(r'[^a-zA-Z0-9 \-_.,]', '', name).strip()
-    if not name or len(name) < 2:
-        name = f"proxy-{index}"
-    return name[:80]
+    return name[:60] if len(name) >= 2 else f"proxy-{idx}"
 
-def parse_vless_to_clash(vless_url, index):
+def parse_vless(url, idx):
     try:
-        match = re.match(r'vless://([^@]+)@([^:]+):(\d+)\??([^#]*)#?(.*)', vless_url)
-        if not match:
+        m = re.match(r'vless://([^@]+)@([^:]+):(\d+)\??([^#]*)#?(.*)', url)
+        if not m:
             return None
-        uuid, host, port, params_str, raw_name = match.groups()
-        port = int(port)
+        uuid, host, port, qs, raw_name = m.groups()
+
         params = {}
-        if params_str:
-            for p in params_str.split('&'):
-                if '=' in p:
-                    k, v = p.split('=', 1)
-                    params[k] = urllib.parse.unquote(v)
+        for p in qs.split('&'):
+            if '=' in p:
+                k, v = p.split('=', 1)
+                params[k] = urllib.parse.unquote(v)
 
-        proxy_name = clean_proxy_name(raw_name, index)
-        security = params.get("security", "none")
-        is_tls = security in ("tls", "reality")
-
+        sec = params.get('security', 'none')
         proxy = {
-            "name": proxy_name,
-            "type": "vless",
-            "server": host,
-            "port": port,
-            "uuid": uuid,
-            "tls": is_tls,
-            "udp": True,
-            "skip-cert-verify": True,
+            'name':            safe_name(raw_name, idx),
+            'type':            'vless',
+            'server':          host,
+            'port':            int(port),
+            'uuid':            uuid,
+            'tls':             sec in ('tls', 'reality'),
+            'udp':             True,
+            'skip-cert-verify': True,
         }
 
-        network = params.get("type", "tcp")
-        if network == "ws":
-            proxy["network"] = "ws"
-            ws_opts = {}
-            path = params.get("path", "")
-            ws_host = params.get("host", "")
-            if path:
-                ws_opts["path"] = urllib.parse.unquote(path)
-            if ws_host:
-                ws_opts["headers"] = {"Host": ws_host}
-            if ws_opts:
-                proxy["ws-opts"] = ws_opts
-            if params.get("sni"):
-                proxy["servername"] = params["sni"]
-        elif network == "grpc":
-            proxy["network"] = "grpc"
-            svc = params.get("serviceName", "")
+        net = params.get('type', 'tcp')
+        if net == 'ws':
+            proxy['network'] = 'ws'
+            wo = {}
+            if params.get('path'):
+                wo['path'] = urllib.parse.unquote(params['path'])
+            if params.get('host'):
+                wo['headers'] = {'Host': params['host']}
+            if wo:
+                proxy['ws-opts'] = wo
+        elif net == 'grpc':
+            proxy['network'] = 'grpc'
+            svc = urllib.parse.unquote(params.get('serviceName', ''))
             if svc:
-                proxy["grpc-opts"] = {"grpc-service-name": urllib.parse.unquote(svc)}
+                proxy['grpc-opts'] = {'grpc-service-name': svc}
 
-        if params.get("flow"):
-            proxy["flow"] = params["flow"]
-
-        if security == "reality":
-            proxy["reality-opts"] = {
-                "public-key": params.get("pbk", ""),
-                "short-id": params.get("sid", ""),
+        if params.get('flow'):
+            proxy['flow'] = params['flow']
+        if params.get('sni'):
+            proxy['servername'] = params['sni']
+        if params.get('fp'):
+            proxy['client-fingerprint'] = params['fp']
+        if sec == 'reality':
+            proxy['reality-opts'] = {
+                'public-key': params.get('pbk', ''),
+                'short-id':   params.get('sid', ''),
             }
-            if params.get("sni"):
-                proxy["servername"] = params["sni"]
-            if params.get("fp"):
-                proxy["client-fingerprint"] = params["fp"]
-        elif params.get("sni"):
-            proxy["servername"] = params["sni"]
-
         return proxy
     except Exception:
         return None
 
-def yaml_str(val):
-    val = str(val).replace('\\', '\\\\').replace('"', '\\"')
-    return f'"{val}"'
+def q(s):
+    return '"' + str(s).replace('\\','\\\\').replace('"','\\"') + '"'
 
-def generate_clash_yaml(proxies):
-    names = [p["name"] for p in proxies]
-    lines = [
+def make_clash(proxies):
+    names = [p['name'] for p in proxies]
+    out = [
         "mixed-port: 7890",
         "allow-lan: false",
-        "mode: rule",
+        "mode: global",       # Глобальный режим по умолчанию!
         "log-level: info",
         "external-controller: 127.0.0.1:9090",
         "",
         "dns:",
         "  enable: true",
-        "  nameserver:",
-        "    - 8.8.8.8",
-        "    - 1.1.1.1",
+        "  nameserver: [8.8.8.8, 1.1.1.1]",
         "",
         "proxies:",
     ]
 
     for p in proxies:
-        lines.append(f"  - name: {yaml_str(p['name'])}")
-        lines.append(f"    type: {p['type']}")
-        lines.append(f"    server: {p['server']}")
-        lines.append(f"    port: {p['port']}")
-        lines.append(f"    uuid: {p['uuid']}")
-        lines.append(f"    tls: {str(p.get('tls', False)).lower()}")
-        lines.append(f"    udp: true")
-        lines.append(f"    skip-cert-verify: true")
-        if p.get("flow"):
-            lines.append(f"    flow: {p['flow']}")
-        if p.get("network"):
-            lines.append(f"    network: {p['network']}")
-        if p.get("servername"):
-            lines.append(f"    servername: {yaml_str(p['servername'])}")
-        if p.get("client-fingerprint"):
-            lines.append(f"    client-fingerprint: {p['client-fingerprint']}")
-        if p.get("reality-opts"):
-            ro = p["reality-opts"]
-            lines.append(f"    reality-opts:")
-            lines.append(f"      public-key: {ro.get('public-key', '')}")
-            lines.append(f"      short-id: {yaml_str(ro.get('short-id', ''))}")
-        if p.get("ws-opts"):
-            wo = p["ws-opts"]
-            lines.append(f"    ws-opts:")
-            if wo.get("path"):
-                lines.append(f"      path: {yaml_str(wo['path'])}")
-            if wo.get("headers"):
-                lines.append(f"      headers:")
-                for hk, hv in wo["headers"].items():
-                    lines.append(f"        {hk}: {yaml_str(hv)}")
-        if p.get("grpc-opts"):
-            lines.append(f"    grpc-opts:")
-            lines.append(f"      grpc-service-name: {yaml_str(p['grpc-opts']['grpc-service-name'])}")
+        out.append(f"  - name: {q(p['name'])}")
+        out.append(f"    type: vless")
+        out.append(f"    server: {p['server']}")
+        out.append(f"    port: {p['port']}")
+        out.append(f"    uuid: {p['uuid']}")
+        out.append(f"    tls: {str(p['tls']).lower()}")
+        out.append(f"    udp: true")
+        out.append(f"    skip-cert-verify: true")
+        for key in ('flow', 'network', 'client-fingerprint'):
+            if p.get(key):
+                out.append(f"    {key}: {p[key]}")
+        if p.get('servername'):
+            out.append(f"    servername: {q(p['servername'])}")
+        if p.get('reality-opts'):
+            ro = p['reality-opts']
+            out.append(f"    reality-opts:")
+            out.append(f"      public-key: {ro['public-key']}")
+            out.append(f"      short-id: {q(ro['short-id'])}")
+        if p.get('ws-opts'):
+            wo = p['ws-opts']
+            out.append(f"    ws-opts:")
+            if wo.get('path'):
+                out.append(f"      path: {q(wo['path'])}")
+            if wo.get('headers'):
+                out.append(f"      headers:")
+                for k, v in wo['headers'].items():
+                    out.append(f"        {k}: {q(v)}")
+        if p.get('grpc-opts'):
+            out.append(f"    grpc-opts:")
+            out.append(f"      grpc-service-name: {q(p['grpc-opts']['grpc-service-name'])}")
 
-    lines += [
+    top200 = names[:200]
+    out += [
         "",
         "proxy-groups:",
-        f"  - name: {yaml_str('PROXY')}",
-        "    type: select",
-        "    proxies:",
-    ]
-    for n in names[:200]:
-        lines.append(f"      - {yaml_str(n)}")
-
-    lines += [
-        "",
-        f"  - name: {yaml_str('Auto')}",
+        f"  - name: {q('Auto')}",
         "    type: url-test",
         "    url: http://www.gstatic.com/generate_204",
-        "    interval: 300",
+        "    interval: 180",
+        "    tolerance: 50",
         "    proxies:",
+    ] + [f"      - {q(n)}" for n in top200] + [
+        "",
+        f"  - name: {q('PROXY')}",
+        "    type: select",
+        "    proxies:",
+        f"      - {q('Auto')}",
+    ] + [f"      - {q(n)}" for n in top200] + [
+        "",
+        "rules:",
+        "  - MATCH,Auto",   # По умолчанию Auto (лучший пинг)
     ]
-    for n in names[:200]:
-        lines.append(f"      - {yaml_str(n)}")
+    return "\n".join(out)
 
-    lines += ["", "rules:", "  - MATCH,PROXY"]
-    return "\n".join(lines)
-
-# ============================================================
-# ГЛАВНАЯ ФУНКЦИЯ
-# ============================================================
-def collect():
-    unique_nodes = set()
-    print("🚀 Старт сборки...\n")
-
-    # 1. Динамически находим все файлы у igareck
-    print("🔍 Ищем файлы у igareck через GitHub API...")
-    dynamic_sources = get_igareck_sources()
-    print(f"  Найдено {len(dynamic_sources)} файлов\n")
-
-    # 2. Объединяем все источники
-    all_sources = dynamic_sources + STATIC_SOURCES
-
-    # 3. Качаем и парсим
-    for url in all_sources:
-        name = url.split("/")[-1]
-        try:
-            res = requests.get(url, headers=HEADERS, timeout=20)
-            if res.status_code != 200:
-                print(f"❌ [{name}] HTTP {res.status_code}")
-                continue
-            content = try_decode_base64(res.text)
-            found = re.findall(r'vless://[^\s\r\n]+', content)
-            print(f"✅ [{name}] {len(found)} узлов")
-            unique_nodes.update(found)
-        except Exception as e:
-            print(f"⚠️ [{name}] ошибка: {e}")
-
-    if not unique_nodes:
-        print("\n⛔ Список пустой! Файлы не обновлены.")
-        return
-
-    node_list = sorted(unique_nodes)
-
-    # sub.txt для Happ
-    encoded = base64.b64encode("\n".join(node_list).encode('utf-8')).decode('utf-8')
-    with open("sub.txt", "w") as f:
-        f.write(encoded)
-
-    # clash.yaml для FClash
-    proxies = []
-    seen_names = set()
-    for i, node in enumerate(node_list):
-        proxy = parse_vless_to_clash(node, i)
-        if not proxy:
+# ─────────────────────────────────────────────
+def main():
+    nodes = set()
+    print("=== Сбор узлов ===")
+    for url in SOURCES:
+        name = url.split('/')[-1]
+        raw = fetch(url)
+        if not raw:
             continue
-        base = proxy["name"]
-        name = base
-        counter = 1
-        while name in seen_names:
-            name = f"{base}-{counter}"
-            counter += 1
-        proxy["name"] = name
-        seen_names.add(name)
-        proxies.append(proxy)
+        text = decode_if_needed(raw)
+        found = re.findall(r'vless://[^\s\r\n]+', text)
+        print(f"  OK   {name} — {len(found)} узлов")
+        nodes.update(found)
 
-    clash_content = generate_clash_yaml(proxies)
-    with open("clash.yaml", "w", encoding="utf-8") as f:
-        f.write(clash_content)
+    if not nodes:
+        print("CRITICAL: 0 узлов! Прерываем.")
+        sys.exit(1)   # Роняем Action с ошибкой — сразу видно в логах
 
-    print(f"\n🎉 Готово!")
-    print(f"   sub.txt   → {len(node_list)} узлов (Happ)")
-    print(f"   clash.yaml → {len(proxies)} узлов (FClash)")
+    node_list = sorted(nodes)
+    print(f"\nВсего уникальных: {len(node_list)}")
 
-if __name__ == "__main__":
-    collect()
+    # sub.txt
+    encoded = base64.b64encode('\n'.join(node_list).encode()).decode()
+    with open('sub.txt', 'w') as f:
+        f.write(encoded)
+    print(f"sub.txt записан ({len(node_list)} узлов)")
+
+    # clash.yaml
+    proxies, seen = [], set()
+    for i, url in enumerate(node_list):
+        p = parse_vless(url, i)
+        if not p:
+            continue
+        base = p['name']
+        name, c = base, 1
+        while name in seen:
+            name = f"{base}-{c}"; c += 1
+        p['name'] = name
+        seen.add(name)
+        proxies.append(p)
+
+    with open('clash.yaml', 'w', encoding='utf-8') as f:
+        f.write(make_clash(proxies))
+    print(f"clash.yaml записан ({len(proxies)} узлов)")
+
+if __name__ == '__main__':
+    main()
