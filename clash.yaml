@@ -1,101 +1,6820 @@
-import requests
-import base64
-import re
-import urllib.parse
-import sys
+mixed-port: 7890
+allow-lan: false
+mode: global
+log-level: info
+dns:
+  enable: true
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+proxies:
+  - name: "Node0CUSTOMVPNS"
+    type: vless
+    server: 91.99.16.244
+    port: 443
+    uuid: %50%61%72%73%61%73%68%6F%6E%61%6D-298
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node1vpnwedbazm"
+    type: vless
+    server: 190.93.246.241
+    port: 8080
+    uuid: %56P%4eC%55ST%4fMI%5aE
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz@vpnwedbaz"
+  - name: "Node2AutoAiVPN7"
+    type: vless
+    server: 12-Join.V2RayTz.ru
+    port: 443
+    uuid: %74%65%6c%65%67%72%61%6d%2d%69%64%2d%41%72%66%69%6c%74%65%72
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wIs.2SeDkFjEuIxIjD0Ew9DvKcxoisiEk61.BlOg"
+    network: ws
+    ws-opts:
+      path: "/telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048"
+  - name: "Node3TheNetherl"
+    type: vless
+    server: 8.6.112.0
+    port: 443
+    uuid: %F0%9F%91%89%F0%9F%91%89BanV2ray%F0%9F%91%88%F0%9F%91%88
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "udvsusgsh-272625262626.poshakhowdy.ir"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node4TheNetherl"
+    type: vless
+    server: chatgpt.com
+    port: 443
+    uuid: %F0%9F%91%89%F0%9F%91%89BanV2ray%F0%9F%91%88%F0%9F%91%88
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "udvsusgsh-272625262626.poshakhowdy.ir"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node5TheNetherl"
+    type: vless
+    server: operator.chatgpt.com
+    port: 443
+    uuid: %F0%9F%91%89%F0%9F%91%89BanV2ray%F0%9F%91%88%F0%9F%91%88
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "udvsusgsh-272625262626.poshakhowdy.ir"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node6TheNetherl"
+    type: vless
+    server: v3.dabache.top
+    port: 443
+    uuid: %F0%9F%91%89%F0%9F%91%89BanV2ray%F0%9F%91%88%F0%9F%91%88
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "udvsusgsh-272625262626.poshakhowdy.ir"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node7TheNetherl"
+    type: vless
+    server: webrtc.chatgpt.com
+    port: 443
+    uuid: %F0%9F%91%89%F0%9F%91%89BanV2ray%F0%9F%91%88%F0%9F%91%88
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "udvsusgsh-272625262626.poshakhowdy.ir"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node8Telmahanvp"
+    type: vless
+    server: 172.67.160.192
+    port: 2052
+    uuid: ++mahanvpn++
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node9MCIRkfilte"
+    type: vless
+    server: 185.146.173.92
+    port: 2095
+    uuid: -----DIGIV2RAY----
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node10MCIRkfilte"
+    type: vless
+    server: www.Speedtest.Net
+    port: 2095
+    uuid: -----DIGIV2RAY----
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node11AllRkfilte"
+    type: vless
+    server: 185.146.173.94
+    port: 2095
+    uuid: -----DIGIV2ray----
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node12v2rayfark"
+    type: vless
+    server: 103.160.204.88
+    port: 2096
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node13v2rayfark"
+    type: vless
+    server: 103.160.204.92
+    port: 2053
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node14lv2rayfark"
+    type: vless
+    server: 103.160.204.92
+    port: 2087
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node15v2rayfark"
+    type: vless
+    server: 103.160.204.92
+    port: 2096
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node16lv2rayfark"
+    type: vless
+    server: 104.16.199.186
+    port: 2087
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node17v2rayfark"
+    type: vless
+    server: 104.16.199.186
+    port: 2096
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node18v2rayfark"
+    type: vless
+    server: 104.16.48.41
+    port: 2096
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node19lv2rayfark"
+    type: vless
+    server: metrix.anvary.ir
+    port: 2087
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node20v2rayfark"
+    type: vless
+    server: v2ray-fark.ddns.net
+    port: 34671
+    uuid: -----v2ray_fark-----
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node21v2rayfark"
+    type: vless
+    server: v2ray-fark.ddns.net
+    port: 443
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "mihanyas.ir"
+    reality-opts:
+      public-key: bS3_rNSmRqWK1kNHSZuqkuwraRy4bVfxboLTUgpWalQ
+      short-id: "635627db"
+  - name: "Node22v2rayfark"
+    type: vless
+    server: v2ray-fark.ddns.net
+    port: 49819
+    uuid: -----v2ray_fark-----
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node23v2rayfark"
+    type: vless
+    server: v2ray-fark.ddns.net
+    port: 58082
+    uuid: -----v2ray_fark-----
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node24v2rayfark"
+    type: vless
+    server: v2ray-fark.ddns.net
+    port: 58270
+    uuid: -----v2ray_fark-----
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node25v2rayfark"
+    type: vless
+    server: v2ray-fark2.ddns.net
+    port: 2096
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node26v2rayfark"
+    type: vless
+    server: v2ray-fark3.ddns.net
+    port: 2096
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node27v2rayfark"
+    type: vless
+    server: v2ray-fark4.ddns.net
+    port: 2087
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node28v2rayfark"
+    type: vless
+    server: v2ray-fark5.ddns.net
+    port: 2087
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node29v2rayfark"
+    type: vless
+    server: v2ray-fark6.ddns.net
+    port: 2053
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node30v2rayfark"
+    type: vless
+    server: v2ray-fark7.ddns.net
+    port: 2053
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node31v2rayfark"
+    type: vless
+    server: v2ray-fark8.ddns.net
+    port: 2053
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node32v2rayfark"
+    type: vless
+    server: zula.ir
+    port: 2053
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node33v2rayfark"
+    type: vless
+    server: zula.ir
+    port: 2087
+    uuid: -----v2ray_fark-----
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "wu.foxnt-telegram-foxnt.shop"
+  - name: "Node34"
+    type: vless
+    server: tel.VPNCUSTOMIZE.cam
+    port: 8080
+    uuid: ----VPNCUSTOMIZE----
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+  - name: "Node35SEVLESSkur"
+    type: vless
+    server: 185.146.173.68
+    port: 2095
+    uuid: ---DIGIV2RAY--
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node36"
+    type: vless
+    server: 91.107.142.61
+    port: 443
+    uuid: ---GozargahVPN---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "applepay.cdn-apple.com"
+    reality-opts:
+      public-key: yV4BkqdPnTGbQufWoixIKJj25FH6p2kQ4FgZH-baY0c
+      short-id: "35"
+  - name: "Node37"
+    type: vless
+    server: 91.107.190.232
+    port: 443
+    uuid: ---GozargahVPN---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "ghbi.ir"
+    reality-opts:
+      public-key: oNw70MueB6_w0854UW3t-qcV7IcEPFuia5UJjYGXxFE
+      short-id: "16"
+  - name: "Node38"
+    type: vless
+    server: 91.107.190.88
+    port: 8443
+    uuid: ---GozargahVPN---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "appleid.cdn-apple.com"
+    reality-opts:
+      public-key: eEG8gOgY4_7b7lm2VuS7DtWJLvzSQV_X7WJOkpWW0Ag
+      short-id: "263e0a"
+  - name: "Node39"
+    type: vless
+    server: 116.203.217.38
+    port: 18234
+    uuid: ---Telegram-Parsashonam---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.speedtest.net"
+    reality-opts:
+      public-key: trAMz4EaIS6mhEghJbzvdpUMhQrZa9y-tm09E_mqzzs
+      short-id: "43e75a29"
+  - name: "Node40"
+    type: vless
+    server: 167.235.59.91
+    port: 444
+    uuid: ---Telegram-Parsashonam---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.speedtest.net"
+    reality-opts:
+      public-key: gCSN6gv6SbNtM84gczqckZO5WhvqXTrleS75lMLYIBY
+      short-id: "5f972316"
+  - name: "Node41Parsashona"
+    type: vless
+    server: 37.27.0.81
+    port: 18821
+    uuid: ---Telegram-Parsashonam---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.speedtest.net"
+    reality-opts:
+      public-key: BDDjIclxkaH1hRuJmcHzh7iAVIv54xDCK-awliVT-TY
+      short-id: "b024ee80"
+  - name: "Node42"
+    type: vless
+    server: 65.108.251.177
+    port: 42790
+    uuid: ---Telegram-Parsashonam---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.cloudflare.com"
+    reality-opts:
+      public-key: u37j-RRmPBdKK8l8BRVU0s-wlKzOxGnsoMKIBwyVrBk
+      short-id: "d3c857f4"
+  - name: "Node43Parsashona"
+    type: vless
+    server: Zula.ir
+    port: 443
+    uuid: ---Telegram-Parsashonam--16-
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "NEW1.Parsashonam.TECH"
+  - name: "Node44"
+    type: vless
+    server: Speed.Tel-Parsashonam.Website
+    port: 2087
+    uuid: ---Telegram-Parsashonam--4-
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "Finland.Parsashonam.Tech"
+  - name: "Node45Parsashona"
+    type: vless
+    server: Zula.ir
+    port: 2083
+    uuid: ---Telegram-Parsashonam--4-
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "NEW0.Parsashonam.TECH"
+  - name: "Node46REALITYPar"
+    type: vless
+    server: 128.140.3.97
+    port: 443
+    uuid: ---Telgram-Parsashonam---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.SpeedTest.Net"
+    reality-opts:
+      public-key: Si9Y64G6B5t6XsvnbD_aIPtJlpeUhW7I7lz0e6q5Umk
+      short-id: "29fe176c"
+  - name: "Node47"
+    type: vless
+    server: 135.181.93.118
+    port: 4568
+    uuid: ---Telgram-Parsashonam---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "eset.com"
+    reality-opts:
+      public-key: gt9uKN4PjRlDr0IO8iwbrGiHT_tRWEa814Yr1Gl5olE
+      short-id: "1e34dbd8"
+  - name: "Node48RU797"
+    type: vless
+    server: 62.133.63.74
+    port: 443
+    uuid: ---Telgram-Parsashonam---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "eset.com"
+    reality-opts:
+      public-key: RfdLIGZ0jU8xBTuGsLdojPThn0ZUcb6Lva7vOocWzkA
+      short-id: "9a3d9a3b"
+  - name: "Node49FI814"
+    type: vless
+    server: 65.21.183.129
+    port: 4568
+    uuid: ---Telgram-Parsashonam---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "eset.com"
+    reality-opts:
+      public-key: MRSFBkezAvbEELFlT9P8wLzovVfQ2INinRkCsAX6pCI
+      short-id: "ee1341b0"
+  - name: "Node50"
+    type: vless
+    server: tel.VPNCUSTOMIZE.cam
+    port: 80
+    uuid: ---VPNCUSTOMIZE---
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+  - name: "Node51"
+    type: vless
+    server: rogers.yahoo.freedns.site
+    port: 443
+    uuid: ---womanlifefreedom13---
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.yahoo.com"
+    reality-opts:
+      public-key: GAUjNf1wQnDm5ziCGqRmb3yVfU9bg_UPwZ2_QU4JWRU
+      short-id: "6bb85179e30d4fc2"
+  - name: "Node52DE10"
+    type: vless
+    server: daily_configs.revolution-time.sbs
+    port: 443
+    uuid: --DailyConfigs--
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "tgju.org"
+    reality-opts:
+      public-key: H9tSRZqEMWhGFev5VkoJQ5a2EzbxtaX37ZjsZXDs3yY
+      short-id: ""
+  - name: "Node53"
+    type: vless
+    server: legendary.zooboming.com
+    port: 443
+    uuid: --LegenderY_Servers--
+    tls: true
+    udp: true
+    skip-cert-verify: true
+  - name: "Node54MsV2rayWsA"
+    type: vless
+    server: all.MsV2ray.online
+    port: 2095
+    uuid: --MsV2ray-MsV2ray-MsV2ray--
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/@MsV2ray,@MsV2ray,@MsV2ray,@MsV2ray?ed=2048"
+  - name: "Node55v2naptv"
+    type: vless
+    server: www.speedtest.net
+    port: 8080
+    uuid: --iD--V2RAXX
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node56MCIRkV2ray"
+    type: vless
+    server: 185.146.173.35
+    port: 2095
+    uuid: -DIGIV2RAY-
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node57Telmahanvp"
+    type: vless
+    server: www.speedtest.net
+    port: 2052
+    uuid: ...mahanvpn..++
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node58OpenRayGB9"
+    type: vless
+    server: 128.121.7.59
+    port: 43072
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "kt58ndxywnrrgg.majusti.dpdns.org"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+  - name: "Node59OpenRayDE1"
+    type: vless
+    server: 146.70.20.110
+    port: 20205
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "n1bj62x9v5oinzz6jwxq5sz.misa.cc.cd"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristifp"
+  - name: "Node60"
+    type: vless
+    server: 172.86.94.7
+    port: 10443
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "mot.gike.dpdns.org"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+  - name: "Node61OpenRaySE1"
+    type: vless
+    server: 185.104.151.190
+    port: 44333
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "1n9fo0l9hl.gike.dpdns.org"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+  - name: "Node62OpenRayFI1"
+    type: vless
+    server: 185.221.196.133
+    port: 4443
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "ryhvmvktfhtnv3t.luyuju.dpdns.org"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristifp"
+  - name: "Node63GermanyDre"
+    type: vless
+    server: 82.115.31.209
+    port: 20531
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "miku.mikuru.ip-ddns.com"
+    network: ws
+    ws-opts:
+      path: "/@Marisa_kristi"
+  - name: "Node64V2xay"
+    type: vless
+    server: hydrovpnsrv1.craftedrpg.ir
+    port: 443
+    uuid: 0001691a-e408-461c-9a09-96e46c156bdb
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node65DEVLESSman"
+    type: vless
+    server: 91.99.91.136
+    port: 443
+    uuid: 00134d22-e7bc-4690-860a-05d2be0f6f06
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node66deliserver"
+    type: vless
+    server: ip.deliservers.Realkia.top
+    port: 8443
+    uuid: 00177b5d-7c2b-4e02-a8a9-4cc12717e648
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "Deliservers.Realkia.top"
+  - name: "Node67OpenRayDE1"
+    type: vless
+    server: 159.195.69.251
+    port: 8443
+    uuid: 001bf950-8342-4fed-8387-9b1a759ce248
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "fastsync.xyz"
+    reality-opts:
+      public-key: eHgRhHYifD2njbtjzgMsNPGnvbpAK8SSXC5-wFuQnQ4
+      short-id: "65b5280b52e0532c"
+  - name: "Node68OpenRayDE1"
+    type: vless
+    server: 159.195.70.85
+    port: 8443
+    uuid: 001bf950-8342-4fed-8387-9b1a759ce248
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "fastsync.xyz"
+    reality-opts:
+      public-key: eHgRhHYifD2njbtjzgMsNPGnvbpAK8SSXC5-wFuQnQ4
+      short-id: "65b5280b52e0532c"
+  - name: "Node69FREE2CONFI"
+    type: vless
+    server: 141.98.189.33
+    port: 443
+    uuid: 0021b61a-eb62-41c6-a347-99b1dbd4b1f8
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    reality-opts:
+      public-key: Qkso5vLwNsJx8xXmMfwzEYXey_XmDMriA9k4uP-negg
+      short-id: "a9b6"
+  - name: "Node70OpenRayBE6"
+    type: vless
+    server: 109.69.218.161
+    port: 443
+    uuid: 0025f147-f985-41d1-a89b-82d535f70938
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "lerua.xyz"
+    reality-opts:
+      public-key: 6rnKHCkFuVeaJjiXLnJhfzQpQRSlPt-i6USvnRFiUBg
+      short-id: "223d6eafc6c6e894"
+  - name: "Node71OpenRayBE6"
+    type: vless
+    server: 109.69.218.165
+    port: 443
+    uuid: 0025f147-f985-41d1-a89b-82d535f70938
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "lerua.xyz"
+    reality-opts:
+      public-key: 6rnKHCkFuVeaJjiXLnJhfzQpQRSlPt-i6USvnRFiUBg
+      short-id: "223d6eafc6c6e894"
+  - name: "Node72OpenRayBE6"
+    type: vless
+    server: 109.69.218.166
+    port: 443
+    uuid: 0025f147-f985-41d1-a89b-82d535f70938
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "lerua.xyz"
+    reality-opts:
+      public-key: 6rnKHCkFuVeaJjiXLnJhfzQpQRSlPt-i6USvnRFiUBg
+      short-id: "223d6eafc6c6e894"
+  - name: "Node73SE127MBs"
+    type: vless
+    server: 176.125.240.166
+    port: 443
+    uuid: 002accb526534fcab24a72b0ea1cff59
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "apple.com"
+    reality-opts:
+      public-key: GgiY38LjRI1hS1LKhdqvtJ5SDDO436GvihG-TzEI2XE
+      short-id: "aabbccdd"
+  - name: "Node74AllJOKERRV"
+    type: vless
+    server: 104.26.6.18
+    port: 443
+    uuid: 004ba5d4-d448-4960-a762-e5190ab415f2
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "albedoalbedochan.violetchaan.ip-ddns.com"
+  - name: "Node75AllJOKERRV"
+    type: vless
+    server: 104.26.7.18
+    port: 443
+    uuid: 004ba5d4-d448-4960-a762-e5190ab415f2
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "albedoalbedochan.violetchaan.ip-ddns.com"
+  - name: "Node76"
+    type: vless
+    server: us7.candyfans.win
+    port: 443
+    uuid: 0062f09d-9579-4722-9bd3-d5438970d54a
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "us7.candyfans.win"
+    network: ws
+    ws-opts:
+      path: "/jqliws"
+  - name: "Node774Mohsen495"
+    type: vless
+    server: 93.185.158.14
+    port: 443
+    uuid: 00651706-0d2d-448b-80f2-7678f3e5187c
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "uk.rtot.me"
+    network: ws
+    ws-opts:
+      path: "/bing"
+  - name: "Node78AZARBAYJAB"
+    type: vless
+    server: de.shvurgceo.online
+    port: 14357
+    uuid: 006f752c-42fe-41dd-a224-e2f7c48b72a9
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "vk.com"
+    reality-opts:
+      public-key: DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA
+      short-id: "ab12cd34"
+  - name: "Node79aeproxy"
+    type: vless
+    server: server229242717676380726.tas-bazi.com
+    port: 443
+    uuid: 0077f357-40b8-4496-8ff6-3f012bdb2eaa
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node80aeproxy"
+    type: vless
+    server: server990857935246795719.tas-bazi.com
+    port: 443
+    uuid: 0077f357-40b8-4496-8ff6-3f012bdb2eaa
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node81V2ray1"
+    type: vless
+    server: visa.com
+    port: 8443
+    uuid: 0078ca67-afc3-476f-9447-b991fc657a36
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node82"
+    type: vless
+    server: 51.250.77.124
+    port: 5443
+    uuid: 00a1a0c0-483e-4fa1-b1b1-8578a64c7b85
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: LYcCwo0njLgniLzvwFyn6xcwwQ45CQhUFI-05xEU_Bg
+      short-id: "e0e9fa537618f9a5"
+  - name: "Node83USDE"
+    type: vless
+    server: 104.17.225.199
+    port: 2083
+    uuid: 00a7ef02-f88c-45ff-be76-cf50c37d05a6
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "kingofilter.hamedgeek.sbs"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node84USDE"
+    type: vless
+    server: 104.19.180.169
+    port: 2083
+    uuid: 00a7ef02-f88c-45ff-be76-cf50c37d05a6
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "kingofilter.hamedgeek.sbs"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node85USDE"
+    type: vless
+    server: 104.21.231.123
+    port: 2083
+    uuid: 00a7ef02-f88c-45ff-be76-cf50c37d05a6
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "kingofilter.hamedgeek.sbs"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node86"
+    type: vless
+    server: 171.22.114.248
+    port: 27394
+    uuid: 00b0d4de-b126-4511-87c1-8f1feb462fa6
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "yahoo.com"
+    reality-opts:
+      public-key: TZO1nvxk-x90cL3v9ixowQNC56sQ8k76_KaGU6jczks
+      short-id: "c2fa"
+  - name: "Node874Sarina487"
+    type: vless
+    server: ipw.gfdv54cvghhgfhgj-njhgj64.info
+    port: 2096
+    uuid: 00b4785b-6ae1-496c-ad87-9dc4f89b7b3e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "638901790535245808.brussels-prx-dnraaal.info"
+    network: ws
+    ws-opts:
+      path: "/gflzprws"
+  - name: "Node88vmesskhoda"
+    type: vless
+    server: www.speedtest.net
+    port: 2096
+    uuid: 00b4785b-6ae1-496c-ad87-9dc4f89b7b3e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "638868951946668359.amsterdam-prx-dnraaal.info"
+    network: ws
+    ws-opts:
+      path: "/gflzprws"
+  - name: "Node89"
+    type: vless
+    server: 77.239.125.99
+    port: 443
+    uuid: 00c49863-6d15-4289-9229-841ee5f7868c
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "sun6-21.userapi.com"
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: ""
+  - name: "Node90XXAzadNett"
+    type: vless
+    server: de.vpnone.ru
+    port: 8443
+    uuid: 00dd814b-8e7c-401a-a06b-a3b4aaf78b16
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "ya.ru"
+    reality-opts:
+      public-key: PycIxLERS3Kg4Kh7TQuiD1Kf9pNySxp5jMKEaIb_PjU
+      short-id: "4216490519225e"
+  - name: "Node91AutoAiVPN8"
+    type: vless
+    server: jg0dkrdfmq.country-18.eu-ffast.com
+    port: 443
+    uuid: 00e236b5-328f-4dce-9e12-5d6f20e6f289
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "fin.eu-ffast.com"
+    reality-opts:
+      public-key: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
+      short-id: "50"
+  - name: "Node92PolandCIDR"
+    type: vless
+    server: 212.233.98.36
+    port: 8443
+    uuid: 00e3aa57-aad0-4b7c-90ef-8fbdc2175ddb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.ozon.ru"
+    reality-opts:
+      public-key: 1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw
+      short-id: "9c9e61aa"
+  - name: "Node93"
+    type: vless
+    server: 91.219.227.77
+    port: 8443
+    uuid: 00e3aa57-aad0-4b7c-90ef-8fbdc2175ddb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "eh.vk.com"
+    reality-opts:
+      public-key: 1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw
+      short-id: "9c9e61aa"
+  - name: "Node94PolandCIDR"
+    type: vless
+    server: cdn-ru2.catconnect.ru
+    port: 8443
+    uuid: 00e3aa57-aad0-4b7c-90ef-8fbdc2175ddb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.ozon.ru"
+    reality-opts:
+      public-key: 1L89euUftEWspViGKdG7Ivwj-k1ySPROZEfZWaL5Hhw
+      short-id: "9c9e61aa"
+  - name: "Node95"
+    type: vless
+    server: 81.161.98.228
+    port: 1443
+    uuid: 00f02ab2-6f2d-449f-a089-d182a2fac59a
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "vkvideo.cs7777.vk.ru"
+  - name: "Node96AutoAiVPN1"
+    type: vless
+    server: net2.intfreed.ru
+    port: 11443
+    uuid: 00f1e267-b6ca-4f48-aacf-ce5c8803f383
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "video.intfreed.ru"
+    reality-opts:
+      public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+      short-id: "7755e972daf8eec8"
+  - name: "Node97AutoAiVPN1"
+    type: vless
+    server: irelandlocationssub.iranfreemarz.com
+    port: 4011
+    uuid: 010985eb-a888-42b1-86b9-00d4f23fd87d
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "refersion.com"
+    reality-opts:
+      public-key: 04E0TOQrXL1Z40zAF99p6MR3WC4-iaAcVB4WNcDpuXo
+      short-id: ""
+  - name: "Node98Test2"
+    type: vless
+    server: 116.203.75.81
+    port: 36313
+    uuid: 010ddaac-7bac-4dcc-a353-215d01feb06e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node99GermanyFre"
+    type: vless
+    server: corvusazalea.qzz.io
+    port: 443
+    uuid: 010f0187-1883-4b2d-8992-cd2406be2ec7
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "corvusazalea.qzz.io"
+    network: ws
+    ws-opts:
+      path: "/193.233.204.4=443"
+  - name: "Node100Nederlandv"
+    type: vless
+    server: www.parspack.com
+    port: 8080
+    uuid: 01130dcd-bcda-469b-bd16-fde8a475edab
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node101RU270Surfb"
+    type: vless
+    server: 217.16.24.53
+    port: 443
+    uuid: 011fb39c-15ed-4700-a338-67497533f94e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.vk.com"
+    reality-opts:
+      public-key: wECjZXPpzOIAcE2my_sCH2zluFB4p9a3jpTugXhJ7gI
+      short-id: "69f3807321"
+  - name: "Node102RUspeednod"
+    type: vless
+    server: 185.221.160.251
+    port: 8880
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    servername: "Telegram-channel-WangCai2"
+    network: ws
+    ws-opts:
+      path: "/TelegramU0001F1E8U0001F1F3"
+  - name: "Node103RUspeednod"
+    type: vless
+    server: 45.142.120.251
+    port: 8880
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    servername: "cf.d3z.net"
+    network: ws
+    ws-opts:
+      path: "/TelegramU0001F1E8U0001F1F3"
+  - name: "Node104RUspeednod"
+    type: vless
+    server: 77.105.163.251
+    port: 8880
+    uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    servername: "Telegram-channel-WangCai2"
+    network: ws
+    ws-opts:
+      path: "/TelegramU0001F1E8U0001F1F3"
+  - name: "Node105XpnTeamk9f"
+    type: vless
+    server: 151.101.3.8
+    port: 80
+    uuid: 0134428a-02d8-4f94-8221-a1e858552212
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node106mehrosabor"
+    type: vless
+    server: 159.69.112.17
+    port: 2095
+    uuid: 015%6500%610-05c0-4476-fb%65d-4d1%61dc69%65054
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node107mehrosabor"
+    type: vless
+    server: 172.67.146.171
+    port: 2095
+    uuid: 015%6500%610-05c0-4476-fb%65d-4d1%61dc69%65054
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node108mehrosabor"
+    type: vless
+    server: zula.ir
+    port: 2095
+    uuid: 015%6500%610-05c0-4476-fb%65d-4d1%61dc69%65054
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node109VmessProto"
+    type: vless
+    server: 37.27.24.154.213.254.1ta8.online
+    port: 8080
+    uuid: 015c9cef-5936-4445-aca7-e846479992aa
+    tls: true
+    udp: true
+    skip-cert-verify: true
+  - name: "Node110"
+    type: vless
+    server: test2.amin8263.ir
+    port: 2095
+    uuid: 015e00a0-05c0-4476-fbed-4d1adc69e054
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed"
+  - name: "Node111FreakConfi"
+    type: vless
+    server: graygoat.fonixapp.org
+    port: 2083
+    uuid: 0166cc9f-f7d0-4225-8dd8-3f2d512f8824
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "clients2.google.com"
+    reality-opts:
+      public-key: Nt8aT_cKoHYHQWkoAjVgQG3SIsU70hd2nMnVq7pTDzw
+      short-id: "95edb96d"
+  - name: "Node112IBv2ray"
+    type: vless
+    server: 65.21.107.227
+    port: 443
+    uuid: 017f481c-9450-47ca-9b89-f15ce14add6f
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "greenpepper.ir"
+    reality-opts:
+      public-key: 8Q3nODqTPyoYTjG7OxOu0BwyawF-_N6lHygfIu2QiCA
+      short-id: "174e30c7"
+  - name: "Node113VipSecurit"
+    type: vless
+    server: finland.dehnavy.ir
+    port: 39461
+    uuid: 0195d3b8-8bfa-4c6e-9988-56396952a50a
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node114TelegramEX"
+    type: vless
+    server: 154.81.141.36
+    port: 2096
+    uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn"
+    network: ws
+    ws-opts:
+      path: "/snippets"
+  - name: "Node115RU287Surfb"
+    type: vless
+    server: 45.84.1.218
+    port: 34598
+    uuid: 019aefe0-f33f-7000-be8d-9d35610b8f72
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram.org"
+    reality-opts:
+      public-key: SCkzGfrd6KXuBwpE83LXeBZa03n7sC74iGvSUaZ4IBQ
+      short-id: "0b2e5a9db13f684c"
+  - name: "Node116"
+    type: vless
+    server: 172.66.40.99
+    port: 8080
+    uuid: 01a79e57-5051-4b64-9774-8841c25bcecf
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420"
+  - name: "Node117AKLISvpn"
+    type: vless
+    server: 185.204.170.191
+    port: 31783
+    uuid: 01bd02a8-4e8c-4d75-9c74-7a99c1d27d83
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node118FI"
+    type: vless
+    server: 95.217.206.161
+    port: 443
+    uuid: 01d68a9b-be48-4c7b-b4f9-71b29c4cfaca
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "api.chandplus.com"
+  - name: "Node119AutoAiVPN6"
+    type: vless
+    server: finland.marzxox.shop
+    port: 210
+    uuid: 0245889d-da1b-4956-85f4-028fd8e4f8f2
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "cdn.jsdelivr.net"
+    reality-opts:
+      public-key: g23nq_R9TIMbMIGQHB6gjDNewFzrHXPcj72bTS-RtX8
+      short-id: "a1b2c3d4e5f67890"
+  - name: "Node120OpenRayRU2"
+    type: vless
+    server: dl-google.hopto.org
+    port: 443
+    uuid: 0245ac76-bc02-44f7-9b90-c3b0eca521e6
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "dl.google.com"
+    reality-opts:
+      public-key: u6nqmFRBHkZtlEdEO-hZtSA-eDZrOSx-XSSqmbI7ZHU
+      short-id: "56c129612269d2b3"
+  - name: "Node121"
+    type: vless
+    server: 164.92.143.135
+    port: 47542
+    uuid: 02529660-52bf-4896-951a-1857c88d1dba
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "zula.ir"
+    reality-opts:
+      public-key: krsHuR6-NfPzTvW8uE9b_Xbjj-48yI91kLqhx4tWPUg
+      short-id: "7a6d1a"
+  - name: "Node122VMESSIRANv"
+    type: vless
+    server: 91.107.181.191
+    port: 2086
+    uuid: 0256d165-b058-4b50-9798-05459ca2669f
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node123GozargahVP"
+    type: vless
+    server: GozargahVPN-GozargahVPN-GozargahVPN.mymtn.sbs
+    port: 443
+    uuid: 025a2602-e9d0-40db-92ea-dfc256ef2a6a
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node124DE"
+    type: vless
+    server: 172.66.40.99
+    port: 443
+    uuid: 0261c8f9-413a-455b-942b-3713c6b0084a
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.dollardoon.com"
+    network: ws
+    ws-opts:
+      path: "/@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7?ed=2048"
+  - name: "Node125FR"
+    type: vless
+    server: 51.68.198.51
+    port: 8080
+    uuid: 02663a90-d01c-46f1-afba-466ed79c30f6
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/YUYETrenyklxeoyemeWFCrneerV"
+  - name: "Node126"
+    type: vless
+    server: 93.88.205.178
+    port: 443
+    uuid: 0266a5d2-81eb-4d82-b92e-d32dbbf9fc36
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "gmail.com"
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+      short-id: ""
+  - name: "Node127"
+    type: vless
+    server: 172.66.156.81
+    port: 80
+    uuid: 0267b737-c79b-4092-95ad-74694cbbce32
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy"
+  - name: "Node128"
+    type: vless
+    server: www.speedtest.net
+    port: 80
+    uuid: 0267b737-c79b-4092-95ad-74694cbbce32
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy"
+  - name: "Node12919792"
+    type: vless
+    server: 128.140.14.218
+    port: 123
+    uuid: 0267c264-2d80-4eec-fc61-6a77e3e2fa93
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node130tmeRaiv2mm"
+    type: vless
+    server: 128.140.14.218
+    port: 8585
+    uuid: 0267c264-2d80-4eec-fc61-6a77e3e2fa93
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node131"
+    type: vless
+    server: Evay-vpn.octacityroleplay.ir
+    port: 1122
+    uuid: 02689662-674a-4bbc-afcf-a0e5d5a09f5c
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.slideshare.net"
+    reality-opts:
+      public-key: 4iCkO1B_tdvJY7x_v9izvkoNDfdGIFiL2LQX2Nqv5RI
+      short-id: "4c7b0ea36fc7f0c4"
+  - name: "Node132melov2ray"
+    type: vless
+    server: cafearz.com
+    port: 8080
+    uuid: 026ce330-bb63-42fa-fac9-254275728d40
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/olem/ws?ed"
+  - name: "Node133melov2ray"
+    type: vless
+    server: chat.openai.com
+    port: 8080
+    uuid: 026ce330-bb63-42fa-fac9-254275728d40
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/olem/ws?ed"
+  - name: "Node134Belgium237"
+    type: vless
+    server: 109.69.218.163
+    port: 443
+    uuid: 02719b9c-646e-4eb4-8d0d-b9dfd0d9511a
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "lerua.xyz"
+    reality-opts:
+      public-key: 6rnKHCkFuVeaJjiXLnJhfzQpQRSlPt-i6USvnRFiUBg
+      short-id: "223d6eafc6c6e894"
+  - name: "Node135OpenRayBE7"
+    type: vless
+    server: 109.69.218.164
+    port: 443
+    uuid: 02719b9c-646e-4eb4-8d0d-b9dfd0d9511a
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "lerua.xyz"
+    reality-opts:
+      public-key: 6rnKHCkFuVeaJjiXLnJhfzQpQRSlPt-i6USvnRFiUBg
+      short-id: "223d6eafc6c6e894"
+  - name: "Node136"
+    type: vless
+    server: 104.16.69.64
+    port: 8880
+    uuid: 02811288-9ef3-42ef-86db-d9b1399c1a59
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/7YVyoVNnbaVzgl6D?ed"
+  - name: "Node137CZVLESSbor"
+    type: vless
+    server: 194.182.79.117
+    port: 25743
+    uuid: 028c5%6534-9f96-476c-%6178%61-%6180%617f47c4f%65
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node138Expreset"
+    type: vless
+    server: speedtest.mitowear.com
+    port: 8443
+    uuid: 0293c2ca-1dd0-41f2-8955-f20ca9380af1
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "zoom.us"
+    reality-opts:
+      public-key: _ncj48ZXXaES59DJJBXaG3ip4HlwfywJkSsD-fMX_2c
+      short-id: "d9a90b3a"
+  - name: "Node139AutoAiVPN2"
+    type: vless
+    server: 104.18.33.36
+    port: 443
+    uuid: 029b2274-47e2-4831-9f03-3bbe9d7ad0e8
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "nezuko.raidenshogun.cloudns.org"
+    network: ws
+    ws-opts:
+      path: "/VLESS/fr-freevmess.privateip.net"
+  - name: "Node140Germany"
+    type: vless
+    server: 139.59.132.204
+    port: 24465
+    uuid: 02bd1fcc-ebab-47c4-cfa2-3716e788452f
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node141"
+    type: vless
+    server: V2rayZs.ddns.net
+    port: 2087
+    uuid: 02c8c11f-c150-4246-8b06-890c2664a465
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "greenpepper.ir"
+    reality-opts:
+      public-key: u3pF3I99iij1j8m5qeprde_miLLWpTBsKr4d1aePXhI
+      short-id: "80d440e7"
+  - name: "Node142AllRkVPS"
+    type: vless
+    server: kafshu.ir
+    port: 8080
+    uuid: 02d1ca37-15c7-4800-a0e3-6eb19a05a123
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN"
+  - name: "Node143"
+    type: vless
+    server: 151.101.25.242
+    port: 80
+    uuid: 02d87d00-c769-48d8-91cb-bd05e2f62790
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node144"
+    type: vless
+    server: 95.217.214.252
+    port: 51169
+    uuid: 02d89938-6dcc-40ac-91d9-51bdff3d3c7b
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node145REALITYGB"
+    type: vless
+    server: 91.231.186.24
+    port: 8443
+    uuid: 02db10db44e04d6aae77331b0694ac1b
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "nytimes.com"
+    reality-opts:
+      public-key: WhRQP6-muqar8s2OsjHGZZnSiG5LEGsp-CGv6wkhdDs
+      short-id: "aabbccdd"
+  - name: "Node146vltlws2512"
+    type: vless
+    server: 172.64.33.91
+    port: 443
+    uuid: 02e46039-200d-4ae4-ac90-b0d619f72034
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "redlabell.info"
+    network: ws
+    ws-opts:
+      path: "/aafeuws"
+  - name: "Node147openproxyl"
+    type: vless
+    server: clyde.ns.cloudflare.com
+    port: 443
+    uuid: 02e46039-200d-4ae4-ac90-b0d619f72034
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "redlabell.info"
+    network: ws
+    ws-opts:
+      path: "/aafeuws"
+  - name: "Node148ZEDMODEON"
+    type: vless
+    server: 206.189.9.208
+    port: 13622
+    uuid: 02ec1a55-d67c-4775-b8d7-0a13fd812058
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node149RU344Surfb"
+    type: vless
+    server: 78.159.247.79
+    port: 443
+    uuid: 02f62dd5-218f-4e9f-9c4b-f8a2e452533e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.vk.com"
+    reality-opts:
+      public-key: HxjD-7OeJUtrNFsW4PEqThSs6fujV9Mkl5Z4igx21k8
+      short-id: "ef"
+  - name: "Node150AutoAiVPN7"
+    type: vless
+    server: james2.evovpn.ru
+    port: 443
+    uuid: 02f81d56-f7aa-4bfc-bb1a-00037e579c14
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "speedtest.net"
+    reality-opts:
+      public-key: -P9ZxYZP76-s_0mXFUDZeXxgUllKI1zkxSCqQca3NBM
+      short-id: "8f36094fbbe8e92e"
+  - name: "Node151ZEDMODEON"
+    type: vless
+    server: 141.227.162.151
+    port: 33922
+    uuid: 02fa8d5a-676c-4e71-b950-4bd53b54266f
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node152SwedenCIDR"
+    type: vless
+    server: 95.163.182.172
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: 5bGFIWSo4vlrd9Tv1yFcpdpSjrjYYN20SOWHYfighHc
+      short-id: "aad92345"
+  - name: "Node153SwedenCIDR"
+    type: vless
+    server: dostupbypass1.suio.me
+    port: 443
+    uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: 5bGFIWSo4vlrd9Tv1yFcpdpSjrjYYN20SOWHYfighHc
+      short-id: "aad92345"
+  - name: "Node154Switzerlan"
+    type: vless
+    server: fox2.wizard2shop.org
+    port: 2095
+    uuid: 02fb6c16-e1eb-43a9-8a1f-5aa0ba959128
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node155"
+    type: vless
+    server: trt.fastlynew.hosting-ip.com
+    port: 80
+    uuid: 030550a6-5d3a-4a7e-bf67-cd0caa052ddd
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node156OpenRayFR1"
+    type: vless
+    server: 205.237.107.161
+    port: 443
+    uuid: 030d865f-09d3-42e5-91cd-20a55b6e975f
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "to-do.digital"
+    reality-opts:
+      public-key: yAIZa8Fp4M4KR2WgH4fObtHF-JMTCxDNKNib5yIZVmU
+      short-id: ""
+  - name: "Node157OpenRayFR1"
+    type: vless
+    server: 205.237.107.184
+    port: 443
+    uuid: 030d865f-09d3-42e5-91cd-20a55b6e975f
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "to-do.digital"
+    reality-opts:
+      public-key: yAIZa8Fp4M4KR2WgH4fObtHF-JMTCxDNKNib5yIZVmU
+      short-id: ""
+  - name: "Node158OpenRayFR1"
+    type: vless
+    server: 205.237.107.185
+    port: 443
+    uuid: 030d865f-09d3-42e5-91cd-20a55b6e975f
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "to-do.digital"
+    reality-opts:
+      public-key: yAIZa8Fp4M4KR2WgH4fObtHF-JMTCxDNKNib5yIZVmU
+      short-id: ""
+  - name: "Node159OpenRayFR1"
+    type: vless
+    server: 205.237.107.192
+    port: 443
+    uuid: 030d865f-09d3-42e5-91cd-20a55b6e975f
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "to-do.digital"
+    reality-opts:
+      public-key: yAIZa8Fp4M4KR2WgH4fObtHF-JMTCxDNKNib5yIZVmU
+      short-id: ""
+  - name: "Node160REALITYFR"
+    type: vless
+    server: 62.60.248.14
+    port: 28485
+    uuid: 031884db-e31b-4909-b83c-1dfbb84e7931
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "tgju.org"
+    reality-opts:
+      public-key: kP5lEpXBe5wbaSLOR6A9azX6kwMkfEk06bMkEpZxdSE
+      short-id: "dc"
+  - name: "Node1611644"
+    type: vless
+    server: 31.129.42.122
+    port: 443
+    uuid: 03189bf6-7828-4b5f-8fb2-6da4e195bdfd
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: dZwaeGvFS34wVBQOQ5q1c9xs8t1HHu2h9CdxnTGeuAw
+      short-id: "11a33a97aa"
+  - name: "Node1620012"
+    type: vless
+    server: 5.178.85.225
+    port: 443
+    uuid: 03189bf6-7828-4b5f-8fb2-6da4e195bdfd
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: ObBnqYiOaiWqvELvFMZRiWrHYZ5wsyq0WWSwhBteYQw
+      short-id: "7a1197aa"
+  - name: "Node163DE201"
+    type: vless
+    server: free.hfafn.site
+    port: 443
+    uuid: 031a2d6c-ce91-4167-bcb8-012d346a6e70
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "sn.hfafn.site"
+    reality-opts:
+      public-key: CPLcMRb5VAd149rnWt2xOoYzNn_L7bPXxH-mnXfe-lM
+      short-id: "eb2224c8"
+  - name: "Node164AutoAiVPN9"
+    type: vless
+    server: ifmbv9bife41.dop100.com
+    port: 2053
+    uuid: 032863bc-9508-01ff-1735-112282a4da83
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "speedtest.net"
+    reality-opts:
+      public-key: bFmjrq6SnAf7qKp0MGDZLaH4hAmsXpukR7TIdmstyCE
+      short-id: "5fc2f1"
+  - name: "Node165"
+    type: vless
+    server: 160.153.0.131
+    port: 2053
+    uuid: 0328e45c-10a5-4bb2-b381-20b2c3470524
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "PjYeUnLx69.jHyGyUc05-iNd5848Kk.fUn"
+  - name: "Node166"
+    type: vless
+    server: 160.153.0.183
+    port: 2053
+    uuid: 0328e45c-10a5-4bb2-b381-20b2c3470524
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "PjYeUnLx69.jHyGyUc05-iNd5848Kk.fUn"
+  - name: "Node167FREE2CONFI"
+    type: vless
+    server: 54.38.214.29
+    port: 2345
+    uuid: 0331b690-79fc-49d5-85f0-54faa4eff89f
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node168FreakConfi"
+    type: vless
+    server: go.adslimit.info
+    port: 2345
+    uuid: 0331b690-79fc-49d5-85f0-54faa4eff89f
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node169"
+    type: vless
+    server: 91.99.218.107
+    port: 51269
+    uuid: 0341d8f2-99e0-4f6c-af0a-345ac26815cf
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node170"
+    type: vless
+    server: 37.202.237.244
+    port: 55093
+    uuid: 0354ec40-a5f5-49d7-beb0-4624c923529e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node171"
+    type: vless
+    server: 37.202.237.244
+    port: 55094
+    uuid: 0354ec40-a5f5-49d7-beb0-4624c923529e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node172TheNetherl"
+    type: vless
+    server: 158.160.220.7
+    port: 443
+    uuid: 035945b0-c539-4f90-aec7-446f705f04eb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "max.ru"
+    reality-opts:
+      public-key: YKDxvQImldrUfVaJM_Hr49gpEqrDE66j7Psw4vOZuyI
+      short-id: "6ba85179e30d4fc2"
+  - name: "Node173TheNetherl"
+    type: vless
+    server: 158.160.220.7
+    port: 4443
+    uuid: 035945b0-c539-4f90-aec7-446f705f04eb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: YKDxvQImldrUfVaJM_Hr49gpEqrDE66j7Psw4vOZuyI
+      short-id: "6ba85179e30d4fc2"
+  - name: "Node174TheNetherl"
+    type: vless
+    server: 158.160.220.7
+    port: 6443
+    uuid: 035945b0-c539-4f90-aec7-446f705f04eb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: EagleFOEX2C-aS-78Ivg8U6tCxOJ7X1IovccktpXNzI
+      short-id: "6ba85179e30d4fc2"
+  - name: "Node175TheNetherl"
+    type: vless
+    server: 158.160.220.7
+    port: 8443
+    uuid: 035945b0-c539-4f90-aec7-446f705f04eb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "max.ru"
+    reality-opts:
+      public-key: YKDxvQImldrUfVaJM_Hr49gpEqrDE66j7Psw4vOZuyI
+      short-id: "6ba85179e30d4fc2"
+  - name: "Node176TheNetherl"
+    type: vless
+    server: 51.250.111.194
+    port: 443
+    uuid: 035945b0-c539-4f90-aec7-446f705f04eb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: y9hgkaFKFTgKL5PHsksGNKuSrd7jBysJ6rBHktu2k1o
+      short-id: "6ba85179e30d4fc2"
+  - name: "Node177Czechia264"
+    type: vless
+    server: 51.250.111.194
+    port: 7443
+    uuid: 035945b0-c539-4f90-aec7-446f705f04eb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "max.ru"
+    reality-opts:
+      public-key: 7ibca15-im9GR65wrb0N-ij1qdUftpcxTwNxHn9HPUw
+      short-id: "6ba85179e30d4fc2"
+  - name: "Node178TheNetherl"
+    type: vless
+    server: 51.250.7.125
+    port: 443
+    uuid: 035945b0-c539-4f90-aec7-446f705f04eb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "ads.x5.ru"
+    reality-opts:
+      public-key: hxpWlr-5EgNUPr__9gnoDdF9spsl4W4sfNKv_NJM_FY
+      short-id: "6ba85179e30d4fc2"
+  - name: "Node179TheNetherl"
+    type: vless
+    server: 51.250.7.125
+    port: 5443
+    uuid: 035945b0-c539-4f90-aec7-446f705f04eb
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: 7ibca15-im9GR65wrb0N-ij1qdUftpcxTwNxHn9HPUw
+      short-id: "6ba85179e30d4fc2"
+  - name: "Node180TelegramNe"
+    type: vless
+    server: betty.ns.cloudflare.com
+    port: 443
+    uuid: 036340ab-a3fc-45a9-92f8-f4c8d552e0d7
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "639012607479964292.defender-amsjc.info"
+    network: ws
+    ws-opts:
+      path: "/ixbbknws"
+  - name: "Node181GozargahAz"
+    type: vless
+    server: 65.109.216.82
+    port: 1223
+    uuid: 036aba87-eb49-47b3-bc12-333f778eee60
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node182UnitedKing"
+    type: vless
+    server: 46.101.57.231
+    port: 443
+    uuid: 037e395f-f79d-4d61-bb92-dafcc27e53ba
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node183Channelidv"
+    type: vless
+    server: 95.164.6.214
+    port: 443
+    uuid: 03852aa6-db01-4137-972d-14ebfb202f09
+    tls: true
+    udp: true
+    skip-cert-verify: true
+  - name: "Node184"
+    type: vless
+    server: 104.21.34.189
+    port: 443
+    uuid: 03896a37-db8f-44ed-8ce1-45a1577f6da6
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "stipulations.gelatin.workers.dev"
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiZzIxRUF6V2JFOW5IRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560"
+  - name: "Node185OpenRayRU2"
+    type: vless
+    server: 37.18.15.84
+    port: 8443
+    uuid: 03a3ccaa-1f45-4693-8033-2d0592088216
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "rbc.ru"
+    reality-opts:
+      public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
+      short-id: "dc8109baf0f607ea"
+  - name: "Node186AutoAiVPN1"
+    type: vless
+    server: FRANCE.TORPROSPEED.IR
+    port: 250
+    uuid: 03dd6d92-054f-409c-88c0-fad544234d6e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.zhaket.com"
+    reality-opts:
+      public-key: ZOyMDA__RlDV75g7zASfK4YqrFQsqPz7SAw6QuE-gAM
+      short-id: "11e272502d739a32"
+  - name: "Node187GRPCRealit"
+    type: vless
+    server: 193.233.231.221
+    port: 443
+    uuid: 03dd7e7c-8d2a-4cd2-b920-f5ed564fc8c4
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "eh.vk.ru"
+    reality-opts:
+      public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+      short-id: "6ba85179e30d4fc2"
+  - name: "Node188FREE2CONFI"
+    type: vless
+    server: 83.147.255.191
+    port: 448
+    uuid: 03dd7e7c-8d2a-4cd2-b920-f5ed564fc8c4
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "eh.vk.ru"
+    reality-opts:
+      public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+      short-id: ""
+  - name: "Node189FREE2CONFI"
+    type: vless
+    server: 83.166.255.72
+    port: 443
+    uuid: 03dd7e7c-8d2a-4cd2-b920-f5ed564fc8c4
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "api-maps.yandex.ru"
+    reality-opts:
+      public-key: zkeQCEkz7LlrzwzeG26Ae_HEk3_QlgM9CbiWJx5iWh0
+      short-id: ""
+  - name: "Node190V2iCY"
+    type: vless
+    server: Osi4.speedx3.info
+    port: 8880
+    uuid: 04012041-bf32-4682-916e-bfacd8f911b3
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node191ZEDMODEON"
+    type: vless
+    server: 141.227.174.26
+    port: 32416
+    uuid: 04065d54-10f3-4e11-95d3-f98f8429c3ea
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node192210"
+    type: vless
+    server: 104.21.62.144
+    port: 443
+    uuid: 040ec06e-60c8-4818-a46e-eb17cf310606
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node193REALITYRU"
+    type: vless
+    server: turkey8.yourbot.me
+    port: 443
+    uuid: 041b0e57-d4f6-4332-8296-a06a046241fc
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "ftp.debian.org"
+    reality-opts:
+      public-key: OBKACuWea1rLl-_caAlsIu_V40AGwisGpq84qQwWRks
+      short-id: "a26808"
+  - name: "Node194AutoAiVPN1"
+    type: vless
+    server: 91.107.181.159
+    port: 7443
+    uuid: 0420bd64-ee35-481b-bf7d-ca404d639037
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node195AutoAiVPN1"
+    type: vless
+    server: 91.107.181.159
+    port: 8443
+    uuid: 0420bd64-ee35-481b-bf7d-ca404d639037
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node196NETMelliAn"
+    type: vless
+    server: balancer.russia.purr.bot
+    port: 10443
+    uuid: 043c6983-e720-4e82-9568-5694cbf43753
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.sweetpurr.com"
+    reality-opts:
+      public-key: jydcbn_c_lQzE7FxMCqmo4pzl9oYypd-EdpJzpdvfS4
+      short-id: ""
+  - name: "Node197VipSecurit"
+    type: vless
+    server: dowillwe.soon.it
+    port: 37665
+    uuid: 043f42f0-861d-4efd-8d36-8fb1a0eef823
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "psv4.vkuseraudio.net"
+    reality-opts:
+      public-key: fcjBIZcvVsr1Gy-iZbIko-0Ey5icPtmXIxY3sd4UEFw
+      short-id: "9168"
+  - name: "Node198GermanySNI"
+    type: vless
+    server: 194.107.126.214
+    port: 8443
+    uuid: 044818b4-a05f-5813-b8f5-63e1e4615827
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "vk.com"
+    reality-opts:
+      public-key: JOJ9C3bZafgM5-cMNWQQIgsU7rGSMhXOz89852K-EwQ
+      short-id: "c39392324d01"
+  - name: "Node199"
+    type: vless
+    server: 193.46.81.151
+    port: 50853
+    uuid: 0459fcb8-05f0-4cfc-97b9-82683e513902
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "miro.com"
+    reality-opts:
+      public-key: XT7qcjwBZkCQPQVgzP_afaX76GUbHIysmOhJ1gWsLjs
+      short-id: "69"
+  - name: "Node200"
+    type: vless
+    server: 104.16.1.106
+    port: 2082
+    uuid: 0464408a-3db1-4685-92ee-d938d2b58e97
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn"
+  - name: "Node201GermanyBer"
+    type: vless
+    server: 140.99.233.58
+    port: 80
+    uuid: 046da250-d5ef-4867-9095-302477d54d20
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node202"
+    type: vless
+    server: 37.18.14.235
+    port: 443
+    uuid: 047bc9c2-7adc-47b6-9515-ae335714ff6c
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "rutube.ru"
+    reality-opts:
+      public-key: QhnA9aLmUkAz5CeeRE_1w5KyNtn-GeckBtGSavpgUgk
+      short-id: "24ca1a5ebf4e7a85"
+  - name: "Node203XXAzadNett"
+    type: vless
+    server: 104.16.63.239
+    port: 80
+    uuid: 04969b01-ac6a-4056-b5cd-852ccf45f100
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node204"
+    type: vless
+    server: www.visa.com.sg
+    port: 2052
+    uuid: 04b8adad-e69e-4260-876f-3b02b9e690af
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node205DEVLESSgha"
+    type: vless
+    server: 146.75.123.82
+    port: 80
+    uuid: 04ba133d-1f99-4f5c-b942-bed79cddd0a0
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node206Connectbas"
+    type: vless
+    server: a.ru.maviks.ru
+    port: 443
+    uuid: 04bd2301-8fea-462f-b74b-e244c514135d
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "maviks.ru"
+    reality-opts:
+      public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+      short-id: "0f917152a871e9c0"
+  - name: "Node207AutoAiVPN2"
+    type: vless
+    server: 104.21.69.22
+    port: 443
+    uuid: 04d533ee-51ba-47cc-a703-6336470898ad
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "mhsang2c3.afsharidempire.uk"
+    network: ws
+    ws-opts:
+      path: "/8Ku2BGY685PUNtppXQIC9t"
+  - name: "Node208v2rayconfi"
+    type: vless
+    server: sweeT-coMBInATIOn.SeOtooLsFORyOU.co.Uk
+    port: 80
+    uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node209"
+    type: vless
+    server: invoker.fonixapp.org
+    port: 12702
+    uuid: 050312e8-b555-44f0-93e5-e13ccf3845b9
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "grammarly.com"
+    reality-opts:
+      public-key: 9TRNqh5LFeGA6ZkHZyV5l6fB3lOTgk_HaAviYi5MOQY
+      short-id: "b19de72e"
+  - name: "Node210"
+    type: vless
+    server: 199.232.175.238
+    port: 443
+    uuid: 050c7ac1-c948-446f-a6e6-8f2703a75494
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "pinimg.com"
+    network: ws
+    ws-opts:
+      path: "/containers/de"
+  - name: "Node211v2rayconfi"
+    type: vless
+    server: 79.137.195.203
+    port: 2052
+    uuid: 0528474f-b049-471f-da0b-876669acf885
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "www.microsoft.com"
+    reality-opts:
+      public-key: MBJWsayyX0ZwqkVH97aaeNX8ux_FuM2CkHLgPdXnRTs
+      short-id: ""
+  - name: "Node212"
+    type: vless
+    server: slaveukbot.aigris.shop
+    port: 47533
+    uuid: 0528c4ad-90c5-47f6-b424-b3c47042e703
+    tls: false
+    udp: true
+    skip-cert-verify: true
+  - name: "Node213FREE2CONFI"
+    type: vless
+    server: 62.60.148.14
+    port: 25756
+    uuid: 053c2b4a-8eb0-430d-b4b2-b84124fbe2e4
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "google.com"
+    reality-opts:
+      public-key: QYKUzjbRc3V_-SwJ7DbChBt5nT6miAoFuNCqbflDF2o
+      short-id: "61"
+  - name: "Node214AutoAiVPN2"
+    type: vless
+    server: 100.29.55.217
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node215AutoAiVPN6"
+    type: vless
+    server: 13.36.1.17
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node216AutoAiVPN1"
+    type: vless
+    server: 13.36.1.246
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node217AutoAiVPN1"
+    type: vless
+    server: 13.36.100.105
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node218VlessConfi"
+    type: vless
+    server: 13.36.100.192
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node219AutoAiVPN1"
+    type: vless
+    server: 13.36.102.158
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node220AutoAiVPN2"
+    type: vless
+    server: 13.36.104.238
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node221AutoAiVPN7"
+    type: vless
+    server: 13.36.105.165
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node222AutoAiVPN8"
+    type: vless
+    server: 13.36.106.107
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node223AutoAiVPN1"
+    type: vless
+    server: 13.36.106.4
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node224AutoAiVPN1"
+    type: vless
+    server: 13.36.11.189
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node225AutoAiVPN1"
+    type: vless
+    server: 13.36.126.131
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node226a070"
+    type: vless
+    server: 13.36.129.164
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node227AutoAiVPN1"
+    type: vless
+    server: 13.36.131.171
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node228AutoAiVPN4"
+    type: vless
+    server: 13.36.133.103
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node229"
+    type: vless
+    server: 13.36.133.142
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node230AutoAiVPN1"
+    type: vless
+    server: 13.36.133.164
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node231JoinTelegr"
+    type: vless
+    server: 13.36.139.6
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node232AutoAiVPN6"
+    type: vless
+    server: 13.36.14.125
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node233AutoAiVPN1"
+    type: vless
+    server: 13.36.141.115
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node234AutoAiVPN1"
+    type: vless
+    server: 13.36.143.88
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node235VlessConfi"
+    type: vless
+    server: 13.36.144.97
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node236AutoAiVPN5"
+    type: vless
+    server: 13.36.145.127
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node237VlessConfi"
+    type: vless
+    server: 13.36.150.189
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node238AutoAiVPN1"
+    type: vless
+    server: 13.36.157.0
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node239FR172"
+    type: vless
+    server: 13.36.16.231
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node240AutoAiVPN1"
+    type: vless
+    server: 13.36.162.48
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node241AutoAiVPN7"
+    type: vless
+    server: 13.36.17.197
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node242AutoAiVPN5"
+    type: vless
+    server: 13.36.179.207
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node243AutoAiVPN1"
+    type: vless
+    server: 13.36.179.32
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node244VlessConfi"
+    type: vless
+    server: 13.36.179.38
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node245AutoAiVPN1"
+    type: vless
+    server: 13.36.187.193
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node246VipSecurit"
+    type: vless
+    server: 13.36.189.95
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node247AutoAiVPN2"
+    type: vless
+    server: 13.36.190.50
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node248AutoAiVPN2"
+    type: vless
+    server: 13.36.190.91
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node249VipSecurit"
+    type: vless
+    server: 13.36.196.199
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node250VipSecurit"
+    type: vless
+    server: 13.36.197.1
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node251AutoAiVPN1"
+    type: vless
+    server: 13.36.20.247
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node252AutoAiVPN7"
+    type: vless
+    server: 13.36.201.87
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node253AutoAiVPN1"
+    type: vless
+    server: 13.36.205.108
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node254AutoAiVPN9"
+    type: vless
+    server: 13.36.206.216
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node255AutoAiVPN4"
+    type: vless
+    server: 13.36.212.134
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node256AutoAiVPN9"
+    type: vless
+    server: 13.36.216.106
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node257AutoAiVPN1"
+    type: vless
+    server: 13.36.217.61
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node258AutoAiVPN1"
+    type: vless
+    server: 13.36.220.128
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node259AutoAiVPN9"
+    type: vless
+    server: 13.36.222.54
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node260AutoAiVPN6"
+    type: vless
+    server: 13.36.223.77
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node261AutoAiVPN8"
+    type: vless
+    server: 13.36.23.189
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node262"
+    type: vless
+    server: 13.36.242.117
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node263AutoAiVPN1"
+    type: vless
+    server: 13.36.246.100
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node264JoinTelegr"
+    type: vless
+    server: 13.36.247.35
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node265AutoAiVPN7"
+    type: vless
+    server: 13.36.249.38
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node266AutoAiVPN3"
+    type: vless
+    server: 13.36.252.221
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node267AutoAiVPN1"
+    type: vless
+    server: 13.36.29.242
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node268AutoAiVPN3"
+    type: vless
+    server: 13.36.4.102
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node269AutoAiVPN1"
+    type: vless
+    server: 13.36.44.112
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node270AutoAiVPN1"
+    type: vless
+    server: 13.36.48.224
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node271AutoAiVPN2"
+    type: vless
+    server: 13.36.49.48
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node272AutoAiVPN7"
+    type: vless
+    server: 13.36.49.89
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node273AutoAiVPN7"
+    type: vless
+    server: 13.36.52.224
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node274AutoAiVPN1"
+    type: vless
+    server: 13.36.57.120
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node275AutoAiVPN2"
+    type: vless
+    server: 13.36.58.242
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node276AutoAiVPN1"
+    type: vless
+    server: 13.36.59.157
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node277VlessConfi"
+    type: vless
+    server: 13.36.69.253
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node278AutoAiVPN1"
+    type: vless
+    server: 13.36.69.43
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node279AutoAiVPN4"
+    type: vless
+    server: 13.36.72.55
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node280VipSecurit"
+    type: vless
+    server: 13.36.75.195
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node281VipSecurit"
+    type: vless
+    server: 13.36.75.60
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node282AutoAiVPN1"
+    type: vless
+    server: 13.36.79.95
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node283JoinTelegr"
+    type: vless
+    server: 13.36.81.220
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node284AutoAiVPN1"
+    type: vless
+    server: 13.36.92.219
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node285AutoAiVPN6"
+    type: vless
+    server: 13.36.93.101
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node286AutoAiVPN5"
+    type: vless
+    server: 13.37.0.108
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node287AutoAiVPN7"
+    type: vless
+    server: 13.37.0.133
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node288AutoAiVPN1"
+    type: vless
+    server: 13.37.103.10
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node289AutoAiVPN1"
+    type: vless
+    server: 13.37.103.123
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node290AutoAiVPN9"
+    type: vless
+    server: 13.37.11.117
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node291AutoAiVPN1"
+    type: vless
+    server: 13.37.111.9
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node292AutoAiVPN8"
+    type: vless
+    server: 13.37.117.144
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node293AutoAiVPN1"
+    type: vless
+    server: 13.37.117.235
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node294AutoAiVPN1"
+    type: vless
+    server: 13.37.125.213
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node295AutoAiVPN1"
+    type: vless
+    server: 13.37.129.152
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node296"
+    type: vless
+    server: 13.37.130.107
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node297AutoAiVPN1"
+    type: vless
+    server: 13.37.134.157
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node298AutoAiVPN5"
+    type: vless
+    server: 13.37.138.103
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node299AutoAiVPN1"
+    type: vless
+    server: 13.37.138.94
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node300AutoAiVPN1"
+    type: vless
+    server: 13.37.144.126
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node301AutoAiVPN2"
+    type: vless
+    server: 13.37.147.199
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node302AutoAiVPN1"
+    type: vless
+    server: 13.37.147.24
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node303AutoAiVPN1"
+    type: vless
+    server: 13.37.148.9
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node304"
+    type: vless
+    server: 13.37.149.230
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node305AutoAiVPN1"
+    type: vless
+    server: 13.37.151.65
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node306AutoAiVPN1"
+    type: vless
+    server: 13.37.152.13
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node307AutoAiVPN1"
+    type: vless
+    server: 13.37.153.87
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node308AutoAiVPN1"
+    type: vless
+    server: 13.37.155.106
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node309AutoAiVPN1"
+    type: vless
+    server: 13.37.158.14
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node310JoinTelegr"
+    type: vless
+    server: 13.37.160.116
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node311AutoAiVPN4"
+    type: vless
+    server: 13.37.161.123
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node312AutoAiVPN7"
+    type: vless
+    server: 13.37.161.126
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node313AutoAiVPN8"
+    type: vless
+    server: 13.37.163.45
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node314AutoAiVPN1"
+    type: vless
+    server: 13.37.17.196
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node315"
+    type: vless
+    server: 13.37.173.17
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node316AutoAiVPN1"
+    type: vless
+    server: 13.37.175.182
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node317AutoAiVPN1"
+    type: vless
+    server: 13.37.18.131
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node318AutoAiVPN8"
+    type: vless
+    server: 13.37.182.65
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node319FRAzadNett"
+    type: vless
+    server: 13.37.184.19
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+  - name: "Node320AutoAiVPN8"
+    type: vless
+    server: 13.37.187.104
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node321VipSecurit"
+    type: vless
+    server: 13.37.187.91
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node322AutoAiVPN2"
+    type: vless
+    server: 13.37.19.80
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node323AutoAiVPN1"
+    type: vless
+    server: 13.37.191.214
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node324AutoAiVPN4"
+    type: vless
+    server: 13.37.204.11
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node325AutoAiVPN1"
+    type: vless
+    server: 13.37.208.102
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node326AutoAiVPN2"
+    type: vless
+    server: 13.37.23.236
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node327AutoAiVPN8"
+    type: vless
+    server: 13.37.24.11
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node328AutoAiVPN5"
+    type: vless
+    server: 13.37.25.118
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node329AutoAiVPN3"
+    type: vless
+    server: 13.37.253.72
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node330AutoAiVPN8"
+    type: vless
+    server: 13.37.27.224
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node331AutoAiVPN5"
+    type: vless
+    server: 13.37.28.154
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node332AutoAiVPN1"
+    type: vless
+    server: 13.37.31.160
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node333VlessConfi"
+    type: vless
+    server: 13.37.34.128
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node334FR61"
+    type: vless
+    server: 13.37.34.171
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node335AutoAiVPN8"
+    type: vless
+    server: 13.37.35.7
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node336AutoAiVPN1"
+    type: vless
+    server: 13.37.43.85
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node337AutoAiVPN4"
+    type: vless
+    server: 13.37.45.46
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node338AutoAiVPN8"
+    type: vless
+    server: 13.37.49.244
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node339AutoAiVPN1"
+    type: vless
+    server: 13.37.53.79
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node340AutoAiVPN5"
+    type: vless
+    server: 13.37.54.205
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node341AutoAiVPN8"
+    type: vless
+    server: 13.37.56.104
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node342AutoAiVPN1"
+    type: vless
+    server: 13.37.56.225
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node343AutoAiVPN1"
+    type: vless
+    server: 13.37.61.95
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node344AutoAiVPN8"
+    type: vless
+    server: 13.37.65.168
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node345AutoAiVPN9"
+    type: vless
+    server: 13.37.66.223
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node346JoinTelegr"
+    type: vless
+    server: 13.37.70.47
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node347AutoAiVPN2"
+    type: vless
+    server: 13.37.8.196
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node348AutoAiVPN2"
+    type: vless
+    server: 13.37.8.71
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node349AutoAiVPN1"
+    type: vless
+    server: 13.37.84.247
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node350AutoAiVPN1"
+    type: vless
+    server: 13.37.84.77
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node351AutoAiVPN9"
+    type: vless
+    server: 13.37.87.56
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node352VipSecurit"
+    type: vless
+    server: 13.37.88.6
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node353AutoAiVPN1"
+    type: vless
+    server: 13.37.94.158
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node354AutoAiVPN1"
+    type: vless
+    server: 13.37.96.120
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node355AutoAiVPN1"
+    type: vless
+    server: 13.37.97.170
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node356JoinTelegr"
+    type: vless
+    server: 13.38.147.171
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node357AutoAiVPN2"
+    type: vless
+    server: 13.38.152.12
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node358AutoAiVPN1"
+    type: vless
+    server: 13.38.160.159
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node359AutoAiVPN9"
+    type: vless
+    server: 13.38.160.98
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node360AutoAiVPN2"
+    type: vless
+    server: 13.38.161.110
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node361VipSecurit"
+    type: vless
+    server: 13.38.163.166
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node362AutoAiVPN1"
+    type: vless
+    server: 13.38.168.145
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node363AutoAiVPN2"
+    type: vless
+    server: 13.38.170.83
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node364AutoAiVPN9"
+    type: vless
+    server: 13.38.173.119
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node365VipSecurit"
+    type: vless
+    server: 13.38.177.145
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node366AutoAiVPN2"
+    type: vless
+    server: 13.38.178.153
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node367AutoAiVPN1"
+    type: vless
+    server: 13.38.179.112
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node368AutoAiVPN1"
+    type: vless
+    server: 13.38.179.47
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node369AutoAiVPN1"
+    type: vless
+    server: 13.38.179.73
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node370AutoAiVPN1"
+    type: vless
+    server: 13.38.185.244
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node371AutoAiVPN2"
+    type: vless
+    server: 13.38.185.255
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node372AutoAiVPN9"
+    type: vless
+    server: 13.38.189.166
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node373AutoAiVPN7"
+    type: vless
+    server: 13.38.193.247
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node374AutoAiVPN1"
+    type: vless
+    server: 13.38.194.185
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node375AutoAiVPN1"
+    type: vless
+    server: 13.38.197.7
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node376AutoAiVPN1"
+    type: vless
+    server: 13.38.198.241
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node377AutoAiVPN1"
+    type: vless
+    server: 13.38.199.103
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node378AutoAiVPN1"
+    type: vless
+    server: 13.38.203.210
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node379AutoAiVPN1"
+    type: vless
+    server: 13.38.207.171
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node380AutoAiVPN2"
+    type: vless
+    server: 13.38.208.62
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node381AutoAiVPN1"
+    type: vless
+    server: 13.38.211.148
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node382AutoAiVPN8"
+    type: vless
+    server: 13.38.214.60
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node383AutoAiVPN1"
+    type: vless
+    server: 13.38.222.199
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node384AutoAiVPN2"
+    type: vless
+    server: 13.38.225.194
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node385AutoAiVPN1"
+    type: vless
+    server: 13.38.225.85
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node386VlessConfi"
+    type: vless
+    server: 13.38.232.205
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node387VlessConfi"
+    type: vless
+    server: 13.38.235.130
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node388AutoAiVPN1"
+    type: vless
+    server: 13.38.235.205
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node389VipSecurit"
+    type: vless
+    server: 13.38.239.157
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node390AutoAiVPN7"
+    type: vless
+    server: 13.38.239.27
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node391FRVLESSvle"
+    type: vless
+    server: 13.38.248.91
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node392AutoAiVPN1"
+    type: vless
+    server: 13.38.3.23
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node393AutoAiVPN7"
+    type: vless
+    server: 13.39.0.130
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node394AutoAiVPN1"
+    type: vless
+    server: 13.39.0.175
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node395AutoAiVPN2"
+    type: vless
+    server: 13.39.0.222
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node396AutoAiVPN1"
+    type: vless
+    server: 13.39.1.54
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node3974Mohsen512"
+    type: vless
+    server: 13.39.102.149
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node398AutoAiVPN1"
+    type: vless
+    server: 13.39.11.161
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node399AutoAiVPN8"
+    type: vless
+    server: 13.39.11.27
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node400AutoAiVPN1"
+    type: vless
+    server: 13.39.116.117
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node401AutoAiVPN2"
+    type: vless
+    server: 13.39.117.250
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node402AutoAiVPN1"
+    type: vless
+    server: 13.39.125.170
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node403AutoAiVPN1"
+    type: vless
+    server: 13.39.126.133
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node404AutoAiVPN2"
+    type: vless
+    server: 13.39.127.100
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node405AutoAiVPN6"
+    type: vless
+    server: 13.39.136.125
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node406AutoAiVPN1"
+    type: vless
+    server: 13.39.138.247
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node407AutoAiVPN1"
+    type: vless
+    server: 13.39.143.120
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node408AutoAiVPN2"
+    type: vless
+    server: 13.39.147.136
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node409AutoAiVPN9"
+    type: vless
+    server: 13.39.151.215
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node410AutoAiVPN1"
+    type: vless
+    server: 13.39.154.102
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node411AutoAiVPN6"
+    type: vless
+    server: 13.39.154.82
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node412VipSecurit"
+    type: vless
+    server: 13.39.164.242
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node413AutoAiVPN1"
+    type: vless
+    server: 13.39.169.16
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node414AutoAiVPN5"
+    type: vless
+    server: 13.39.171.69
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node415AutoAiVPN8"
+    type: vless
+    server: 13.39.176.31
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node416AutoAiVPN1"
+    type: vless
+    server: 13.39.179.147
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node417AutoAiVPN1"
+    type: vless
+    server: 13.39.183.36
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node418VipSecurit"
+    type: vless
+    server: 13.39.184.253
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node419AutoAiVPN1"
+    type: vless
+    server: 13.39.186.144
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node420AutoAiVPN9"
+    type: vless
+    server: 13.39.186.93
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node421AutoAiVPN1"
+    type: vless
+    server: 13.39.187.138
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node422AutoAiVPN6"
+    type: vless
+    server: 13.39.190.179
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node423AutoAiVPN8"
+    type: vless
+    server: 13.39.201.68
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node424AutoAiVPN1"
+    type: vless
+    server: 13.39.212.231
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node425AutoAiVPN1"
+    type: vless
+    server: 13.39.213.129
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node426AutoAiVPN1"
+    type: vless
+    server: 13.39.215.91
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node427AutoAiVPN8"
+    type: vless
+    server: 13.39.230.115
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node428JoinTelegr"
+    type: vless
+    server: 13.39.239.251
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node429AutoAiVPN2"
+    type: vless
+    server: 13.39.240.185
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node430AutoAiVPN2"
+    type: vless
+    server: 13.39.245.148
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node431AutoAiVPN2"
+    type: vless
+    server: 13.39.246.81
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node432VipSecurit"
+    type: vless
+    server: 13.39.249.232
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node433AutoAiVPN1"
+    type: vless
+    server: 13.39.249.245
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node434VlessConfi"
+    type: vless
+    server: 13.39.249.92
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node435JoinTelegr"
+    type: vless
+    server: 13.39.251.75
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node436AutoAiVPN9"
+    type: vless
+    server: 13.39.254.180
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node437AutoAiVPN4"
+    type: vless
+    server: 13.39.28.15
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node438AutoAiVPN1"
+    type: vless
+    server: 13.39.29.241
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node439AutoAiVPN1"
+    type: vless
+    server: 13.39.29.54
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node440AutoAiVPN1"
+    type: vless
+    server: 13.39.30.145
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node441AutoAiVPN1"
+    type: vless
+    server: 13.39.32.206
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node442AutoAiVPN5"
+    type: vless
+    server: 13.39.41.40
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node443AutoAiVPN2"
+    type: vless
+    server: 13.39.42.248
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node444AutoAiVPN3"
+    type: vless
+    server: 13.39.45.108
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node445AutoAiVPN8"
+    type: vless
+    server: 13.39.5.124
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node446AutoAiVPN4"
+    type: vless
+    server: 13.39.54.25
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node447AutoAiVPN7"
+    type: vless
+    server: 13.39.55.68
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node448AutoAiVPN8"
+    type: vless
+    server: 13.39.58.25
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node449AutoAiVPN1"
+    type: vless
+    server: 13.39.59.110
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node450AutoAiVPN3"
+    type: vless
+    server: 13.39.59.229
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node451AutoAiVPN1"
+    type: vless
+    server: 13.39.61.165
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node452AutoAiVPN2"
+    type: vless
+    server: 13.39.63.241
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node453AutoAiVPN3"
+    type: vless
+    server: 13.39.63.75
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node454FR737"
+    type: vless
+    server: 13.39.65.166
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node455AutoAiVPN1"
+    type: vless
+    server: 13.39.66.173
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node456AutoAiVPN3"
+    type: vless
+    server: 13.39.67.184
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node457AutoAiVPN9"
+    type: vless
+    server: 13.39.73.201
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node458VlessConfi"
+    type: vless
+    server: 13.39.77.217
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node459AutoAiVPN1"
+    type: vless
+    server: 13.39.8.223
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node460PewezaVPN"
+    type: vless
+    server: 13.39.91.2
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node461AutoAiVPN1"
+    type: vless
+    server: 13.39.97.24
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node462AutoAiVPN6"
+    type: vless
+    server: 13.39.99.217
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node463GB195"
+    type: vless
+    server: 13.41.255.135
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node464GB78"
+    type: vless
+    server: 13.41.32.190
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node465AutoAiVPN1"
+    type: vless
+    server: 13.41.84.70
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node466GB146"
+    type: vless
+    server: 13.43.181.38
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node467AutoAiVPN3"
+    type: vless
+    server: 13.48.184.26
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node468"
+    type: vless
+    server: 13.48.209.18
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node469SE22"
+    type: vless
+    server: 13.49.180.96
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node470prrofilepu"
+    type: vless
+    server: 13.49.245.193
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node471prrofilepu"
+    type: vless
+    server: 13.49.64.42
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node472SE758"
+    type: vless
+    server: 13.50.144.48
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node473SE1"
+    type: vless
+    server: 13.50.94.246
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node474"
+    type: vless
+    server: 13.51.37.210
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node4754Mohsen512"
+    type: vless
+    server: 13.51.53.125
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node476SE144"
+    type: vless
+    server: 13.53.239.172
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node477"
+    type: vless
+    server: 15.156.233.240
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node478CA174"
+    type: vless
+    server: 15.156.249.54
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node479Telegram"
+    type: vless
+    server: 15.157.160.62
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node480AutoAiVPN8"
+    type: vless
+    server: 15.188.1.99
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node481AutoAiVPN1"
+    type: vless
+    server: 15.188.100.75
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node482FR24"
+    type: vless
+    server: 15.188.101.114
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node483AutoAiVPN3"
+    type: vless
+    server: 15.188.103.156
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node484AutoAiVPN1"
+    type: vless
+    server: 15.188.107.82
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node485AutoAiVPN7"
+    type: vless
+    server: 15.188.112.221
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node486AutoAiVPN1"
+    type: vless
+    server: 15.188.113.139
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node487AutoAiVPN1"
+    type: vless
+    server: 15.188.124.7
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node488AutoAiVPN2"
+    type: vless
+    server: 15.188.128.163
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node489AutoAiVPN1"
+    type: vless
+    server: 15.188.13.192
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node490AutoAiVPN8"
+    type: vless
+    server: 15.188.13.199
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node491AutoAiVPN4"
+    type: vless
+    server: 15.188.132.205
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node492AutoAiVPN1"
+    type: vless
+    server: 15.188.133.222
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node493AutoAiVPN7"
+    type: vless
+    server: 15.188.138.224
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node494AutoAiVPN1"
+    type: vless
+    server: 15.188.142.37
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node495AutoAiVPN1"
+    type: vless
+    server: 15.188.151.116
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node496AutoAiVPN1"
+    type: vless
+    server: 15.188.152.14
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node497AutoAiVPN2"
+    type: vless
+    server: 15.188.153.79
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node498JoinTelegr"
+    type: vless
+    server: 15.188.153.82
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node499AutoAiVPN1"
+    type: vless
+    server: 15.188.156.120
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node500AutoAiVPN1"
+    type: vless
+    server: 15.188.156.122
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node5014Mohsen555"
+    type: vless
+    server: 15.188.161.63
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node502AutoAiVPN2"
+    type: vless
+    server: 15.188.162.81
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node503AutoAiVPN1"
+    type: vless
+    server: 15.188.166.63
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node504AutoAiVPN2"
+    type: vless
+    server: 15.188.167.73
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node505HopeNetjoi"
+    type: vless
+    server: 15.188.17.63
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+  - name: "Node506AutoAiVPN1"
+    type: vless
+    server: 15.188.170.162
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node507AutoAiVPN7"
+    type: vless
+    server: 15.188.171.132
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node508AutoAiVPN1"
+    type: vless
+    server: 15.188.173.231
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node509AutoAiVPN8"
+    type: vless
+    server: 15.188.175.202
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node510AutoAiVPN1"
+    type: vless
+    server: 15.188.176.243
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node511AutoAiVPN8"
+    type: vless
+    server: 15.188.176.84
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node512AutoAiVPN5"
+    type: vless
+    server: 15.188.178.145
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node513AutoAiVPN7"
+    type: vless
+    server: 15.188.179.102
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node514"
+    type: vless
+    server: 15.188.182.161
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node515AutoAiVPN1"
+    type: vless
+    server: 15.188.182.245
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node516AutoAiVPN2"
+    type: vless
+    server: 15.188.186.181
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node517AutoAiVPN1"
+    type: vless
+    server: 15.188.189.248
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node518AutoAiVPN5"
+    type: vless
+    server: 15.188.19.235
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node519AutoAiVPN7"
+    type: vless
+    server: 15.188.191.121
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node520AutoAiVPN1"
+    type: vless
+    server: 15.188.196.17
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node521AutoAiVPN8"
+    type: vless
+    server: 15.188.198.102
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node522VipSecurit"
+    type: vless
+    server: 15.188.2.109
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node523AutoAiVPN8"
+    type: vless
+    server: 15.188.202.143
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node524AutoAiVPN2"
+    type: vless
+    server: 15.188.203.180
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node525AutoAiVPN1"
+    type: vless
+    server: 15.188.204.33
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node526AutoAiVPN1"
+    type: vless
+    server: 15.188.206.228
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node527AutoAiVPN8"
+    type: vless
+    server: 15.188.206.31
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node528AutoAiVPN2"
+    type: vless
+    server: 15.188.21.75
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node529AutoAiVPN1"
+    type: vless
+    server: 15.188.211.210
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node530FR104"
+    type: vless
+    server: 15.188.219.3
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node531AutoAiVPN2"
+    type: vless
+    server: 15.188.225.111
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node532FR9"
+    type: vless
+    server: 15.188.226.147
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "telegram-channel-vlessconfig.sohala.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig-ws"
+  - name: "Node533AutoAiVPN2"
+    type: vless
+    server: 15.188.226.98
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node534FRAzadNett"
+    type: vless
+    server: 15.188.233.114
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+  - name: "Node535tmeNotorga"
+    type: vless
+    server: 15.188.235.241
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node536AutoAiVPN1"
+    type: vless
+    server: 15.188.237.245
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node5374Mohsen512"
+    type: vless
+    server: 15.188.237.53
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node538VlessConfi"
+    type: vless
+    server: 15.188.240.93
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: false
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "Node539qn0723"
+    type: vless
+    server: 15.188.241.30
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node540AutoAiVPN1"
+    type: vless
+    server: 15.188.244.223
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node541AutoAiVPN1"
+    type: vless
+    server: 15.188.247.204
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node542AutoAiVPN2"
+    type: vless
+    server: 15.188.248.81
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node543AutoAiVPN1"
+    type: vless
+    server: 15.188.250.152
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node544AutoAiVPN1"
+    type: vless
+    server: 15.188.29.86
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node545AutoAiVPN1"
+    type: vless
+    server: 15.188.32.128
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node546AutoAiVPN1"
+    type: vless
+    server: 15.188.34.139
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node547AutoAiVPN3"
+    type: vless
+    server: 15.188.36.178
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node548AutoAiVPN1"
+    type: vless
+    server: 15.188.36.211
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+  - name: "Node549AutoAiVPN1"
+    type: vless
+    server: 15.188.41.119
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    servername: "trojan.burgerip.co.uk"
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
 
-# Настройки
-HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
+proxy-groups:
+  - name: "Auto"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    proxies:
+      - "Node0CUSTOMVPNS"
+      - "Node1vpnwedbazm"
+      - "Node2AutoAiVPN7"
+      - "Node3TheNetherl"
+      - "Node4TheNetherl"
+      - "Node5TheNetherl"
+      - "Node6TheNetherl"
+      - "Node7TheNetherl"
+      - "Node8Telmahanvp"
+      - "Node9MCIRkfilte"
+      - "Node10MCIRkfilte"
+      - "Node11AllRkfilte"
+      - "Node12v2rayfark"
+      - "Node13v2rayfark"
+      - "Node14lv2rayfark"
+      - "Node15v2rayfark"
+      - "Node16lv2rayfark"
+      - "Node17v2rayfark"
+      - "Node18v2rayfark"
+      - "Node19lv2rayfark"
+      - "Node20v2rayfark"
+      - "Node21v2rayfark"
+      - "Node22v2rayfark"
+      - "Node23v2rayfark"
+      - "Node24v2rayfark"
+      - "Node25v2rayfark"
+      - "Node26v2rayfark"
+      - "Node27v2rayfark"
+      - "Node28v2rayfark"
+      - "Node29v2rayfark"
+      - "Node30v2rayfark"
+      - "Node31v2rayfark"
+      - "Node32v2rayfark"
+      - "Node33v2rayfark"
+      - "Node34"
+      - "Node35SEVLESSkur"
+      - "Node36"
+      - "Node37"
+      - "Node38"
+      - "Node39"
+      - "Node40"
+      - "Node41Parsashona"
+      - "Node42"
+      - "Node43Parsashona"
+      - "Node44"
+      - "Node45Parsashona"
+      - "Node46REALITYPar"
+      - "Node47"
+      - "Node48RU797"
+      - "Node49FI814"
+      - "Node50"
+      - "Node51"
+      - "Node52DE10"
+      - "Node53"
+      - "Node54MsV2rayWsA"
+      - "Node55v2naptv"
+      - "Node56MCIRkV2ray"
+      - "Node57Telmahanvp"
+      - "Node58OpenRayGB9"
+      - "Node59OpenRayDE1"
+      - "Node60"
+      - "Node61OpenRaySE1"
+      - "Node62OpenRayFI1"
+      - "Node63GermanyDre"
+      - "Node64V2xay"
+      - "Node65DEVLESSman"
+      - "Node66deliserver"
+      - "Node67OpenRayDE1"
+      - "Node68OpenRayDE1"
+      - "Node69FREE2CONFI"
+      - "Node70OpenRayBE6"
+      - "Node71OpenRayBE6"
+      - "Node72OpenRayBE6"
+      - "Node73SE127MBs"
+      - "Node74AllJOKERRV"
+      - "Node75AllJOKERRV"
+      - "Node76"
+      - "Node774Mohsen495"
+      - "Node78AZARBAYJAB"
+      - "Node79aeproxy"
+      - "Node80aeproxy"
+      - "Node81V2ray1"
+      - "Node82"
+      - "Node83USDE"
+      - "Node84USDE"
+      - "Node85USDE"
+      - "Node86"
+      - "Node874Sarina487"
+      - "Node88vmesskhoda"
+      - "Node89"
+      - "Node90XXAzadNett"
+      - "Node91AutoAiVPN8"
+      - "Node92PolandCIDR"
+      - "Node93"
+      - "Node94PolandCIDR"
+      - "Node95"
+      - "Node96AutoAiVPN1"
+      - "Node97AutoAiVPN1"
+      - "Node98Test2"
+      - "Node99GermanyFre"
+      - "Node100Nederlandv"
+      - "Node101RU270Surfb"
+      - "Node102RUspeednod"
+      - "Node103RUspeednod"
+      - "Node104RUspeednod"
+      - "Node105XpnTeamk9f"
+      - "Node106mehrosabor"
+      - "Node107mehrosabor"
+      - "Node108mehrosabor"
+      - "Node109VmessProto"
+      - "Node110"
+      - "Node111FreakConfi"
+      - "Node112IBv2ray"
+      - "Node113VipSecurit"
+      - "Node114TelegramEX"
+      - "Node115RU287Surfb"
+      - "Node116"
+      - "Node117AKLISvpn"
+      - "Node118FI"
+      - "Node119AutoAiVPN6"
+      - "Node120OpenRayRU2"
+      - "Node121"
+      - "Node122VMESSIRANv"
+      - "Node123GozargahVP"
+      - "Node124DE"
+      - "Node125FR"
+      - "Node126"
+      - "Node127"
+      - "Node128"
+      - "Node12919792"
+      - "Node130tmeRaiv2mm"
+      - "Node131"
+      - "Node132melov2ray"
+      - "Node133melov2ray"
+      - "Node134Belgium237"
+      - "Node135OpenRayBE7"
+      - "Node136"
+      - "Node137CZVLESSbor"
+      - "Node138Expreset"
+      - "Node139AutoAiVPN2"
+      - "Node140Germany"
+      - "Node141"
+      - "Node142AllRkVPS"
+      - "Node143"
+      - "Node144"
+      - "Node145REALITYGB"
+      - "Node146vltlws2512"
+      - "Node147openproxyl"
+      - "Node148ZEDMODEON"
+      - "Node149RU344Surfb"
+      - "Node150AutoAiVPN7"
+      - "Node151ZEDMODEON"
+      - "Node152SwedenCIDR"
+      - "Node153SwedenCIDR"
+      - "Node154Switzerlan"
+      - "Node155"
+      - "Node156OpenRayFR1"
+      - "Node157OpenRayFR1"
+      - "Node158OpenRayFR1"
+      - "Node159OpenRayFR1"
+      - "Node160REALITYFR"
+      - "Node1611644"
+      - "Node1620012"
+      - "Node163DE201"
+      - "Node164AutoAiVPN9"
+      - "Node165"
+      - "Node166"
+      - "Node167FREE2CONFI"
+      - "Node168FreakConfi"
+      - "Node169"
+      - "Node170"
+      - "Node171"
+      - "Node172TheNetherl"
+      - "Node173TheNetherl"
+      - "Node174TheNetherl"
+      - "Node175TheNetherl"
+      - "Node176TheNetherl"
+      - "Node177Czechia264"
+      - "Node178TheNetherl"
+      - "Node179TheNetherl"
+      - "Node180TelegramNe"
+      - "Node181GozargahAz"
+      - "Node182UnitedKing"
+      - "Node183Channelidv"
+      - "Node184"
+      - "Node185OpenRayRU2"
+      - "Node186AutoAiVPN1"
+      - "Node187GRPCRealit"
+      - "Node188FREE2CONFI"
+      - "Node189FREE2CONFI"
+      - "Node190V2iCY"
+      - "Node191ZEDMODEON"
+      - "Node192210"
+      - "Node193REALITYRU"
+      - "Node194AutoAiVPN1"
+      - "Node195AutoAiVPN1"
+      - "Node196NETMelliAn"
+      - "Node197VipSecurit"
+      - "Node198GermanySNI"
+      - "Node199"
+      - "Node200"
+      - "Node201GermanyBer"
+      - "Node202"
+      - "Node203XXAzadNett"
+      - "Node204"
+      - "Node205DEVLESSgha"
+      - "Node206Connectbas"
+      - "Node207AutoAiVPN2"
+      - "Node208v2rayconfi"
+      - "Node209"
+      - "Node210"
+      - "Node211v2rayconfi"
+      - "Node212"
+      - "Node213FREE2CONFI"
+      - "Node214AutoAiVPN2"
+      - "Node215AutoAiVPN6"
+      - "Node216AutoAiVPN1"
+      - "Node217AutoAiVPN1"
+      - "Node218VlessConfi"
+      - "Node219AutoAiVPN1"
+      - "Node220AutoAiVPN2"
+      - "Node221AutoAiVPN7"
+      - "Node222AutoAiVPN8"
+      - "Node223AutoAiVPN1"
+      - "Node224AutoAiVPN1"
+      - "Node225AutoAiVPN1"
+      - "Node226a070"
+      - "Node227AutoAiVPN1"
+      - "Node228AutoAiVPN4"
+      - "Node229"
+      - "Node230AutoAiVPN1"
+      - "Node231JoinTelegr"
+      - "Node232AutoAiVPN6"
+      - "Node233AutoAiVPN1"
+      - "Node234AutoAiVPN1"
+      - "Node235VlessConfi"
+      - "Node236AutoAiVPN5"
+      - "Node237VlessConfi"
+      - "Node238AutoAiVPN1"
+      - "Node239FR172"
+      - "Node240AutoAiVPN1"
+      - "Node241AutoAiVPN7"
+      - "Node242AutoAiVPN5"
+      - "Node243AutoAiVPN1"
+      - "Node244VlessConfi"
+      - "Node245AutoAiVPN1"
+      - "Node246VipSecurit"
+      - "Node247AutoAiVPN2"
+      - "Node248AutoAiVPN2"
+      - "Node249VipSecurit"
+      - "Node250VipSecurit"
+      - "Node251AutoAiVPN1"
+      - "Node252AutoAiVPN7"
+      - "Node253AutoAiVPN1"
+      - "Node254AutoAiVPN9"
+      - "Node255AutoAiVPN4"
+      - "Node256AutoAiVPN9"
+      - "Node257AutoAiVPN1"
+      - "Node258AutoAiVPN1"
+      - "Node259AutoAiVPN9"
+      - "Node260AutoAiVPN6"
+      - "Node261AutoAiVPN8"
+      - "Node262"
+      - "Node263AutoAiVPN1"
+      - "Node264JoinTelegr"
+      - "Node265AutoAiVPN7"
+      - "Node266AutoAiVPN3"
+      - "Node267AutoAiVPN1"
+      - "Node268AutoAiVPN3"
+      - "Node269AutoAiVPN1"
+      - "Node270AutoAiVPN1"
+      - "Node271AutoAiVPN2"
+      - "Node272AutoAiVPN7"
+      - "Node273AutoAiVPN7"
+      - "Node274AutoAiVPN1"
+      - "Node275AutoAiVPN2"
+      - "Node276AutoAiVPN1"
+      - "Node277VlessConfi"
+      - "Node278AutoAiVPN1"
+      - "Node279AutoAiVPN4"
+      - "Node280VipSecurit"
+      - "Node281VipSecurit"
+      - "Node282AutoAiVPN1"
+      - "Node283JoinTelegr"
+      - "Node284AutoAiVPN1"
+      - "Node285AutoAiVPN6"
+      - "Node286AutoAiVPN5"
+      - "Node287AutoAiVPN7"
+      - "Node288AutoAiVPN1"
+      - "Node289AutoAiVPN1"
+      - "Node290AutoAiVPN9"
+      - "Node291AutoAiVPN1"
+      - "Node292AutoAiVPN8"
+      - "Node293AutoAiVPN1"
+      - "Node294AutoAiVPN1"
+      - "Node295AutoAiVPN1"
+      - "Node296"
+      - "Node297AutoAiVPN1"
+      - "Node298AutoAiVPN5"
+      - "Node299AutoAiVPN1"
+      - "Node300AutoAiVPN1"
+      - "Node301AutoAiVPN2"
+      - "Node302AutoAiVPN1"
+      - "Node303AutoAiVPN1"
+      - "Node304"
+      - "Node305AutoAiVPN1"
+      - "Node306AutoAiVPN1"
+      - "Node307AutoAiVPN1"
+      - "Node308AutoAiVPN1"
+      - "Node309AutoAiVPN1"
+      - "Node310JoinTelegr"
+      - "Node311AutoAiVPN4"
+      - "Node312AutoAiVPN7"
+      - "Node313AutoAiVPN8"
+      - "Node314AutoAiVPN1"
+      - "Node315"
+      - "Node316AutoAiVPN1"
+      - "Node317AutoAiVPN1"
+      - "Node318AutoAiVPN8"
+      - "Node319FRAzadNett"
+      - "Node320AutoAiVPN8"
+      - "Node321VipSecurit"
+      - "Node322AutoAiVPN2"
+      - "Node323AutoAiVPN1"
+      - "Node324AutoAiVPN4"
+      - "Node325AutoAiVPN1"
+      - "Node326AutoAiVPN2"
+      - "Node327AutoAiVPN8"
+      - "Node328AutoAiVPN5"
+      - "Node329AutoAiVPN3"
+      - "Node330AutoAiVPN8"
+      - "Node331AutoAiVPN5"
+      - "Node332AutoAiVPN1"
+      - "Node333VlessConfi"
+      - "Node334FR61"
+      - "Node335AutoAiVPN8"
+      - "Node336AutoAiVPN1"
+      - "Node337AutoAiVPN4"
+      - "Node338AutoAiVPN8"
+      - "Node339AutoAiVPN1"
+      - "Node340AutoAiVPN5"
+      - "Node341AutoAiVPN8"
+      - "Node342AutoAiVPN1"
+      - "Node343AutoAiVPN1"
+      - "Node344AutoAiVPN8"
+      - "Node345AutoAiVPN9"
+      - "Node346JoinTelegr"
+      - "Node347AutoAiVPN2"
+      - "Node348AutoAiVPN2"
+      - "Node349AutoAiVPN1"
+      - "Node350AutoAiVPN1"
+      - "Node351AutoAiVPN9"
+      - "Node352VipSecurit"
+      - "Node353AutoAiVPN1"
+      - "Node354AutoAiVPN1"
+      - "Node355AutoAiVPN1"
+      - "Node356JoinTelegr"
+      - "Node357AutoAiVPN2"
+      - "Node358AutoAiVPN1"
+      - "Node359AutoAiVPN9"
+      - "Node360AutoAiVPN2"
+      - "Node361VipSecurit"
+      - "Node362AutoAiVPN1"
+      - "Node363AutoAiVPN2"
+      - "Node364AutoAiVPN9"
+      - "Node365VipSecurit"
+      - "Node366AutoAiVPN2"
+      - "Node367AutoAiVPN1"
+      - "Node368AutoAiVPN1"
+      - "Node369AutoAiVPN1"
+      - "Node370AutoAiVPN1"
+      - "Node371AutoAiVPN2"
+      - "Node372AutoAiVPN9"
+      - "Node373AutoAiVPN7"
+      - "Node374AutoAiVPN1"
+      - "Node375AutoAiVPN1"
+      - "Node376AutoAiVPN1"
+      - "Node377AutoAiVPN1"
+      - "Node378AutoAiVPN1"
+      - "Node379AutoAiVPN1"
+      - "Node380AutoAiVPN2"
+      - "Node381AutoAiVPN1"
+      - "Node382AutoAiVPN8"
+      - "Node383AutoAiVPN1"
+      - "Node384AutoAiVPN2"
+      - "Node385AutoAiVPN1"
+      - "Node386VlessConfi"
+      - "Node387VlessConfi"
+      - "Node388AutoAiVPN1"
+      - "Node389VipSecurit"
+      - "Node390AutoAiVPN7"
+      - "Node391FRVLESSvle"
+      - "Node392AutoAiVPN1"
+      - "Node393AutoAiVPN7"
+      - "Node394AutoAiVPN1"
+      - "Node395AutoAiVPN2"
+      - "Node396AutoAiVPN1"
+      - "Node3974Mohsen512"
+      - "Node398AutoAiVPN1"
+      - "Node399AutoAiVPN8"
+      - "Node400AutoAiVPN1"
+      - "Node401AutoAiVPN2"
+      - "Node402AutoAiVPN1"
+      - "Node403AutoAiVPN1"
+      - "Node404AutoAiVPN2"
+      - "Node405AutoAiVPN6"
+      - "Node406AutoAiVPN1"
+      - "Node407AutoAiVPN1"
+      - "Node408AutoAiVPN2"
+      - "Node409AutoAiVPN9"
+      - "Node410AutoAiVPN1"
+      - "Node411AutoAiVPN6"
+      - "Node412VipSecurit"
+      - "Node413AutoAiVPN1"
+      - "Node414AutoAiVPN5"
+      - "Node415AutoAiVPN8"
+      - "Node416AutoAiVPN1"
+      - "Node417AutoAiVPN1"
+      - "Node418VipSecurit"
+      - "Node419AutoAiVPN1"
+      - "Node420AutoAiVPN9"
+      - "Node421AutoAiVPN1"
+      - "Node422AutoAiVPN6"
+      - "Node423AutoAiVPN8"
+      - "Node424AutoAiVPN1"
+      - "Node425AutoAiVPN1"
+      - "Node426AutoAiVPN1"
+      - "Node427AutoAiVPN8"
+      - "Node428JoinTelegr"
+      - "Node429AutoAiVPN2"
+      - "Node430AutoAiVPN2"
+      - "Node431AutoAiVPN2"
+      - "Node432VipSecurit"
+      - "Node433AutoAiVPN1"
+      - "Node434VlessConfi"
+      - "Node435JoinTelegr"
+      - "Node436AutoAiVPN9"
+      - "Node437AutoAiVPN4"
+      - "Node438AutoAiVPN1"
+      - "Node439AutoAiVPN1"
+      - "Node440AutoAiVPN1"
+      - "Node441AutoAiVPN1"
+      - "Node442AutoAiVPN5"
+      - "Node443AutoAiVPN2"
+      - "Node444AutoAiVPN3"
+      - "Node445AutoAiVPN8"
+      - "Node446AutoAiVPN4"
+      - "Node447AutoAiVPN7"
+      - "Node448AutoAiVPN8"
+      - "Node449AutoAiVPN1"
+      - "Node450AutoAiVPN3"
+      - "Node451AutoAiVPN1"
+      - "Node452AutoAiVPN2"
+      - "Node453AutoAiVPN3"
+      - "Node454FR737"
+      - "Node455AutoAiVPN1"
+      - "Node456AutoAiVPN3"
+      - "Node457AutoAiVPN9"
+      - "Node458VlessConfi"
+      - "Node459AutoAiVPN1"
+      - "Node460PewezaVPN"
+      - "Node461AutoAiVPN1"
+      - "Node462AutoAiVPN6"
+      - "Node463GB195"
+      - "Node464GB78"
+      - "Node465AutoAiVPN1"
+      - "Node466GB146"
+      - "Node467AutoAiVPN3"
+      - "Node468"
+      - "Node469SE22"
+      - "Node470prrofilepu"
+      - "Node471prrofilepu"
+      - "Node472SE758"
+      - "Node473SE1"
+      - "Node474"
+      - "Node4754Mohsen512"
+      - "Node476SE144"
+      - "Node477"
+      - "Node478CA174"
+      - "Node479Telegram"
+      - "Node480AutoAiVPN8"
+      - "Node481AutoAiVPN1"
+      - "Node482FR24"
+      - "Node483AutoAiVPN3"
+      - "Node484AutoAiVPN1"
+      - "Node485AutoAiVPN7"
+      - "Node486AutoAiVPN1"
+      - "Node487AutoAiVPN1"
+      - "Node488AutoAiVPN2"
+      - "Node489AutoAiVPN1"
+      - "Node490AutoAiVPN8"
+      - "Node491AutoAiVPN4"
+      - "Node492AutoAiVPN1"
+      - "Node493AutoAiVPN7"
+      - "Node494AutoAiVPN1"
+      - "Node495AutoAiVPN1"
+      - "Node496AutoAiVPN1"
+      - "Node497AutoAiVPN2"
+      - "Node498JoinTelegr"
+      - "Node499AutoAiVPN1"
+      - "Node500AutoAiVPN1"
+      - "Node5014Mohsen555"
+      - "Node502AutoAiVPN2"
+      - "Node503AutoAiVPN1"
+      - "Node504AutoAiVPN2"
+      - "Node505HopeNetjoi"
+      - "Node506AutoAiVPN1"
+      - "Node507AutoAiVPN7"
+      - "Node508AutoAiVPN1"
+      - "Node509AutoAiVPN8"
+      - "Node510AutoAiVPN1"
+      - "Node511AutoAiVPN8"
+      - "Node512AutoAiVPN5"
+      - "Node513AutoAiVPN7"
+      - "Node514"
+      - "Node515AutoAiVPN1"
+      - "Node516AutoAiVPN2"
+      - "Node517AutoAiVPN1"
+      - "Node518AutoAiVPN5"
+      - "Node519AutoAiVPN7"
+      - "Node520AutoAiVPN1"
+      - "Node521AutoAiVPN8"
+      - "Node522VipSecurit"
+      - "Node523AutoAiVPN8"
+      - "Node524AutoAiVPN2"
+      - "Node525AutoAiVPN1"
+      - "Node526AutoAiVPN1"
+      - "Node527AutoAiVPN8"
+      - "Node528AutoAiVPN2"
+      - "Node529AutoAiVPN1"
+      - "Node530FR104"
+      - "Node531AutoAiVPN2"
+      - "Node532FR9"
+      - "Node533AutoAiVPN2"
+      - "Node534FRAzadNett"
+      - "Node535tmeNotorga"
+      - "Node536AutoAiVPN1"
+      - "Node5374Mohsen512"
+      - "Node538VlessConfi"
+      - "Node539qn0723"
+      - "Node540AutoAiVPN1"
+      - "Node541AutoAiVPN1"
+      - "Node542AutoAiVPN2"
+      - "Node543AutoAiVPN1"
+      - "Node544AutoAiVPN1"
+      - "Node545AutoAiVPN1"
+      - "Node546AutoAiVPN1"
+      - "Node547AutoAiVPN3"
+      - "Node548AutoAiVPN1"
+      - "Node549AutoAiVPN1"
 
-# Список источников (скрипт обходит их сам)
-SOURCES = [
-    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
-    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt",
-    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt",
-    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt",
-    "https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/clean/vless.txt",
-    "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vless"
-]
-
-def fetch_data(url):
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=15)
-        if r.status_code != 200: return ""
-        text = r.text
-        if "vless://" not in text[:500]:
-            try:
-                text = base64.b64decode(text.strip()).decode('utf-8', errors='ignore')
-            except: pass
-        return text
-    except: return ""
-
-def clean_name(raw, idx):
-    try: name = urllib.parse.unquote(raw)
-    except: name = raw
-    # Оставляем ТОЛЬКО латиницу и цифры — это 100% защита от ошибок YAML
-    name = re.sub(r'[^a-zA-Z0-9]', '', name)
-    return f"Node{idx}{name[:10]}"
-
-def parse_vless(url, idx):
-    try:
-        m = re.match(r'vless://([^@]+)@([^:]+):(\d+)\??([^#]*)#?(.*)', url)
-        if not m: return None
-        uuid, host, port, qs, raw_name = m.groups()
-        params = {p.split('=')[0]: urllib.parse.unquote(p.split('=')[1]) for p in qs.split('&') if '=' in p}
-        
-        return {
-            'name': clean_name(raw_name, idx),
-            'server': host, 'port': int(port), 'uuid': uuid,
-            'tls': params.get('security') in ('tls', 'reality'),
-            'sni': params.get('sni', ''), 'net': params.get('type', 'tcp'),
-            'path': params.get('path', '/'), 'pbk': params.get('pbk', ''), 'sid': params.get('sid', '')
-        }
-    except: return None
-
-def main():
-    nodes_raw = set()
-    print("Собираю ссылки...")
-    for url in SOURCES:
-        text = fetch_data(url)
-        found = re.findall(r'vless://[^\s\r\n]+', text)
-        nodes_raw.update(found)
-
-    # Лимит 500 для стабильности FClash
-    final_nodes = sorted(list(nodes_raw))[:500]
-    
-    # 1. sub.txt
-    with open('sub.txt', 'w') as f:
-        f.write(base64.b64encode('\n'.join(final_nodes).encode()).decode())
-
-    # 2. clash.yaml
-    proxies = []
-    for i, url in enumerate(final_nodes):
-        p = parse_vless(url, i)
-        if p: proxies.append(p)
-
-    with open('clash.yaml', 'w', encoding='utf-8') as f:
-        # Пишем напрямую f.write, чтобы избежать проблем с отступами в списках Python
-        f.write("mixed-port: 7890\nallow-lan: false\nmode: global\nlog-level: info\n")
-        f.write("dns:\n  enable: true\n  nameserver:\n    - 8.8.8.8\n    - 1.1.1.1\n")
-        f.write("proxies:\n")
-        
-        for p in proxies:
-            f.write(f"  - name: \"{p['name']}\"\n")
-            f.write(f"    type: vless\n    server: {p['server']}\n    port: {p['port']}\n")
-            f.write(f"    uuid: {p['uuid']}\n    tls: {str(p['tls']).lower()}\n")
-            f.write(f"    udp: true\n    skip-cert-verify: true\n")
-            if p['sni']: f.write(f"    servername: \"{p['sni']}\"\n")
-            if p['net'] == 'ws':
-                f.write(f"    network: ws\n    ws-opts:\n      path: \"{p['path']}\"\n")
-            if p['pbk']:
-                f.write(f"    reality-opts:\n      public-key: {p['pbk']}\n      short-id: \"{p['sid']}\"\n")
-
-        f.write("\nproxy-groups:\n  - name: \"Auto\"\n    type: url-test\n    url: http://www.gstatic.com/generate_204\n    interval: 180\n    proxies:\n")
-        for p in proxies:
-            f.write(f"      - \"{p['name']}\"\n")
-        f.write("rules:\n  - MATCH,Auto\n")
-
-    print(f"Готово! Собрано {len(proxies)} узлов.")
-
-if __name__ == '__main__':
-    main()
+rules:
+  - MATCH,Auto
