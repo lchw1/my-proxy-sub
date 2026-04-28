@@ -11,12 +11,13 @@ HEADERS = {
 # СТАТИЧНЫЕ источники (стабильные, редко меняют структуру)
 # ============================================================
 STATIC_SOURCES = [
-    # kort0881 — ежедневное обновление, фокус на Россия/СНГ
-    "https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/vless.txt",
-    # VOID-Anonymity — Reality-конфиги для обхода белых списков
-    "https://raw.githubusercontent.com/VOID-Anonymity/V.O.I.D-VPN_Bypass/main/vless.txt",
-    # Yebekhe — крупный агрегатор
-    "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vless",
+    # kort0881 — 1200+ узлов, обновляется каждые 15 минут
+    "https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/clean/vless.txt",
+    # igareck — дополнительные файлы из подпапок (API их не видит)
+    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
+    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt",
+    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt",
+    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt",
 ]
 
 # ============================================================
