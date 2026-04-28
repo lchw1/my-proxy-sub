@@ -7,16 +7,46 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 }
 
-SOURCES = {
-    # Чёрные списки (для тебя основные)
-    "BL_full":    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
-    "BL_mobile":  "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt",
+# ============================================================
+# СТАТИЧНЫЕ источники (стабильные, редко меняют структуру)
+# ============================================================
+STATIC_SOURCES = [
+    # kort0881 — ежедневное обновление, фокус на Россия/СНГ
+    "https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/vless.txt",
+    # VOID-Anonymity — Reality-конфиги для обхода белых списков
+    "https://raw.githubusercontent.com/VOID-Anonymity/V.O.I.D-VPN_Bypass/main/vless.txt",
+    # Yebekhe — крупный агрегатор
+    "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/vless",
+]
 
-    # Белые списки (на случай если оператор режет всё)
-    "WL_CIDR":    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus.txt",
-    "WL_mobile":  "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt",
-}
+# ============================================================
+# ДИНАМИЧЕСКИЙ источник — igareck (сам находит все .txt файлы)
+# ============================================================
+IGARECK_REPO = "igareck/vpn-configs-for-russia"
 
+def get_igareck_sources():
+    """Через GitHub API находит все VLESS .txt файлы в репозитории igareck"""
+    url = f"https://api.github.com/repos/{IGARECK_REPO}/contents/"
+    sources = []
+    try:
+        res = requests.get(url, headers=HEADERS, timeout=10)
+        if res.status_code != 200:
+            print(f"⚠️ GitHub API недоступен: HTTP {res.status_code}")
+            return sources
+        files = res.json()
+        for f in files:
+            name = f.get("name", "")
+            # Берём только .txt файлы с VLESS в названии
+            if name.endswith(".txt") and "VLESS" in name.upper():
+                sources.append(f["download_url"])
+                print(f"  📄 Найден файл: {name}")
+    except Exception as e:
+        print(f"⚠️ Ошибка GitHub API: {e}")
+    return sources
+
+# ============================================================
+# Утилиты
+# ============================================================
 def try_decode_base64(content):
     if "vless://" in content[:300]:
         return content
@@ -30,30 +60,23 @@ def try_decode_base64(content):
         return content
 
 def clean_proxy_name(raw_name, index):
-    """Безопасное имя для YAML — только ASCII буквы, цифры, дефис, пробел"""
-    # Декодируем URL-encoding (%20 → пробел и т.д.)
     try:
         name = urllib.parse.unquote(raw_name)
     except Exception:
         name = raw_name
-    # Убираем emoji и всё не-ASCII
     name = name.encode('ascii', errors='ignore').decode('ascii')
-    # Оставляем только безопасные символы
-    name = re.sub(r'[^a-zA-Z0-9 \-_.,]', '', name)
-    name = name.strip()
+    name = re.sub(r'[^a-zA-Z0-9 \-_.,]', '', name).strip()
     if not name or len(name) < 2:
         name = f"proxy-{index}"
-    return name[:80]  # обрезаем длинные имена
+    return name[:80]
 
 def parse_vless_to_clash(vless_url, index):
     try:
         match = re.match(r'vless://([^@]+)@([^:]+):(\d+)\??([^#]*)#?(.*)', vless_url)
         if not match:
             return None
-
         uuid, host, port, params_str, raw_name = match.groups()
         port = int(port)
-
         params = {}
         if params_str:
             for p in params_str.split('&'):
@@ -62,7 +85,6 @@ def parse_vless_to_clash(vless_url, index):
                     params[k] = urllib.parse.unquote(v)
 
         proxy_name = clean_proxy_name(raw_name, index)
-
         security = params.get("security", "none")
         is_tls = security in ("tls", "reality")
 
@@ -80,20 +102,17 @@ def parse_vless_to_clash(vless_url, index):
         network = params.get("type", "tcp")
         if network == "ws":
             proxy["network"] = "ws"
+            ws_opts = {}
             path = params.get("path", "")
             ws_host = params.get("host", "")
-            ws_sni = params.get("sni", "")
-            ws_opts = {}
             if path:
-                # Убираем двойное URL-кодирование
-                clean_path = urllib.parse.unquote(path)
-                ws_opts["path"] = clean_path
+                ws_opts["path"] = urllib.parse.unquote(path)
             if ws_host:
                 ws_opts["headers"] = {"Host": ws_host}
             if ws_opts:
                 proxy["ws-opts"] = ws_opts
-            if ws_sni:
-                proxy["servername"] = ws_sni
+            if params.get("sni"):
+                proxy["servername"] = params["sni"]
         elif network == "grpc":
             proxy["network"] = "grpc"
             svc = params.get("serviceName", "")
@@ -116,31 +135,30 @@ def parse_vless_to_clash(vless_url, index):
             proxy["servername"] = params["sni"]
 
         return proxy
-
     except Exception:
         return None
 
 def yaml_str(val):
-    """Оборачивает строку в кавычки и экранирует для YAML"""
     val = str(val).replace('\\', '\\\\').replace('"', '\\"')
     return f'"{val}"'
 
 def generate_clash_yaml(proxies):
     names = [p["name"] for p in proxies]
-    lines = []
-    lines.append("mixed-port: 7890")
-    lines.append("allow-lan: false")
-    lines.append("mode: rule")
-    lines.append("log-level: info")
-    lines.append("external-controller: 127.0.0.1:9090")
-    lines.append("")
-    lines.append("dns:")
-    lines.append("  enable: true")
-    lines.append("  nameserver:")
-    lines.append("    - 8.8.8.8")
-    lines.append("    - 1.1.1.1")
-    lines.append("")
-    lines.append("proxies:")
+    lines = [
+        "mixed-port: 7890",
+        "allow-lan: false",
+        "mode: rule",
+        "log-level: info",
+        "external-controller: 127.0.0.1:9090",
+        "",
+        "dns:",
+        "  enable: true",
+        "  nameserver:",
+        "    - 8.8.8.8",
+        "    - 1.1.1.1",
+        "",
+        "proxies:",
+    ]
 
     for p in proxies:
         lines.append(f"  - name: {yaml_str(p['name'])}")
@@ -177,46 +195,62 @@ def generate_clash_yaml(proxies):
             lines.append(f"    grpc-opts:")
             lines.append(f"      grpc-service-name: {yaml_str(p['grpc-opts']['grpc-service-name'])}")
 
-    lines.append("")
-    lines.append("proxy-groups:")
-    lines.append(f"  - name: {yaml_str('PROXY')}")
-    lines.append("    type: select")
-    lines.append("    proxies:")
+    lines += [
+        "",
+        "proxy-groups:",
+        f"  - name: {yaml_str('PROXY')}",
+        "    type: select",
+        "    proxies:",
+    ]
     for n in names[:200]:
         lines.append(f"      - {yaml_str(n)}")
-    lines.append("")
-    lines.append(f"  - name: {yaml_str('Auto')}")
-    lines.append("    type: url-test")
-    lines.append("    url: http://www.gstatic.com/generate_204")
-    lines.append("    interval: 300")
-    lines.append("    proxies:")
-    for n in names[:200]:
-        lines.append(f"      - {yaml_str(n)}")
-    lines.append("")
-    lines.append("rules:")
-    lines.append(f"  - MATCH,PROXY")
 
+    lines += [
+        "",
+        f"  - name: {yaml_str('Auto')}",
+        "    type: url-test",
+        "    url: http://www.gstatic.com/generate_204",
+        "    interval: 300",
+        "    proxies:",
+    ]
+    for n in names[:200]:
+        lines.append(f"      - {yaml_str(n)}")
+
+    lines += ["", "rules:", "  - MATCH,PROXY"]
     return "\n".join(lines)
 
+# ============================================================
+# ГЛАВНАЯ ФУНКЦИЯ
+# ============================================================
 def collect():
     unique_nodes = set()
-    print("Старт сборки...\n")
+    print("🚀 Старт сборки...\n")
 
-    for name, url in SOURCES.items():
+    # 1. Динамически находим все файлы у igareck
+    print("🔍 Ищем файлы у igareck через GitHub API...")
+    dynamic_sources = get_igareck_sources()
+    print(f"  Найдено {len(dynamic_sources)} файлов\n")
+
+    # 2. Объединяем все источники
+    all_sources = dynamic_sources + STATIC_SOURCES
+
+    # 3. Качаем и парсим
+    for url in all_sources:
+        name = url.split("/")[-1]
         try:
             res = requests.get(url, headers=HEADERS, timeout=20)
             if res.status_code != 200:
-                print(f"FAIL [{name}] HTTP {res.status_code}")
+                print(f"❌ [{name}] HTTP {res.status_code}")
                 continue
             content = try_decode_base64(res.text)
             found = re.findall(r'vless://[^\s\r\n]+', content)
-            print(f"OK [{name}] {len(found)} узлов")
+            print(f"✅ [{name}] {len(found)} узлов")
             unique_nodes.update(found)
         except Exception as e:
-            print(f"ERR [{name}]: {e}")
+            print(f"⚠️ [{name}] ошибка: {e}")
 
     if not unique_nodes:
-        print("Пусто!")
+        print("\n⛔ Список пустой! Файлы не обновлены.")
         return
 
     node_list = sorted(unique_nodes)
@@ -225,7 +259,6 @@ def collect():
     encoded = base64.b64encode("\n".join(node_list).encode('utf-8')).decode('utf-8')
     with open("sub.txt", "w") as f:
         f.write(encoded)
-    print(f"sub.txt: {len(node_list)} узлов")
 
     # clash.yaml для FClash
     proxies = []
@@ -247,7 +280,10 @@ def collect():
     clash_content = generate_clash_yaml(proxies)
     with open("clash.yaml", "w", encoding="utf-8") as f:
         f.write(clash_content)
-    print(f"clash.yaml: {len(proxies)} узлов")
+
+    print(f"\n🎉 Готово!")
+    print(f"   sub.txt   → {len(node_list)} узлов (Happ)")
+    print(f"   clash.yaml → {len(proxies)} узлов (FClash)")
 
 if __name__ == "__main__":
     collect()
