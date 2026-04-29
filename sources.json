@@ -1,0 +1,17 @@
+{
+  "source_repos": [],
+  "direct_urls": [
+    "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/update/provider/providers.txt",
+    "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/mixed",
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt",
+    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs.txt",
+    "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/txt/mix",
+    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt"
+  ],
+  "sub_limit": 550,
+  "clash_limit": 500,
+  "latency_limit_ms": 200,
+  "test_workers": 100,
+  "test_timeout_ms": 2000,
+  "github_token": ""
+}
