@@ -1,5 +1,5 @@
 """
-VLESS collector with async TCP speed-test and GitHub token support.
+VLESS collector with async TLS handshake check and GitHub token support.
 
 Requirements:
     pip install requests aiohttp
@@ -243,17 +243,27 @@ def clean_node(url: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Async TCP speed-test
+# Async TLS handshake check
 # ---------------------------------------------------------------------------
 
-async def tcp_latency_ms(host: str, port: int, timeout_s: float) -> float | None:
+async def tls_latency_ms(host: str, port: int, sni: str, timeout_s: float) -> float | None:
     """
-    Возвращает время TCP-handshake в мс или None при неудаче / таймауте.
+    Выполняет полный TLS handshake и возвращает время в мс.
+    Если TLS не прошёл (нет сертификата, таймаут, отказ) — возвращает None.
+    Это намного надёжнее чем просто TCP connect:
+    - сервер должен реально отвечать на TLS
+    - мусорные/мёртвые ноды отсеиваются
     """
+    import ssl
+    ctx = ssl.create_default_context()
+    # Не проверяем цепочку сертификатов — у VPN нод часто self-signed
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+
     t0 = time.monotonic()
     try:
         _, writer = await asyncio.wait_for(
-            asyncio.open_connection(host, port),
+            asyncio.open_connection(host, port, ssl=ctx, server_hostname=sni or host),
             timeout=timeout_s,
         )
         latency = (time.monotonic() - t0) * 1000
@@ -278,8 +288,8 @@ async def _test_worker(
         if item is None:
             queue.task_done()
             break
-        node_url, host, port = item
-        lat = await tcp_latency_ms(host, port, timeout_s)
+        node_url, host, port, sni = item
+        lat = await tls_latency_ms(host, port, sni, timeout_s)
         if lat is not None and lat <= limit_ms:
             results.append((node_url, lat))
         queue.task_done()
@@ -292,22 +302,25 @@ async def speed_test_nodes(
     timeout_ms: int,
 ) -> list[str]:
     """
-    Асинхронный TCP speed-test всех нод.
+    Асинхронный TLS handshake тест всех нод.
     Возвращает список прошедших фильтр нод, отсортированных по задержке.
+    TLS надёжнее TCP — сервер должен реально отвечать на шифрование.
     """
     parsed = []
     for url in nodes:
         try:
             p = urllib.parse.urlsplit(url)
             if p.hostname and p.port:
-                parsed.append((url, p.hostname, int(p.port)))
+                params = urllib.parse.parse_qs(p.query, keep_blank_values=True)
+                sni = params.get("sni", [""])[0] or p.hostname
+                parsed.append((url, p.hostname, int(p.port), sni))
         except Exception:
             pass
 
     if not parsed:
         return nodes  # нечего тестировать — вернуть как есть
 
-    print(f"\n=== Speed-test: {len(parsed)} нод, порог {limit_ms} ms, "
+    print(f"\n=== TLS-test: {len(parsed)} нод, порог {limit_ms} ms, "
           f"{workers} параллельных соединений ===")
 
     queue: asyncio.Queue = asyncio.Queue()
@@ -316,7 +329,6 @@ async def speed_test_nodes(
 
     for item in parsed:
         await queue.put(item)
-    # sentinel-значения для завершения воркеров
     for _ in range(workers):
         await queue.put(None)
 
@@ -332,7 +344,7 @@ async def speed_test_nodes(
     results.sort(key=lambda x: x[1])
     passed = [url for url, _ in results]
 
-    print(f"Прошло speed-test: {len(passed)} / {len(parsed)} нод")
+    print(f"Прошло TLS-test: {len(passed)} / {len(parsed)} нод")
     if results:
         lats = [lat for _, lat in results]
         print(
@@ -569,7 +581,7 @@ def main():
 
     print(f"\nВсего уникальных VLESS до фильтрации: {len(ordered_nodes)}")
 
-    # 3. Async speed-test
+    # 3. Async TLS-test
     passed_nodes = asyncio.run(
         speed_test_nodes(
             ordered_nodes,
@@ -580,7 +592,7 @@ def main():
     )
 
     if not passed_nodes:
-        print("WARNING: 0 нод прошли speed-test — используем все ноды без фильтрации.")
+        print("WARNING: 0 нод прошли TLS-test — используем все ноды без фильтрации.")
         passed_nodes = ordered_nodes
 
     # 4. sub.txt
