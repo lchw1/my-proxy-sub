@@ -1,14 +1,19 @@
 import base64
 import json
+import os
 import re
 import socket
 import sys
 import urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import requests
 
-CONFIG_FILE = Path("sources.json")
+
+# =====================
+# CONFIG
+# =====================
 
 DEFAULT_CONFIG = {
     "source_repos": [
@@ -19,9 +24,11 @@ DEFAULT_CONFIG = {
     "direct_urls": [],
     "sub_limit": 550,
     "clash_limit": 500,
-    "tcp_timeout": 1.5,
+    "tcp_timeout": 1.4,
+    "check_workers": 24,
 }
 
+CONFIG_FILE = Path("sources.json")
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -30,14 +37,41 @@ HEADERS = {
     )
 }
 
+# Optional GitHub token: set GH_TOKEN in repository secrets / env
+GH_TOKEN = os.getenv("GH_TOKEN", "").strip()
+if GH_TOKEN:
+    HEADERS["Authorization"] = f"Bearer {GH_TOKEN}"
+
+# GitHub file filters
 ALLOWED_EXTS = {".txt", ".sub", ".base64", ".b64", ".list"}
 SKIP_NAME_PARTS = {
     "readme", "license", "changelog", "requirements", "setup",
     "example", "sample", "test", "demo", "package-lock", "pyproject",
 }
+SKIP_PATH_PARTS = {
+    "qr", "png", "jpg", "jpeg", "gif", "webp", "svg", "ico",
+}
 
 NODE_RE = re.compile(r"vless://[^\s\r\n'\"<>]+", re.IGNORECASE)
 
+# Whitelist domains go to a separate Clash group.
+# Keep this small and useful; extend later if needed.
+WHITELIST_RULES = [
+    ("DOMAIN-SUFFIX", "google.com"),
+    ("DOMAIN-SUFFIX", "gstatic.com"),
+    ("DOMAIN-SUFFIX", "youtube.com"),
+    ("DOMAIN-SUFFIX", "ytimg.com"),
+    ("DOMAIN-SUFFIX", "googleapis.com"),
+    ("DOMAIN-SUFFIX", "github.com"),
+    ("DOMAIN-SUFFIX", "githubusercontent.com"),
+    ("DOMAIN-KEYWORD", "telegram"),
+    ("DOMAIN-KEYWORD", "discord"),
+]
+
+
+# =====================
+# UTIL
+# =====================
 
 def load_config():
     if CONFIG_FILE.exists():
@@ -45,39 +79,21 @@ def load_config():
             data = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
             if isinstance(data, dict):
                 cfg = DEFAULT_CONFIG.copy()
-                for key in ("source_repos", "direct_urls", "sub_limit", "clash_limit", "tcp_timeout"):
-                    if key in data:
-                        cfg[key] = data[key]
-
-                cfg["source_repos"] = [
-                    str(x).strip() for x in cfg.get("source_repos", []) if str(x).strip()
-                ]
-                cfg["direct_urls"] = [
-                    str(x).strip() for x in cfg.get("direct_urls", []) if str(x).strip()
-                ]
+                for k in cfg.keys():
+                    if k in data:
+                        cfg[k] = data[k]
+                cfg["source_repos"] = [str(x).strip() for x in cfg.get("source_repos", []) if str(x).strip()]
+                cfg["direct_urls"] = [str(x).strip() for x in cfg.get("direct_urls", []) if str(x).strip()]
                 cfg["sub_limit"] = int(cfg.get("sub_limit", 550))
                 cfg["clash_limit"] = int(cfg.get("clash_limit", 500))
-                cfg["tcp_timeout"] = float(cfg.get("tcp_timeout", 1.5))
+                cfg["tcp_timeout"] = float(cfg.get("tcp_timeout", 1.4))
+                cfg["check_workers"] = int(cfg.get("check_workers", 24))
                 return cfg
         except Exception:
             pass
 
-    CONFIG_FILE.write_text(
-        json.dumps(DEFAULT_CONFIG, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    CONFIG_FILE.write_text(json.dumps(DEFAULT_CONFIG, ensure_ascii=False, indent=2), encoding="utf-8")
     return DEFAULT_CONFIG.copy()
-
-
-def fetch_text(url: str, timeout: int = 25) -> str:
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=timeout)
-        if r.status_code == 200:
-            return r.text
-        print(f"SKIP {url} — HTTP {r.status_code}")
-    except Exception as e:
-        print(f"ERR  {url} — {e}")
-    return ""
 
 
 def fetch_json(url: str, timeout: int = 25):
@@ -89,6 +105,17 @@ def fetch_json(url: str, timeout: int = 25):
     except Exception as e:
         print(f"ERR  {url} — {e}")
     return None
+
+
+def fetch_text(url: str, timeout: int = 25) -> str:
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=timeout)
+        if r.status_code == 200:
+            return r.text
+        print(f"SKIP {url} — HTTP {r.status_code}")
+    except Exception as e:
+        print(f"ERR  {url} — {e}")
+    return ""
 
 
 def github_owner_repo(repo_url: str):
@@ -108,6 +135,8 @@ def is_probably_source_file(path: str) -> bool:
 
     if any(part in lower for part in SKIP_NAME_PARTS):
         return False
+    if any(part in lower for part in SKIP_PATH_PARTS):
+        return False
 
     return True
 
@@ -117,7 +146,15 @@ def raw_url(owner: str, repo: str, branch: str, path: str) -> str:
     return f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{safe_path}"
 
 
+# =====================
+# GITHUB DISCOVERY
+# =====================
+
 def discover_github_files(repo_url: str):
+    """
+    Fast path: use GitHub Git Trees API to recursively list all files.
+    If unavailable, fall back to Contents API recursion.
+    """
     owner, repo = github_owner_repo(repo_url)
     if not owner or not repo:
         return []
@@ -139,6 +176,7 @@ def discover_github_files(repo_url: str):
                 urls.append(raw_url(owner, repo, branch, path))
         return urls
 
+    # Fallback: recursive contents API
     return discover_github_files_contents(owner, repo, "", branch)
 
 
@@ -157,15 +195,14 @@ def discover_github_files_contents(owner: str, repo: str, path: str = "", branch
 
     found = []
     for item in data:
-        item_type = item.get("type")
-        if item_type == "dir":
+        t = item.get("type")
+        if t == "dir":
             found.extend(discover_github_files_contents(owner, repo, item.get("path", ""), branch))
-        elif item_type == "file":
-            path = item.get("path") or ""
+        elif t == "file":
+            p = item.get("path") or ""
             dl = item.get("download_url")
-            if dl and is_probably_source_file(path):
+            if dl and is_probably_source_file(p):
                 found.append(dl)
-
     return found
 
 
@@ -191,6 +228,10 @@ def build_source_urls(cfg):
     return urls
 
 
+# =====================
+# NODE PARSING
+# =====================
+
 def decode_if_needed(text: str) -> str:
     if "vless://" in text[:1200].lower():
         return text
@@ -211,7 +252,7 @@ def decode_if_needed(text: str) -> str:
 
 
 def clean_node(url: str) -> str:
-    return url.strip().rstrip("),.;]}'\"")
+    return url.strip().rstrip(") ,.;]}'\"")
 
 
 def safe_name(raw: str, idx: int) -> str:
@@ -229,8 +270,6 @@ def parse_vless(url: str, idx: int):
 
         params = urllib.parse.parse_qs(p.query, keep_blank_values=True)
         sec = (params.get("security", ["none"])[0] or "none").lower()
-
-        # Оставляем только TLS / Reality
         if sec not in ("tls", "reality"):
             return None
 
@@ -243,6 +282,7 @@ def parse_vless(url: str, idx: int):
             "tls": True,
             "udp": True,
             "skip-cert-verify": True,
+            "security": sec,
         }
 
         net = (params.get("type", ["tcp"])[0] or "tcp").lower()
@@ -298,7 +338,11 @@ def parse_node(url: str, idx: int):
     return None
 
 
-def is_alive(host: str, port: int, timeout: float = 1.5) -> bool:
+# =====================
+# QUICK CHECKS
+# =====================
+
+def is_alive(host: str, port: int, timeout: float = 1.4) -> bool:
     try:
         with socket.create_connection((host, port), timeout=timeout):
             return True
@@ -306,13 +350,46 @@ def is_alive(host: str, port: int, timeout: float = 1.5) -> bool:
         return False
 
 
+def filter_alive(proxies, max_workers: int = 24, timeout: float = 1.4):
+    if not proxies:
+        return []
+
+    alive = []
+    with ThreadPoolExecutor(max_workers=max_workers) as ex:
+        futures = {
+            ex.submit(is_alive, p["server"], p["port"], timeout): p
+            for p in proxies
+        }
+        for fut in as_completed(futures):
+            p = futures[fut]
+            try:
+                if fut.result():
+                    alive.append(p)
+            except Exception:
+                pass
+    return alive
+
+
+# =====================
+# CLASH / MIMOHO OUTPUT
+# =====================
+
 def yaml_scalar(value):
     return json.dumps(value, ensure_ascii=False)
 
 
 def make_clash(proxies):
-    names = [p["name"] for p in proxies]
-    top = names[:150]
+    names_all = [p["name"] for p in proxies]
+    names_bypass = [p["name"] for p in proxies if p.get("security") == "reality"]
+    names_normal = [p["name"] for p in proxies if p.get("security") == "tls"]
+
+    # Fallbacks so Clash does not receive empty groups.
+    if not names_bypass:
+        names_bypass = names_all[:]
+    if not names_normal:
+        names_normal = names_all[:]
+
+    top = names_all[:150]
 
     out = [
         "mixed-port: 7890",
@@ -374,7 +451,7 @@ def make_clash(proxies):
     out += [
         "",
         "proxy-groups:",
-        f"  - name: {yaml_scalar('Auto')}",
+        f"  - name: {yaml_scalar('AUTO')}",
         "    type: url-test",
         "    url: http://www.gstatic.com/generate_204",
         "    interval: 180",
@@ -382,18 +459,43 @@ def make_clash(proxies):
         "    proxies:",
     ] + [f"      - {yaml_scalar(n)}" for n in top] + [
         "",
+        f"  - name: {yaml_scalar('BYPASS')}",
+        "    type: url-test",
+        "    url: http://www.gstatic.com/generate_204",
+        "    interval: 180",
+        "    tolerance: 50",
+        "    proxies:",
+    ] + [f"      - {yaml_scalar(n)}" for n in names_bypass[:150]] + [
+        "",
+        f"  - name: {yaml_scalar('SERVERS')}",
+        "    type: url-test",
+        "    url: http://www.gstatic.com/generate_204",
+        "    interval: 180",
+        "    tolerance: 50",
+        "    proxies:",
+    ] + [f"      - {yaml_scalar(n)}" for n in names_normal[:150]] + [
+        "",
         f"  - name: {yaml_scalar('PROXY')}",
         "    type: select",
         "    proxies:",
-        f"      - {yaml_scalar('Auto')}",
+        f"      - {yaml_scalar('AUTO')}",
+        f"      - {yaml_scalar('BYPASS')}",
+        f"      - {yaml_scalar('SERVERS')}",
+        f"      - {yaml_scalar('DIRECT')}",
+        f"      - {yaml_scalar('REJECT')}",
     ] + [f"      - {yaml_scalar(n)}" for n in top] + [
         "",
         "rules:",
-        "  - MATCH,Auto",
+        "  - MATCH,PROXY",
     ]
 
-    return "\n".join(out)
+    return "
+".join(out)
 
+
+# =====================
+# MAIN
+# =====================
 
 def main():
     cfg = load_config()
@@ -409,7 +511,9 @@ def main():
     sub_limit = int(cfg["sub_limit"])
     clash_limit = int(cfg["clash_limit"])
     tcp_timeout = float(cfg["tcp_timeout"])
+    check_workers = int(cfg["check_workers"])
 
+    # Grab slightly more than needed to offset rejects and duplicates.
     collection_target = max(sub_limit, clash_limit) + 300
 
     print("=== Сбор VLESS узлов ===")
@@ -447,15 +551,15 @@ def main():
 
     print(f"\nВсего уникальных VLESS: {len(ordered_nodes)}")
 
-    # sub.txt — короткий
+    # sub.txt — short subscription
     sub_nodes = ordered_nodes[:sub_limit]
     encoded = base64.b64encode("\n".join(sub_nodes).encode("utf-8")).decode("ascii")
     with open("sub.txt", "w", encoding="utf-8") as f:
         f.write(encoded)
     print(f"sub.txt записан ({len(sub_nodes)} узлов)")
 
-    # clash.yaml — только успешные, живые, без дублей по server:port
-    proxies = []
+    # Parse VLESS proxies, dedupe by server:port, and do fast TCP liveness check.
+    parsed = []
     seen_names = set()
     seen_servers = set()
 
@@ -468,18 +572,25 @@ def main():
         if key in seen_servers:
             continue
 
-        if not is_alive(p["server"], p["port"], timeout=tcp_timeout):
-            continue
-
+        parsed.append(p)
         seen_servers.add(key)
 
+    if not parsed:
+        print("CRITICAL: 0 parsed proxies!")
+        sys.exit(1)
+
+    print(f"Parsed proxies before TCP check: {len(parsed)}")
+    live = filter_alive(parsed, max_workers=check_workers, timeout=tcp_timeout)
+    print(f"Live proxies after TCP check: {len(live)}")
+
+    proxies = []
+    for p in live:
         base = p["name"]
         name = base
         c = 1
         while name in seen_names:
             name = f"{base}-{c}"
             c += 1
-
         p["name"] = name
         seen_names.add(name)
         proxies.append(p)
@@ -493,7 +604,6 @@ def main():
 
     with open("clash.yaml", "w", encoding="utf-8") as f:
         f.write(make_clash(proxies))
-
     print(f"clash.yaml записан ({len(proxies)} узлов)")
 
 
