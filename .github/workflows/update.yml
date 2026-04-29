@@ -2,7 +2,7 @@ name: Update Proxy Nodes
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */4 * * *'  # каждые 2 часа
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -31,6 +30,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add sub.txt clash.yaml sources.json
+          git add sub.txt clash.yaml
           git commit -m "Update nodes" || echo "No changes to commit"
           git push
