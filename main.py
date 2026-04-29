@@ -1,6 +1,7 @@
 import base64
 import json
 import re
+import socket
 import sys
 import urllib.parse
 from pathlib import Path
@@ -18,10 +19,15 @@ DEFAULT_CONFIG = {
     "direct_urls": [],
     "sub_limit": 550,
     "clash_limit": 500,
+    "tcp_timeout": 1.5,
 }
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    )
 }
 
 ALLOWED_EXTS = {".txt", ".sub", ".base64", ".b64", ".list"}
@@ -29,6 +35,7 @@ SKIP_NAME_PARTS = {
     "readme", "license", "changelog", "requirements", "setup",
     "example", "sample", "test", "demo", "package-lock", "pyproject",
 }
+
 NODE_RE = re.compile(r"vless://[^\s\r\n'\"<>]+", re.IGNORECASE)
 
 
@@ -38,9 +45,10 @@ def load_config():
             data = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
             if isinstance(data, dict):
                 cfg = DEFAULT_CONFIG.copy()
-                for key in ("source_repos", "direct_urls", "sub_limit", "clash_limit"):
+                for key in ("source_repos", "direct_urls", "sub_limit", "clash_limit", "tcp_timeout"):
                     if key in data:
                         cfg[key] = data[key]
+
                 cfg["source_repos"] = [
                     str(x).strip() for x in cfg.get("source_repos", []) if str(x).strip()
                 ]
@@ -49,6 +57,7 @@ def load_config():
                 ]
                 cfg["sub_limit"] = int(cfg.get("sub_limit", 550))
                 cfg["clash_limit"] = int(cfg.get("clash_limit", 500))
+                cfg["tcp_timeout"] = float(cfg.get("tcp_timeout", 1.5))
                 return cfg
         except Exception:
             pass
@@ -130,7 +139,6 @@ def discover_github_files(repo_url: str):
                 urls.append(raw_url(owner, repo, branch, path))
         return urls
 
-    # Fallback: recursive contents API
     return discover_github_files_contents(owner, repo, "", branch)
 
 
@@ -184,8 +192,7 @@ def build_source_urls(cfg):
 
 
 def decode_if_needed(text: str) -> str:
-    head = text[:1200].lower()
-    if "vless://" in head:
+    if "vless://" in text[:1200].lower():
         return text
 
     cleaned = "".join(text.split())
@@ -223,7 +230,7 @@ def parse_vless(url: str, idx: int):
         params = urllib.parse.parse_qs(p.query, keep_blank_values=True)
         sec = (params.get("security", ["none"])[0] or "none").lower()
 
-        # Только TLS / Reality
+        # Оставляем только TLS / Reality
         if sec not in ("tls", "reality"):
             return None
 
@@ -289,6 +296,14 @@ def parse_node(url: str, idx: int):
     if url.startswith("vless://"):
         return parse_vless(url, idx)
     return None
+
+
+def is_alive(host: str, port: int, timeout: float = 1.5) -> bool:
+    try:
+        with socket.create_connection((host, port), timeout=timeout):
+            return True
+    except Exception:
+        return False
 
 
 def yaml_scalar(value):
@@ -393,8 +408,8 @@ def main():
 
     sub_limit = int(cfg["sub_limit"])
     clash_limit = int(cfg["clash_limit"])
+    tcp_timeout = float(cfg["tcp_timeout"])
 
-    # Собираем чуть больше, чем нужно, чтобы был запас на отбрасывание дубликатов/мусора
     collection_target = max(sub_limit, clash_limit) + 300
 
     print("=== Сбор VLESS узлов ===")
@@ -439,14 +454,24 @@ def main():
         f.write(encoded)
     print(f"sub.txt записан ({len(sub_nodes)} узлов)")
 
-    # clash.yaml — только успешно распарсенные VLESS
+    # clash.yaml — только успешные, живые, без дублей по server:port
     proxies = []
     seen_names = set()
+    seen_servers = set()
 
     for idx, url in enumerate(ordered_nodes):
         p = parse_node(url, idx)
         if not p:
             continue
+
+        key = (p["server"], p["port"])
+        if key in seen_servers:
+            continue
+
+        if not is_alive(p["server"], p["port"], timeout=tcp_timeout):
+            continue
+
+        seen_servers.add(key)
 
         base = p["name"]
         name = base
