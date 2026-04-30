@@ -11,6 +11,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10  # ← ДОБАВИТЬ: максимум 10 минут вместо бесконечности
     env:
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
@@ -26,7 +27,7 @@ jobs:
         run: pip install requests aiohttp
 
       - name: Run script
-        run: python main.py
+        run: timeout 480 python main.py  # ← ДОБАВИТЬ: таймаут 8 минут для скрипта
 
       - name: Commit and Push changes
         run: |
