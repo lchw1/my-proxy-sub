@@ -152,19 +152,25 @@ async def collect_nodes(urls: list, max_nodes: int) -> list:
 
     print(f"\nВсего уникальных VLESS: {len(nodes)}")
 
-    if len(nodes) > max_nodes:
+   if len(nodes) > max_nodes:
         print(f"Обрезаем до {max_nodes} для TLS-теста")
-        # Приоритет: сначала Reality и WS/gRPC — лучше обходят РКН
         priority = []
         rest = []
         for n in nodes:
-            q = urllib.parse.parse_qs(urllib.parse.urlsplit(n).query)
-            sec = q.get("security", [""])[0].lower()
-            net = q.get("type", [""])[0].lower()
-            if sec == "reality" or net in ("ws", "grpc"):
-                priority.append(n)
-            else:
-                rest.append(n)
+            try:
+                # Оборачиваем парсинг в try, чтобы битые IPv6 ссылки не ломали скрипт
+                parsed = urllib.parse.urlsplit(n)
+                q = urllib.parse.parse_qs(parsed.query)
+                sec = q.get("security", [""])[0].lower()
+                net = q.get("type", [""])[0].lower()
+                if sec == "reality" or net in ("ws", "grpc"):
+                    priority.append(n)
+                else:
+                    rest.append(n)
+            except Exception:
+                # Если ссылка кривая, просто идем к следующей
+                continue
+                
         nodes = (priority + rest)[:max_nodes]
         print(f"  из них Reality/WS/gRPC: {len(priority)}, остальных: {len(rest)}")
 
