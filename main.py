@@ -1,17 +1,11 @@
 """
-VLESS collector with async TLS handshake check and GitHub token support.
+VLESS collector with async fetching + TLS handshake check.
 
 Requirements:
     pip install requests aiohttp
 
 Optional env vars:
-    GITHUB_TOKEN  — personal access token (raises limit 60 → 5000 req/hour)
-
-Config (sources.json) new fields:
-    github_token      — alternative to env var
-    latency_limit_ms  — drop nodes slower than this (default 200)
-    test_workers      — parallel TCP testers (default 100)
-    test_timeout_ms   — TCP connect timeout (default 2000)
+    GITHUB_TOKEN  — personal access token
 """
 
 import asyncio
@@ -25,42 +19,30 @@ import urllib.parse
 from pathlib import Path
 
 import aiohttp
-import requests
 
 # ---------------------------------------------------------------------------
 CONFIG_FILE = Path("sources.json")
 
 DEFAULT_CONFIG = {
-    # --- источники ---
-    "source_repos": [
-        # активные коллекции 2024-2025
-        "https://github.com/mahdibland/V2RayAggregator",
-        "https://github.com/soroushmirzaei/telegram-configs-collector",
-        "https://github.com/Epodonios/v2ray-configs",
-        "https://github.com/yebekhe/TelegramV2rayCollector",
-        "https://github.com/barry-far/V2ray-Configs",
-        "https://github.com/SoliSpirit/v2ray-configs",
-        "https://github.com/mfuu/v2ray",
-        "https://github.com/resasanian/Mirza",
+    "source_repos": [],
+    "direct_urls": [
+        "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/Splitted-By-Protocol/vless.txt",
+        "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt",
+        "https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/clean/vless.txt",
+        "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt",
+        "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/all_extracted_configs.txt",
+        "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/vless.txt",
+        "https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt",
+        "https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/main/configs/proxy_configs.txt",
     ],
-    "direct_urls": [],
-    # --- лимиты вывода ---
     "sub_limit": 550,
     "clash_limit": 500,
-    # --- speed-test ---
-    "latency_limit_ms": 200,   # выкидывать ноды медленнее этого порога
-    "test_workers": 100,        # параллельных TCP-соединений
-    "test_timeout_ms": 2000,    # таймаут одного TCP connect
-    # --- GitHub API ---
-    "github_token": "",         # или задайте GITHUB_TOKEN в env
+    "latency_limit_ms": 200,
+    "test_workers": 100,
+    "test_timeout_ms": 2000,
+    "github_token": "",
 }
 
-ALLOWED_EXTS = {".txt", ".sub", ".base64", ".b64", ".list", ".yaml", ".yml"}
-SKIP_NAME_PARTS = {
-    "readme", "license", "changelog", "requirements", "setup",
-    "example", "sample", "test", "demo", "package-lock", "pyproject",
-    "makefile", ".github", "workflow",
-}
 NODE_RE = re.compile(r"vless://[^\s\r\n'\"<>]+", re.IGNORECASE)
 
 
@@ -108,118 +90,7 @@ def get_headers(cfg: dict) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# HTTP helpers (sync, для GitHub API и скачивания файлов)
-# ---------------------------------------------------------------------------
-
-def fetch_text(url: str, headers: dict, timeout: int = 25) -> str:
-    try:
-        r = requests.get(url, headers=headers, timeout=timeout)
-        if r.status_code == 200:
-            return r.text
-        print(f"SKIP {url} — HTTP {r.status_code}")
-    except Exception as e:
-        print(f"ERR  {url} — {e}")
-    return ""
-
-
-def fetch_json(url: str, headers: dict, timeout: int = 25):
-    try:
-        r = requests.get(url, headers=headers, timeout=timeout)
-        if r.status_code == 200:
-            return r.json()
-        print(f"SKIP {url} — HTTP {r.status_code}")
-    except Exception as e:
-        print(f"ERR  {url} — {e}")
-    return None
-
-
-# ---------------------------------------------------------------------------
-# GitHub discovery
-# ---------------------------------------------------------------------------
-
-def github_owner_repo(repo_url: str):
-    m = re.match(
-        r"https?://github\.com/([^/]+)/([^/#?]+?)(?:\.git)?/?$",
-        repo_url.strip(),
-    )
-    if not m:
-        return None, None
-    return m.group(1), m.group(2)
-
-
-def is_probably_source_file(path: str) -> bool:
-    lower = path.lower()
-    name = Path(lower).name
-    ext = Path(name).suffix
-    if ext not in ALLOWED_EXTS:
-        return False
-    if any(part in lower for part in SKIP_NAME_PARTS):
-        return False
-    return True
-
-
-def raw_url(owner: str, repo: str, branch: str, path: str) -> str:
-    safe_path = urllib.parse.quote(path, safe="/")
-    return f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{safe_path}"
-
-
-def discover_github_files(repo_url: str, headers: dict) -> list[str]:
-    owner, repo = github_owner_repo(repo_url)
-    if not owner or not repo:
-        return []
-
-    info = fetch_json(f"https://api.github.com/repos/{owner}/{repo}", headers)
-    if not isinstance(info, dict):
-        return []
-
-    branch = info.get("default_branch") or "main"
-    tree = fetch_json(
-        f"https://api.github.com/repos/{owner}/{repo}/git/trees/{branch}?recursive=1",
-        headers,
-    )
-
-    if isinstance(tree, dict) and isinstance(tree.get("tree"), list):
-        urls = []
-        for item in tree["tree"]:
-            if item.get("type") != "blob":
-                continue
-            path = item.get("path") or ""
-            if is_probably_source_file(path):
-                urls.append(raw_url(owner, repo, branch, path))
-        return urls
-
-    # fallback
-    return _discover_contents(owner, repo, "", branch, headers)
-
-
-def _discover_contents(
-    owner: str, repo: str, path: str, branch: str, headers: dict
-) -> list[str]:
-    api = f"https://api.github.com/repos/{owner}/{repo}/contents"
-    if path:
-        api += f"/{path.lstrip('/')}"
-    api += f"?ref={urllib.parse.quote(branch)}"
-
-    data = fetch_json(api, headers)
-    if not data:
-        return []
-    if isinstance(data, dict):
-        data = [data]
-
-    found = []
-    for item in data:
-        if item.get("type") == "dir":
-            found.extend(_discover_contents(owner, repo, item.get("path", ""), branch, headers))
-        elif item.get("type") == "file":
-            p = item.get("path") or ""
-            dl = item.get("download_url")
-            if dl and is_probably_source_file(p):
-                found.append(dl)
-    return found
-
-
-# ---------------------------------------------------------------------------
-# Node extraction
+# Node helpers
 # ---------------------------------------------------------------------------
 
 def decode_if_needed(text: str) -> str:
@@ -243,23 +114,69 @@ def clean_node(url: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Async fetch всех источников параллельно
+# ---------------------------------------------------------------------------
+
+async def fetch_one(session: aiohttp.ClientSession, url: str) -> str:
+    label = url.split("/")[-1]
+    try:
+        async with session.get(url, timeout=aiohttp.ClientTimeout(total=15)) as r:
+            if r.status == 200:
+                text = await r.text(encoding="utf-8", errors="ignore")
+                return text
+            print(f"SKIP {label} — HTTP {r.status}")
+    except asyncio.TimeoutError:
+        print(f"TIMEOUT {label}")
+    except Exception as e:
+        print(f"ERR  {label} — {e}")
+    return ""
+
+
+async def fetch_all_sources(urls: list, headers: dict) -> list:
+    """Скачивает все источники параллельно, возвращает список уникальных нод."""
+    print(f"Скачиваем {len(urls)} источников параллельно...")
+
+    async with aiohttp.ClientSession(headers=headers) as session:
+        tasks = [fetch_one(session, url) for url in urls]
+        results = await asyncio.gather(*tasks)
+
+    nodes = []
+    seen: set = set()
+
+    for i, text in enumerate(results):
+        if not text:
+            continue
+        decoded = decode_if_needed(text)
+        found = [clean_node(m) for m in NODE_RE.findall(decoded) if m.startswith("vless://")]
+        label = urls[i].split("/")[-1]
+        print(f"OK  {label} — {len(found)} vless")
+        for node in found:
+            if node not in seen:
+                seen.add(node)
+                nodes.append(node)
+
+    print(f"\nВсего уникальных VLESS до фильтрации: {len(nodes)}")
+    return nodes
+
+
+# ---------------------------------------------------------------------------
 # Async TLS handshake check
 # ---------------------------------------------------------------------------
 
-async def tls_latency_ms(host: str, port: int, sni: str, timeout_s: float) -> float | None:
+async def tls_latency_ms(host: str, port: int, sni: str, timeout_s: float):
     import ssl
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
 
-    # Чистим SNI — только ASCII, не длиннее 253 символов
+    # Чистим SNI — только ASCII, иначе падает с UnicodeError
     try:
-        sni_clean = sni.encode('idna').decode('ascii')
+        sni_clean = sni.encode("idna").decode("ascii")
     except Exception:
         try:
-            sni_clean = host.encode('idna').decode('ascii')
+            sni_clean = host.encode("idna").decode("ascii")
         except Exception:
-            return None  # совсем кривой хост — пропускаем
+            return None  # кривой хост — пропускаем
 
     t0 = time.monotonic()
     try:
@@ -278,12 +195,7 @@ async def tls_latency_ms(host: str, port: int, sni: str, timeout_s: float) -> fl
         return None
 
 
-async def _test_worker(
-    queue: asyncio.Queue,
-    results: list,
-    timeout_s: float,
-    limit_ms: float,
-):
+async def _tls_worker(queue: asyncio.Queue, results: list, timeout_s: float, limit_ms: float):
     while True:
         item = await queue.get()
         if item is None:
@@ -296,16 +208,10 @@ async def _test_worker(
         queue.task_done()
 
 
-async def speed_test_nodes(
-    nodes: list[str],
-    limit_ms: int,
-    workers: int,
-    timeout_ms: int,
-) -> list[str]:
+async def tls_test_nodes(nodes: list, limit_ms: int, workers: int, timeout_ms: int) -> list:
     """
-    Асинхронный TLS handshake тест всех нод.
-    Возвращает список прошедших фильтр нод, отсортированных по задержке.
-    TLS надёжнее TCP — сервер должен реально отвечать на шифрование.
+    TLS handshake тест всех нод параллельно.
+    Возвращает ноды прошедшие тест, отсортированные по задержке.
     """
     parsed = []
     for url in nodes:
@@ -319,7 +225,7 @@ async def speed_test_nodes(
             pass
 
     if not parsed:
-        return nodes  # нечего тестировать — вернуть как есть
+        return nodes
 
     print(f"\n=== TLS-test: {len(parsed)} нод, порог {limit_ms} ms, "
           f"{workers} параллельных соединений ===")
@@ -334,9 +240,7 @@ async def speed_test_nodes(
         await queue.put(None)
 
     tasks = [
-        asyncio.create_task(
-            _test_worker(queue, results, timeout_s, float(limit_ms))
-        )
+        asyncio.create_task(_tls_worker(queue, results, timeout_s, float(limit_ms)))
         for _ in range(workers)
     ]
     await queue.join()
@@ -367,7 +271,7 @@ def safe_name(raw: str, idx: int) -> str:
     return raw[:60] if len(raw) >= 2 else f"proxy-{idx}"
 
 
-def parse_vless(url: str, idx: int) -> dict | None:
+def parse_vless(url: str, idx: int):
     try:
         p = urllib.parse.urlsplit(url)
         if p.scheme.lower() != "vless" or not p.hostname or not p.port:
@@ -438,7 +342,7 @@ def _qs(value) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
-def make_clash(proxies: list[dict]) -> str:
+def make_clash(proxies: list) -> str:
     names = [p["name"] for p in proxies]
     top = names[:150]
 
@@ -520,91 +424,46 @@ def make_clash(proxies: list[dict]) -> str:
 # Main
 # ---------------------------------------------------------------------------
 
-def main():
-    cfg = load_config()
+async def run(cfg: dict):
     headers = get_headers(cfg)
 
-    if not cfg["source_repos"] and not cfg["direct_urls"]:
+    # Собираем все URL источников
+    source_urls = list(cfg["direct_urls"])
+    print(f"Источников: {len(source_urls)}")
+
+    if not source_urls:
         print("CRITICAL: no sources configured.")
         sys.exit(1)
 
-    # 1. Обход репозиториев
-    print("=== Сбор ссылок на источники ===")
-    source_urls: list[str] = []
-    seen_src: set[str] = set()
-
-    for repo in cfg["source_repos"]:
-        print(f"SCAN {repo}")
-        try:
-            for u in discover_github_files(repo, headers):
-                if u not in seen_src:
-                    seen_src.add(u)
-                    source_urls.append(u)
-        except Exception as e:
-            print(f"ERR  discover {repo} — {e}")
-
-    for u in cfg["direct_urls"]:
-        if u not in seen_src:
-            seen_src.add(u)
-            source_urls.append(u)
-
-    print(f"FOUND SOURCES: {len(source_urls)}")
-
-    sub_limit = cfg["sub_limit"]
-    clash_limit = cfg["clash_limit"]
-    collection_target = max(sub_limit, clash_limit) + 500
-
-    # 2. Сбор VLESS-нод
+    # 1. Скачиваем все источники параллельно
     print("\n=== Сбор VLESS узлов ===")
-    ordered_nodes: list[str] = []
-    seen_nodes: set[str] = set()
-
-    for src in source_urls:
-        if len(ordered_nodes) >= collection_target:
-            break
-        raw = fetch_text(src, headers)
-        if not raw:
-            continue
-        text = decode_if_needed(raw)
-        found = [clean_node(m) for m in NODE_RE.findall(text) if m.startswith("vless://")]
-        label = src.split("/")[-1]
-        print(f"OK  {label} — {len(found)} vless")
-        for node in found:
-            if node not in seen_nodes:
-                seen_nodes.add(node)
-                ordered_nodes.append(node)
-            if len(ordered_nodes) >= collection_target:
-                break
+    ordered_nodes = await fetch_all_sources(source_urls, headers)
 
     if not ordered_nodes:
         print("CRITICAL: 0 nodes collected!")
         sys.exit(1)
 
-    print(f"\nВсего уникальных VLESS до фильтрации: {len(ordered_nodes)}")
-
-    # 3. Async TLS-test
-    passed_nodes = asyncio.run(
-        speed_test_nodes(
-            ordered_nodes,
-            limit_ms=cfg["latency_limit_ms"],
-            workers=cfg["test_workers"],
-            timeout_ms=cfg["test_timeout_ms"],
-        )
+    # 2. TLS-test
+    passed_nodes = await tls_test_nodes(
+        ordered_nodes,
+        limit_ms=cfg["latency_limit_ms"],
+        workers=cfg["test_workers"],
+        timeout_ms=cfg["test_timeout_ms"],
     )
 
     if not passed_nodes:
         print("WARNING: 0 нод прошли TLS-test — используем все ноды без фильтрации.")
         passed_nodes = ordered_nodes
 
-    # 4. sub.txt
-    sub_nodes = passed_nodes[:sub_limit]
+    # 3. sub.txt
+    sub_nodes = passed_nodes[:cfg["sub_limit"]]
     encoded = base64.b64encode("\n".join(sub_nodes).encode("utf-8")).decode("ascii")
     Path("sub.txt").write_text(encoded, encoding="utf-8")
     print(f"\nsub.txt записан ({len(sub_nodes)} узлов)")
 
-    # 5. clash.yaml
-    proxies: list[dict] = []
-    seen_names: set[str] = set()
+    # 4. clash.yaml
+    proxies: list = []
+    seen_names: set = set()
 
     for idx, url in enumerate(passed_nodes):
         p = parse_vless(url, idx)
@@ -618,7 +477,7 @@ def main():
         p["name"] = name
         seen_names.add(name)
         proxies.append(p)
-        if len(proxies) >= clash_limit:
+        if len(proxies) >= cfg["clash_limit"]:
             break
 
     if not proxies:
@@ -627,6 +486,11 @@ def main():
 
     Path("clash.yaml").write_text(make_clash(proxies), encoding="utf-8")
     print(f"clash.yaml записан ({len(proxies)} узлов)")
+
+
+def main():
+    cfg = load_config()
+    asyncio.run(run(cfg))
 
 
 if __name__ == "__main__":
