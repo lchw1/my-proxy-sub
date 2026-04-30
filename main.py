@@ -434,7 +434,7 @@ async def run(cfg: dict):
     if not source_urls:
         print("CRITICAL: no sources configured.")
         sys.exit(1)
-        
+
     # 1. Скачиваем все источники параллельно
     print("\n=== Сбор VLESS узлов ===")
     ordered_nodes = await fetch_all_sources(source_urls, headers)
@@ -442,11 +442,6 @@ async def run(cfg: dict):
     if not ordered_nodes:
         print("CRITICAL: 0 nodes collected!")
         sys.exit(1)
-        # Берём не более 1500 нод на тест — больше не нужно
-max_for_test = 1500
-if len(ordered_nodes) > max_for_test:
-    print(f"Обрезаем до {max_for_test} нод для TLS-теста")
-    ordered_nodes = ordered_nodes[:max_for_test]
 
     # 2. TLS-test
     passed_nodes = await tls_test_nodes(
