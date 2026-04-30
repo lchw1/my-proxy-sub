@@ -247,23 +247,24 @@ def clean_node(url: str) -> str:
 # ---------------------------------------------------------------------------
 
 async def tls_latency_ms(host: str, port: int, sni: str, timeout_s: float) -> float | None:
-    """
-    Выполняет полный TLS handshake и возвращает время в мс.
-    Если TLS не прошёл (нет сертификата, таймаут, отказ) — возвращает None.
-    Это намного надёжнее чем просто TCP connect:
-    - сервер должен реально отвечать на TLS
-    - мусорные/мёртвые ноды отсеиваются
-    """
     import ssl
     ctx = ssl.create_default_context()
-    # Не проверяем цепочку сертификатов — у VPN нод часто self-signed
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
+
+    # Чистим SNI — только ASCII, не длиннее 253 символов
+    try:
+        sni_clean = sni.encode('idna').decode('ascii')
+    except Exception:
+        try:
+            sni_clean = host.encode('idna').decode('ascii')
+        except Exception:
+            return None  # совсем кривой хост — пропускаем
 
     t0 = time.monotonic()
     try:
         _, writer = await asyncio.wait_for(
-            asyncio.open_connection(host, port, ssl=ctx, server_hostname=sni or host),
+            asyncio.open_connection(host, port, ssl=ctx, server_hostname=sni_clean),
             timeout=timeout_s,
         )
         latency = (time.monotonic() - t0) * 1000
