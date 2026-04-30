@@ -152,15 +152,15 @@ async def collect_nodes(urls: list, max_nodes: int) -> list:
 
     print(f"\nВсего уникальных VLESS: {len(nodes)}")
 
-   if len(nodes) > max_nodes:
+    if len(nodes) > max_nodes:
         print(f"Обрезаем до {max_nodes} для TLS-теста")
         priority = []
         rest = []
         for n in nodes:
             try:
-                # Оборачиваем парсинг в try, чтобы битые IPv6 ссылки не ломали скрипт
-                parsed = urllib.parse.urlsplit(n)
-                q = urllib.parse.parse_qs(parsed.query)
+                # Фикс: оборачиваем в try для защиты от Invalid IPv6 URL
+                p = urllib.parse.urlsplit(n)
+                q = urllib.parse.parse_qs(p.query)
                 sec = q.get("security", [""])[0].lower()
                 net = q.get("type", [""])[0].lower()
                 if sec == "reality" or net in ("ws", "grpc"):
@@ -168,7 +168,6 @@ async def collect_nodes(urls: list, max_nodes: int) -> list:
                 else:
                     rest.append(n)
             except Exception:
-                # Если ссылка кривая, просто идем к следующей
                 continue
                 
         nodes = (priority + rest)[:max_nodes]
@@ -193,7 +192,6 @@ SSL_CTX = make_ssl_ctx()
 
 async def tls_check(host: str, port: int, sni: str, timeout_s: float):
     """Возвращает задержку TLS handshake в мс или None если не прошёл."""
-    # Очищаем SNI от unicode
     try:
         sni_clean = sni.encode("idna").decode("ascii")
     except Exception:
@@ -271,7 +269,6 @@ async def tls_test(nodes: list, limit_ms: int, workers: int, timeout_ms: int) ->
     await queue.join()
     await asyncio.gather(*tasks)
 
-    # Сортируем по задержке — лучшие первые
     results.sort(key=lambda x: x[1])
     passed = [url for url, _ in results]
 
@@ -304,7 +301,6 @@ def parse_vless(url: str, idx: int):
         q = urllib.parse.parse_qs(p.query, keep_blank_values=True)
         sec = (q.get("security", ["none"])[0] or "none").lower()
 
-        # Только TLS и Reality — они реально работают
         if sec not in ("tls", "reality"):
             return None
 
@@ -444,7 +440,6 @@ def make_clash(proxies: list) -> str:
     ] + [f"      - {j(n)}" for n in top] + [
         "",
         "rules:",
-        # Прямой доступ к российским ресурсам
         "  - GEOIP,RU,DIRECT",
         "  - DOMAIN-SUFFIX,ru,DIRECT",
         "  - DOMAIN-SUFFIX,рф,DIRECT",
@@ -472,13 +467,11 @@ async def run(cfg: dict):
         print("CRITICAL: нет источников в конфиге!")
         sys.exit(1)
 
-    # 1. Параллельный сбор
     nodes = await collect_nodes(urls, cfg["max_test_nodes"])
     if not nodes:
         print("CRITICAL: 0 нод собрано!")
         sys.exit(1)
 
-    # 2. TLS-тест
     passed = await tls_test(
         nodes,
         limit_ms=cfg["latency_limit_ms"],
@@ -489,13 +482,11 @@ async def run(cfg: dict):
         print("WARNING: никто не прошёл TLS-тест, берём всё без фильтрации")
         passed = nodes
 
-    # 3. sub.txt
     sub = passed[:cfg["sub_limit"]]
     encoded = base64.b64encode("\n".join(sub).encode()).decode("ascii")
     Path("sub.txt").write_text(encoded, encoding="utf-8")
     print(f"\nsub.txt — {len(sub)} нод")
 
-    # 4. clash.yaml
     proxies: list = []
     seen_names: set = set()
     for idx, url in enumerate(passed):
