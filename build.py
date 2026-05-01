@@ -95,10 +95,13 @@ def parse_vless(url: str, idx: int):
             wo: dict = {}
             if path := urllib.parse.unquote(q.get("path", [""])[0]):
                 wo["path"] = path
-            if host := q.get("host", [""])[0]:
+            host = q.get("host", [""])[0]
+            if host:
                 wo["headers"] = {"Host": host}
-            if wo:
-                proxy["ws-opts"] = wo
+            else:
+                # WS без заголовка Host — практически всегда нерабочий
+                return None
+            proxy["ws-opts"] = wo
         elif net == "grpc":
             gn = urllib.parse.unquote(q.get("serviceName", [""])[0])
             if gn:
