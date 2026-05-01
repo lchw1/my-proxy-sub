@@ -48,6 +48,12 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global core.safecrlf false
           git add sub.txt clash.yaml
-          git commit -m "Update nodes" || echo "No changes"
-          git push
+          git status
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update nodes"
+            git push
+          fi
