@@ -2,7 +2,8 @@ name: Update Proxy Nodes
 
 on:
   schedule:
-    - 
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,24 +14,40 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
       - name: Install dependencies
         run: pip install aiohttp
 
-      - name: Run script
+      - name: Download xray-knife
+        run: |
+          wget -q https://github.com/lilendian0x00/xray-knife/releases/latest/download/Xray-knife-linux-64.zip
+          unzip -q Xray-knife-linux-64.zip
+          chmod +x xray-knife
+
+      - name: Collect nodes
         run: python -u main.py
 
-      - name: Commit and Push changes
+      - name: Test nodes with xray-knife
+        run: |
+          ./xray-knife http -f raw.txt \
+            --timeout 5 \
+            --rps 100 \
+            --insecure \
+            --type txt \
+            -o tested.txt || true
+
+      - name: Build outputs
+        run: python -u build.py
+
+      - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add sub.txt clash.yaml
-          git commit -m "Update nodes" || echo "No changes to commit"
+          git commit -m "Update nodes" || echo "No changes"
           git push
