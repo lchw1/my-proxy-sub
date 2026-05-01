@@ -36,11 +36,19 @@ jobs:
       - name: Test nodes with xray-knife
         run: |
           ./xray-knife http -f raw.txt \
-            --timeout 5 \
-            --rps 100 \
-            --insecure \
+            --timeout 10 \
+            --rps 50 \
             --type txt \
-            -o tested.txt || true
+            -o tested.txt
+        continue-on-error: true
+
+      - name: Show alive count
+        run: |
+          if [ -s tested.txt ]; then
+            echo "Alive: $(wc -l < tested.txt)"
+          else
+            echo "No alive nodes found"
+          fi
 
       - name: Build outputs
         run: python -u build.py
