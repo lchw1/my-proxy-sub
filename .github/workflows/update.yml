@@ -2,8 +2,7 @@ name: Update Proxy Nodes
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
-  workflow_dispatch:
+    - 
 
 permissions:
   contents: write
