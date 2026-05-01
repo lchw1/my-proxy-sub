@@ -35,19 +35,22 @@ jobs:
 
       - name: Test nodes with xray-knife
         run: |
-          ./xray-knife http \
-            -f raw.txt \
-            --thread 100 \
-            --mdelay 3000 \
+          ./xray-knife http -f raw.txt \
             --insecure \
+            --mdelay 15000 \
+            --thread 50 \
+            --retries 2 \
             --type txt \
-            -o tested.txt || true
+            -o tested.txt
+        continue-on-error: true
 
-      - name: Show results
+      - name: Show alive count
         run: |
-          RAW=$(wc -l < raw.txt 2>/dev/null || echo 0)
-          ALIVE=$(grep -c "vless://" tested.txt 2>/dev/null || echo 0)
-          echo "Собрано: $RAW  |  Рабочих: $ALIVE"
+          if [ -s tested.txt ]; then
+            echo "Alive: $(wc -l < tested.txt)"
+          else
+            echo "No alive nodes found"
+          fi
 
       - name: Build outputs
         run: python -u build.py
@@ -56,10 +59,12 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global core.safecrlf false
           git add sub.txt clash.yaml
+          git status
           if git diff --staged --quiet; then
-            echo "No changes"
+            echo "No changes to commit"
           else
-            git commit -m "Update nodes $(date -u '+%Y-%m-%d %H:%M')"
+            git commit -m "Update nodes"
             git push
           fi
