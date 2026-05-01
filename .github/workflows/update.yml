@@ -25,9 +25,10 @@ jobs:
 
       - name: Download xray-knife
         run: |
-          wget -q https://github.com/lilendian0x00/xray-knife/releases/latest/download/Xray-knife-linux-64.zip
-          unzip -q Xray-knife-linux-64.zip
+          wget -q https://github.com/lilendian0x00/xray-knife/releases/latest/download/Xray-knife-linux-64.zip -O knife.zip
+          unzip -q -o knife.zip
           chmod +x xray-knife
+          rm knife.zip
 
       - name: Collect nodes
         run: python -u main.py
