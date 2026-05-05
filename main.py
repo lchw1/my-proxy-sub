@@ -1,161 +1,121 @@
+#!/usr/bin/env python3
 """
-Сбор VLESS нод.
-Фокус: Reality-only, чтобы не кормить тестер мусором.
+Главный скрипт сбора, проверки и сборки proxy-конфигов.
+
+Процесс:
+1. Загрузить конфиги из источников
+2. Декодировать из различных форматов
+3. Валидировать структуру
+4. Удалить дубликаты
+5. Проверить работоспособность (батчами)
+6. Сформировать итоговые файлы
 """
 
-import asyncio
-import base64
-import re
-import urllib.parse
+import sys
 from pathlib import Path
-
-import aiohttp
-
-SOURCES = [
-    "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/githubmirror/clean/vless.txt",
-    "https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/githubmirror/clean/vless.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/Splitted-By-Protocol/vless.txt",
-    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt",
-    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt",
-    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/all_extracted_configs.txt",
-    "https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/main/configs/proxy_configs.txt",
-    "https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt",
-]
-
-# Важно: не даём тестеру захлебнуться.
-MAX_NODES = 4000
-
-NODE_RE = re.compile(r"vless://[^\s\r\n'\"<>]+", re.IGNORECASE)
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124.0.0.0"}
+from src.config import Config
+from src.logger import CollectorLogger
+from src.loader import ConfigLoader
+from src.decoder import ConfigDecoder
+from src.validator import ConfigValidator
+from src.deduplicator import ConfigDeduplicator
+from src.checker import ConfigChecker
+from src.formatter import ConfigFormatter
 
 
-def get_params(url: str):
+def main():
+    """Главный процесс."""
+    
     try:
-        q = urllib.parse.parse_qs(urllib.parse.urlsplit(url).query)
-        sec = q.get("security", [""])[0].lower()
-        net = q.get("type", [""])[0].lower()
-        host = q.get("host", [""])[0].lower()
-        sni = q.get("sni", [""])[0].lower()
-        pbk = q.get("pbk", [""])[0]
-        sid = q.get("sid", [""])[0]
-        fp = q.get("fp", [""])[0].lower()
-        return sec, net, host, sni, pbk, sid, fp
-    except Exception:
-        return "", "", "", "", "", "", ""
-
-
-def is_useful(url: str) -> bool:
-    sec, net, host, sni, pbk, sid, fp = get_params(url)
-
-    # Жёсткий фокус на Reality.
-    if sec != "reality":
+        config = Config("config.yaml")
+    except FileNotFoundError:
+        print("ERROR: config.yaml not found!")
+        sys.exit(1)
+    
+    logger = CollectorLogger(config.log_file, config.log_level)
+    logger.info("=" * 60)
+    logger.info("Начало сбора proxy-конфигов")
+    logger.info("=" * 60)
+    
+    # Этап 1: Загрузка
+    logger.info("\n[1/6] Загрузка источников...")
+    loader = ConfigLoader(config)
+    raw_data = loader.load_all_sources()
+    
+    if not raw_data:
+        logger.error("Нет загруженных данных!")
         return False
-
-    # Минимальная проверка на адекватность структуры.
-    if not pbk or not sid:
+    
+    # Этап 2: Декодирование
+    logger.info("\n[2/6] Декодирование конфигов...")
+    decoder = ConfigDecoder()
+    configs = decoder.decode_all(raw_data)
+    
+    if not configs:
+        logger.error("Нет декодированных конфигов!")
         return False
-
-    # Желательно наличие sni или host, иначе часто мусор.
-    if not sni and not host:
+    
+    if len(configs) > config.max_candidates:
+        logger.warning(f"Ограничено до {config.max_candidates} конфигов (было {len(configs)})")
+        configs = configs[:config.max_candidates]
+    
+    # Этап 3: Валидация
+    logger.info("\n[3/6] Валидация структуры...")
+    validator = ConfigValidator(config)
+    configs = validator.validate_and_filter(configs)
+    
+    if not configs:
+        logger.error("Нет валидных конфигов!")
         return False
-
+    
+    # Этап 4: Дедупликация
+    logger.info("\n[4/6] Удаление дубликатов...")
+    deduplicator = ConfigDeduplicator()
+    configs = deduplicator.deduplicate(configs)
+    
+    if not configs:
+        logger.error("Нет конфигов после дедупликации!")
+        return False
+    
+    # Этап 5: Проверка работоспособности (батчами)
+    logger.info("\n[5/6] Проверка работоспособности...")
+    checker = ConfigChecker(config)
+    working_configs = []
+    
+    chunk_size = config.chunk_size
+    total_chunks = (len(configs) + chunk_size - 1) // chunk_size
+    
+    for chunk_num in range(total_chunks):
+        start_idx = chunk_num * chunk_size
+        end_idx = min(start_idx + chunk_size, len(configs))
+        chunk = configs[start_idx:end_idx]
+        
+        logger.info(f"  Чанк {chunk_num + 1}/{total_chunks} ({len(chunk)} конфигов)...")
+        
+        working, failed = checker.check_batch(chunk)
+        working_configs.extend(working)
+        
+        logger.debug(f"    ✓ Работают: {len(working)}, ✗ Не работают: {len(failed)}")
+    
+    logger.info(f"Всего работающих конфигов: {len(working_configs)}")
+    
+    if not working_configs:
+        logger.warning("Нет работающих конфигов!")
+    
+    # Этап 6: Сохранение
+    logger.info("\n[6/6] Сохранение итоговых файлов...")
+    formatter = ConfigFormatter()
+    
+    v2ray_count = formatter.save_v2ray(working_configs, config.v2ray_output)
+    mihomo_count = formatter.save_mihomo(working_configs, config.mihomo_output)
+    
+    logger.log_stats()
+    logger.info("Процесс завершен успешно!")
+    logger.info("=" * 60)
+    
     return True
 
 
-def node_priority(url: str) -> int:
-    sec, net, host, sni, pbk, sid, fp = get_params(url)
-
-    # Reality с ws/grpc обычно чаще живёт.
-    if sec == "reality" and net in ("ws", "grpc"):
-        return 0
-    if sec == "reality":
-        return 1
-    return 2
-
-
-def decode_if_needed(text: str) -> str:
-    lower_head = text[:2000].lower()
-    if "vless://" in lower_head:
-        return text
-
-    cleaned = "".join(text.split())
-    if len(cleaned) < 32:
-        return text
-
-    try:
-        cleaned += "=" * (-len(cleaned) % 4)
-        decoded = base64.b64decode(cleaned).decode("utf-8", errors="ignore")
-        if "vless://" in decoded.lower():
-            return decoded
-    except Exception:
-        pass
-
-    return text
-
-
-async def fetch_one(session: aiohttp.ClientSession, url: str) -> tuple[str, str]:
-    label = url.split("/")[-1]
-    try:
-        timeout = aiohttp.ClientTimeout(connect=8, total=30)
-        async with session.get(url, timeout=timeout) as r:
-            if r.status == 200:
-                return label, await r.text(encoding="utf-8", errors="ignore")
-            print(f"SKIP {label} — HTTP {r.status}")
-    except asyncio.TimeoutError:
-        print(f"TIMEOUT {label}")
-    except Exception as e:
-        print(f"ERR {label} — {e}")
-    return label, ""
-
-
-def extract_nodes(text: str) -> list[str]:
-    decoded = decode_if_needed(text)
-    found = []
-    for u in NODE_RE.findall(decoded):
-        node = u.strip().rstrip("),.;]}'\"")
-        if node.startswith("vless://") and is_useful(node):
-            found.append(node)
-    return found
-
-
-async def main():
-    print(f"Качаем {len(SOURCES)} источников...")
-
-    connector = aiohttp.TCPConnector(limit=8, ttl_dns_cache=300)
-    async with aiohttp.ClientSession(headers=HEADERS, connector=connector) as session:
-        results = await asyncio.gather(*(fetch_one(session, u) for u in SOURCES))
-
-    seen = set()
-    nodes = []
-
-    for label, text in results:
-        if not text:
-            continue
-        found = extract_nodes(text)
-        print(f"  {label}: {len(found)} reality-кандидатов")
-        for node in found:
-            if node not in seen:
-                seen.add(node)
-                nodes.append(node)
-
-    # Стабильная сортировка: сначала более вероятно живые.
-    nodes.sort(key=node_priority)
-
-    # Не даём списку разрастись бесконечно.
-    if len(nodes) > MAX_NODES:
-        nodes = nodes[:MAX_NODES]
-        print(f"Обрезано до MAX_NODES={MAX_NODES}")
-
-    reality_cnt = sum(1 for n in nodes if node_priority(n) == 0)
-    pure_cnt = sum(1 for n in nodes if node_priority(n) == 1)
-
-    print(f"\nИтого кандидатов: {len(nodes)}")
-    print(f"Reality+ws/grpc: {reality_cnt}")
-    print(f"Reality only:     {pure_cnt}")
-
-    Path("raw.txt").write_text("\n".join(nodes), encoding="utf-8")
-    print("raw.txt готов")
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
+if __name__ == '__main__':
+    success = main()
+    sys.exit(0 if success else 1)
