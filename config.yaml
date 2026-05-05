@@ -1,0 +1,33 @@
+sources:
+  - url: "https://example.com/proxies.json"
+    type: "json"
+    timeout: 10
+  - url: "https://example.com/proxies.txt"
+    type: "base64"
+    timeout: 10
+
+processing:
+  chunk_size: 1000
+  max_candidates: 10000
+  concurrent_checks: 5
+  check_timeout: 5
+  retry_count: 1
+
+filtering:
+  skip_localhost: true
+  skip_private_ips: true
+  min_port: 1
+  max_port: 65535
+
+logging:
+  level: "INFO"
+  file: "collector.log"
+  console: true
+
+output:
+  v2ray:
+    file: "output/v2ray_proxies.json"
+    enabled: true
+  mihomo:
+    file: "output/mihomo_proxies.yaml"
+    enabled: true
