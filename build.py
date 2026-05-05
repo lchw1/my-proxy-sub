@@ -1,250 +1,204 @@
-"""
-Читает tested.txt от xray-knife (рабочие ноды),
-строит sub.txt и clash.yaml.
-Если tested.txt пустой — берёт raw.txt как fallback.
-"""
-
 import base64
-import json
 import re
-import sys
 import urllib.parse
 from pathlib import Path
 
-SUB_LIMIT   = 500
-CLASH_LIMIT = 450
+TESTED_FILE = Path("tested.txt")
+SUB_FILE = Path("sub.txt")
+CLASH_FILE = Path("clash.yaml")
 
-NODE_RE = re.compile(r"vless://[^\s\r\n'\"<>]+", re.IGNORECASE)
-
-
-def load_nodes() -> list:
-    # Пробуем tested.txt (результат xray-knife)
-    tested = Path("tested.txt")
-    if tested.exists():
-        nodes = [
-            u.strip()
-            for u in NODE_RE.findall(tested.read_text(encoding="utf-8", errors="ignore"))
-            if u.startswith("vless://")
-        ]
-        if nodes:
-            print(f"tested.txt: {len(nodes)} рабочих нод")
-            return nodes
-        print("tested.txt пустой — fallback на raw.txt")
-
-    # Fallback — берём raw.txt
-    raw = Path("raw.txt")
-    if raw.exists():
-        nodes = [
-            u.strip()
-            for u in NODE_RE.findall(raw.read_text(encoding="utf-8", errors="ignore"))
-            if u.startswith("vless://")
-        ]
-        print(f"raw.txt fallback: {len(nodes)} нод")
-        return nodes
-
-    print("CRITICAL: нет ни tested.txt ни raw.txt!")
-    sys.exit(1)
+VLESS_RE = re.compile(r"^vless://[^\s]+$", re.IGNORECASE)
 
 
-# ---------------------------------------------------------------------------
-# VLESS → Clash
-# ---------------------------------------------------------------------------
+def parse_vless(uri: str) -> dict | None:
+    uri = uri.strip()
+    if not VLESS_RE.match(uri):
+        return None
 
-def safe_name(raw: str, idx: int) -> str:
-    raw = urllib.parse.unquote(raw or "")
-    raw = raw.encode("ascii", errors="ignore").decode("ascii")
-    raw = re.sub(r"[^a-zA-Z0-9 \-_.(),]+", "", raw).strip()
-    return raw[:60] if len(raw) >= 2 else f"proxy-{idx}"
-
-
-def parse_vless(url: str, idx: int):
     try:
-        p = urllib.parse.urlsplit(url)
-        if p.scheme.lower() != "vless" or not p.hostname or not p.port:
-            return None
-        q = urllib.parse.parse_qs(p.query, keep_blank_values=True)
-        sec = (q.get("security", ["none"])[0] or "none").lower()
-        if sec not in ("tls", "reality"):
+        u = urllib.parse.urlsplit(uri)
+        if u.scheme.lower() != "vless":
             return None
 
-        proxy = {
-            "name": safe_name(p.fragment, idx),
-            "type": "vless",
-            "server": p.hostname,
-            "port": int(p.port),
-            "uuid": urllib.parse.unquote(p.username or ""),
-            "tls": True,
-            "udp": True,
-            "skip-cert-verify": True,
+        uuid = urllib.parse.unquote(u.username or "")
+        server = u.hostname or ""
+        port = u.port or 443
+        fragment = urllib.parse.unquote(u.fragment or "")
+        q = urllib.parse.parse_qs(u.query)
+
+        sec = q.get("security", [""])[0].lower()
+        net = q.get("type", ["tcp"])[0].lower()
+        sni = q.get("sni", [""])[0]
+        host = q.get("host", [""])[0]
+        path = q.get("path", [""])[0]
+        fp = q.get("fp", ["chrome"])[0].lower()
+        flow = q.get("flow", [""])[0]
+        pbk = q.get("pbk", [""])[0]
+        sid = q.get("sid", [""])[0]
+        service_name = q.get("serviceName", [""])[0]
+
+        if not uuid or not server:
+            return None
+
+        name = fragment or f"{server}:{port}"
+
+        return {
+            "name": name,
+            "uuid": uuid,
+            "server": server,
+            "port": int(port),
+            "sec": sec,
+            "net": net,
+            "sni": sni,
+            "host": host,
+            "path": path,
+            "fp": fp,
+            "flow": flow,
+            "pbk": pbk,
+            "sid": sid,
+            "service_name": service_name,
+            "raw": uri,
         }
-
-        net = (q.get("type", ["tcp"])[0] or "tcp").lower()
-        if net != "tcp":
-            proxy["network"] = net
-        if flow := q.get("flow", [""])[0]:
-            proxy["flow"] = flow
-        if sni := q.get("sni", [""])[0]:
-            proxy["servername"] = sni
-        if fp := q.get("fp", [""])[0]:
-            proxy["client-fingerprint"] = fp
-        pe = q.get("packet-encoding", [""])[0] or q.get("packetEncoding", [""])[0]
-        if pe:
-            proxy["packet-encoding"] = pe
-
-        if net == "ws":
-            wo: dict = {}
-            if path := urllib.parse.unquote(q.get("path", [""])[0]):
-                wo["path"] = path
-            host = q.get("host", [""])[0]
-            if host:
-                wo["headers"] = {"Host": host}
-            else:
-                # WS без заголовка Host — практически всегда нерабочий
-                return None
-            proxy["ws-opts"] = wo
-        elif net == "grpc":
-            gn = urllib.parse.unquote(q.get("serviceName", [""])[0])
-            if gn:
-                proxy["grpc-opts"] = {"grpc-service-name": gn}
-
-        if sec == "reality":
-            proxy["reality-opts"] = {
-                "public-key": q.get("pbk", [""])[0],
-                "short-id": q.get("sid", [""])[0],
-            }
-        return proxy
     except Exception:
         return None
 
 
-def j(v) -> str:
-    return json.dumps(v, ensure_ascii=False)
+def yaml_escape(s: str) -> str:
+    return s.replace("\\", "\\\\").replace('"', '\\"')
 
 
-def make_clash(proxies: list) -> str:
-    names = [p["name"] for p in proxies]
-    top = names[:150]
+def render_proxy(p: dict) -> str:
+    lines = []
+    lines.append(f'  - name: "{yaml_escape(p["name"])}"')
+    lines.append("    type: vless")
+    lines.append(f'    server: "{yaml_escape(p["server"])}"')
+    lines.append(f"    port: {p['port']}")
+    lines.append(f'    uuid: "{yaml_escape(p["uuid"])}"')
+    lines.append("    udp: true")
 
-    out = [
-        "mixed-port: 7890",
-        "allow-lan: false",
-        "mode: rule",
-        "log-level: info",
-        "external-controller: 127.0.0.1:9090",
-        "",
-        "dns:",
-        "  enable: true",
-        "  nameserver:",
-        "    - 8.8.8.8",
-        "    - 1.1.1.1",
-        "  fallback:",
-        "    - tls://8.8.8.8:853",
-        "    - tls://1.1.1.1:853",
-        "",
-        "proxies:",
-    ]
+    # TLS / Reality
+    if p["sec"] in ("tls", "reality"):
+        lines.append("    tls: true")
+        if p["sni"] or p["server"]:
+            lines.append(f'    servername: "{yaml_escape(p["sni"] or p["server"])}"')
+        lines.append(f'    client-fingerprint: "{yaml_escape(p["fp"] or "chrome")}"')
+        lines.append("    skip-cert-verify: true")
 
-    for p in proxies:
-        out += [
-            f"  - name: {j(p['name'])}",
-            "    type: vless",
-            f"    server: {j(p['server'])}",
-            f"    port: {int(p['port'])}",
-            f"    uuid: {j(p['uuid'])}",
-            f"    tls: {str(p.get('tls', True)).lower()}",
-            f"    udp: {str(p.get('udp', True)).lower()}",
-            f"    skip-cert-verify: {str(p.get('skip-cert-verify', True)).lower()}",
-        ]
-        for key in ("flow", "network", "client-fingerprint", "servername", "packet-encoding"):
-            if p.get(key):
-                out.append(f"    {key}: {j(p[key])}")
-        if ro := p.get("reality-opts"):
-            out += [
-                "    reality-opts:",
-                f"      public-key: {j(ro.get('public-key', ''))}",
-                f"      short-id: {j(ro.get('short-id', ''))}",
-            ]
-        if wo := p.get("ws-opts"):
-            out.append("    ws-opts:")
-            if wo.get("path"):
-                out.append(f"      path: {j(wo['path'])}")
-            if wo.get("headers"):
-                out.append("      headers:")
-                for k, v in wo["headers"].items():
-                    out.append(f"        {k}: {j(v)}")
-        if go := p.get("grpc-opts"):
-            out += [
-                "    grpc-opts:",
-                f"      grpc-service-name: {j(go.get('grpc-service-name', ''))}",
-            ]
+    if p["flow"]:
+        lines.append(f'    flow: "{yaml_escape(p["flow"])}"')
 
-    out += [
-        "",
-        "proxy-groups:",
-        f"  - name: {j('Auto')}",
-        "    type: url-test",
-        "    url: http://www.gstatic.com/generate_204",
-        "    interval: 180",
-        "    tolerance: 50",
-        "    proxies:",
-    ] + [f"      - {j(n)}" for n in top] + [
-        "",
-        f"  - name: {j('PROXY')}",
-        "    type: select",
-        "    proxies:",
-        f"      - {j('Auto')}",
-    ] + [f"      - {j(n)}" for n in top] + [
-        "",
-        "rules:",
-        "  - GEOIP,RU,DIRECT",
-        "  - DOMAIN-SUFFIX,ru,DIRECT",
-        "  - DOMAIN-SUFFIX,рф,DIRECT",
-        "  - DOMAIN-SUFFIX,yandex.ru,DIRECT",
-        "  - DOMAIN-SUFFIX,vk.com,DIRECT",
-        "  - DOMAIN-SUFFIX,mail.ru,DIRECT",
-        "  - DOMAIN-SUFFIX,sberbank.ru,DIRECT",
-        "  - DOMAIN-SUFFIX,tinkoff.ru,DIRECT",
-        "  - DOMAIN-SUFFIX,gosuslugi.ru,DIRECT",
-        "  - MATCH,Auto",
-    ]
-    return "\n".join(out)
+    if p["sec"] == "reality":
+        # Reality-specific fields
+        if p["pbk"]:
+            lines.append("    reality-opts:")
+            lines.append(f'      public-key: "{yaml_escape(p["pbk"])}"')
+            if p["sid"]:
+                lines.append(f'      short-id: "{yaml_escape(p["sid"])}"')
+        # some clients behave better with explicit packet encoding
+        lines.append("    packet-encoding: xudp")
+
+    # transport
+    if p["net"] == "ws":
+        lines.append("    network: ws")
+        lines.append("    ws-opts:")
+        if p["path"]:
+            lines.append(f'      path: "{yaml_escape(p["path"])}"')
+        else:
+            lines.append('      path: "/"')
+        if p["host"]:
+            lines.append("      headers:")
+            lines.append(f'        Host: "{yaml_escape(p["host"])}"')
+
+    elif p["net"] == "grpc":
+        lines.append("    network: grpc")
+        lines.append("    grpc-opts:")
+        if p["service_name"]:
+            lines.append(f'      grpc-service-name: "{yaml_escape(p["service_name"])}"')
+        else:
+            lines.append('      grpc-service-name: ""')
+
+    else:
+        lines.append("    network: tcp")
+
+    return "\n".join(lines)
 
 
 def main():
-    nodes = load_nodes()
-    if not nodes:
-        print("CRITICAL: 0 нод!")
-        sys.exit(1)
+    if not TESTED_FILE.exists():
+        print("tested.txt not found")
+        SUB_FILE.write_text("", encoding="utf-8")
+        CLASH_FILE.write_text("", encoding="utf-8")
+        return
 
-    # sub.txt
-    sub = nodes[:SUB_LIMIT]
-    encoded = base64.b64encode("\n".join(sub).encode()).decode("ascii")
-    Path("sub.txt").write_text(encoded, encoding="utf-8")
-    print(f"sub.txt — {len(sub)} нод")
+    raw_lines = []
+    for line in TESTED_FILE.read_text(encoding="utf-8", errors="ignore").splitlines():
+        line = line.strip()
+        if line.startswith("vless://"):
+            raw_lines.append(line)
 
-    # clash.yaml
-    proxies: list = []
-    seen_names: set = set()
-    for idx, url in enumerate(nodes):
-        p = parse_vless(url, idx)
-        if not p:
-            continue
-        name, c, base = p["name"], 1, p["name"]
-        while name in seen_names:
-            name = f"{base}-{c}"
-            c += 1
-        p["name"] = name
-        seen_names.add(name)
-        proxies.append(p)
-        if len(proxies) >= CLASH_LIMIT:
-            break
+    # dedupe, preserving order
+    seen = set()
+    nodes = []
+    for uri in raw_lines:
+        if uri not in seen:
+            seen.add(uri)
+            nodes.append(uri)
 
-    if not proxies:
-        print("CRITICAL: 0 TLS/Reality прокси!")
-        sys.exit(1)
+    parsed = []
+    for uri in nodes:
+        p = parse_vless(uri)
+        if p:
+            parsed.append(p)
 
-    Path("clash.yaml").write_text(make_clash(proxies), encoding="utf-8")
-    print(f"clash.yaml — {len(proxies)} нод")
+    print(f"tested.txt: {len(parsed)} рабочих нод")
+
+    # sub.txt as base64 subscription
+    sub_text = "\n".join([p["raw"] for p in parsed]).encode("utf-8")
+    sub_b64 = base64.b64encode(sub_text).decode("utf-8")
+    SUB_FILE.write_text(sub_b64, encoding="utf-8")
+
+    # Clash Meta config
+    out = []
+    out.append("port: 7890")
+    out.append("socks-port: 7891")
+    out.append("allow-lan: true")
+    out.append("mode: rule")
+    out.append("log-level: info")
+    out.append("ipv6: false")
+    out.append("")
+    out.append("dns:")
+    out.append("  enable: true")
+    out.append("  enhanced-mode: fake-ip")
+    out.append("  nameserver:")
+    out.append("    - 1.1.1.1")
+    out.append("    - 8.8.8.8")
+    out.append("")
+    out.append("proxies:")
+    for p in parsed:
+        out.append(render_proxy(p))
+    out.append("")
+    out.append("proxy-groups:")
+    out.append('  - name: "AUTO"')
+    out.append("    type: url-test")
+    out.append("    use:")
+    out.append('      - "PROXIES"')
+    out.append("    url: http://www.gstatic.com/generate_204")
+    out.append("    interval: 300")
+    out.append("    tolerance: 50")
+    out.append("")
+    out.append('  - name: "PROXIES"')
+    out.append("    type: select")
+    out.append("    proxies:")
+    for p in parsed:
+        out.append(f'      - "{yaml_escape(p["name"])}"')
+    out.append('      - "DIRECT"')
+    out.append("")
+    out.append("rules:")
+    out.append("  - MATCH,PROXIES")
+
+    CLASH_FILE.write_text("\n".join(out) + "\n", encoding="utf-8")
+    print(f"sub.txt — {len(parsed)} нод")
+    print(f"clash.yaml — {len(parsed)} нод")
     print("Готово!")
 
 
