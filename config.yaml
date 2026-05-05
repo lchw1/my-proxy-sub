@@ -1,10 +1,13 @@
 sources:
-  - url: "https://example.com/proxies.json"
-    type: "json"
-    timeout: 10
-  - url: "https://example.com/proxies.txt"
+  - url: "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/all_extracted_configs.txt"
     type: "base64"
-    timeout: 10
+    timeout: 15
+  - url: "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt"
+    type: "base64"
+    timeout: 15
+  - url: "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/Splitted-By-Protocol/vless.txt"
+    type: "base64"
+    timeout: 15
 
 processing:
   chunk_size: 1000
