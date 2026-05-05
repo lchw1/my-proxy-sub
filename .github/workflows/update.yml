@@ -11,14 +11,14 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-    steps:
-      - uses: actions/checkout@v3
+    timeout-minutes: 55
 
-      - uses: actions/setup-python@v4
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: pip install aiohttp
@@ -28,35 +28,28 @@ jobs:
           wget -q https://github.com/lilendian0x00/xray-knife/releases/latest/download/Xray-knife-linux-64.zip -O knife.zip
           unzip -q -o knife.zip
           chmod +x xray-knife
-          rm knife.zip
+          rm -f knife.zip
 
       - name: Collect nodes
         run: python -u main.py
 
-      - name: Test nodes with xray-knife
-        run: |
-          ./xray-knife http \
-            -f raw.txt \
-            --thread 100 \
-            --mdelay 3000 \
-            --insecure \
-            --type txt \
-            -o tested.txt || true
+      - name: Test nodes in chunks
+        run: python -u test_nodes.py
+
+      - name: Build outputs
+        run: python -u build.py
 
       - name: Show results
         run: |
           RAW=$(wc -l < raw.txt 2>/dev/null || echo 0)
-          ALIVE=$(grep -c "vless://" tested.txt 2>/dev/null || echo 0)
-          echo "Собрано: $RAW  |  Рабочих: $ALIVE"
-
-      - name: Build outputs
-        run: python -u build.py
+          ALIVE=$(wc -l < tested.txt 2>/dev/null || echo 0)
+          echo "Собрано: $RAW | Рабочих: $ALIVE"
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add sub.txt clash.yaml
+          git add sub.txt clash.yaml raw.txt tested.txt || true
           if git diff --staged --quiet; then
             echo "No changes"
           else
