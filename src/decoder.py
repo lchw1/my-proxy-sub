@@ -35,7 +35,7 @@ class ConfigDecoder:
         elif content_type == 'yaml':
             return self._decode_yaml(content)
         elif content_type == 'base64':
-            return self._decode_base64(content)
+            return self._decode_base64_lines(content)
         elif content_type == 'base64_json':
             return self._decode_base64_json(content)
         elif content_type == 'base64_yaml':
@@ -78,8 +78,40 @@ class ConfigDecoder:
             self.logger.debug(f"YAML decode error: {e}")
             return []
     
+    def _decode_base64_lines(self, content: str) -> List[Dict[str, Any]]:
+        """Декодировать Base64 — каждая строка отдельный конфиг."""
+        configs = []
+        lines = content.strip().split('\n')
+        
+        for line in lines:
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+            
+            try:
+                # Декодируем Base64
+                decoded = base64.b64decode(line).decode('utf-8')
+                
+                # Пытаемся распарсить как JSON или YAML
+                try:
+                    config = json.loads(decoded)
+                    if isinstance(config, dict):
+                        configs.append(config)
+                except:
+                    try:
+                        config = yaml.safe_load(decoded)
+                        if isinstance(config, dict):
+                            configs.append(config)
+                    except:
+                        # Может быть это просто строка с параметрами
+                        pass
+            except Exception:
+                continue
+        
+        return configs
+    
     def _decode_base64(self, content: str) -> List[Dict[str, Any]]:
-        """Декодировать Base64."""
+        """Декодировать Base64 одним блоком."""
         try:
             decoded = base64.b64decode(content).decode('utf-8')
             return self._decode_json(decoded) or self._decode_yaml(decoded)
