@@ -1,19 +1,19 @@
 {
   "outbounds": [
     {
-      "tag": "proxy_0",
+      "tag": "🔒 By EbraSha_0",
       "type": "ss"
     },
     {
-      "tag": "proxy_1",
+      "tag": "🔒 By EbraSha_1_1",
       "type": "ss"
     },
     {
-      "tag": "proxy_2",
+      "tag": "🔒 By EbraSha_2_2",
       "type": "tcp"
     },
     {
-      "tag": "proxy_3",
+      "tag": "🔒 By EbraSha_3_3",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -26,15 +26,15 @@
       }
     },
     {
-      "tag": "proxy_4",
+      "tag": "🔒 By EbraSha_4_4",
       "type": "tcp"
     },
     {
-      "tag": "proxy_5",
+      "tag": "🔒 By EbraSha_5_5",
       "type": "tcp"
     },
     {
-      "tag": "proxy_6",
+      "tag": "🔒 By EbraSha_6_6",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -47,7 +47,7 @@
       }
     },
     {
-      "tag": "proxy_7",
+      "tag": "🔒 By EbraSha_7_7",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -60,11 +60,11 @@
       }
     },
     {
-      "tag": "proxy_8",
+      "tag": "🔒 By EbraSha_8_8",
       "type": "ws"
     },
     {
-      "tag": "proxy_9",
+      "tag": "🔒 By EbraSha_9_9",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -77,371 +77,371 @@
       }
     },
     {
-      "tag": "proxy_10",
+      "tag": "🔒 By EbraSha_10_10",
       "type": "ws "
     },
     {
-      "tag": "proxy_11",
+      "tag": "🔒 By EbraSha_11_11",
       "type": "ws"
     },
     {
-      "tag": "proxy_12",
+      "tag": "🔒 By EbraSha_12_12",
       "type": "ws"
     },
     {
-      "tag": "proxy_13",
+      "tag": "🔒 By EbraSha_13_13",
       "type": "grpc"
     },
     {
-      "tag": "proxy_14",
+      "tag": "🔒 By EbraSha_14_14",
       "type": "tcp"
     },
     {
-      "tag": "proxy_15",
+      "tag": "🔒 By EbraSha_15_15",
       "type": "tcp"
     },
     {
-      "tag": "proxy_16",
+      "tag": "🔒 By EbraSha_16_16",
       "type": "ws"
     },
     {
-      "tag": "proxy_17",
+      "tag": "🔒 By EbraSha_17_17",
       "type": "tcp"
     },
     {
-      "tag": "proxy_18",
+      "tag": "🔒 By EbraSha_18_18",
       "type": "tcp"
     },
     {
-      "tag": "proxy_19",
+      "tag": "🔒 By EbraSha_19_19",
       "type": "ws"
     },
     {
-      "tag": "proxy_20",
+      "tag": "🔒 By EbraSha_20_20",
       "type": "ws"
     },
     {
-      "tag": "proxy_21",
+      "tag": "🔒 By EbraSha_21_21",
       "type": "ws"
     },
     {
-      "tag": "proxy_22",
+      "tag": "🔒 By EbraSha_22_22",
       "type": "ws"
     },
     {
-      "tag": "proxy_23",
+      "tag": "🔒 By EbraSha_23_23",
       "type": "ws"
     },
     {
-      "tag": "proxy_24",
+      "tag": "🔒 By EbraSha_24_24",
       "type": "ws"
     },
     {
-      "tag": "proxy_25",
+      "tag": "🔒 By EbraSha_25_25",
       "type": "tcp"
     },
     {
-      "tag": "proxy_26",
+      "tag": "🔒 By EbraSha_26_26",
       "type": "tcp"
     },
     {
-      "tag": "proxy_27",
+      "tag": "🔒 By EbraSha_27_27",
       "type": "tcp "
     },
     {
-      "tag": "proxy_28",
+      "tag": "🔒 By EbraSha_28_28",
       "type": "tcp"
     },
     {
-      "tag": "proxy_29",
+      "tag": "🔒 By EbraSha_29_29",
       "type": "ws"
     },
     {
-      "tag": "proxy_30",
+      "tag": "🔒 By EbraSha_30_30",
       "type": "tcp"
     },
     {
-      "tag": "proxy_31",
+      "tag": "🔒 By EbraSha_31_31",
       "type": "tcp"
     },
     {
-      "tag": "proxy_32",
+      "tag": "🔒 By EbraSha_32_32",
       "type": "tcp "
     },
     {
-      "tag": "proxy_33",
+      "tag": "🔒 By EbraSha_33_33",
       "type": "tcp "
     },
     {
-      "tag": "proxy_34",
+      "tag": "🔒 By EbraSha_34_34",
       "type": "tcp"
     },
     {
-      "tag": "proxy_35",
+      "tag": "🔒 By EbraSha_35_35",
       "type": "tcp"
     },
     {
-      "tag": "proxy_36",
+      "tag": "🔒 By EbraSha_36_36",
       "type": "ws"
     },
     {
-      "tag": "proxy_37",
+      "tag": "🔒 By EbraSha_37_37",
       "type": "tcp"
     },
     {
-      "tag": "proxy_38",
+      "tag": "🔒 By EbraSha_38_38",
       "type": "tcp"
     },
     {
-      "tag": "proxy_39",
+      "tag": "🔒 By EbraSha_39_39",
       "type": "tcp"
     },
     {
-      "tag": "proxy_40",
+      "tag": "🔒 By EbraSha_40_40",
       "type": "tcp"
     },
     {
-      "tag": "proxy_41",
+      "tag": "🔒 By EbraSha_41_41",
       "type": "tcp"
     },
     {
-      "tag": "proxy_42",
+      "tag": "🔒 By EbraSha_42_42",
       "type": "tcp"
     },
     {
-      "tag": "proxy_43",
+      "tag": "🔒 By EbraSha_43_43",
       "type": "ws"
     },
     {
-      "tag": "proxy_44",
+      "tag": "🔒 By EbraSha_44_44",
       "type": "ws"
     },
     {
-      "tag": "proxy_45",
+      "tag": "🔒 By EbraSha_45_45",
       "type": "ws"
     },
     {
-      "tag": "proxy_46",
+      "tag": "🔒 By EbraSha_46_46",
       "type": "ws"
     },
     {
-      "tag": "proxy_47",
+      "tag": "🔒 By EbraSha_47_47",
       "type": "ws"
     },
     {
-      "tag": "proxy_48",
+      "tag": "🔒 By EbraSha_48_48",
       "type": "ws"
     },
     {
-      "tag": "proxy_49",
+      "tag": "🔒 By EbraSha_49_49",
       "type": "ws"
     },
     {
-      "tag": "proxy_50",
+      "tag": "🔒 By EbraSha_50_50",
       "type": "ws"
     },
     {
-      "tag": "proxy_51",
+      "tag": "🔒 By EbraSha_51_51",
       "type": "ws"
     },
     {
-      "tag": "proxy_52",
+      "tag": "🔒 By EbraSha_52_52",
       "type": "ws"
     },
     {
-      "tag": "proxy_53",
+      "tag": "🔒 By EbraSha_53_53",
       "type": "ws"
     },
     {
-      "tag": "proxy_54",
+      "tag": "🔒 By EbraSha_54_54",
       "type": "ws"
     },
     {
-      "tag": "proxy_55",
+      "tag": "🔒 By EbraSha_55_55",
       "type": "ws"
     },
     {
-      "tag": "proxy_56",
+      "tag": "🔒 By EbraSha_56_56",
       "type": "ws"
     },
     {
-      "tag": "proxy_57",
+      "tag": "🔒 By EbraSha_57_57",
       "type": "ws"
     },
     {
-      "tag": "proxy_58",
+      "tag": "🔒 By EbraSha_58_58",
       "type": "ws"
     },
     {
-      "tag": "proxy_59",
+      "tag": "🔒 By EbraSha_59_59",
       "type": "ws"
     },
     {
-      "tag": "proxy_60",
+      "tag": "🔒 By EbraSha_60_60",
       "type": "ws"
     },
     {
-      "tag": "proxy_61",
+      "tag": "🔒 By EbraSha_61_61",
       "type": "tcp"
     },
     {
-      "tag": "proxy_62",
+      "tag": "🔒 By EbraSha_62_62",
       "type": "tcp"
     },
     {
-      "tag": "proxy_63",
+      "tag": "🔒 By EbraSha_63_63",
       "type": "ws"
     },
     {
-      "tag": "proxy_64",
+      "tag": "🔒 By EbraSha_64_64",
       "type": "tcp"
     },
     {
-      "tag": "proxy_65",
+      "tag": "🔒 By EbraSha_65_65",
       "type": "tcp"
     },
     {
-      "tag": "proxy_66",
+      "tag": "🔒 By EbraSha_66_66",
       "type": "ws"
     },
     {
-      "tag": "proxy_67",
+      "tag": "🔒 By EbraSha_67_67",
       "type": "tcp "
     },
     {
-      "tag": "proxy_68",
+      "tag": "🔒 By EbraSha_68_68",
       "type": "ws"
     },
     {
-      "tag": "proxy_69",
+      "tag": "🔒 By EbraSha_69_69",
       "type": "ws"
     },
     {
-      "tag": "proxy_70",
+      "tag": "🔒 By EbraSha_70_70",
       "type": "tcp"
     },
     {
-      "tag": "proxy_71",
+      "tag": "🔒 By EbraSha_71_71",
       "type": "ws"
     },
     {
-      "tag": "proxy_72",
+      "tag": "🔒 By EbraSha_72_72",
       "type": "ws"
     },
     {
-      "tag": "proxy_73",
+      "tag": "🔒 By EbraSha_73_73",
       "type": "ws"
     },
     {
-      "tag": "proxy_74",
+      "tag": "🔒 By EbraSha_74_74",
       "type": "ws"
     },
     {
-      "tag": "proxy_75",
+      "tag": "🔒 By EbraSha_75_75",
       "type": "tcp"
     },
     {
-      "tag": "proxy_76",
+      "tag": "🔒 By EbraSha_76_76",
       "type": "ws"
     },
     {
-      "tag": "proxy_77",
+      "tag": "🔒 By EbraSha_77_77",
       "type": "ws"
     },
     {
-      "tag": "proxy_78",
+      "tag": "🔒 By EbraSha_78_78",
       "type": "ws"
     },
     {
-      "tag": "proxy_79",
+      "tag": "🔒 By EbraSha_79_79",
       "type": "ws"
     },
     {
-      "tag": "proxy_80",
+      "tag": "🔒 By EbraSha_80_80",
       "type": "ws"
     },
     {
-      "tag": "proxy_81",
+      "tag": "🔒 By EbraSha_81_81",
       "type": "ws"
     },
     {
-      "tag": "proxy_82",
+      "tag": "🔒 By EbraSha_82_82",
       "type": "tcp "
     },
     {
-      "tag": "proxy_83",
+      "tag": "🔒 By EbraSha_83_83",
       "type": "ws"
     },
     {
-      "tag": "proxy_84",
+      "tag": "🔒 By EbraSha_84_84",
       "type": "tcp"
     },
     {
-      "tag": "proxy_85",
+      "tag": "🔒 By EbraSha_85_85",
       "type": "tcp "
     },
     {
-      "tag": "proxy_86",
+      "tag": "🔒 By EbraSha_86_86",
       "type": "tcp"
     },
     {
-      "tag": "proxy_87",
+      "tag": "🔒 By EbraSha_87_87",
       "type": "tcp"
     },
     {
-      "tag": "proxy_88",
+      "tag": "🔒 By EbraSha_88_88",
       "type": "tcp"
     },
     {
-      "tag": "proxy_89",
+      "tag": "🔒 By EbraSha_89_89",
       "type": "ws"
     },
     {
-      "tag": "proxy_90",
+      "tag": "🔒 By EbraSha_90_90",
       "type": "ws"
     },
     {
-      "tag": "proxy_91",
+      "tag": "🔒 By EbraSha_91_91",
       "type": "ws"
     },
     {
-      "tag": "proxy_92",
+      "tag": "🔒 By EbraSha_92_92",
       "type": "ws"
     },
     {
-      "tag": "proxy_93",
+      "tag": "🔒 By EbraSha_93_93",
       "type": "ws"
     },
     {
-      "tag": "proxy_94",
+      "tag": "🔒 By EbraSha_94_94",
       "type": "tcp"
     },
     {
-      "tag": "proxy_95",
+      "tag": "🔒 By EbraSha_95_95",
       "type": "tcp"
     },
     {
-      "tag": "proxy_96",
+      "tag": "🔒 By EbraSha_96_96",
       "type": "tcp "
     },
     {
-      "tag": "proxy_97",
+      "tag": "🔒 By EbraSha_97_97",
       "type": "tcp"
     },
     {
-      "tag": "proxy_98",
+      "tag": "🔒 By EbraSha_98_98",
       "type": "tcp"
     },
     {
-      "tag": "proxy_99",
+      "tag": "🔒 By EbraSha_99_99",
       "type": "tcp"
     },
     {
-      "tag": "proxy_100",
+      "tag": "🔒 By EbraSha_100_100",
       "type": "tcp "
     },
     {
-      "tag": "proxy_101",
+      "tag": "🔒 By EbraSha_101_101",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -454,183 +454,179 @@
       }
     },
     {
-      "tag": "proxy_102",
+      "tag": "🔒 By EbraSha_102_102",
       "type": "tcp"
     },
     {
-      "tag": "proxy_103",
+      "tag": "🔒 By EbraSha_103_103",
       "type": "tcp"
     },
     {
-      "tag": "proxy_104",
+      "tag": "🔒 By EbraSha_104_104",
       "type": "tcp"
     },
     {
-      "tag": "proxy_105",
+      "tag": "🔒 By EbraSha_105_105",
       "type": "tcp"
     },
     {
-      "tag": "proxy_106",
+      "tag": "🔒 By EbraSha_106_106",
       "type": "tcp"
     },
     {
-      "tag": "proxy_107",
+      "tag": "🔒 By EbraSha_107_107",
       "type": "tcp"
     },
     {
-      "tag": "proxy_108",
+      "tag": "🔒 By EbraSha_108_108",
       "type": "tcp"
     },
     {
-      "tag": "proxy_109",
+      "tag": "🔒 By EbraSha_109_109",
       "type": "tcp"
     },
     {
-      "tag": "proxy_110",
+      "tag": "🔒 By EbraSha_110_110",
       "type": "tcp"
     },
     {
-      "tag": "proxy_111",
+      "tag": "🔒 By EbraSha_111_111",
       "type": "tcp"
     },
     {
-      "tag": "proxy_112",
+      "tag": "🔒 By EbraSha_112_112",
       "type": "tcp"
     },
     {
-      "tag": "proxy_113",
+      "tag": "🔒 By EbraSha_113_113",
       "type": "tcp"
     },
     {
-      "tag": "proxy_114",
+      "tag": "🔒 By EbraSha_114_114",
       "type": "tcp"
     },
     {
-      "tag": "proxy_115",
-      "type": "tcp"
-    },
-    {
-      "tag": "proxy_116",
+      "tag": "🔒 By EbraSha_115_115",
       "type": "ws"
     },
     {
-      "tag": "proxy_117",
+      "tag": "🔒 By EbraSha_116_116",
       "type": "ws"
     },
     {
-      "tag": "proxy_118",
+      "tag": "🔒 By EbraSha_117_117",
       "type": "tcp"
     },
     {
-      "tag": "proxy_119",
+      "tag": "🔒 By EbraSha_118_118",
       "type": "ws"
     },
     {
-      "tag": "proxy_120",
+      "tag": "🔒 By EbraSha_119_119",
       "type": "ws"
     },
     {
-      "tag": "proxy_121",
+      "tag": "🔒 By EbraSha_120_120",
       "type": "tcp"
     },
     {
-      "tag": "proxy_122",
+      "tag": "🔒 By EbraSha_121_121",
       "type": "tcp"
     },
     {
-      "tag": "proxy_123",
+      "tag": "🔒 By EbraSha_122_122",
       "type": "ws"
     },
     {
-      "tag": "proxy_124",
+      "tag": "🔒 By EbraSha_123_123",
       "type": "ws"
     },
     {
-      "tag": "proxy_125",
+      "tag": "🔒 By EbraSha_124_124",
       "type": "ws"
     },
     {
-      "tag": "proxy_126",
+      "tag": "🔒 By EbraSha_125_125",
       "type": "ws"
     },
     {
-      "tag": "proxy_127",
+      "tag": "🔒 By EbraSha_126_126",
       "type": "ws"
     },
     {
-      "tag": "proxy_128",
+      "tag": "🔒 By EbraSha_127_127",
       "type": "tcp"
     },
     {
-      "tag": "proxy_129",
+      "tag": "🔒 By EbraSha_128_128",
       "type": "tcp "
     },
     {
-      "tag": "proxy_130",
+      "tag": "🔒 By EbraSha_129_129",
       "type": "tcp "
     },
     {
-      "tag": "proxy_131",
+      "tag": "🔒 By EbraSha_130_130",
       "type": "tcp "
     },
     {
-      "tag": "proxy_132",
+      "tag": "🔒 By EbraSha_131_131",
       "type": "tcp "
     },
     {
-      "tag": "proxy_133",
+      "tag": "🔒 By EbraSha_132_132",
       "type": "tcp "
     },
     {
-      "tag": "proxy_134",
+      "tag": "🔒 By EbraSha_133_133",
       "type": "tcp "
     },
     {
-      "tag": "proxy_135",
+      "tag": "🔒 By EbraSha_134_134",
       "type": "tcp "
     },
     {
-      "tag": "proxy_136",
+      "tag": "🔒 By EbraSha_135_135",
       "type": "tcp "
     },
     {
-      "tag": "proxy_137",
+      "tag": "🔒 By EbraSha_136_136",
       "type": "tcp "
     },
     {
-      "tag": "proxy_138",
+      "tag": "🔒 By EbraSha_137_137",
       "type": "tcp "
     },
     {
-      "tag": "proxy_139",
+      "tag": "🔒 By EbraSha_138_138",
       "type": "tcp "
     },
     {
-      "tag": "proxy_140",
+      "tag": "🔒 By EbraSha_139_139",
       "type": "tcp"
     },
     {
-      "tag": "proxy_141",
+      "tag": "🔒 By EbraSha_140_140",
       "type": "httpupgrade"
     },
     {
-      "tag": "proxy_142",
+      "tag": "🔒 By EbraSha_141_141",
       "type": "tcp "
     },
     {
-      "tag": "proxy_143",
+      "tag": "🔒 By EbraSha_142_142",
       "type": "ws"
     },
     {
-      "tag": "proxy_144",
+      "tag": "🔒 By EbraSha_143_143",
       "type": "tcp"
     },
     {
-      "tag": "proxy_145",
+      "tag": "🔒 By EbraSha_144_144",
       "type": "tcp"
     },
     {
-      "tag": "proxy_146",
+      "tag": "🔒 By EbraSha_145_145",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -643,75 +639,75 @@
       }
     },
     {
-      "tag": "proxy_147",
+      "tag": "🔒 By EbraSha_146_146",
       "type": "tcp"
     },
     {
-      "tag": "proxy_148",
+      "tag": "🔒 By EbraSha_147_147",
       "type": "tcp"
     },
     {
-      "tag": "proxy_149",
+      "tag": "🔒 By EbraSha_148_148",
       "type": "tcp"
     },
     {
-      "tag": "proxy_150",
+      "tag": "🔒 By EbraSha_149_149",
       "type": "tcp"
     },
     {
-      "tag": "proxy_151",
+      "tag": "🔒 By EbraSha_150_150",
       "type": "tcp"
     },
     {
-      "tag": "proxy_152",
+      "tag": "🔒 By EbraSha_151_151",
       "type": "tcp"
     },
     {
-      "tag": "proxy_153",
+      "tag": "🔒 By EbraSha_152_152",
       "type": "tcp"
     },
     {
-      "tag": "proxy_154",
+      "tag": "🔒 By EbraSha_153_153",
       "type": "tcp"
     },
     {
-      "tag": "proxy_155",
+      "tag": "🔒 By EbraSha_154_154",
       "type": "tcp"
     },
     {
-      "tag": "proxy_156",
+      "tag": "🔒 By EbraSha_155_155",
       "type": "tcp"
     },
     {
-      "tag": "proxy_157",
+      "tag": "🔒 By EbraSha_156_156",
       "type": "tcp "
     },
     {
-      "tag": "proxy_158",
+      "tag": "🔒 By EbraSha_157_157",
       "type": "tcp "
     },
     {
-      "tag": "proxy_159",
+      "tag": "🔒 By EbraSha_158_158",
       "type": "tcp"
     },
     {
-      "tag": "proxy_160",
+      "tag": "🔒 By EbraSha_159_159",
       "type": "ws"
     },
     {
-      "tag": "proxy_161",
+      "tag": "🔒 By EbraSha_160_160",
       "type": "tcp"
     },
     {
-      "tag": "proxy_162",
+      "tag": "🔒 By EbraSha_161_161",
       "type": "tcp"
     },
     {
-      "tag": "proxy_163",
+      "tag": "🔒 By EbraSha_162_162",
       "type": "ws"
     },
     {
-      "tag": "proxy_164",
+      "tag": "🔒 By EbraSha_163_163",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -724,7 +720,7 @@
       }
     },
     {
-      "tag": "proxy_165",
+      "tag": "🔒 By EbraSha_164_164",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -737,7 +733,7 @@
       }
     },
     {
-      "tag": "proxy_166",
+      "tag": "🔒 By EbraSha_165_165",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -750,7 +746,7 @@
       }
     },
     {
-      "tag": "proxy_167",
+      "tag": "🔒 By EbraSha_166_166",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -763,167 +759,167 @@
       }
     },
     {
-      "tag": "proxy_168",
+      "tag": "🔒 By EbraSha_167_167",
       "type": "ws"
     },
     {
-      "tag": "proxy_169",
+      "tag": "🔒 By EbraSha_168_168",
       "type": "tcp"
     },
     {
-      "tag": "proxy_170",
+      "tag": "🔒 By EbraSha_169_169",
       "type": "tcp"
     },
     {
-      "tag": "proxy_171",
+      "tag": "🔒 By EbraSha_170_170",
       "type": "ws"
     },
     {
-      "tag": "proxy_172",
+      "tag": "🔒 By EbraSha_171_171",
       "type": "ws"
     },
     {
-      "tag": "proxy_173",
+      "tag": "🔒 By EbraSha_172_172",
       "type": "tcp "
     },
     {
-      "tag": "proxy_174",
+      "tag": "🔒 By EbraSha_173_173",
       "type": "tcp"
     },
     {
-      "tag": "proxy_175",
+      "tag": "🔒 By EbraSha_174_174",
       "type": "tcp"
     },
     {
-      "tag": "proxy_176",
+      "tag": "🔒 By EbraSha_175_175",
       "type": "tcp"
     },
     {
-      "tag": "proxy_177",
+      "tag": "🔒 By EbraSha_176_176",
       "type": "ws"
     },
     {
-      "tag": "proxy_178",
+      "tag": "🔒 By EbraSha_177_177",
       "type": "grpc"
     },
     {
-      "tag": "proxy_179",
+      "tag": "🔒 By EbraSha_178_178",
       "type": "tcp"
     },
     {
-      "tag": "proxy_180",
+      "tag": "🔒 By EbraSha_179_179",
       "type": "tcp"
     },
     {
-      "tag": "proxy_181",
+      "tag": "🔒 By EbraSha_180_180",
       "type": "tcp"
     },
     {
-      "tag": "proxy_182",
+      "tag": "🔒 By EbraSha_181_181",
       "type": "tcp"
     },
     {
-      "tag": "proxy_183",
+      "tag": "🔒 By EbraSha_182_182",
       "type": "tcp"
     },
     {
-      "tag": "proxy_184",
+      "tag": "🔒 By EbraSha_183_183",
       "type": "tcp"
     },
     {
-      "tag": "proxy_185",
+      "tag": "🔒 By EbraSha_184_184",
       "type": "tcp"
     },
     {
-      "tag": "proxy_186",
+      "tag": "🔒 By EbraSha_185_185",
       "type": "tcp"
     },
     {
-      "tag": "proxy_187",
+      "tag": "🔒 By EbraSha_186_186",
       "type": "httpupgrade"
     },
     {
-      "tag": "proxy_188",
+      "tag": "🔒 By EbraSha_187_187",
       "type": "tcp"
     },
     {
-      "tag": "proxy_189",
+      "tag": "🔒 By EbraSha_188_188",
       "type": "ws"
     },
     {
-      "tag": "proxy_190",
+      "tag": "🔒 By EbraSha_189_189",
       "type": "ws"
     },
     {
-      "tag": "proxy_191",
+      "tag": "🔒 By EbraSha_190_190",
       "type": "tcp"
     },
     {
-      "tag": "proxy_192",
+      "tag": "🔒 By EbraSha_191_191",
       "type": "tcp "
     },
     {
-      "tag": "proxy_193",
+      "tag": "🔒 By EbraSha_192_192",
       "type": "tcp "
     },
     {
-      "tag": "proxy_194",
+      "tag": "🔒 By EbraSha_193_193",
       "type": "tcp"
     },
     {
-      "tag": "proxy_195",
+      "tag": "🔒 By EbraSha_194_194",
       "type": "tcp "
     },
     {
-      "tag": "proxy_196",
+      "tag": "🔒 By EbraSha_195_195",
       "type": "tcp "
     },
     {
-      "tag": "proxy_197",
+      "tag": "🔒 By EbraSha_196_196",
       "type": "tcp "
     },
     {
-      "tag": "proxy_198",
+      "tag": "🔒 By EbraSha_197_197",
       "type": "tcp "
     },
     {
-      "tag": "proxy_199",
+      "tag": "🔒 By EbraSha_198_198",
       "type": "tcp "
     },
     {
-      "tag": "proxy_200",
+      "tag": "🔒 By EbraSha_199_199",
       "type": "tcp "
     },
     {
-      "tag": "proxy_201",
+      "tag": "🔒 By EbraSha_200_200",
       "type": "tcp "
     },
     {
-      "tag": "proxy_202",
+      "tag": "🔒 By EbraSha_201_201",
       "type": "tcp "
     },
     {
-      "tag": "proxy_203",
+      "tag": "🔒 By EbraSha_202_202",
       "type": "grpc"
     },
     {
-      "tag": "proxy_204",
+      "tag": "🔒 By EbraSha_203_203",
       "type": "tcp"
     },
     {
-      "tag": "proxy_205",
+      "tag": "🔒 By EbraSha_204_204",
       "type": "tcp"
     },
     {
-      "tag": "proxy_206",
+      "tag": "🔒 By EbraSha_205_205",
       "type": "ws"
     },
     {
-      "tag": "proxy_207",
+      "tag": "🔒 By EbraSha_206_206",
       "type": "ws"
     },
     {
-      "tag": "proxy_208",
+      "tag": "🔒 By EbraSha_207_207",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -936,15 +932,15 @@
       }
     },
     {
-      "tag": "proxy_209",
+      "tag": "🔒 By EbraSha_208_208",
       "type": "tcp"
     },
     {
-      "tag": "proxy_210",
+      "tag": "🔒 By EbraSha_209_209",
       "type": "ws"
     },
     {
-      "tag": "proxy_211",
+      "tag": "🔒 By EbraSha_210_210",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -957,443 +953,439 @@
       }
     },
     {
-      "tag": "proxy_212",
+      "tag": "🔒 By EbraSha_211_211",
       "type": "ws"
     },
     {
-      "tag": "proxy_213",
+      "tag": "🔒 By EbraSha_212_212",
       "type": "ws"
     },
     {
-      "tag": "proxy_214",
+      "tag": "🔒 By EbraSha_213_213",
       "type": "ws"
     },
     {
-      "tag": "proxy_215",
+      "tag": "🔒 By EbraSha_214_214",
       "type": "ws"
     },
     {
-      "tag": "proxy_216",
+      "tag": "🔒 By EbraSha_215_215",
       "type": "tcp"
     },
     {
-      "tag": "proxy_217",
+      "tag": "🔒 By EbraSha_216_216",
       "type": "tcp"
     },
     {
-      "tag": "proxy_218",
+      "tag": "🔒 By EbraSha_217_217",
       "type": "ws"
     },
     {
-      "tag": "proxy_219",
+      "tag": "🔒 By EbraSha_218_218",
       "type": "ws"
     },
     {
-      "tag": "proxy_220",
+      "tag": "🔒 By EbraSha_219_219",
       "type": "tcp"
     },
     {
-      "tag": "proxy_221",
+      "tag": "🔒 By EbraSha_220_220",
       "type": "tcp"
     },
     {
-      "tag": "proxy_222",
+      "tag": "🔒 By EbraSha_221_221",
       "type": "tcp"
     },
     {
-      "tag": "proxy_223",
+      "tag": "🔒 By EbraSha_222_222",
       "type": "tcp"
     },
     {
-      "tag": "proxy_224",
+      "tag": "🔒 By EbraSha_223_223",
       "type": "ws"
     },
     {
-      "tag": "proxy_225",
+      "tag": "🔒 By EbraSha_224_224",
       "type": "ws"
     },
     {
-      "tag": "proxy_226",
+      "tag": "🔒 By EbraSha_225_225",
       "type": "tcp"
     },
     {
-      "tag": "proxy_227",
+      "tag": "🔒 By EbraSha_226_226",
       "type": "tcp"
     },
     {
-      "tag": "proxy_228",
+      "tag": "🔒 By EbraSha_227_227",
       "type": "ws"
     },
     {
-      "tag": "proxy_229",
+      "tag": "🔒 By EbraSha_228_228",
       "type": "tcp"
     },
     {
-      "tag": "proxy_230",
+      "tag": "🔒 By EbraSha_229_229",
       "type": "grpc"
     },
     {
-      "tag": "proxy_231",
+      "tag": "🔒 By EbraSha_230_230",
       "type": "grpc"
     },
     {
-      "tag": "proxy_232",
+      "tag": "🔒 By EbraSha_231_231",
       "type": "tcp"
     },
     {
-      "tag": "proxy_233",
+      "tag": "🔒 By EbraSha_232_232",
       "type": "tcp"
     },
     {
-      "tag": "proxy_234",
+      "tag": "🔒 By EbraSha_233_233",
       "type": "tcp"
     },
     {
-      "tag": "proxy_235",
+      "tag": "🔒 By EbraSha_234_234",
       "type": "tcp"
     },
     {
-      "tag": "proxy_236",
+      "tag": "🔒 By EbraSha_235_235",
       "type": "tcp"
     },
     {
-      "tag": "proxy_237",
+      "tag": "🔒 By EbraSha_236_236",
       "type": "tcp"
     },
     {
-      "tag": "proxy_238",
+      "tag": "🔒 By EbraSha_237_237",
       "type": "tcp"
     },
     {
-      "tag": "proxy_239",
+      "tag": "🔒 By EbraSha_238_238",
       "type": "tcp"
     },
     {
-      "tag": "proxy_240",
+      "tag": "🔒 By EbraSha_239_239",
       "type": "ws"
     },
     {
-      "tag": "proxy_241",
+      "tag": "🔒 By EbraSha_240_240",
       "type": "ws "
     },
     {
-      "tag": "proxy_242",
+      "tag": "🔒 By EbraSha_241_241",
       "type": "ws "
     },
     {
-      "tag": "proxy_243",
+      "tag": "🔒 By EbraSha_242_242",
       "type": "ws "
     },
     {
-      "tag": "proxy_244",
+      "tag": "🔒 By EbraSha_243_243",
       "type": "ws "
     },
     {
-      "tag": "proxy_245",
+      "tag": "🔒 By EbraSha_244_244",
       "type": "ws "
     },
     {
-      "tag": "proxy_246",
+      "tag": "🔒 By EbraSha_245_245",
       "type": "ws "
     },
     {
-      "tag": "proxy_247",
+      "tag": "🔒 By EbraSha_246_246",
       "type": "ws "
     },
     {
-      "tag": "proxy_248",
+      "tag": "🔒 By EbraSha_247_247",
       "type": "ws "
     },
     {
-      "tag": "proxy_249",
+      "tag": "🔒 By EbraSha_248_248",
       "type": "ws"
     },
     {
-      "tag": "proxy_250",
+      "tag": "🔒 By EbraSha_249_249",
       "type": "ws"
     },
     {
-      "tag": "proxy_251",
+      "tag": "🔒 By EbraSha_250_250",
       "type": "tcp"
     },
     {
-      "tag": "proxy_252",
+      "tag": "🔒 By EbraSha_251_251",
       "type": "ws "
     },
     {
-      "tag": "proxy_253",
+      "tag": "🔒 By EbraSha_252_252",
       "type": "ws "
     },
     {
-      "tag": "proxy_254",
+      "tag": "🔒 By EbraSha_253_253",
       "type": "ws "
     },
     {
-      "tag": "proxy_255",
+      "tag": "🔒 By EbraSha_254_254",
       "type": "ws "
     },
     {
-      "tag": "proxy_256",
+      "tag": "🔒 By EbraSha_255_255",
       "type": "ws "
     },
     {
-      "tag": "proxy_257",
+      "tag": "🔒 By EbraSha_256_256",
       "type": "ws "
     },
     {
-      "tag": "proxy_258",
+      "tag": "🔒 By EbraSha_257_257",
       "type": "ws "
     },
     {
-      "tag": "proxy_259",
+      "tag": "🔒 By EbraSha_258_258",
       "type": "ws "
     },
     {
-      "tag": "proxy_260",
+      "tag": "🔒 By EbraSha_259_259",
       "type": "ws "
     },
     {
-      "tag": "proxy_261",
+      "tag": "🔒 By EbraSha_260_260",
       "type": "ws "
     },
     {
-      "tag": "proxy_262",
+      "tag": "🔒 By EbraSha_261_261",
       "type": "ws "
     },
     {
-      "tag": "proxy_263",
+      "tag": "🔒 By EbraSha_262_262",
       "type": "ws "
     },
     {
-      "tag": "proxy_264",
+      "tag": "🔒 By EbraSha_263_263",
       "type": "ws "
     },
     {
-      "tag": "proxy_265",
+      "tag": "🔒 By EbraSha_264_264",
       "type": "ws "
     },
     {
-      "tag": "proxy_266",
+      "tag": "🔒 By EbraSha_265_265",
       "type": "ws "
     },
     {
-      "tag": "proxy_267",
+      "tag": "🔒 By EbraSha_266_266",
       "type": "ws"
     },
     {
-      "tag": "proxy_268",
+      "tag": "🔒 By EbraSha_267_267",
       "type": "ws"
     },
     {
-      "tag": "proxy_269",
+      "tag": "🔒 By EbraSha_268_268",
       "type": "tcp"
     },
     {
-      "tag": "proxy_270",
+      "tag": "🔒 By EbraSha_269_269",
       "type": "tcp "
     },
     {
-      "tag": "proxy_271",
+      "tag": "🔒 By EbraSha_270_270",
       "type": "tcp "
     },
     {
-      "tag": "proxy_272",
+      "tag": "🔒 By EbraSha_271_271",
       "type": "tcp "
     },
     {
-      "tag": "proxy_273",
+      "tag": "🔒 By EbraSha_272_272",
       "type": "tcp"
     },
     {
-      "tag": "proxy_274",
+      "tag": "🔒 By EbraSha_273_273",
       "type": "tcp"
     },
     {
-      "tag": "proxy_275",
+      "tag": "🔒 By EbraSha_274_274",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_275_275",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_276_276",
       "type": "tcp"
     },
     {
-      "tag": "proxy_276",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_277",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_278",
+      "tag": "🔒 By EbraSha_277_277",
       "type": "tcp"
     },
     {
-      "tag": "proxy_279",
+      "tag": "🔒 By EbraSha_278_278",
       "type": "tcp"
     },
     {
-      "tag": "proxy_280",
+      "tag": "🔒 By EbraSha_279_279",
       "type": "tcp"
     },
     {
-      "tag": "proxy_281",
+      "tag": "🔒 By EbraSha_280_280",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_281_281",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_282_282",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_283_283",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_284_284",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_285_285",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_286_286",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_287_287",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_288_288",
       "type": "tcp"
     },
     {
-      "tag": "proxy_282",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_283",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_284",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_285",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_286",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_287",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_288",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_289",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_290",
+      "tag": "🔒 By EbraSha_289_289",
       "type": "tcp"
     },
     {
-      "tag": "proxy_291",
+      "tag": "🔒 By EbraSha_290_290",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_291_291",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_292_292",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_293_293",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_294_294",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_295_295",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_296_296",
       "type": "tcp"
     },
     {
-      "tag": "proxy_292",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_293",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_294",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_295",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_296",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_297",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_298",
+      "tag": "🔒 By EbraSha_297_297",
       "type": "tcp"
     },
     {
-      "tag": "proxy_299",
+      "tag": "🔒 By EbraSha_298_298",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_299_299",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_300_300",
       "type": "tcp"
     },
     {
-      "tag": "proxy_300",
+      "tag": "🔒 By EbraSha_301_301",
       "type": "ws"
     },
     {
-      "tag": "proxy_301",
+      "tag": "🔒 By EbraSha_302_302",
       "type": "ws"
     },
     {
-      "tag": "proxy_302",
+      "tag": "🔒 By EbraSha_303_303",
       "type": "tcp"
     },
     {
-      "tag": "proxy_303",
+      "tag": "🔒 By EbraSha_304_304",
       "type": "ws"
     },
     {
-      "tag": "proxy_304",
+      "tag": "🔒 By EbraSha_305_305",
       "type": "ws"
     },
     {
-      "tag": "proxy_305",
+      "tag": "🔒 By EbraSha_306_306",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_307_307",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_308_308",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_309_309",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_310_310",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_311_311",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_312_312",
       "type": "tcp"
     },
     {
-      "tag": "proxy_306",
+      "tag": "🔒 By EbraSha_313_313",
       "type": "ws"
     },
     {
-      "tag": "proxy_307",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_308",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_309",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_310",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_311",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_312",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_313",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_314",
+      "tag": "🔒 By EbraSha_314_314",
       "type": "tcp"
     },
     {
-      "tag": "proxy_315",
+      "tag": "🔒 By EbraSha_315_315",
       "type": "ws"
     },
     {
-      "tag": "proxy_316",
+      "tag": "🔒 By EbraSha_316_316",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_317_317",
+      "type": "ws"
+    },
+    {
+      "tag": "🔒 By EbraSha_318_318",
       "type": "tcp"
     },
     {
-      "tag": "proxy_317",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_318",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_319",
-      "type": "ws"
-    },
-    {
-      "tag": "proxy_320",
-      "type": "tcp"
-    },
-    {
-      "tag": "proxy_321",
+      "tag": "🔒 By EbraSha_319_319",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1406,55 +1398,55 @@
       }
     },
     {
-      "tag": "proxy_322",
+      "tag": "🔒 By EbraSha_320_320",
       "type": "ws"
     },
     {
-      "tag": "proxy_323",
+      "tag": "🔒 By EbraSha_321_321",
       "type": "ws"
     },
     {
-      "tag": "proxy_324",
+      "tag": "🔒 By EbraSha_322_322",
       "type": "ws"
     },
     {
-      "tag": "proxy_325",
+      "tag": "🔒 By EbraSha_323_323",
       "type": "ws"
     },
     {
-      "tag": "proxy_326",
+      "tag": "🔒 By EbraSha_324_324",
       "type": "ws"
     },
     {
-      "tag": "proxy_327",
+      "tag": "🔒 By EbraSha_325_325",
       "type": "tcp"
     },
     {
-      "tag": "proxy_328",
+      "tag": "🔒 By EbraSha_326_326",
       "type": "tcp"
     },
     {
-      "tag": "proxy_329",
+      "tag": "🔒 By EbraSha_327_327",
       "type": "tcp"
     },
     {
-      "tag": "proxy_330",
+      "tag": "🔒 By EbraSha_328_328",
       "type": "tcp"
     },
     {
-      "tag": "proxy_331",
+      "tag": "🔒 By EbraSha_329_329",
       "type": "ws"
     },
     {
-      "tag": "proxy_332",
+      "tag": "🔒 By EbraSha_330_330",
       "type": "tcp"
     },
     {
-      "tag": "proxy_333",
+      "tag": "🔒 By EbraSha_331_331",
       "type": "tcp "
     },
     {
-      "tag": "proxy_334",
+      "tag": "🔒 By EbraSha_332_332",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1467,7 +1459,7 @@
       }
     },
     {
-      "tag": "proxy_335",
+      "tag": "🔒 By EbraSha_333_333",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1480,7 +1472,7 @@
       }
     },
     {
-      "tag": "proxy_336",
+      "tag": "🔒 By EbraSha_334_334",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1493,7 +1485,7 @@
       }
     },
     {
-      "tag": "proxy_337",
+      "tag": "🔒 By EbraSha_335_335",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1506,7 +1498,7 @@
       }
     },
     {
-      "tag": "proxy_338",
+      "tag": "🔒 By EbraSha_336_336",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1519,7 +1511,7 @@
       }
     },
     {
-      "tag": "proxy_339",
+      "tag": "🔒 By EbraSha_337_337",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1532,7 +1524,7 @@
       }
     },
     {
-      "tag": "proxy_340",
+      "tag": "🔒 By EbraSha_338_338",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1545,107 +1537,107 @@
       }
     },
     {
-      "tag": "proxy_341",
+      "tag": "🔒 By EbraSha_339_339",
       "type": "tcp"
     },
     {
-      "tag": "proxy_342",
+      "tag": "🔒 By EbraSha_340_340",
       "type": "tcp"
     },
     {
-      "tag": "proxy_343",
+      "tag": "🔒 By EbraSha_341_341",
       "type": "tcp"
     },
     {
-      "tag": "proxy_344",
+      "tag": "🔒 By EbraSha_342_342",
       "type": "tcp"
     },
     {
-      "tag": "proxy_345",
+      "tag": "🔒 By EbraSha_343_343",
       "type": "tcp"
     },
     {
-      "tag": "proxy_346",
+      "tag": "🔒 By EbraSha_344_344",
       "type": "tcp"
     },
     {
-      "tag": "proxy_347",
+      "tag": "🔒 By EbraSha_345_345",
       "type": "tcp "
     },
     {
-      "tag": "proxy_348",
+      "tag": "🔒 By EbraSha_346_346",
       "type": "tcp"
     },
     {
-      "tag": "proxy_349",
+      "tag": "🔒 By EbraSha_347_347",
       "type": "tcp"
     },
     {
-      "tag": "proxy_350",
+      "tag": "🔒 By EbraSha_348_348",
       "type": "tcp"
     },
     {
-      "tag": "proxy_351",
+      "tag": "🔒 By EbraSha_349_349",
       "type": "ws"
     },
     {
-      "tag": "proxy_352",
+      "tag": "🔒 By EbraSha_350_350",
       "type": "ws"
     },
     {
-      "tag": "proxy_353",
+      "tag": "🔒 By EbraSha_351_351",
       "type": "ws"
     },
     {
-      "tag": "proxy_354",
+      "tag": "🔒 By EbraSha_352_352",
       "type": "ws"
     },
     {
-      "tag": "proxy_355",
+      "tag": "🔒 By EbraSha_353_353",
       "type": "ws"
     },
     {
-      "tag": "proxy_356",
+      "tag": "🔒 By EbraSha_354_354",
       "type": "ws"
     },
     {
-      "tag": "proxy_357",
+      "tag": "🔒 By EbraSha_355_355",
       "type": "ws"
     },
     {
-      "tag": "proxy_358",
+      "tag": "🔒 By EbraSha_356_356",
       "type": "ws"
     },
     {
-      "tag": "proxy_359",
+      "tag": "🔒 By EbraSha_357_357",
       "type": "ws"
     },
     {
-      "tag": "proxy_360",
+      "tag": "🔒 By EbraSha_358_358",
       "type": "ws"
     },
     {
-      "tag": "proxy_361",
+      "tag": "🔒 By EbraSha_359_359",
       "type": "ws"
     },
     {
-      "tag": "proxy_362",
+      "tag": "🔒 By EbraSha_360_360",
       "type": "ws"
     },
     {
-      "tag": "proxy_363",
+      "tag": "🔒 By EbraSha_361_361",
       "type": "ws"
     },
     {
-      "tag": "proxy_364",
+      "tag": "🔒 By EbraSha_362_362",
       "type": "tcp"
     },
     {
-      "tag": "proxy_365",
+      "tag": "🔒 By EbraSha_363_363",
       "type": "tcp"
     },
     {
-      "tag": "proxy_366",
+      "tag": "🔒 By EbraSha_364_364",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1658,7 +1650,7 @@
       }
     },
     {
-      "tag": "proxy_367",
+      "tag": "🔒 By EbraSha_365_365",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1671,7 +1663,7 @@
       }
     },
     {
-      "tag": "proxy_368",
+      "tag": "🔒 By EbraSha_366_366",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1684,7 +1676,7 @@
       }
     },
     {
-      "tag": "proxy_369",
+      "tag": "🔒 By EbraSha_367_367",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1697,7 +1689,7 @@
       }
     },
     {
-      "tag": "proxy_370",
+      "tag": "🔒 By EbraSha_368_368",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1710,7 +1702,7 @@
       }
     },
     {
-      "tag": "proxy_371",
+      "tag": "🔒 By EbraSha_369_369",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1723,7 +1715,7 @@
       }
     },
     {
-      "tag": "proxy_372",
+      "tag": "🔒 By EbraSha_370_370",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1736,103 +1728,103 @@
       }
     },
     {
-      "tag": "proxy_373",
+      "tag": "🔒 By EbraSha_371_371",
       "type": "tcp"
     },
     {
-      "tag": "proxy_374",
+      "tag": "🔒 By EbraSha_372_372",
       "type": "tcp"
     },
     {
-      "tag": "proxy_375",
+      "tag": "🔒 By EbraSha_373_373",
       "type": "tcp"
     },
     {
-      "tag": "proxy_376",
+      "tag": "🔒 By EbraSha_374_374",
       "type": "tcp"
     },
     {
-      "tag": "proxy_377",
+      "tag": "🔒 By EbraSha_375_375",
       "type": "tcp"
     },
     {
-      "tag": "proxy_378",
+      "tag": "🔒 By EbraSha_376_376",
       "type": "tcp"
     },
     {
-      "tag": "proxy_379",
+      "tag": "🔒 By EbraSha_377_377",
       "type": "ws"
     },
     {
-      "tag": "proxy_380",
+      "tag": "🔒 By EbraSha_378_378",
       "type": "tcp"
     },
     {
-      "tag": "proxy_381",
+      "tag": "🔒 By EbraSha_379_379",
       "type": "ws"
     },
     {
-      "tag": "proxy_382",
+      "tag": "🔒 By EbraSha_380_380",
       "type": "tcp "
     },
     {
-      "tag": "proxy_383",
+      "tag": "🔒 By EbraSha_381_381",
       "type": "tcp "
     },
     {
-      "tag": "proxy_384",
+      "tag": "🔒 By EbraSha_382_382",
       "type": "tcp "
     },
     {
-      "tag": "proxy_385",
+      "tag": "🔒 By EbraSha_383_383",
       "type": "tcp "
     },
     {
-      "tag": "proxy_386",
+      "tag": "🔒 By EbraSha_384_384",
       "type": "tcp "
     },
     {
-      "tag": "proxy_387",
+      "tag": "🔒 By EbraSha_385_385",
       "type": "tcp "
     },
     {
-      "tag": "proxy_388",
+      "tag": "🔒 By EbraSha_386_386",
       "type": "tcp "
     },
     {
-      "tag": "proxy_389",
+      "tag": "🔒 By EbraSha_387_387",
       "type": "tcp "
     },
     {
-      "tag": "proxy_390",
+      "tag": "🔒 By EbraSha_388_388",
       "type": "tcp "
     },
     {
-      "tag": "proxy_391",
+      "tag": "🔒 By EbraSha_389_389",
       "type": "tcp "
     },
     {
-      "tag": "proxy_392",
+      "tag": "🔒 By EbraSha_390_390",
       "type": "tcp "
     },
     {
-      "tag": "proxy_393",
+      "tag": "🔒 By EbraSha_391_391",
       "type": "tcp"
     },
     {
-      "tag": "proxy_394",
+      "tag": "🔒 By EbraSha_392_392",
       "type": "tcp"
     },
     {
-      "tag": "proxy_395",
+      "tag": "🔒 By EbraSha_393_393",
       "type": "tcp"
     },
     {
-      "tag": "proxy_396",
+      "tag": "🔒 By EbraSha_394_394",
       "type": "ws"
     },
     {
-      "tag": "proxy_397",
+      "tag": "🔒 By EbraSha_395_395",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1845,7 +1837,7 @@
       }
     },
     {
-      "tag": "proxy_398",
+      "tag": "🔒 By EbraSha_396_396",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1858,7 +1850,7 @@
       }
     },
     {
-      "tag": "proxy_399",
+      "tag": "🔒 By EbraSha_397_397",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1871,7 +1863,7 @@
       }
     },
     {
-      "tag": "proxy_400",
+      "tag": "🔒 By EbraSha_398_398",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1884,7 +1876,7 @@
       }
     },
     {
-      "tag": "proxy_401",
+      "tag": "🔒 By EbraSha_399_399",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1897,7 +1889,7 @@
       }
     },
     {
-      "tag": "proxy_402",
+      "tag": "🔒 By EbraSha_400_400",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1910,7 +1902,7 @@
       }
     },
     {
-      "tag": "proxy_403",
+      "tag": "🔒 By EbraSha_401_401",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1923,7 +1915,7 @@
       }
     },
     {
-      "tag": "proxy_404",
+      "tag": "🔒 By EbraSha_402_402",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1936,7 +1928,7 @@
       }
     },
     {
-      "tag": "proxy_405",
+      "tag": "🔒 By EbraSha_403_403",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1949,7 +1941,7 @@
       }
     },
     {
-      "tag": "proxy_406",
+      "tag": "🔒 By EbraSha_404_404",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1962,7 +1954,7 @@
       }
     },
     {
-      "tag": "proxy_407",
+      "tag": "🔒 By EbraSha_405_405",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1975,7 +1967,7 @@
       }
     },
     {
-      "tag": "proxy_408",
+      "tag": "🔒 By EbraSha_406_406",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1988,7 +1980,20 @@
       }
     },
     {
-      "tag": "proxy_409",
+      "tag": "🔒 By EbraSha_407_407",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "153.121.45.101",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_408_408",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2001,7 +2006,7 @@
       }
     },
     {
-      "tag": "proxy_410",
+      "tag": "🔒 By EbraSha_409_409",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2014,7 +2019,7 @@
       }
     },
     {
-      "tag": "proxy_411",
+      "tag": "🔒 By EbraSha_410_410",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2027,7 +2032,7 @@
       }
     },
     {
-      "tag": "proxy_412",
+      "tag": "🔒 By EbraSha_411_411",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2040,7 +2045,7 @@
       }
     },
     {
-      "tag": "proxy_413",
+      "tag": "🔒 By EbraSha_412_412",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2053,7 +2058,7 @@
       }
     },
     {
-      "tag": "proxy_414",
+      "tag": "🔒 By EbraSha_413_413",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2066,15 +2071,15 @@
       }
     },
     {
-      "tag": "proxy_415",
+      "tag": "🔒 By EbraSha_414_414",
       "type": "ws"
     },
     {
-      "tag": "proxy_416",
+      "tag": "🔒 By EbraSha_415_415",
       "type": "tcp"
     },
     {
-      "tag": "proxy_417",
+      "tag": "🔒 By EbraSha_416_416",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2087,7 +2092,7 @@
       }
     },
     {
-      "tag": "proxy_418",
+      "tag": "🔒 By EbraSha_417_417",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2100,7 +2105,7 @@
       }
     },
     {
-      "tag": "proxy_419",
+      "tag": "🔒 By EbraSha_418_418",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2113,7 +2118,7 @@
       }
     },
     {
-      "tag": "proxy_420",
+      "tag": "🔒 By EbraSha_419_419",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2126,7 +2131,7 @@
       }
     },
     {
-      "tag": "proxy_421",
+      "tag": "🔒 By EbraSha_420_420",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2139,7 +2144,7 @@
       }
     },
     {
-      "tag": "proxy_422",
+      "tag": "🔒 By EbraSha_421_421",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2152,7 +2157,7 @@
       }
     },
     {
-      "tag": "proxy_423",
+      "tag": "🔒 By EbraSha_422_422",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2165,7 +2170,7 @@
       }
     },
     {
-      "tag": "proxy_424",
+      "tag": "🔒 By EbraSha_423_423",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2178,7 +2183,7 @@
       }
     },
     {
-      "tag": "proxy_425",
+      "tag": "🔒 By EbraSha_424_424",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2191,7 +2196,7 @@
       }
     },
     {
-      "tag": "proxy_426",
+      "tag": "🔒 By EbraSha_425_425",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2204,7 +2209,7 @@
       }
     },
     {
-      "tag": "proxy_427",
+      "tag": "🔒 By EbraSha_426_426",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2217,7 +2222,7 @@
       }
     },
     {
-      "tag": "proxy_428",
+      "tag": "🔒 By EbraSha_427_427",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2230,7 +2235,7 @@
       }
     },
     {
-      "tag": "proxy_429",
+      "tag": "🔒 By EbraSha_428_428",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2243,7 +2248,7 @@
       }
     },
     {
-      "tag": "proxy_430",
+      "tag": "🔒 By EbraSha_429_429",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2256,7 +2261,7 @@
       }
     },
     {
-      "tag": "proxy_431",
+      "tag": "🔒 By EbraSha_430_430",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2269,7 +2274,7 @@
       }
     },
     {
-      "tag": "proxy_432",
+      "tag": "🔒 By EbraSha_431_431",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2282,7 +2287,7 @@
       }
     },
     {
-      "tag": "proxy_433",
+      "tag": "🔒 By EbraSha_432_432",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2295,7 +2300,7 @@
       }
     },
     {
-      "tag": "proxy_434",
+      "tag": "🔒 By EbraSha_433_433",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2308,7 +2313,7 @@
       }
     },
     {
-      "tag": "proxy_435",
+      "tag": "🔒 By EbraSha_434_434",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2321,7 +2326,7 @@
       }
     },
     {
-      "tag": "proxy_436",
+      "tag": "🔒 By EbraSha_435_435",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2334,7 +2339,7 @@
       }
     },
     {
-      "tag": "proxy_437",
+      "tag": "🔒 By EbraSha_436_436",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2347,7 +2352,7 @@
       }
     },
     {
-      "tag": "proxy_438",
+      "tag": "🔒 By EbraSha_437_437",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2360,7 +2365,7 @@
       }
     },
     {
-      "tag": "proxy_439",
+      "tag": "🔒 By EbraSha_438_438",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2373,7 +2378,7 @@
       }
     },
     {
-      "tag": "proxy_440",
+      "tag": "🔒 By EbraSha_439_439",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2386,7 +2391,7 @@
       }
     },
     {
-      "tag": "proxy_441",
+      "tag": "🔒 By EbraSha_440_440",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2399,7 +2404,7 @@
       }
     },
     {
-      "tag": "proxy_442",
+      "tag": "🔒 By EbraSha_441_441",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2412,7 +2417,7 @@
       }
     },
     {
-      "tag": "proxy_443",
+      "tag": "🔒 By EbraSha_442_442",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2425,7 +2430,7 @@
       }
     },
     {
-      "tag": "proxy_444",
+      "tag": "🔒 By EbraSha_443_443",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2438,7 +2443,7 @@
       }
     },
     {
-      "tag": "proxy_445",
+      "tag": "🔒 By EbraSha_444_444",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2451,7 +2456,7 @@
       }
     },
     {
-      "tag": "proxy_446",
+      "tag": "🔒 By EbraSha_445_445",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2464,216 +2469,220 @@
       }
     },
     {
-      "tag": "proxy_447",
+      "tag": "🔒 By EbraSha_446_446",
       "type": "ws"
     },
     {
-      "tag": "proxy_448",
+      "tag": "🔒 By EbraSha_447_447",
       "type": "tcp"
     },
     {
-      "tag": "proxy_449",
+      "tag": "🔒 By EbraSha_448_448",
       "type": "tcp"
     },
     {
-      "tag": "proxy_450",
+      "tag": "🔒 By EbraSha_449_449",
       "type": "tcp"
     },
     {
-      "tag": "proxy_451",
+      "tag": "🔒 By EbraSha_450_450",
       "type": "ws"
     },
     {
-      "tag": "proxy_452",
+      "tag": "🔒 By EbraSha_451_451",
       "type": "ws"
     },
     {
-      "tag": "proxy_453",
+      "tag": "🔒 By EbraSha_452_452",
       "type": "ws"
     },
     {
-      "tag": "proxy_454",
+      "tag": "🔒 By EbraSha_453_453",
       "type": "tcp"
     },
     {
-      "tag": "proxy_455",
+      "tag": "🔒 By EbraSha_454_454",
       "type": "tcp"
     },
     {
-      "tag": "proxy_456",
+      "tag": "🔒 By EbraSha_455_455",
       "type": "ws"
     },
     {
-      "tag": "proxy_457",
+      "tag": "🔒 By EbraSha_456_456",
       "type": "tcp"
     },
     {
-      "tag": "proxy_458",
+      "tag": "🔒 By EbraSha_457_457",
       "type": "tcp"
     },
     {
-      "tag": "proxy_459",
+      "tag": "🔒 By EbraSha_458_458",
       "type": "ws"
     },
     {
-      "tag": "proxy_460",
+      "tag": "🔒 By EbraSha_459_459",
       "type": "tcp"
     },
     {
-      "tag": "proxy_461",
+      "tag": "🔒 By EbraSha_460_460",
       "type": "ws"
     },
     {
-      "tag": "proxy_462",
+      "tag": "🔒 By EbraSha_461_461",
       "type": "tcp"
     },
     {
-      "tag": "proxy_463",
+      "tag": "🔒 By EbraSha_462_462",
       "type": "tcp"
     },
     {
-      "tag": "proxy_464",
+      "tag": "🔒 By EbraSha_463_463",
       "type": "ws"
     },
     {
-      "tag": "proxy_465",
+      "tag": "🔒 By EbraSha_464_464",
       "type": "tcp"
     },
     {
-      "tag": "proxy_466",
+      "tag": "🔒 By EbraSha_465_465",
       "type": "ws"
     },
     {
-      "tag": "proxy_467",
+      "tag": "🔒 By EbraSha_466_466",
       "type": "ws"
     },
     {
-      "tag": "proxy_468",
+      "tag": "🔒 By EbraSha_467_467",
       "type": "tcp"
     },
     {
-      "tag": "proxy_469",
+      "tag": "🔒 By EbraSha_468_468",
       "type": "tcp"
     },
     {
-      "tag": "proxy_470",
+      "tag": "🔒 By EbraSha_469_469",
       "type": "tcp"
     },
     {
-      "tag": "proxy_471",
+      "tag": "🔒 By EbraSha_470_470",
       "type": "tcp"
     },
     {
-      "tag": "proxy_472",
+      "tag": "🔒 By EbraSha_471_471",
       "type": "tcp"
     },
     {
-      "tag": "proxy_473",
+      "tag": "🔒 By EbraSha_472_472",
       "type": "tcp"
     },
     {
-      "tag": "proxy_474",
+      "tag": "🔒 By EbraSha_473_473",
       "type": "tcp"
     },
     {
-      "tag": "proxy_475",
+      "tag": "🔒 By EbraSha_474_474",
       "type": "tcp"
     },
     {
-      "tag": "proxy_476",
+      "tag": "🔒 By EbraSha_475_475",
       "type": "tcp"
     },
     {
-      "tag": "proxy_477",
+      "tag": "🔒 By EbraSha_476_476",
       "type": "tcp"
     },
     {
-      "tag": "proxy_478",
+      "tag": "🔒 By EbraSha_477_477",
       "type": "tcp"
     },
     {
-      "tag": "proxy_479",
+      "tag": "🔒 By EbraSha_478_478",
       "type": "tcp"
     },
     {
-      "tag": "proxy_480",
+      "tag": "🔒 By EbraSha_479_479",
       "type": "tcp"
     },
     {
-      "tag": "proxy_481",
+      "tag": "🔒 By EbraSha_480_480",
       "type": "tcp"
     },
     {
-      "tag": "proxy_482",
+      "tag": "🔒 By EbraSha_481_481",
       "type": "tcp"
     },
     {
-      "tag": "proxy_483",
+      "tag": "🔒 By EbraSha_482_482",
       "type": "tcp"
     },
     {
-      "tag": "proxy_484",
+      "tag": "🔒 By EbraSha_483_483",
       "type": "tcp"
     },
     {
-      "tag": "proxy_485",
+      "tag": "🔒 By EbraSha_484_484",
       "type": "tcp"
     },
     {
-      "tag": "proxy_486",
+      "tag": "🔒 By EbraSha_485_485",
       "type": "tcp"
     },
     {
-      "tag": "proxy_487",
+      "tag": "🔒 By EbraSha_486_486",
       "type": "tcp"
     },
     {
-      "tag": "proxy_488",
+      "tag": "🔒 By EbraSha_487_487",
       "type": "tcp"
     },
     {
-      "tag": "proxy_489",
+      "tag": "🔒 By EbraSha_488_488",
       "type": "tcp"
     },
     {
-      "tag": "proxy_490",
+      "tag": "🔒 By EbraSha_489_489",
       "type": "tcp"
     },
     {
-      "tag": "proxy_491",
+      "tag": "🔒 By EbraSha_490_490",
       "type": "tcp"
     },
     {
-      "tag": "proxy_492",
+      "tag": "🔒 By EbraSha_491_491",
       "type": "tcp"
     },
     {
-      "tag": "proxy_493",
+      "tag": "🔒 By EbraSha_492_492",
       "type": "tcp"
     },
     {
-      "tag": "proxy_494",
+      "tag": "🔒 By EbraSha_493_493",
+      "type": "tcp"
+    },
+    {
+      "tag": "🔒 By EbraSha_494_494",
+      "type": "tcp"
+    },
+    {
+      "tag": "🔒 By EbraSha_495_495",
+      "type": "tcp"
+    },
+    {
+      "tag": "🔒 By EbraSha_496_496",
+      "type": "tcp"
+    },
+    {
+      "tag": "🔒 By EbraSha_497_497",
       "type": "ws"
     },
     {
-      "tag": "proxy_495",
+      "tag": "🔒 By EbraSha_498_498",
       "type": "tcp"
     },
     {
-      "tag": "proxy_496",
+      "tag": "🔒 By EbraSha_499_499",
       "type": "tcp"
-    },
-    {
-      "tag": "proxy_497",
-      "type": "tcp"
-    },
-    {
-      "tag": "proxy_498",
-      "type": "tcp"
-    },
-    {
-      "tag": "proxy_499",
-      "type": "ws"
     }
   ]
 }
