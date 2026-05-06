@@ -3,13 +3,15 @@ import yaml
 from typing import Dict, Any, List, Optional
 from pathlib import Path
 from src.logger import CollectorLogger
+from src.config import Config
 
 
 class ConfigFormatter:
     """Форматирование итоговых конфигов."""
     
-    def __init__(self):
+    def __init__(self, config: Optional[Config] = None):
         self.logger = CollectorLogger()
+        self.config = config
     
     def save_v2ray(self, configs: List[Dict[str, Any]], output_file: Optional[str]) -> int:
         """Сохранить в формате V2Ray JSON."""
@@ -17,6 +19,14 @@ class ConfigFormatter:
             return 0
         
         try:
+            # Получаем максимум прокси из конфига
+            max_proxies = 500
+            if self.config:
+                max_proxies = self.config.get('output.v2ray.max_proxies', 500)
+            
+            # Срезаем до максимума
+            configs = configs[:max_proxies]
+            
             Path(output_file).parent.mkdir(parents=True, exist_ok=True)
             
             v2ray_format = {
@@ -40,6 +50,14 @@ class ConfigFormatter:
             return 0
         
         try:
+            # Получаем максимум прокси из конфига
+            max_proxies = 500
+            if self.config:
+                max_proxies = self.config.get('output.mihomo.max_proxies', 500)
+            
+            # Срезаем до максимума
+            configs = configs[:max_proxies]
+            
             Path(output_file).parent.mkdir(parents=True, exist_ok=True)
             
             mihomo_format = {
