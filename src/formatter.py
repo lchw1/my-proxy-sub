@@ -78,12 +78,16 @@ class ConfigFormatter:
     def _convert_to_v2ray(self, configs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Конвертировать в V2Ray формат."""
         outbounds = []
+        name_counter = {}  # Счетчик для дубликатов имён
         
         for i, config in enumerate(configs):
             proxy_type = self._get_type(config)
             
+            # Генерируем уникальное ��мя
+            name = self._generate_unique_name(config, name_counter)
+            
             outbound = {
-                "tag": f"proxy_{i}",
+                "tag": f"{name}_{i}",  # tag должен быть уникальным
                 "type": proxy_type,
             }
             
@@ -113,23 +117,52 @@ class ConfigFormatter:
     def _convert_to_mihomo(self, configs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Конвертировать в Mihomo формат."""
         proxies = []
+        name_counter = {}  # Счетчик для дубликатов имён
         
         for i, config in enumerate(configs):
             proxy_type = self._get_type(config)
             
+            # Генерируе�� уникальное имя
+            name = self._generate_unique_name(config, name_counter)
+            
             proxy = {
-                "name": config.get('ps', f"proxy_{i}"),
+                "name": name,
                 "type": proxy_type,
                 "server": config.get('add', config.get('server')),
                 "port": int(config.get('port', 443)),
             }
             
+            # Добавляем дополнительные параметры в зависимости от типа
             if proxy_type in ['vmess', 'vless']:
                 proxy["uuid"] = config.get('id', '')
                 if 'aid' in config:
                     proxy["alterId"] = config['aid']
+                
+                # Добавляем параметры TLS если есть
+                if config.get('tls') == 'tls' or config.get('tls') == True:
+                    proxy["tls"] = True
+                
+                # SNI параметр
+                if config.get('sni'):
+                    proxy["servername"] = config['sni']
+                
+                # Параметры reality если есть
+                if config.get('reality-opts'):
+                    proxy["reality"] = config['reality-opts']
+                
+                # Flow параметр для VLESS
+                if config.get('flow'):
+                    proxy["flow"] = config['flow']
+            
             elif proxy_type == 'trojan':
                 proxy["password"] = config.get('password', '')
+                
+                if config.get('tls'):
+                    proxy["tls"] = True
+                
+                if config.get('sni'):
+                    proxy["servername"] = config['sni']
+            
             elif proxy_type in ['ss', 'ssr']:
                 proxy["cipher"] = config.get('cipher', '')
                 proxy["password"] = config.get('password', '')
@@ -137,6 +170,32 @@ class ConfigFormatter:
             proxies.append(proxy)
         
         return proxies
+    
+    def _generate_unique_name(self, config: Dict[str, Any], name_counter: Dict[str, int]) -> str:
+        """Генерировать уникальное имя для прокси."""
+        # Берем оригинальное имя или генерируем
+        original_name = config.get('ps', config.get('name', 'proxy'))
+        
+        # Удаляем опасные символы
+        name = original_name.replace('[', '').replace(']', '').strip()
+        
+        # Если имя пустое
+        if not name:
+            name = 'proxy'
+        
+        # Если такое имя уже есть, добавляем номер
+        if name in name_counter:
+            name_counter[name] += 1
+            final_name = f"{name}_{name_counter[name]}"
+        else:
+            name_counter[name] = 0
+            final_name = name
+        
+        # Ограничиваем длину имени (FlClash может не поддерживать длинные)
+        if len(final_name) > 50:
+            final_name = final_name[:47] + "..."
+        
+        return final_name
     
     def _get_type(self, config: Dict[str, Any]) -> str:
         """Получить тип прокси."""
