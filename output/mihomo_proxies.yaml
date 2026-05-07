@@ -532,284 +532,284 @@ proxies:
   sni: '🔒 [By EbraSha] '
   type: trojan
 - name: 🔒 By EbraSha_76
+  password: 13c169be-8592-4eaa-94cb-69c859e7d987
+  port: 443
+  server: ubu.okaoclax.me
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] '
+  type: trojan
+- name: 🔒 By EbraSha_77
   password: 13e26f64-2e0c-4461-92cd-d83294cc18f0
   port: 443
   server: 104.21.76.21
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_77
+- name: 🔒 By EbraSha_78
   password: 13e26f64-2e0c-4461-92cd-d83294cc18f0
   port: 443
   server: 104.21.94.69
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_78
+- name: 🔒 By EbraSha_79
   password: 13e26f64-2e0c-4461-92cd-d83294cc18f0
   port: 443
   server: 172.67.185.107
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_79
+- name: 🔒 By EbraSha_80
   password: 13e26f64-2e0c-4461-92cd-d83294cc18f0
   port: 443
   server: 172.67.220.140
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_80
+- name: 🔒 By EbraSha_81
   password: 15153c1d-fc81-4b2a-9689-7b4e4a72dce5
   port: 443
   server: 172.67.188.77
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_81
+- name: 🔒 By EbraSha_82
   password: 157bbeb0-489f-11f0-ab40-1239d0255272
   port: 443
   server: usa.test3.net
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_82
+- name: 🔒 By EbraSha_83
   password: 15f34214-d8de-41e9-ba72-93daeafc59ef
   port: 2087
   server: 104.18.32.47
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_83
+- name: 🔒 By EbraSha_84
   password: 16132fb0-4945-11f0-a95e-1239d0255272
   port: 443
   server: 91.192.81.167
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_84
+- name: 🔒 By EbraSha_85
   password: 16132fb0-4945-11f0-a95e-1239d0255272
   port: 443
   server: sg4.6n6.net
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_85
+- name: 🔒 By EbraSha_86
   password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
   port: 80
   server: 15.235.197.4
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_86
+- name: 🔒 By EbraSha_87
   password: 1884f180-94eb-11ee-8c46-1239d0255272
   port: 443
   server: 104.16.122.175
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_87
+- name: 🔒 By EbraSha_88
   password: 1884f180-94eb-11ee-8c46-1239d0255272
   port: 443
   server: 104.16.123.175
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_88
+- name: 🔒 By EbraSha_89
   password: '1991'
   port: 2096
   server: 172.64.229.170
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_89
+- name: 🔒 By EbraSha_90
   password: '1991'
   port: 2087
   server: 8.35.211.159
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_90
+- name: 🔒 By EbraSha_91
   password: 19a78eeb-d83a-4364-b095-b7dd93436320
   port: 443
   server: 104.21.29.205
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_91
+- name: 🔒 By EbraSha_92
   password: 19a78eeb-d83a-4364-b095-b7dd93436320
   port: 443
   server: 172.67.149.202
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_92
+- name: 🔒 By EbraSha_93
   password: 1b3b276f-44b4-4c39-bfdf-67ff6337b41f
   port: 443
   server: 104.18.32.69
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_93
+- name: 🔒 By EbraSha_94
   password: 1b3b276f-44b4-4c39-bfdf-67ff6337b41f
   port: 443
   server: 172.64.155.187
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_94
+- name: 🔒 By EbraSha_95
   password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
   port: 443
   server: 13.248.169.48
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_95
+- name: 🔒 By EbraSha_96
   password: 20210200-49c6-11ed-a9ef-1239d0255272
   port: 443
   server: 104.18.21.18
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_96
+- name: 🔒 By EbraSha_97
   password: 21c6c7cb-332b-4a0c-9ad7-dff9c3111442
   port: 443
   server: 104.21.19.64
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_97
+- name: 🔒 By EbraSha_98
   password: 21e5535e-4783-4a80-a735-24a1162d315c
   port: 443
   server: 104.21.28.26
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_98
+- name: 🔒 By EbraSha_99
   password: 22f86840-bcac-11ee-abea-1239d0255272
   port: 443
   server: chatbuzzteambhm.chatbuzzt7150.workers.dev
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_99
+- name: 🔒 By EbraSha_100
   password: 23391d1e-3567-4555-9e40-de87569d74f6
   port: 443
   server: 213.202.216.14
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_100
+- name: 🔒 By EbraSha_101
   password: 241f01b9-8dfc-474f-8342-3fbd5c46417e
   port: 2087
   server: 104.21.51.242
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_101
+- name: 🔒 By EbraSha_102
   password: 242a3d8eee5e4ed1a6bfa4141d549a25
   port: 443
   server: 104.19.159.12
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_102
+- name: 🔒 By EbraSha_103
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 157.120.32.122
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_103
+- name: 🔒 By EbraSha_104
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 165.22.55.206
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_104
+- name: 🔒 By EbraSha_105
   password: 255a0a50-3f10-11f0-b0d6-1239d0255272
   port: 443
   server: 51.38.65.155
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_105
+- name: 🔒 By EbraSha_106
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   port: 80
   server: us2.trojanvh.xyz
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_106
+- name: 🔒 By EbraSha_107
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: kaizen-hk-8.mielink-dns2.com
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_107
+- name: 🔒 By EbraSha_108
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: kaizen-jp-11.mielink-dns2.com
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_108
+- name: 🔒 By EbraSha_109
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: kaizen-ru-2.mielink-dns2.com
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_109
+- name: 🔒 By EbraSha_110
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: kaizen-tw-1.mielink-dns2.com
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_110
+- name: 🔒 By EbraSha_111
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: kaizen-tw-2.mielink-dns2.com
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_111
+- name: 🔒 By EbraSha_112
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: kaizen-tw-3.mielink-dns2.com
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_112
+- name: 🔒 By EbraSha_113
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: kaizen-tw-4.mielink-dns2.com
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_113
+- name: 🔒 By EbraSha_114
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: kaizen-us-6.mielink-dns2.com
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_114
+- name: 🔒 By EbraSha_115
   password: 27181131b8
   port: 443
   server: 62.210.188.19
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
-  type: trojan
-- name: 🔒 By EbraSha_115
-  password: 27181131b8
-  port: 443
-  server: fra1.connecton.surf
-  skipCertVerify: true
-  sni: ''
   type: trojan
 - name: 🔒 By EbraSha_116
   password: 2734c14b-e4ce-48b3-b3de-f80788cb4c47
@@ -1087,681 +1087,681 @@ proxies:
 - name: 🔒 By EbraSha_155
   password: 3e7ad819-03dd-46e1-8292-116fd2cea1c2
   port: 443
-  server: bgptru1.cnamazon.sbs
-  skipCertVerify: true
-  sni: 🔒 [By EbraSha]
-  type: trojan
-- name: 🔒 By EbraSha_156
-  password: 3e7ad819-03dd-46e1-8292-116fd2cea1c2
-  port: 443
   server: bgptw5.cnamazon.sbs
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_157
+- name: 🔒 By EbraSha_156
   password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
   port: 443
   server: 23.227.38.45
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_158
+- name: 🔒 By EbraSha_157
   password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
   port: 443
   server: 23.227.39.36
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_159
+- name: 🔒 By EbraSha_158
   password: 4045e84e-5e3c-4f70-8ff5-c1097882a55a
   port: 443
   server: 172.66.47.100
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_160
+- name: 🔒 By EbraSha_159
   password: 4069c35c-54ea-48ee-9ffa-05d9a0302043
   port: 443
   server: 104.21.71.131
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_161
+- name: 🔒 By EbraSha_160
   password: 40ea99d6-b2f2-4a00-8f61-c8d8fdaa25b9
   port: 443
   server: 104.21.38.163
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_162
+- name: 🔒 By EbraSha_161
   password: 40ea99d6-b2f2-4a00-8f61-c8d8fdaa25b9
   port: 443
   server: 172.67.136.117
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_163
+- name: 🔒 By EbraSha_162
   password: 4115f84d-3b03-4b03-babf-21b36b2f9c03
   port: 443
   server: 104.21.44.213
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_164
-  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
-  port: 15002
-  server: east.eeeeeef998.buzz
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
-  type: trojan
-- name: 🔒 By EbraSha_165
+- name: 🔒 By EbraSha_163
   password: 414dff55-922a-4dc8-b5d3-b6517942b25a
   port: 15003
   server: east.eeeeeef998.buzz
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_166
+- name: 🔒 By EbraSha_164
   password: 414dff55-922a-4dc8-b5d3-b6517942b25a
   port: 15005
   server: east.eeeeeef998.buzz
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_167
+- name: 🔒 By EbraSha_165
   password: 414dff55-922a-4dc8-b5d3-b6517942b25a
   port: 15006
   server: east.eeeeeef998.buzz
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_168
+- name: 🔒 By EbraSha_166
   password: 4174b95d-115e-4d39-add6-1f8db95bb860
   port: 443
   server: 172.67.153.179
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_169
+- name: 🔒 By EbraSha_167
   password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
   port: 443
   server: 217.79.184.76
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_170
+- name: 🔒 By EbraSha_168
   password: 41dbabe59a
   port: 443
   server: sp1.connecton.surf
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_171
+- name: 🔒 By EbraSha_169
   password: 45d5c2fa-58f7-4f2a-811b-c44cc51e8668
   port: 443
   server: 190.93.247.155
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_172
+- name: 🔒 By EbraSha_170
   password: '4646'
   port: 8443
   server: 173.245.58.57
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_173
+- name: 🔒 By EbraSha_171
   password: 46d69a7e-9002-44a3-99c1-01c412f29726
   port: 443
   server: 185.176.24.105
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_174
+- name: 🔒 By EbraSha_172
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
   server: 104.16.159.7
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_175
+- name: 🔒 By EbraSha_173
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
   server: 104.17.61.7
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_176
+- name: 🔒 By EbraSha_174
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
   server: nextstepcareer.online
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_177
+- name: 🔒 By EbraSha_175
   password: 4785f3ca-8fa3-4717-8c81-9d19087c73a3
   port: 443
   server: 172.66.44.171
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_178
-  password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
+- name: 🔒 By EbraSha_176
+  password: 4807b8ab-d74a-445e-9556-45a7ace4f6d6
   port: 443
-  server: trus.moonfree.top
+  server: cf.dalazhi.eu.org
   skipCertVerify: true
-  sni: ''
+  sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_179
+- name: 🔒 By EbraSha_177
   password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
   port: 443
   server: 104.21.83.113
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_180
+- name: 🔒 By EbraSha_178
   password: 4aec4e7f8cf8454ea4613659822e1a61
   port: 443
   server: 104.19.159.144
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_181
+- name: 🔒 By EbraSha_179
   password: 4b040268-f3a5-4136-b1a9-506012e8e3d9
   port: 443
   server: 104.21.3.60
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_182
+- name: 🔒 By EbraSha_180
   password: 4b040268-f3a5-4136-b1a9-506012e8e3d9
   port: 443
   server: 108.162.196.69
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_183
+- name: 🔒 By EbraSha_181
   password: 4b040268-f3a5-4136-b1a9-506012e8e3d9
   port: 443
   server: 108.162.198.165
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_184
+- name: 🔒 By EbraSha_182
   password: 4b040268-f3a5-4136-b1a9-506012e8e3d9
   port: 443
   server: 141.101.120.10
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_185
+- name: 🔒 By EbraSha_183
   password: 4b040268-f3a5-4136-b1a9-506012e8e3d9
   port: 443
   server: 188.114.97.58
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_186
+- name: 🔒 By EbraSha_184
   password: 4b0915d7-8544-5d48-946a-a708d7288447
   port: 2052
   server: 104.17.147.22
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_187
+- name: 🔒 By EbraSha_185
   password: 4b33b482-25bc-49e4-b866-878c914d945a
   port: 443
   server: 104.21.7.147
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_188
+- name: 🔒 By EbraSha_186
   password: 4be20cf1-6af1-4e87-ae5a-80d6ec30fecd
   port: 443
   server: 172.67.214.21
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_189
+- name: 🔒 By EbraSha_187
+  password: 4c205c81-5694-43fe-a287-af563a2ebc05
+  port: 443
+  server: nhju.ae1autumn.indevs.in
+  skipCertVerify: true
+  sni: 🔒 [By EbraSha]
+  type: trojan
+- name: 🔒 By EbraSha_188
   password: 4d048fc6-d944-41dd-b327-10856adcc82d
   port: 443
   server: zi.you.usdtvfk.top
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_190
+- name: 🔒 By EbraSha_189
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 104.17.245.1
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_191
+- name: 🔒 By EbraSha_190
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 104.18.118.51
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_192
+- name: 🔒 By EbraSha_191
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 104.19.235.14
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_193
+- name: 🔒 By EbraSha_192
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 104.21.25.85
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_194
+- name: 🔒 By EbraSha_193
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 104.24.20.111
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_195
+- name: 🔒 By EbraSha_194
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 104.24.20.194
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_196
+- name: 🔒 By EbraSha_195
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 104.24.20.239
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_197
+- name: 🔒 By EbraSha_196
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 104.25.254.46
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_198
+- name: 🔒 By EbraSha_197
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 172.67.186.42
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_199
+- name: 🔒 By EbraSha_198
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 203.23.106.193
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_200
+- name: 🔒 By EbraSha_199
   password: 4d706727-996f-4427-930d-60f3bd414cf9
   port: 443
   server: 203.28.8.28
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_201
+- name: 🔒 By EbraSha_200
   password: 4db45bb4-dcca-4d37-a639-cb55213ee406
   port: 2096
   server: 172.67.132.6
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_202
+- name: 🔒 By EbraSha_201
   password: 4f2c305b-9a03-4493-b3e4-2dff2f1af8c9
   port: 443
   server: 103.168.56.77
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_203
+- name: 🔒 By EbraSha_202
   password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
   port: 443
   server: 104.21.26.17
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_204
+- name: 🔒 By EbraSha_203
   password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
   port: 443
   server: 172.67.135.37
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_205
+- name: 🔒 By EbraSha_204
   password: 4f9219f6-ba56-4e5a-a676-0978d8b613e4
   port: 443
   server: 188.114.99.91
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_206
+- name: 🔒 By EbraSha_205
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   port: 443
   server: 216.24.57.250
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_207
+- name: 🔒 By EbraSha_206
   password: 509ed9b7-8d64-4204-8ec8-6b749020ac3f
   port: 443
   server: 104.21.3.189
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_208
+- name: 🔒 By EbraSha_207
   password: 509ed9b7-8d64-4204-8ec8-6b749020ac3f
   port: 443
   server: 172.67.131.27
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_209
+- name: 🔒 By EbraSha_208
   password: 51410d3cb2931a01b366bb5c868264bf
   port: 443
   server: persiancdn.top
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_210
+- name: 🔒 By EbraSha_209
   password: 519d06a5-f3a5-41bd-8f95-519ab65e20ed
   port: 443
   server: 104.16.250.22
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_211
+- name: 🔒 By EbraSha_210
   password: 519d06a5-f3a5-41bd-8f95-519ab65e20ed
   port: 443
   server: 141.193.213.107
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_212
+- name: 🔒 By EbraSha_211
   password: 519d06a5-f3a5-41bd-8f95-519ab65e20ed
   port: 443
   server: 23.227.38.72
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_213
+- name: 🔒 By EbraSha_212
   password: 519d06a5-f3a5-41bd-8f95-519ab65e20ed
   port: 443
   server: 666.cloudflare.182682.xyz
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_214
+- name: 🔒 By EbraSha_213
   password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
   port: 443
   server: 104.21.47.176
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_215
+- name: 🔒 By EbraSha_214
   password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
   port: 443
   server: 172.67.149.124
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_216
+- name: 🔒 By EbraSha_215
   password: 527a7c04-9a2c-4fdb-aa18-37337e62e917
   port: 8443
   server: fastcup.net
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_217
+- name: 🔒 By EbraSha_216
   password: 527a7c04-9a2c-4fdb-aa18-37337e62e917
   port: 8443
   server: pubg.ac
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_218
+- name: 🔒 By EbraSha_217
   password: 53027f0f-2581-469a-a802-825d46f37cda
   port: 443
   server: 104.18.124.198
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_219
+- name: 🔒 By EbraSha_218
   password: 53249200-30ff-436f-a032-0bb00605f8f9
   port: 443
   server: 172.67.219.196
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_220
+- name: 🔒 By EbraSha_219
   password: 54080134-2cba-4535-8599-95650bd9aa54
   port: 443
   server: 152.67.160.174
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_221
+- name: 🔒 By EbraSha_220
   password: 5453ae26-250d-4e79-b4ec-016baf806865
   port: 443
   server: 172.67.133.248
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_222
+- name: 🔒 By EbraSha_221
   password: 5453ae26-250d-4e79-b4ec-016baf806865
   port: 443
   server: 172.67.204.22
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_223
+- name: 🔒 By EbraSha_222
   password: 5453ae26-250d-4e79-b4ec-016baf806865
   port: 443
   server: 172.67.210.210
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_224
+- name: 🔒 By EbraSha_223
   password: 555034c8-6420-45d0-893c-905c02342150
   port: 443
   server: 51.83.186.142
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_225
+- name: 🔒 By EbraSha_224
   password: 555034c8-6420-45d0-893c-905c02342150
   port: 80
   server: 51.83.186.142
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_226
+- name: 🔒 By EbraSha_225
   password: 559c3b5f-3dd1-47e4-94ad-017cb392a7ba
   port: 443
   server: 104.26.8.202
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_227
+- name: 🔒 By EbraSha_226
   password: 5623be5f-c9da-4511-81a9-b4b39b16edae
   port: 443
   server: 103.195.236.24
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_228
+- name: 🔒 By EbraSha_227
   password: 578ade22-1e58-4c37-ce01-bfad51a72c62
   port: 8443
   server: 104.17.147.22
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_229
+- name: 🔒 By EbraSha_228
   password: 578ade22-1e58-4c37-ce01-bfad51a72c62
   port: 8443
   server: 104.17.148.22
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_230
+- name: 🔒 By EbraSha_229
   password: 598c19f3-a48e-47cd-8451-1ba04ea094d0
   port: 80
   server: 51.91.11.29
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_231
+- name: 🔒 By EbraSha_230
   password: 5A%7Cqwun(Ne*!6%7CQo
   port: 443
   server: 172.66.47.95
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_232
+- name: 🔒 By EbraSha_231
   password: 5a2c16f9
   port: 443
   server: 104.17.167.134
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_233
+- name: 🔒 By EbraSha_232
   password: 5a2c16f9
   port: 443
   server: 104.19.220.22
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_234
+- name: 🔒 By EbraSha_233
   password: 5a2c16f9
   port: 443
   server: 104.19.55.205
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_235
+- name: 🔒 By EbraSha_234
   password: 5a2c16f9
   port: 443
   server: 162.159.128.253
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_236
+- name: 🔒 By EbraSha_235
   password: 5a2c16f9
   port: 443
   server: 172.64.229.33
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_237
+- name: 🔒 By EbraSha_236
   password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
   port: 20230
   server: sg007.421421.xyz
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_238
+- name: 🔒 By EbraSha_237
   password: 5cccb4da-8aee-4b01-be84-2056265e52dc
   port: 443
   server: 172.64.80.1
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_239
+- name: 🔒 By EbraSha_238
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: 104.18.41.190
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_240
+- name: 🔒 By EbraSha_239
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: 172.64.145.202
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_241
+- name: 🔒 By EbraSha_240
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: 172.64.149.209
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_242
+- name: 🔒 By EbraSha_241
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: cdns.doon.eu.org
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_243
+- name: 🔒 By EbraSha_242
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: cf.008500.xyz
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_244
+- name: 🔒 By EbraSha_243
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: cf.130519.xyz
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_245
+- name: 🔒 By EbraSha_244
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: cf.877774.xyz
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_246
+- name: 🔒 By EbraSha_245
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: mfa.gov.ua
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_247
+- name: 🔒 By EbraSha_246
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: saas.sin.fan
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_248
+- name: 🔒 By EbraSha_247
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: 443
   server: store.ubi.com
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_249
+- name: 🔒 By EbraSha_248
   password: 6040a753-e35b-4384-8713-96f3c639b621
   port: 443
   server: 104.21.21.226
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_250
+- name: 🔒 By EbraSha_249
   password: 6040a753-e35b-4384-8713-96f3c639b621
   port: 443
   server: 172.67.200.238
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_251
+- name: 🔒 By EbraSha_250
   password: 61130614-528c-4b45-ac9b-e7987cff4952
   port: 42728
   server: cc44a92e67c3a06550903ab1a79cd258.v1.cac.node-is.green
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
+  type: trojan
+- name: 🔒 By EbraSha_251
+  password: 61605c66-6d41-4b9d-a496-b9898f3f95d0
+  port: 443
+  server: jp-h1.sshub.xyz
+  skipCertVerify: true
+  sni: ''
   type: trojan
 - name: 🔒 By EbraSha_252
   password: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -2338,907 +2338,907 @@ proxies:
   sni: 🔒 [By EbraSha]
   type: trojan
 - name: 🔒 By EbraSha_334
-  password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e
-  port: 443
-  server: 777.cloudflare.182682.xyz
-  skipCertVerify: true
-  sni: 🔒 [By EbraSha]
-  type: trojan
-- name: 🔒 By EbraSha_335
-  password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e
-  port: 443
-  server: 888.cloudflare.182682.xyz
-  skipCertVerify: true
-  sni: 🔒 [By EbraSha]
-  type: trojan
-- name: 🔒 By EbraSha_336
-  password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e
-  port: 443
-  server: hkeofhwo3.cloudflare.182682.xyz
-  skipCertVerify: true
-  sni: 🔒 [By EbraSha]
-  type: trojan
-- name: 🔒 By EbraSha_337
-  password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e
-  port: 443
-  server: sg083yt.cloudflare.182682.xyz
-  skipCertVerify: true
-  sni: 🔒 [By EbraSha]
-  type: trojan
-- name: 🔒 By EbraSha_338
   password: 7d0f1f83-0f2f-4b90-930e-de44ac233fef
   port: 443
   server: 20.210.234.145
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_339
+- name: 🔒 By EbraSha_335
   password: 7d9c7804-1f7d-43f7-b19a-fa7c2fff4569
   port: 20230
   server: us003.421421.xyz
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_340
+- name: 🔒 By EbraSha_336
   password: 7ea37e4f-325b-416f-901a-67012367307f
   port: 80
   server: 15.204.209.50
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_341
+- name: 🔒 By EbraSha_337
   password: 800eb26c-cd0c-4269-aae7-e63d75de4edd
   port: 80
   server: 135.148.148.4
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_342
+- name: 🔒 By EbraSha_338
   password: 807248b3ad214e8ce1ace68cb2080851
   port: 443
   server: 77.110.101.210
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_343
+- name: 🔒 By EbraSha_339
   password: 807248b3ad214e8ce1ace68cb2080851
   port: 443
   server: 81.19.137.162
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_344
+- name: 🔒 By EbraSha_340
   password: 81d93f62-15a2-4994-adb9-0b5d906aac7e
   port: 443
   server: 138.2.114.255
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_345
+- name: 🔒 By EbraSha_341
   password: 8437d6e8-8492-4ef2-8eb3-0e9ee281882f
   port: 443
   server: 172.66.41.28
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_346
+- name: 🔒 By EbraSha_342
   password: 8437d6e8-8492-4ef2-8eb3-0e9ee281882f
   port: 443
   server: 172.66.42.228
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_347
+- name: 🔒 By EbraSha_343
   password: 8437d6e8-8492-4ef2-8eb3-0e9ee281882f
   port: 443
   server: 172.66.43.41
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_348
+- name: 🔒 By EbraSha_344
   password: 8437d6e8-8492-4ef2-8eb3-0e9ee281882f
   port: 443
   server: greencloudvps.com
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_349
+- name: 🔒 By EbraSha_345
   password: 84831b86-5c76-4173-bdf1-02fa3ed78a32
   port: 443
   server: 104.21.96.1
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_350
+- name: 🔒 By EbraSha_346
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2083
   server: 104.19.52.10
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_351
+- name: 🔒 By EbraSha_347
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2096
   server: 104.19.52.167
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_352
+- name: 🔒 By EbraSha_348
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2083
   server: 104.19.52.219
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_353
+- name: 🔒 By EbraSha_349
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2096
   server: 104.19.52.233
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_354
+- name: 🔒 By EbraSha_350
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2096
   server: 104.19.52.255
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_355
+- name: 🔒 By EbraSha_351
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 443
   server: 104.19.52.35
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_356
+- name: 🔒 By EbraSha_352
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2087
   server: 104.19.52.45
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_357
+- name: 🔒 By EbraSha_353
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2096
   server: 104.19.53.251
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_358
+- name: 🔒 By EbraSha_354
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 2096
   server: 104.19.53.254
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_359
+- name: 🔒 By EbraSha_355
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 8443
   server: 104.19.53.64
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_360
+- name: 🔒 By EbraSha_356
   password: 8557692d-c228-48f0-b6f9-50d44d4a2096
   port: 8443
   server: 104.19.53.73
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_361
+- name: 🔒 By EbraSha_357
   password: 85950277-f447-48f0-9ead-aaf6d5ff3cad
   port: 443
   server: 104.21.49.59
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_362
+- name: 🔒 By EbraSha_358
   password: 8697fe6b-1lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
   port: 443
   server: 185.44.76.188
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_363
+- name: 🔒 By EbraSha_359
   password: 87ec85ad-8e8e-40a0-9b23-1fa8217c9647
   port: 443
   server: us-full.privateip.net
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_364
+- name: 🔒 By EbraSha_360
   password: 8800c518-e68a-4441-a45c-cd67855784c8
   port: 443
   server: hk1.sanfen001.pics
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_365
+- name: 🔒 By EbraSha_361
   password: 8800c518-e68a-4441-a45c-cd67855784c8
   port: 443
   server: hk2.sanfen001.pics
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_366
+- name: 🔒 By EbraSha_362
   password: 8800c518-e68a-4441-a45c-cd67855784c8
   port: 443
   server: jp2.sanfen001.pics
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_367
+- name: 🔒 By EbraSha_363
   password: 8800c518-e68a-4441-a45c-cd67855784c8
   port: 443
   server: kr1.sanfen001.pics
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_368
+- name: 🔒 By EbraSha_364
   password: 8800c518-e68a-4441-a45c-cd67855784c8
   port: 443
   server: kr2.sanfen001.pics
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_369
+- name: 🔒 By EbraSha_365
   password: 882f187b-feb1-4be7-8678-32460f1ecfe6
   port: 443
   server: au-full.privateip.net
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_370
+- name: 🔒 By EbraSha_366
   password: 88939272-790a-441f-b12b-8ce531aca810
   port: 443
   server: 65.108.205.61
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_371
+- name: 🔒 By EbraSha_367
   password: 88939272-790a-441f-b12b-8ce531aca810
   port: 443
   server: polo01.kctr2038.icu
   skipCertVerify: true
   sni: ''
   type: trojan
-- name: 🔒 By EbraSha_372
+- name: 🔒 By EbraSha_368
   password: 891d999f-7864-45c5-8db9-3c69f35dcb96
   port: 443
   server: 104.21.29.75
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_373
+- name: 🔒 By EbraSha_369
   password: 895552fa-6284-4c1d-ba00-3944e0c7c626
   port: 443
   server: 104.21.71.112
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_374
+- name: 🔒 By EbraSha_370
   password: 89b3cbba-e6ac-485a-9481-976a0415eab9
   port: 2083
   server: 104.18.39.232
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_375
+- name: 🔒 By EbraSha_371
   password: 89b3cbba-e6ac-485a-9481-976a0415eab9
   port: 443
   server: 162.159.192.163
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_376
+- name: 🔒 By EbraSha_372
   password: 89b3cbba-e6ac-485a-9481-976a0415eab9
   port: 443
   server: 172.66.47.155
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_377
+- name: 🔒 By EbraSha_373
   password: 89b3cbba-e6ac-485a-9481-976a0415eab9
   port: 443
   server: 172.66.47.61
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_378
+- name: 🔒 By EbraSha_374
   password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
   port: 443
   server: 104.21.23.115
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_379
+- name: 🔒 By EbraSha_375
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 162.159.133.103
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_380
+- name: 🔒 By EbraSha_376
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 162.159.133.15
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_381
+- name: 🔒 By EbraSha_377
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 162.159.133.36
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_382
+- name: 🔒 By EbraSha_378
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 162.159.133.75
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_383
+- name: 🔒 By EbraSha_379
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 162.159.135.215
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_384
+- name: 🔒 By EbraSha_380
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 162.159.135.235
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_385
+- name: 🔒 By EbraSha_381
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 162.159.136.206
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_386
+- name: 🔒 By EbraSha_382
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 162.159.136.208
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_387
+- name: 🔒 By EbraSha_383
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 162.159.136.89
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_388
+- name: 🔒 By EbraSha_384
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 23.227.38.18
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_389
+- name: 🔒 By EbraSha_385
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   port: 443
   server: 23.227.39.108
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_390
+- name: 🔒 By EbraSha_386
   password: 8QOe)&jIP%5E%5Dl%7BP.1
   port: 443
   server: 172.66.44.182
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_391
+- name: 🔒 By EbraSha_387
   password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
   port: 443
   server: 20.255.74.102
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_392
+- name: 🔒 By EbraSha_388
   password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
   port: 443
   server: 23.102.238.146
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_393
+- name: 🔒 By EbraSha_389
   password: 8ddcc360-5223-11ee-bc2d-1239d0255272
   port: 443
   server: 104.31.16.14
   skipCertVerify: true
   sni: 🔒 [By EbraSha]
   type: trojan
-- name: 🔒 By EbraSha_394
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 103.133.1.253
+- name: 🔒 By EbraSha_390
+  password: 8r%253C%255B9%2527l6hAO%25238ZQi
+  port: 8443
+  server: 140.83.34.214
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 242 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 994 '
   type: trojan
-- name: 🔒 By EbraSha_395
+- name: 🔒 By EbraSha_391
+  password: 8r%253C%255B9%2527l6hAO%25238ZQi
+  port: 443
+  server: 72.167.230.253
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 114 '
+  type: trojan
+- name: 🔒 By EbraSha_392
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
   server: 103.31.77.108
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 302 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 29 '
   type: trojan
-- name: 🔒 By EbraSha_396
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 2053
-  server: 103.75.118.144
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 684 '
-  type: trojan
-- name: 🔒 By EbraSha_397
+- name: 🔒 By EbraSha_393
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 104.250.237.76
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 283 '
   type: trojan
-- name: 🔒 By EbraSha_398
+- name: 🔒 By EbraSha_394
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 109.61.110.241
+  server: 107.172.190.151
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 359 '
   type: trojan
-- name: 🔒 By EbraSha_399
+- name: 🔒 By EbraSha_395
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 108.162.194.253
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 703 '
+  type: trojan
+- name: 🔒 By EbraSha_396
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 114.33.57.170
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 389 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 596 '
   type: trojan
-- name: 🔒 By EbraSha_400
+- name: 🔒 By EbraSha_397
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 20002
   server: 118.39.136.248
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 508 '
   type: trojan
-- name: 🔒 By EbraSha_401
+- name: 🔒 By EbraSha_398
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 10088
   server: 118.47.197.17
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 795 '
   type: trojan
-- name: 🔒 By EbraSha_402
+- name: 🔒 By EbraSha_399
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 25448
   server: 121.167.94.122
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 177 '
   type: trojan
-- name: 🔒 By EbraSha_403
+- name: 🔒 By EbraSha_400
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 32768
   server: 121.170.1.188
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_404
+- name: 🔒 By EbraSha_401
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 19461
   server: 123.99.111.135
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 298 '
   type: trojan
-- name: 🔒 By EbraSha_405
+- name: 🔒 By EbraSha_402
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8388
+  server: 129.226.163.56
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 91 '
+  type: trojan
+- name: 🔒 By EbraSha_403
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 138.124.81.204
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 897 '
   type: trojan
-- name: 🔒 By EbraSha_406
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 21044
-  server: 138.2.23.80
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 59 '
-  type: trojan
-- name: 🔒 By EbraSha_407
+- name: 🔒 By EbraSha_404
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 10243
   server: 14.50.59.154
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 272 '
+  type: trojan
+- name: 🔒 By EbraSha_405
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 140.83.50.165
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 119 '
+  type: trojan
+- name: 🔒 By EbraSha_406
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 142.252.220.13
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 680 '
+  type: trojan
+- name: 🔒 By EbraSha_407
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2053
+  server: 144.31.122.101
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
 - name: 🔒 By EbraSha_408
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
-  server: 140.235.37.69
+  server: 144.31.122.101
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 553 '
+  sni: '🔒 [By EbraSha] '
   type: trojan
 - name: 🔒 By EbraSha_409
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 2083
-  server: 142.171.50.6
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 61 '
-  type: trojan
-- name: 🔒 By EbraSha_410
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 143.20.204.5
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 403 '
-  type: trojan
-- name: 🔒 By EbraSha_411
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 143.47.96.200
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 462 '
-  type: trojan
-- name: 🔒 By EbraSha_412
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 2053
-  server: 144.31.122.101
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
-  type: trojan
-- name: 🔒 By EbraSha_413
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 144.31.122.101
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
-  type: trojan
-- name: 🔒 By EbraSha_414
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 144.31.122.162
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 710 '
   type: trojan
-- name: 🔒 By EbraSha_415
+- name: 🔒 By EbraSha_410
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 144.31.184.200
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 569 '
+  type: trojan
+- name: 🔒 By EbraSha_411
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
   server: 146.19.84.236
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_416
+- name: 🔒 By EbraSha_412
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 146.70.71.157
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 473 '
   type: trojan
-- name: 🔒 By EbraSha_417
+- name: 🔒 By EbraSha_413
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 149.28.142.169
+  server: 148.135.100.229
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 239 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 39 '
   type: trojan
-- name: 🔒 By EbraSha_418
+- name: 🔒 By EbraSha_414
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2053
+  server: 150.241.76.155
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 913 '
+  type: trojan
+- name: 🔒 By EbraSha_415
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 151.241.215.148
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 599 '
   type: trojan
-- name: 🔒 By EbraSha_419
+- name: 🔒 By EbraSha_416
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 152.53.200.164
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_420
+- name: 🔒 By EbraSha_417
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 152.53.200.89
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 501 '
   type: trojan
-- name: 🔒 By EbraSha_421
+- name: 🔒 By EbraSha_418
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 153.121.45.101
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_422
+- name: 🔒 By EbraSha_419
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 154.197.88.253
+  server: 154.197.108.253
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 823 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 627 '
   type: trojan
-- name: 🔒 By EbraSha_423
+- name: 🔒 By EbraSha_420
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 154.92.9.253
+  server: 156.225.72.253
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 798 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 521 '
   type: trojan
-- name: 🔒 By EbraSha_424
+- name: 🔒 By EbraSha_421
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 16.16.45.85
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 835 '
   type: trojan
-- name: 🔒 By EbraSha_425
+- name: 🔒 By EbraSha_422
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 160.251.209.140
+  server: 160.153.0.253
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 211 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 726 '
   type: trojan
-- name: 🔒 By EbraSha_426
+- name: 🔒 By EbraSha_423
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 161.248.254.27
+  server: 163.192.47.40
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 445 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 500 '
   type: trojan
-- name: 🔒 By EbraSha_427
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 166.62.105.253
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 16 '
-  type: trojan
-- name: 🔒 By EbraSha_428
+- name: 🔒 By EbraSha_424
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 172.233.97.34
   skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 863 '
+  type: trojan
+- name: 🔒 By EbraSha_425
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2096
+  server: 172.64.149.54
+  skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_429
+- name: 🔒 By EbraSha_426
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 172.66.44.230
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_430
+- name: 🔒 By EbraSha_427
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 172.66.47.26
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_431
+- name: 🔒 By EbraSha_428
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 10912
   server: 175.197.237.36
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 569 '
   type: trojan
-- name: 🔒 By EbraSha_432
+- name: 🔒 By EbraSha_429
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
   server: 176.125.240.147
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 562 '
   type: trojan
-- name: 🔒 By EbraSha_433
+- name: 🔒 By EbraSha_430
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
   server: 176.125.240.63
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 310 '
   type: trojan
-- name: 🔒 By EbraSha_434
+- name: 🔒 By EbraSha_431
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 180.149.37.38
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 378 '
   type: trojan
-- name: 🔒 By EbraSha_435
+- name: 🔒 By EbraSha_432
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 10003
   server: 183.102.55.197
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_436
+- name: 🔒 By EbraSha_433
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 20880
   server: 183.107.78.213
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 446 '
   type: trojan
-- name: 🔒 By EbraSha_437
+- name: 🔒 By EbraSha_434
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 185.104.151.181
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 15 '
   type: trojan
-- name: 🔒 By EbraSha_438
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 185.106.95.125
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 963 '
-  type: trojan
-- name: 🔒 By EbraSha_439
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 185.151.146.73
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 563 '
-  type: trojan
-- name: 🔒 By EbraSha_440
+- name: 🔒 By EbraSha_435
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 185.162.9.60
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 608 '
   type: trojan
-- name: 🔒 By EbraSha_441
+- name: 🔒 By EbraSha_436
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 185.253.46.5
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_442
+- name: 🔒 By EbraSha_437
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2053
+  server: 185.31.200.184
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] '
+  type: trojan
+- name: 🔒 By EbraSha_438
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 185.52.0.84
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 579 '
   type: trojan
-- name: 🔒 By EbraSha_443
+- name: 🔒 By EbraSha_439
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 185.80.128.115
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
+- name: 🔒 By EbraSha_440
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 185.94.166.60
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 191 '
+  type: trojan
+- name: 🔒 By EbraSha_441
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 192.18.136.255
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 486 '
+  type: trojan
+- name: 🔒 By EbraSha_442
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 192.200.160.253
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 479 '
+  type: trojan
+- name: 🔒 By EbraSha_443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 192.9.162.124
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 820 '
+  type: trojan
 - name: 🔒 By EbraSha_444
   password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 46639
-  server: 192.131.142.161
+  port: 2053
+  server: 195.200.16.192
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 286 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 919 '
   type: trojan
 - name: 🔒 By EbraSha_445
   password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 192.161.163.105
+  port: 8443
+  server: 195.58.39.154
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 380 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 271 '
   type: trojan
 - name: 🔒 By EbraSha_446
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 193.233.87.197
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 89 '
-  type: trojan
-- name: 🔒 By EbraSha_447
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
   server: 2.59.183.198
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 703 '
   type: trojan
-- name: 🔒 By EbraSha_448
+- name: 🔒 By EbraSha_447
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 2.59.183.210
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_449
+- name: 🔒 By EbraSha_448
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 33848
   server: 210.178.173.195
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 101 '
   type: trojan
-- name: 🔒 By EbraSha_450
+- name: 🔒 By EbraSha_449
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 18080
   server: 211.114.209.83
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 654 '
+  type: trojan
+- name: 🔒 By EbraSha_450
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2053
+  server: 213.32.20.252
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 638 '
   type: trojan
 - name: 🔒 By EbraSha_451
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 212.192.15.182
+  server: 216.128.134.116
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 199 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 192 '
   type: trojan
 - name: 🔒 By EbraSha_452
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 213.170.157.1
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 635 '
-  type: trojan
-- name: 🔒 By EbraSha_453
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 216.144.231.47
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 832 '
-  type: trojan
-- name: 🔒 By EbraSha_454
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 216.23.84.220
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 541 '
-  type: trojan
-- name: 🔒 By EbraSha_455
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 217.60.248.59
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 794 '
-  type: trojan
-- name: 🔒 By EbraSha_456
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 217.60.38.182
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 226 '
-  type: trojan
-- name: 🔒 By EbraSha_457
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 219.76.13.166
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 369 '
-  type: trojan
-- name: 🔒 By EbraSha_458
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 18001
   server: 220.118.248.123
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
+- name: 🔒 By EbraSha_453
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2053
+  server: 23.173.104.212
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 454 '
+  type: trojan
+- name: 🔒 By EbraSha_454
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 23.175.201.2
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 417 '
+  type: trojan
+- name: 🔒 By EbraSha_455
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 27.50.49.253
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 96 '
+  type: trojan
+- name: 🔒 By EbraSha_456
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2053
+  server: 31.15.17.129
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 490 '
+  type: trojan
+- name: 🔒 By EbraSha_457
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 31.15.18.58
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] '
+  type: trojan
+- name: 🔒 By EbraSha_458
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2083
+  server: 31.172.79.138
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 656 '
+  type: trojan
 - name: 🔒 By EbraSha_459
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
-  server: 23.254.228.221
+  server: 31.57.108.242
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 449 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 812 '
   type: trojan
 - name: 🔒 By EbraSha_460
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 31.59.114.3
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 16 '
   type: trojan
 - name: 🔒 By EbraSha_461
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
-  server: 37.46.19.79
+  server: 38.107.232.53
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 102 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 803 '
   type: trojan
 - name: 🔒 By EbraSha_462
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
   server: 38.180.143.51
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 621 '
   type: trojan
 - name: 🔒 By EbraSha_463
   password: 8r%3C%5B9%27l6hAO%238ZQi
@@ -3252,35 +3252,35 @@ proxies:
   port: 2053
   server: 38.180.194.222
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 691 '
   type: trojan
 - name: 🔒 By EbraSha_465
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 38.180.205.71
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 536 '
   type: trojan
 - name: 🔒 By EbraSha_466
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 38.180.233.61
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 797 '
   type: trojan
 - name: 🔒 By EbraSha_467
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 38.180.35.88
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 257 '
   type: trojan
 - name: 🔒 By EbraSha_468
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 38.180.70.111
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 462 '
   type: trojan
 - name: 🔒 By EbraSha_469
   password: 8r%3C%5B9%27l6hAO%238ZQi
@@ -3294,208 +3294,208 @@ proxies:
   port: 443
   server: 38.180.96.40
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 302 '
   type: trojan
 - name: 🔒 By EbraSha_471
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 16396
   server: 38.207.160.213
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 909 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 696 '
   type: trojan
 - name: 🔒 By EbraSha_472
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 16301
+  server: 38.207.172.108
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 375 '
+  type: trojan
+- name: 🔒 By EbraSha_473
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 43.154.4.49
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 613 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 676 '
   type: trojan
-- name: 🔒 By EbraSha_473
+- name: 🔒 By EbraSha_474
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 43.207.197.79
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_474
+- name: 🔒 By EbraSha_475
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 43.249.33.117
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 261 '
   type: trojan
-- name: 🔒 By EbraSha_475
+- name: 🔒 By EbraSha_476
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 44004
+  server: 45.11.1.118
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 439 '
+  type: trojan
+- name: 🔒 By EbraSha_477
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 45.145.171.206
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 639 '
   type: trojan
-- name: 🔒 By EbraSha_476
+- name: 🔒 By EbraSha_478
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
   server: 45.150.128.181
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 438 '
   type: trojan
-- name: 🔒 By EbraSha_477
+- name: 🔒 By EbraSha_479
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 45.153.187.209
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 702 '
   type: trojan
-- name: 🔒 By EbraSha_478
+- name: 🔒 By EbraSha_480
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 45.40.147.253
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 258 '
+  type: trojan
+- name: 🔒 By EbraSha_481
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
   server: 45.67.34.89
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_479
+- name: 🔒 By EbraSha_482
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
   server: 45.91.134.91
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_480
+- name: 🔒 By EbraSha_483
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 2053
   server: 46.102.156.144
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
-  type: trojan
-- name: 🔒 By EbraSha_481
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 5.189.254.235
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
-  type: trojan
-- name: 🔒 By EbraSha_482
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 5.34.176.240
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 424 '
-  type: trojan
-- name: 🔒 By EbraSha_483
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 50.62.194.253
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 718 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 514 '
   type: trojan
 - name: 🔒 By EbraSha_484
   password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 32773
-  server: 59.0.95.106
+  port: 8443
+  server: 46.29.234.91
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
 - name: 🔒 By EbraSha_485
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 47.236.119.109
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 968 '
+  type: trojan
+- name: 🔒 By EbraSha_486
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 47.76.218.163
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 610 '
+  type: trojan
+- name: 🔒 By EbraSha_487
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 5.189.254.235
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 827 '
+  type: trojan
+- name: 🔒 By EbraSha_488
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 32773
+  server: 59.0.95.106
+  skipCertVerify: true
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 140 '
+  type: trojan
+- name: 🔒 By EbraSha_489
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 18852
   server: 59.10.72.49
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan
-- name: 🔒 By EbraSha_486
+- name: 🔒 By EbraSha_490
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 28017
   server: 59.11.232.216
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 356 '
   type: trojan
-- name: 🔒 By EbraSha_487
+- name: 🔒 By EbraSha_491
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 12345
   server: 59.12.232.18
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 42 '
   type: trojan
-- name: 🔒 By EbraSha_488
+- name: 🔒 By EbraSha_492
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 18469
   server: 59.16.228.103
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 209 '
   type: trojan
-- name: 🔒 By EbraSha_489
+- name: 🔒 By EbraSha_493
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 32768
   server: 61.72.208.162
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
-  type: trojan
-- name: 🔒 By EbraSha_490
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 64.112.127.151
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
-  type: trojan
-- name: 🔒 By EbraSha_491
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 66.42.61.215
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
-  type: trojan
-- name: 🔒 By EbraSha_492
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 68.64.178.42
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 700 '
-  type: trojan
-- name: 🔒 By EbraSha_493
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 72.56.108.132
-  skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 263 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 601 '
   type: trojan
 - name: 🔒 By EbraSha_494
   password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 77.110.103.243
+  port: 2053
+  server: 62.171.170.182
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 101 '
   type: trojan
 - name: 🔒 By EbraSha_495
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 77.110.121.125
+  server: 64.112.127.151
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 693 '
   type: trojan
 - name: 🔒 By EbraSha_496
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 77.110.127.237
+  server: 66.42.61.215
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 804 '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 969 '
   type: trojan
 - name: 🔒 By EbraSha_497
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 77.37.96.132
+  server: 68.64.178.42
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 533 '
   type: trojan
 - name: 🔒 By EbraSha_498
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 443
-  server: 77.37.96.247
+  server: 72.56.69.244
   skipCertVerify: true
-  sni: '🔒 [By EbraSha] '
+  sni: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 681 '
   type: trojan
 - name: 🔒 By EbraSha_499
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
-  server: 79.141.73.189
+  server: 77.110.103.243
   skipCertVerify: true
   sni: '🔒 [By EbraSha] '
   type: trojan

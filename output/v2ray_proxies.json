@@ -968,9 +968,9 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.76.21",
+            "address": "ubu.okaoclax.me",
             "port": 443,
-            "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0"
+            "password": "13c169be-8592-4eaa-94cb-69c859e7d987"
           }
         ]
       }
@@ -981,7 +981,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.94.69",
+            "address": "104.21.76.21",
             "port": 443,
             "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0"
           }
@@ -994,7 +994,7 @@
       "settings": {
         "servers": [
           {
-            "address": "172.67.185.107",
+            "address": "104.21.94.69",
             "port": 443,
             "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0"
           }
@@ -1007,7 +1007,7 @@
       "settings": {
         "servers": [
           {
-            "address": "172.67.220.140",
+            "address": "172.67.185.107",
             "port": 443,
             "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0"
           }
@@ -1020,6 +1020,19 @@
       "settings": {
         "servers": [
           {
+            "address": "172.67.220.140",
+            "port": 443,
+            "password": "13e26f64-2e0c-4461-92cd-d83294cc18f0"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_79_81",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "172.67.188.77",
             "port": 443,
             "password": "15153c1d-fc81-4b2a-9689-7b4e4a72dce5"
@@ -1028,7 +1041,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_79_81",
+      "tag": "🔒 By EbraSha_80_82",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1041,7 +1054,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_80_82",
+      "tag": "🔒 By EbraSha_81_83",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1054,7 +1067,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_81_83",
+      "tag": "🔒 By EbraSha_82_84",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1067,7 +1080,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_82_84",
+      "tag": "🔒 By EbraSha_83_85",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1080,7 +1093,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_83_85",
+      "tag": "🔒 By EbraSha_84_86",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1093,7 +1106,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_84_86",
+      "tag": "🔒 By EbraSha_85_87",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1106,7 +1119,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_85_87",
+      "tag": "🔒 By EbraSha_86_88",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1119,7 +1132,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_86_88",
+      "tag": "🔒 By EbraSha_87_89",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1132,7 +1145,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_87_89",
+      "tag": "🔒 By EbraSha_88_90",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1145,7 +1158,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_88_90",
+      "tag": "🔒 By EbraSha_89_91",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1158,7 +1171,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_89_91",
+      "tag": "🔒 By EbraSha_90_92",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1171,7 +1184,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_90_92",
+      "tag": "🔒 By EbraSha_91_93",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1184,7 +1197,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_91_93",
+      "tag": "🔒 By EbraSha_92_94",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1197,7 +1210,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_92_94",
+      "tag": "🔒 By EbraSha_93_95",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1210,7 +1223,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_93_95",
+      "tag": "🔒 By EbraSha_94_96",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1223,7 +1236,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_94_96",
+      "tag": "🔒 By EbraSha_95_97",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1236,7 +1249,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_95_97",
+      "tag": "🔒 By EbraSha_96_98",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1249,7 +1262,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_96_98",
+      "tag": "🔒 By EbraSha_97_99",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1262,7 +1275,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_97_99",
+      "tag": "🔒 By EbraSha_98_100",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1275,7 +1288,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_98_100",
+      "tag": "🔒 By EbraSha_99_101",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1288,7 +1301,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_99_101",
+      "tag": "🔒 By EbraSha_100_102",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1301,7 +1314,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_100_102",
+      "tag": "🔒 By EbraSha_101_103",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1314,7 +1327,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_101_103",
+      "tag": "🔒 By EbraSha_102_104",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1327,7 +1340,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_102_104",
+      "tag": "🔒 By EbraSha_103_105",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1340,7 +1353,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_103_105",
+      "tag": "🔒 By EbraSha_104_106",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1353,7 +1366,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_104_106",
+      "tag": "🔒 By EbraSha_105_107",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1366,7 +1379,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_105_107",
+      "tag": "🔒 By EbraSha_106_108",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1379,7 +1392,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_106_108",
+      "tag": "🔒 By EbraSha_107_109",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1392,7 +1405,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_107_109",
+      "tag": "🔒 By EbraSha_108_110",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1405,7 +1418,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_108_110",
+      "tag": "🔒 By EbraSha_109_111",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1418,7 +1431,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_109_111",
+      "tag": "🔒 By EbraSha_110_112",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1431,7 +1444,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_110_112",
+      "tag": "🔒 By EbraSha_111_113",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1444,7 +1457,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_111_113",
+      "tag": "🔒 By EbraSha_112_114",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -1457,25 +1470,12 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_112_114",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "62.210.188.19",
-            "port": 443,
-            "password": "27181131b8"
-          }
-        ]
-      }
-    },
-    {
       "tag": "🔒 By EbraSha_113_115",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "fra1.connecton.surf",
+            "address": "62.210.188.19",
             "port": 443,
             "password": "27181131b8"
           }
@@ -1995,7 +1995,7 @@
       "settings": {
         "servers": [
           {
-            "address": "bgptru1.cnamazon.sbs",
+            "address": "bgptw5.cnamazon.sbs",
             "port": 443,
             "password": "3e7ad819-03dd-46e1-8292-116fd2cea1c2"
           }
@@ -2008,19 +2008,6 @@
       "settings": {
         "servers": [
           {
-            "address": "bgptw5.cnamazon.sbs",
-            "port": 443,
-            "password": "3e7ad819-03dd-46e1-8292-116fd2cea1c2"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_155_157",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "23.227.38.45",
             "port": 443,
             "password": "3f23c1eb-ace4-49ec-a7f0-f591b006b95a"
@@ -2029,7 +2016,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_156_158",
+      "tag": "🔒 By EbraSha_155_157",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2042,7 +2029,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_157_159",
+      "tag": "🔒 By EbraSha_156_158",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2055,7 +2042,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_158_160",
+      "tag": "🔒 By EbraSha_157_159",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2068,7 +2055,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_159_161",
+      "tag": "🔒 By EbraSha_158_160",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2081,7 +2068,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_160_162",
+      "tag": "🔒 By EbraSha_159_161",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2094,7 +2081,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_161_163",
+      "tag": "🔒 By EbraSha_160_162",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2107,20 +2094,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_162_164",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "east.eeeeeef998.buzz",
-            "port": 15002,
-            "password": "414dff55-922a-4dc8-b5d3-b6517942b25a"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_163_165",
+      "tag": "🔒 By EbraSha_161_163",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2133,7 +2107,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_164_166",
+      "tag": "🔒 By EbraSha_162_164",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2146,7 +2120,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_165_167",
+      "tag": "🔒 By EbraSha_163_165",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2159,7 +2133,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_166_168",
+      "tag": "🔒 By EbraSha_164_166",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2172,7 +2146,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_167_169",
+      "tag": "🔒 By EbraSha_165_167",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2185,7 +2159,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_168_170",
+      "tag": "🔒 By EbraSha_166_168",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2198,7 +2172,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_169_171",
+      "tag": "🔒 By EbraSha_167_169",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2211,7 +2185,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_170_172",
+      "tag": "🔒 By EbraSha_168_170",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2224,7 +2198,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_171_173",
+      "tag": "🔒 By EbraSha_169_171",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2237,7 +2211,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_172_174",
+      "tag": "🔒 By EbraSha_170_172",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2250,7 +2224,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_173_175",
+      "tag": "🔒 By EbraSha_171_173",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2263,7 +2237,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_174_176",
+      "tag": "🔒 By EbraSha_172_174",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2276,7 +2250,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_175_177",
+      "tag": "🔒 By EbraSha_173_175",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2289,20 +2263,20 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_176_178",
+      "tag": "🔒 By EbraSha_174_176",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "trus.moonfree.top",
+            "address": "cf.dalazhi.eu.org",
             "port": 443,
-            "password": "4863e1b2-ec2f-4c71-b862-ce533028e57e"
+            "password": "4807b8ab-d74a-445e-9556-45a7ace4f6d6"
           }
         ]
       }
     },
     {
-      "tag": "🔒 By EbraSha_177_179",
+      "tag": "🔒 By EbraSha_175_177",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2315,7 +2289,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_178_180",
+      "tag": "🔒 By EbraSha_176_178",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2328,7 +2302,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_179_181",
+      "tag": "🔒 By EbraSha_177_179",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2341,7 +2315,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_180_182",
+      "tag": "🔒 By EbraSha_178_180",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2354,7 +2328,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_181_183",
+      "tag": "🔒 By EbraSha_179_181",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2367,7 +2341,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_182_184",
+      "tag": "🔒 By EbraSha_180_182",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2380,7 +2354,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_183_185",
+      "tag": "🔒 By EbraSha_181_183",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2393,7 +2367,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_184_186",
+      "tag": "🔒 By EbraSha_182_184",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2406,7 +2380,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_185_187",
+      "tag": "🔒 By EbraSha_183_185",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2419,7 +2393,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_186_188",
+      "tag": "🔒 By EbraSha_184_186",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2432,7 +2406,20 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_187_189",
+      "tag": "🔒 By EbraSha_185_187",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "nhju.ae1autumn.indevs.in",
+            "port": 443,
+            "password": "4c205c81-5694-43fe-a287-af563a2ebc05"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_186_188",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2445,7 +2432,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_188_190",
+      "tag": "🔒 By EbraSha_187_189",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2458,7 +2445,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_189_191",
+      "tag": "🔒 By EbraSha_188_190",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2471,7 +2458,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_190_192",
+      "tag": "🔒 By EbraSha_189_191",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2484,7 +2471,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_191_193",
+      "tag": "🔒 By EbraSha_190_192",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2497,7 +2484,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_192_194",
+      "tag": "🔒 By EbraSha_191_193",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2510,7 +2497,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_193_195",
+      "tag": "🔒 By EbraSha_192_194",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2523,7 +2510,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_194_196",
+      "tag": "🔒 By EbraSha_193_195",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2536,7 +2523,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_195_197",
+      "tag": "🔒 By EbraSha_194_196",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2549,7 +2536,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_196_198",
+      "tag": "🔒 By EbraSha_195_197",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2562,7 +2549,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_197_199",
+      "tag": "🔒 By EbraSha_196_198",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2575,7 +2562,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_198_200",
+      "tag": "🔒 By EbraSha_197_199",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2588,7 +2575,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_199_201",
+      "tag": "🔒 By EbraSha_198_200",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2601,7 +2588,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_200_202",
+      "tag": "🔒 By EbraSha_199_201",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2614,7 +2601,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_201_203",
+      "tag": "🔒 By EbraSha_200_202",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2627,7 +2614,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_202_204",
+      "tag": "🔒 By EbraSha_201_203",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2640,7 +2627,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_203_205",
+      "tag": "🔒 By EbraSha_202_204",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2653,7 +2640,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_204_206",
+      "tag": "🔒 By EbraSha_203_205",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2666,7 +2653,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_205_207",
+      "tag": "🔒 By EbraSha_204_206",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2679,7 +2666,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_206_208",
+      "tag": "🔒 By EbraSha_205_207",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2692,7 +2679,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_207_209",
+      "tag": "🔒 By EbraSha_206_208",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2705,7 +2692,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_208_210",
+      "tag": "🔒 By EbraSha_207_209",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2718,7 +2705,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_209_211",
+      "tag": "🔒 By EbraSha_208_210",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2731,7 +2718,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_210_212",
+      "tag": "🔒 By EbraSha_209_211",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2744,7 +2731,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_211_213",
+      "tag": "🔒 By EbraSha_210_212",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2757,7 +2744,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_212_214",
+      "tag": "🔒 By EbraSha_211_213",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2770,7 +2757,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_213_215",
+      "tag": "🔒 By EbraSha_212_214",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2783,7 +2770,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_214_216",
+      "tag": "🔒 By EbraSha_213_215",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2796,7 +2783,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_215_217",
+      "tag": "🔒 By EbraSha_214_216",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2809,7 +2796,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_216_218",
+      "tag": "🔒 By EbraSha_215_217",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2822,7 +2809,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_217_219",
+      "tag": "🔒 By EbraSha_216_218",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2835,7 +2822,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_218_220",
+      "tag": "🔒 By EbraSha_217_219",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2848,7 +2835,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_219_221",
+      "tag": "🔒 By EbraSha_218_220",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2861,7 +2848,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_220_222",
+      "tag": "🔒 By EbraSha_219_221",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2874,7 +2861,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_221_223",
+      "tag": "🔒 By EbraSha_220_222",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2887,7 +2874,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_222_224",
+      "tag": "🔒 By EbraSha_221_223",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2900,7 +2887,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_223_225",
+      "tag": "🔒 By EbraSha_222_224",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2913,7 +2900,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_224_226",
+      "tag": "🔒 By EbraSha_223_225",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2926,7 +2913,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_225_227",
+      "tag": "🔒 By EbraSha_224_226",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2939,7 +2926,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_226_228",
+      "tag": "🔒 By EbraSha_225_227",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2952,7 +2939,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_227_229",
+      "tag": "🔒 By EbraSha_226_228",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2965,7 +2952,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_228_230",
+      "tag": "🔒 By EbraSha_227_229",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2978,7 +2965,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_229_231",
+      "tag": "🔒 By EbraSha_228_230",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -2991,7 +2978,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_230_232",
+      "tag": "🔒 By EbraSha_229_231",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3004,7 +2991,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_231_233",
+      "tag": "🔒 By EbraSha_230_232",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3017,7 +3004,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_232_234",
+      "tag": "🔒 By EbraSha_231_233",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3030,7 +3017,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_233_235",
+      "tag": "🔒 By EbraSha_232_234",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3043,7 +3030,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_234_236",
+      "tag": "🔒 By EbraSha_233_235",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3056,7 +3043,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_235_237",
+      "tag": "🔒 By EbraSha_234_236",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3069,7 +3056,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_236_238",
+      "tag": "🔒 By EbraSha_235_237",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3082,7 +3069,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_237_239",
+      "tag": "🔒 By EbraSha_236_238",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3095,7 +3082,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_238_240",
+      "tag": "🔒 By EbraSha_237_239",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3108,7 +3095,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_239_241",
+      "tag": "🔒 By EbraSha_238_240",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3121,7 +3108,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_240_242",
+      "tag": "🔒 By EbraSha_239_241",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3134,7 +3121,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_241_243",
+      "tag": "🔒 By EbraSha_240_242",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3147,7 +3134,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_242_244",
+      "tag": "🔒 By EbraSha_241_243",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3160,7 +3147,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_243_245",
+      "tag": "🔒 By EbraSha_242_244",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3173,7 +3160,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_244_246",
+      "tag": "🔒 By EbraSha_243_245",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3186,7 +3173,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_245_247",
+      "tag": "🔒 By EbraSha_244_246",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3199,7 +3186,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_246_248",
+      "tag": "🔒 By EbraSha_245_247",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3212,7 +3199,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_247_249",
+      "tag": "🔒 By EbraSha_246_248",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3225,7 +3212,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_248_250",
+      "tag": "🔒 By EbraSha_247_249",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3238,7 +3225,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_249_251",
+      "tag": "🔒 By EbraSha_248_250",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -3246,6 +3233,19 @@
             "address": "cc44a92e67c3a06550903ab1a79cd258.v1.cac.node-is.green",
             "port": 42728,
             "password": "61130614-528c-4b45-ac9b-e7987cff4952"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_249_251",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "jp-h1.sshub.xyz",
+            "port": 443,
+            "password": "61605c66-6d41-4b9d-a496-b9898f3f95d0"
           }
         ]
       }
@@ -4322,58 +4322,6 @@
       "settings": {
         "servers": [
           {
-            "address": "777.cloudflare.182682.xyz",
-            "port": 443,
-            "password": "7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_333_335",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "888.cloudflare.182682.xyz",
-            "port": 443,
-            "password": "7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_334_336",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "hkeofhwo3.cloudflare.182682.xyz",
-            "port": 443,
-            "password": "7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_335_337",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "sg083yt.cloudflare.182682.xyz",
-            "port": 443,
-            "password": "7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_336_338",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "20.210.234.145",
             "port": 443,
             "password": "7d0f1f83-0f2f-4b90-930e-de44ac233fef"
@@ -4382,7 +4330,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_337_339",
+      "tag": "🔒 By EbraSha_333_335",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4395,7 +4343,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_338_340",
+      "tag": "🔒 By EbraSha_334_336",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4408,7 +4356,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_339_341",
+      "tag": "🔒 By EbraSha_335_337",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4421,7 +4369,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_340_342",
+      "tag": "🔒 By EbraSha_336_338",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4434,7 +4382,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_341_343",
+      "tag": "🔒 By EbraSha_337_339",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4447,7 +4395,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_342_344",
+      "tag": "🔒 By EbraSha_338_340",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4460,7 +4408,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_343_345",
+      "tag": "🔒 By EbraSha_339_341",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4473,7 +4421,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_344_346",
+      "tag": "🔒 By EbraSha_340_342",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4486,7 +4434,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_345_347",
+      "tag": "🔒 By EbraSha_341_343",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4499,7 +4447,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_346_348",
+      "tag": "🔒 By EbraSha_342_344",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4512,7 +4460,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_347_349",
+      "tag": "🔒 By EbraSha_343_345",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4525,7 +4473,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_348_350",
+      "tag": "🔒 By EbraSha_344_346",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4538,7 +4486,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_349_351",
+      "tag": "🔒 By EbraSha_345_347",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4551,7 +4499,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_350_352",
+      "tag": "🔒 By EbraSha_346_348",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4564,7 +4512,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_351_353",
+      "tag": "🔒 By EbraSha_347_349",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4577,7 +4525,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_352_354",
+      "tag": "🔒 By EbraSha_348_350",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4590,7 +4538,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_353_355",
+      "tag": "🔒 By EbraSha_349_351",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4603,7 +4551,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_354_356",
+      "tag": "🔒 By EbraSha_350_352",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4616,7 +4564,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_355_357",
+      "tag": "🔒 By EbraSha_351_353",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4629,7 +4577,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_356_358",
+      "tag": "🔒 By EbraSha_352_354",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4642,7 +4590,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_357_359",
+      "tag": "🔒 By EbraSha_353_355",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4655,7 +4603,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_358_360",
+      "tag": "🔒 By EbraSha_354_356",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4668,7 +4616,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_359_361",
+      "tag": "🔒 By EbraSha_355_357",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4681,7 +4629,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_360_362",
+      "tag": "🔒 By EbraSha_356_358",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4694,7 +4642,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_361_363",
+      "tag": "🔒 By EbraSha_357_359",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4707,7 +4655,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_362_364",
+      "tag": "🔒 By EbraSha_358_360",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4720,7 +4668,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_363_365",
+      "tag": "🔒 By EbraSha_359_361",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4733,7 +4681,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_364_366",
+      "tag": "🔒 By EbraSha_360_362",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4746,7 +4694,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_365_367",
+      "tag": "🔒 By EbraSha_361_363",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4759,7 +4707,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_366_368",
+      "tag": "🔒 By EbraSha_362_364",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4772,7 +4720,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_367_369",
+      "tag": "🔒 By EbraSha_363_365",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4785,7 +4733,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_368_370",
+      "tag": "🔒 By EbraSha_364_366",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4798,7 +4746,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_369_371",
+      "tag": "🔒 By EbraSha_365_367",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4811,7 +4759,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_370_372",
+      "tag": "🔒 By EbraSha_366_368",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4824,7 +4772,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_371_373",
+      "tag": "🔒 By EbraSha_367_369",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4837,7 +4785,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_372_374",
+      "tag": "🔒 By EbraSha_368_370",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4850,7 +4798,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_373_375",
+      "tag": "🔒 By EbraSha_369_371",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4863,7 +4811,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_374_376",
+      "tag": "🔒 By EbraSha_370_372",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4876,7 +4824,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_375_377",
+      "tag": "🔒 By EbraSha_371_373",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4889,7 +4837,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_376_378",
+      "tag": "🔒 By EbraSha_372_374",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4902,7 +4850,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_377_379",
+      "tag": "🔒 By EbraSha_373_375",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4915,7 +4863,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_378_380",
+      "tag": "🔒 By EbraSha_374_376",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4928,7 +4876,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_379_381",
+      "tag": "🔒 By EbraSha_375_377",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4941,7 +4889,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_380_382",
+      "tag": "🔒 By EbraSha_376_378",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4954,7 +4902,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_381_383",
+      "tag": "🔒 By EbraSha_377_379",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4967,7 +4915,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_382_384",
+      "tag": "🔒 By EbraSha_378_380",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4980,7 +4928,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_383_385",
+      "tag": "🔒 By EbraSha_379_381",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -4993,7 +4941,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_384_386",
+      "tag": "🔒 By EbraSha_380_382",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5006,7 +4954,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_385_387",
+      "tag": "🔒 By EbraSha_381_383",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5019,7 +4967,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_386_388",
+      "tag": "🔒 By EbraSha_382_384",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5032,7 +4980,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_387_389",
+      "tag": "🔒 By EbraSha_383_385",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5045,7 +4993,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_388_390",
+      "tag": "🔒 By EbraSha_384_386",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5058,7 +5006,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_389_391",
+      "tag": "🔒 By EbraSha_385_387",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5071,7 +5019,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_390_392",
+      "tag": "🔒 By EbraSha_386_388",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5084,7 +5032,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_391_393",
+      "tag": "🔒 By EbraSha_387_389",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5097,20 +5045,33 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_392_394",
+      "tag": "🔒 By EbraSha_388_390",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "103.133.1.253",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+            "address": "140.83.34.214",
+            "port": 8443,
+            "password": "8r%253C%255B9%2527l6hAO%25238ZQi"
           }
         ]
       }
     },
     {
-      "tag": "🔒 By EbraSha_393_395",
+      "tag": "🔒 By EbraSha_389_391",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "72.167.230.253",
+            "port": 443,
+            "password": "8r%253C%255B9%2527l6hAO%25238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_390_392",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5123,20 +5084,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_394_396",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "103.75.118.144",
-            "port": 2053,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_395_397",
+      "tag": "🔒 By EbraSha_391_393",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5149,12 +5097,12 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_396_398",
+      "tag": "🔒 By EbraSha_392_394",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "109.61.110.241",
+            "address": "107.172.190.151",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5162,7 +5110,20 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_397_399",
+      "tag": "🔒 By EbraSha_393_395",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "108.162.194.253",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_394_396",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5175,7 +5136,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_398_400",
+      "tag": "🔒 By EbraSha_395_397",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5188,7 +5149,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_399_401",
+      "tag": "🔒 By EbraSha_396_398",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5201,7 +5162,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_400_402",
+      "tag": "🔒 By EbraSha_397_399",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5214,7 +5175,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_401_403",
+      "tag": "🔒 By EbraSha_398_400",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5227,7 +5188,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_402_404",
+      "tag": "🔒 By EbraSha_399_401",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5240,7 +5201,20 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_403_405",
+      "tag": "🔒 By EbraSha_400_402",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "129.226.163.56",
+            "port": 8388,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_401_403",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5253,20 +5227,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_404_406",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "138.2.23.80",
-            "port": 21044,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_405_407",
+      "tag": "🔒 By EbraSha_402_404",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5279,12 +5240,51 @@
       }
     },
     {
+      "tag": "🔒 By EbraSha_403_405",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "140.83.50.165",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_404_406",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "142.252.220.13",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_405_407",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "144.31.122.101",
+            "port": 2053,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
       "tag": "🔒 By EbraSha_406_408",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "140.235.37.69",
+            "address": "144.31.122.101",
             "port": 8443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5297,8 +5297,8 @@
       "settings": {
         "servers": [
           {
-            "address": "142.171.50.6",
-            "port": 2083,
+            "address": "144.31.122.162",
+            "port": 8443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
         ]
@@ -5310,7 +5310,7 @@
       "settings": {
         "servers": [
           {
-            "address": "143.20.204.5",
+            "address": "144.31.184.200",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5323,58 +5323,6 @@
       "settings": {
         "servers": [
           {
-            "address": "143.47.96.200",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_410_412",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "144.31.122.101",
-            "port": 2053,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_411_413",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "144.31.122.101",
-            "port": 8443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_412_414",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "144.31.122.162",
-            "port": 8443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_413_415",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "146.19.84.236",
             "port": 2053,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
@@ -5383,7 +5331,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_414_416",
+      "tag": "🔒 By EbraSha_410_412",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5396,12 +5344,12 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_415_417",
+      "tag": "🔒 By EbraSha_411_413",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "149.28.142.169",
+            "address": "148.135.100.229",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5409,7 +5357,20 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_416_418",
+      "tag": "🔒 By EbraSha_412_414",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "150.241.76.155",
+            "port": 2053,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_413_415",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5422,7 +5383,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_417_419",
+      "tag": "🔒 By EbraSha_414_416",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5435,7 +5396,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_418_420",
+      "tag": "🔒 By EbraSha_415_417",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5448,7 +5409,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_419_421",
+      "tag": "🔒 By EbraSha_416_418",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5461,12 +5422,12 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_420_422",
+      "tag": "🔒 By EbraSha_417_419",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "154.197.88.253",
+            "address": "154.197.108.253",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5474,12 +5435,12 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_421_423",
+      "tag": "🔒 By EbraSha_418_420",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "154.92.9.253",
+            "address": "156.225.72.253",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5487,7 +5448,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_422_424",
+      "tag": "🔒 By EbraSha_419_421",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5500,12 +5461,12 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_423_425",
+      "tag": "🔒 By EbraSha_420_422",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "160.251.209.140",
+            "address": "160.153.0.253",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5513,12 +5474,12 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_424_426",
+      "tag": "🔒 By EbraSha_421_423",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "161.248.254.27",
+            "address": "163.192.47.40",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5526,20 +5487,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_425_427",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "166.62.105.253",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_426_428",
+      "tag": "🔒 By EbraSha_422_424",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5552,7 +5500,20 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_427_429",
+      "tag": "🔒 By EbraSha_423_425",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "172.64.149.54",
+            "port": 2096,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_424_426",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5565,7 +5526,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_428_430",
+      "tag": "🔒 By EbraSha_425_427",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5578,7 +5539,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_429_431",
+      "tag": "🔒 By EbraSha_426_428",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5591,7 +5552,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_430_432",
+      "tag": "🔒 By EbraSha_427_429",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5604,7 +5565,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_431_433",
+      "tag": "🔒 By EbraSha_428_430",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5617,7 +5578,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_432_434",
+      "tag": "🔒 By EbraSha_429_431",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5630,7 +5591,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_433_435",
+      "tag": "🔒 By EbraSha_430_432",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5643,7 +5604,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_434_436",
+      "tag": "🔒 By EbraSha_431_433",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5656,7 +5617,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_435_437",
+      "tag": "🔒 By EbraSha_432_434",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5669,33 +5630,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_436_438",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "185.106.95.125",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_437_439",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "185.151.146.73",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_438_440",
+      "tag": "🔒 By EbraSha_433_435",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5708,7 +5643,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_439_441",
+      "tag": "🔒 By EbraSha_434_436",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5721,7 +5656,20 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_440_442",
+      "tag": "🔒 By EbraSha_435_437",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.31.200.184",
+            "port": 2053,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_436_438",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5734,7 +5682,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_441_443",
+      "tag": "🔒 By EbraSha_437_439",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5747,13 +5695,65 @@
       }
     },
     {
+      "tag": "🔒 By EbraSha_438_440",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.94.166.60",
+            "port": 8443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_439_441",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.18.136.255",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_440_442",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.200.160.253",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_441_443",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.9.162.124",
+            "port": 8443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
       "tag": "🔒 By EbraSha_442_444",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "192.131.142.161",
-            "port": 46639,
+            "address": "195.200.16.192",
+            "port": 2053,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
         ]
@@ -5765,8 +5765,8 @@
       "settings": {
         "servers": [
           {
-            "address": "192.161.163.105",
-            "port": 443,
+            "address": "195.58.39.154",
+            "port": 8443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
         ]
@@ -5774,19 +5774,6 @@
     },
     {
       "tag": "🔒 By EbraSha_444_446",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "193.233.87.197",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_445_447",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5799,7 +5786,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_446_448",
+      "tag": "🔒 By EbraSha_445_447",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5812,7 +5799,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_447_449",
+      "tag": "🔒 By EbraSha_446_448",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5825,7 +5812,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_448_450",
+      "tag": "🔒 By EbraSha_447_449",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -5838,12 +5825,25 @@
       }
     },
     {
+      "tag": "🔒 By EbraSha_448_450",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "213.32.20.252",
+            "port": 2053,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
       "tag": "🔒 By EbraSha_449_451",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "212.192.15.182",
+            "address": "216.128.134.116",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5856,8 +5856,8 @@
       "settings": {
         "servers": [
           {
-            "address": "213.170.157.1",
-            "port": 443,
+            "address": "220.118.248.123",
+            "port": 18001,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
         ]
@@ -5869,8 +5869,8 @@
       "settings": {
         "servers": [
           {
-            "address": "216.144.231.47",
-            "port": 443,
+            "address": "23.173.104.212",
+            "port": 2053,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
         ]
@@ -5882,7 +5882,7 @@
       "settings": {
         "servers": [
           {
-            "address": "216.23.84.220",
+            "address": "23.175.201.2",
             "port": 8443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5895,7 +5895,7 @@
       "settings": {
         "servers": [
           {
-            "address": "217.60.248.59",
+            "address": "27.50.49.253",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5908,8 +5908,8 @@
       "settings": {
         "servers": [
           {
-            "address": "217.60.38.182",
-            "port": 8443,
+            "address": "31.15.17.129",
+            "port": 2053,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
         ]
@@ -5921,8 +5921,8 @@
       "settings": {
         "servers": [
           {
-            "address": "219.76.13.166",
-            "port": 443,
+            "address": "31.15.18.58",
+            "port": 8443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
         ]
@@ -5934,8 +5934,8 @@
       "settings": {
         "servers": [
           {
-            "address": "220.118.248.123",
-            "port": 18001,
+            "address": "31.172.79.138",
+            "port": 2083,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
         ]
@@ -5947,7 +5947,7 @@
       "settings": {
         "servers": [
           {
-            "address": "23.254.228.221",
+            "address": "31.57.108.242",
             "port": 8443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -5973,7 +5973,7 @@
       "settings": {
         "servers": [
           {
-            "address": "37.46.19.79",
+            "address": "38.107.232.53",
             "port": 8443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -6116,8 +6116,8 @@
       "settings": {
         "servers": [
           {
-            "address": "43.154.4.49",
-            "port": 443,
+            "address": "38.207.172.108",
+            "port": 16301,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
         ]
@@ -6129,7 +6129,7 @@
       "settings": {
         "servers": [
           {
-            "address": "43.207.197.79",
+            "address": "43.154.4.49",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -6142,7 +6142,7 @@
       "settings": {
         "servers": [
           {
-            "address": "43.249.33.117",
+            "address": "43.207.197.79",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -6155,7 +6155,7 @@
       "settings": {
         "servers": [
           {
-            "address": "45.145.171.206",
+            "address": "43.249.33.117",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -6168,6 +6168,32 @@
       "settings": {
         "servers": [
           {
+            "address": "45.11.1.118",
+            "port": 44004,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_475_477",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.145.171.206",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_476_478",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "45.150.128.181",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
@@ -6176,7 +6202,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_475_477",
+      "tag": "🔒 By EbraSha_477_479",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6189,7 +6215,20 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_476_478",
+      "tag": "🔒 By EbraSha_478_480",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "45.40.147.253",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_479_481",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6202,7 +6241,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_477_479",
+      "tag": "🔒 By EbraSha_480_482",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6215,7 +6254,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_478_480",
+      "tag": "🔒 By EbraSha_481_483",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6228,7 +6267,46 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_479_481",
+      "tag": "🔒 By EbraSha_482_484",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "46.29.234.91",
+            "port": 8443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_483_485",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "47.236.119.109",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_484_486",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "47.76.218.163",
+            "port": 443,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_485_487",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6241,33 +6319,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_480_482",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "5.34.176.240",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_481_483",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "50.62.194.253",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_482_484",
+      "tag": "🔒 By EbraSha_486_488",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6280,7 +6332,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_483_485",
+      "tag": "🔒 By EbraSha_487_489",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6293,7 +6345,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_484_486",
+      "tag": "🔒 By EbraSha_488_490",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6306,7 +6358,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_485_487",
+      "tag": "🔒 By EbraSha_489_491",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6319,7 +6371,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_486_488",
+      "tag": "🔒 By EbraSha_490_492",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6332,7 +6384,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_487_489",
+      "tag": "🔒 By EbraSha_491_493",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6345,7 +6397,20 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_488_490",
+      "tag": "🔒 By EbraSha_492_494",
+      "type": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "62.171.170.182",
+            "port": 2053,
+            "password": "8r%3C%5B9%27l6hAO%238ZQi"
+          }
+        ]
+      }
+    },
+    {
+      "tag": "🔒 By EbraSha_493_495",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6358,7 +6423,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_489_491",
+      "tag": "🔒 By EbraSha_494_496",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6371,7 +6436,7 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_490_492",
+      "tag": "🔒 By EbraSha_495_497",
       "type": "trojan",
       "settings": {
         "servers": [
@@ -6384,77 +6449,12 @@
       }
     },
     {
-      "tag": "🔒 By EbraSha_491_493",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "72.56.108.132",
-            "port": 8443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_492_494",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "77.110.103.243",
-            "port": 8443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_493_495",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "77.110.121.125",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_494_496",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "77.110.127.237",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
-      "tag": "🔒 By EbraSha_495_497",
-      "type": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "77.37.96.132",
-            "port": 443,
-            "password": "8r%3C%5B9%27l6hAO%238ZQi"
-          }
-        ]
-      }
-    },
-    {
       "tag": "🔒 By EbraSha_496_498",
       "type": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "77.37.96.247",
+            "address": "72.56.69.244",
             "port": 443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
@@ -6467,7 +6467,7 @@
       "settings": {
         "servers": [
           {
-            "address": "79.141.73.189",
+            "address": "77.110.103.243",
             "port": 8443,
             "password": "8r%3C%5B9%27l6hAO%238ZQi"
           }
