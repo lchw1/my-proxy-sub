@@ -83,6 +83,11 @@ class ConfigValidator:
             if 'password' in config:
                 return 'trojan'
             return 'http'
+
+        # Если type переписан как ws, grpc, tcp (например, при парсинге URL params)
+        # но у нас есть id и add
+        if config.get('id') and config.get('add'):
+            return 'vless' # или vmess, но выше проверяется aid для vmess
         
         return None
     
