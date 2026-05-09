@@ -138,7 +138,12 @@ class ConfigDecoder:
             params = urllib.parse.parse_qs(parsed.query)
             for key, value in params.items():
                 if value:
-                    config[key] = value[0]
+                    # Если параметр это type, то сохраняем его как network
+                    # чтобы не переписать основной тип прокси 'vless'
+                    if key == 'type':
+                        config['network'] = value[0]
+                    else:
+                        config[key] = value[0]
             
             # Имя из фрагмента
             if parsed.fragment:
@@ -166,7 +171,10 @@ class ConfigDecoder:
             params = urllib.parse.parse_qs(parsed.query)
             for key, value in params.items():
                 if value:
-                    config[key] = value[0]
+                    if key == 'type':
+                        config['network'] = value[0]
+                    else:
+                        config[key] = value[0]
             
             # Имя из фрагмента
             if parsed.fragment:

@@ -170,9 +170,9 @@ class ConfigFormatter:
                 if flow:
                     proxy["flow"] = flow
                 
-                network = config.get('type', config.get('network', 'tcp'))
-                # Prevent network from being set to 'vless' or 'vmess' (it should be tcp, ws, grpc, etc)
-                if network in ['vless', 'vmess']:
+                network = config.get('network', 'tcp')
+                # Fallback safeguard in case network is entirely missing but type leaked in
+                if network in ['vless', 'vmess'] or not network:
                     network = 'tcp'
 
                 proxy["network"] = network
