@@ -55,21 +55,19 @@ class ConfigChecker:
     async def _check_single(self, config: Dict[str, Any], semaphore: asyncio.Semaphore) -> bool:
         """Проверить один конфиг."""
         async with semaphore:
-            timeout = aiohttp.ClientTimeout(total=self.config.check_timeout)
+            server = config.get('server') or config.get('add')
+            port = config.get('port')
+
+            if not server or not port:
+                return False
+
             try:
-                async with aiohttp.ClientSession(timeout=timeout) as session:
-                    server = config.get('server') or config.get('add')
-                    port = config.get('port')
-                    
-                    try:
-                        async with session.get(
-                            f'http://{server}:{port}',
-                            timeout=aiohttp.ClientTimeout(total=self.config.check_timeout),
-                            allow_redirects=False
-                        ) as resp:
-                            return resp.status < 500
-                    except (asyncio.TimeoutError, aiohttp.ClientError):
-                        return False
+                # Пингуем TCP порт, так как мы проверяем VLESS/VMESS/Trojan, а не HTTP сервер
+                coro = asyncio.open_connection(server, int(port))
+                reader, writer = await asyncio.wait_for(coro, timeout=self.config.check_timeout)
+                writer.close()
+                await writer.wait_closed()
+                return True
             except Exception:
                 return False
     

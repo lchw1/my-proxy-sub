@@ -31,8 +31,8 @@ output:
   v2ray:
     file: "output/v2ray_proxies.json"
     enabled: true
-    max_proxies: 500
+    max_proxies: 600
   mihomo:
     file: "output/mihomo_proxies.yaml"
     enabled: true
-    max_proxies: 500
+    max_proxies: 600

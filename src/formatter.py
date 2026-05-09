@@ -166,21 +166,45 @@ class ConfigFormatter:
             # VLESS конфигурация
             elif proxy_type == 'vless':
                 proxy["uuid"] = config.get('id', '')
-                proxy["flow"] = config.get('flow', '')
+                flow = config.get('flow', '')
+                if flow:
+                    proxy["flow"] = flow
                 
-                # TLS параметры
-                if config.get('tls') == 'tls':
+                network = config.get('type', config.get('network', 'tcp'))
+                proxy["network"] = network
+                if network == 'ws':
+                    proxy["ws-opts"] = {
+                        "path": config.get('path', '/'),
+                        "headers": {
+                            "Host": config.get('host', config.get('sni', ''))
+                        }
+                    }
+                elif network == 'grpc':
+                    proxy["grpc-opts"] = {
+                        "grpc-service-name": config.get('serviceName', '')
+                    }
+
+                security = config.get('security', '')
+                # TLS / Reality параметры
+                if security == 'tls' or config.get('tls') == 'tls':
                     proxy["tls"] = True
                     proxy["servername"] = config.get('sni', config.get('add', ''))
                     proxy["skipCertVerify"] = True
+                    alpn = config.get('alpn', '')
+                    if alpn:
+                        proxy["alpn"] = alpn.split(',')
                 
-                # Reality параметры
-                if config.get('reality'):
-                    proxy["reality"] = True
-                    proxy["realityOpts"] = {
-                        "publicKey": config.get('reality', {}).get('public-key', ''),
-                        "shortId": config.get('reality', {}).get('short-id', ''),
+                if security == 'reality' or config.get('pbk'):
+                    proxy["tls"] = True
+                    proxy["servername"] = config.get('sni', config.get('add', ''))
+                    proxy["skipCertVerify"] = True
+                    proxy["reality-opts"] = {
+                        "public-key": config.get('pbk', ''),
+                        "short-id": config.get('sid', '')
                     }
+                    client_fp = config.get('fp', '')
+                    if client_fp:
+                        proxy["client-fingerprint"] = client_fp
             
             # TROJAN конфигурация
             elif proxy_type == 'trojan':
@@ -239,5 +263,9 @@ class ConfigFormatter:
             return 'trojan'
         if 'password' in config and 'cipher' in config:
             return 'ss'
-        
+
+        # Возможный парсинг из параметров (например type=ws)
+        if config.get('id') and config.get('add'):
+            return 'vless'
+
         return 'unknown'
