@@ -1,1 +1,0 @@
-"""Proxy Config Collector Package"""
