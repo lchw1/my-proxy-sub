@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt
+https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num
