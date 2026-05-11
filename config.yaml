@@ -3,17 +3,18 @@ proxy-groups:
   - name: SELECT
     type: select
     proxies:
-      - URL-TEST
-      - FALLBACK
+      - DIRECT
   - name: URL-TEST
     type: url-test
     url: http://www.google.com/generate_204
     interval: 300
-    proxies: &id001 []
+    proxies:
+      - DIRECT
   - name: FALLBACK
     type: fallback
     url: http://www.google.com/generate_204
     interval: 300
-    proxies: *id001
+    proxies:
+      - DIRECT
 rules:
   - MATCH,SELECT
