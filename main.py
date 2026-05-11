@@ -56,9 +56,6 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
             if network in ["vless", "vmess"]: network = "tcp"
             proxy["network"] = network
 
-            if "flow" in params:
-                proxy["flow"] = params["flow"]
-
             security = params.get("security", "")
             if security == "tls":
                 proxy["tls"] = True
@@ -71,6 +68,10 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
                 if "sni" in params: proxy["servername"] = params["sni"]
                 if "fp" in params: proxy["client-fingerprint"] = params["fp"]
                 if "sid" in params: proxy["reality-opts"]["short-id"] = params["sid"]
+
+            # Важный фикс: параметр flow только если включен TLS/Reality
+            if "flow" in params and security in ["tls", "reality"]:
+                proxy["flow"] = params["flow"]
 
             if network == "ws":
                 proxy["ws-opts"] = {
@@ -109,6 +110,23 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
     logging.info(f"Extracted {len(proxies)} VLESS proxies in total")
     return proxies
 
+def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    seen_names = set()
+    for proxy in proxies:
+        # Убираем все спецсимволы, оставляем только буквы, цифры, пробелы и базовые знаки
+        clean_name = re.sub(r'[^\w\-\.\+\s\[\]\(\)\|]', '', proxy.get('name', 'Proxy'))
+        clean_name = clean_name.strip()
+        if not clean_name: clean_name = f"vless-{proxy.get('server')}-{proxy.get('port')}"
+
+        final_name = clean_name
+        counter = 1
+        while final_name in seen_names:
+            final_name = f"{clean_name}_{counter}"
+            counter += 1
+        seen_names.add(final_name)
+        proxy['name'] = final_name
+    return proxies
+
 def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen = set()
     unique = []
@@ -118,7 +136,9 @@ def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             seen.add(key)
             unique.append(p)
     logging.info(f"Deduplicated down to {len(unique)} proxies")
-    return unique
+    
+    # КРИТИЧНО: Очищаем имена сразу после дедупликации, ДО запуска ядра Mihomo
+    return sanitize_proxy_names(unique)
 
 async def check_tcp(proxy: Dict[str, Any]) -> bool:
     try:
@@ -243,22 +263,6 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
         p['name'] = f"[{cc}] {old_name[:25]}"
     return proxies
 
-def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    seen_names = set()
-    for proxy in proxies:
-        clean_name = re.sub(r'[^\w\-\.\+\s\[\]\(\)\|]', '', proxy.get('name', 'Proxy'))
-        clean_name = clean_name.strip()
-        if not clean_name: clean_name = f"vless-{proxy.get('server')}-{proxy.get('port')}"
-
-        final_name = clean_name
-        counter = 1
-        while final_name in seen_names:
-            final_name = f"{clean_name}_{counter}"
-            counter += 1
-        seen_names.add(final_name)
-        proxy['name'] = final_name
-    return proxies
-
 def generate_yaml(proxies: List[Dict[str, Any]]):
     if not proxies:
         logging.error("0 PROXIES PASSED! CONFIG WILL BE EMPTY.")
@@ -312,6 +316,7 @@ async def main():
     proxies = await stage_1_check(proxies)
     proxies = await stage_2_check(proxies)
     proxies = await resolve_countries(proxies)
+    # Прогоняем имена через чистилку еще раз, чтобы гарантировать отсутствие дублей после добавления стран
     proxies = sanitize_proxy_names(proxies)
     generate_yaml(proxies)
 
