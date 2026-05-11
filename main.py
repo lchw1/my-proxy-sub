@@ -61,6 +61,10 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
                 network = "tcp"
             proxy["network"] = network
 
+            # ---> ТОТ САМЫЙ КРИТИЧНЫЙ ПАРАМЕТР ДЛЯ ОБХОДА ТСПУ <---
+            if "flow" in params:
+                proxy["flow"] = params["flow"]
+
             # Handle security (tls/reality)
             security = params.get("security", "")
             if security == "tls":
