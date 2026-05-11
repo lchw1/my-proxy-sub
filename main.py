@@ -147,22 +147,23 @@ async def download_mihomo():
         subprocess.run(["gunzip", "-f", "mihomo.gz"])
         os.chmod("mihomo", 0o755)
 
-async def check_http(session: aiohttp.ClientSession, proxy: Dict[str, Any], api_port: int) -> tuple[Dict[str, Any], float]:
+async def check_http(session: aiohttp.ClientSession, proxy: Dict[str, Any], api_port: int, sem: asyncio.Semaphore) -> tuple[Dict[str, Any], float]:
     url = f"http://127.0.0.1:{api_port}/proxies/{urllib.parse.quote(proxy['name'])}/delay"
     params = {
         "timeout": 3000,
         "url": "http://www.google.com/generate_204"
     }
 
-    try:
-        async with session.get(url, params=params, timeout=5) as response:
-            if response.status == 200:
-                data = await response.json()
-                if "delay" in data:
-                    return proxy, data["delay"]
-    except Exception:
-        pass
-    return proxy, float('inf')
+    async with sem:
+        try:
+            async with session.get(url, params=params, timeout=5) as response:
+                if response.status == 200:
+                    data = await response.json()
+                    if "delay" in data:
+                        return proxy, data["delay"]
+        except Exception:
+            pass
+        return proxy, float('inf')
 
 async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     if not proxies:
@@ -199,19 +200,15 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     )
 
     # Wait for Mihomo to start
-    await asyncio.sleep(2)
+    await asyncio.sleep(3)
 
     results = []
+    # Concurrency limit to avoid overloading the local node/network stack
+    sem = asyncio.Semaphore(150)
+
     async with aiohttp.ClientSession() as session:
-        # We need to process sequentially or in batches to avoid overwhelming Mihomo,
-        # but gather is usually fine for a few dozen. For hundreds, we batch.
-        batch_size = 50
-        for i in range(0, len(proxies), batch_size):
-            batch = proxies[i:i+batch_size]
-            tasks = [check_http(session, proxy, api_port) for proxy in batch]
-            batch_results = await asyncio.gather(*tasks)
-            results.extend(batch_results)
-            await asyncio.sleep(0.5)
+        tasks = [check_http(session, proxy, api_port, sem) for proxy in proxies]
+        results = await asyncio.gather(*tasks)
 
     # Stop Mihomo
     process.terminate()
@@ -257,6 +254,26 @@ async def stage_1_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     logging.info(f"Stage 1 complete: {len(survivors)}/{len(proxies)} proxies survived TCP check.")
     return survivors
 
+def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    seen_names = set()
+    for proxy in proxies:
+        # Remove characters that might break Mihomo's REST API or YAML parser
+        clean_name = re.sub(r'[^\w\-\.\+\s]', '', proxy.get('name', 'Proxy'))
+        clean_name = clean_name.strip()
+        if not clean_name:
+            clean_name = f"vless-{proxy.get('server')}-{proxy.get('port')}"
+
+        # Ensure unique names across the entire config
+        final_name = clean_name
+        counter = 1
+        while final_name in seen_names:
+            final_name = f"{clean_name}_{counter}"
+            counter += 1
+
+        seen_names.add(final_name)
+        proxy['name'] = final_name
+    return proxies
+
 def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen = set()
     unique_proxies = []
@@ -267,7 +284,7 @@ def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             seen.add(key)
             unique_proxies.append(proxy)
     logging.info(f"Deduplicated down to {len(unique_proxies)} proxies")
-    return unique_proxies
+    return sanitize_proxy_names(unique_proxies)
 
 from ruamel.yaml import YAML
 
