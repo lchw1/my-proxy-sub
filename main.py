@@ -4,6 +4,7 @@ import re
 import base64
 import urllib.parse
 import logging
+import random
 from typing import List, Dict, Any
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -300,10 +301,10 @@ def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return sanitize_proxy_names(unique_proxies)
 
 def generate_yaml(proxies: List[Dict[str, Any]]):
-    # Limit to top 600
-    proxies = proxies[:600]
+    # Перемешиваем список, чтобы не брать узлы подряд из одного источника
+    random.shuffle(proxies)
 
-    # Remove internal latency key
+    # Убираем внутренний ключ задержки (от пинга GitHub Actions)
     for proxy in proxies:
         if '_latency' in proxy:
             del proxy['_latency']
@@ -323,7 +324,8 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "type": "url-test",
                 "url": "http://www.google.com/generate_204",
                 "interval": 300,
-                "proxies": proxy_names[:50] if len(proxy_names) >= 50 else proxy_names
+                # Проверяем первые 150 случайных узлов
+                "proxies": proxy_names[:150] if len(proxy_names) >= 150 else proxy_names
             },
             {
                 "name": "FALLBACK",
@@ -332,6 +334,10 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "interval": 300,
                 "proxies": proxy_names
             }
+        ],
+        # Блок правил маршрутизации, чтобы пускать трафик через прокси
+        "rules": [
+            "MATCH,SELECT"
         ]
     }
 
@@ -341,7 +347,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
 
     with open("config.yaml", "w", encoding="utf-8") as f:
         yaml.dump(config, f)
-    logging.info(f"Generated config.yaml with {len(proxies)} proxies.")
+    logging.info(f"Generated config.yaml with {len(proxies)} proxies and routing rules.")
 
 async def main():
     proxies = await get_all_proxies()
