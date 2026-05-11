@@ -172,59 +172,72 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     await download_mihomo()
     logging.info(f"Starting Stage 2 HTTP latency check via Mihomo for {len(proxies)} proxies...")
 
-    # Generate temporary config for Mihomo
-    yaml = YAML()
-    yaml.indent(mapping=2, sequence=4, offset=2)
-    yaml.default_flow_style = False
+    chunk_size = 400 # Оптимальный размер для Mihomo в GitHub Actions
+    final_survivors = []
 
-    api_port = 9090
-    mixed_port = 7890
+    # Обрабатываем прокси партиями
+    for i in range(0, len(proxies), chunk_size):
+        chunk = proxies[i:i + chunk_size]
+        logging.info(f"Processing batch {i//chunk_size + 1} of {(len(proxies)-1)//chunk_size + 1} ({len(chunk)} proxies)...")
 
-    temp_config = {
-        "port": mixed_port,
-        "external-controller": f"127.0.0.1:{api_port}",
-        "mode": "rule",
-        "proxies": proxies,
-        "proxy-groups": [{"name": "PROXY", "type": "select", "proxies": [p["name"] for p in proxies]}],
-        "rules": ["MATCH,PROXY"]
-    }
+        yaml = YAML()
+        yaml.indent(mapping=2, sequence=4, offset=2)
+        yaml.default_flow_style = False
 
-    with open("temp_mihomo_config.yaml", "w", encoding="utf-8") as f:
-        yaml.dump(temp_config, f)
+        api_port = 9090
+        mixed_port = 7890
 
-    # Start Mihomo
-    process = subprocess.Popen(
-        ["./mihomo", "-f", "temp_mihomo_config.yaml"],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL
-    )
+        temp_config = {
+            "port": mixed_port,
+            "external-controller": f"127.0.0.1:{api_port}",
+            "mode": "rule",
+            "proxies": chunk,
+            "proxy-groups": [{"name": "PROXY", "type": "select", "proxies": [p["name"] for p in chunk]}],
+            "rules": ["MATCH,PROXY"]
+        }
 
-    # Wait for Mihomo to start
-    await asyncio.sleep(3)
+        with open("temp_mihomo_config.yaml", "w", encoding="utf-8") as f:
+            yaml.dump(temp_config, f)
 
-    results = []
-    # Concurrency limit to avoid overloading the local node/network stack
-    sem = asyncio.Semaphore(150)
+        # Запускаем Mihomo
+        process = subprocess.Popen(
+            ["./mihomo", "-f", "temp_mihomo_config.yaml"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
+        )
 
-    async with aiohttp.ClientSession() as session:
-        tasks = [check_http(session, proxy, api_port, sem) for proxy in proxies]
-        results = await asyncio.gather(*tasks)
+        # Даем чуть больше времени на запуск
+        await asyncio.sleep(5)
 
-    # Stop Mihomo
-    process.terminate()
-    process.wait()
+        results = []
+        # Снижаем семафор, чтобы не вызвать Network Timeout со стороны GitHub Actions
+        sem = asyncio.Semaphore(50) 
+
+        async with aiohttp.ClientSession() as session:
+            tasks = [check_http(session, proxy, api_port, sem) for proxy in chunk]
+            results = await asyncio.gather(*tasks)
+
+        # Жестко убиваем процесс перед следующим циклом
+        process.terminate()
+        process.wait()
+
+        # Фильтруем выживших в этой партии
+        survivors = [(proxy, latency) for proxy, latency in results if latency < 3000]
+        final_survivors.extend(survivors)
+        
+        # Даем порту 9090 освободиться
+        await asyncio.sleep(1)
 
     if os.path.exists("temp_mihomo_config.yaml"):
         os.remove("temp_mihomo_config.yaml")
 
-    # Filter out failures and sort by latency
-    survivors = [(proxy, latency) for proxy, latency in results if latency < 3000] # less than 3s
-    survivors.sort(key=lambda x: x[1])
+    # Сортируем всех выживших по пингу
+    final_survivors.sort(key=lambda x: x[1])
 
-    logging.info(f"Stage 2 complete: {len(survivors)}/{len(proxies)} proxies survived real traffic check.")
+    logging.info(f"Stage 2 complete: {len(final_survivors)}/{len(proxies)} proxies survived real traffic check.")
 
     final_proxies = []
-    for proxy, latency in survivors:
+    for proxy, latency in final_survivors:
         proxy['_latency'] = latency
         final_proxies.append(proxy)
 
@@ -285,8 +298,6 @@ def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             unique_proxies.append(proxy)
     logging.info(f"Deduplicated down to {len(unique_proxies)} proxies")
     return sanitize_proxy_names(unique_proxies)
-
-from ruamel.yaml import YAML
 
 def generate_yaml(proxies: List[Dict[str, Any]]):
     # Limit to top 600
