@@ -12,11 +12,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 def decode_base64(text: str) -> str:
     try:
         text = text.replace('\n', '').replace('\r', '').strip()
-        # Add padding if needed
         padding = len(text) % 4
         if padding:
             text += '=' * (4 - padding)
-        # Handle standard and url-safe base64
         text = text.replace('-', '+').replace('_', '/')
         return base64.b64decode(text).decode('utf-8', errors='ignore')
     except Exception as e:
@@ -35,7 +33,6 @@ async def fetch_source(session: aiohttp.ClientSession, url: str) -> str:
     return ""
 
 def parse_vless_link(link: str) -> Dict[str, Any]:
-    # vless://uuid@host:port?query#name
     try:
         match = re.match(r'^vless://([^@]+)@([^:]+):(\d+)(?:\?([^#]*))?(?:#(.*))?$', link)
         if not match:
@@ -55,17 +52,14 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
         if query_string:
             params = dict(urllib.parse.parse_qsl(query_string))
 
-            # Map type to network
             network = params.get("type", "tcp")
             if network in ["vless", "vmess"]:
                 network = "tcp"
             proxy["network"] = network
 
-            # ---> ТОТ САМЫЙ КРИТИЧНЫЙ ПАРАМЕТР ДЛЯ ОБХОДА ТСПУ <---
             if "flow" in params:
                 proxy["flow"] = params["flow"]
 
-            # Handle security (tls/reality)
             security = params.get("security", "")
             if security == "tls":
                 proxy["tls"] = True
@@ -87,7 +81,6 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
                 if "sid" in params:
                     proxy["reality-opts"]["short-id"] = params["sid"]
 
-            # Handle network specific options
             if network == "ws":
                 proxy["ws-opts"] = {
                     "path": params.get("path", "/"),
@@ -102,7 +95,6 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
 
         return proxy
     except Exception as e:
-        logging.debug(f"Failed to parse link {link[:30]}...: {e}")
         return {}
 
 async def get_all_proxies() -> List[Dict[str, Any]]:
@@ -121,13 +113,10 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
     for content in results:
         if not content:
             continue
-
-        # Determine if content is likely base64 encoded
         if not 'vless://' in content:
             decoded = decode_base64(content)
             if 'vless://' in decoded:
                 content = decoded
-
         links = re.findall(r'(vless://[^\s]+)', content)
         for link in links:
             proxy = parse_vless_link(link)
@@ -177,10 +166,9 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     await download_mihomo()
     logging.info(f"Starting Stage 2 HTTP latency check via Mihomo for {len(proxies)} proxies...")
 
-    chunk_size = 400 # Оптимальный размер для Mihomo в GitHub Actions
+    chunk_size = 400
     final_survivors = []
 
-    # Обрабатываем прокси партиями
     for i in range(0, len(proxies), chunk_size):
         chunk = proxies[i:i + chunk_size]
         logging.info(f"Processing batch {i//chunk_size + 1} of {(len(proxies)-1)//chunk_size + 1} ({len(chunk)} proxies)...")
@@ -204,42 +192,33 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         with open("temp_mihomo_config.yaml", "w", encoding="utf-8") as f:
             yaml.dump(temp_config, f)
 
-        # Запускаем Mihomo
         process = subprocess.Popen(
             ["./mihomo", "-f", "temp_mihomo_config.yaml"],
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL
         )
 
-        # Даем чуть больше времени на запуск
         await asyncio.sleep(5)
-
         results = []
-        # Снижаем семафор, чтобы не вызвать Network Timeout со стороны GitHub Actions
         sem = asyncio.Semaphore(50) 
 
         async with aiohttp.ClientSession() as session:
             tasks = [check_http(session, proxy, api_port, sem) for proxy in chunk]
             results = await asyncio.gather(*tasks)
 
-        # Жестко убиваем процесс перед следующим циклом
         process.terminate()
         process.wait()
 
-        # Фильтруем выживших в этой партии
         survivors = [(proxy, latency) for proxy, latency in results if latency < 3000]
         final_survivors.extend(survivors)
         
-        # Даем порту 9090 освободиться
         await asyncio.sleep(1)
 
     if os.path.exists("temp_mihomo_config.yaml"):
         os.remove("temp_mihomo_config.yaml")
 
-    # Сортируем всех выживших по пингу
     final_survivors.sort(key=lambda x: x[1])
-
-    logging.info(f"Stage 2 complete: {len(final_survivors)}/{len(proxies)} proxies survived real traffic check.")
+    logging.info(f"Stage 2 complete: {len(final_survivors)}/{len(proxies)} proxies survived.")
 
     final_proxies = []
     for proxy, latency in final_survivors:
@@ -252,11 +231,8 @@ async def check_tcp(proxy: Dict[str, Any]) -> bool:
     try:
         host = proxy.get('server')
         port = proxy.get('port')
-
-        # Async TCP connection check with 3s timeout
         conn = asyncio.open_connection(host, port)
         reader, writer = await asyncio.wait_for(conn, timeout=3.0)
-
         writer.close()
         await writer.wait_closed()
         return True
@@ -267,21 +243,52 @@ async def stage_1_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     logging.info(f"Starting Stage 1 TCP check for {len(proxies)} proxies...")
     tasks = [check_tcp(proxy) for proxy in proxies]
     results = await asyncio.gather(*tasks)
-
     survivors = [proxy for proxy, is_alive in zip(proxies, results) if is_alive]
-    logging.info(f"Stage 1 complete: {len(survivors)}/{len(proxies)} proxies survived TCP check.")
+    logging.info(f"Stage 1 complete: {len(survivors)}/{len(proxies)} survived.")
     return survivors
+
+async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    logging.info("Resolving countries via ip-api.com...")
+    unique_servers = list(set(p['server'] for p in proxies))
+    server_to_country = {}
+
+    async with aiohttp.ClientSession() as session:
+        # Разбиваем на пакеты по 100 штук (лимит API)
+        for i in range(0, len(unique_servers), 100):
+            chunk = unique_servers[i:i+100]
+            data = [{"query": s} for s in chunk]
+            try:
+                async with session.post("http://ip-api.com/batch?fields=query,countryCode", json=data, timeout=10) as resp:
+                    if resp.status == 200:
+                        results = await resp.json()
+                        for res in results:
+                            if res.get("countryCode"):
+                                server_to_country[res["query"]] = res["countryCode"]
+            except Exception as e:
+                logging.warning(f"GeoIP API error: {e}")
+            await asyncio.sleep(2) # Защита от бана API
+
+    for p in proxies:
+        cc = server_to_country.get(p['server'], 'UNK')
+        old_name = p['name']
+        
+        # Если имя просто vless-айпи:порт, сократим его, чтобы не было гигантским
+        if old_name.startswith('vless-'):
+            old_name = f"Node-{p['server'][-6:]}"
+            
+        p['name'] = f"[{cc}] {old_name}"
+
+    return proxies
 
 def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen_names = set()
     for proxy in proxies:
-        # Remove characters that might break Mihomo's REST API or YAML parser
-        clean_name = re.sub(r'[^\w\-\.\+\s]', '', proxy.get('name', 'Proxy'))
+        # Теперь разрешаем квадратные скобки [] для стран
+        clean_name = re.sub(r'[^\w\-\.\+\s\[\]\(\)\|]', '', proxy.get('name', 'Proxy'))
         clean_name = clean_name.strip()
         if not clean_name:
             clean_name = f"vless-{proxy.get('server')}-{proxy.get('port')}"
 
-        # Ensure unique names across the entire config
         final_name = clean_name
         counter = 1
         while final_name in seen_names:
@@ -296,19 +303,16 @@ def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen = set()
     unique_proxies = []
     for proxy in proxies:
-        # Create a unique key based on IP/Host, Port, and UUID
         key = f"{proxy.get('server')}:{proxy.get('port')}:{proxy.get('uuid')}"
         if key not in seen:
             seen.add(key)
             unique_proxies.append(proxy)
     logging.info(f"Deduplicated down to {len(unique_proxies)} proxies")
-    return sanitize_proxy_names(unique_proxies)
+    return unique_proxies # Переименовывать будем позже
 
 def generate_yaml(proxies: List[Dict[str, Any]]):
-    # Перемешиваем список, чтобы не брать узлы подряд из одного источника
     random.shuffle(proxies)
 
-    # Убираем внутренний ключ задержки (от пинга GitHub Actions)
     for proxy in proxies:
         if '_latency' in proxy:
             del proxy['_latency']
@@ -328,7 +332,6 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "type": "url-test",
                 "url": "http://www.google.com/generate_204",
                 "interval": 300,
-                # Проверяем первые 150 случайных узлов
                 "proxies": proxy_names[:150] if len(proxy_names) >= 150 else proxy_names
             },
             {
@@ -339,7 +342,6 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "proxies": proxy_names
             }
         ],
-        # Блок правил маршрутизации, чтобы пускать трафик через прокси
         "rules": [
             "MATCH,SELECT"
         ]
@@ -358,6 +360,8 @@ async def main():
     proxies = deduplicate_proxies(proxies)
     proxies = await stage_1_check(proxies)
     proxies = await stage_2_check(proxies)
+    proxies = await resolve_countries(proxies) # Пробиваем страны
+    proxies = sanitize_proxy_names(proxies) # Чистим имена и гарантируем их уникальность
     generate_yaml(proxies)
 
 if __name__ == "__main__":
