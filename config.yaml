@@ -1,5 +1,300 @@
 proxies:
-  - name: '[RU] Anycast-IP | [IPv6] [CIDR_1'
+  - name: '[US] [openproxylist.com]_4'
+    type: vless
+    server: 34.136.119.149
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?ed=2560&Telegram🇨🇳@WangCai2
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: '[AE] [openproxylist.com]_2'
+    type: vless
+    server: 188.72.103.3
+    port: 443
+    uuid: 45e55198-a5ad-4f19-bb39-236822141d25
+    udp: true
+    network: ws
+    tls: true
+    servername: cdn.tracker.yandex.net
+    client-fingerprint: chrome
+    ws-opts:
+      path: /stream/updates/b66b78d7/019dfd7f-0777-6283-7287-911777c3720f4
+      headers:
+        Host: cdn.lovecrafty.link
+  - name: '[RU] Finland [CIDR] YA'
+    type: vless
+    server: 158.160.235.238
+    port: 52006
+    uuid: 87a60a9f-36b4-4253-9bb2-7f16a4c92318
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: DaIRouGSxxQDEv9WKRxD79b2Vt0fsw4yQOTeAmXUYCM
+      short-id: 28a059440d3d5ba1
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[KR] Anycast-IP | [IPv6] | [BL_3'
+    type: vless
+    server: 43.133.229.220
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo9.kmj.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo9.kmj.qzz.io
+  - name: '[JP] Anycast-IP | [IPv6] | [BL_1'
+    type: vless
+    server: 156.231.117.230
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo5.kmj.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo5.kmj.qzz.io
+  - name: '[GB] [openproxylist.com]_30'
+    type: vless
+    server: 152.233.28.198
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    udp: true
+    network: tcp
+    tls: true
+    servername: uk1.fromblancwithlove.com
+    alpn:
+      - h2
+  - name: '[KR] Anycast-IP | [IPv6] | [BL_2'
+    type: vless
+    server: 14.52.210.173
+    port: 12312
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /shop/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: '[RU] Russia |  | [IPv6] [CIDR]_1'
+    type: vless
+    server: 217.199.254.3
+    port: 443
+    uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+      short-id: 0123456789abcdef
+    servername: www.deepl.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[UN] Georgia Tbilisi | [BL]'
+    type: vless
+    server: georg.sbrf-cdn342.ru
+    port: 443
+    uuid: 7bd29cac-f692-48a3-88d1-505f7e55f0d0
+    udp: true
+    network: tcp
+    tls: true
+    servername: sub.sbrf-cdn342.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[RU] Anycast-IP | [IPv6] [CIDR_5'
+    type: vless
+    server: 176.124.211.23
+    port: 8454
+    uuid: 60ab0d9a-b43a-45dd-a54d-283d05c2d903
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    servername: jobinvest.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: '[RU] Anycast-IP | [IPv6] [CIDR_6'
+    type: vless
+    server: 176.124.211.23
+    port: 8446
+    uuid: e8e1dac4-2b8c-494b-b66a-82c8b91e26c1
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    servername: jobinvest.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: '[UN] [openproxylist.com]_1'
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    udp: true
+    network: tcp
+    tls: true
+    servername: r1.mizulina.top
+    client-fingerprint: edge
+    flow: xtls-rprx-vision-udp443
+  - name: '[NL] [openproxylist.com]_9'
+    type: vless
+    server: 95.164.3.121
+    port: 20089
+    uuid: 4fe2b7d6-cdc0-44f3-8093-3a1fc92e8542
+    udp: true
+    network: tcp
+  - name: '[FI] [openproxylist.com]_11'
+    type: vless
+    server: 138.124.9.190
+    port: 16558
+    uuid: 11348c0f-b646-446a-bad7-b2b39c6de767
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: vDKgmefC_2JaSrrvQSsb7DU3KBeKUlXG1V0vgdjv_i4
+      short-id: 0a856e071790b1
+    servername: gpuopen.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[TW] Anycast-IP | [IPv6] | [BL'
+    type: vless
+    server: 83.147.13.116
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo3.kmj.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo3.kmj.qzz.io
+  - name: '[FR] [openproxylist.com]_38'
+    type: vless
+    server: 213.136.69.8
+    port: 80
+    uuid: 15cbab96-197e-46a5-9042-073b3980c798
+    udp: true
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: fsdns.ectunnelvpn.me
+  - name: '[FR] [openproxylist.com]_3'
+    type: vless
+    server: 45.12.133.207
+    port: 443
+    uuid: 1235d730-707c-4a11-8ce3-ebb17561564b
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 0T96I8dvAUF7BxhbwTp0PfFfy9AHFDsXXpwDnP0i224
+      short-id: 4dd1
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: '[GB] [openproxylist.com]_29'
+    type: vless
+    server: 178.159.10.78
+    port: 443
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 6tORX9bm6UlGJ4dR8L2kzOd21oSrOyzpN7gC6SqGGyc
+      short-id: d27683580fc15f1e
+    servername: www.vodafone.co.uk
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[SG] Anycast-IP | [IPv6] | [BL'
+    type: vless
+    server: 8.222.194.4
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo2.kmj.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo2.kmj.qzz.io
+  - name: '[JP] [openproxylist.com]_27'
+    type: vless
+    server: 64.176.57.250
+    port: 443
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: wLkaWLYNGirBj1ggKZsnmlZiWnwZd99cIShBHVm7BQo
+      short-id: c906f73d3ba8211f
+    servername: www.muji.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[UN] [openproxylist.com]_13'
+    type: vless
+    server: v2ray.simspeedup.com
+    port: 80
+    uuid: 3c52e091-6714-4915-949f-2149fe69951b
+    udp: true
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: aIs.SpEeDtEsT.nEt
+  - name: '[RU] Russia |  | [IPv6] [CIDR]_2'
+    type: vless
+    server: 5.42.107.88
+    port: 443
+    uuid: 79cdcdfc-cb9e-4a76-8fb5-bcd7768dba4f
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: EtnBeC_4JSJcNzwlL5IsvGsWYyPWJNVZkVuVYl5BW1g
+      short-id: 122a
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: '[RO] [openproxylist.com]_23'
+    type: vless
+    server: 91.199.50.37
+    port: 443
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw
+      short-id: c906f73d3ba8211f
+    servername: www.alibaba.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[RU] Anycast-IP | [IPv6] [CIDR_4'
     type: vless
     server: 176.124.211.23
     port: 8454
@@ -12,177 +307,173 @@ proxies:
     servername: jobinvest.ru
     client-fingerprint: qq
     flow: xtls-rprx-vision
-  - name: '[FR] [openproxylist.com]_46'
+  - name: '[GE] [openproxylist.com]'
     type: vless
-    server: 213.136.69.8
-    port: 80
-    uuid: 15cbab96-197e-46a5-9042-073b3980c798
-    udp: true
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: fsdns.ectunnelvpn.me
-  - name: '[HK] Anycast-IP | [IPv6] | [BL_1'
-    type: vless
-    server: 219.76.13.183
-    port: 443
-    uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-    udp: true
-    network: ws
-    tls: true
-    servername: sn1.skylee5.cloudns.ch
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: sn1.skylee5.cloudns.ch
-  - name: '[SG] Anycast-IP | [IPv6] | [BL'
-    type: vless
-    server: 154.194.12.40
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
-      headers:
-        Host: vms.lifetime35.workers.dev
-  - name: '[UN] [openproxylist.com]_44'
-    type: vless
-    server: fr.denditop.site
-    port: 443
-    uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
+    server: 72.56.62.253
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
     udp: true
     network: tcp
     tls: true
-    reality-opts:
-      public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
-      short-id: 9c2378562188c3cb
-    servername: fr.denditop.site
+    servername: r1.mizulina.top
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[UN] Russia [CIDR]_1'
+    flow: xtls-rprx-vision-udp443
+  - name: '[UN] [openproxylist.com]_21'
     type: vless
-    server: fastcon-tgg.harknmav.fun
+    server: node3.jjjjjj.eu.cc
     port: 443
-    uuid: 50b95deb-6394-46c5-b88a-583e5b3ca7ee
+    uuid: df230a7c-a9ba-4efc-8f9f-ee03bffc4303
+    udp: true
+    network: ws
+    tls: true
+    servername: jp2.jjjjjj.eu.cc
+    client-fingerprint: safari
+    ws-opts:
+      path: /jige
+      headers:
+        Host: jp2.jjjjjj.eu.cc
+  - name: '[RU] Anycast-IP | [IPv6] [CIDR_2'
+    type: vless
+    server: 176.124.211.23
+    port: 8446
+    uuid: 5d269083-9f9b-4c97-9ce9-93dd0c57dbff
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: PGccrEdFmBaB1rQFJqM-a9jJ1pFsxhUP2sD9KTw5Oz4
-      short-id: f69d7af2d5fc5e0c
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    servername: jobinvest.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: '[RU] Finland |  [CIDR] VK'
+    type: vless
+    server: 212.233.79.115
+    port: 52006
+    uuid: 3dae19c4-f3d1-4dab-9bb2-1d0121813f52
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: DaIRouGSxxQDEv9WKRxD79b2Vt0fsw4yQOTeAmXUYCM
+      short-id: '08'
     servername: ads.x5.ru
-    client-fingerprint: chrome
+    client-fingerprint: qq
     flow: xtls-rprx-vision
-  - name: '[FR] [openproxylist.com]_37'
+  - name: '[JP] Anycast-IP | [IPv6] | [BL_5'
     type: vless
-    server: 51.158.62.94
+    server: 103.201.130.241
     port: 443
-    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: nUl4-UbSlrf8sCY4QNCKF3dMmgWLWJbgeziVqwfklhU
-      short-id: ad3c6641d540b4e1
-    servername: www.laposte.fr
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[SG] Anycast-IP | [IPv6] | [BL_2'
-    type: vless
-    server: 96.9.213.25
-    port: 10443
-    uuid: 00000000-0000-4000-8000-000000000000
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
     udp: true
     network: ws
     tls: true
-    servername: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me
+    servername: gogo.vks.dpdns.org
+    client-fingerprint: chrome
     ws-opts:
-      path: /@Marisa_kristifp=chrome
+      path: /
       headers:
-        Host: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me
-  - name: '[KZ] Kazakhstan Astana | [BL]'
+        Host: gogo.vks.dpdns.org
+  - name: '[RU] Russia [CIDR]_3'
     type: vless
-    server: 91.218.140.27
-    port: 443
-    uuid: 7c917504-9b62-4c48-85bb-8ae5bc925315
+    server: 178.72.181.52
+    port: 52006
+    uuid: 75807638-6f19-07d0-ae08-38492ee85c88
     udp: true
     network: tcp
     tls: true
-    reality-opts:
-      public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-      short-id: d0a1665d1b96515e
-    servername: kz.kosmosapp.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[RU] Russia | [IPv6] [CIDR]'
-    type: vless
-    server: 46.149.71.46
-    port: 9443
-    uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-    servername: rutube.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[UN] Russia [CIDR]_7'
-    type: vless
-    server: ru.astrocore.cloud
-    port: 443
-    uuid: ed8ba85c-fa44-4d55-8ab9-229e942db60f
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: X2Sb6CKcI_yEV4gu9KUAmL9mcL-xpC1Ngks06NYIaxw
-      short-id: f129f93e
-    servername: ru.astrocore.cloud
+    servername: cluster-russia-3.firstvideocdn.ru
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: '[RU] Finland [CIDR] YA'
+  - name: '[US] Anycast-IP | [IPv6] | [BL_1'
     type: vless
-    server: 158.160.42.20
+    server: 144.126.132.39
+    port: 8443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /zh/tool/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: '[AT] [openproxylist.com]_10'
+    type: vless
+    server: 91.244.70.205
     port: 443
-    uuid: 9efd326f-da78-4d43-ac51-c5ed2ee12074
+    uuid: f2a806c6-f36b-4cd9-8bb6-7addb218ad2d
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 91.244.70.205
+  - name: '[CA] [openproxylist.com]_37'
+    type: vless
+    server: 172.64.146.143
+    port: 80
+    uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tt.andishehparenting.com
+  - name: '[NL] [openproxylist.com]_32'
+    type: vless
+    server: 45.149.114.75
+    port: 8443
+    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: OUTme8tBK1dzVY4volPJ-FcMpGuVbc-E0ssp1XnuVHk
-      short-id: 6ba85179e30d4fc2
-    servername: api-maps.yandex.ru
+      public-key: TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI
+    servername: tradingview.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: '[GB] [openproxylist.com]_41'
+  - name: '[TW] Anycast-IP | [IPv6] | [BL_1'
     type: vless
-    server: 51.89.229.134
+    server: 1.161.58.221
     port: 443
-    uuid: 53821f3c-5b03-456a-89f3-f8379f130752
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
     udp: true
-    network: tcp
+    network: ws
     tls: true
-    reality-opts:
-      public-key: 4e4FI0siWxFtLCRCVDQurn1wLTuvKWhRY0zj1SaUcyw
-      short-id: a13a7cc5
-    servername: www.samsung.com
+    servername: gogo.wknm.qzz.io
     client-fingerprint: chrome
-  - name: '[CH] Switzerland Geneva |  | ['
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo.wknm.qzz.io
+  - name: '[HK] Anycast-IP | [IPv6] | [BL_2'
     type: vless
-    server: 83.228.223.16
+    server: 34.150.80.130
     port: 443
-    uuid: 7c917504-9b62-4c48-85bb-8ae5bc925315
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo.vks.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo.vks.qzz.io
+  - name: '[DE] Germany |  | [IPv6] [CIDR'
+    type: vless
+    server: 188.68.37.93
+    port: 443
+    uuid: d4654ef4-b728-4290-8878-98089610fd7c
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-      short-id: d0a1665d1b96515e
-    servername: ch.kosmosapp.ru
-    client-fingerprint: qq
+      public-key: pJZdgXS61oBi-VKn1QQ59cJTLn3pRNUryhKGWw2q6gM
+      short-id: f793e9e847fdba7f
+    servername: hello.opengate.tech
+    client-fingerprint: chrome
     flow: xtls-rprx-vision
   - name: '[MY] Anycast-IP | [IPv6] | [BL'
     type: vless
@@ -198,192 +489,10 @@ proxies:
       path: /
       headers:
         Host: gogo.vks.dpdns.org
-  - name: '[AT] [openproxylist.com]_11'
+  - name: '[KR] [openproxylist.com]_16'
     type: vless
-    server: 91.244.70.205
-    port: 443
-    uuid: f2a806c6-f36b-4cd9-8bb6-7addb218ad2d
-    udp: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 91.244.70.205
-  - name: '[UN] Poland |  | [IPv6] [CIDR]_1'
-    type: vless
-    server: pol2.helper-internet.com
-    port: 443
-    uuid: c1d2e359-5652-40c2-bd0b-22263af6e5f4
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-      short-id: ff776ff77be48b88
-    servername: pol2.helper-internet.com
-    client-fingerprint: random
-    flow: xtls-rprx-vision
-  - name: '[EE] Anycast-IP | [IPv6] [CIDR'
-    type: vless
-    server: 45.80.110.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
-      headers:
-        Host: vms.lifetime51.workers.dev
-  - name: '[SG] Anycast-IP | [IPv6] | [BL_1'
-    type: vless
-    server: 103.26.8.38
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: gogo8.kmj.qzz.io
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: gogo8.kmj.qzz.io
-  - name: '[DE] Germany Frankfurt am Main'
-    type: vless
-    server: 82.21.117.144
-    port: 443
-    uuid: 7c917504-9b62-4c48-85bb-8ae5bc925315
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-      short-id: d0a1665d1b96515e
-    servername: de.kosmosapp.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[JP] Anycast-IP | [IPv6] | [BL'
-    type: vless
-    server: 195.245.241.135
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: gogo.wknm.dpdns.org
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: gogo.wknm.dpdns.org
-  - name: '[PL] Poland Warsaw | [BL]'
-    type: vless
-    server: 193.247.82.25
-    port: 443
-    uuid: 7c917504-9b62-4c48-85bb-8ae5bc925315
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-      short-id: d0a1665d1b96515e
-    servername: pl.kosmosapp.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[RU] [openproxylist.com]_43'
-    type: vless
-    server: 80.92.205.57
-    port: 443
-    uuid: e80c5348-5a5c-41f0-a78d-7a781f47afce
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: MA_hDjnzRmn4qL60EqyybXYzuE_2Ap8FhJQ82szMDww
-      short-id: 1434b433
-    servername: store.steampowered.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[UN] [openproxylist.com]_1'
-    type: vless
-    server: r1.mizulina.top
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    udp: true
-    network: tcp
-    tls: true
-    servername: r1.mizulina.top
-    client-fingerprint: edge
-    flow: xtls-rprx-vision-udp443
-  - name: '[TW] Anycast-IP | [IPv6] | [BL_1'
-    type: vless
-    server: 1.161.58.221
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: gogo.wknm.qzz.io
-    client-fingerprint: chrome
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        Host: gogo.wknm.qzz.io
-  - name: '[NL] The Netherlands Amsterdam'
-    type: vless
-    server: 146.0.75.144
-    port: 443
-    uuid: 7c917504-9b62-4c48-85bb-8ae5bc925315
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-      short-id: d0a1665d1b96515e
-    servername: nl.kosmosapp.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[CY] Anycast-IP | [IPv6] | [BL'
-    type: vless
-    server: 195.26.229.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
-      headers:
-        Host: vms.lifetime56.workers.dev
-  - name: '[UN] Latvia Riga |  | [IPv6] |'
-    type: vless
-    server: lit6.helper-internet.com
-    port: 443
-    uuid: c1d2e359-5652-40c2-bd0b-22263af6e5f4
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-      short-id: ff776ff77be48b88
-    servername: lit6.helper-internet.com
-    client-fingerprint: random
-    flow: xtls-rprx-vision
-  - name: '[FR] [openproxylist.com]_5'
-    type: vless
-    server: 45.12.133.207
-    port: 443
-    uuid: 1235d730-707c-4a11-8ce3-ebb17561564b
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 0T96I8dvAUF7BxhbwTp0PfFfy9AHFDsXXpwDnP0i224
-      short-id: 4dd1
-    servername: yahoo.com
-    client-fingerprint: chrome
-  - name: '[KR] [openproxylist.com]_17'
-    type: vless
-    server: 14.56.183.228
-    port: 22105
+    server: 121.165.39.209
+    port: 18810
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     udp: true
     network: ws
@@ -393,7 +502,7 @@ proxies:
       path: /?ed=2560
       headers:
         Host: sni.111000.v6.army
-  - name: '[SG] Anycast-IP | [IPv6] | [BL_3'
+  - name: '[SG] Anycast-IP | [IPv6] | [BL_1'
     type: vless
     server: 47.84.25.234
     port: 10001
@@ -407,55 +516,155 @@ proxies:
       path: /mobile/groupfp=chrome
       headers:
         Host: pagescm.freen1.de5.net
-  - name: '[IT] [openproxylist.com]_24'
+  - name: '[UN] [openproxylist.com]_39'
     type: vless
-    server: 172.232.208.147
-    port: 443
-    uuid: d7f67e94-aa9e-4454-b1cf-ce522a0d2728
+    server: cf7.danfeng.eu.org
+    port: 2087
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
     udp: true
-    network: tcp
-  - name: '[RO] [openproxylist.com]_26'
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /favs/collect/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: '[GB] [openproxylist.com]_35'
     type: vless
-    server: 91.199.50.37
+    server: 51.89.229.134
     port: 443
-    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    uuid: 53821f3c-5b03-456a-89f3-f8379f130752
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw
-      short-id: c906f73d3ba8211f
-    servername: www.alibaba.com
+      public-key: 4e4FI0siWxFtLCRCVDQurn1wLTuvKWhRY0zj1SaUcyw
+      short-id: a13a7cc5
+    servername: www.samsung.com
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[FI] [openproxylist.com]_40'
+  - name: '[HK] Anycast-IP | [IPv6] | [BL_7'
     type: vless
-    server: 45.12.146.179
-    port: 8443
-    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI
-    servername: tradingview.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[AE] [openproxylist.com]_28'
-    type: vless
-    server: 38.180.11.15
+    server: 43.159.5.182
     port: 443
     uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
     udp: true
     network: ws
     tls: true
-    servername: 3-7v4.pages.dev
+    servername: gogo11.kmj.qzz.io
     client-fingerprint: chrome
     ws-opts:
-      path: /proxyip=ProxyIP.DE.owg.dpdns.org
+      path: /
       headers:
-        Host: 3-7v4.pages.dev
-  - name: '[RO] [openproxylist.com]_30'
+        Host: gogo11.kmj.qzz.io
+  - name: '[UN] Russia [CIDR]_7'
+    type: vless
+    server: ru.astrocore.cloud
+    port: 443
+    uuid: ed8ba85c-fa44-4d55-8ab9-229e942db60f
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: X2Sb6CKcI_yEV4gu9KUAmL9mcL-xpC1Ngks06NYIaxw
+      short-id: f129f93e
+    servername: ru.astrocore.cloud
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[JP] Anycast-IP | [IPv6] | [BL_3'
+    type: vless
+    server: 96.126.191.9
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo.onetap.qzz.io
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: gogo.onetap.qzz.io
+  - name: '[RU] Anycast-IP | [IPv6] [CIDR'
+    type: vless
+    server: 109.73.199.48
+    port: 8454
+    uuid: 5d269083-9f9b-4c97-9ce9-93dd0c57dbff
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    servername: jobinvest.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: '[CH] [openproxylist.com]_19'
+    type: vless
+    server: 84.234.16.169
+    port: 443
+    uuid: 8007e155-622e-4c9d-8a6e-67f49b4678f4
+    udp: true
+    network: ws
+    tls: true
+    servername: edt2-lgy.pages.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: edt2-lgy.pages.dev
+  - name: '[UN] Russia [CIDR]_1'
+    type: vless
+    server: fastcon-tgg.harknmav.fun
+    port: 443
+    uuid: 50b95deb-6394-46c5-b88a-583e5b3ca7ee
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: PGccrEdFmBaB1rQFJqM-a9jJ1pFsxhUP2sD9KTw5Oz4
+      short-id: f69d7af2d5fc5e0c
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[KR] [openproxylist.com]_15'
+    type: vless
+    server: 121.191.33.84
+    port: 30303
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.army
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sni.111000.v6.army
+  - name: '[KR] [openproxylist.com]_14'
+    type: vless
+    server: 183.99.227.24
+    port: 26257
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.army
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sni.111000.v6.army
+  - name: '[HK] Anycast-IP | [IPv6] | [BL_3'
+    type: vless
+    server: 43.159.4.217
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo10.kmj.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo10.kmj.qzz.io
+  - name: '[RO] [openproxylist.com]_25'
     type: vless
     server: 77.81.98.70
     port: 443
@@ -469,19 +678,309 @@ proxies:
     servername: www.aliexpress.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: '[US] Anycast-IP | [IPv6] | [BL'
+  - name: '[JP] Anycast-IP | [IPv6] | [BL'
     type: vless
-    server: 173.249.203.40
-    port: 16353
-    uuid: 00000000-0000-4000-8000-000000000000
+    server: 154.83.91.52
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
     udp: true
     network: ws
     tls: true
-    servername: ooa858iqkhza12.mesa.ip-ddns.com
+    servername: gogo5.kmj.qzz.io
+    client-fingerprint: chrome
     ws-opts:
-      path: /@Marisa_kristifp=chrome
+      path: /
       headers:
-        Host: ooa858iqkhza12.mesa.ip-ddns.com
+        Host: gogo5.kmj.qzz.io
+  - name: '[JP] Anycast-IP | [IPv6] | [BL_4'
+    type: vless
+    server: 50.114.113.51
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo.wknm.dpdns.org
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo.wknm.dpdns.org
+  - name: '[RS] [openproxylist.com]_31'
+    type: vless
+    server: 2.56.172.83
+    port: 8443
+    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI
+    servername: tradingview.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[FI] [openproxylist.com]_33'
+    type: vless
+    server: 45.12.146.179
+    port: 8443
+    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI
+    servername: tradingview.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[HK] Anycast-IP | [IPv6] | [BL_6'
+    type: vless
+    server: 43.159.1.84
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo11.kmj.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo11.kmj.qzz.io
+  - name: '[US] Anycast-IP | [IPv6] | [BL_3'
+    type: vless
+    server: 23.188.72.153
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo3.kmj.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo3.kmj.qzz.io
+  - name: '[US] [openproxylist.com]_6'
+    type: vless
+    server: 50.228.203.26
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: '[IT] [openproxylist.com]_22'
+    type: vless
+    server: 172.232.208.147
+    port: 443
+    uuid: d7f67e94-aa9e-4454-b1cf-ce522a0d2728
+    udp: true
+    network: tcp
+  - name: '[UN] [openproxylist.com]_20'
+    type: vless
+    server: dongjing4.zqjsqapi.com
+    port: 443
+    uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+    udp: true
+    network: ws
+    tls: true
+    servername: dongjing4.zqjsqapi.com
+    ws-opts:
+      path: /proxy
+      headers:
+        Host: dongjing4.zqjsqapi.com
+  - name: '[TR] [openproxylist.com]_26'
+    type: vless
+    server: 2.56.127.207
+    port: 443
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: XkRQUOLTBAiIXB1MK9oJwlfn-9XnH53ykk5UE6rDyFc
+      short-id: d4356669ea880400
+    servername: store.steampowered.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[NL] [openproxylist.com]_36'
+    type: vless
+    server: 72.56.75.169
+    port: 8443
+    uuid: 1c61a6c0-9bc7-4cb8-9188-6d86d5989388
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: XEWgLksY3vnV9riMEO7AZ7HR0Ecv3HxXLFglZtcmx00
+      short-id: d5
+    servername: nltw4.lckdwn.ru
+    client-fingerprint: chrome
+  - name: '[RU] Russia |  | [IPv6] [CIDR]_3'
+    type: vless
+    server: 5.42.107.88
+    port: 443
+    uuid: f14c72cc-9b1d-4826-b239-9743cb043f51
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: EtnBeC_4JSJcNzwlL5IsvGsWYyPWJNVZkVuVYl5BW1g
+      short-id: 122a
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: '[HK] Anycast-IP | [IPv6] | [BL'
+    type: vless
+    server: 219.76.13.183
+    port: 443
+    uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
+    udp: true
+    network: ws
+    tls: true
+    servername: sn1.skylee5.cloudns.ch
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: sn1.skylee5.cloudns.ch
+  - name: '[RU] Anycast-IP | [IPv6] [CIDR_7'
+    type: vless
+    server: 176.124.211.23
+    port: 8446
+    uuid: 7ae19592-5b2d-47ae-b96a-b49fe5219553
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    servername: jobinvest.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: '[RU] Anycast-IP | [IPv6] [CIDR_1'
+    type: vless
+    server: 176.124.211.23
+    port: 8446
+    uuid: 60ab0d9a-b43a-45dd-a54d-283d05c2d903
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    servername: jobinvest.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: '[KR] Anycast-IP | [IPv6] | [BL'
+    type: vless
+    server: 211.248.156.161
+    port: 21271
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /test/links/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: '[JP] Anycast-IP | [IPv6] | [BL_2'
+    type: vless
+    server: 156.231.115.146
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo8.kmj.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo8.kmj.qzz.io
+  - name: '[UN] Russia [CIDR]_6'
+    type: vless
+    server: ru.astrocore.cloud
+    port: 443
+    uuid: b1b24586-cccf-458d-b125-d621c3710676
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: X2Sb6CKcI_yEV4gu9KUAmL9mcL-xpC1Ngks06NYIaxw
+      short-id: f129f93e
+    servername: ru.astrocore.cloud
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[UN] United Kingdom London |'
+    type: vless
+    server: anten.ir
+    port: 8880
+    uuid: 1200eec7-1d18-49da-accf-8bc14096b5ae
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: het.sp-fast.site
+  - name: '[GB] [openproxylist.com]_28'
+    type: vless
+    server: 95.179.236.230
+    port: 443
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: ZpkoOvcRglQoTWJ3B7hiJlmMYTtIu41hJ51FMMdSTDE
+      short-id: 98c3d62ba1c26863
+    servername: www.argos.co.uk
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[RU] Anycast-IP | [IPv6] [CIDR_3'
+    type: vless
+    server: 176.124.211.23
+    port: 8454
+    uuid: 7a6535e1-efb6-47c6-9be5-1e4ed0947034
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    servername: jobinvest.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: '[US] Anycast-IP | [IPv6] | [BL_2'
+    type: vless
+    server: 96.126.130.217
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo5.kmj.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo5.kmj.qzz.io
+  - name: '[RU] United States |  | [IPv6]'
+    type: vless
+    server: 176.124.214.235
+    port: 443
+    uuid: c4d69096-4026-4da5-9485-20a3da91cb14
+    udp: true
+    network: grpc
+    tls: true
+    reality-opts:
+      public-key: NhsyjpnYcDfpRfyX2m47AsoHDX_boKi9e1lKOkFNsgE
+      short-id: 12a73c72
+    servername: login.vk.com
+    client-fingerprint: random
+    grpc-opts:
+      grpc-service-name: grpc
   - name: '[UN] The Netherlands Amsterdam'
     type: vless
     server: nl.astrocore.cloud
@@ -496,10 +995,51 @@ proxies:
     servername: nl.astrocore.cloud
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: '[HK] Anycast-IP | [IPv6] | [BL'
+  - name: '[RU] Russia |  | [IPv6] [CIDR]'
     type: vless
-    server: 203.168.131.112
-    port: 3389
+    server: 217.199.254.3
+    port: 443
+    uuid: d511e429-e32b-46a7-ac07-a0fffa9b634c
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+      short-id: 0123456789abcdef
+    servername: www.deepl.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[DE] [openproxylist.com]_24'
+    type: vless
+    server: 45.86.70.95
+    port: 8443
+    uuid: 1e45a266-9a04-47af-b703-e53a67373cc9
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: zQ3SBKNWRtAsrnU-Y2XiSEHodF_sgZ3UsKNfmIwRbjI
+      short-id: 9ff26c38f9b488
+    servername: max.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[RU] Russia [CIDR]_5'
+    type: vless
+    server: 46.149.71.46
+    port: 9443
+    uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+    servername: rutube.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: '[US] Anycast-IP | [IPv6] | [BL'
+    type: vless
+    server: 43.130.134.123
+    port: 65002
     uuid: bafacd98-136a-4530-838d-4e5c51838dac
     udp: true
     network: ws
@@ -507,100 +1047,9 @@ proxies:
     servername: juzi8186.qea.ccwu.cc
     client-fingerprint: firefox
     ws-opts:
-      path: /
+      path: /photo/china/juzibaipiao?ed=2560
       headers:
         Host: juzi8186.qea.ccwu.cc
-  - name: '[UN] [openproxylist.com]_38'
-    type: vless
-    server: uk1.fromblancwithlove.com
-    port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    udp: true
-    network: tcp
-    tls: true
-    servername: uk1.fromblancwithlove.com
-    client-fingerprint: chrome
-  - name: '[JP] [openproxylist.com]_33'
-    type: vless
-    server: 64.176.57.250
-    port: 443
-    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: wLkaWLYNGirBj1ggKZsnmlZiWnwZd99cIShBHVm7BQo
-      short-id: c906f73d3ba8211f
-    servername: www.muji.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[DE] Germany Frankfurt am Main_2'
-    type: vless
-    server: 82.21.114.7
-    port: 443
-    uuid: 7c917504-9b62-4c48-85bb-8ae5bc925315
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-      short-id: d0a1665d1b96515e
-    servername: de.kosmosapp.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[KR] Anycast-IP | [IPv6] | [BL'
-    type: vless
-    server: 125.139.243.71
-    port: 22335
-    uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-    udp: true
-    network: ws
-    tls: true
-    servername: pagescm.freen29.cc.cd
-    client-fingerprint: chrome
-    ws-opts:
-      path: /out.php
-      headers:
-        Host: pagescm.freen29.cc.cd
-  - name: '[UN] The Netherlands Doetinche'
-    type: vless
-    server: nl4.helper-internet.com
-    port: 443
-    uuid: c1d2e359-5652-40c2-bd0b-22263af6e5f4
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-      short-id: ff776ff77be48b88
-    servername: nl4.helper-internet.com
-    client-fingerprint: random
-    flow: xtls-rprx-vision
-  - name: '[NL] [openproxylist.com]_29'
-    type: vless
-    server: 194.124.250.34
-    port: 1443
-    uuid: 8e4eb711-d633-4750-99dd-282b792500ca
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: Jfnv1o-d5SM87897Ji5pblMU_pdi-cY91J9QWRj801M
-      short-id: '305214'
-    servername: www.google.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[RU] Russia [CIDR]_3'
-    type: vless
-    server: 178.72.181.52
-    port: 52006
-    uuid: 75807638-6f19-07d0-ae08-38492ee85c88
-    udp: true
-    network: tcp
-    tls: true
-    servername: cluster-russia-3.firstvideocdn.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
   - name: '[UN] Poland Warsaw (Mokotów) |'
     type: vless
     server: pl1.astrocore.cloud
@@ -615,211 +1064,22 @@ proxies:
     servername: pl1.astrocore.cloud
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: '[GE] [openproxylist.com]'
+  - name: '[TW] United States Reston | [B'
     type: vless
-    server: 72.56.62.253
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    udp: true
-    network: tcp
-    tls: true
-    servername: r1.mizulina.top
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision-udp443
-  - name: '[RS] [openproxylist.com]_39'
-    type: vless
-    server: 2.56.172.83
-    port: 8443
-    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI
-    servername: tradingview.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[SK] [openproxylist.com]_32'
-    type: vless
-    server: 5.252.23.53
-    port: 443
-    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 576eZ6y-yeWeJnmleDLI5bjyy90_Zd92-rpgy67Q6gg
-      short-id: 555fd87c44d272a4
-    servername: www.hyundai.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[JP] [openproxylist.com]_21'
-    type: vless
-    server: 47.79.144.103
-    port: 25242
-    uuid: a12b0d31-f599-498e-b76e-8558a14b766b
-    udp: true
-    network: ws
-    ws-opts:
-      path: /a12b0d31
-      headers:
-        Host: 47.79.144.103
-  - name: '[LV] Latvia Riga | [BL]'
-    type: vless
-    server: 185.145.245.249
-    port: 443
-    uuid: 7c917504-9b62-4c48-85bb-8ae5bc925315
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-      short-id: d0a1665d1b96515e
-    servername: lv.kosmosapp.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[UN] Poland |  | [IPv6] [CIDR]'
-    type: vless
-    server: pl.kp7mx3.uk
-    port: 443
-    uuid: 6f7ed352-71f5-451a-91b2-0ccb992bc63d
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: sjXGaIKayOS1NbOsFKxddiWq5yTRZbK0r8Df0465jWA
-    servername: www.deepl.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[RU] Russia |  | [IPv6] [CIDR]_4'
-    type: vless
-    server: 46.149.71.46
-    port: 443
-    uuid: 0dc3fe97-73e3-4cc2-89a7-331e66540365
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-      short-id: 67ccfc02
-    servername: www.avito.ru
-    client-fingerprint: edge
-    flow: xtls-rprx-vision
-  - name: '[US] [openproxylist.com]_6'
-    type: vless
-    server: 34.136.119.149
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?ed=2560&Telegram🇨🇳@WangCai2
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: '[UN] Germany Frankfurt am Main'
-    type: vless
-    server: de.kp7mx3.uk
-    port: 443
-    uuid: 6f7ed352-71f5-451a-91b2-0ccb992bc63d
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: -HZml4cOqX6eiw2hUzBpDoN9bksvyAvGoehglkvvkh4
-    servername: www.deepl.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[NL] [openproxylist.com]_10'
-    type: vless
-    server: 95.164.3.121
-    port: 20089
-    uuid: 4fe2b7d6-cdc0-44f3-8093-3a1fc92e8542
-    udp: true
-    network: tcp
-  - name: '[CW] Anycast-IP | [IPv6] | [BL'
-    type: vless
-    server: 88.216.67.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
-      headers:
-        Host: vms.lifetime05.workers.dev
-  - name: '[NL] [openproxylist.com]_45'
-    type: vless
-    server: 5.255.107.115
-    port: 443
-    uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-      short-id: 4fa44664f6a566d3
-    servername: nll.scroogethebest.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[AL] [openproxylist.com]_25'
-    type: vless
-    server: 144.31.131.33
-    port: 443
-    uuid: ae852d97-85f5-45cf-82a4-254eba345480
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: djH9iD2QV748ocK-wPH7HvDd03lu88zHhS4G-61w6Dc
-      short-id: a120
-    servername: cdn.cdnjst.org
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[RU] Sweden [CIDR]'
-    type: vless
-    server: 212.193.147.245
-    port: 443
-    uuid: e387b1c6-c344-Fade-b068-094f5b92aa23
-    udp: true
-    network: ws
-    tls: true
-    servername: s28233.cdn.ngenix.net
-    ws-opts:
-      path: /
-      headers:
-        Host: s28233.cdn.ngenix.net
-  - name: '[KR] [openproxylist.com]_18'
-    type: vless
-    server: 218.158.249.174
-    port: 10000
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: sni.111000.v6.army
-  - name: '[SG] Anycast-IP | [IPv6] | [BL_4'
-    type: vless
-    server: 8.222.194.4
+    server: 125.228.236.138
     port: 443
     uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
     udp: true
     network: ws
     tls: true
-    servername: gogo2.kmj.qzz.io
-    client-fingerprint: chrome
+    servername: gogo8.kmj.qzz.io
     ws-opts:
-      path: /
+      path: /fp=chrome
       headers:
-        Host: gogo2.kmj.qzz.io
-  - name: '[JP] Anycast-IP | [IPv6] | [BL_2'
+        Host: gogo8.kmj.qzz.io
+  - name: '[HK] Anycast-IP | [IPv6] | [BL_5'
     type: vless
-    server: 202.144.192.40
+    server: 43.159.5.168
     port: 443
     uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
     udp: true
@@ -831,353 +1091,11 @@ proxies:
       path: /
       headers:
         Host: gogo8.kmj.qzz.io
-  - name: '[UN] Georgia Tbilisi | [BL]'
+  - name: '[RU] Anycast-IP | [IPv6] [CIDR_8'
     type: vless
-    server: georg.sbrf-cdn342.ru
-    port: 443
-    uuid: 7bd29cac-f692-48a3-88d1-505f7e55f0d0
-    udp: true
-    network: tcp
-    tls: true
-    servername: sub.sbrf-cdn342.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[AE] [openproxylist.com]_4'
-    type: vless
-    server: 188.72.103.3
-    port: 443
-    uuid: 45e55198-a5ad-4f19-bb39-236822141d25
-    udp: true
-    network: ws
-    tls: true
-    servername: cdn.tracker.yandex.net
-    client-fingerprint: chrome
-    ws-opts:
-      path: /stream/updates/b66b78d7/019dfd7f-0777-6283-7287-911777c3720f4
-      headers:
-        Host: cdn.lovecrafty.link
-  - name: '[RU] Russia [CIDR]'
-    type: vless
-    server: 45.81.33.54
-    port: 443
-    uuid: 280cebf8-116e-4f73-ac4e-ef108343a6cd
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 4RrSSxyw5jBgXf_F-t7Flk5wRqWXCnXkblkAJveAbBo
-    servername: apple.com
-    client-fingerprint: random
-    flow: xtls-rprx-vision
-  - name: '[RU] Russia |  | [IPv6] [CIDR]_1'
-    type: vless
-    server: 5.42.107.88
-    port: 443
-    uuid: 79cdcdfc-cb9e-4a76-8fb5-bcd7768dba4f
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: EtnBeC_4JSJcNzwlL5IsvGsWYyPWJNVZkVuVYl5BW1g
-      short-id: 122a
-    servername: yahoo.com
-    client-fingerprint: chrome
-  - name: '[RU] Anycast-IP | [IPv6] [CIDR_3'
-    type: vless
-    server: 176.124.211.23
-    port: 8446
-    uuid: 7ae19592-5b2d-47ae-b96a-b49fe5219553
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    servername: jobinvest.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[KR] South Korea [CIDR]'
-    type: vless
-    server: 47.80.13.96
-    port: 443
-    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-    servername: api.company-target.com
-    client-fingerprint: chrome
-  - name: '[KR] [openproxylist.com]_15'
-    type: vless
-    server: 59.31.107.42
-    port: 13720
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: sni.111000.v6.army
-  - name: '[CA] Anycast-IP | [IPv6] [CIDR'
-    type: vless
-    server: 92.53.188.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime18.workers.dev
-  - name: '[TR] [openproxylist.com]_31'
-    type: vless
-    server: 2.56.127.207
-    port: 443
-    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: XkRQUOLTBAiIXB1MK9oJwlfn-9XnH53ykk5UE6rDyFc
-      short-id: d4356669ea880400
-    servername: store.steampowered.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[GB] [openproxylist.com]_35'
-    type: vless
-    server: 95.179.236.230
-    port: 443
-    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: ZpkoOvcRglQoTWJ3B7hiJlmMYTtIu41hJ51FMMdSTDE
-      short-id: 98c3d62ba1c26863
-    servername: www.argos.co.uk
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[UN] United States Orem (Orcha'
-    type: vless
-    server: bled-vpn.mooo.com
-    port: 443
-    uuid: 8653c309-2e28-4cea-90a7-8c0a705cf4cd
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: r0p4mowN4DRuD2hdpwMxUicIf3RmDG2Iu7SJ_S6sHQs
-      short-id: 8f2347ebd9
-    servername: sub.gertyhru.h-o-s-t.name
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[UN] [openproxylist.com]_22'
-    type: vless
-    server: dongjing4.zqjsqapi.com
-    port: 443
-    uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
-    udp: true
-    network: ws
-    tls: true
-    servername: dongjing4.zqjsqapi.com
-    ws-opts:
-      path: /proxy
-      headers:
-        Host: dongjing4.zqjsqapi.com
-  - name: '[NL] [openproxylist.com]_34'
-    type: vless
-    server: 95.179.150.23
-    port: 443
-    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: jAdL6F6VaKzvTMpPQ53X58sC_i2QY6Wx2rdjq4Eo3yo
-      short-id: a1b2c3d4e5f67890
-    servername: www.coolblue.nl
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[RU] Russia |  | [IPv6] [CIDR]_3'
-    type: vless
-    server: 46.149.71.46
-    port: 9443
-    uuid: d511e429-e32b-46a7-ac07-a0fffa9b634c
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-      short-id: 43dcff53849b81e6
-    servername: rutube.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[RU] Anycast-IP | [IPv6] [CIDR_4'
-    type: vless
-    server: 89.208.231.81
-    port: 443
-    uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: mAu8QDi3pbmMCFg9kKC-ZBIHdtnXeCuZt3VnAw6vlH4
-      short-id: ad7dab462a323acb
-    servername: ozon.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[PL] [openproxylist.com]_3'
-    type: vless
-    server: 45.140.204.119
-    port: 443
-    uuid: 30143e07-b734-4bd6-867c-7daf4782cccb
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: vl5WQd9UDA3DvLxPPS1yF9ivUipxkxoxhaBRHpnyLho
-      short-id: 67fb
-    servername: yahoo.com
-    client-fingerprint: chrome
-  - name: '[UN] Anycast-IP | [IPv6] | [BL'
-    type: vless
-    server: srv1.khatibirepair.ir
-    port: 80
-    uuid: 73d17f62-d0c0-4c90-903c-a2b3f3806cca
-    udp: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: fragrant-tooth-a5b7.cajeba6448.workers.dev
-  - name: '[RU] Anycast-IP | [IPv6] [CIDR_2'
-    type: vless
-    server: 176.124.211.23
-    port: 8446
-    uuid: e7315ce3-b52b-4566-82dc-49a36538d42a
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    servername: jobinvest.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[KR] [openproxylist.com]_16'
-    type: vless
-    server: 121.175.77.73
-    port: 10333
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: sni.111000.v6.army
-  - name: '[DE] Germany Frankfurt am Main_1'
-    type: vless
-    server: 82.21.117.140
-    port: 443
-    uuid: 7c917504-9b62-4c48-85bb-8ae5bc925315
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-      short-id: d0a1665d1b96515e
-    servername: de.kosmosapp.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[RU] Russia |  | [IPv6] [CIDR]'
-    type: vless
-    server: 217.199.254.3
-    port: 443
-    uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-      short-id: 1a
-    servername: www.deepl.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[FI] [openproxylist.com]_12'
-    type: vless
-    server: 138.124.9.190
-    port: 16558
-    uuid: 11348c0f-b646-446a-bad7-b2b39c6de767
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: vDKgmefC_2JaSrrvQSsb7DU3KBeKUlXG1V0vgdjv_i4
-      short-id: 0a856e071790b1
-    servername: gpuopen.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[UN] Lithuania Vilnius | [BL]'
-    type: vless
-    server: lit5.helper-internet.com
-    port: 443
-    uuid: c1d2e359-5652-40c2-bd0b-22263af6e5f4
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-      short-id: ff776ff77be48b88
-    servername: lit5.helper-internet.com
-    client-fingerprint: random
-    flow: xtls-rprx-vision
-  - name: '[UN] United Kingdom London |'
-    type: vless
-    server: anten.ir
-    port: 8880
-    uuid: 1200eec7-1d18-49da-accf-8bc14096b5ae
-    udp: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: het.sp-fast.site
-  - name: '[DE] [openproxylist.com]_8'
-    type: vless
-    server: 89.106.83.45
-    port: 443
-    uuid: 629d2ccc-3a2a-4dd3-83d2-86b25fc8783e
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
-      short-id: '23'
-    servername: www.apple.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[UN] France |  | [IPv6] [CIDR]'
-    type: vless
-    server: fr1.helper-internet.com
-    port: 443
-    uuid: c1d2e359-5652-40c2-bd0b-22263af6e5f4
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-      short-id: ff776ff77be48b88
-    servername: fr1.helper-internet.com
-    client-fingerprint: random
-    flow: xtls-rprx-vision
-  - name: '[RU] Anycast-IP | [IPv6] [CIDR'
-    type: vless
-    server: 176.124.211.23
+    server: 109.73.199.48
     port: 8454
-    uuid: e7315ce3-b52b-4566-82dc-49a36538d42a
+    uuid: 7a6535e1-efb6-47c6-9be5-1e4ed0947034
     udp: true
     network: tcp
     tls: true
@@ -1186,43 +1104,19 @@ proxies:
     servername: jobinvest.ru
     client-fingerprint: qq
     flow: xtls-rprx-vision
-  - name: '[CA] [openproxylist.com]_42'
+  - name: '[RU] Russia [CIDR]_2'
     type: vless
-    server: 172.64.146.143
-    port: 80
-    uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
-    udp: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: tt.andishehparenting.com
-  - name: '[US] [openproxylist.com]_7'
-    type: vless
-    server: 50.228.203.26
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: '[UN] Spain |  | [IPv6] [CIDR]'
-    type: vless
-    server: spain1.helper-internet.com
-    port: 443
-    uuid: c1d2e359-5652-40c2-bd0b-22263af6e5f4
+    server: 5.129.204.161
+    port: 8443
+    uuid: 5d1e9449-c5da-48d9-a307-df280251a835
     udp: true
     network: tcp
     tls: true
-    reality-opts:
-      public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-      short-id: ff776ff77be48b88
-    servername: spain1.helper-internet.com
-    client-fingerprint: random
+    servername: altrunet-probe.tw1.su
+    alpn:
+      - http/1.1
+      - h2
+      - h3
     flow: xtls-rprx-vision
   - name: '[UN] The Netherlands Amsterdam_1'
     type: vless
@@ -1237,23 +1131,37 @@ proxies:
     alpn:
       - http/1.1
     flow: xtls-rprx-vision
-  - name: '[UN] Russia [CIDR]_6'
+  - name: '[KR] Anycast-IP | [IPv6] | [BL_1'
     type: vless
-    server: rf1.helper-internet.com
-    port: 443
-    uuid: c1d2e359-5652-40c2-bd0b-22263af6e5f4
+    server: 59.4.166.72
+    port: 12504
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
     udp: true
-    network: tcp
+    network: ws
     tls: true
-    reality-opts:
-      public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-      short-id: ff776ff77be48b88
-    servername: rf1.helper-internet.com
-    client-fingerprint: random
-    flow: xtls-rprx-vision
-  - name: '[TW] Anycast-IP | [IPv6] | [BL_2'
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /auth/mall/store/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: '[HK] Anycast-IP | [IPv6] | [BL_4'
     type: vless
-    server: 125.228.236.138
+    server: 43.159.4.192
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: gogo5.kmj.qzz.io
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: gogo5.kmj.qzz.io
+  - name: '[HK] Anycast-IP | [IPv6] | [BL_1'
+    type: vless
+    server: 154.12.189.81
     port: 443
     uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
     udp: true
@@ -1262,433 +1170,198 @@ proxies:
     servername: gogo8.kmj.qzz.io
     client-fingerprint: chrome
     ws-opts:
-      path: /fp=chrome
+      path: /
       headers:
         Host: gogo8.kmj.qzz.io
-  - name: '[US] United States |  | [IPv6]'
-    type: vless
-    server: 152.53.39.27
-    port: 443
-    uuid: 7c917504-9b62-4c48-85bb-8ae5bc925315
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-      short-id: d0a1665d1b96515e
-    servername: us.kosmosapp.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[RU] Russia [CIDR]_2'
-    type: vless
-    server: 5.129.204.161
-    port: 8443
-    uuid: 5d1e9449-c5da-48d9-a307-df280251a835
-    udp: true
-    network: tcp
-    tls: true
-    servername: altrunet-probe.tw1.su
-    flow: xtls-rprx-vision
-  - name: '[TH] [openproxylist.com]_14'
-    type: vless
-    server: 116.206.124.228
-    port: 80
-    uuid: 3c52e091-6714-4915-949f-2149fe69951b
-    udp: true
-    network: ws
-    ws-opts:
-      path: /ws
-      headers:
-        Host: aIs.SpEeDtEsT.nEt
-  - name: '[TW] Anycast-IP | [IPv6] | [BL'
-    type: vless
-    server: 211.75.210.33
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: gogo11.kmj.qzz.io
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: gogo11.kmj.qzz.io
-  - name: '[JP] [openproxylist.com]_19'
-    type: vless
-    server: 8.216.21.135
-    port: 10026
-    uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-    udp: true
-    network: tcp
-  - name: '[CH] [openproxylist.com]_20'
-    type: vless
-    server: 84.234.16.169
-    port: 443
-    uuid: 8007e155-622e-4c9d-8a6e-67f49b4678f4
-    udp: true
-    network: ws
-    tls: true
-    servername: edt2-lgy.pages.dev
-    ws-opts:
-      path: /
-      headers:
-        Host: edt2-lgy.pages.dev
-  - name: '[US] Anycast-IP | [IPv6] | [BL_1'
-    type: vless
-    server: 23.188.72.153
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: gogo3.kmj.qzz.io
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: gogo3.kmj.qzz.io
-  - name: '[JP] Anycast-IP | [IPv6] | [BL_1'
-    type: vless
-    server: 23.151.104.198
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: gogo.wknm.qzz.io
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: gogo.wknm.qzz.io
-  - name: '[CH] Switzerland Geneva | [BL]'
-    type: vless
-    server: 83.228.241.166
-    port: 443
-    uuid: 7c917504-9b62-4c48-85bb-8ae5bc925315
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: r77nilacD34SeLmghmchRKuNiUL0xzh-pK87Ux58dzI
-      short-id: d0a1665d1b96515e
-    servername: ch.kosmosapp.ru
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: '[DE] [openproxylist.com]_27'
-    type: vless
-    server: 45.86.70.95
-    port: 8443
-    uuid: 1e45a266-9a04-47af-b703-e53a67373cc9
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: zQ3SBKNWRtAsrnU-Y2XiSEHodF_sgZ3UsKNfmIwRbjI
-      short-id: 9ff26c38f9b488
-    servername: max.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[TH] Thailand [CIDR]_1'
-    type: vless
-    server: 47.81.36.248
-    port: 443
-    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-    servername: api.digital-help-prd.autodesk.com
-    client-fingerprint: chrome
-  - name: '[DE] Anycast-IP | [IPv6] | [BL'
-    type: vless
-    server: 150.241.113.48
-    port: 14909
-    uuid: 00000000-0000-4000-8000-000000000000
-    udp: true
-    network: ws
-    tls: true
-    servername: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-    ws-opts:
-      path: /@Marisa_kristifp=chrome
-      headers:
-        Host: 57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org
-  - name: '[CY] Anycast-IP | [IPv6] [CIDR'
-    type: vless
-    server: 77.75.199.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: vms.lifetime59.workers.dev
-  - name: '[GB] [openproxylist.com]_36'
-    type: vless
-    server: 178.159.10.78
-    port: 443
-    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 6tORX9bm6UlGJ4dR8L2kzOd21oSrOyzpN7gC6SqGGyc
-      short-id: d27683580fc15f1e
-    servername: www.vodafone.co.uk
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: '[RU] Russia |  | [IPv6] [CIDR]_2'
-    type: vless
-    server: 46.149.71.46
-    port: 443
-    uuid: d511e429-e32b-46a7-ac07-a0fffa9b634c
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-      short-id: 0123456789abcdef
-    servername: www.avito.ru
-    client-fingerprint: edge
-    flow: xtls-rprx-vision
 proxy-groups:
   - name: SELECT
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '[RU] Anycast-IP | [IPv6] [CIDR_1'
-      - '[FR] [openproxylist.com]_46'
-      - '[HK] Anycast-IP | [IPv6] | [BL_1'
-      - '[SG] Anycast-IP | [IPv6] | [BL'
-      - '[UN] [openproxylist.com]_44'
-      - '[UN] Russia [CIDR]_1'
-      - '[FR] [openproxylist.com]_37'
-      - '[SG] Anycast-IP | [IPv6] | [BL_2'
-      - '[KZ] Kazakhstan Astana | [BL]'
-      - '[RU] Russia | [IPv6] [CIDR]'
-      - '[UN] Russia [CIDR]_7'
+      - '[US] [openproxylist.com]_4'
+      - '[AE] [openproxylist.com]_2'
       - '[RU] Finland [CIDR] YA'
-      - '[GB] [openproxylist.com]_41'
-      - '[CH] Switzerland Geneva |  | ['
-      - '[MY] Anycast-IP | [IPv6] | [BL'
-      - '[AT] [openproxylist.com]_11'
-      - '[UN] Poland |  | [IPv6] [CIDR]_1'
-      - '[EE] Anycast-IP | [IPv6] [CIDR'
-      - '[SG] Anycast-IP | [IPv6] | [BL_1'
-      - '[DE] Germany Frankfurt am Main'
-      - '[JP] Anycast-IP | [IPv6] | [BL'
-      - '[PL] Poland Warsaw | [BL]'
-      - '[RU] [openproxylist.com]_43'
-      - '[UN] [openproxylist.com]_1'
-      - '[TW] Anycast-IP | [IPv6] | [BL_1'
-      - '[NL] The Netherlands Amsterdam'
-      - '[CY] Anycast-IP | [IPv6] | [BL'
-      - '[UN] Latvia Riga |  | [IPv6] |'
-      - '[FR] [openproxylist.com]_5'
-      - '[KR] [openproxylist.com]_17'
-      - '[SG] Anycast-IP | [IPv6] | [BL_3'
-      - '[IT] [openproxylist.com]_24'
-      - '[RO] [openproxylist.com]_26'
-      - '[FI] [openproxylist.com]_40'
-      - '[AE] [openproxylist.com]_28'
-      - '[RO] [openproxylist.com]_30'
-      - '[US] Anycast-IP | [IPv6] | [BL'
-      - '[UN] The Netherlands Amsterdam'
-      - '[HK] Anycast-IP | [IPv6] | [BL'
-      - '[UN] [openproxylist.com]_38'
-      - '[JP] [openproxylist.com]_33'
-      - '[DE] Germany Frankfurt am Main_2'
-      - '[KR] Anycast-IP | [IPv6] | [BL'
-      - '[UN] The Netherlands Doetinche'
-      - '[NL] [openproxylist.com]_29'
-      - '[RU] Russia [CIDR]_3'
-      - '[UN] Poland Warsaw (Mokotów) |'
-      - '[GE] [openproxylist.com]'
-      - '[RS] [openproxylist.com]_39'
-      - '[SK] [openproxylist.com]_32'
-      - '[JP] [openproxylist.com]_21'
-      - '[LV] Latvia Riga | [BL]'
-      - '[UN] Poland |  | [IPv6] [CIDR]'
-      - '[RU] Russia |  | [IPv6] [CIDR]_4'
-      - '[US] [openproxylist.com]_6'
-      - '[UN] Germany Frankfurt am Main'
-      - '[NL] [openproxylist.com]_10'
-      - '[CW] Anycast-IP | [IPv6] | [BL'
-      - '[NL] [openproxylist.com]_45'
-      - '[AL] [openproxylist.com]_25'
-      - '[RU] Sweden [CIDR]'
-      - '[KR] [openproxylist.com]_18'
-      - '[SG] Anycast-IP | [IPv6] | [BL_4'
-      - '[JP] Anycast-IP | [IPv6] | [BL_2'
-      - '[UN] Georgia Tbilisi | [BL]'
-      - '[AE] [openproxylist.com]_4'
-      - '[RU] Russia [CIDR]'
-      - '[RU] Russia |  | [IPv6] [CIDR]_1'
-      - '[RU] Anycast-IP | [IPv6] [CIDR_3'
-      - '[KR] South Korea [CIDR]'
-      - '[KR] [openproxylist.com]_15'
-      - '[CA] Anycast-IP | [IPv6] [CIDR'
-      - '[TR] [openproxylist.com]_31'
-      - '[GB] [openproxylist.com]_35'
-      - '[UN] United States Orem (Orcha'
-      - '[UN] [openproxylist.com]_22'
-      - '[NL] [openproxylist.com]_34'
-      - '[RU] Russia |  | [IPv6] [CIDR]_3'
-      - '[RU] Anycast-IP | [IPv6] [CIDR_4'
-      - '[PL] [openproxylist.com]_3'
-      - '[UN] Anycast-IP | [IPv6] | [BL'
-      - '[RU] Anycast-IP | [IPv6] [CIDR_2'
-      - '[KR] [openproxylist.com]_16'
-      - '[DE] Germany Frankfurt am Main_1'
-      - '[RU] Russia |  | [IPv6] [CIDR]'
-      - '[FI] [openproxylist.com]_12'
-      - '[UN] Lithuania Vilnius | [BL]'
-      - '[UN] United Kingdom London |'
-      - '[DE] [openproxylist.com]_8'
-      - '[UN] France |  | [IPv6] [CIDR]'
-      - '[RU] Anycast-IP | [IPv6] [CIDR'
-      - '[CA] [openproxylist.com]_42'
-      - '[US] [openproxylist.com]_7'
-      - '[UN] Spain |  | [IPv6] [CIDR]'
-      - '[UN] The Netherlands Amsterdam_1'
-      - '[UN] Russia [CIDR]_6'
-      - '[TW] Anycast-IP | [IPv6] | [BL_2'
-      - '[US] United States |  | [IPv6]'
-      - '[RU] Russia [CIDR]_2'
-      - '[TH] [openproxylist.com]_14'
-      - '[TW] Anycast-IP | [IPv6] | [BL'
-      - '[JP] [openproxylist.com]_19'
-      - '[CH] [openproxylist.com]_20'
-      - '[US] Anycast-IP | [IPv6] | [BL_1'
+      - '[KR] Anycast-IP | [IPv6] | [BL_3'
       - '[JP] Anycast-IP | [IPv6] | [BL_1'
-      - '[CH] Switzerland Geneva | [BL]'
-      - '[DE] [openproxylist.com]_27'
-      - '[TH] Thailand [CIDR]_1'
-      - '[DE] Anycast-IP | [IPv6] | [BL'
-      - '[CY] Anycast-IP | [IPv6] [CIDR'
-      - '[GB] [openproxylist.com]_36'
+      - '[GB] [openproxylist.com]_30'
+      - '[KR] Anycast-IP | [IPv6] | [BL_2'
+      - '[RU] Russia |  | [IPv6] [CIDR]_1'
+      - '[UN] Georgia Tbilisi | [BL]'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_5'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_6'
+      - '[UN] [openproxylist.com]_1'
+      - '[NL] [openproxylist.com]_9'
+      - '[FI] [openproxylist.com]_11'
+      - '[TW] Anycast-IP | [IPv6] | [BL'
+      - '[FR] [openproxylist.com]_38'
+      - '[FR] [openproxylist.com]_3'
+      - '[GB] [openproxylist.com]_29'
+      - '[SG] Anycast-IP | [IPv6] | [BL'
+      - '[JP] [openproxylist.com]_27'
+      - '[UN] [openproxylist.com]_13'
       - '[RU] Russia |  | [IPv6] [CIDR]_2'
+      - '[RO] [openproxylist.com]_23'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_4'
+      - '[GE] [openproxylist.com]'
+      - '[UN] [openproxylist.com]_21'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_2'
+      - '[RU] Finland |  [CIDR] VK'
+      - '[JP] Anycast-IP | [IPv6] | [BL_5'
+      - '[RU] Russia [CIDR]_3'
+      - '[US] Anycast-IP | [IPv6] | [BL_1'
+      - '[AT] [openproxylist.com]_10'
+      - '[CA] [openproxylist.com]_37'
+      - '[NL] [openproxylist.com]_32'
+      - '[TW] Anycast-IP | [IPv6] | [BL_1'
+      - '[HK] Anycast-IP | [IPv6] | [BL_2'
+      - '[DE] Germany |  | [IPv6] [CIDR'
+      - '[MY] Anycast-IP | [IPv6] | [BL'
+      - '[KR] [openproxylist.com]_16'
+      - '[SG] Anycast-IP | [IPv6] | [BL_1'
+      - '[UN] [openproxylist.com]_39'
+      - '[GB] [openproxylist.com]_35'
+      - '[HK] Anycast-IP | [IPv6] | [BL_7'
+      - '[UN] Russia [CIDR]_7'
+      - '[JP] Anycast-IP | [IPv6] | [BL_3'
+      - '[RU] Anycast-IP | [IPv6] [CIDR'
+      - '[CH] [openproxylist.com]_19'
+      - '[UN] Russia [CIDR]_1'
+      - '[KR] [openproxylist.com]_15'
+      - '[KR] [openproxylist.com]_14'
+      - '[HK] Anycast-IP | [IPv6] | [BL_3'
+      - '[RO] [openproxylist.com]_25'
+      - '[JP] Anycast-IP | [IPv6] | [BL'
+      - '[JP] Anycast-IP | [IPv6] | [BL_4'
+      - '[RS] [openproxylist.com]_31'
+      - '[FI] [openproxylist.com]_33'
+      - '[HK] Anycast-IP | [IPv6] | [BL_6'
+      - '[US] Anycast-IP | [IPv6] | [BL_3'
+      - '[US] [openproxylist.com]_6'
+      - '[IT] [openproxylist.com]_22'
+      - '[UN] [openproxylist.com]_20'
+      - '[TR] [openproxylist.com]_26'
+      - '[NL] [openproxylist.com]_36'
+      - '[RU] Russia |  | [IPv6] [CIDR]_3'
+      - '[HK] Anycast-IP | [IPv6] | [BL'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_7'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_1'
+      - '[KR] Anycast-IP | [IPv6] | [BL'
+      - '[JP] Anycast-IP | [IPv6] | [BL_2'
+      - '[UN] Russia [CIDR]_6'
+      - '[UN] United Kingdom London |'
+      - '[GB] [openproxylist.com]_28'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_3'
+      - '[US] Anycast-IP | [IPv6] | [BL_2'
+      - '[RU] United States |  | [IPv6]'
+      - '[UN] The Netherlands Amsterdam'
+      - '[RU] Russia |  | [IPv6] [CIDR]'
+      - '[DE] [openproxylist.com]_24'
+      - '[RU] Russia [CIDR]_5'
+      - '[US] Anycast-IP | [IPv6] | [BL'
+      - '[UN] Poland Warsaw (Mokotów) |'
+      - '[TW] United States Reston | [B'
+      - '[HK] Anycast-IP | [IPv6] | [BL_5'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_8'
+      - '[RU] Russia [CIDR]_2'
+      - '[UN] The Netherlands Amsterdam_1'
+      - '[KR] Anycast-IP | [IPv6] | [BL_1'
+      - '[HK] Anycast-IP | [IPv6] | [BL_4'
+      - '[HK] Anycast-IP | [IPv6] | [BL_1'
   - name: URL-TEST
     type: url-test
     url: http://www.google.com/generate_204
     interval: 300
     proxies: &id001
-      - '[RU] Anycast-IP | [IPv6] [CIDR_1'
-      - '[FR] [openproxylist.com]_46'
-      - '[HK] Anycast-IP | [IPv6] | [BL_1'
-      - '[SG] Anycast-IP | [IPv6] | [BL'
-      - '[UN] [openproxylist.com]_44'
-      - '[UN] Russia [CIDR]_1'
-      - '[FR] [openproxylist.com]_37'
-      - '[SG] Anycast-IP | [IPv6] | [BL_2'
-      - '[KZ] Kazakhstan Astana | [BL]'
-      - '[RU] Russia | [IPv6] [CIDR]'
-      - '[UN] Russia [CIDR]_7'
+      - '[US] [openproxylist.com]_4'
+      - '[AE] [openproxylist.com]_2'
       - '[RU] Finland [CIDR] YA'
-      - '[GB] [openproxylist.com]_41'
-      - '[CH] Switzerland Geneva |  | ['
-      - '[MY] Anycast-IP | [IPv6] | [BL'
-      - '[AT] [openproxylist.com]_11'
-      - '[UN] Poland |  | [IPv6] [CIDR]_1'
-      - '[EE] Anycast-IP | [IPv6] [CIDR'
-      - '[SG] Anycast-IP | [IPv6] | [BL_1'
-      - '[DE] Germany Frankfurt am Main'
-      - '[JP] Anycast-IP | [IPv6] | [BL'
-      - '[PL] Poland Warsaw | [BL]'
-      - '[RU] [openproxylist.com]_43'
-      - '[UN] [openproxylist.com]_1'
-      - '[TW] Anycast-IP | [IPv6] | [BL_1'
-      - '[NL] The Netherlands Amsterdam'
-      - '[CY] Anycast-IP | [IPv6] | [BL'
-      - '[UN] Latvia Riga |  | [IPv6] |'
-      - '[FR] [openproxylist.com]_5'
-      - '[KR] [openproxylist.com]_17'
-      - '[SG] Anycast-IP | [IPv6] | [BL_3'
-      - '[IT] [openproxylist.com]_24'
-      - '[RO] [openproxylist.com]_26'
-      - '[FI] [openproxylist.com]_40'
-      - '[AE] [openproxylist.com]_28'
-      - '[RO] [openproxylist.com]_30'
-      - '[US] Anycast-IP | [IPv6] | [BL'
-      - '[UN] The Netherlands Amsterdam'
-      - '[HK] Anycast-IP | [IPv6] | [BL'
-      - '[UN] [openproxylist.com]_38'
-      - '[JP] [openproxylist.com]_33'
-      - '[DE] Germany Frankfurt am Main_2'
-      - '[KR] Anycast-IP | [IPv6] | [BL'
-      - '[UN] The Netherlands Doetinche'
-      - '[NL] [openproxylist.com]_29'
-      - '[RU] Russia [CIDR]_3'
-      - '[UN] Poland Warsaw (Mokotów) |'
-      - '[GE] [openproxylist.com]'
-      - '[RS] [openproxylist.com]_39'
-      - '[SK] [openproxylist.com]_32'
-      - '[JP] [openproxylist.com]_21'
-      - '[LV] Latvia Riga | [BL]'
-      - '[UN] Poland |  | [IPv6] [CIDR]'
-      - '[RU] Russia |  | [IPv6] [CIDR]_4'
-      - '[US] [openproxylist.com]_6'
-      - '[UN] Germany Frankfurt am Main'
-      - '[NL] [openproxylist.com]_10'
-      - '[CW] Anycast-IP | [IPv6] | [BL'
-      - '[NL] [openproxylist.com]_45'
-      - '[AL] [openproxylist.com]_25'
-      - '[RU] Sweden [CIDR]'
-      - '[KR] [openproxylist.com]_18'
-      - '[SG] Anycast-IP | [IPv6] | [BL_4'
-      - '[JP] Anycast-IP | [IPv6] | [BL_2'
-      - '[UN] Georgia Tbilisi | [BL]'
-      - '[AE] [openproxylist.com]_4'
-      - '[RU] Russia [CIDR]'
-      - '[RU] Russia |  | [IPv6] [CIDR]_1'
-      - '[RU] Anycast-IP | [IPv6] [CIDR_3'
-      - '[KR] South Korea [CIDR]'
-      - '[KR] [openproxylist.com]_15'
-      - '[CA] Anycast-IP | [IPv6] [CIDR'
-      - '[TR] [openproxylist.com]_31'
-      - '[GB] [openproxylist.com]_35'
-      - '[UN] United States Orem (Orcha'
-      - '[UN] [openproxylist.com]_22'
-      - '[NL] [openproxylist.com]_34'
-      - '[RU] Russia |  | [IPv6] [CIDR]_3'
-      - '[RU] Anycast-IP | [IPv6] [CIDR_4'
-      - '[PL] [openproxylist.com]_3'
-      - '[UN] Anycast-IP | [IPv6] | [BL'
-      - '[RU] Anycast-IP | [IPv6] [CIDR_2'
-      - '[KR] [openproxylist.com]_16'
-      - '[DE] Germany Frankfurt am Main_1'
-      - '[RU] Russia |  | [IPv6] [CIDR]'
-      - '[FI] [openproxylist.com]_12'
-      - '[UN] Lithuania Vilnius | [BL]'
-      - '[UN] United Kingdom London |'
-      - '[DE] [openproxylist.com]_8'
-      - '[UN] France |  | [IPv6] [CIDR]'
-      - '[RU] Anycast-IP | [IPv6] [CIDR'
-      - '[CA] [openproxylist.com]_42'
-      - '[US] [openproxylist.com]_7'
-      - '[UN] Spain |  | [IPv6] [CIDR]'
-      - '[UN] The Netherlands Amsterdam_1'
-      - '[UN] Russia [CIDR]_6'
-      - '[TW] Anycast-IP | [IPv6] | [BL_2'
-      - '[US] United States |  | [IPv6]'
-      - '[RU] Russia [CIDR]_2'
-      - '[TH] [openproxylist.com]_14'
-      - '[TW] Anycast-IP | [IPv6] | [BL'
-      - '[JP] [openproxylist.com]_19'
-      - '[CH] [openproxylist.com]_20'
-      - '[US] Anycast-IP | [IPv6] | [BL_1'
+      - '[KR] Anycast-IP | [IPv6] | [BL_3'
       - '[JP] Anycast-IP | [IPv6] | [BL_1'
-      - '[CH] Switzerland Geneva | [BL]'
-      - '[DE] [openproxylist.com]_27'
-      - '[TH] Thailand [CIDR]_1'
-      - '[DE] Anycast-IP | [IPv6] | [BL'
-      - '[CY] Anycast-IP | [IPv6] [CIDR'
-      - '[GB] [openproxylist.com]_36'
+      - '[GB] [openproxylist.com]_30'
+      - '[KR] Anycast-IP | [IPv6] | [BL_2'
+      - '[RU] Russia |  | [IPv6] [CIDR]_1'
+      - '[UN] Georgia Tbilisi | [BL]'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_5'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_6'
+      - '[UN] [openproxylist.com]_1'
+      - '[NL] [openproxylist.com]_9'
+      - '[FI] [openproxylist.com]_11'
+      - '[TW] Anycast-IP | [IPv6] | [BL'
+      - '[FR] [openproxylist.com]_38'
+      - '[FR] [openproxylist.com]_3'
+      - '[GB] [openproxylist.com]_29'
+      - '[SG] Anycast-IP | [IPv6] | [BL'
+      - '[JP] [openproxylist.com]_27'
+      - '[UN] [openproxylist.com]_13'
       - '[RU] Russia |  | [IPv6] [CIDR]_2'
+      - '[RO] [openproxylist.com]_23'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_4'
+      - '[GE] [openproxylist.com]'
+      - '[UN] [openproxylist.com]_21'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_2'
+      - '[RU] Finland |  [CIDR] VK'
+      - '[JP] Anycast-IP | [IPv6] | [BL_5'
+      - '[RU] Russia [CIDR]_3'
+      - '[US] Anycast-IP | [IPv6] | [BL_1'
+      - '[AT] [openproxylist.com]_10'
+      - '[CA] [openproxylist.com]_37'
+      - '[NL] [openproxylist.com]_32'
+      - '[TW] Anycast-IP | [IPv6] | [BL_1'
+      - '[HK] Anycast-IP | [IPv6] | [BL_2'
+      - '[DE] Germany |  | [IPv6] [CIDR'
+      - '[MY] Anycast-IP | [IPv6] | [BL'
+      - '[KR] [openproxylist.com]_16'
+      - '[SG] Anycast-IP | [IPv6] | [BL_1'
+      - '[UN] [openproxylist.com]_39'
+      - '[GB] [openproxylist.com]_35'
+      - '[HK] Anycast-IP | [IPv6] | [BL_7'
+      - '[UN] Russia [CIDR]_7'
+      - '[JP] Anycast-IP | [IPv6] | [BL_3'
+      - '[RU] Anycast-IP | [IPv6] [CIDR'
+      - '[CH] [openproxylist.com]_19'
+      - '[UN] Russia [CIDR]_1'
+      - '[KR] [openproxylist.com]_15'
+      - '[KR] [openproxylist.com]_14'
+      - '[HK] Anycast-IP | [IPv6] | [BL_3'
+      - '[RO] [openproxylist.com]_25'
+      - '[JP] Anycast-IP | [IPv6] | [BL'
+      - '[JP] Anycast-IP | [IPv6] | [BL_4'
+      - '[RS] [openproxylist.com]_31'
+      - '[FI] [openproxylist.com]_33'
+      - '[HK] Anycast-IP | [IPv6] | [BL_6'
+      - '[US] Anycast-IP | [IPv6] | [BL_3'
+      - '[US] [openproxylist.com]_6'
+      - '[IT] [openproxylist.com]_22'
+      - '[UN] [openproxylist.com]_20'
+      - '[TR] [openproxylist.com]_26'
+      - '[NL] [openproxylist.com]_36'
+      - '[RU] Russia |  | [IPv6] [CIDR]_3'
+      - '[HK] Anycast-IP | [IPv6] | [BL'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_7'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_1'
+      - '[KR] Anycast-IP | [IPv6] | [BL'
+      - '[JP] Anycast-IP | [IPv6] | [BL_2'
+      - '[UN] Russia [CIDR]_6'
+      - '[UN] United Kingdom London |'
+      - '[GB] [openproxylist.com]_28'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_3'
+      - '[US] Anycast-IP | [IPv6] | [BL_2'
+      - '[RU] United States |  | [IPv6]'
+      - '[UN] The Netherlands Amsterdam'
+      - '[RU] Russia |  | [IPv6] [CIDR]'
+      - '[DE] [openproxylist.com]_24'
+      - '[RU] Russia [CIDR]_5'
+      - '[US] Anycast-IP | [IPv6] | [BL'
+      - '[UN] Poland Warsaw (Mokotów) |'
+      - '[TW] United States Reston | [B'
+      - '[HK] Anycast-IP | [IPv6] | [BL_5'
+      - '[RU] Anycast-IP | [IPv6] [CIDR_8'
+      - '[RU] Russia [CIDR]_2'
+      - '[UN] The Netherlands Amsterdam_1'
+      - '[KR] Anycast-IP | [IPv6] | [BL_1'
+      - '[HK] Anycast-IP | [IPv6] | [BL_4'
+      - '[HK] Anycast-IP | [IPv6] | [BL_1'
   - name: FALLBACK
     type: fallback
     url: http://www.google.com/generate_204
