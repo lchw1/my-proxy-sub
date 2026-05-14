@@ -34,6 +34,44 @@ COUNTRY_MAP = {
     "IN": ("🇮🇳", "Индия"), "BR": ("🇧🇷", "Бразилия")
 }
 
+# Словарь для умного поиска стран по тексту (доменам и названиям)
+COUNTRY_KEYWORDS = {
+    "russia": "RU", "россия": "RU", "moscow": "RU", "sbrf": "RU",
+    "germany": "DE", "германия": "DE", "frankfurt": "DE", "gernode": "DE",
+    "netherlands": "NL", "нидерланды": "NL", "amsterdam": "NL",
+    "poland": "PL", "польша": "PL",
+    "usa": "US", "united states": "US", "сша": "US", "america": "US",
+    "finland": "FI", "финляндия": "FI", "helsinki": "FI",
+    "belgium": "BE", "бельгия": "BE",
+    "spain": "ES", "испания": "ES",
+    "italy": "IT", "италия": "IT",
+    "kazakhstan": "KZ", "казахстан": "KZ", "astana": "KZ",
+    "lithuania": "LT", "литва": "LT", "lithnode": "LT",
+    "singapore": "SG", "сингапур": "SG",
+    "czechia": "CZ", "чехия": "CZ", "cznode": "CZ",
+    "switzerland": "CH", "швейцария": "CH",
+    "sweden": "SE", "швеция": "SE", "swed": "SE",
+    "estonia": "EE", "эстония": "EE",
+    "canada": "CA", "канада": "CA",
+    "france": "FR", "франция": "FR", "paris": "FR",
+    "united kingdom": "GB", "великобритания": "GB", "london": "GB", "england": "GB",
+    "turkey": "TR", "турция": "TR",
+    "ukraine": "UA", "украина": "UA",
+    "bulgaria": "BG", "болгария": "BG",
+    "romania": "RO", "румыния": "RO",
+    "austria": "AT", "австрия": "AT",
+    "georgia": "GE", "грузия": "GE", "tbilisi": "GE", "georg": "GE",
+    "uae": "AE", "оаэ": "AE",
+    "japan": "JP", "япония": "JP", "tokyo": "JP",
+    "korea": "KR", "южная корея": "KR", "seoul": "KR",
+    "hong kong": "HK", "гонконг": "HK",
+    "taiwan": "TW", "тайвань": "TW",
+    "thailand": "TH", "таиланд": "TH",
+    "albania": "AL", "албания": "AL",
+    "india": "IN", "индия": "IN",
+    "brazil": "BR", "бразилия": "BR"
+}
+
 def cc_to_flag(cc: str) -> str:
     if not cc or len(cc) != 2 or cc == 'UN':
         return "🏳️"
@@ -144,6 +182,7 @@ def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
         final_name = clean_name
         counter = 1
+        # Автоматическая нумерация одинаковых стран (Россия 1, Россия 2 и т.д.)
         while final_name in seen_names:
             final_name = f"{clean_name} {counter}"
             counter += 1
@@ -259,9 +298,33 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         final_proxies.append(p)
     return final_proxies
 
+def guess_country(old_name: str, server: str) -> str:
+    """Умный парсинг страны по исходному имени и домену (обход Cloudflare)"""
+    text_name = old_name.lower()
+    
+    # 1. Поиск точных тегов [RU], [US]
+    match = re.search(r'\[([a-z]{2})\]', text_name)
+    if match and match.group(1).upper() in COUNTRY_MAP:
+        return match.group(1).upper()
+
+    # 2. Поиск по полным названиям в имени (с границами слов)
+    for keyword, cc in COUNTRY_KEYWORDS.items():
+        if re.search(rf'\b{keyword}\b', text_name):
+            return cc
+
+    # 3. Разбор самого домена (ru.vpn.com, nl-node.tech)
+    parts = re.split(r'[\.\-]', server.lower())
+    for part in parts:
+        if part in COUNTRY_KEYWORDS:
+            return COUNTRY_KEYWORDS[part]
+        if len(part) == 2 and part.upper() in COUNTRY_MAP:
+            return part.upper()
+
+    return 'UN'
+
 async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     if not proxies: return []
-    logging.info("Определяем страны для выживших прокси через ip-api.com...")
+    logging.info("Определяем страны (Умный анализ + API)...")
     unique_ips = list(set(p['server'] for p in proxies))
     geo_map = {}
     
@@ -278,10 +341,23 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
             await asyncio.sleep(1.5)
 
     for p in proxies:
-        cc = geo_map.get(p['server'], 'UN')
-        flag, c_name = COUNTRY_MAP.get(cc, (cc_to_flag(cc), cc))
+        host = p['server']
+        old_name = p['name']
         
-        # Жесткий формат: Флаг + Страна
+        # Сначала доверяем тексту (спасет от ложных CDN/Anycast локаций)
+        cc = guess_country(old_name, host)
+        
+        # Если по тексту не угадали, смотрим ответ от IP-API
+        if cc == 'UN':
+            api_cc = geo_map.get(host, 'UN')
+            if api_cc in COUNTRY_MAP:
+                cc = api_cc
+            elif api_cc != 'UN':
+                cc = api_cc 
+                
+        flag, c_name = COUNTRY_MAP.get(cc, (cc_to_flag(cc), cc if cc != 'UN' else "Неизвестно"))
+        
+        # Оставляем строго Флаг и Название (чистота конфига)
         p['name'] = f"{flag} {c_name}"
         
     return proxies
@@ -295,7 +371,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
 
     all_proxy_names = [p['name'] for p in proxies]
     
-    # Фильтруем серверы на Российские и все остальные
+    # Сортируем списки для наших новых папок
     ru_names = [name for name in all_proxy_names if "Россия" in name]
     foreign_names = [name for name in all_proxy_names if "Россия" not in name]
 
@@ -331,7 +407,6 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "type": "url-test",
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": 300,
-                # Если русских серверов нет, ставим заглушку DIRECT
                 "proxies": ru_names if ru_names else ["DIRECT"]
             },
             {
@@ -339,7 +414,6 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "type": "url-test",
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": 300,
-                # Ограничиваем 150 серверами, чтобы клиент не захлебнулся пинговать всё
                 "proxies": foreign_names[:150] if len(foreign_names) >= 150 else (foreign_names if foreign_names else ["DIRECT"])
             }
         ],
@@ -351,6 +425,8 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
     yaml = YAML()
     yaml.indent(mapping=2, sequence=4, offset=2)
     yaml.default_flow_style = False
+    
+    # Отключаем алиасы, чтобы папки-балансировщики работали во всех клиентах
     yaml.representer.ignore_aliases = lambda *data: True
 
     with open("config.yaml", "w", encoding="utf-8") as f:
@@ -363,7 +439,7 @@ async def main():
     proxies = await stage_1_check(proxies)
     proxies = await stage_2_check(proxies)
     proxies = await resolve_countries(proxies)
-    proxies = sanitize_proxy_names(proxies)
+    proxies = sanitize_proxy_names(proxies) # Нумерует одинаковые страны
     generate_yaml(proxies)
 
 if __name__ == "__main__":
