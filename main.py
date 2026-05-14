@@ -13,7 +13,7 @@ from ruamel.yaml import YAML
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Словарь стран с красивыми названиями и флагами
+# Полный словарь стран с красивыми названиями и флагами
 COUNTRY_MAP = {
     "RU": ("🇷🇺", "Россия"), "DE": ("🇩🇪", "Германия"),
     "NL": ("🇳🇱", "Нидерланды"), "PL": ("🇵🇱", "Польша"),
@@ -22,11 +22,19 @@ COUNTRY_MAP = {
     "IT": ("🇮🇹", "Италия"), "KZ": ("🇰🇿", "Казахстан"),
     "LT": ("🇱🇹", "Литва"), "SG": ("🇸🇬", "Сингапур"),
     "CZ": ("🇨🇿", "Чехия"), "CH": ("🇨🇭", "Швейцария"),
-    "SE": ("🇸🇪", "Швеция"), "EE": ("🇪🇪", "Эстония")
+    "SE": ("🇸🇪", "Швеция"), "EE": ("🇪🇪", "Эстония"),
+    "CA": ("🇨🇦", "Канада"), "FR": ("🇫🇷", "Франция"),
+    "GB": ("🇬🇧", "Великобритания"), "TR": ("🇹🇷", "Турция"),
+    "UA": ("🇺🇦", "Украина"), "BG": ("🇧🇬", "Болгария"),
+    "RO": ("🇷🇴", "Румыния"), "AT": ("🇦🇹", "Австрия"),
+    "GE": ("🇬🇪", "Грузия"), "AE": ("🇦🇪", "ОАЭ"),
+    "JP": ("🇯🇵", "Япония"), "KR": ("🇰🇷", "Южная Корея"),
+    "HK": ("🇭🇰", "Гонконг"), "TW": ("🇹🇼", "Тайвань"),
+    "TH": ("🇹🇭", "Таиланд"), "AL": ("🇦🇱", "Албания"),
+    "IN": ("🇮🇳", "Индия"), "BR": ("🇧🇷", "Бразилия")
 }
 
 def cc_to_flag(cc: str) -> str:
-    """Генерирует эмодзи флага из 2-буквенного кода страны, если его нет в словаре"""
     if not cc or len(cc) != 2 or cc == 'UN':
         return "🏳️"
     return chr(ord(cc[0].upper()) + 127397) + chr(ord(cc[1].upper()) + 127397)
@@ -130,14 +138,12 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
 def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen_names = set()
     for proxy in proxies:
-        # Мягкая очистка, чтобы не удалять эмодзи-флаги
         clean_name = re.sub(r'[\r\n\t"\'<>\\]', '', proxy.get('name', 'Proxy'))
         clean_name = clean_name.strip()
         if not clean_name: clean_name = f"vless-{proxy.get('server')}-{proxy.get('port')}"
 
         final_name = clean_name
         counter = 1
-        # Если такое имя уже есть, добавляем к нему цифру, чтобы конфиг не сломался
         while final_name in seen_names:
             final_name = f"{clean_name} {counter}"
             counter += 1
@@ -273,12 +279,9 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
 
     for p in proxies:
         cc = geo_map.get(p['server'], 'UN')
-        
-        # Получаем Флаг и Название страны. Исходное мусорное название полностью стираем.
         flag, c_name = COUNTRY_MAP.get(cc, (cc_to_flag(cc), cc))
         
-        # Задаем жесткий формат: Флаг + Страна. 
-        # (Одинаковые имена далее пронумерует функция sanitize_proxy_names)
+        # Жесткий формат: Флаг + Страна
         p['name'] = f"{flag} {c_name}"
         
     return proxies
@@ -290,7 +293,11 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
     random.shuffle(proxies)
     proxies = proxies[:600]
 
-    proxy_names = [p['name'] for p in proxies]
+    all_proxy_names = [p['name'] for p in proxies]
+    
+    # Фильтруем серверы на Российские и все остальные
+    ru_names = [name for name in all_proxy_names if "Россия" in name]
+    foreign_names = [name for name in all_proxy_names if "Россия" not in name]
 
     config = {
         "proxies": proxies,
@@ -298,21 +305,42 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
             {
                 "name": "SELECT",
                 "type": "select",
-                "proxies": ["🚀 Лучший пинг", "🔄 Авто-смена"] + proxy_names if proxy_names else ["DIRECT"]
+                "proxies": [
+                    "🚀 Лучший пинг", 
+                    "🔄 Авто-смена", 
+                    "🐻 Быстрая Россия", 
+                    "🌍 Быстрый Зарубеж"
+                ] + all_proxy_names if all_proxy_names else ["DIRECT"]
             },
             {
                 "name": "🚀 Лучший пинг",
                 "type": "url-test",
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": 300,
-                "proxies": proxy_names[:150] if len(proxy_names) >= 150 else (proxy_names if proxy_names else ["DIRECT"])
+                "proxies": all_proxy_names[:150] if len(all_proxy_names) >= 150 else (all_proxy_names if all_proxy_names else ["DIRECT"])
             },
             {
                 "name": "🔄 Авто-смена",
                 "type": "fallback",
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": 300,
-                "proxies": proxy_names if proxy_names else ["DIRECT"]
+                "proxies": all_proxy_names if all_proxy_names else ["DIRECT"]
+            },
+            {
+                "name": "🐻 Быстрая Россия",
+                "type": "url-test",
+                "url": "http://www.gstatic.com/generate_204",
+                "interval": 300,
+                # Если русских серверов нет, ставим заглушку DIRECT
+                "proxies": ru_names if ru_names else ["DIRECT"]
+            },
+            {
+                "name": "🌍 Быстрый Зарубеж",
+                "type": "url-test",
+                "url": "http://www.gstatic.com/generate_204",
+                "interval": 300,
+                # Ограничиваем 150 серверами, чтобы клиент не захлебнулся пинговать всё
+                "proxies": foreign_names[:150] if len(foreign_names) >= 150 else (foreign_names if foreign_names else ["DIRECT"])
             }
         ],
         "rules": [
@@ -323,8 +351,6 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
     yaml = YAML()
     yaml.indent(mapping=2, sequence=4, offset=2)
     yaml.default_flow_style = False
-    
-    # Отключаем алиасы (&id001 / *id001) чтобы URL-TEST и FALLBACK работали корректно
     yaml.representer.ignore_aliases = lambda *data: True
 
     with open("config.yaml", "w", encoding="utf-8") as f:
