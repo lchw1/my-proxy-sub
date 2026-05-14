@@ -13,6 +13,24 @@ from ruamel.yaml import YAML
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# Словарь стран с красивыми названиями и флагами
+COUNTRY_MAP = {
+    "RU": ("🇷🇺", "Россия"), "DE": ("🇩🇪", "Германия"),
+    "NL": ("🇳🇱", "Нидерланды"), "PL": ("🇵🇱", "Польша"),
+    "US": ("🇺🇸", "США"), "FI": ("🇫🇮", "Финляндия"),
+    "BE": ("🇧🇪", "Бельгия"), "ES": ("🇪🇸", "Испания"),
+    "IT": ("🇮🇹", "Италия"), "KZ": ("🇰🇿", "Казахстан"),
+    "LT": ("🇱🇹", "Литва"), "SG": ("🇸🇬", "Сингапур"),
+    "CZ": ("🇨🇿", "Чехия"), "CH": ("🇨🇭", "Швейцария"),
+    "SE": ("🇸🇪", "Швеция"), "EE": ("🇪🇪", "Эстония")
+}
+
+def cc_to_flag(cc: str) -> str:
+    """Генерирует эмодзи флага из 2-буквенного кода страны, если его нет в словаре"""
+    if not cc or len(cc) != 2 or cc == 'UN':
+        return "🏳️"
+    return chr(ord(cc[0].upper()) + 127397) + chr(ord(cc[1].upper()) + 127397)
+
 def decode_base64(text: str) -> str:
     try:
         text = text.replace('\n', '').replace('\r', '').strip()
@@ -69,7 +87,6 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
                 if "fp" in params: proxy["client-fingerprint"] = params["fp"]
                 if "sid" in params: proxy["reality-opts"]["short-id"] = params["sid"]
 
-            # Важный фикс: параметр flow только если включен TLS/Reality
             if "flow" in params and security in ["tls", "reality"]:
                 proxy["flow"] = params["flow"]
 
@@ -113,15 +130,15 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
 def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen_names = set()
     for proxy in proxies:
-        # Убираем все спецсимволы, оставляем только буквы, цифры, пробелы и базовые знаки
-        clean_name = re.sub(r'[^\w\-\.\+\s\[\]\(\)\|]', '', proxy.get('name', 'Proxy'))
+        # Мягкая очистка, чтобы не удалять эмодзи-флаги
+        clean_name = re.sub(r'[\r\n\t"\'<>\\]', '', proxy.get('name', 'Proxy'))
         clean_name = clean_name.strip()
         if not clean_name: clean_name = f"vless-{proxy.get('server')}-{proxy.get('port')}"
 
         final_name = clean_name
         counter = 1
         while final_name in seen_names:
-            final_name = f"{clean_name}_{counter}"
+            final_name = f"{clean_name} {counter}"
             counter += 1
         seen_names.add(final_name)
         proxy['name'] = final_name
@@ -136,8 +153,6 @@ def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             seen.add(key)
             unique.append(p)
     logging.info(f"Deduplicated down to {len(unique)} proxies")
-    
-    # КРИТИЧНО: Очищаем имена сразу после дедупликации, ДО запуска ядра Mihomo
     return sanitize_proxy_names(unique)
 
 async def check_tcp(proxy: Dict[str, Any]) -> bool:
@@ -162,7 +177,7 @@ async def stage_1_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 async def check_http(session: aiohttp.ClientSession, proxy: Dict[str, Any], api_port: int, sem: asyncio.Semaphore):
     url = f"http://127.0.0.1:{api_port}/proxies/{urllib.parse.quote(proxy['name'])}/delay"
-    params = {"timeout": 3000, "url": "http://www.google.com/generate_204"}
+    params = {"timeout": 3000, "url": "http://www.gstatic.com/generate_204"}
     async with sem:
         try:
             async with session.get(url, params=params, timeout=5) as resp:
@@ -260,7 +275,14 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
         old_name = p['name']
         if old_name.startswith('vless-'): 
             old_name = f"Node-{p['server'][-6:]}"
-        p['name'] = f"[{cc}] {old_name[:25]}"
+        
+        # Применяем оформление стран (Флаг + Название + Имя ноды)
+        flag, c_name = COUNTRY_MAP.get(cc, (cc_to_flag(cc), cc))
+        
+        # Делаем имя красивым и убираем старые префиксы типа [UN]
+        clean_old_name = re.sub(r'^\[.*?\]\s*', '', old_name)
+        p['name'] = f"{flag} {c_name} | {clean_old_name[:20].strip()}"
+        
     return proxies
 
 def generate_yaml(proxies: List[Dict[str, Any]]):
@@ -268,8 +290,6 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
         logging.error("0 PROXIES PASSED! CONFIG WILL BE EMPTY.")
         
     random.shuffle(proxies)
-    
-    # Ограничиваем, чтобы конфиг не весил как слон
     proxies = proxies[:600]
 
     proxy_names = [p['name'] for p in proxies]
@@ -280,19 +300,19 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
             {
                 "name": "SELECT",
                 "type": "select",
-                "proxies": ["URL-TEST", "FALLBACK"] + proxy_names if proxy_names else ["DIRECT"]
+                "proxies": ["🚀 Лучший пинг", "🔄 Авто-смена"] + proxy_names if proxy_names else ["DIRECT"]
             },
             {
-                "name": "URL-TEST",
+                "name": "🚀 Лучший пинг",
                 "type": "url-test",
-                "url": "http://www.google.com/generate_204",
+                "url": "http://www.gstatic.com/generate_204",
                 "interval": 300,
                 "proxies": proxy_names[:150] if len(proxy_names) >= 150 else (proxy_names if proxy_names else ["DIRECT"])
             },
             {
-                "name": "FALLBACK",
+                "name": "🔄 Авто-смена",
                 "type": "fallback",
-                "url": "http://www.google.com/generate_204",
+                "url": "http://www.gstatic.com/generate_204",
                 "interval": 300,
                 "proxies": proxy_names if proxy_names else ["DIRECT"]
             }
@@ -305,6 +325,9 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
     yaml = YAML()
     yaml.indent(mapping=2, sequence=4, offset=2)
     yaml.default_flow_style = False
+    
+    # Отключаем алиасы (&id001 / *id001) чтобы URL-TEST и FALLBACK работали корректно
+    yaml.representer.ignore_aliases = lambda *data: True
 
     with open("config.yaml", "w", encoding="utf-8") as f:
         yaml.dump(config, f)
@@ -316,7 +339,6 @@ async def main():
     proxies = await stage_1_check(proxies)
     proxies = await stage_2_check(proxies)
     proxies = await resolve_countries(proxies)
-    # Прогоняем имена через чистилку еще раз, чтобы гарантировать отсутствие дублей после добавления стран
     proxies = sanitize_proxy_names(proxies)
     generate_yaml(proxies)
 
