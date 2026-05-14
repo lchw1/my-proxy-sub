@@ -137,6 +137,7 @@ def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
         final_name = clean_name
         counter = 1
+        # Если такое имя уже есть, добавляем к нему цифру, чтобы конфиг не сломался
         while final_name in seen_names:
             final_name = f"{clean_name} {counter}"
             counter += 1
@@ -272,16 +273,13 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
 
     for p in proxies:
         cc = geo_map.get(p['server'], 'UN')
-        old_name = p['name']
-        if old_name.startswith('vless-'): 
-            old_name = f"Node-{p['server'][-6:]}"
         
-        # Применяем оформление стран (Флаг + Название + Имя ноды)
+        # Получаем Флаг и Название страны. Исходное мусорное название полностью стираем.
         flag, c_name = COUNTRY_MAP.get(cc, (cc_to_flag(cc), cc))
         
-        # Делаем имя красивым и убираем старые префиксы типа [UN]
-        clean_old_name = re.sub(r'^\[.*?\]\s*', '', old_name)
-        p['name'] = f"{flag} {c_name} | {clean_old_name[:20].strip()}"
+        # Задаем жесткий формат: Флаг + Страна. 
+        # (Одинаковые имена далее пронумерует функция sanitize_proxy_names)
+        p['name'] = f"{flag} {c_name}"
         
     return proxies
 
