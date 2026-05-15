@@ -379,46 +379,48 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
         "proxies": proxies,
         "proxy-groups": [
             {
-                "name": "SELECT",
+                "name": "🚀 Главный Выбор",
                 "type": "select",
                 "proxies": [
-                    "🚀 Лучший пинг", 
-                    "🔄 Авто-смена", 
-                    "🐻 Быстрая Россия", 
-                    "🌍 Быстрый Зарубеж"
+                    "🌍 Зарубеж (Выбор)", 
+                    "🐻 Россия (Выбор)", 
+                    "⚡ Лучший пинг (Все)"
                 ] + all_proxy_names if all_proxy_names else ["DIRECT"]
             },
             {
-                "name": "🚀 Лучший пинг",
-                "type": "url-test",
-                "url": "http://www.gstatic.com/generate_204",
-                "interval": 300,
-                "proxies": all_proxy_names[:150] if len(all_proxy_names) >= 150 else (all_proxy_names if all_proxy_names else ["DIRECT"])
+                "name": "🌍 Зарубеж (Выбор)",
+                "type": "select",
+                "proxies": ["⚡ Авто-Зарубеж"] + foreign_names if foreign_names else ["DIRECT"]
             },
             {
-                "name": "🔄 Авто-смена",
-                "type": "fallback",
-                "url": "http://www.gstatic.com/generate_204",
-                "interval": 300,
-                "proxies": all_proxy_names if all_proxy_names else ["DIRECT"]
+                "name": "🐻 Россия (Выбор)",
+                "type": "select",
+                "proxies": ["⚡ Авто-Россия"] + ru_names if ru_names else ["DIRECT"]
             },
             {
-                "name": "🐻 Быстрая Россия",
+                "name": "⚡ Авто-Зарубеж",
                 "type": "url-test",
                 "url": "http://www.gstatic.com/generate_204",
-                "interval": 300,
+                "interval": 150,
+                "proxies": foreign_names[:150] if len(foreign_names) >= 150 else (foreign_names if foreign_names else ["DIRECT"])
+            },
+            {
+                "name": "⚡ Авто-Россия",
+                "type": "url-test",
+                "url": "http://www.gstatic.com/generate_204",
+                "interval": 150,
                 "proxies": ru_names if ru_names else ["DIRECT"]
             },
             {
-                "name": "🌍 Быстрый Зарубеж",
+                "name": "⚡ Лучший пинг (Все)",
                 "type": "url-test",
                 "url": "http://www.gstatic.com/generate_204",
-                "interval": 300,
-                "proxies": foreign_names[:150] if len(foreign_names) >= 150 else (foreign_names if foreign_names else ["DIRECT"])
+                "interval": 150,
+                "proxies": all_proxy_names[:150] if len(all_proxy_names) >= 150 else (all_proxy_names if all_proxy_names else ["DIRECT"])
             }
         ],
         "rules": [
-            "MATCH,SELECT"
+            "MATCH,🚀 Главный Выбор"
         ]
     }
 
