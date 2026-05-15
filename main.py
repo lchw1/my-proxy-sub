@@ -34,7 +34,6 @@ COUNTRY_MAP = {
     "IN": ("🇮🇳", "Индия"), "BR": ("🇧🇷", "Бразилия")
 }
 
-# Словарь для умного поиска стран по тексту (доменам и названиям)
 COUNTRY_KEYWORDS = {
     "russia": "RU", "россия": "RU", "moscow": "RU", "sbrf": "RU",
     "germany": "DE", "германия": "DE", "frankfurt": "DE", "gernode": "DE",
@@ -372,6 +371,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "type": "select",
                 "proxies": [
                     "🤖 Авто-режимы",
+                    "🌐 Все серверы (Ручной)",
                     "🌍 Зарубеж (Ручной)", 
                     "🐻 Россия (Ручной)",
                     "DIRECT"
@@ -387,6 +387,11 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 ]
             },
             {
+                "name": "🌐 Все серверы (Ручной)",
+                "type": "select",
+                "proxies": all_proxy_names if all_proxy_names else ["DIRECT"]
+            },
+            {
                 "name": "🌍 Зарубеж (Ручной)",
                 "type": "select",
                 "proxies": foreign_names if foreign_names else ["DIRECT"]
@@ -399,6 +404,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
             {
                 "name": "⚡ Лучший пинг (Все)",
                 "type": "url-test",
+                "hidden": True, # МУЖСКОЕ РЕШЕНИЕ: Скрываем техническую папку от глаз
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": 150,
                 "proxies": all_proxy_names[:150] if len(all_proxy_names) >= 150 else (all_proxy_names if all_proxy_names else ["DIRECT"])
@@ -406,6 +412,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
             {
                 "name": "⚡ Авто-Зарубеж",
                 "type": "url-test",
+                "hidden": True, # Оставляем только кнопку в Авто-режимах
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": 150,
                 "proxies": foreign_names[:150] if len(foreign_names) >= 150 else (foreign_names if foreign_names else ["DIRECT"])
@@ -413,6 +420,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
             {
                 "name": "⚡ Авто-Россия",
                 "type": "url-test",
+                "hidden": True, # Никакого визуального мусора в главном меню
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": 150,
                 "proxies": ru_names if ru_names else ["DIRECT"]
@@ -427,7 +435,6 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
     yaml.indent(mapping=2, sequence=4, offset=2)
     yaml.default_flow_style = False
     
-    # Отключаем алиасы, чтобы папки-балансировщики работали во всех клиентах
     yaml.representer.ignore_aliases = lambda *data: True
 
     with open("config.yaml", "w", encoding="utf-8") as f:
