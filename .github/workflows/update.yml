@@ -33,6 +33,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add config.yaml
-          git commit -m "Auto-update config.yaml" || exit 0
+          # Добавили stats.json и index.html, чтобы сайт тоже обновлялся
+          git add config.yaml stats.json index.html 
+          git commit -m "Auto-update config.yaml and stats" || exit 0
           git push
