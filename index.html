@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика VPN Сети</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        :root {
+            --md-sys-color-background: #fdfcff;
+            --md-sys-color-on-background: #1a1c1e;
+            --md-sys-color-surface: #fdfcff;
+            --md-sys-color-surface-container: #f1f0f4;
+            --md-sys-color-primary: #0061a4;
+            --md-sys-color-primary-container: #d1e4ff;
+            --md-sys-color-on-primary-container: #001d36;
+            --border-radius-large: 24px;
+            --border-radius-medium: 16px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--md-sys-color-background);
+            color: var(--md-sys-color-on-background);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 32px;
+            padding-top: 20px;
+        }
+
+        h1 { margin: 0; font-size: 28px; font-weight: 400; }
+
+        .hero-card {
+            background-color: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            border-radius: var(--border-radius-large);
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+        .hero-card .label { font-size: 16px; opacity: 0.8; font-weight: 500;}
+        .hero-card .value { font-size: 48px; font-weight: 700; margin: 0; }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 600px) {
+            .dashboard-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .surface-card {
+            background-color: var(--md-sys-color-surface-container);
+            border-radius: var(--border-radius-large);
+            padding: 24px;
+        }
+
+        .surface-card h2 { margin-top: 0; font-size: 20px; font-weight: 500;}
+
+        .country-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .country-item {
+            background-color: var(--md-sys-color-surface);
+            border-radius: var(--border-radius-medium);
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .country-name { font-size: 16px; font-weight: 500; }
+        .country-count {
+            background-color: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-primary);
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-weight: 700;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --md-sys-color-background: #1a1c1e;
+                --md-sys-color-on-background: #e2e2e6;
+                --md-sys-color-surface: #1a1c1e;
+                --md-sys-color-surface-container: #43474e;
+                --md-sys-color-primary-container: #00497d;
+                --md-sys-color-on-primary-container: #d1e4ff;
+            }
+            .country-item { box-shadow: none; background-color: #2d3136; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="material-symbols-outlined" style="font-size: 32px; color: var(--md-sys-color-primary);">public</span>
+        <h1>Статистика Сети</h1>
+    </header>
+
+    <div class="hero-card">
+        <span class="label">Активных VLESS серверов</span>
+        <span class="value" id="totalCount">...</span>
+    </div>
+
+    <div class="dashboard-grid">
+        <div class="surface-card">
+            <h2>Распределение</h2>
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <div class="surface-card">
+            <h2>По странам</h2>
+            <div class="country-list" id="countryList">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const chartColors = ['#0061a4', '#535f70', '#006c4b', '#8c4a60', '#6b5778', '#5b5e3f'];
+
+    async function loadStats() {
+        try {
+            const response = await fetch('stats.json');
+            const data = await response.json();
+
+            document.getElementById('totalCount').innerText = data.total;
+
+            const listContainer = document.getElementById('countryList');
+            const labels = [];
+            const chartData = [];
+
+            let colorIndex = 0;
+            for (const [country, count] of Object.entries(data.countries)) {
+                labels.push(country);
+                chartData.push(count);
+
+                const div = document.createElement('div');
+                div.className = 'country-item';
+                div.innerHTML = `
+                    <span class="country-name">${country}</span>
+                    <span class="country-count">${count}</span>
+                `;
+                listContainer.appendChild(div);
+            }
+
+            const ctx = document.getElementById('myChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: chartData,
+                        backgroundColor: chartColors,
+                        borderWidth: 0,
+                        hoverOffset: 10
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    cutout: '70%',
+                    plugins: {
+                        legend: { position: 'bottom', labels: { color: 'var(--md-sys-color-on-background)' } }
+                    }
+                }
+            });
+
+        } catch (error) {
+            console.error('Ошибка загрузки статистики:', error);
+            document.getElementById('totalCount').innerText = "Ошибка";
+        }
+    }
+    loadStats();
+</script>
+
+</body>
+</html>
