@@ -8,12 +8,12 @@ import random
 import os
 import subprocess
 import urllib.request
+import json
 from typing import List, Dict, Any
 from ruamel.yaml import YAML
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Полный словарь стран с красивыми названиями и флагами
 COUNTRY_MAP = {
     "RU": ("🇷🇺", "Россия"), "DE": ("🇩🇪", "Германия"),
     "NL": ("🇳🇱", "Нидерланды"), "PL": ("🇵🇱", "Польша"),
@@ -88,8 +88,12 @@ def decode_base64(text: str) -> str:
         return ""
 
 async def fetch_source(session: aiohttp.ClientSession, url: str) -> str:
+    headers = {
+        "User-Agent": "v2rayNG/1.8.12",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    }
     try:
-        async with session.get(url, timeout=10) as response:
+        async with session.get(url, headers=headers, timeout=15) as response:
             if response.status == 200:
                 return await response.text()
     except Exception as e:
@@ -164,7 +168,7 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
         if not 'vless://' in content:
             decoded = decode_base64(content)
             if 'vless://' in decoded: content = decoded
-        links = re.findall(r'(vless://[^\s]+)', content)
+        links = re.findall(r'(vless://[^\s"\'<>]+)', content)
         for link in links:
             p = parse_vless_link(link)
             if p: proxies.append(p)
@@ -404,7 +408,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
             {
                 "name": "⚡ Лучший пинг (Все)",
                 "type": "url-test",
-                "hidden": True, # МУЖСКОЕ РЕШЕНИЕ: Скрываем техническую папку от глаз
+                "hidden": True,
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": 150,
                 "proxies": all_proxy_names[:150] if len(all_proxy_names) >= 150 else (all_proxy_names if all_proxy_names else ["DIRECT"])
@@ -412,7 +416,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
             {
                 "name": "⚡ Авто-Зарубеж",
                 "type": "url-test",
-                "hidden": True, # Оставляем только кнопку в Авто-режимах
+                "hidden": True,
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": 150,
                 "proxies": foreign_names[:150] if len(foreign_names) >= 150 else (foreign_names if foreign_names else ["DIRECT"])
@@ -420,7 +424,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
             {
                 "name": "⚡ Авто-Россия",
                 "type": "url-test",
-                "hidden": True, # Никакого визуального мусора в главном меню
+                "hidden": True,
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": 150,
                 "proxies": ru_names if ru_names else ["DIRECT"]
@@ -434,12 +438,25 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
     yaml = YAML()
     yaml.indent(mapping=2, sequence=4, offset=2)
     yaml.default_flow_style = False
-    
     yaml.representer.ignore_aliases = lambda *data: True
 
     with open("config.yaml", "w", encoding="utf-8") as f:
         yaml.dump(config, f)
     logging.info(f"Generated config.yaml with {len(proxies)} proxies.")
+
+    # Генерируем статистику для сайта
+    stats = {"total": len(proxies), "countries": {}}
+    for p in proxies:
+        parts = p['name'].split(' ')
+        if len(parts) >= 2:
+            country_name = f"{parts[0]} {parts[1]}"
+            stats["countries"][country_name] = stats["countries"].get(country_name, 0) + 1
+    
+    stats["countries"] = dict(sorted(stats["countries"].items(), key=lambda item: item[1], reverse=True))
+
+    with open("stats.json", "w", encoding="utf-8") as f:
+        json.dump(stats, f, ensure_ascii=False, indent=2)
+    logging.info("Generated stats.json for website.")
 
 async def main():
     proxies = await get_all_proxies()
