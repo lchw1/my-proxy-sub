@@ -1,1198 +1,5 @@
 proxies:
-  - name: 🇳🇱 Нидерланды 10
-    type: vless
-    server: 138.124.3.201
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /?Telegram🇨🇳+@WangCai2=
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇬🇧 Великобритания
-    type: vless
-    server: 194.36.55.138
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇬🇧 Великобритания 7
-    type: vless
-    server: 159.65.82.25
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.rocks
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.rocks
-  - name: 🇨🇦 Канада 51
-    type: vless
-    server: 104.18.38.219
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /show/about/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇬🇧 Великобритания 8
-    type: vless
-    server: 57.128.183.138
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.navy
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.v6.navy
-  - name: 🇵🇱 Польша 1
-    type: vless
-    server: pl.hothapp.com
-    port: 2066
-    uuid: b720d027-5ac1-4058-baa3-ee080f4ebbc5
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: u4lNvUk5pLZGl0XN-QK4xQgPQBhoJiMkOP2XZoQ99GA
-      short-id: d18f4e
-    servername: apple.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇬🇧 Великобритания 6
-    type: vless
-    server: 57.129.137.59
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.navy
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.v6.navy
-  - name: 🇩🇪 Германия 1
-    type: vless
-    server: 185.135.9.138
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?telegram%F0%9F%87%A8%F0%9F%87%B3+%40wangcai2=
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇺🇸 США 23
-    type: vless
-    server: 160.153.1.121
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇺🇸 США 3
-    type: vless
-    server: 155.46.167.231
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇨🇦 Канада 30
-    type: vless
-    server: 104.18.40.47
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: 1-brc.pages.dev
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 1-brc.pages.dev
-  - name: 🇨🇦 Канада 21
-    type: vless
-    server: 104.17.186.184
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.army
-  - name: 🇨🇦 Канада 47
-    type: vless
-    server: 104.19.35.169
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇺🇸 США 2
-    type: vless
-    server: 160.153.0.78
-    port: 443
-    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-    udp: true
-    network: ws
-    tls: true
-    servername: qyi.fqjd663.ggff.net
-    ws-opts:
-      path: /
-      headers:
-        Host: qyi.fqjd663.ggff.net
-  - name: 🇨🇦 Канада 3
-    type: vless
-    server: 188.114.98.0
-    port: 443
-    uuid: a01daac7-1e65-4645-854d-b47d226f6b08
-    udp: true
-    network: ws
-    tls: true
-    servername: y6-3cj.PAgES.DEV
-    ws-opts:
-      path: /
-      headers:
-        Host: y6-3cj.PAgES.DEV
-  - name: 🇨🇦 Канада 16
-    type: vless
-    server: 104.16.155.197
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.army
-  - name: 🇨🇦 Канада 29
-    type: vless
-    server: 104.18.10.218
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.army
-  - name: 🇩🇪 Германия 8
-    type: vless
-    server: bc-fr-th.ray-balance.space
-    port: 10443
-    uuid: f6431ff1-dec0-4a6c-be4a-ce917913b589
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo
-    servername: www.cloudflare.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇨🇦 Канада 8
-    type: vless
-    server: 104.18.12.149
-    port: 443
-    uuid: a01daac7-1e65-4645-854d-b47d226f6b08
-    udp: true
-    network: ws
-    tls: true
-    servername: y6-3cj.PAgES.DEV
-    ws-opts:
-      path: /
-      headers:
-        Host: y6-3cj.PAgES.DEV
-  - name: 🇨🇦 Канада 18
-    type: vless
-    server: 104.18.4.130
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.navy
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.v6.navy
-  - name: 🇨🇿 Чехия
-    type: vless
-    server: 14.102.228.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇨🇦 Канада 43
-    type: vless
-    server: 162.159.36.5
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /favs/collect/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇨🇦 Канада 50
-    type: vless
-    server: 104.26.4.60
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /buy/ads/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇰🇷 Южная Корея
-    type: vless
-    server: 140.238.17.157
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.rocks
-    ws-opts:
-      path: /?ed=2560&https://t.me/WangCai2🇨🇳
-      headers:
-        Host: sni.111000.v6.rocks
-  - name: 🇳🇱 Нидерланды 8
-    type: vless
-    server: 95.85.47.161
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.dns.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.dns.army
-  - name: 🇩🇪 Германия 6
-    type: vless
-    server: 89.23.113.64
-    port: 443
-    uuid: c4d69096-4026-4da5-9485-20a3da91cb14
-    udp: true
-    network: grpc
-    tls: true
-    reality-opts:
-      public-key: B3n6bIbENct3qg8xSRiwwxl1SqGpnqAwq-TEUQ2ojks
-      short-id: 882c8346
-    servername: deepl.com
-    client-fingerprint: firefox
-    grpc-opts:
-      grpc-service-name: grpc
-  - name: 🇬🇧 Великобритания 2
-    type: vless
-    server: 164.38.155.138
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇺🇸 США 18
-    type: vless
-    server: 160.153.1.222
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇺🇸 США 16
-    type: vless
-    server: 135.84.74.65
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇧🇬 Болгария 1
-    type: vless
-    server: 45.142.120.231
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇳🇱 Нидерланды 7
-    type: vless
-    server: 146.185.146.150
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.army
-  - name: 🇫🇷 Франция 2
-    type: vless
-    server: 37.59.96.48
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.navy
-    ws-opts:
-      path: /?Telegram🇨🇳+@WangCai2=
-      headers:
-        Host: sni.111000.v6.navy
-  - name: 🇳🇱 Нидерланды 9
-    type: vless
-    server: 167.71.65.205
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    ws-opts:
-      path: /travel/juzibaipiao
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇩🇪 Германия 2
-    type: vless
-    server: 185.244.40.33
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇬🇧 Великобритания 5
-    type: vless
-    server: 46.101.81.245
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /lessons/dload/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇨🇦 Канада 17
-    type: vless
-    server: 104.17.72.206
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇺🇸 США
-    type: vless
-    server: 184.174.80.238
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.jpmj.dev
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: sni.jpmj.dev
-  - name: 🇫🇮 Финляндия 2
-    type: vless
-    server: 45.144.52.69
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.rocks
-    ws-opts:
-      path: /?ed=2560&https://t.me/WangCai2🇨🇳
-      headers:
-        Host: sni.111000.v6.rocks
-  - name: 🇺🇸 США 6
-    type: vless
-    server: 192.200.160.253
-    port: 443
-    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-    udp: true
-    network: ws
-    tls: true
-    servername: qyi.fqjd663.ggff.net
-    ws-opts:
-      path: /
-      headers:
-        Host: qyi.fqjd663.ggff.net
-  - name: 🇨🇦 Канада 13
-    type: vless
-    server: 104.18.191.0
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇫🇮 Финляндия 3
-    type: vless
-    server: 138.124.59.215
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.rocks
-    ws-opts:
-      path: /?ed=2560&https://t.me/WangCai2🇨🇳
-      headers:
-        Host: sni.111000.v6.rocks
-  - name: 🇷🇺 Россия 1
-    type: vless
-    server: 45.67.215.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇨🇼 CW 1
-    type: vless
-    server: 5.10.244.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇸🇪 Швеция
-    type: vless
-    server: 91.108.242.85
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇧🇿 BZ 1
-    type: vless
-    server: 45.131.6.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇧🇬 Болгария
-    type: vless
-    server: 45.142.120.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇬🇧 Великобритания 9
-    type: vless
-    server: 57.128.177.22
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇫🇷 Франция 1
-    type: vless
-    server: 51.91.249.126
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.navy
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.v6.navy
-  - name: 🇨🇼 CW 2
-    type: vless
-    server: 5.10.247.43
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.cc.cd
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.cc.cd
-  - name: 🇳🇱 Нидерланды 11
-    type: vless
-    server: 146.190.233.213
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇨🇦 Канада 33
-    type: vless
-    server: 188.114.98.0
-    port: 443
-    uuid: cff6f361-828a-43c8-a8b5-8d10b32e57fb
-    udp: true
-    network: ws
-    tls: true
-    servername: zh.hollowspot.ir
-    alpn:
-      - http/1.1
-    ws-opts:
-      path: /
-      headers:
-        Host: zh.hollowspot.ir
-  - name: 🇭🇰 Гонконг
-    type: vless
-    server: 45.192.224.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: Telegram🇨🇳@WangCai2/
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇨🇦 Канада 10
-    type: vless
-    server: 104.20.6.134
-    port: 443
-    uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
-    udp: true
-    network: ws
-    tls: true
-    servername: r.meDiASHOPPp.sbS
-    ws-opts:
-      path: 
-        /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-      headers:
-        Host: r.mediashoppp.sbs
-  - name: 🇳🇱 Нидерланды 13
-    type: vless
-    server: 193.161.202.135
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.dns.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.dns.army
-  - name: 🇨🇦 Канада 2
-    type: vless
-    server: 172.64.155.209
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇺🇸 США 10
-    type: vless
-    server: 8.6.112.0
-    port: 443
-    uuid: a01daac7-1e65-4645-854d-b47d226f6b08
-    udp: true
-    network: ws
-    tls: true
-    servername: y6-3cj.PAgES.DEV
-    ws-opts:
-      path: /
-      headers:
-        Host: y6-3cj.PAgES.DEV
-  - name: 🇳🇱 Нидерланды 3
-    type: vless
-    server: 95.85.44.26
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.dns.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.dns.army
-  - name: 🇨🇿 Чехия 1
-    type: vless
-    server: srv174.towersflowerss.com
-    port: 65000
-    uuid: b43a13be-150c-4a6a-8501-b71c1b6476fb
-    udp: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: srv174.towersflowerss.com
-  - name: 🇳🇱 Нидерланды 12
-    type: vless
-    server: 193.176.190.183
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.dns.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.dns.army
-  - name: 🇭🇰 Гонконг 2
-    type: vless
-    server: 154.218.15.138
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /?Telegram🇨🇳@WangCai2=
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇨🇦 Канада 28
-    type: vless
-    server: 104.18.185.26
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /lib/soft/payment/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇨🇦 Канада 14
-    type: vless
-    server: 104.18.37.133
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.army
-  - name: 🇨🇦 Канада 38
-    type: vless
-    server: 172.64.155.209
-    port: 443
-    uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-    udp: true
-    network: ws
-    tls: true
-    servername: powered-by-surena.user68f797c2f3e1b.workers.dev
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?ed
-      headers:
-        Host: powered-by-surena.user68f797c2f3e1b.workers.dev
-  - name: 🇺🇸 США 26
-    type: vless
-    server: 167.68.5.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇨🇼 CW 3
-    type: vless
-    server: 5.10.246.43
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.cc.cd
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.cc.cd
-  - name: 🇰🇿 Казахстан
-    type: vless
-    server: 31.43.179.238
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.jpmj.dev
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: sni.jpmj.dev
-  - name: 🇫🇮 Финляндия
-    type: vless
-    server: 144.31.19.131
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.rocks
-    ws-opts:
-      path: /?ed=2560&https://t.me/WangCai2🇨🇳
-      headers:
-        Host: sni.111000.v6.rocks
-  - name: 🇨🇦 Канада 37
-    type: vless
-    server: 162.159.153.70
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇨🇦 Канада 39
-    type: vless
-    server: 172.64.145.93
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /tv/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇳🇱 Нидерланды
-    type: vless
-    server: 89.110.108.128
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /thread/test/blogs/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇨🇦 Канада 1
-    type: vless
-    server: 23.227.39.20
-    port: 443
-    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-    udp: true
-    network: ws
-    tls: true
-    servername: qyi.fqjd663.ggff.net
-    ws-opts:
-      path: /
-      headers:
-        Host: qyi.fqjd663.ggff.net
-  - name: 🇨🇦 Канада 6
-    type: vless
-    server: 104.17.192.0
-    port: 443
-    uuid: 427d85cd-a2a8-4668-8118-0d43d2d57f77
-    udp: true
-    network: ws
-    tls: true
-    servername: asmaos.uk
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: asmaos.uk
-  - name: 🇺🇸 США 8
-    type: vless
-    server: 45.153.7.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇷🇺 Россия 4
-    type: vless
-    server: 193.164.149.14
-    port: 8454
-    uuid: 36b59cc2-a1f2-4dac-9ebd-a2c8f2f7ba86
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    servername: jobinvest.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇨🇦 Канада 9
-    type: vless
-    server: 104.20.6.134
-    port: 443
-    uuid: a01daac7-1e65-4645-854d-b47d226f6b08
-    udp: true
-    network: ws
-    tls: true
-    servername: y6-3cj.PAgES.DEV
-    ws-opts:
-      path: /
-      headers:
-        Host: y6-3cj.PAgES.DEV
-  - name: 🇺🇸 США 5
-    type: vless
-    server: 166.62.114.231
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇳🇱 Нидерланды 2
-    type: vless
-    server: 95.85.25.127
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.dns.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.dns.army
-  - name: 🇨🇦 Канада 7
-    type: vless
-    server: 104.17.120.41
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.army
-  - name: 🇳🇱 Нидерланды 16
-    type: vless
-    server: 193.233.82.122
-    port: 443
-    uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-    udp: true
-    network: tcp
-    tls: true
-    servername: nlyttls.keepsecurevpn.com
-    alpn:
-      - http/1.1
-      - h2
-    flow: xtls-rprx-vision
-  - name: 🇨🇼 CW
-    type: vless
-    server: 5.10.244.231
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇨🇦 Канада 34
-    type: vless
-    server: 172.64.158.90
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇨🇦 Канада 31
-    type: vless
-    server: 104.18.38.47
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: 3-7v4.pages.dev
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 3-7v4.pages.dev
-  - name: 🇨🇦 Канада 19
-    type: vless
-    server: 172.64.145.202
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /out/comics/document/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇳🇱 Нидерланды 17
-    type: vless
-    server: 130.12.242.182
-    port: 443
-    uuid: 41b92d9f-6c8d-4ac3-8eeb-eb3fcf48e102
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: hiwB3SDzaT_l-hVWRdhuRBQ3AxbNcJePgSqEwECkIzo
-      short-id: 58fe4f834d5554a6
-    servername: nl1.kickvpn.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇭🇰 Гонконг 1
-    type: vless
-    server: 27.50.48.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇨🇦 Канада 23
-    type: vless
-    server: 104.18.16.56
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.dynv6.net
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.dynv6.net
-  - name: 🇨🇦 Канада 22
-    type: vless
-    server: 104.17.4.195
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇳🇱 Нидерланды 4
-    type: vless
-    server: 146.185.142.231
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /forums/faq/juzibaipiao
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇨🇦 Канада 25
-    type: vless
-    server: 104.18.251.45
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇫🇷 Франция
-    type: vless
-    server: 37.59.97.139
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.navy
-    ws-opts:
-      path: /?Telegram🇨🇳+@WangCai2=
-      headers:
-        Host: sni.111000.v6.navy
-  - name: 🇦🇹 Австрия
+  - name: 🇦🇹 Австрия 1
     type: vless
     server: 193.233.232.9
     port: 443
@@ -1206,61 +13,9 @@ proxies:
       path: /
       headers:
         Host: 3-2h8.pages.dev
-  - name: 🇨🇦 Канада 41
+  - name: 🇨🇦 Канада 15
     type: vless
-    server: 162.159.17.207
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.army
-  - name: 🇩🇪 Германия 5
-    type: vless
-    server: 217.144.190.230
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇨🇦 Канада 26
-    type: vless
-    server: 104.16.58.115
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇨🇦 Канада 5
-    type: vless
-    server: 92.53.190.231
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇨🇦 Канада 42
-    type: vless
-    server: 172.64.154.211
+    server: 104.18.33.45
     port: 443
     uuid: bafacd98-136a-4530-838d-4e5c51838dac
     udp: true
@@ -1272,608 +27,6 @@ proxies:
       path: /info/readme/items/juzibaipiao?ed=2560
       headers:
         Host: juzi8186.qea.ccwu.cc
-  - name: 🇺🇸 США 27
-    type: vless
-    server: 50.228.203.26
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇨🇦 Канада 49
-    type: vless
-    server: 104.18.33.45
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: 2-1ng.pages.dev
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 2-1ng.pages.dev
-  - name: 🇫🇷 Франция 3
-    type: vless
-    server: 37.9.4.114
-    port: 8080
-    uuid: 6bcc0a8a-a7cc-0001-8448-14ec5e516912
-    udp: true
-    network: grpc
-    tls: true
-    reality-opts:
-      public-key: jPVJP217TQTxKwhPGB4SUHlVOPDD0r69w7htBWgK-38
-      short-id: ea1058117be12087
-    servername: ads.x5.ru
-    client-fingerprint: qq
-    grpc-opts:
-      grpc-service-name: stream
-  - name: 🇨🇦 Канада
-    type: vless
-    server: 92.53.190.138
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇧🇿 BZ
-    type: vless
-    server: 45.131.7.138
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇵🇱 Польша
-    type: vless
-    server: 144.31.4.74
-    port: 443
-    uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
-    udp: true
-    network: tcp
-    tls: true
-    servername: pl74.mechvpn.online
-    flow: xtls-rprx-vision-udp443
-  - name: 🇺🇸 США 21
-    type: vless
-    server: 156.154.245.84
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇺🇸 США 24
-    type: vless
-    server: 135.84.72.25
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇺🇸 США 17
-    type: vless
-    server: 216.24.57.1
-    port: 443
-    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-    udp: true
-    network: ws
-    tls: true
-    servername: qyi.fqjd663.ggff.net
-    ws-opts:
-      path: /
-      headers:
-        Host: qyi.fqjd663.ggff.net
-  - name: 🇬🇧 Великобритания 1
-    type: vless
-    server: 91.193.58.140
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.rocks
-    client-fingerprint: chrome
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.rocks
-  - name: 🇩🇪 Германия
-    type: vless
-    server: 181.214.1.231
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇺🇸 США 14
-    type: vless
-    server: 141.193.213.10
-    port: 443
-    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-    udp: true
-    network: ws
-    tls: true
-    servername: qyi.fqjd663.ggff.net
-    ws-opts:
-      path: /
-      headers:
-        Host: qyi.fqjd663.ggff.net
-  - name: 🇳🇱 Нидерланды 6
-    type: vless
-    server: 20.16.105.244
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    ws-opts:
-      path: /hot/juzibaipiao
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇺🇸 США 15
-    type: vless
-    server: 141.193.213.11
-    port: 443
-    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-    udp: true
-    network: ws
-    tls: true
-    servername: qyi.fqjd663.ggff.net
-    ws-opts:
-      path: /
-      headers:
-        Host: qyi.fqjd663.ggff.net
-  - name: 🇪🇪 Эстония
-    type: vless
-    server: 45.80.110.231
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇳🇱 Нидерланды 14
-    type: vless
-    server: 188.226.180.209
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    ws-opts:
-      path: /shows/register/juzibaipiao
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇩🇪 Германия 7
-    type: vless
-    server: 158.160.247.67
-    port: 80
-    uuid: c65aa5b2-7e97-4220-8ee2-a5dafdc3c53c
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 4iWZChsH0rnqtn89xiB1evDLkFjmgh-3WYjx8cknZC0
-      short-id: a8b9c0d1e2f34567
-    servername: console.cloud.yandex.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇨🇦 Канада 4
-    type: vless
-    server: 172.64.149.209
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /discuss/f/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇺🇸 США 22
-    type: vless
-    server: 135.84.67.74
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇷🇺 Россия
-    type: vless
-    server: 213.241.198.138
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /?Telegram🇨🇳@WangCai2=
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇨🇦 Канада 48
-    type: vless
-    server: 172.64.152.241
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /pictures/jump/channel/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇨🇦 Канада 11
-    type: vless
-    server: 104.20.6.134
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇨🇦 Канада 44
-    type: vless
-    server: 104.16.250.22
-    port: 443
-    uuid: 17ebee4e-97ea-4cad-8737-cc228478ca9d
-    udp: true
-    network: ws
-    tls: true
-    servername: lively-brook-c471.nedena3319.workers.dev
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lively-brook-c471.nedena3319.workers.dev
-  - name: 🇨🇦 Канада 52
-    type: vless
-    server: 198.41.223.121
-    port: 443
-    uuid: d555dac9-27cb-4ddb-89f5-6a1d8d1e4798
-    udp: true
-    network: ws
-    tls: true
-    servername: momi.timoreyhaneh.workers.dev
-    ws-opts:
-      path: /
-      headers:
-        Host: momi.timoreyhaneh.workers.dev
-  - name: 🇨🇦 Канада 20
-    type: vless
-    server: 104.17.211.119
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.army
-  - name: 🇦🇪 ОАЭ
-    type: vless
-    server: 38.180.11.15
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: 3-7v4.pages.dev
-    client-fingerprint: chrome
-    ws-opts:
-      path: /proxyip=ProxyIP.DE.owg.dpdns.org
-      headers:
-        Host: 3-7v4.pages.dev
-  - name: 🇺🇸 США 4
-    type: vless
-    server: 8.34.146.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇧🇬 Болгария 2
-    type: vless
-    server: 147.78.140.231
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇸🇬 Сингапур
-    type: vless
-    server: 154.194.12.238
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.jpmj.dev
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.jpmj.dev
-  - name: 🇷🇺 Россия 3
-    type: vless
-    server: 85.193.82.55
-    port: 5000
-    uuid: c65aa5b2-7e97-4220-8ee2-a5dafdc3c53c
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 4iWZChsH0rnqtn89xiB1evDLkFjmgh-3WYjx8cknZC0
-      short-id: a8b9c0d1e2f34567
-    servername: console.cloud.yandex.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇨🇦 Канада 24
-    type: vless
-    server: 104.17.48.197
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇨🇦 Канада 35
-    type: vless
-    server: 172.64.152.100
-    port: 443
-    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
-    udp: true
-    network: ws
-    tls: true
-    servername: hio-awx.pages.dev
-    ws-opts:
-      path: /
-      headers:
-        Host: hio-awx.pages.dev
-  - name: 🇺🇸 США 13
-    type: vless
-    server: 216.24.57.1
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.navy
-    ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
-      headers:
-        Host: sni.111000.v6.navy
-  - name: 🇺🇸 США 9
-    type: vless
-    server: 8.34.146.231
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇨🇦 Канада 46
-    type: vless
-    server: 172.64.147.104
-    port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
-    udp: true
-    network: ws
-    tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
-    ws-opts:
-      path: /shop/juzibaipiao?ed=2560
-      headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇨🇦 Канада 15
-    type: vless
-    server: 172.66.42.200
-    port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
-    udp: true
-    network: ws
-    tls: true
-    servername: babayaga-6i7.pages.dev
-    ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
-      headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇨🇦 Канада 27
-    type: vless
-    server: 162.159.33.40
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇨🇾 CY
-    type: vless
-    server: 77.75.199.43
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.cc.cd
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.111000.cc.cd
-  - name: 🇬🇧 Великобритания 4
-    type: vless
-    server: srv191.towersflowerss.com
-    port: 65000
-    uuid: b43a13be-150c-4a6a-8501-b71c1b6476fb
-    udp: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: srv191.towersflowerss.com
-  - name: 🇺🇸 США 12
-    type: vless
-    server: 8.34.70.191
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.my111000.tech
-    ws-opts:
-      path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
-      headers:
-        Host: sni.my111000.tech
-  - name: 🇨🇦 Канада 40
-    type: vless
-    server: 104.18.173.103
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇳🇱 Нидерланды 1
-    type: vless
-    server: srv186.towersflowerss.com
-    port: 64534
-    uuid: b43a13be-150c-4a6a-8501-b71c1b6476fb
-    udp: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: srv186.towersflowerss.com
-  - name: 🇳🇱 Нидерланды 15
-    type: vless
-    server: 185.171.83.147
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.v6.army
-    ws-opts:
-      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-      headers:
-        Host: sni.111000.v6.army
-  - name: 🇺🇸 США 1
-    type: vless
-    server: 216.205.52.138
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.indevs.in
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: sni.111000.indevs.in
-  - name: 🇺🇸 США 25
-    type: vless
-    server: 135.84.64.66
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.111000.dynv6.net
-    ws-opts:
-      path: /?Telegram🇨🇳@WangCai2=
-      headers:
-        Host: sni.111000.dynv6.net
-  - name: 🇨🇦 Канада 45
-    type: vless
-    server: 104.19.35.49
-    port: 443
-    uuid: 7506fe3e-7e78-497c-bd01-db9d0be4d7e3
-    udp: true
-    network: ws
-    tls: true
-    servername: filter.elitesilver002.workers.dev
-    ws-opts:
-      path: /
-      headers:
-        Host: filter.elitesilver002.workers.dev
   - name: 🇬🇧 Великобритания 3
     type: vless
     server: 109.176.239.138
@@ -1887,23 +40,22 @@ proxies:
       path: /
       headers:
         Host: sni.111000.indevs.in
-  - name: 🇸🇪 Швеция 1
+  - name: 🇨🇦 Канада 31
     type: vless
-    server: 77.110.96.142
+    server: 104.18.42.40
     port: 443
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     udp: true
     network: ws
     tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    client-fingerprint: chrome
+    servername: sni.111000.v6.army
     ws-opts:
-      path: /
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
       headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇫🇮 Финляндия 1
+        Host: sni.111000.v6.army
+  - name: 🇫🇮 Финляндия
     type: vless
-    server: 64.188.93.158
+    server: 144.31.19.131
     port: 443
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     udp: true
@@ -1927,9 +79,22 @@ proxies:
       path: /
       headers:
         Host: sni.111000.indevs.in
-  - name: 🇺🇸 США 19
+  - name: 🇨🇦 Канада 41
     type: vless
-    server: 209.102.207.162
+    server: 104.18.173.103
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇨🇦 Канада 45
+    type: vless
+    server: 172.64.149.54
     port: 443
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     udp: true
@@ -1940,61 +105,167 @@ proxies:
       path: /
       headers:
         Host: sni.111000.indevs.in
-  - name: 🇩🇪 Германия 4
+  - name: 🇨🇦 Канада 13
     type: vless
-    server: 94.156.155.91
+    server: 104.17.192.0
     port: 443
-    uuid: a5e6c25a-9602-51c9-901c-aab09b7a105d
+    uuid: 427d85cd-a2a8-4668-8118-0d43d2d57f77
+    udp: true
+    network: ws
+    tls: true
+    servername: asmaos.uk
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: asmaos.uk
+  - name: 🇩🇪 Германия 7
+    type: vless
+    server: 81.200.147.46
+    port: 8446
+    uuid: 36b59cc2-a1f2-4dac-9ebd-a2c8f2f7ba86
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: HPtQRWwYnYzlIFJyo3yueRaaba2sUCktHFVk-ZP1RFs
-      short-id: 19c3be1ac1eafb64
-    servername: ads.x5.ru
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    servername: jobinvest.ru
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇨🇳 CN
+  - name: 🇩🇪 Германия 5
     type: vless
-    server: 176.124.223.238
+    server: 159.195.57.113
+    port: 443
+    uuid: 09428d82-84b0-4448-aa67-69158e9459ce
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: I3MPJG-CasqTjXGM84N7bF0Xi4r0WYeXQ4fvJ3T-4HU
+      short-id: f9a3c1e7d5b08264
+    servername: de-netcup.grani.site
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 4
+    type: vless
+    server: 193.161.202.135
     port: 443
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     udp: true
     network: ws
     tls: true
-    servername: sni.jpmj.dev
+    servername: sni.111000.dns.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.dns.army
+  - name: 🇨🇦 Канада 20
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: a01daac7-1e65-4645-854d-b47d226f6b08
+    udp: true
+    network: ws
+    tls: true
+    servername: y6-3cj.PAgES.DEV
     ws-opts:
       path: /
       headers:
-        Host: sni.jpmj.dev
-  - name: 🇺🇸 США 7
+        Host: y6-3cj.PAgES.DEV
+  - name: 🇨🇦 Канада 16
     type: vless
-    server: 66.81.247.231
+    server: 104.16.250.22
     port: 443
-    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    uuid: 17ebee4e-97ea-4cad-8737-cc228478ca9d
     udp: true
     network: ws
     tls: true
-    servername: babayaga-6i7.pages.dev
+    servername: lively-brook-c471.nedena3319.workers.dev
     ws-opts:
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+      path: /?ed=2048
       headers:
-        Host: babayaga-6i7.pages.dev
-  - name: 🇸🇬 Сингапур 1
+        Host: lively-brook-c471.nedena3319.workers.dev
+  - name: 🇳🇱 Нидерланды 13
     type: vless
-    server: 139.59.107.148
+    server: 46.182.24.15
+    port: 8080
+    uuid: 6bcc0a8a-a7cc-0002-8448-14ec5e516912
+    udp: true
+    network: grpc
+    tls: true
+    reality-opts:
+      public-key: jPVJP217TQTxKwhPGB4SUHlVOPDD0r69w7htBWgK-38
+      short-id: ea1058117be12087
+    servername: ads.x5.ru
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: stream
+  - name: 🇺🇸 США 1
+    type: vless
+    server: 216.205.52.138
     port: 443
-    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     udp: true
     network: ws
     tls: true
-    servername: juzi8186.qea.ccwu.cc
-    client-fingerprint: firefox
+    servername: sni.111000.indevs.in
     ws-opts:
-      path: /ad/juzibaipiao?ed=2560
+      path: /?ed=2560
       headers:
-        Host: juzi8186.qea.ccwu.cc
-  - name: 🇳🇱 Нидерланды 5
+        Host: sni.111000.indevs.in
+  - name: 🇩🇪 Германия
+    type: vless
+    server: 185.135.9.138
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    ws-opts:
+      path: /?telegram%F0%9F%87%A8%F0%9F%87%B3+%40wangcai2=
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇩🇪 Германия 4
+    type: vless
+    server: 217.144.190.230
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇺🇸 США 26
+    type: vless
+    server: 156.154.245.84
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇨🇦 Канада 34
+    type: vless
+    server: 104.18.191.0
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇳🇱 Нидерланды 8
     type: vless
     server: 194.147.33.251
     port: 443
@@ -2007,36 +278,61 @@ proxies:
       path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
       headers:
         Host: sni.111000.v6.army
-  - name: 🇧🇪 Бельгия
+  - name: 🇳🇱 Нидерланды 11
     type: vless
-    server: 128.127.180.105
-    port: 443
-    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-    udp: true
-    network: ws
-    tls: true
-    servername: 1-jk1.pages.dev
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: 1-jk1.pages.dev
-  - name: 🇨🇦 Канада 32
-    type: vless
-    server: 104.19.38.35
+    server: 95.85.44.26
     port: 443
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     udp: true
     network: ws
     tls: true
-    servername: sni.latonyamadeline.ndjp.net
+    servername: sni.111000.dns.army
     ws-opts:
-      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
       headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇺🇸 США 20
+        Host: sni.111000.dns.army
+  - name: 🇳🇱 Нидерланды 12
     type: vless
-    server: 8.6.112.6
+    server: 138.124.3.201
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /?Telegram🇨🇳+@WangCai2=
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇧🇿 BZ 1
+    type: vless
+    server: 45.131.7.138
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇰🇿 Казахстан
+    type: vless
+    server: 31.43.179.238
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.jpmj.dev
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sni.jpmj.dev
+  - name: 🇺🇸 США 22
+    type: vless
+    server: 160.153.1.222
     port: 443
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     udp: true
@@ -2048,35 +344,9 @@ proxies:
       path: /
       headers:
         Host: sni.111000.indevs.in
-  - name: 🇨🇦 Канада 12
+  - name: 🇳🇱 Нидерланды 1
     type: vless
-    server: 172.64.155.209
-    port: 443
-    uuid: 93f0761d-4393-4b43-a523-e812fa0b7e83
-    udp: true
-    network: ws
-    tls: true
-    servername: cf.cfvip.lol
-    ws-opts:
-      path: /pyip=47.251.95.178
-      headers:
-        Host: cf.cfvip.lol
-  - name: 🇩🇪 Германия 3
-    type: vless
-    server: 46.101.254.53
-    port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    udp: true
-    network: ws
-    tls: true
-    servername: sni.latonyamadeline.ndjp.net
-    ws-opts:
-      path: /
-      headers:
-        Host: sni.latonyamadeline.ndjp.net
-  - name: 🇨🇦 Канада 36
-    type: vless
-    server: 104.18.42.40
+    server: 146.185.146.150
     port: 443
     uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
     udp: true
@@ -2087,19 +357,32 @@ proxies:
       path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
       headers:
         Host: sni.111000.v6.army
-  - name: 🇺🇸 США 11
+  - name: 🇳🇱 Нидерланды 10
     type: vless
-    server: 8.6.112.0
+    server: 167.71.65.205
     port: 443
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
     udp: true
     network: ws
     tls: true
-    servername: sni.111000.v6.navy
+    servername: juzi8186.qea.ccwu.cc
     ws-opts:
-      path: /
+      path: /travel/juzibaipiao
       headers:
-        Host: sni.111000.v6.navy
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇺🇸 США 14
+    type: vless
+    server: 155.46.167.231
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+      headers:
+        Host: babayaga-6i7.pages.dev
   - name: 🇯🇵 Япония
     type: vless
     server: 126.220.82.161
@@ -2114,21 +397,1844 @@ proxies:
       path: /
       headers:
         Host: gsgsdgreyrehjsrteargsfhtrhsrwrhtruiekghmg.pages.dev
+  - name: 🇺🇸 США 24
+    type: vless
+    server: 135.84.72.25
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇨🇦 Канада 5
+    type: vless
+    server: 172.64.149.37
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /show/about/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇳🇱 Нидерланды 3
+    type: vless
+    server: 146.185.142.231
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /forums/faq/juzibaipiao
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇨🇦 Канада 11
+    type: vless
+    server: 104.18.40.152
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /shop/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇨🇼 CW
+    type: vless
+    server: 5.10.244.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
+      headers:
+        Host: sni.my111000.tech
+  - name: 🇷🇺 Россия 5
+    type: vless
+    server: 85.192.56.109
+    port: 443
+    uuid: cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 2QzGkIVICY5JKW0rHJpB_KEBnSwvYOMbYNcTI930jg0
+      short-id: cd291984fd05f458
+    servername: api.food.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: 🇨🇦 Канада 54
+    type: vless
+    server: 104.17.48.197
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇬🇧 Великобритания 6
+    type: vless
+    server: 159.65.82.25
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.rocks
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.v6.rocks
+  - name: 🇨🇦 Канада 53
+    type: vless
+    server: 162.159.33.40
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇨🇦 Канада 50
+    type: vless
+    server: 104.18.37.133
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.v6.army
+  - name: 🇨🇦 Канада
+    type: vless
+    server: 172.64.154.211
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: 2-1ng.pages.dev
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 2-1ng.pages.dev
+  - name: 🇸🇪 Швеция 2
+    type: vless
+    server: 79.174.95.47
+    port: 443
+    uuid: 6bcc0a8a-a7cc-0003-8448-14ec5e516912
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 8pexAJEIm7ZL48OkKjYWzVUjzlCcpkx1bv2O6ghUm2o
+    servername: 5post-gate.x5.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇨🇦 Канада 32
+    type: vless
+    server: 172.64.152.100
+    port: 443
+    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+    udp: true
+    network: ws
+    tls: true
+    servername: hio-awx.pages.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: hio-awx.pages.dev
+  - name: 🇺🇸 США 10
+    type: vless
+    server: 45.153.7.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.my111000.tech
+  - name: 🇸🇬 Сингапур
+    type: vless
+    server: 154.194.12.238
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.jpmj.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.jpmj.dev
+  - name: 🇬🇧 Великобритания 7
+    type: vless
+    server: 57.129.137.59
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.navy
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.v6.navy
+  - name: 🇨🇦 Канада 40
+    type: vless
+    server: 104.18.42.163
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /tv/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇺🇸 США 13
+    type: vless
+    server: 209.102.207.162
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇨🇾 CY
+    type: vless
+    server: 77.75.199.43
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.cc.cd
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.cc.cd
+  - name: 🇨🇦 Канада 49
+    type: vless
+    server: 104.19.38.35
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇨🇦 Канада 28
+    type: vless
+    server: 162.159.153.70
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇨🇦 Канада 42
+    type: vless
+    server: 104.18.185.26
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /lib/soft/payment/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇬🇧 Великобритания 4
+    type: vless
+    server: 46.101.81.245
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /lessons/dload/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇷🇺 Россия 7
+    type: vless
+    server: 84.201.175.42
+    port: 8443
+    uuid: c9516916-9da5-41b2-817b-3a7e4c359094
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: DrWq_ysFaGPGgRFcHevMPoruwYMRXryW6i_cwE7CuCM
+      short-id: dde66ef1
+    servername: ads.x5.ru
+    client-fingerprint: edge
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 27
+    type: vless
+    server: 50.228.203.26
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🇷🇺 Россия 4
+    type: vless
+    server: 178.154.231.36
+    port: 443
+    uuid: c9516916-9da5-41b2-817b-3a7e4c359094
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: DrWq_ysFaGPGgRFcHevMPoruwYMRXryW6i_cwE7CuCM
+      short-id: 189cfa69
+    servername: api-maps.yandex.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 9
+    type: vless
+    server: 216.24.57.1
+    port: 443
+    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+    udp: true
+    network: ws
+    tls: true
+    servername: qyi.fqjd663.ggff.net
+    ws-opts:
+      path: /
+      headers:
+        Host: qyi.fqjd663.ggff.net
+  - name: 🇨🇦 Канада 4
+    type: vless
+    server: 104.18.35.15
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /pictures/jump/channel/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇨🇼 CW 1
+    type: vless
+    server: 5.10.246.43
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.cc.cd
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.cc.cd
+  - name: 🇺🇸 США 17
+    type: vless
+    server: 160.153.1.121
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇺🇸 США 28
+    type: vless
+    server: 81.163.22.53
+    port: 443
+    uuid: 6bcc0a8a-a7cc-0005-8448-14ec5e516912
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: KdAzR0Ytx0LJhK058NvjOg0nV7-vbxxoRL7-y-eSvA0
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: 🇸🇪 Швеция
+    type: vless
+    server: 91.108.242.85
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇳🇱 Нидерланды 15
+    type: vless
+    server: 193.176.190.183
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.dns.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.dns.army
+  - name: 🇨🇦 Канада 46
+    type: vless
+    server: 104.17.120.41
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.v6.army
+  - name: 🇬🇧 Великобритания
+    type: vless
+    server: 194.36.55.138
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇩🇪 Германия 3
+    type: vless
+    server: 185.244.40.33
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇨🇦 Канада 23
+    type: vless
+    server: 104.17.72.206
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇨🇼 CW 2
+    type: vless
+    server: 5.10.244.231
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🇨🇦 Канада 8
+    type: vless
+    server: 172.64.149.209
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /discuss/f/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇨🇦 Канада 17
+    type: vless
+    server: 104.17.4.195
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇨🇦 Канада 38
+    type: vless
+    server: 104.17.211.119
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.v6.army
+  - name: 🇧🇬 Болгария
+    type: vless
+    server: 45.142.120.231
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+      headers:
+        Host: babayaga-6i7.pages.dev
   - name: 🇷🇺 Россия 2
     type: vless
-    server: 91.243.86.228
-    port: 443
-    uuid: 33cd4eed-ea41-4a9b-b12e-78fcb1b95db8
+    server: 185.91.53.170
+    port: 8080
+    uuid: 6bcc0a8a-a7cc-0005-8448-14ec5e516912
     udp: true
     network: grpc
     tls: true
     reality-opts:
-      public-key: q3sMB7EjGa7fU5yyFVuMaaJ9gRDxNrMyyyeFh7yjJCA
-      short-id: 9ac9e73ec9c3d4d6
-    servername: hostoff.net
-    client-fingerprint: safari
+      public-key: jPVJP217TQTxKwhPGB4SUHlVOPDD0r69w7htBWgK-38
+      short-id: ea1058117be12087
+    servername: ads.x5.ru
+    client-fingerprint: chrome
     grpc-opts:
-      grpc-service-name: xraygrpc
+      grpc-service-name: stream
+  - name: 🇨🇦 Канада 37
+    type: vless
+    server: 104.19.229.21
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇷🇺 Россия 1
+    type: vless
+    server: 213.241.198.138
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /?Telegram🇨🇳@WangCai2=
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇨🇦 Канада 52
+    type: vless
+    server: 104.18.10.218
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.v6.army
+  - name: 🇳🇱 Нидерланды 2
+    type: vless
+    server: 95.85.47.161
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.dns.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.dns.army
+  - name: 🇨🇦 Канада 12
+    type: vless
+    server: 172.64.149.209
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: 3-7v4.pages.dev
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 3-7v4.pages.dev
+  - name: 🇺🇸 США 6
+    type: vless
+    server: 66.81.247.231
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🇨🇦 Канада 24
+    type: vless
+    server: 104.18.4.130
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.navy
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.v6.navy
+  - name: 🇺🇸 США 2
+    type: vless
+    server: 8.6.112.0
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.navy
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.v6.navy
+  - name: 🇫🇷 Франция 1
+    type: vless
+    server: 37.59.96.48
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.navy
+    ws-opts:
+      path: /?Telegram🇨🇳+@WangCai2=
+      headers:
+        Host: sni.111000.v6.navy
+  - name: 🇸🇪 Швеция 1
+    type: vless
+    server: 77.110.96.142
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇳🇱 Нидерланды 9
+    type: vless
+    server: 146.190.233.213
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇵🇱 Польша
+    type: vless
+    server: 144.31.4.74
+    port: 443
+    uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
+    udp: true
+    network: tcp
+    tls: true
+    servername: pl74.mechvpn.online
+    flow: xtls-rprx-vision-udp443
+  - name: 🇨🇦 Канада 9
+    type: vless
+    server: 172.64.145.202
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /out/comics/document/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇨🇦 Канада 10
+    type: vless
+    server: 172.66.42.200
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🇷🇺 Россия 9
+    type: vless
+    server: 51.250.87.154
+    port: 8443
+    uuid: c9516916-9da5-41b2-817b-3a7e4c359094
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: DrWq_ysFaGPGgRFcHevMPoruwYMRXryW6i_cwE7CuCM
+      short-id: d7e1a111
+    servername: ads.x5.ru
+    client-fingerprint: edge
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 16
+    type: vless
+    server: 5.34.180.231
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇨🇦 Канада 29
+    type: vless
+    server: 104.18.32.47
+    port: 443
+    uuid: 93f0761d-4393-4b43-a523-e812fa0b7e83
+    udp: true
+    network: ws
+    tls: true
+    servername: cf.cfvip.lol
+    ws-opts:
+      path: /pyip=47.251.95.178
+      headers:
+        Host: cf.cfvip.lol
+  - name: 🇨🇦 Канада 22
+    type: vless
+    server: 92.53.190.231
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🇨🇳 CN
+    type: vless
+    server: 176.124.223.238
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.jpmj.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.jpmj.dev
+  - name: 🇨🇿 Чехия 1
+    type: vless
+    server: srv174.towersflowerss.com
+    port: 65000
+    uuid: b43a13be-150c-4a6a-8501-b71c1b6476fb
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: srv174.towersflowerss.com
+  - name: 🇨🇦 Канада 6
+    type: vless
+    server: 104.26.4.60
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /buy/ads/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇨🇦 Канада 33
+    type: vless
+    server: 172.64.158.90
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇺🇸 США 19
+    type: vless
+    server: 141.193.213.10
+    port: 443
+    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+    udp: true
+    network: ws
+    tls: true
+    servername: qyi.fqjd663.ggff.net
+    ws-opts:
+      path: /
+      headers:
+        Host: qyi.fqjd663.ggff.net
+  - name: 🇭🇰 Гонконг 2
+    type: vless
+    server: 45.192.224.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: Telegram🇨🇳@WangCai2/
+      headers:
+        Host: sni.my111000.tech
+  - name: 🇰🇷 Южная Корея
+    type: vless
+    server: 140.238.17.157
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.rocks
+    ws-opts:
+      path: /?ed=2560&https://t.me/WangCai2🇨🇳
+      headers:
+        Host: sni.111000.v6.rocks
+  - name: 🇺🇸 США 25
+    type: vless
+    server: 135.84.64.66
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.dynv6.net
+    ws-opts:
+      path: /?Telegram🇨🇳@WangCai2=
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: 🇨🇦 Канада 36
+    type: vless
+    server: 104.18.40.47
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: 1-brc.pages.dev
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 1-brc.pages.dev
+  - name: 🇩🇪 Германия 1
+    type: vless
+    server: 181.214.1.231
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🇦🇪 ОАЭ
+    type: vless
+    server: 38.180.11.15
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: 3-7v4.pages.dev
+    client-fingerprint: chrome
+    ws-opts:
+      path: /proxyip=ProxyIP.DE.owg.dpdns.org
+      headers:
+        Host: 3-7v4.pages.dev
+  - name: 🇺🇸 США
+    type: vless
+    server: 184.174.80.238
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.jpmj.dev
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sni.jpmj.dev
+  - name: 🇨🇦 Канада 2
+    type: vless
+    server: 162.159.36.20
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /favs/collect/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇬🇧 Великобритания 2
+    type: vless
+    server: 164.38.155.138
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇨🇦 Канада 25
+    type: vless
+    server: 104.20.6.134
+    port: 443
+    uuid: a01daac7-1e65-4645-854d-b47d226f6b08
+    udp: true
+    network: ws
+    tls: true
+    servername: y6-3cj.PAgES.DEV
+    ws-opts:
+      path: /
+      headers:
+        Host: y6-3cj.PAgES.DEV
+  - name: 🇭🇰 Гонконг 1
+    type: vless
+    server: 154.218.15.138
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /?Telegram🇨🇳@WangCai2=
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇨🇦 Канада 14
+    type: vless
+    server: 104.18.16.56
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.dynv6.net
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: 🇨🇿 Чехия
+    type: vless
+    server: 14.102.228.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.my111000.tech
+  - name: 🇨🇦 Канада 43
+    type: vless
+    server: 104.18.38.47
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: 1-aym.pages.dev
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 1-aym.pages.dev
+  - name: 🇷🇺 Россия
+    type: vless
+    server: 45.67.215.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
+      headers:
+        Host: sni.my111000.tech
+  - name: 🇧🇬 Болгария 1
+    type: vless
+    server: 45.142.120.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.my111000.tech
+  - name: 🇬🇧 Великобритания 5
+    type: vless
+    server: srv191.towersflowerss.com
+    port: 65000
+    uuid: b43a13be-150c-4a6a-8501-b71c1b6476fb
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: srv191.towersflowerss.com
+  - name: 🇳🇱 Нидерланды 5
+    type: vless
+    server: 20.16.105.244
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    ws-opts:
+      path: /hot/juzibaipiao
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇫🇷 Франция
+    type: vless
+    server: 37.59.97.139
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.navy
+    ws-opts:
+      path: /?Telegram🇨🇳+@WangCai2=
+      headers:
+        Host: sni.111000.v6.navy
+  - name: 🇳🇱 Нидерланды
+    type: vless
+    server: 89.110.108.128
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /thread/test/blogs/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇺🇸 США 23
+    type: vless
+    server: 135.84.74.65
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇪🇪 Эстония
+    type: vless
+    server: 45.80.110.231
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🇺🇸 США 21
+    type: vless
+    server: 166.62.114.231
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🇨🇦 Канада 21
+    type: vless
+    server: 104.17.186.184
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.v6.army
+  - name: 🇷🇺 Россия 3
+    type: vless
+    server: 185.91.53.170
+    port: 8080
+    uuid: 6bcc0a8a-a7cc-0004-8448-14ec5e516912
+    udp: true
+    network: grpc
+    tls: true
+    reality-opts:
+      public-key: jPVJP217TQTxKwhPGB4SUHlVOPDD0r69w7htBWgK-38
+      short-id: ea1058117be12087
+    servername: ads.x5.ru
+    client-fingerprint: qq
+    grpc-opts:
+      grpc-service-name: stream
+  - name: 🇩🇪 Германия 2
+    type: vless
+    server: 46.101.254.53
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇳🇱 Нидерланды 7
+    type: vless
+    server: 188.226.180.209
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    ws-opts:
+      path: /shows/register/juzibaipiao
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇳🇱 Нидерланды 6
+    type: vless
+    server: 95.85.25.127
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.dns.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.dns.army
+  - name: 🇺🇸 США 11
+    type: vless
+    server: 8.34.146.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
+      headers:
+        Host: sni.my111000.tech
+  - name: 🇺🇸 США 15
+    type: vless
+    server: 135.84.67.74
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇷🇺 Россия 6
+    type: vless
+    server: 188.68.218.60
+    port: 443
+    uuid: 6bcc0a8a-a7cc-0006-8448-14ec5e516912
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: KdAzR0Ytx0LJhK058NvjOg0nV7-vbxxoRL7-y-eSvA0
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: 🇨🇦 Канада 30
+    type: vless
+    server: 23.227.39.20
+    port: 443
+    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+    udp: true
+    network: ws
+    tls: true
+    servername: qyi.fqjd663.ggff.net
+    ws-opts:
+      path: /
+      headers:
+        Host: qyi.fqjd663.ggff.net
+  - name: 🇺🇸 США 3
+    type: vless
+    server: 8.6.112.0
+    port: 443
+    uuid: a01daac7-1e65-4645-854d-b47d226f6b08
+    udp: true
+    network: ws
+    tls: true
+    servername: y6-3cj.PAgES.DEV
+    ws-opts:
+      path: /
+      headers:
+        Host: y6-3cj.PAgES.DEV
+  - name: 🇩🇪 Германия 6
+    type: vless
+    server: 81.200.147.46
+    port: 8454
+    uuid: 36b59cc2-a1f2-4dac-9ebd-a2c8f2f7ba86
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    servername: jobinvest.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 7
+    type: vless
+    server: 8.34.146.231
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🇬🇧 Великобритания 1
+    type: vless
+    server: 91.193.58.140
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.rocks
+    client-fingerprint: chrome
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.v6.rocks
+  - name: 🇨🇦 Канада 35
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: cff6f361-828a-43c8-a8b5-8d10b32e57fb
+    udp: true
+    network: ws
+    tls: true
+    servername: zh.hollowspot.ir
+    alpn:
+      - http/1.1
+    ws-opts:
+      path: /
+      headers:
+        Host: zh.hollowspot.ir
+  - name: 🇷🇺 Россия 8
+    type: vless
+    server: 84.201.160.116
+    port: 443
+    uuid: c9516916-9da5-41b2-817b-3a7e4c359094
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: DrWq_ysFaGPGgRFcHevMPoruwYMRXryW6i_cwE7CuCM
+      short-id: d7e1abac
+    servername: api-maps.yandex.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: 🇨🇦 Канада 18
+    type: vless
+    server: 104.19.35.169
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇨🇦 Канада 27
+    type: vless
+    server: 104.18.251.45
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇨🇼 CW 3
+    type: vless
+    server: 5.10.247.43
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.cc.cd
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.cc.cd
+  - name: 🇬🇧 Великобритания 9
+    type: vless
+    server: 57.128.183.138
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.navy
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.v6.navy
+  - name: 🇧🇪 Бельгия
+    type: vless
+    server: 128.127.180.105
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: 1-jk1.pages.dev
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 1-jk1.pages.dev
+  - name: 🇫🇷 Франция 2
+    type: vless
+    server: 51.91.249.126
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.navy
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.v6.navy
+  - name: 🇧🇬 Болгария 2
+    type: vless
+    server: 147.78.140.231
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🇺🇸 США 5
+    type: vless
+    server: 63.141.128.3
+    port: 443
+    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+    udp: true
+    network: ws
+    tls: true
+    servername: qyi.fqjd663.ggff.net
+    ws-opts:
+      path: /
+      headers:
+        Host: qyi.fqjd663.ggff.net
+  - name: 🇨🇦 Канада 26
+    type: vless
+    server: 104.16.58.115
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🇨🇦 Канада 1
+    type: vless
+    server: 104.18.12.149
+    port: 443
+    uuid: a01daac7-1e65-4645-854d-b47d226f6b08
+    udp: true
+    network: ws
+    tls: true
+    servername: y6-3cj.PAgES.DEV
+    ws-opts:
+      path: /
+      headers:
+        Host: y6-3cj.PAgES.DEV
+  - name: 🇧🇿 BZ
+    type: vless
+    server: 45.131.6.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
+      headers:
+        Host: sni.my111000.tech
+  - name: 🇨🇦 Канада 48
+    type: vless
+    server: 104.20.6.134
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇺🇸 США 20
+    type: vless
+    server: 141.193.213.11
+    port: 443
+    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+    udp: true
+    network: ws
+    tls: true
+    servername: qyi.fqjd663.ggff.net
+    ws-opts:
+      path: /
+      headers:
+        Host: qyi.fqjd663.ggff.net
+  - name: 🇸🇬 Сингапур 1
+    type: vless
+    server: 139.59.107.148
+    port: 443
+    uuid: bafacd98-136a-4530-838d-4e5c51838dac
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi8186.qea.ccwu.cc
+    client-fingerprint: firefox
+    ws-opts:
+      path: /ad/juzibaipiao?ed=2560
+      headers:
+        Host: juzi8186.qea.ccwu.cc
+  - name: 🇭🇰 Гонконг
+    type: vless
+    server: 27.50.48.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.my111000.tech
+  - name: 🇫🇮 Финляндия 3
+    type: vless
+    server: 138.124.59.215
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.rocks
+    ws-opts:
+      path: /?ed=2560&https://t.me/WangCai2🇨🇳
+      headers:
+        Host: sni.111000.v6.rocks
+  - name: 🇫🇮 Финляндия 1
+    type: vless
+    server: 45.144.52.69
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.rocks
+    ws-opts:
+      path: /?ed=2560&https://t.me/WangCai2🇨🇳
+      headers:
+        Host: sni.111000.v6.rocks
+  - name: 🇫🇮 Финляндия 2
+    type: vless
+    server: 64.188.93.158
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.rocks
+    ws-opts:
+      path: /?ed=2560&https://t.me/WangCai2🇨🇳
+      headers:
+        Host: sni.111000.v6.rocks
+  - name: 🇫🇷 Франция 3
+    type: vless
+    server: 81.163.22.53
+    port: 443
+    uuid: 6bcc0a8a-a7cc-0001-8448-14ec5e516912
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: KdAzR0Ytx0LJhK058NvjOg0nV7-vbxxoRL7-y-eSvA0
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇨🇦 Канада 19
+    type: vless
+    server: 162.159.17.207
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.v6.army
+  - name: 🇺🇸 США 8
+    type: vless
+    server: 8.34.70.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
+      headers:
+        Host: sni.my111000.tech
+  - name: 🇺🇸 США 4
+    type: vless
+    server: 216.24.57.1
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.navy
+    ws-opts:
+      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
+      headers:
+        Host: sni.111000.v6.navy
+  - name: 🇳🇱 Нидерланды 14
+    type: vless
+    server: 193.233.82.122
+    port: 443
+    uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
+    udp: true
+    network: tcp
+    tls: true
+    servername: nlyttls.keepsecurevpn.com
+    alpn:
+      - http/1.1
+      - h2
+    flow: xtls-rprx-vision
+  - name: 🇨🇦 Канада 47
+    type: vless
+    server: 104.20.6.134
+    port: 443
+    uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
+    udp: true
+    network: ws
+    tls: true
+    servername: r.meDiASHOPPp.sbS
+    ws-opts:
+      path: 
+        /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+      headers:
+        Host: r.mediashoppp.sbs
+  - name: 🇨🇦 Канада 44
+    type: vless
+    server: 198.41.223.121
+    port: 443
+    uuid: d555dac9-27cb-4ddb-89f5-6a1d8d1e4798
+    udp: true
+    network: ws
+    tls: true
+    servername: momi.timoreyhaneh.workers.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: momi.timoreyhaneh.workers.dev
+  - name: 🇬🇧 Великобритания 8
+    type: vless
+    server: 57.128.177.22
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇨🇦 Канада 7
+    type: vless
+    server: 92.53.190.138
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇨🇦 Канада 51
+    type: vless
+    server: 104.16.155.197
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.army
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.111000.v6.army
+  - name: 🇦🇹 Австрия
+    type: vless
+    server: 152.53.46.28
+    port: 443
+    uuid: 09428d82-84b0-4448-aa67-69158e9459ce
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: HYpXgfoCjrRTojlGjPvneIEnYeVUTrQ_zpir3j6fXmc
+      short-id: 2d6a8f1c3e9b7045
+    servername: at-net.grani.site
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇵🇱 Польша 1
+    type: vless
+    server: spark.frost-api.com
+    port: 443
+    uuid: 76491f61-c8fe-4a42-a2d1-06b9415d54e6
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
+      short-id: bcda713784d56483
+    servername: max.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇨🇦 Канада 39
+    type: vless
+    server: 104.19.35.49
+    port: 443
+    uuid: 7506fe3e-7e78-497c-bd01-db9d0be4d7e3
+    udp: true
+    network: ws
+    tls: true
+    servername: filter.elitesilver002.workers.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: filter.elitesilver002.workers.dev
+  - name: 🇺🇸 США 18
+    type: vless
+    server: 8.6.112.6
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇨🇦 Канада 3
+    type: vless
+    server: 104.18.32.47
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇺🇸 США 12
+    type: vless
+    server: 160.153.0.78
+    port: 443
+    uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+    udp: true
+    network: ws
+    tls: true
+    servername: qyi.fqjd663.ggff.net
+    ws-opts:
+      path: /
+      headers:
+        Host: qyi.fqjd663.ggff.net
+  - name: 🇺🇸 США 16
+    type: vless
+    server: 167.68.5.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.my111000.tech
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -2147,656 +2253,677 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇳🇱 Нидерланды 10
-      - 🇬🇧 Великобритания
-      - 🇬🇧 Великобритания 7
-      - 🇨🇦 Канада 51
-      - 🇬🇧 Великобритания 8
-      - 🇵🇱 Польша 1
-      - 🇬🇧 Великобритания 6
-      - 🇩🇪 Германия 1
-      - 🇺🇸 США 23
-      - 🇺🇸 США 3
-      - 🇨🇦 Канада 30
-      - 🇨🇦 Канада 21
-      - 🇨🇦 Канада 47
-      - 🇺🇸 США 2
-      - 🇨🇦 Канада 3
+      - 🇦🇹 Австрия 1
+      - 🇨🇦 Канада 15
+      - 🇬🇧 Великобритания 3
+      - 🇨🇦 Канада 31
+      - 🇫🇮 Финляндия
+      - 🇺🇦 Украина
+      - 🇨🇦 Канада 41
+      - 🇨🇦 Канада 45
+      - 🇨🇦 Канада 13
+      - 🇩🇪 Германия 7
+      - 🇩🇪 Германия 5
+      - 🇳🇱 Нидерланды 4
+      - 🇨🇦 Канада 20
       - 🇨🇦 Канада 16
-      - 🇨🇦 Канада 29
-      - 🇩🇪 Германия 8
+      - 🇳🇱 Нидерланды 13
+      - 🇺🇸 США 1
+      - 🇩🇪 Германия
+      - 🇩🇪 Германия 4
+      - 🇺🇸 США 26
+      - 🇨🇦 Канада 34
+      - 🇳🇱 Нидерланды 8
+      - 🇳🇱 Нидерланды 11
+      - 🇳🇱 Нидерланды 12
+      - 🇧🇿 BZ 1
+      - 🇰🇿 Казахстан
+      - 🇺🇸 США 22
+      - 🇳🇱 Нидерланды 1
+      - 🇳🇱 Нидерланды 10
+      - 🇺🇸 США 14
+      - 🇯🇵 Япония
+      - 🇺🇸 США 24
+      - 🇨🇦 Канада 5
+      - 🇳🇱 Нидерланды 3
+      - 🇨🇦 Канада 11
+      - 🇨🇼 CW
+      - 🇷🇺 Россия 5
+      - 🇨🇦 Канада 54
+      - 🇬🇧 Великобритания 6
+      - 🇨🇦 Канада 53
+      - 🇨🇦 Канада 50
+      - 🇨🇦 Канада
+      - 🇸🇪 Швеция 2
+      - 🇨🇦 Канада 32
+      - 🇺🇸 США 10
+      - 🇸🇬 Сингапур
+      - 🇬🇧 Великобритания 7
+      - 🇨🇦 Канада 40
+      - 🇺🇸 США 13
+      - 🇨🇾 CY
+      - 🇨🇦 Канада 49
+      - 🇨🇦 Канада 28
+      - 🇨🇦 Канада 42
+      - 🇬🇧 Великобритания 4
+      - 🇷🇺 Россия 7
+      - 🇺🇸 США 27
+      - 🇷🇺 Россия 4
+      - 🇺🇸 США 9
+      - 🇨🇦 Канада 4
+      - 🇨🇼 CW 1
+      - 🇺🇸 США 17
+      - 🇺🇸 США 28
+      - 🇸🇪 Швеция
+      - 🇳🇱 Нидерланды 15
+      - 🇨🇦 Канада 46
+      - 🇬🇧 Великобритания
+      - 🇩🇪 Германия 3
+      - 🇨🇦 Канада 23
+      - 🇨🇼 CW 2
       - 🇨🇦 Канада 8
-      - 🇨🇦 Канада 18
+      - 🇨🇦 Канада 17
+      - 🇨🇦 Канада 38
+      - 🇧🇬 Болгария
+      - 🇷🇺 Россия 2
+      - 🇨🇦 Канада 37
+      - 🇷🇺 Россия 1
+      - 🇨🇦 Канада 52
+      - 🇳🇱 Нидерланды 2
+      - 🇨🇦 Канада 12
+      - 🇺🇸 США 6
+      - 🇨🇦 Канада 24
+      - 🇺🇸 США 2
+      - 🇫🇷 Франция 1
+      - 🇸🇪 Швеция 1
+      - 🇳🇱 Нидерланды 9
+      - 🇵🇱 Польша
+      - 🇨🇦 Канада 9
+      - 🇨🇦 Канада 10
+      - 🇷🇺 Россия 9
+      - 🇳🇱 Нидерланды 16
+      - 🇨🇦 Канада 29
+      - 🇨🇦 Канада 22
+      - 🇨🇳 CN
+      - 🇨🇿 Чехия 1
+      - 🇨🇦 Канада 6
+      - 🇨🇦 Канада 33
+      - 🇺🇸 США 19
+      - 🇭🇰 Гонконг 2
+      - 🇰🇷 Южная Корея
+      - 🇺🇸 США 25
+      - 🇨🇦 Канада 36
+      - 🇩🇪 Германия 1
+      - 🇦🇪 ОАЭ
+      - 🇺🇸 США
+      - 🇨🇦 Канада 2
+      - 🇬🇧 Великобритания 2
+      - 🇨🇦 Канада 25
+      - 🇭🇰 Гонконг 1
+      - 🇨🇦 Канада 14
       - 🇨🇿 Чехия
       - 🇨🇦 Канада 43
-      - 🇨🇦 Канада 50
-      - 🇰🇷 Южная Корея
-      - 🇳🇱 Нидерланды 8
-      - 🇩🇪 Германия 6
-      - 🇬🇧 Великобритания 2
-      - 🇺🇸 США 18
-      - 🇺🇸 США 16
-      - 🇧🇬 Болгария 1
-      - 🇳🇱 Нидерланды 7
-      - 🇫🇷 Франция 2
-      - 🇳🇱 Нидерланды 9
-      - 🇩🇪 Германия 2
-      - 🇬🇧 Великобритания 5
-      - 🇨🇦 Канада 17
-      - 🇺🇸 США
-      - 🇫🇮 Финляндия 2
-      - 🇺🇸 США 6
-      - 🇨🇦 Канада 13
-      - 🇫🇮 Финляндия 3
-      - 🇷🇺 Россия 1
-      - 🇨🇼 CW 1
-      - 🇸🇪 Швеция
-      - 🇧🇿 BZ 1
-      - 🇧🇬 Болгария
-      - 🇬🇧 Великобритания 9
-      - 🇫🇷 Франция 1
-      - 🇨🇼 CW 2
-      - 🇳🇱 Нидерланды 11
-      - 🇨🇦 Канада 33
-      - 🇭🇰 Гонконг
-      - 🇨🇦 Канада 10
-      - 🇳🇱 Нидерланды 13
-      - 🇨🇦 Канада 2
-      - 🇺🇸 США 10
-      - 🇳🇱 Нидерланды 3
-      - 🇨🇿 Чехия 1
-      - 🇳🇱 Нидерланды 12
-      - 🇭🇰 Гонконг 2
-      - 🇨🇦 Канада 28
-      - 🇨🇦 Канада 14
-      - 🇨🇦 Канада 38
-      - 🇺🇸 США 26
-      - 🇨🇼 CW 3
-      - 🇰🇿 Казахстан
-      - 🇫🇮 Финляндия
-      - 🇨🇦 Канада 37
-      - 🇨🇦 Канада 39
-      - 🇳🇱 Нидерланды
-      - 🇨🇦 Канада 1
-      - 🇨🇦 Канада 6
-      - 🇺🇸 США 8
-      - 🇷🇺 Россия 4
-      - 🇨🇦 Канада 9
-      - 🇺🇸 США 5
-      - 🇳🇱 Нидерланды 2
-      - 🇨🇦 Канада 7
-      - 🇳🇱 Нидерланды 16
-      - 🇨🇼 CW
-      - 🇨🇦 Канада 34
-      - 🇨🇦 Канада 31
-      - 🇨🇦 Канада 19
-      - 🇳🇱 Нидерланды 17
-      - 🇭🇰 Гонконг 1
-      - 🇨🇦 Канада 23
-      - 🇨🇦 Канада 22
-      - 🇳🇱 Нидерланды 4
-      - 🇨🇦 Канада 25
-      - 🇫🇷 Франция
-      - 🇦🇹 Австрия
-      - 🇨🇦 Канада 41
-      - 🇩🇪 Германия 5
-      - 🇨🇦 Канада 26
-      - 🇨🇦 Канада 5
-      - 🇨🇦 Канада 42
-      - 🇺🇸 США 27
-      - 🇨🇦 Канада 49
-      - 🇫🇷 Франция 3
-      - 🇨🇦 Канада
-      - 🇧🇿 BZ
-      - 🇵🇱 Польша
-      - 🇺🇸 США 21
-      - 🇺🇸 США 24
-      - 🇺🇸 США 17
-      - 🇬🇧 Великобритания 1
-      - 🇩🇪 Германия
-      - 🇺🇸 США 14
-      - 🇳🇱 Нидерланды 6
-      - 🇺🇸 США 15
-      - 🇪🇪 Эстония
-      - 🇳🇱 Нидерланды 14
-      - 🇩🇪 Германия 7
-      - 🇨🇦 Канада 4
-      - 🇺🇸 США 22
       - 🇷🇺 Россия
-      - 🇨🇦 Канада 48
-      - 🇨🇦 Канада 11
-      - 🇨🇦 Канада 44
-      - 🇨🇦 Канада 52
-      - 🇨🇦 Канада 20
-      - 🇦🇪 ОАЭ
-      - 🇺🇸 США 4
-      - 🇧🇬 Болгария 2
-      - 🇸🇬 Сингапур
-      - 🇷🇺 Россия 3
-      - 🇨🇦 Канада 24
-      - 🇨🇦 Канада 35
-      - 🇺🇸 США 13
-      - 🇺🇸 США 9
-      - 🇨🇦 Канада 46
-      - 🇨🇦 Канада 15
-      - 🇨🇦 Канада 27
-      - 🇨🇾 CY
-      - 🇬🇧 Великобритания 4
-      - 🇺🇸 США 12
-      - 🇨🇦 Канада 40
-      - 🇳🇱 Нидерланды 1
-      - 🇳🇱 Нидерланды 15
-      - 🇺🇸 США 1
-      - 🇺🇸 США 25
-      - 🇨🇦 Канада 45
-      - 🇬🇧 Великобритания 3
-      - 🇸🇪 Швеция 1
-      - 🇫🇮 Финляндия 1
-      - 🇺🇦 Украина
-      - 🇺🇸 США 19
-      - 🇩🇪 Германия 4
-      - 🇨🇳 CN
-      - 🇺🇸 США 7
-      - 🇸🇬 Сингапур 1
+      - 🇧🇬 Болгария 1
+      - 🇬🇧 Великобритания 5
       - 🇳🇱 Нидерланды 5
-      - 🇧🇪 Бельгия
-      - 🇨🇦 Канада 32
-      - 🇺🇸 США 20
-      - 🇨🇦 Канада 12
-      - 🇩🇪 Германия 3
-      - 🇨🇦 Канада 36
+      - 🇫🇷 Франция
+      - 🇳🇱 Нидерланды
+      - 🇺🇸 США 23
+      - 🇪🇪 Эстония
+      - 🇺🇸 США 21
+      - 🇨🇦 Канада 21
+      - 🇷🇺 Россия 3
+      - 🇩🇪 Германия 2
+      - 🇳🇱 Нидерланды 7
+      - 🇳🇱 Нидерланды 6
       - 🇺🇸 США 11
-      - 🇯🇵 Япония
-      - 🇷🇺 Россия 2
+      - 🇺🇸 США 15
+      - 🇷🇺 Россия 6
+      - 🇨🇦 Канада 30
+      - 🇺🇸 США 3
+      - 🇩🇪 Германия 6
+      - 🇺🇸 США 7
+      - 🇬🇧 Великобритания 1
+      - 🇨🇦 Канада 35
+      - 🇷🇺 Россия 8
+      - 🇨🇦 Канада 18
+      - 🇨🇦 Канада 27
+      - 🇨🇼 CW 3
+      - 🇬🇧 Великобритания 9
+      - 🇧🇪 Бельгия
+      - 🇫🇷 Франция 2
+      - 🇧🇬 Болгария 2
+      - 🇺🇸 США 5
+      - 🇨🇦 Канада 26
+      - 🇨🇦 Канада 1
+      - 🇧🇿 BZ
+      - 🇨🇦 Канада 48
+      - 🇺🇸 США 20
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг
+      - 🇫🇮 Финляндия 3
+      - 🇫🇮 Финляндия 1
+      - 🇫🇮 Финляндия 2
+      - 🇫🇷 Франция 3
+      - 🇨🇦 Канада 19
+      - 🇺🇸 США 8
+      - 🇺🇸 США 4
+      - 🇳🇱 Нидерланды 14
+      - 🇨🇦 Канада 47
+      - 🇨🇦 Канада 44
+      - 🇬🇧 Великобритания 8
+      - 🇨🇦 Канада 7
+      - 🇨🇦 Канада 51
+      - 🇦🇹 Австрия
+      - 🇵🇱 Польша 1
+      - 🇨🇦 Канада 39
+      - 🇺🇸 США 18
+      - 🇨🇦 Канада 3
+      - 🇺🇸 США 12
+      - 🇺🇸 США 16
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇳🇱 Нидерланды 10
-      - 🇬🇧 Великобритания
-      - 🇬🇧 Великобритания 7
-      - 🇨🇦 Канада 51
-      - 🇬🇧 Великобритания 8
-      - 🇵🇱 Польша 1
-      - 🇬🇧 Великобритания 6
-      - 🇩🇪 Германия 1
-      - 🇺🇸 США 23
-      - 🇺🇸 США 3
-      - 🇨🇦 Канада 30
-      - 🇨🇦 Канада 21
-      - 🇨🇦 Канада 47
-      - 🇺🇸 США 2
-      - 🇨🇦 Канада 3
+      - 🇦🇹 Австрия 1
+      - 🇨🇦 Канада 15
+      - 🇬🇧 Великобритания 3
+      - 🇨🇦 Канада 31
+      - 🇫🇮 Финляндия
+      - 🇺🇦 Украина
+      - 🇨🇦 Канада 41
+      - 🇨🇦 Канада 45
+      - 🇨🇦 Канада 13
+      - 🇩🇪 Германия 7
+      - 🇩🇪 Германия 5
+      - 🇳🇱 Нидерланды 4
+      - 🇨🇦 Канада 20
       - 🇨🇦 Канада 16
-      - 🇨🇦 Канада 29
-      - 🇩🇪 Германия 8
+      - 🇳🇱 Нидерланды 13
+      - 🇺🇸 США 1
+      - 🇩🇪 Германия
+      - 🇩🇪 Германия 4
+      - 🇺🇸 США 26
+      - 🇨🇦 Канада 34
+      - 🇳🇱 Нидерланды 8
+      - 🇳🇱 Нидерланды 11
+      - 🇳🇱 Нидерланды 12
+      - 🇧🇿 BZ 1
+      - 🇰🇿 Казахстан
+      - 🇺🇸 США 22
+      - 🇳🇱 Нидерланды 1
+      - 🇳🇱 Нидерланды 10
+      - 🇺🇸 США 14
+      - 🇯🇵 Япония
+      - 🇺🇸 США 24
+      - 🇨🇦 Канада 5
+      - 🇳🇱 Нидерланды 3
+      - 🇨🇦 Канада 11
+      - 🇨🇼 CW
+      - 🇨🇦 Канада 54
+      - 🇬🇧 Великобритания 6
+      - 🇨🇦 Канада 53
+      - 🇨🇦 Канада 50
+      - 🇨🇦 Канада
+      - 🇸🇪 Швеция 2
+      - 🇨🇦 Канада 32
+      - 🇺🇸 США 10
+      - 🇸🇬 Сингапур
+      - 🇬🇧 Великобритания 7
+      - 🇨🇦 Канада 40
+      - 🇺🇸 США 13
+      - 🇨🇾 CY
+      - 🇨🇦 Канада 49
+      - 🇨🇦 Канада 28
+      - 🇨🇦 Канада 42
+      - 🇬🇧 Великобритания 4
+      - 🇺🇸 США 27
+      - 🇺🇸 США 9
+      - 🇨🇦 Канада 4
+      - 🇨🇼 CW 1
+      - 🇺🇸 США 17
+      - 🇺🇸 США 28
+      - 🇸🇪 Швеция
+      - 🇳🇱 Нидерланды 15
+      - 🇨🇦 Канада 46
+      - 🇬🇧 Великобритания
+      - 🇩🇪 Германия 3
+      - 🇨🇦 Канада 23
+      - 🇨🇼 CW 2
       - 🇨🇦 Канада 8
-      - 🇨🇦 Канада 18
+      - 🇨🇦 Канада 17
+      - 🇨🇦 Канада 38
+      - 🇧🇬 Болгария
+      - 🇨🇦 Канада 37
+      - 🇨🇦 Канада 52
+      - 🇳🇱 Нидерланды 2
+      - 🇨🇦 Канада 12
+      - 🇺🇸 США 6
+      - 🇨🇦 Канада 24
+      - 🇺🇸 США 2
+      - 🇫🇷 Франция 1
+      - 🇸🇪 Швеция 1
+      - 🇳🇱 Нидерланды 9
+      - 🇵🇱 Польша
+      - 🇨🇦 Канада 9
+      - 🇨🇦 Канада 10
+      - 🇳🇱 Нидерланды 16
+      - 🇨🇦 Канада 29
+      - 🇨🇦 Канада 22
+      - 🇨🇳 CN
+      - 🇨🇿 Чехия 1
+      - 🇨🇦 Канада 6
+      - 🇨🇦 Канада 33
+      - 🇺🇸 США 19
+      - 🇭🇰 Гонконг 2
+      - 🇰🇷 Южная Корея
+      - 🇺🇸 США 25
+      - 🇨🇦 Канада 36
+      - 🇩🇪 Германия 1
+      - 🇦🇪 ОАЭ
+      - 🇺🇸 США
+      - 🇨🇦 Канада 2
+      - 🇬🇧 Великобритания 2
+      - 🇨🇦 Канада 25
+      - 🇭🇰 Гонконг 1
+      - 🇨🇦 Канада 14
       - 🇨🇿 Чехия
       - 🇨🇦 Канада 43
-      - 🇨🇦 Канада 50
-      - 🇰🇷 Южная Корея
-      - 🇳🇱 Нидерланды 8
-      - 🇩🇪 Германия 6
-      - 🇬🇧 Великобритания 2
-      - 🇺🇸 США 18
-      - 🇺🇸 США 16
       - 🇧🇬 Болгария 1
-      - 🇳🇱 Нидерланды 7
-      - 🇫🇷 Франция 2
-      - 🇳🇱 Нидерланды 9
-      - 🇩🇪 Германия 2
       - 🇬🇧 Великобритания 5
-      - 🇨🇦 Канада 17
-      - 🇺🇸 США
-      - 🇫🇮 Финляндия 2
-      - 🇺🇸 США 6
-      - 🇨🇦 Канада 13
-      - 🇫🇮 Финляндия 3
-      - 🇨🇼 CW 1
-      - 🇸🇪 Швеция
-      - 🇧🇿 BZ 1
-      - 🇧🇬 Болгария
-      - 🇬🇧 Великобритания 9
-      - 🇫🇷 Франция 1
-      - 🇨🇼 CW 2
-      - 🇳🇱 Нидерланды 11
-      - 🇨🇦 Канада 33
-      - 🇭🇰 Гонконг
-      - 🇨🇦 Канада 10
-      - 🇳🇱 Нидерланды 13
-      - 🇨🇦 Канада 2
-      - 🇺🇸 США 10
-      - 🇳🇱 Нидерланды 3
-      - 🇨🇿 Чехия 1
-      - 🇳🇱 Нидерланды 12
-      - 🇭🇰 Гонконг 2
-      - 🇨🇦 Канада 28
-      - 🇨🇦 Канада 14
-      - 🇨🇦 Канада 38
-      - 🇺🇸 США 26
-      - 🇨🇼 CW 3
-      - 🇰🇿 Казахстан
-      - 🇫🇮 Финляндия
-      - 🇨🇦 Канада 37
-      - 🇨🇦 Канада 39
-      - 🇳🇱 Нидерланды
-      - 🇨🇦 Канада 1
-      - 🇨🇦 Канада 6
-      - 🇺🇸 США 8
-      - 🇨🇦 Канада 9
-      - 🇺🇸 США 5
-      - 🇳🇱 Нидерланды 2
-      - 🇨🇦 Канада 7
-      - 🇳🇱 Нидерланды 16
-      - 🇨🇼 CW
-      - 🇨🇦 Канада 34
-      - 🇨🇦 Канада 31
-      - 🇨🇦 Канада 19
-      - 🇳🇱 Нидерланды 17
-      - 🇭🇰 Гонконг 1
-      - 🇨🇦 Канада 23
-      - 🇨🇦 Канада 22
-      - 🇳🇱 Нидерланды 4
-      - 🇨🇦 Канада 25
-      - 🇫🇷 Франция
-      - 🇦🇹 Австрия
-      - 🇨🇦 Канада 41
-      - 🇩🇪 Германия 5
-      - 🇨🇦 Канада 26
-      - 🇨🇦 Канада 5
-      - 🇨🇦 Канада 42
-      - 🇺🇸 США 27
-      - 🇨🇦 Канада 49
-      - 🇫🇷 Франция 3
-      - 🇨🇦 Канада
-      - 🇧🇿 BZ
-      - 🇵🇱 Польша
-      - 🇺🇸 США 21
-      - 🇺🇸 США 24
-      - 🇺🇸 США 17
-      - 🇬🇧 Великобритания 1
-      - 🇩🇪 Германия
-      - 🇺🇸 США 14
-      - 🇳🇱 Нидерланды 6
-      - 🇺🇸 США 15
-      - 🇪🇪 Эстония
-      - 🇳🇱 Нидерланды 14
-      - 🇩🇪 Германия 7
-      - 🇨🇦 Канада 4
-      - 🇺🇸 США 22
-      - 🇨🇦 Канада 48
-      - 🇨🇦 Канада 11
-      - 🇨🇦 Канада 44
-      - 🇨🇦 Канада 52
-      - 🇨🇦 Канада 20
-      - 🇦🇪 ОАЭ
-      - 🇺🇸 США 4
-      - 🇧🇬 Болгария 2
-      - 🇸🇬 Сингапур
-      - 🇨🇦 Канада 24
-      - 🇨🇦 Канада 35
-      - 🇺🇸 США 13
-      - 🇺🇸 США 9
-      - 🇨🇦 Канада 46
-      - 🇨🇦 Канада 15
-      - 🇨🇦 Канада 27
-      - 🇨🇾 CY
-      - 🇬🇧 Великобритания 4
-      - 🇺🇸 США 12
-      - 🇨🇦 Канада 40
-      - 🇳🇱 Нидерланды 1
-      - 🇳🇱 Нидерланды 15
-      - 🇺🇸 США 1
-      - 🇺🇸 США 25
-      - 🇨🇦 Канада 45
-      - 🇬🇧 Великобритания 3
-      - 🇸🇪 Швеция 1
-      - 🇫🇮 Финляндия 1
-      - 🇺🇦 Украина
-      - 🇺🇸 США 19
-      - 🇩🇪 Германия 4
-      - 🇨🇳 CN
-      - 🇺🇸 США 7
-      - 🇸🇬 Сингапур 1
       - 🇳🇱 Нидерланды 5
-      - 🇧🇪 Бельгия
-      - 🇨🇦 Канада 32
-      - 🇺🇸 США 20
-      - 🇨🇦 Канада 12
-      - 🇩🇪 Германия 3
-      - 🇨🇦 Канада 36
+      - 🇫🇷 Франция
+      - 🇳🇱 Нидерланды
+      - 🇺🇸 США 23
+      - 🇪🇪 Эстония
+      - 🇺🇸 США 21
+      - 🇨🇦 Канада 21
+      - 🇩🇪 Германия 2
+      - 🇳🇱 Нидерланды 7
+      - 🇳🇱 Нидерланды 6
       - 🇺🇸 США 11
-      - 🇯🇵 Япония
+      - 🇺🇸 США 15
+      - 🇨🇦 Канада 30
+      - 🇺🇸 США 3
+      - 🇩🇪 Германия 6
+      - 🇺🇸 США 7
+      - 🇬🇧 Великобритания 1
+      - 🇨🇦 Канада 35
+      - 🇨🇦 Канада 18
+      - 🇨🇦 Канада 27
+      - 🇨🇼 CW 3
+      - 🇬🇧 Великобритания 9
+      - 🇧🇪 Бельгия
+      - 🇫🇷 Франция 2
+      - 🇧🇬 Болгария 2
+      - 🇺🇸 США 5
+      - 🇨🇦 Канада 26
+      - 🇨🇦 Канада 1
+      - 🇧🇿 BZ
+      - 🇨🇦 Канада 48
+      - 🇺🇸 США 20
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг
+      - 🇫🇮 Финляндия 3
+      - 🇫🇮 Финляндия 1
+      - 🇫🇮 Финляндия 2
+      - 🇫🇷 Франция 3
+      - 🇨🇦 Канада 19
+      - 🇺🇸 США 8
+      - 🇺🇸 США 4
+      - 🇳🇱 Нидерланды 14
+      - 🇨🇦 Канада 47
+      - 🇨🇦 Канада 44
+      - 🇬🇧 Великобритания 8
+      - 🇨🇦 Канада 7
+      - 🇨🇦 Канада 51
+      - 🇦🇹 Австрия
+      - 🇵🇱 Польша 1
+      - 🇨🇦 Канада 39
+      - 🇺🇸 США 18
+      - 🇨🇦 Канада 3
+      - 🇺🇸 США 12
+      - 🇺🇸 США 16
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
-      - 🇷🇺 Россия 1
+      - 🇷🇺 Россия 5
+      - 🇷🇺 Россия 7
       - 🇷🇺 Россия 4
+      - 🇷🇺 Россия 2
+      - 🇷🇺 Россия 1
+      - 🇷🇺 Россия 9
       - 🇷🇺 Россия
       - 🇷🇺 Россия 3
-      - 🇷🇺 Россия 2
+      - 🇷🇺 Россия 6
+      - 🇷🇺 Россия 8
   - name: ⚡ Лучший пинг (Все)
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇳🇱 Нидерланды 10
-      - 🇬🇧 Великобритания
-      - 🇬🇧 Великобритания 7
-      - 🇨🇦 Канада 51
-      - 🇬🇧 Великобритания 8
-      - 🇵🇱 Польша 1
-      - 🇬🇧 Великобритания 6
-      - 🇩🇪 Германия 1
-      - 🇺🇸 США 23
-      - 🇺🇸 США 3
-      - 🇨🇦 Канада 30
-      - 🇨🇦 Канада 21
-      - 🇨🇦 Канада 47
-      - 🇺🇸 США 2
-      - 🇨🇦 Канада 3
+      - 🇦🇹 Австрия 1
+      - 🇨🇦 Канада 15
+      - 🇬🇧 Великобритания 3
+      - 🇨🇦 Канада 31
+      - 🇫🇮 Финляндия
+      - 🇺🇦 Украина
+      - 🇨🇦 Канада 41
+      - 🇨🇦 Канада 45
+      - 🇨🇦 Канада 13
+      - 🇩🇪 Германия 7
+      - 🇩🇪 Германия 5
+      - 🇳🇱 Нидерланды 4
+      - 🇨🇦 Канада 20
       - 🇨🇦 Канада 16
-      - 🇨🇦 Канада 29
-      - 🇩🇪 Германия 8
+      - 🇳🇱 Нидерланды 13
+      - 🇺🇸 США 1
+      - 🇩🇪 Германия
+      - 🇩🇪 Германия 4
+      - 🇺🇸 США 26
+      - 🇨🇦 Канада 34
+      - 🇳🇱 Нидерланды 8
+      - 🇳🇱 Нидерланды 11
+      - 🇳🇱 Нидерланды 12
+      - 🇧🇿 BZ 1
+      - 🇰🇿 Казахстан
+      - 🇺🇸 США 22
+      - 🇳🇱 Нидерланды 1
+      - 🇳🇱 Нидерланды 10
+      - 🇺🇸 США 14
+      - 🇯🇵 Япония
+      - 🇺🇸 США 24
+      - 🇨🇦 Канада 5
+      - 🇳🇱 Нидерланды 3
+      - 🇨🇦 Канада 11
+      - 🇨🇼 CW
+      - 🇷🇺 Россия 5
+      - 🇨🇦 Канада 54
+      - 🇬🇧 Великобритания 6
+      - 🇨🇦 Канада 53
+      - 🇨🇦 Канада 50
+      - 🇨🇦 Канада
+      - 🇸🇪 Швеция 2
+      - 🇨🇦 Канада 32
+      - 🇺🇸 США 10
+      - 🇸🇬 Сингапур
+      - 🇬🇧 Великобритания 7
+      - 🇨🇦 Канада 40
+      - 🇺🇸 США 13
+      - 🇨🇾 CY
+      - 🇨🇦 Канада 49
+      - 🇨🇦 Канада 28
+      - 🇨🇦 Канада 42
+      - 🇬🇧 Великобритания 4
+      - 🇷🇺 Россия 7
+      - 🇺🇸 США 27
+      - 🇷🇺 Россия 4
+      - 🇺🇸 США 9
+      - 🇨🇦 Канада 4
+      - 🇨🇼 CW 1
+      - 🇺🇸 США 17
+      - 🇺🇸 США 28
+      - 🇸🇪 Швеция
+      - 🇳🇱 Нидерланды 15
+      - 🇨🇦 Канада 46
+      - 🇬🇧 Великобритания
+      - 🇩🇪 Германия 3
+      - 🇨🇦 Канада 23
+      - 🇨🇼 CW 2
       - 🇨🇦 Канада 8
-      - 🇨🇦 Канада 18
+      - 🇨🇦 Канада 17
+      - 🇨🇦 Канада 38
+      - 🇧🇬 Болгария
+      - 🇷🇺 Россия 2
+      - 🇨🇦 Канада 37
+      - 🇷🇺 Россия 1
+      - 🇨🇦 Канада 52
+      - 🇳🇱 Нидерланды 2
+      - 🇨🇦 Канада 12
+      - 🇺🇸 США 6
+      - 🇨🇦 Канада 24
+      - 🇺🇸 США 2
+      - 🇫🇷 Франция 1
+      - 🇸🇪 Швеция 1
+      - 🇳🇱 Нидерланды 9
+      - 🇵🇱 Польша
+      - 🇨🇦 Канада 9
+      - 🇨🇦 Канада 10
+      - 🇷🇺 Россия 9
+      - 🇳🇱 Нидерланды 16
+      - 🇨🇦 Канада 29
+      - 🇨🇦 Канада 22
+      - 🇨🇳 CN
+      - 🇨🇿 Чехия 1
+      - 🇨🇦 Канада 6
+      - 🇨🇦 Канада 33
+      - 🇺🇸 США 19
+      - 🇭🇰 Гонконг 2
+      - 🇰🇷 Южная Корея
+      - 🇺🇸 США 25
+      - 🇨🇦 Канада 36
+      - 🇩🇪 Германия 1
+      - 🇦🇪 ОАЭ
+      - 🇺🇸 США
+      - 🇨🇦 Канада 2
+      - 🇬🇧 Великобритания 2
+      - 🇨🇦 Канада 25
+      - 🇭🇰 Гонконг 1
+      - 🇨🇦 Канада 14
       - 🇨🇿 Чехия
       - 🇨🇦 Канада 43
-      - 🇨🇦 Канада 50
-      - 🇰🇷 Южная Корея
-      - 🇳🇱 Нидерланды 8
-      - 🇩🇪 Германия 6
-      - 🇬🇧 Великобритания 2
-      - 🇺🇸 США 18
-      - 🇺🇸 США 16
-      - 🇧🇬 Болгария 1
-      - 🇳🇱 Нидерланды 7
-      - 🇫🇷 Франция 2
-      - 🇳🇱 Нидерланды 9
-      - 🇩🇪 Германия 2
-      - 🇬🇧 Великобритания 5
-      - 🇨🇦 Канада 17
-      - 🇺🇸 США
-      - 🇫🇮 Финляндия 2
-      - 🇺🇸 США 6
-      - 🇨🇦 Канада 13
-      - 🇫🇮 Финляндия 3
-      - 🇷🇺 Россия 1
-      - 🇨🇼 CW 1
-      - 🇸🇪 Швеция
-      - 🇧🇿 BZ 1
-      - 🇧🇬 Болгария
-      - 🇬🇧 Великобритания 9
-      - 🇫🇷 Франция 1
-      - 🇨🇼 CW 2
-      - 🇳🇱 Нидерланды 11
-      - 🇨🇦 Канада 33
-      - 🇭🇰 Гонконг
-      - 🇨🇦 Канада 10
-      - 🇳🇱 Нидерланды 13
-      - 🇨🇦 Канада 2
-      - 🇺🇸 США 10
-      - 🇳🇱 Нидерланды 3
-      - 🇨🇿 Чехия 1
-      - 🇳🇱 Нидерланды 12
-      - 🇭🇰 Гонконг 2
-      - 🇨🇦 Канада 28
-      - 🇨🇦 Канада 14
-      - 🇨🇦 Канада 38
-      - 🇺🇸 США 26
-      - 🇨🇼 CW 3
-      - 🇰🇿 Казахстан
-      - 🇫🇮 Финляндия
-      - 🇨🇦 Канада 37
-      - 🇨🇦 Канада 39
-      - 🇳🇱 Нидерланды
-      - 🇨🇦 Канада 1
-      - 🇨🇦 Канада 6
-      - 🇺🇸 США 8
-      - 🇷🇺 Россия 4
-      - 🇨🇦 Канада 9
-      - 🇺🇸 США 5
-      - 🇳🇱 Нидерланды 2
-      - 🇨🇦 Канада 7
-      - 🇳🇱 Нидерланды 16
-      - 🇨🇼 CW
-      - 🇨🇦 Канада 34
-      - 🇨🇦 Канада 31
-      - 🇨🇦 Канада 19
-      - 🇳🇱 Нидерланды 17
-      - 🇭🇰 Гонконг 1
-      - 🇨🇦 Канада 23
-      - 🇨🇦 Канада 22
-      - 🇳🇱 Нидерланды 4
-      - 🇨🇦 Канада 25
-      - 🇫🇷 Франция
-      - 🇦🇹 Австрия
-      - 🇨🇦 Канада 41
-      - 🇩🇪 Германия 5
-      - 🇨🇦 Канада 26
-      - 🇨🇦 Канада 5
-      - 🇨🇦 Канада 42
-      - 🇺🇸 США 27
-      - 🇨🇦 Канада 49
-      - 🇫🇷 Франция 3
-      - 🇨🇦 Канада
-      - 🇧🇿 BZ
-      - 🇵🇱 Польша
-      - 🇺🇸 США 21
-      - 🇺🇸 США 24
-      - 🇺🇸 США 17
-      - 🇬🇧 Великобритания 1
-      - 🇩🇪 Германия
-      - 🇺🇸 США 14
-      - 🇳🇱 Нидерланды 6
-      - 🇺🇸 США 15
-      - 🇪🇪 Эстония
-      - 🇳🇱 Нидерланды 14
-      - 🇩🇪 Германия 7
-      - 🇨🇦 Канада 4
-      - 🇺🇸 США 22
       - 🇷🇺 Россия
-      - 🇨🇦 Канада 48
-      - 🇨🇦 Канада 11
-      - 🇨🇦 Канада 44
-      - 🇨🇦 Канада 52
-      - 🇨🇦 Канада 20
-      - 🇦🇪 ОАЭ
-      - 🇺🇸 США 4
-      - 🇧🇬 Болгария 2
-      - 🇸🇬 Сингапур
+      - 🇧🇬 Болгария 1
+      - 🇬🇧 Великобритания 5
+      - 🇳🇱 Нидерланды 5
+      - 🇫🇷 Франция
+      - 🇳🇱 Нидерланды
+      - 🇺🇸 США 23
+      - 🇪🇪 Эстония
+      - 🇺🇸 США 21
+      - 🇨🇦 Канада 21
       - 🇷🇺 Россия 3
-      - 🇨🇦 Канада 24
-      - 🇨🇦 Канада 35
-      - 🇺🇸 США 13
-      - 🇺🇸 США 9
-      - 🇨🇦 Канада 46
-      - 🇨🇦 Канада 15
-      - 🇨🇦 Канада 27
-      - 🇨🇾 CY
-      - 🇬🇧 Великобритания 4
-      - 🇺🇸 США 12
-      - 🇨🇦 Канада 40
-      - 🇳🇱 Нидерланды 1
-      - 🇳🇱 Нидерланды 15
-      - 🇺🇸 США 1
-      - 🇺🇸 США 25
-      - 🇨🇦 Канада 45
-      - 🇬🇧 Великобритания 3
-      - 🇸🇪 Швеция 1
-      - 🇫🇮 Финляндия 1
-      - 🇺🇦 Украина
-      - 🇺🇸 США 19
-      - 🇩🇪 Германия 4
-      - 🇨🇳 CN
+      - 🇩🇪 Германия 2
+      - 🇳🇱 Нидерланды 7
+      - 🇳🇱 Нидерланды 6
+      - 🇺🇸 США 11
+      - 🇺🇸 США 15
+      - 🇷🇺 Россия 6
+      - 🇨🇦 Канада 30
+      - 🇺🇸 США 3
+      - 🇩🇪 Германия 6
       - 🇺🇸 США 7
+      - 🇬🇧 Великобритания 1
+      - 🇨🇦 Канада 35
+      - 🇷🇺 Россия 8
+      - 🇨🇦 Канада 18
+      - 🇨🇦 Канада 27
+      - 🇨🇼 CW 3
+      - 🇬🇧 Великобритания 9
+      - 🇧🇪 Бельгия
+      - 🇫🇷 Франция 2
+      - 🇧🇬 Болгария 2
+      - 🇺🇸 США 5
+      - 🇨🇦 Канада 26
+      - 🇨🇦 Канада 1
+      - 🇧🇿 BZ
+      - 🇨🇦 Канада 48
+      - 🇺🇸 США 20
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг
+      - 🇫🇮 Финляндия 3
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇳🇱 Нидерланды 10
-      - 🇬🇧 Великобритания
-      - 🇬🇧 Великобритания 7
-      - 🇨🇦 Канада 51
-      - 🇬🇧 Великобритания 8
-      - 🇵🇱 Польша 1
-      - 🇬🇧 Великобритания 6
-      - 🇩🇪 Германия 1
-      - 🇺🇸 США 23
-      - 🇺🇸 США 3
-      - 🇨🇦 Канада 30
-      - 🇨🇦 Канада 21
-      - 🇨🇦 Канада 47
-      - 🇺🇸 США 2
-      - 🇨🇦 Канада 3
+      - 🇦🇹 Австрия 1
+      - 🇨🇦 Канада 15
+      - 🇬🇧 Великобритания 3
+      - 🇨🇦 Канада 31
+      - 🇫🇮 Финляндия
+      - 🇺🇦 Украина
+      - 🇨🇦 Канада 41
+      - 🇨🇦 Канада 45
+      - 🇨🇦 Канада 13
+      - 🇩🇪 Германия 7
+      - 🇩🇪 Германия 5
+      - 🇳🇱 Нидерланды 4
+      - 🇨🇦 Канада 20
       - 🇨🇦 Канада 16
-      - 🇨🇦 Канада 29
-      - 🇩🇪 Германия 8
+      - 🇳🇱 Нидерланды 13
+      - 🇺🇸 США 1
+      - 🇩🇪 Германия
+      - 🇩🇪 Германия 4
+      - 🇺🇸 США 26
+      - 🇨🇦 Канада 34
+      - 🇳🇱 Нидерланды 8
+      - 🇳🇱 Нидерланды 11
+      - 🇳🇱 Нидерланды 12
+      - 🇧🇿 BZ 1
+      - 🇰🇿 Казахстан
+      - 🇺🇸 США 22
+      - 🇳🇱 Нидерланды 1
+      - 🇳🇱 Нидерланды 10
+      - 🇺🇸 США 14
+      - 🇯🇵 Япония
+      - 🇺🇸 США 24
+      - 🇨🇦 Канада 5
+      - 🇳🇱 Нидерланды 3
+      - 🇨🇦 Канада 11
+      - 🇨🇼 CW
+      - 🇨🇦 Канада 54
+      - 🇬🇧 Великобритания 6
+      - 🇨🇦 Канада 53
+      - 🇨🇦 Канада 50
+      - 🇨🇦 Канада
+      - 🇸🇪 Швеция 2
+      - 🇨🇦 Канада 32
+      - 🇺🇸 США 10
+      - 🇸🇬 Сингапур
+      - 🇬🇧 Великобритания 7
+      - 🇨🇦 Канада 40
+      - 🇺🇸 США 13
+      - 🇨🇾 CY
+      - 🇨🇦 Канада 49
+      - 🇨🇦 Канада 28
+      - 🇨🇦 Канада 42
+      - 🇬🇧 Великобритания 4
+      - 🇺🇸 США 27
+      - 🇺🇸 США 9
+      - 🇨🇦 Канада 4
+      - 🇨🇼 CW 1
+      - 🇺🇸 США 17
+      - 🇺🇸 США 28
+      - 🇸🇪 Швеция
+      - 🇳🇱 Нидерланды 15
+      - 🇨🇦 Канада 46
+      - 🇬🇧 Великобритания
+      - 🇩🇪 Германия 3
+      - 🇨🇦 Канада 23
+      - 🇨🇼 CW 2
       - 🇨🇦 Канада 8
-      - 🇨🇦 Канада 18
+      - 🇨🇦 Канада 17
+      - 🇨🇦 Канада 38
+      - 🇧🇬 Болгария
+      - 🇨🇦 Канада 37
+      - 🇨🇦 Канада 52
+      - 🇳🇱 Нидерланды 2
+      - 🇨🇦 Канада 12
+      - 🇺🇸 США 6
+      - 🇨🇦 Канада 24
+      - 🇺🇸 США 2
+      - 🇫🇷 Франция 1
+      - 🇸🇪 Швеция 1
+      - 🇳🇱 Нидерланды 9
+      - 🇵🇱 Польша
+      - 🇨🇦 Канада 9
+      - 🇨🇦 Канада 10
+      - 🇳🇱 Нидерланды 16
+      - 🇨🇦 Канада 29
+      - 🇨🇦 Канада 22
+      - 🇨🇳 CN
+      - 🇨🇿 Чехия 1
+      - 🇨🇦 Канада 6
+      - 🇨🇦 Канада 33
+      - 🇺🇸 США 19
+      - 🇭🇰 Гонконг 2
+      - 🇰🇷 Южная Корея
+      - 🇺🇸 США 25
+      - 🇨🇦 Канада 36
+      - 🇩🇪 Германия 1
+      - 🇦🇪 ОАЭ
+      - 🇺🇸 США
+      - 🇨🇦 Канада 2
+      - 🇬🇧 Великобритания 2
+      - 🇨🇦 Канада 25
+      - 🇭🇰 Гонконг 1
+      - 🇨🇦 Канада 14
       - 🇨🇿 Чехия
       - 🇨🇦 Канада 43
-      - 🇨🇦 Канада 50
-      - 🇰🇷 Южная Корея
-      - 🇳🇱 Нидерланды 8
-      - 🇩🇪 Германия 6
-      - 🇬🇧 Великобритания 2
-      - 🇺🇸 США 18
-      - 🇺🇸 США 16
       - 🇧🇬 Болгария 1
-      - 🇳🇱 Нидерланды 7
-      - 🇫🇷 Франция 2
-      - 🇳🇱 Нидерланды 9
-      - 🇩🇪 Германия 2
       - 🇬🇧 Великобритания 5
-      - 🇨🇦 Канада 17
-      - 🇺🇸 США
-      - 🇫🇮 Финляндия 2
-      - 🇺🇸 США 6
-      - 🇨🇦 Канада 13
-      - 🇫🇮 Финляндия 3
-      - 🇨🇼 CW 1
-      - 🇸🇪 Швеция
-      - 🇧🇿 BZ 1
-      - 🇧🇬 Болгария
-      - 🇬🇧 Великобритания 9
-      - 🇫🇷 Франция 1
-      - 🇨🇼 CW 2
-      - 🇳🇱 Нидерланды 11
-      - 🇨🇦 Канада 33
-      - 🇭🇰 Гонконг
-      - 🇨🇦 Канада 10
-      - 🇳🇱 Нидерланды 13
-      - 🇨🇦 Канада 2
-      - 🇺🇸 США 10
-      - 🇳🇱 Нидерланды 3
-      - 🇨🇿 Чехия 1
-      - 🇳🇱 Нидерланды 12
-      - 🇭🇰 Гонконг 2
-      - 🇨🇦 Канада 28
-      - 🇨🇦 Канада 14
-      - 🇨🇦 Канада 38
-      - 🇺🇸 США 26
-      - 🇨🇼 CW 3
-      - 🇰🇿 Казахстан
-      - 🇫🇮 Финляндия
-      - 🇨🇦 Канада 37
-      - 🇨🇦 Канада 39
-      - 🇳🇱 Нидерланды
-      - 🇨🇦 Канада 1
-      - 🇨🇦 Канада 6
-      - 🇺🇸 США 8
-      - 🇨🇦 Канада 9
-      - 🇺🇸 США 5
-      - 🇳🇱 Нидерланды 2
-      - 🇨🇦 Канада 7
-      - 🇳🇱 Нидерланды 16
-      - 🇨🇼 CW
-      - 🇨🇦 Канада 34
-      - 🇨🇦 Канада 31
-      - 🇨🇦 Канада 19
-      - 🇳🇱 Нидерланды 17
-      - 🇭🇰 Гонконг 1
-      - 🇨🇦 Канада 23
-      - 🇨🇦 Канада 22
-      - 🇳🇱 Нидерланды 4
-      - 🇨🇦 Канада 25
-      - 🇫🇷 Франция
-      - 🇦🇹 Австрия
-      - 🇨🇦 Канада 41
-      - 🇩🇪 Германия 5
-      - 🇨🇦 Канада 26
-      - 🇨🇦 Канада 5
-      - 🇨🇦 Канада 42
-      - 🇺🇸 США 27
-      - 🇨🇦 Канада 49
-      - 🇫🇷 Франция 3
-      - 🇨🇦 Канада
-      - 🇧🇿 BZ
-      - 🇵🇱 Польша
-      - 🇺🇸 США 21
-      - 🇺🇸 США 24
-      - 🇺🇸 США 17
-      - 🇬🇧 Великобритания 1
-      - 🇩🇪 Германия
-      - 🇺🇸 США 14
-      - 🇳🇱 Нидерланды 6
-      - 🇺🇸 США 15
-      - 🇪🇪 Эстония
-      - 🇳🇱 Нидерланды 14
-      - 🇩🇪 Германия 7
-      - 🇨🇦 Канада 4
-      - 🇺🇸 США 22
-      - 🇨🇦 Канада 48
-      - 🇨🇦 Канада 11
-      - 🇨🇦 Канада 44
-      - 🇨🇦 Канада 52
-      - 🇨🇦 Канада 20
-      - 🇦🇪 ОАЭ
-      - 🇺🇸 США 4
-      - 🇧🇬 Болгария 2
-      - 🇸🇬 Сингапур
-      - 🇨🇦 Канада 24
-      - 🇨🇦 Канада 35
-      - 🇺🇸 США 13
-      - 🇺🇸 США 9
-      - 🇨🇦 Канада 46
-      - 🇨🇦 Канада 15
-      - 🇨🇦 Канада 27
-      - 🇨🇾 CY
-      - 🇬🇧 Великобритания 4
-      - 🇺🇸 США 12
-      - 🇨🇦 Канада 40
-      - 🇳🇱 Нидерланды 1
-      - 🇳🇱 Нидерланды 15
-      - 🇺🇸 США 1
-      - 🇺🇸 США 25
-      - 🇨🇦 Канада 45
-      - 🇬🇧 Великобритания 3
-      - 🇸🇪 Швеция 1
-      - 🇫🇮 Финляндия 1
-      - 🇺🇦 Украина
-      - 🇺🇸 США 19
-      - 🇩🇪 Германия 4
-      - 🇨🇳 CN
-      - 🇺🇸 США 7
-      - 🇸🇬 Сингапур 1
       - 🇳🇱 Нидерланды 5
+      - 🇫🇷 Франция
+      - 🇳🇱 Нидерланды
+      - 🇺🇸 США 23
+      - 🇪🇪 Эстония
+      - 🇺🇸 США 21
+      - 🇨🇦 Канада 21
+      - 🇩🇪 Германия 2
+      - 🇳🇱 Нидерланды 7
+      - 🇳🇱 Нидерланды 6
+      - 🇺🇸 США 11
+      - 🇺🇸 США 15
+      - 🇨🇦 Канада 30
+      - 🇺🇸 США 3
+      - 🇩🇪 Германия 6
+      - 🇺🇸 США 7
+      - 🇬🇧 Великобритания 1
+      - 🇨🇦 Канада 35
+      - 🇨🇦 Канада 18
+      - 🇨🇦 Канада 27
+      - 🇨🇼 CW 3
+      - 🇬🇧 Великобритания 9
       - 🇧🇪 Бельгия
-      - 🇨🇦 Канада 32
+      - 🇫🇷 Франция 2
+      - 🇧🇬 Болгария 2
+      - 🇺🇸 США 5
+      - 🇨🇦 Канада 26
+      - 🇨🇦 Канада 1
+      - 🇧🇿 BZ
+      - 🇨🇦 Канада 48
+      - 🇺🇸 США 20
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг
+      - 🇫🇮 Финляндия 3
+      - 🇫🇮 Финляндия 1
+      - 🇫🇮 Финляндия 2
+      - 🇫🇷 Франция 3
+      - 🇨🇦 Канада 19
+      - 🇺🇸 США 8
+      - 🇺🇸 США 4
+      - 🇳🇱 Нидерланды 14
+      - 🇨🇦 Канада 47
+      - 🇨🇦 Канада 44
+      - 🇬🇧 Великобритания 8
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇷🇺 Россия 1
+      - 🇷🇺 Россия 5
+      - 🇷🇺 Россия 7
       - 🇷🇺 Россия 4
+      - 🇷🇺 Россия 2
+      - 🇷🇺 Россия 1
+      - 🇷🇺 Россия 9
       - 🇷🇺 Россия
       - 🇷🇺 Россия 3
-      - 🇷🇺 Россия 2
+      - 🇷🇺 Россия 6
+      - 🇷🇺 Россия 8
 rules:
   - MATCH,🚀 Главный Выбор
