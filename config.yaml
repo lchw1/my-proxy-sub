@@ -1,15 +1,15 @@
 proxies:
   - name: 🏳️ Неизвестно
     type: vless
-    server: 45.148.31.0
-    port: 15855
-    uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
+    server: srv169.towersflowerss.com
+    port: 443
+    uuid: b43a13be-150c-4a6a-8501-b71c1b6476fb
     udp: true
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: 45.148.31.0
+        Host: srv169.towersflowerss.com
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
