@@ -1,19 +1,693 @@
 proxies:
-  - name: 🇦🇹 Австрия
+  - name: 🏳️ Неизвестно 2
     type: vless
-    server: 89.208.209.53
+    server: 104.18.12.229
+    port: 2095
+    uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: iioo.iioou.workers.dev
+  - name: 🏳️ Неизвестно
+    type: vless
+    server: 104.18.32.47
     port: 443
-    uuid: cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4
+    uuid: 9d27a374-26d9-46df-9895-312a2062bc47
+    udp: true
+    network: ws
+    tls: true
+    servername: uin-ape.pages.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: uin-ape.pages.dev
+  - name: 🇫🇷 Франция
+    type: vless
+    server: 162.19.228.119
+    port: 80
+    uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+    udp: true
+    network: ws
+    ws-opts:
+      path: /http
+      headers:
+        Host: 'telegram id: @v2rayseven'
+  - name: 🏳️ Неизвестно 22
+    type: vless
+    server: 45.148.31.0
+    port: 15855
+    uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: Join---V2rayBaaz---Join---V2rayBaaz---Join---V2rayBaaz
+  - name: 🇷🇴 Румыния
+    type: vless
+    server: 77.81.98.70
+    port: 443
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: 2x8y-JiSEl8JJoiUm-V9aI0oY0vlgkYQxBeGriObc04
-      short-id: 0492027673ee8c08
-    servername: max.ru
+      public-key: kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw
+      short-id: 9b4fc5a116efd6c8
+    servername: www.aliexpress.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
+  - name: 🇷🇺 Россия 2
+    type: vless
+    server: 45.145.163.115
+    port: 39771
+    uuid: e5bd3d75-06b3-490e-9651-930b1dc29cdb
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: GMnXK7wz7qTo_IFmPy--pQcODPhYJG_CLaY2Sh4fTCI
+      short-id: 33f2
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 39
+    type: vless
+    server: 104.20.5.134
+    port: 2086
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    udp: true
+    network: ws
+    ws-opts:
+      path: /PdgTMW8NBNZYo6L23v
+      headers:
+        Host: index.0x15.workers.dev
+  - name: 🏳️ Неизвестно 14
+    type: vless
+    server: 172.66.44.211
+    port: 8880
+    uuid: 0a5ab719-2407-4398-b507-8437ef365023
+    udp: true
+    network: ws
+    ws-opts:
+      path: 
+        /FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY
+      headers:
+        Host: underthegun.cfd
+  - name: 🇳🇱 Нидерланды 1
+    type: vless
+    server: 51.158.206.103
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: '01'
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 34
+    type: vless
+    server: 104.16.80.73
+    port: 443
+    uuid: c0615301-155b-4a20-b4c9-20c6f2f1c378
+    udp: true
+    network: ws
+    tls: true
+    servername: bLUe-FRosT-Dd9D.tvUdWRY.woRKerS.dEv
+    client-fingerprint: chrome
+    ws-opts:
+      path: 
+        /eyJqdW5rIjoianU1aHQxd2J5ViIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+      headers:
+        Host: blue-frost-dd9d.tvudwry.workers.dev
+  - name: 🇯🇵 Япония
+    type: vless
+    server: 8.216.21.135
+    port: 10026
+    uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    udp: true
+    network: tcp
+  - name: 🏳️ Неизвестно 48
+    type: vless
+    server: 104.18.5.46
+    port: 8880
+    uuid: 5b002005-7fb1-413e-8cbd-08e50c87c2ea
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: wetfleagidc-8tsbi8xd-v3.wet-flea-gidc.workers.dev
+  - name: 🇺🇸 США 1
+    type: vless
+    server: 38.55.146.153
+    port: 13000
+    uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
+    udp: true
+    network: raw
+  - name: 🏳️ Неизвестно 11
+    type: vless
+    server: 104.24.68.193
+    port: 443
+    uuid: ed0e05af-49ab-4ea8-a39c-634855811b03
+    udp: true
+    network: ws
+    tls: true
+    servername: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
+    ws-opts:
+      path: ws
+      headers:
+        Host: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
+  - name: 🏳️ Неизвестно 42
+    type: vless
+    server: 104.18.4.130
+    port: 2082
+    uuid: cb213db5-803d-49dd-a7e2-46d938af0751
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: amiroo-l43dac88-v2.amiroo-d8b.workers.dev
+  - name: 🏳️ Неизвестно 19
+    type: vless
+    server: 104.16.158.162
+    port: 80
+    uuid: a7444b2b-20fb-461f-9840-63e5c8c7d883
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: mute-violet-c674.poviy66273.workers.dev
+  - name: 🏳️ Неизвестно 55
+    type: vless
+    server: 37.233.82.140
+    port: 40478
+    uuid: e977d854-33f3-4345-abee-bf3fa9a6d880
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: lcJ0LSh015XRfz5-7wB_hln3-bq5ZatFgPugSUCrdR0
+      short-id: 3c
+    servername: yahoo.com
+    client-fingerprint: chrome
   - name: 🇸🇬 Сингапур
+    type: vless
+    server: 8.219.213.195
+    port: 10032
+    uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    udp: true
+    network: raw
+  - name: 🏳️ Неизвестно 7
+    type: vless
+    server: 104.20.6.134
+    port: 443
+    uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
+    udp: true
+    network: ws
+    tls: true
+    servername: r.meDiASHOPPp.sbS
+    ws-opts:
+      path: 
+        /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+      headers:
+        Host: r.mediashoppp.sbs
+  - name: 🇷🇺 Россия 1
+    type: vless
+    server: 5.182.36.56
+    port: 45886
+    uuid: 8338171d-2ea7-4015-bdea-492f3d5d4e60
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: zJeLZDPHoHMcAzBJh38tSavofNlkBrpADFx9jVVPil0
+      short-id: 94f9
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇩🇪 Германия 1
+    type: vless
+    server: 152.89.244.75
+    port: 8443
+    uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: lfN9fmmMeh4znL74ZdEelvszEqf7600g3oeZMQc6G0Q
+      short-id: 421f9e3c
+    servername: www.vk.ru
+    client-fingerprint: chrome
+  - name: 🇸🇪 Швеция
+    type: vless
+    server: 70.34.201.81
+    port: 443
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: Mm-d06LgjpLq_Y0aTRuf8cbueCumBku9r4ygFUGTE2o
+      short-id: 7b7c7376cba460cf
+    servername: www.booking.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 27
+    type: vless
+    server: 45.15.170.237
+    port: 80
+    uuid: 8910cbb3-33b1-4266-a243-ac780ac63394
+    udp: true
+    network: ws
+    ws-opts:
+      path: /vless/
+      headers:
+        Host: 45.15.170.237
+  - name: 🇺🇸 США 3
+    type: vless
+    server: 63.141.128.22
+    port: 443
+    uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+    udp: true
+    network: ws
+    tls: true
+    servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+    alpn:
+      - http/1.1
+    ws-opts:
+      path: 
+        /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+      headers:
+        Host: misty-tooth-78ca.fobogah414-e7b.workers.dev
+  - name: 🇬🇧 Великобритания 1
+    type: vless
+    server: 79.141.171.133
+    port: 443
+    uuid: 4c3fe585-ac09-41df-b284-888818888188
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: 0rtpNciTfV9TsoEc7Y8lS5LzBUzLppMnRY8bQC_bH3M
+      short-id: aabbccdd
+    servername: apple.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇰🇿 Казахстан 2
+    type: vless
+    server: 83.222.23.81
+    port: 38065
+    uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+      short-id: fa
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 71
+    type: vless
+    server: 185.162.231.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🏳️ Неизвестно 13
+    type: vless
+    server: 104.17.72.206
+    port: 80
+    uuid: 1de37726-744b-46e1-9101-c926b3402e82
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v2.v2configlab.workers.dev
+  - name: 🏳️ Неизвестно 69
+    type: vless
+    server: 94.232.247.168
+    port: 41360
+    uuid: e16a35ea-6715-4e75-9845-d20358bd0876
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU
+      short-id: 1aab45
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇺🇸 США
+    type: vless
+    server: 137.184.218.169
+    port: 36925
+    uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 45
+    type: vless
+    server: 104.18.4.130
+    port: 2052
+    uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+  - name: 🏳️ Неизвестно 52
+    type: vless
+    server: 5.182.38.91
+    port: 17267
+    uuid: 1c7fcc38-e6be-43c5-875f-b8de2516b9f2
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk
+      short-id: 4ae260
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇨🇭 Швейцария
+    type: vless
+    server: 92.119.165.11
+    port: 443
+    uuid: 41b92d9f-6c8d-4ac3-8eeb-eb3fcf48e102
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: UWUBepTdDtiUpf_ZgYjO2iriD0qc7RX2Gm-vtLDIG0k
+      short-id: 182de34d29d30341
+    servername: sw.kickvpn.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇮🇹 Италия
+    type: vless
+    server: 204.216.216.23
+    port: 10086
+    uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+    udp: true
+    network: raw
+  - name: 🏳️ Неизвестно 62
+    type: vless
+    server: 213.182.199.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🏳️ Неизвестно 33
+    type: vless
+    server: 104.18.13.229
+    port: 2052
+    uuid: 363a6072-05d7-48d5-8f19-312b05fdd9cd
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: chosenflyesqt-q3y28ipf-v3.chosen-fly-esqt.workers.dev
+  - name: 🇩🇪 Германия 3
+    type: vless
+    server: 194.58.41.60
+    port: 8443
+    uuid: 26e4d8b5-ee98-4a8d-88c9-7f81b7be3379
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
+      short-id: b3a1cc510a2001c6
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇬🇧 Великобритания 2
+    type: vless
+    server: 3.8.160.120
+    port: 18633
+    uuid: 5da5bc00-ea44-462e-bdb7-7687346ad039
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: tpovASeNxNkqDfPZhr2raGUY6pis-9XSLCB6DrIEU1g
+      short-id: d9029b790f10b2e2
+    servername: www.yahoo.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 16
+    type: vless
+    server: 162.159.14.88
+    port: 80
+    uuid: 55cb8179-ce11-4ec8-a03c-333f797265f9
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: long-forest-ac72.salari1382m.workers.dev
+  - name: 🇷🇴 Румыния 1
+    type: vless
+    server: 91.199.50.37
+    port: 443
+    uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw
+      short-id: c906f73d3ba8211f
+    servername: www.alibaba.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 40
+    type: vless
+    server: 162.159.33.40
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🏳️ Неизвестно 31
+    type: vless
+    server: 104.18.13.229
+    port: 2052
+    uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: winbiss-0tpka6-v1.winbiss.workers.dev
+  - name: 🏳️ Неизвестно 25
+    type: vless
+    server: 45.12.146.179
+    port: 8443
+    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI
+    servername: tradingview.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 61
+    type: vless
+    server: 172.64.153.235
+    port: 8443
+    uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+    udp: true
+    network: ws
+    tls: true
+    servername: socks5.revil-time3.workers.dev
+    ws-opts:
+      path: /socks5://128.140.46.169:13482
+      headers:
+        Host: socks5.revil-time3.workers.dev
+  - name: 🇩🇪 Германия
+    type: vless
+    server: 57.129.41.216
+    port: 80
+    uuid: 18535741-e8b3-4b43-9348-785b55936751
+    udp: true
+    network: ws
+    ws-opts:
+      path: /vless/
+      headers:
+        Host: 57.129.41.216
+  - name: 🏳️ Неизвестно 74
+    type: vless
+    server: 104.19.35.169
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.latonyamadeline.ndjp.net
+    ws-opts:
+      path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+      headers:
+        Host: sni.latonyamadeline.ndjp.net
+  - name: 🏳️ Неизвестно 18
+    type: vless
+    server: 104.25.252.37
+    port: 443
+    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+    udp: true
+    network: ws
+    tls: true
+    servername: juzi.qea.ccwu.cc
+    client-fingerprint: chrome
+    ws-opts:
+      path: /?ed=2048fp=chrome
+      headers:
+        Host: juzi.qea.ccwu.cc
+  - name: 🇦🇹 Австрия 1
+    type: vless
+    server: 152.53.1.32
+    port: 7443
+    uuid: 8f8380ae-9f5d-4cb5-8f5f-0f70fbe054a9
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+      short-id: d82fb387
+    servername: chat.deepseek.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 72
+    type: vless
+    server: 139.84.235.99
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    udp: true
+    network: ws
+    tls: true
+    servername: 1-jk1.pages.dev
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 1-jk1.pages.dev
+  - name: 🏳️ Неизвестно 32
+    type: vless
+    server: 104.18.4.46
+    port: 8880
+    uuid: 623d675e-8748-4881-ac0f-dc1a10b595b1
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vahidasd1988-se08ot-3.vahidasd1988.workers.dev
+  - name: 🇺🇸 США 6
+    type: vless
+    server: 135.84.67.42
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.dynv6.net
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: 🏳️ Неизвестно 54
+    type: vless
+    server: 45.15.160.132
+    port: 443
+    uuid: 0b89c53e-1d55-463f-90d7-f28b0e17b8a7
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: 2YrB1VDud3ZDZp-fnEGO7BKsHZQN9NVJuXU_5j-uzVI
+      short-id: ddb9
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 73
+    type: vless
+    server: 162.159.12.151
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇰🇿 Казахстан
+    type: vless
+    server: 178.236.16.98
+    port: 35728
+    uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+      short-id: 69a2
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇫🇷 Франция 1
+    type: vless
+    server: 185.16.110.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.jpmj.dev
+    ws-opts:
+      path: /?ed=2560&Telegram🇨🇳+@WangCai2
+      headers:
+        Host: sni.jpmj.dev
+  - name: 🇳🇱 Нидерланды 2
+    type: vless
+    server: 195.181.173.199
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    udp: true
+    network: tcp
+    tls: true
+    servername: ams1.fromblancwithlove.com
+    alpn:
+      - h2
+  - name: 🇺🇸 США 7
     type: vless
     server: 141.193.213.21
     port: 80
@@ -24,6 +698,883 @@ proxies:
       path: /@Tech_Sonic
       headers:
         Host: free-server.techsonic.ggff.net
+  - name: 🇭🇰 Гонконг 1
+    type: vless
+    server: 156.224.78.8
+    port: 10001
+    uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: D_kMOsg1KCtT0tudPFVDXGuEcSqZGtUYqBB-BiIxmls
+      short-id: f7223dab
+    servername: www.icloud.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 53
+    type: vless
+    server: 45.15.160.132
+    port: 443
+    uuid: c24f31b4-def4-4e14-aa3d-82194eb18cd1
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: 2YrB1VDud3ZDZp-fnEGO7BKsHZQN9NVJuXU_5j-uzVI
+      short-id: ddb9
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 64
+    type: vless
+    server: 104.18.13.229
+    port: 2052
+    uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+    udp: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+  - name: 🇵🇱 Польша
+    type: vless
+    server: 2.56.125.209
+    port: 49868
+    uuid: be015dd2-30b4-4fcf-a9ee-080c13ac13fb
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: joEKL4Itljxodt1SOe1itSMrAH9bk_udpPtXgIjdu10
+      short-id: 6d638e
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 20
+    type: vless
+    server: 162.159.36.5
+    port: 80
+    uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tt.andishehparenting.com
+  - name: 🏳️ Неизвестно 41
+    type: vless
+    server: 104.18.32.47
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🏳️ Неизвестно 51
+    type: vless
+    server: 91.218.143.194
+    port: 43798
+    uuid: b7725d23-840a-4f8e-993c-69b40424cfc0
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: W3aiFnhZRvZuZP0Zyfy7888t-NbHc0RmMEyFa7fYShU
+      short-id: f71c22
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 60
+    type: vless
+    server: 190.93.244.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🇺🇸 США 5
+    type: vless
+    server: 167.68.42.191
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.my111000.tech
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.my111000.tech
+  - name: 🏳️ Неизвестно 57
+    type: vless
+    server: 104.17.22.240
+    port: 443
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    udp: true
+    network: ws
+    tls: true
+    servername: hhlfy.twiladaphne.ndjp.net
+    client-fingerprint: random
+    ws-opts:
+      path: /
+      headers:
+        Host: hhlfy.twiladaphne.ndjp.net
+  - name: 🏳️ Неизвестно 59
+    type: vless
+    server: 83.222.20.64
+    port: 17910
+    uuid: 079c1b04-7ef9-4c49-8a7a-849a18ba7b9b
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: KUhrhiJBplVCVCrAKP2KjIA_asOgkkvEEAxUJVofjgc
+      short-id: 8c09fb78b12f
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇩🇪 Германия 5
+    type: vless
+    server: 31.185.108.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🏳️ Неизвестно 36
+    type: vless
+    server: 104.19.173.68
+    port: 443
+    uuid: 7e346122-2ee0-406e-b964-a8ee665f1814
+    udp: true
+    network: ws
+    tls: true
+    servername: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
+    ws-opts:
+      path: /
+      headers:
+        Host: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
+  - name: 🏳️ Неизвестно 58
+    type: vless
+    server: 90.156.255.198
+    port: 51114
+    uuid: 8b575b35-3c7c-42b0-ac80-2aa6b0d7717c
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: lf7NJGZAcj3b-YdbsmD6oEISr0dZRjp_gM8ZhLHwb0U
+      short-id: 772e
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇺🇸 США 8
+    type: vless
+    server: 135.84.64.66
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.dynv6.net
+    ws-opts:
+      path: /?Telegram🇨🇳@WangCai2=
+      headers:
+        Host: sni.111000.dynv6.net
+  - name: 🏳️ Неизвестно 63
+    type: vless
+    server: 104.16.250.22
+    port: 80
+    uuid: 2399fe0a-b359-40a9-a3f0-b70c3c177a01
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: aa.beijng.dpdns.org
+  - name: 🏳️ Неизвестно 21
+    type: vless
+    server: 104.18.2.150
+    port: 443
+    uuid: a114d067-b900-4f60-87a5-50d4d63972b8
+    udp: true
+    network: ws
+    tls: true
+    servername: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
+  - name: 🇺🇸 США 4
+    type: vless
+    server: 192.200.160.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.jpmj.dev
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sni.jpmj.dev
+  - name: 🇹🇭 Таиланд
+    type: vless
+    server: 47.81.36.237
+    port: 443
+    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    servername: api.digital-help-prd.autodesk.com
+    client-fingerprint: chrome
+  - name: 🇦🇹 Австрия
+    type: vless
+    server: 212.183.88.238
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.jpmj.dev
+    ws-opts:
+      path: /?ed=2560&Telegram🇨🇳+@WangCai2
+      headers:
+        Host: sni.jpmj.dev
+  - name: 🏳️ Неизвестно 15
+    type: vless
+    server: 172.64.147.79
+    port: 80
+    uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: tt.andishehparenting.com
+  - name: 🏳️ Неизвестно 24
+    type: vless
+    server: 104.16.250.22
+    port: 443
+    uuid: 17ebee4e-97ea-4cad-8737-cc228478ca9d
+    udp: true
+    network: ws
+    tls: true
+    servername: lively-brook-c471.nedena3319.workers.dev
+    client-fingerprint: chrome
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: lively-brook-c471.nedena3319.workers.dev
+  - name: 🏳️ Неизвестно 37
+    type: vless
+    server: 104.20.6.134
+    port: 443
+    uuid: a01daac7-1e65-4645-854d-b47d226f6b08
+    udp: true
+    network: ws
+    tls: true
+    servername: y6-3cj.PAgES.DEV
+    ws-opts:
+      path: /
+      headers:
+        Host: y6-3cj.PAgES.DEV
+  - name: 🇫🇮 Финляндия 1
+    type: vless
+    server: 109.172.54.70
+    port: 2040
+    uuid: aef7716a-d0a5-4a85-9cb0-fda41d9f34b0
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: b6DZwkKAeXf3wjXrL6iV6dTt1Crpv2o88LRDJRgFglE
+      short-id: b589db8f02882bae
+    servername: eh.vk.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 23
+    type: vless
+    server: 172.67.164.152
+    port: 443
+    uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+    udp: true
+    network: ws
+    tls: true
+    servername: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
+    alpn:
+      - http/1.1
+    ws-opts:
+      path: 
+        /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+      headers:
+        Host: 002.inc-electrocell-001-002.workers.dev
+  - name: 🇮🇹 Италия 1
+    type: vless
+    server: 57.131.32.191
+    port: 80
+    uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
+    udp: true
+    network: ws
+    ws-opts:
+      path: /vless/
+      headers:
+        Host: 57.131.32.191
+  - name: 🏳️ Неизвестно 49
+    type: vless
+    server: 104.21.91.46
+    port: 443
+    uuid: 4cf1a3a0-7360-41ff-84ae-b621001e8376
+    udp: true
+    network: ws
+    tls: true
+    servername: Usa.cORreCtCOsETTe.WOrKeRS.DeV
+    alpn:
+      - http/1.1
+    ws-opts:
+      path: /R8BFTroQ00j1
+      headers:
+        Host: usa.correctcosette.workers.dev
+  - name: 🇰🇿 Казахстан 1
+    type: vless
+    server: 77.73.232.61
+    port: 19747
+    uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+      short-id: '2001'
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 1
+    type: vless
+    server: 104.24.45.247
+    port: 80
+    uuid: 2e71d8fc-d2e8-44fc-89bd-c8a449a193aa
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: odd-bread-435d.ahmadrezasteamacc.workers.dev
+  - name: 🇬🇧 Великобритания
+    type: vless
+    server: 152.233.28.198
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    udp: true
+    network: tcp
+    tls: true
+    servername: uk1.fromblancwithlove.com
+    alpn:
+      - h2
+  - name: 🇫🇮 Финляндия
+    type: vless
+    server: 195.133.2.45
+    port: 26048
+    uuid: 20afe519-9ef3-4c70-a2cf-5336b1125090
+    udp: true
+    network: raw
+  - name: 🇬🇧 Великобритания 3
+    type: vless
+    server: 140.238.100.35
+    port: 40721
+    uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk
+      short-id: df8611c07d
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 38
+    type: vless
+    server: 2.56.172.83
+    port: 8443
+    uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI
+    servername: tradingview.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 65
+    type: vless
+    server: 54.252.231.115
+    port: 55292
+    uuid: aca32055-db88-4634-b623-6429ddbb6c93
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: kPx16abMZD2x6dv7NW_hn1HSc2P8RsPptytcCT-neQs
+      short-id: bd711c02c8dc9955
+    servername: yahoo.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇭🇰 Гонконг 2
+    type: vless
+    server: 47.83.153.19
+    port: 59750
+    uuid: 9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg
+    servername: www.amd.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 68
+    type: vless
+    server: 188.114.99.243
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /?ed=2560&Telegram🇨🇳+@WangCai2
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🏳️ Неизвестно 44
+    type: vless
+    server: 104.16.63.239
+    port: 80
+    uuid: 04969b01-ac6a-4056-b5cd-852ccf45f100
+    udp: true
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: netherlands.vipserver14.workers.dev
+  - name: 🇺🇸 США 2
+    type: vless
+    server: 50.228.203.26
+    port: 443
+    uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+    udp: true
+    network: ws
+    tls: true
+    servername: babayaga-6i7.pages.dev
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: babayaga-6i7.pages.dev
+  - name: 🏳️ Неизвестно 26
+    type: vless
+    server: 172.64.149.54
+    port: 2052
+    uuid: cdec8542-a21f-4377-9da3-ea60bb6d3a30
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: chosenflyesqt-q3y28ipf-v2.chosen-fly-esqt.workers.dev
+  - name: 🇩🇪 Германия 4
+    type: vless
+    server: 188.244.122.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    ws-opts:
+      path: /
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🏳️ Неизвестно 29
+    type: vless
+    server: 104.20.6.134
+    port: 443
+    uuid: bd26c0c3-5eb9-425e-a4b6-2660df94e613
+    udp: true
+    network: ws
+    tls: true
+    servername: nEO1-3zC.pAGes.DeV
+    ws-opts:
+      path: /
+      headers:
+        Host: nEO1-3zC.pAGes.DeV
+  - name: 🇳🇱 Нидерланды 3
+    type: vless
+    server: 212.34.142.191
+    port: 8443
+    uuid: a5e746f7-328f-4b65-a65f-e2e2a4a5b1a9
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: wNcFqVd4_PkgJbfgJJeouSU6Pn_Swuce4q4Chw5T0hY
+      short-id: f7aa9e61197d3ac6
+    servername: tradingview.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 56
+    type: vless
+    server: 45.130.214.192
+    port: 53231
+    uuid: 4b8d8d7f-a8b4-4e44-80a9-6f13c3149b52
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: 3mRweaWR6pK4HsbEtu874rNG9qBgdOMmSsKE4RkWSmk
+      short-id: 4ffbd0f3117c6f
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇩🇪 Германия 2
+    type: vless
+    server: 94.130.132.180
+    port: 8443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.indevs.in
+    client-fingerprint: chrome
+    ws-opts:
+      path: /?ed=2560&Telegram🇨🇳 @app_bedal
+      headers:
+        Host: sni.111000.indevs.in
+  - name: 🏳️ Неизвестно 28
+    type: vless
+    server: 188.114.98.112
+    port: 80
+    uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+    udp: true
+    network: ws
+    ws-opts:
+      path: 
+        /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
+      headers:
+        Host: elenaaaaaaaaaa.cloudns.pro.
+  - name: 🏳️ Неизвестно 46
+    type: vless
+    server: 172.66.40.99
+    port: 2083
+    uuid: ce035748-9913-40c9-9fb6-c8389f7cdcf3
+    udp: true
+    network: ws
+    tls: true
+    servername: yousef.varzesh.dpdns.org
+    ws-opts:
+      path: /
+      headers:
+        Host: yousef.varzesh.dpdns.org
+  - name: 🇰🇷 Южная Корея
+    type: vless
+    server: 220.118.83.101
+    port: 60004
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    udp: true
+    network: ws
+    tls: true
+    servername: sni.111000.v6.army
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sni.111000.v6.army
+  - name: 🏳️ Неизвестно 9
+    type: vless
+    server: 104.20.5.134
+    port: 80
+    uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vip.yaml7.ggff.net
+  - name: 🏳️ Неизвестно 5
+    type: vless
+    server: 104.18.40.152
+    port: 8880
+    uuid: 2f0f84ed-9e4c-40ef-8a6c-286839e11a63
+    udp: true
+    network: ws
+    ws-opts:
+      path: /512
+      headers:
+        Host: hmedrza.ghwhdr51.workers.dev
+  - name: 🏳️ Неизвестно 8
+    type: vless
+    server: 104.18.12.149
+    port: 443
+    uuid: 733a9a09-ba93-4e73-b1f3-ae0bcbd88310
+    udp: true
+    network: ws
+    tls: true
+    servername: noisy-paper-6b70.grirbp.workers.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: noisy-paper-6b70.grirbp.workers.dev
+  - name: 🇷🇺 Россия
+    type: vless
+    server: 45.67.215.233
+    port: 443
+    uuid: 20e295db-a6af-4006-bfd6-91453f169968
+    udp: true
+    network: ws
+    tls: true
+    servername: 057.ElecTRocElLco-Cf-057.wOrKeRs.dEv
+    alpn:
+      - http/1.1
+    ws-opts:
+      path: 
+        /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+      headers:
+        Host: 057.electrocellco-cf-057.workers.dev
+  - name: 🏳️ Неизвестно 3
+    type: vless
+    server: 104.18.13.229
+    port: 8880
+    uuid: 78c5b6bd-1cb6-463c-bcba-9f17ef70c85b
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: square-frost-8d11.9660004.workers.dev
+  - name: 🏳️ Неизвестно 43
+    type: vless
+    server: 104.18.15.19
+    port: 80
+    uuid: a2af6e7c-a792-4e51-9460-fff4bd74fbfc
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vahidqaz-ft33vt-1.vahidqaz.workers.dev
+  - name: 🇮🇹 Италия 2
+    type: vless
+    server: 204.216.217.88
+    port: 8443
+    uuid: 85dbb96e-1cbe-4db1-97b8-6aa6880edfd5
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: m75eT1Y-jispVwROxHTJd_8CyP2KCYdr5oIsJ445gHc
+      short-id: ad8644cf
+    servername: www.airbnb.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 30
+    type: vless
+    server: 172.64.52.178
+    port: 443
+    uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+    udp: true
+    network: ws
+    tls: true
+    servername: powered-by-surena.user68f797c2f3e1b.workers.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: powered-by-surena.user68f797c2f3e1b.workers.dev
+  - name: 🏳️ Неизвестно 4
+    type: vless
+    server: 104.19.174.68
+    port: 2053
+    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+    udp: true
+    network: ws
+    tls: true
+    servername: hio-awx.pages.dev
+    ws-opts:
+      path: /fast
+      headers:
+        Host: hio-awx.pages.dev
+  - name: 🇳🇱 Нидерланды
+    type: vless
+    server: 178.208.81.81
+    port: 42597
+    uuid: caac3212-6cc2-4ff4-8165-aec107f50826
+    udp: true
+    network: raw
+  - name: 🏳️ Неизвестно 70
+    type: vless
+    server: 77.91.68.70
+    port: 55983
+    uuid: f667a096-5231-4cfb-8759-92bb32473139
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+      short-id: 0e
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 6
+    type: vless
+    server: 172.64.155.209
+    port: 80
+    uuid: 787b3724-16c8-4e58-a038-2b8013cdc6d9
+    udp: true
+    network: ws
+    ws-opts:
+      path: 
+        /eyJqdW5rIjoiTG1jRlUwNjNwVUxvYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+      headers:
+        Host: c3linogp4x20x5acoguup217nstesdu1.nobodyface4b13.workers.dev
+  - name: 🏳️ Неизвестно 10
+    type: vless
+    server: 104.18.125.5
+    port: 80
+    uuid: 17ebee4e-97ea-4cad-8737-cc228478ca9d
+    udp: true
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: lively-brook-c471.nedena3319.workers.dev
+  - name: 🏳️ Неизвестно 17
+    type: vless
+    server: 162.159.152.4
+    port: 443
+    uuid: f2a73750-3087-48ff-a763-1348c15dce68
+    udp: true
+    network: ws
+    tls: true
+    servername: rAyAn-007.mAxImA.DpDnS.OrG
+    ws-opts:
+      path: /
+      headers:
+        Host: rAyAn-007.mAxImA.DpDnS.OrG
+  - name: 🏳️ Неизвестно 50
+    type: vless
+    server: 162.159.38.129
+    port: 80
+    uuid: e388fffb-03b0-4227-ac2c-2b5cec1f5c34
+    udp: true
+    network: ws
+    ws-opts:
+      path: /?ed%3D2048
+      headers:
+        Host: leecher56.matinheydri.workers.dev
+  - name: 🇸🇬 Сингапур 1
+    type: vless
+    server: 159.89.194.243
+    port: 22539
+    uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
+    udp: true
+    network: raw
+    tls: true
+    servername: node1.nanonet.host
+    client-fingerprint: chrome
+  - name: 🇭🇰 Гонконг
+    type: vless
+    server: 38.54.23.58
+    port: 443
+    uuid: 6048472f-0993-4ae0-8203-960b9a0f4113
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: i7xxqA7h16NpQQAGiQJKxubs-_IRCUUlredSK7swTkw
+    servername: www.amazon.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 12
+    type: vless
+    server: 198.41.223.121
+    port: 443
+    uuid: d555dac9-27cb-4ddb-89f5-6a1d8d1e4798
+    udp: true
+    network: ws
+    tls: true
+    servername: momi.timoreyhaneh.workers.dev
+    ws-opts:
+      path: /
+      headers:
+        Host: momi.timoreyhaneh.workers.dev
+  - name: 🏳️ Неизвестно 35
+    type: vless
+    server: 172.66.43.117
+    port: 443
+    uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
+    udp: true
+    network: ws
+    tls: true
+    servername: rAyAn-007.pArViN.DpDnS.OrG
+    ws-opts:
+      path: /
+      headers:
+        Host: rAyAn-007.pArViN.DpDnS.OrG
+  - name: 🏳️ Неизвестно 47
+    type: vless
+    server: 45.89.109.25
+    port: 18278
+    uuid: 7a30b7fc-4868-4d1d-84b8-16a3d3df0139
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: 8Fglzc7t2LS4r1vQWlVMNe_EsFdhMawlxeDacbhmiAg
+      short-id: f0
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🏳️ Неизвестно 67
+    type: vless
+    server: 3.106.54.135
+    port: 57001
+    uuid: 30ac5a8b-5022-43c0-b0c2-11b9a98a986e
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: aSK0B0bgRalAWw_5d7buTjy4dYLF2WGTZhUojypI618
+      short-id: b2dd66706eb2
+    servername: yahoo.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🏳️ Неизвестно 66
+    type: vless
+    server: 104.18.185.26
+    port: 80
+    uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
+  - name: 🇦🇱 Албания
+    type: vless
+    server: 144.31.131.33
+    port: 443
+    uuid: ae852d97-85f5-45cf-82a4-254eba345480
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: djH9iD2QV748ocK-wPH7HvDd03lu88zHhS4G-61w6Dc
+      short-id: a120
+    servername: cdn.cdnjst.org
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -42,39 +1593,537 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇦🇹 Австрия
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно
+      - 🇫🇷 Франция
+      - 🏳️ Неизвестно 22
+      - 🇷🇴 Румыния
+      - 🇷🇺 Россия 2
+      - 🏳️ Неизвестно 39
+      - 🏳️ Неизвестно 14
+      - 🇳🇱 Нидерланды 1
+      - 🏳️ Неизвестно 34
+      - 🇯🇵 Япония
+      - 🏳️ Неизвестно 48
+      - 🇺🇸 США 1
+      - 🏳️ Неизвестно 11
+      - 🏳️ Неизвестно 42
+      - 🏳️ Неизвестно 19
+      - 🏳️ Неизвестно 55
       - 🇸🇬 Сингапур
+      - 🏳️ Неизвестно 7
+      - 🇷🇺 Россия 1
+      - 🇩🇪 Германия 1
+      - 🇸🇪 Швеция
+      - 🏳️ Неизвестно 27
+      - 🇺🇸 США 3
+      - 🇬🇧 Великобритания 1
+      - 🇰🇿 Казахстан 2
+      - 🏳️ Неизвестно 71
+      - 🏳️ Неизвестно 13
+      - 🏳️ Неизвестно 69
+      - 🇺🇸 США
+      - 🏳️ Неизвестно 45
+      - 🏳️ Неизвестно 52
+      - 🇨🇭 Швейцария
+      - 🇮🇹 Италия
+      - 🏳️ Неизвестно 62
+      - 🏳️ Неизвестно 33
+      - 🇩🇪 Германия 3
+      - 🇬🇧 Великобритания 2
+      - 🏳️ Неизвестно 16
+      - 🇷🇴 Румыния 1
+      - 🏳️ Неизвестно 40
+      - 🏳️ Неизвестно 31
+      - 🏳️ Неизвестно 25
+      - 🏳️ Неизвестно 61
+      - 🇩🇪 Германия
+      - 🏳️ Неизвестно 74
+      - 🏳️ Неизвестно 18
+      - 🇦🇹 Австрия 1
+      - 🏳️ Неизвестно 72
+      - 🏳️ Неизвестно 32
+      - 🇺🇸 США 6
+      - 🏳️ Неизвестно 54
+      - 🏳️ Неизвестно 73
+      - 🇰🇿 Казахстан
+      - 🇫🇷 Франция 1
+      - 🇳🇱 Нидерланды 2
+      - 🇺🇸 США 7
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 53
+      - 🏳️ Неизвестно 64
+      - 🇵🇱 Польша
+      - 🏳️ Неизвестно 20
+      - 🏳️ Неизвестно 41
+      - 🏳️ Неизвестно 51
+      - 🏳️ Неизвестно 60
+      - 🇺🇸 США 5
+      - 🏳️ Неизвестно 57
+      - 🏳️ Неизвестно 59
+      - 🇩🇪 Германия 5
+      - 🏳️ Неизвестно 36
+      - 🏳️ Неизвестно 58
+      - 🇺🇸 США 8
+      - 🏳️ Неизвестно 63
+      - 🏳️ Неизвестно 21
+      - 🇺🇸 США 4
+      - 🇹🇭 Таиланд
+      - 🇦🇹 Австрия
+      - 🏳️ Неизвестно 15
+      - 🏳️ Неизвестно 24
+      - 🏳️ Неизвестно 37
+      - 🇫🇮 Финляндия 1
+      - 🏳️ Неизвестно 23
+      - 🇮🇹 Италия 1
+      - 🏳️ Неизвестно 49
+      - 🇰🇿 Казахстан 1
+      - 🏳️ Неизвестно 1
+      - 🇬🇧 Великобритания
+      - 🇫🇮 Финляндия
+      - 🇬🇧 Великобритания 3
+      - 🏳️ Неизвестно 38
+      - 🏳️ Неизвестно 65
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 68
+      - 🏳️ Неизвестно 44
+      - 🇺🇸 США 2
+      - 🏳️ Неизвестно 26
+      - 🇩🇪 Германия 4
+      - 🏳️ Неизвестно 29
+      - 🇳🇱 Нидерланды 3
+      - 🏳️ Неизвестно 56
+      - 🇩🇪 Германия 2
+      - 🏳️ Неизвестно 28
+      - 🏳️ Неизвестно 46
+      - 🇰🇷 Южная Корея
+      - 🏳️ Неизвестно 9
+      - 🏳️ Неизвестно 5
+      - 🏳️ Неизвестно 8
+      - 🇷🇺 Россия
+      - 🏳️ Неизвестно 3
+      - 🏳️ Неизвестно 43
+      - 🇮🇹 Италия 2
+      - 🏳️ Неизвестно 30
+      - 🏳️ Неизвестно 4
+      - 🇳🇱 Нидерланды
+      - 🏳️ Неизвестно 70
+      - 🏳️ Неизвестно 6
+      - 🏳️ Неизвестно 10
+      - 🏳️ Неизвестно 17
+      - 🏳️ Неизвестно 50
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно 12
+      - 🏳️ Неизвестно 35
+      - 🏳️ Неизвестно 47
+      - 🏳️ Неизвестно 67
+      - 🏳️ Неизвестно 66
+      - 🇦🇱 Албания
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇦🇹 Австрия
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно
+      - 🇫🇷 Франция
+      - 🏳️ Неизвестно 22
+      - 🇷🇴 Румыния
+      - 🏳️ Неизвестно 39
+      - 🏳️ Неизвестно 14
+      - 🇳🇱 Нидерланды 1
+      - 🏳️ Неизвестно 34
+      - 🇯🇵 Япония
+      - 🏳️ Неизвестно 48
+      - 🇺🇸 США 1
+      - 🏳️ Неизвестно 11
+      - 🏳️ Неизвестно 42
+      - 🏳️ Неизвестно 19
+      - 🏳️ Неизвестно 55
       - 🇸🇬 Сингапур
+      - 🏳️ Неизвестно 7
+      - 🇩🇪 Германия 1
+      - 🇸🇪 Швеция
+      - 🏳️ Неизвестно 27
+      - 🇺🇸 США 3
+      - 🇬🇧 Великобритания 1
+      - 🇰🇿 Казахстан 2
+      - 🏳️ Неизвестно 71
+      - 🏳️ Неизвестно 13
+      - 🏳️ Неизвестно 69
+      - 🇺🇸 США
+      - 🏳️ Неизвестно 45
+      - 🏳️ Неизвестно 52
+      - 🇨🇭 Швейцария
+      - 🇮🇹 Италия
+      - 🏳️ Неизвестно 62
+      - 🏳️ Неизвестно 33
+      - 🇩🇪 Германия 3
+      - 🇬🇧 Великобритания 2
+      - 🏳️ Неизвестно 16
+      - 🇷🇴 Румыния 1
+      - 🏳️ Неизвестно 40
+      - 🏳️ Неизвестно 31
+      - 🏳️ Неизвестно 25
+      - 🏳️ Неизвестно 61
+      - 🇩🇪 Германия
+      - 🏳️ Неизвестно 74
+      - 🏳️ Неизвестно 18
+      - 🇦🇹 Австрия 1
+      - 🏳️ Неизвестно 72
+      - 🏳️ Неизвестно 32
+      - 🇺🇸 США 6
+      - 🏳️ Неизвестно 54
+      - 🏳️ Неизвестно 73
+      - 🇰🇿 Казахстан
+      - 🇫🇷 Франция 1
+      - 🇳🇱 Нидерланды 2
+      - 🇺🇸 США 7
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 53
+      - 🏳️ Неизвестно 64
+      - 🇵🇱 Польша
+      - 🏳️ Неизвестно 20
+      - 🏳️ Неизвестно 41
+      - 🏳️ Неизвестно 51
+      - 🏳️ Неизвестно 60
+      - 🇺🇸 США 5
+      - 🏳️ Неизвестно 57
+      - 🏳️ Неизвестно 59
+      - 🇩🇪 Германия 5
+      - 🏳️ Неизвестно 36
+      - 🏳️ Неизвестно 58
+      - 🇺🇸 США 8
+      - 🏳️ Неизвестно 63
+      - 🏳️ Неизвестно 21
+      - 🇺🇸 США 4
+      - 🇹🇭 Таиланд
+      - 🇦🇹 Австрия
+      - 🏳️ Неизвестно 15
+      - 🏳️ Неизвестно 24
+      - 🏳️ Неизвестно 37
+      - 🇫🇮 Финляндия 1
+      - 🏳️ Неизвестно 23
+      - 🇮🇹 Италия 1
+      - 🏳️ Неизвестно 49
+      - 🇰🇿 Казахстан 1
+      - 🏳️ Неизвестно 1
+      - 🇬🇧 Великобритания
+      - 🇫🇮 Финляндия
+      - 🇬🇧 Великобритания 3
+      - 🏳️ Неизвестно 38
+      - 🏳️ Неизвестно 65
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 68
+      - 🏳️ Неизвестно 44
+      - 🇺🇸 США 2
+      - 🏳️ Неизвестно 26
+      - 🇩🇪 Германия 4
+      - 🏳️ Неизвестно 29
+      - 🇳🇱 Нидерланды 3
+      - 🏳️ Неизвестно 56
+      - 🇩🇪 Германия 2
+      - 🏳️ Неизвестно 28
+      - 🏳️ Неизвестно 46
+      - 🇰🇷 Южная Корея
+      - 🏳️ Неизвестно 9
+      - 🏳️ Неизвестно 5
+      - 🏳️ Неизвестно 8
+      - 🏳️ Неизвестно 3
+      - 🏳️ Неизвестно 43
+      - 🇮🇹 Италия 2
+      - 🏳️ Неизвестно 30
+      - 🏳️ Неизвестно 4
+      - 🇳🇱 Нидерланды
+      - 🏳️ Неизвестно 70
+      - 🏳️ Неизвестно 6
+      - 🏳️ Неизвестно 10
+      - 🏳️ Неизвестно 17
+      - 🏳️ Неизвестно 50
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно 12
+      - 🏳️ Неизвестно 35
+      - 🏳️ Неизвестно 47
+      - 🏳️ Неизвестно 67
+      - 🏳️ Неизвестно 66
+      - 🇦🇱 Албания
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
-      - DIRECT
+      - 🇷🇺 Россия 2
+      - 🇷🇺 Россия 1
+      - 🇷🇺 Россия
   - name: ⚡ Лучший пинг (Все)
     type: url-test
     hidden: true
     url: http://cp.cloudflare.com/generate_204
     interval: 150
     proxies:
-      - 🇦🇹 Австрия
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно
+      - 🇫🇷 Франция
+      - 🏳️ Неизвестно 22
+      - 🇷🇴 Румыния
+      - 🇷🇺 Россия 2
+      - 🏳️ Неизвестно 39
+      - 🏳️ Неизвестно 14
+      - 🇳🇱 Нидерланды 1
+      - 🏳️ Неизвестно 34
+      - 🇯🇵 Япония
+      - 🏳️ Неизвестно 48
+      - 🇺🇸 США 1
+      - 🏳️ Неизвестно 11
+      - 🏳️ Неизвестно 42
+      - 🏳️ Неизвестно 19
+      - 🏳️ Неизвестно 55
       - 🇸🇬 Сингапур
+      - 🏳️ Неизвестно 7
+      - 🇷🇺 Россия 1
+      - 🇩🇪 Германия 1
+      - 🇸🇪 Швеция
+      - 🏳️ Неизвестно 27
+      - 🇺🇸 США 3
+      - 🇬🇧 Великобритания 1
+      - 🇰🇿 Казахстан 2
+      - 🏳️ Неизвестно 71
+      - 🏳️ Неизвестно 13
+      - 🏳️ Неизвестно 69
+      - 🇺🇸 США
+      - 🏳️ Неизвестно 45
+      - 🏳️ Неизвестно 52
+      - 🇨🇭 Швейцария
+      - 🇮🇹 Италия
+      - 🏳️ Неизвестно 62
+      - 🏳️ Неизвестно 33
+      - 🇩🇪 Германия 3
+      - 🇬🇧 Великобритания 2
+      - 🏳️ Неизвестно 16
+      - 🇷🇴 Румыния 1
+      - 🏳️ Неизвестно 40
+      - 🏳️ Неизвестно 31
+      - 🏳️ Неизвестно 25
+      - 🏳️ Неизвестно 61
+      - 🇩🇪 Германия
+      - 🏳️ Неизвестно 74
+      - 🏳️ Неизвестно 18
+      - 🇦🇹 Австрия 1
+      - 🏳️ Неизвестно 72
+      - 🏳️ Неизвестно 32
+      - 🇺🇸 США 6
+      - 🏳️ Неизвестно 54
+      - 🏳️ Неизвестно 73
+      - 🇰🇿 Казахстан
+      - 🇫🇷 Франция 1
+      - 🇳🇱 Нидерланды 2
+      - 🇺🇸 США 7
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 53
+      - 🏳️ Неизвестно 64
+      - 🇵🇱 Польша
+      - 🏳️ Неизвестно 20
+      - 🏳️ Неизвестно 41
+      - 🏳️ Неизвестно 51
+      - 🏳️ Неизвестно 60
+      - 🇺🇸 США 5
+      - 🏳️ Неизвестно 57
+      - 🏳️ Неизвестно 59
+      - 🇩🇪 Германия 5
+      - 🏳️ Неизвестно 36
+      - 🏳️ Неизвестно 58
+      - 🇺🇸 США 8
+      - 🏳️ Неизвестно 63
+      - 🏳️ Неизвестно 21
+      - 🇺🇸 США 4
+      - 🇹🇭 Таиланд
+      - 🇦🇹 Австрия
+      - 🏳️ Неизвестно 15
+      - 🏳️ Неизвестно 24
+      - 🏳️ Неизвестно 37
+      - 🇫🇮 Финляндия 1
+      - 🏳️ Неизвестно 23
+      - 🇮🇹 Италия 1
+      - 🏳️ Неизвестно 49
+      - 🇰🇿 Казахстан 1
+      - 🏳️ Неизвестно 1
+      - 🇬🇧 Великобритания
+      - 🇫🇮 Финляндия
+      - 🇬🇧 Великобритания 3
+      - 🏳️ Неизвестно 38
+      - 🏳️ Неизвестно 65
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 68
+      - 🏳️ Неизвестно 44
+      - 🇺🇸 США 2
+      - 🏳️ Неизвестно 26
+      - 🇩🇪 Германия 4
+      - 🏳️ Неизвестно 29
+      - 🇳🇱 Нидерланды 3
+      - 🏳️ Неизвестно 56
+      - 🇩🇪 Германия 2
+      - 🏳️ Неизвестно 28
+      - 🏳️ Неизвестно 46
+      - 🇰🇷 Южная Корея
+      - 🏳️ Неизвестно 9
+      - 🏳️ Неизвестно 5
+      - 🏳️ Неизвестно 8
+      - 🇷🇺 Россия
+      - 🏳️ Неизвестно 3
+      - 🏳️ Неизвестно 43
+      - 🇮🇹 Италия 2
+      - 🏳️ Неизвестно 30
+      - 🏳️ Неизвестно 4
+      - 🇳🇱 Нидерланды
+      - 🏳️ Неизвестно 70
+      - 🏳️ Неизвестно 6
+      - 🏳️ Неизвестно 10
+      - 🏳️ Неизвестно 17
+      - 🏳️ Неизвестно 50
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно 12
+      - 🏳️ Неизвестно 35
+      - 🏳️ Неизвестно 47
+      - 🏳️ Неизвестно 67
+      - 🏳️ Неизвестно 66
+      - 🇦🇱 Албания
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://cp.cloudflare.com/generate_204
     interval: 150
     proxies:
-      - 🇦🇹 Австрия
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно
+      - 🇫🇷 Франция
+      - 🏳️ Неизвестно 22
+      - 🇷🇴 Румыния
+      - 🏳️ Неизвестно 39
+      - 🏳️ Неизвестно 14
+      - 🇳🇱 Нидерланды 1
+      - 🏳️ Неизвестно 34
+      - 🇯🇵 Япония
+      - 🏳️ Неизвестно 48
+      - 🇺🇸 США 1
+      - 🏳️ Неизвестно 11
+      - 🏳️ Неизвестно 42
+      - 🏳️ Неизвестно 19
+      - 🏳️ Неизвестно 55
       - 🇸🇬 Сингапур
+      - 🏳️ Неизвестно 7
+      - 🇩🇪 Германия 1
+      - 🇸🇪 Швеция
+      - 🏳️ Неизвестно 27
+      - 🇺🇸 США 3
+      - 🇬🇧 Великобритания 1
+      - 🇰🇿 Казахстан 2
+      - 🏳️ Неизвестно 71
+      - 🏳️ Неизвестно 13
+      - 🏳️ Неизвестно 69
+      - 🇺🇸 США
+      - 🏳️ Неизвестно 45
+      - 🏳️ Неизвестно 52
+      - 🇨🇭 Швейцария
+      - 🇮🇹 Италия
+      - 🏳️ Неизвестно 62
+      - 🏳️ Неизвестно 33
+      - 🇩🇪 Германия 3
+      - 🇬🇧 Великобритания 2
+      - 🏳️ Неизвестно 16
+      - 🇷🇴 Румыния 1
+      - 🏳️ Неизвестно 40
+      - 🏳️ Неизвестно 31
+      - 🏳️ Неизвестно 25
+      - 🏳️ Неизвестно 61
+      - 🇩🇪 Германия
+      - 🏳️ Неизвестно 74
+      - 🏳️ Неизвестно 18
+      - 🇦🇹 Австрия 1
+      - 🏳️ Неизвестно 72
+      - 🏳️ Неизвестно 32
+      - 🇺🇸 США 6
+      - 🏳️ Неизвестно 54
+      - 🏳️ Неизвестно 73
+      - 🇰🇿 Казахстан
+      - 🇫🇷 Франция 1
+      - 🇳🇱 Нидерланды 2
+      - 🇺🇸 США 7
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 53
+      - 🏳️ Неизвестно 64
+      - 🇵🇱 Польша
+      - 🏳️ Неизвестно 20
+      - 🏳️ Неизвестно 41
+      - 🏳️ Неизвестно 51
+      - 🏳️ Неизвестно 60
+      - 🇺🇸 США 5
+      - 🏳️ Неизвестно 57
+      - 🏳️ Неизвестно 59
+      - 🇩🇪 Германия 5
+      - 🏳️ Неизвестно 36
+      - 🏳️ Неизвестно 58
+      - 🇺🇸 США 8
+      - 🏳️ Неизвестно 63
+      - 🏳️ Неизвестно 21
+      - 🇺🇸 США 4
+      - 🇹🇭 Таиланд
+      - 🇦🇹 Австрия
+      - 🏳️ Неизвестно 15
+      - 🏳️ Неизвестно 24
+      - 🏳️ Неизвестно 37
+      - 🇫🇮 Финляндия 1
+      - 🏳️ Неизвестно 23
+      - 🇮🇹 Италия 1
+      - 🏳️ Неизвестно 49
+      - 🇰🇿 Казахстан 1
+      - 🏳️ Неизвестно 1
+      - 🇬🇧 Великобритания
+      - 🇫🇮 Финляндия
+      - 🇬🇧 Великобритания 3
+      - 🏳️ Неизвестно 38
+      - 🏳️ Неизвестно 65
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 68
+      - 🏳️ Неизвестно 44
+      - 🇺🇸 США 2
+      - 🏳️ Неизвестно 26
+      - 🇩🇪 Германия 4
+      - 🏳️ Неизвестно 29
+      - 🇳🇱 Нидерланды 3
+      - 🏳️ Неизвестно 56
+      - 🇩🇪 Германия 2
+      - 🏳️ Неизвестно 28
+      - 🏳️ Неизвестно 46
+      - 🇰🇷 Южная Корея
+      - 🏳️ Неизвестно 9
+      - 🏳️ Неизвестно 5
+      - 🏳️ Неизвестно 8
+      - 🏳️ Неизвестно 3
+      - 🏳️ Неизвестно 43
+      - 🇮🇹 Италия 2
+      - 🏳️ Неизвестно 30
+      - 🏳️ Неизвестно 4
+      - 🇳🇱 Нидерланды
+      - 🏳️ Неизвестно 70
+      - 🏳️ Неизвестно 6
+      - 🏳️ Неизвестно 10
+      - 🏳️ Неизвестно 17
+      - 🏳️ Неизвестно 50
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно 12
+      - 🏳️ Неизвестно 35
+      - 🏳️ Неизвестно 47
+      - 🏳️ Неизвестно 67
+      - 🏳️ Неизвестно 66
+      - 🇦🇱 Албания
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
     url: http://cp.cloudflare.com/generate_204
     interval: 150
     proxies:
-      - DIRECT
+      - 🇷🇺 Россия 2
+      - 🇷🇺 Россия 1
+      - 🇷🇺 Россия
 rules:
   - MATCH,🚀 Главный Выбор
