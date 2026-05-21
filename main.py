@@ -10,7 +10,6 @@ import subprocess
 import urllib.request
 import json
 import html
-import maxminddb
 import emoji
 from typing import List, Dict, Any
 from ruamel.yaml import YAML
@@ -74,10 +73,12 @@ COUNTRY_KEYWORDS = {
     "brazil": "BR", "бразилия": "BR"
 }
 
+
 def cc_to_flag(cc: str) -> str:
     if not cc or len(cc) != 2 or cc == 'UN':
         return "🏳️"
     return chr(ord(cc[0].upper()) + 127397) + chr(ord(cc[1].upper()) + 127397)
+
 
 def decode_base64(text: str) -> str:
     try:
@@ -89,6 +90,7 @@ def decode_base64(text: str) -> str:
         return base64.b64decode(text).decode('utf-8', errors='ignore')
     except Exception:
         return ""
+
 
 async def fetch_source(session: aiohttp.ClientSession, url: str) -> str:
     headers = {
@@ -103,6 +105,7 @@ async def fetch_source(session: aiohttp.ClientSession, url: str) -> str:
     except Exception as e:
         logging.debug(f"Error fetching {url}: {e}")
     return ""
+
 
 def parse_vless_link(link: str) -> Dict[str, Any]:
     try:
@@ -165,6 +168,7 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
     except Exception:
         return {}
 
+
 async def get_all_proxies() -> List[Dict[str, Any]]:
     proxies = []
     try:
@@ -181,7 +185,7 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
         if not content:
             continue
 
-        # Критический фикс: декодируем HTML-сущности (&amp; → &, и т.д.)
+        # Декодируем HTML-сущности (&amp; → &, и т.д.) — критично для TG web-превью
         content = html.unescape(content)
 
         if 'vless://' not in content:
@@ -189,7 +193,7 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
             if 'vless://' in decoded:
                 content = html.unescape(decoded)
 
-        # Улучшенный regex: исключаем & чтобы не цеплять HTML-мусор в хвост ключа
+        # Исключаем & из хвоста, чтобы не цеплять HTML-мусор
         links = re.findall(r'(vless://[^\s"\'<>&\u0000-\u001F]+)', content)
         for link in links:
             p = parse_vless_link(link)
@@ -198,6 +202,7 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
 
     logging.info(f"Extracted {len(proxies)} VLESS proxies in total")
     return proxies
+
 
 def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen_names = set()
@@ -216,6 +221,7 @@ def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         proxy['name'] = final_name
     return proxies
 
+
 def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen = set()
     unique = []
@@ -226,6 +232,7 @@ def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             unique.append(p)
     logging.info(f"Deduplicated down to {len(unique)} proxies")
     return sanitize_proxy_names(unique)
+
 
 async def check_tcp(proxy: Dict[str, Any]) -> bool:
     try:
@@ -239,6 +246,7 @@ async def check_tcp(proxy: Dict[str, Any]) -> bool:
     except Exception:
         return False
 
+
 async def stage_1_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     logging.info(f"Starting Stage 1 TCP check for {len(proxies)} proxies...")
     tasks = [check_tcp(proxy) for proxy in proxies]
@@ -247,12 +255,19 @@ async def stage_1_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     logging.info(f"Stage 1 complete: {len(survivors)}/{len(proxies)} survived TCP check.")
     return survivors
 
-async def check_http(session: aiohttp.ClientSession, proxy: Dict[str, Any], api_port: int, sem: asyncio.Semaphore):
+
+async def check_http(
+    session: aiohttp.ClientSession,
+    proxy: Dict[str, Any],
+    api_port: int,
+    sem: asyncio.Semaphore
+):
     url = f"http://127.0.0.1:{api_port}/proxies/{urllib.parse.quote(proxy['name'])}/delay"
     params = {"timeout": 3000, "url": "http://cp.cloudflare.com/generate_204"}
     async with sem:
         try:
-            async with session.get(url, params=params, timeout=aiohttp.ClientTimeout(total=6)) as resp:
+            timeout = aiohttp.ClientTimeout(total=6)
+            async with session.get(url, params=params, timeout=timeout) as resp:
                 if resp.status == 200:
                     data = await resp.json()
                     if "delay" in data and data["delay"] > 0:
@@ -260,6 +275,7 @@ async def check_http(session: aiohttp.ClientSession, proxy: Dict[str, Any], api_
         except Exception:
             pass
         return proxy, float('inf')
+
 
 async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     if not proxies:
@@ -335,6 +351,7 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         final_proxies.append(p)
     return final_proxies
 
+
 def extract_country_from_name(name: str) -> str:
     # 1. Поиск по эмодзи-флагам
     for char in name:
@@ -344,7 +361,7 @@ def extract_country_from_name(name: str) -> str:
                 if cc in COUNTRY_MAP:
                     return cc
 
-    # 2. Поиск по регулярным выражениям и ключевым словам
+    # 2. Поиск по [XX] паттерну и ключевым словам
     text_name = name.lower()
     match = re.search(r'\[([a-z]{2})\]', text_name)
     if match and match.group(1).upper() in COUNTRY_MAP:
@@ -356,52 +373,61 @@ def extract_country_from_name(name: str) -> str:
 
     return 'UN'
 
+
 async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     if not proxies:
         return []
-    logging.info("Определяем страны (Анализ имен + Offline MaxMind DB)...")
+    logging.info("Определяем страны (Анализ имен + ip-api.com с учетом CDN)...")
 
-    db_path = "GeoLite2-Country.mmdb"
-    if not os.path.exists(db_path):
-        logging.info("Скачивание актуальной базы GeoLite2...")
-        try:
-            urllib.request.urlretrieve(
-                "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb",
-                db_path
-            )
-        except Exception as e:
-            logging.error(f"Не удалось скачать базу: {e}")
-
-    try:
-        reader = maxminddb.open_database(db_path)
-    except Exception as e:
-        logging.error(f"Ошибка открытия базы данных: {e}")
-        reader = None
+    geo_map = {}
+    ips_to_check = []
 
     for p in proxies:
-        host = p['server']
-        old_name = p['name']
+        cc = extract_country_from_name(p['name'])
+        if cc == 'UN':
+            ips_to_check.append(p['server'])
+        else:
+            p['_resolved_cc'] = cc
 
-        cc = extract_country_from_name(old_name)
+    unique_ips = list(set(ips_to_check))
 
-        if cc == 'UN' and reader is not None:
-            if re.match(r'^\d{1,3}(\.\d{1,3}){3}$', host) or ':' in host:
-                try:
-                    record = reader.get(host)
-                    if record and 'country' in record:
-                        api_cc = record['country']['iso_code']
-                        if api_cc in COUNTRY_MAP:
-                            cc = api_cc
-                except Exception:
-                    pass
+    async with aiohttp.ClientSession() as session:
+        for i in range(0, len(unique_ips), 100):
+            chunk = unique_ips[i:i + 100]
+            try:
+                timeout = aiohttp.ClientTimeout(total=15)
+                async with session.post(
+                    "http://ip-api.com/batch?fields=query,countryCode,org",
+                    json=[{"query": ip} for ip in chunk],
+                    timeout=timeout
+                ) as r:
+                    if r.status == 200:
+                        for item in await r.json():
+                            # Cloudflare CDN — геолокация по IP ненадёжна
+                            if 'Cloudflare' in item.get('org', ''):
+                                geo_map[item['query']] = 'UN'
+                            else:
+                                geo_map[item['query']] = item.get('countryCode', 'UN')
+                    else:
+                        logging.warning(f"IP-API returned {r.status}")
+            except Exception as e:
+                logging.debug(f"GeoIP Error: {e}")
+
+            # Лимит ip-api.com: 15 батч-запросов в минуту
+            await asyncio.sleep(4.5)
+
+    for p in proxies:
+        cc = p.pop('_resolved_cc', 'UN')
+        if cc == 'UN':
+            api_cc = geo_map.get(p['server'], 'UN')
+            if api_cc in COUNTRY_MAP:
+                cc = api_cc
 
         flag, c_name = COUNTRY_MAP.get(cc, (cc_to_flag(cc), cc if cc != 'UN' else "Неизвестно"))
         p['name'] = f"{flag} {c_name}"
 
-    if reader:
-        reader.close()
-
     return proxies
+
 
 def generate_yaml(proxies: List[Dict[str, Any]]):
     if not proxies:
@@ -458,7 +484,10 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "hidden": True,
                 "url": "http://cp.cloudflare.com/generate_204",
                 "interval": 150,
-                "proxies": all_proxy_names[:150] if len(all_proxy_names) >= 150 else (all_proxy_names if all_proxy_names else ["DIRECT"])
+                "proxies": (
+                    all_proxy_names[:150] if len(all_proxy_names) >= 150
+                    else (all_proxy_names if all_proxy_names else ["DIRECT"])
+                )
             },
             {
                 "name": "⚡ Авто-Зарубеж",
@@ -466,7 +495,10 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "hidden": True,
                 "url": "http://cp.cloudflare.com/generate_204",
                 "interval": 150,
-                "proxies": foreign_names[:150] if len(foreign_names) >= 150 else (foreign_names if foreign_names else ["DIRECT"])
+                "proxies": (
+                    foreign_names[:150] if len(foreign_names) >= 150
+                    else (foreign_names if foreign_names else ["DIRECT"])
+                )
             },
             {
                 "name": "⚡ Авто-Россия",
@@ -506,6 +538,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
         json.dump(stats, f, ensure_ascii=False, indent=2)
     logging.info("Generated stats.json for website.")
 
+
 async def main():
     proxies = await get_all_proxies()
     proxies = deduplicate_proxies(proxies)
@@ -514,6 +547,7 @@ async def main():
     proxies = await resolve_countries(proxies)
     proxies = sanitize_proxy_names(proxies)
     generate_yaml(proxies)
+
 
 if __name__ == "__main__":
     asyncio.run(main())
