@@ -40,21 +40,21 @@ proxy-groups:
   - name: ⚡ Лучший пинг (Все)
     type: url-test
     hidden: true
-    url: http://cp.cloudflare.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
       - 🏳️ Неизвестно
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
-    url: http://cp.cloudflare.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
       - 🏳️ Неизвестно
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
-    url: http://cp.cloudflare.com/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
       - DIRECT
