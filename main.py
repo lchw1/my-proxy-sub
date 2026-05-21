@@ -9,6 +9,7 @@ import os
 import subprocess
 import urllib.request
 import json
+import html
 import maxminddb
 import emoji
 from typing import List, Dict, Any
@@ -91,11 +92,12 @@ def decode_base64(text: str) -> str:
 
 async def fetch_source(session: aiohttp.ClientSession, url: str) -> str:
     headers = {
-        "User-Agent": "v2rayNG/1.8.12",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
     }
     try:
-        async with session.get(url, headers=headers, timeout=15) as response:
+        timeout = aiohttp.ClientTimeout(total=15)
+        async with session.get(url, headers=headers, timeout=timeout) as response:
             if response.status == 200:
                 return await response.text()
     except Exception as e:
@@ -105,7 +107,8 @@ async def fetch_source(session: aiohttp.ClientSession, url: str) -> str:
 def parse_vless_link(link: str) -> Dict[str, Any]:
     try:
         match = re.match(r'^vless://([^@]+)@([^:]+):(\d+)(?:\?([^#]*))?(?:#(.*))?$', link)
-        if not match: return {}
+        if not match:
+            return {}
 
         uuid, host, port, query_string, name = match.groups()
 
@@ -122,21 +125,28 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
             params = dict(urllib.parse.parse_qsl(query_string))
 
             network = params.get("type", "tcp")
-            if network in ["vless", "vmess"]: network = "tcp"
+            if network in ["vless", "vmess"]:
+                network = "tcp"
             proxy["network"] = network
 
             security = params.get("security", "")
             if security == "tls":
                 proxy["tls"] = True
-                if "sni" in params: proxy["servername"] = params["sni"]
-                if "fp" in params: proxy["client-fingerprint"] = params["fp"]
-                if "alpn" in params: proxy["alpn"] = params["alpn"].split(',')
+                if "sni" in params:
+                    proxy["servername"] = params["sni"]
+                if "fp" in params:
+                    proxy["client-fingerprint"] = params["fp"]
+                if "alpn" in params:
+                    proxy["alpn"] = params["alpn"].split(',')
             elif security == "reality":
                 proxy["tls"] = True
                 proxy["reality-opts"] = {"public-key": params.get("pbk", "")}
-                if "sni" in params: proxy["servername"] = params["sni"]
-                if "fp" in params: proxy["client-fingerprint"] = params["fp"]
-                if "sid" in params: proxy["reality-opts"]["short-id"] = params["sid"]
+                if "sni" in params:
+                    proxy["servername"] = params["sni"]
+                if "fp" in params:
+                    proxy["client-fingerprint"] = params["fp"]
+                if "sid" in params:
+                    proxy["reality-opts"]["short-id"] = params["sid"]
 
             if "flow" in params and security in ["tls", "reality"]:
                 proxy["flow"] = params["flow"]
@@ -147,7 +157,9 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
                     "headers": {"Host": params.get("host", host)}
                 }
             elif network == "grpc":
-                proxy["grpc-opts"] = {"grpc-service-name": params.get("serviceName", "")}
+                proxy["grpc-opts"] = {
+                    "grpc-service-name": params.get("serviceName", "")
+                }
 
         return proxy
     except Exception:
@@ -166,14 +178,23 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
         results = await asyncio.gather(*tasks)
 
     for content in results:
-        if not content: continue
-        if not 'vless://' in content:
+        if not content:
+            continue
+
+        # Критический фикс: декодируем HTML-сущности (&amp; → &, и т.д.)
+        content = html.unescape(content)
+
+        if 'vless://' not in content:
             decoded = decode_base64(content)
-            if 'vless://' in decoded: content = decoded
-        links = re.findall(r'(vless://[^\s"\'<>]+)', content)
+            if 'vless://' in decoded:
+                content = html.unescape(decoded)
+
+        # Улучшенный regex: исключаем & чтобы не цеплять HTML-мусор в хвост ключа
+        links = re.findall(r'(vless://[^\s"\'<>&\u0000-\u001F]+)', content)
         for link in links:
             p = parse_vless_link(link)
-            if p: proxies.append(p)
+            if p:
+                proxies.append(p)
 
     logging.info(f"Extracted {len(proxies)} VLESS proxies in total")
     return proxies
@@ -183,7 +204,8 @@ def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     for proxy in proxies:
         clean_name = re.sub(r'[\r\n\t"\'<>\\]', '', proxy.get('name', 'Proxy'))
         clean_name = clean_name.strip()
-        if not clean_name: clean_name = f"vless-{proxy.get('server')}-{proxy.get('port')}"
+        if not clean_name:
+            clean_name = f"vless-{proxy.get('server')}-{proxy.get('port')}"
 
         final_name = clean_name
         counter = 1
@@ -227,12 +249,10 @@ async def stage_1_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 async def check_http(session: aiohttp.ClientSession, proxy: Dict[str, Any], api_port: int, sem: asyncio.Semaphore):
     url = f"http://127.0.0.1:{api_port}/proxies/{urllib.parse.quote(proxy['name'])}/delay"
-    # Используем URL от Cloudflare, он меньше подвержен блокировкам ботов
     params = {"timeout": 3000, "url": "http://cp.cloudflare.com/generate_204"}
     async with sem:
         try:
-            # Таймаут увеличен до 6 секунд
-            async with session.get(url, params=params, timeout=6) as resp:
+            async with session.get(url, params=params, timeout=aiohttp.ClientTimeout(total=6)) as resp:
                 if resp.status == 200:
                     data = await resp.json()
                     if "delay" in data and data["delay"] > 0:
@@ -242,21 +262,28 @@ async def check_http(session: aiohttp.ClientSession, proxy: Dict[str, Any], api_
         return proxy, float('inf')
 
 async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    if not proxies: return []
+    if not proxies:
+        return []
+
     if not os.path.exists("mihomo"):
         logging.info("Downloading Mihomo core...")
-        urllib.request.urlretrieve("https://github.com/MetaCubeX/mihomo/releases/download/v1.18.3/mihomo-linux-amd64-v1.18.3.gz", "mihomo.gz")
+        urllib.request.urlretrieve(
+            "https://github.com/MetaCubeX/mihomo/releases/download/v1.18.3/mihomo-linux-amd64-v1.18.3.gz",
+            "mihomo.gz"
+        )
         subprocess.run(["gunzip", "-f", "mihomo.gz"])
         os.chmod("mihomo", 0o755)
 
     logging.info(f"Starting Stage 2 HTTP latency check via Mihomo for {len(proxies)} proxies...")
-    # Уменьшен чанк до 100 для стабильности соединений в Mihomo
     chunk_size = 100
     final_survivors = []
 
     for i in range(0, len(proxies), chunk_size):
         chunk = proxies[i:i + chunk_size]
-        logging.info(f"Processing batch {i//chunk_size + 1} of {(len(proxies)-1)//chunk_size + 1} ({len(chunk)} proxies)...")
+        logging.info(
+            f"Processing batch {i // chunk_size + 1} of "
+            f"{(len(proxies) - 1) // chunk_size + 1} ({len(chunk)} proxies)..."
+        )
 
         yaml = YAML()
         yaml.indent(mapping=2, sequence=4, offset=2)
@@ -267,7 +294,9 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             "external-controller": "127.0.0.1:9090",
             "mode": "rule",
             "proxies": chunk,
-            "proxy-groups": [{"name": "PROXY", "type": "select", "proxies": [p["name"] for p in chunk]}],
+            "proxy-groups": [
+                {"name": "PROXY", "type": "select", "proxies": [p["name"] for p in chunk]}
+            ],
             "rules": ["MATCH,PROXY"]
         }
 
@@ -279,10 +308,8 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL
         )
-        # Даем больше времени ядру Mihomo на запуск и установку соединений
         await asyncio.sleep(7)
 
-        # Снизили количество одновременных запросов до 30
         sem = asyncio.Semaphore(30)
         async with aiohttp.ClientSession() as session:
             tasks = [check_http(session, p, 9090, sem) for p in chunk]
@@ -303,17 +330,19 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
     final_proxies = []
     for p, lat in final_survivors:
-        if '_latency' in p: del p['_latency']
+        if '_latency' in p:
+            del p['_latency']
         final_proxies.append(p)
     return final_proxies
 
 def extract_country_from_name(name: str) -> str:
-    # 1. Поиск по эмодзи-флагам (самое точное для Cloudflare CDN)
+    # 1. Поиск по эмодзи-флагам
     for char in name:
         if char in emoji.EMOJI_DATA:
             if len(char) == 2 and '\U0001f1e6' <= char[0] <= '\U0001f1ff':
                 cc = chr(ord(char[0]) - 127397) + chr(ord(char[1]) - 127397)
-                if cc in COUNTRY_MAP: return cc
+                if cc in COUNTRY_MAP:
+                    return cc
 
     # 2. Поиск по регулярным выражениям и ключевым словам
     text_name = name.lower()
@@ -324,20 +353,20 @@ def extract_country_from_name(name: str) -> str:
     for keyword, cc in COUNTRY_KEYWORDS.items():
         if re.search(rf'\b{keyword}\b', text_name):
             return cc
-            
+
     return 'UN'
 
 async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    if not proxies: return []
+    if not proxies:
+        return []
     logging.info("Определяем страны (Анализ имен + Offline MaxMind DB)...")
-    
-    # Автоматическое скачивание офлайн-базы IP
+
     db_path = "GeoLite2-Country.mmdb"
     if not os.path.exists(db_path):
         logging.info("Скачивание актуальной базы GeoLite2...")
         try:
             urllib.request.urlretrieve(
-                "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb", 
+                "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb",
                 db_path
             )
         except Exception as e:
@@ -352,11 +381,9 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
     for p in proxies:
         host = p['server']
         old_name = p['name']
-        
-        # Сначала ищем по названию донора
+
         cc = extract_country_from_name(old_name)
-        
-        # Если в названии ничего нет, используем базу MaxMind
+
         if cc == 'UN' and reader is not None:
             if re.match(r'^\d{1,3}(\.\d{1,3}){3}$', host) or ':' in host:
                 try:
@@ -367,24 +394,23 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
                             cc = api_cc
                 except Exception:
                     pass
-                
+
         flag, c_name = COUNTRY_MAP.get(cc, (cc_to_flag(cc), cc if cc != 'UN' else "Неизвестно"))
         p['name'] = f"{flag} {c_name}"
-        
+
     if reader:
         reader.close()
-        
+
     return proxies
 
 def generate_yaml(proxies: List[Dict[str, Any]]):
     if not proxies:
         logging.error("0 PROXIES PASSED! CONFIG WILL BE EMPTY.")
-        
+
     random.shuffle(proxies)
     proxies = proxies[:600]
 
     all_proxy_names = [p['name'] for p in proxies]
-    
     ru_names = [name for name in all_proxy_names if "Россия" in name]
     foreign_names = [name for name in all_proxy_names if "Россия" not in name]
 
@@ -397,7 +423,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "proxies": [
                     "🤖 Авто-режимы",
                     "🌐 Все серверы (Ручной)",
-                    "🌍 Зарубеж (Ручной)", 
+                    "🌍 Зарубеж (Ручной)",
                     "🐻 Россия (Ручной)",
                     "DIRECT"
                 ]
@@ -471,8 +497,10 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
         if len(parts) >= 2:
             country_name = f"{parts[0]} {parts[1]}"
             stats["countries"][country_name] = stats["countries"].get(country_name, 0) + 1
-    
-    stats["countries"] = dict(sorted(stats["countries"].items(), key=lambda item: item[1], reverse=True))
+
+    stats["countries"] = dict(
+        sorted(stats["countries"].items(), key=lambda item: item[1], reverse=True)
+    )
 
     with open("stats.json", "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
