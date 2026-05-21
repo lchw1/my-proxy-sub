@@ -1,11 +1,4 @@
-proxies:
-  - name: 🇳🇱 Нидерланды
-    type: vless
-    server: 178.208.81.81
-    port: 42597
-    uuid: caac3212-6cc2-4ff4-8165-aec107f50826
-    udp: true
-    network: tcp
+proxies: []
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -24,11 +17,11 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇳🇱 Нидерланды
+      - DIRECT
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇳🇱 Нидерланды
+      - DIRECT
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -39,14 +32,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇳🇱 Нидерланды
+      - DIRECT
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇳🇱 Нидерланды
+      - DIRECT
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
