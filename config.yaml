@@ -1,15 +1,70 @@
 proxies:
+  - name: 🇫🇮 Финляндия
+    type: vless
+    server: 195.133.2.45
+    port: 26048
+    uuid: 20afe519-9ef3-4c70-a2cf-5336b1125090
+    udp: true
+    network: tcp
+  - name: 🇮🇹 Италия
+    type: vless
+    server: 204.216.216.23
+    port: 10086
+    uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+    udp: true
+    network: tcp
+  - name: 🇳🇱 Нидерланды
+    type: vless
+    server: 178.208.81.81
+    port: 42597
+    uuid: caac3212-6cc2-4ff4-8165-aec107f50826
+    udp: true
+    network: tcp
+  - name: 🇹🇷 Турция
+    type: vless
+    server: 138.124.107.59
+    port: 64534
+    uuid: b43a13be-150c-4a6a-8501-b71c1b6476fb
+    udp: true
+    network: tcp
+  - name: 🇩🇪 Германия 1
+    type: vless
+    server: 93.123.84.128
+    port: 777
+    uuid: c9424b66-67dd-4dbf-ddbc-752514cc04a5
+    udp: true
+    network: tcp
+  - name: 🇯🇵 Япония
+    type: vless
+    server: 8.216.21.135
+    port: 10026
+    uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США
+    type: vless
+    server: 38.55.146.153
+    port: 13000
+    uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
+    udp: true
+  - name: 🇩🇪 Германия
+    type: vless
+    server: 47.91.94.112
+    port: 10040
+    uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    udp: true
+    network: tcp
   - name: 🏳️ Неизвестно
     type: vless
-    server: srv169.towersflowerss.com
-    port: 443
-    uuid: b43a13be-150c-4a6a-8501-b71c1b6476fb
+    server: 45.148.31.0
+    port: 15855
+    uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
     udp: true
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: srv169.towersflowerss.com
+        Host: 45.148.31.0
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -28,10 +83,26 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
+      - 🇫🇮 Финляндия
+      - 🇮🇹 Италия
+      - 🇳🇱 Нидерланды
+      - 🇹🇷 Турция
+      - 🇩🇪 Германия 1
+      - 🇯🇵 Япония
+      - 🇺🇸 США
+      - 🇩🇪 Германия
       - 🏳️ Неизвестно
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
+      - 🇫🇮 Финляндия
+      - 🇮🇹 Италия
+      - 🇳🇱 Нидерланды
+      - 🇹🇷 Турция
+      - 🇩🇪 Германия 1
+      - 🇯🇵 Япония
+      - 🇺🇸 США
+      - 🇩🇪 Германия
       - 🏳️ Неизвестно
   - name: 🐻 Россия (Ручной)
     type: select
@@ -43,6 +114,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
+      - 🇫🇮 Финляндия
+      - 🇮🇹 Италия
+      - 🇳🇱 Нидерланды
+      - 🇹🇷 Турция
+      - 🇩🇪 Германия 1
+      - 🇯🇵 Япония
+      - 🇺🇸 США
+      - 🇩🇪 Германия
       - 🏳️ Неизвестно
   - name: ⚡ Авто-Зарубеж
     type: url-test
@@ -50,6 +129,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
+      - 🇫🇮 Финляндия
+      - 🇮🇹 Италия
+      - 🇳🇱 Нидерланды
+      - 🇹🇷 Турция
+      - 🇩🇪 Германия 1
+      - 🇯🇵 Япония
+      - 🇺🇸 США
+      - 🇩🇪 Германия
       - 🏳️ Неизвестно
   - name: ⚡ Авто-Россия
     type: url-test
