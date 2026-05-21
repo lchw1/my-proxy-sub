@@ -185,7 +185,7 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
         if not content:
             continue
 
-        # Декодируем HTML-сущности (&amp; → &, и т.д.) — критично для TG web-превью
+        # Декодируем HTML-сущности (&amp; → &) — критично для TG web-превью
         content = html.unescape(content)
 
         if 'vless://' not in content:
@@ -193,7 +193,7 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
             if 'vless://' in decoded:
                 content = html.unescape(decoded)
 
-        # Исключаем & из хвоста, чтобы не цеплять HTML-мусор
+        # & исключён чтобы не цеплять HTML-мусор в хвост ключа
         links = re.findall(r'(vless://[^\s"\'<>&\u0000-\u001F]+)', content)
         for link in links:
             p = parse_vless_link(link)
@@ -263,10 +263,12 @@ async def check_http(
     sem: asyncio.Semaphore
 ):
     url = f"http://127.0.0.1:{api_port}/proxies/{urllib.parse.quote(proxy['name'])}/delay"
-    params = {"timeout": 3000, "url": "http://cp.cloudflare.com/generate_204"}
+    # gstatic надёжнее cp.cloudflare.com для бесплатных проксей
+    # таймаут 7000ms — даём время медленным серверам ответить
+    params = {"timeout": 7000, "url": "http://www.gstatic.com/generate_204"}
     async with sem:
         try:
-            timeout = aiohttp.ClientTimeout(total=6)
+            timeout = aiohttp.ClientTimeout(total=12)
             async with session.get(url, params=params, timeout=timeout) as resp:
                 if resp.status == 200:
                     data = await resp.json()
@@ -324,7 +326,8 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL
         )
-        await asyncio.sleep(7)
+        # Даём Mihomo больше времени на старт и установку соединений
+        await asyncio.sleep(10)
 
         sem = asyncio.Semaphore(30)
         async with aiohttp.ClientSession() as session:
@@ -334,9 +337,10 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         process.terminate()
         process.wait()
 
-        survivors = [(p, lat) for p, lat in results if lat < 3000]
+        # Порог 8000ms — не режем медленные но рабочие серверы
+        survivors = [(p, lat) for p, lat in results if lat < 8000]
         final_survivors.extend(survivors)
-        await asyncio.sleep(2)
+        await asyncio.sleep(3)
 
     if os.path.exists("temp_mihomo_config.yaml"):
         os.remove("temp_mihomo_config.yaml")
@@ -482,7 +486,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "name": "⚡ Лучший пинг (Все)",
                 "type": "url-test",
                 "hidden": True,
-                "url": "http://cp.cloudflare.com/generate_204",
+                "url": "http://www.gstatic.com/generate_204",
                 "interval": 150,
                 "proxies": (
                     all_proxy_names[:150] if len(all_proxy_names) >= 150
@@ -493,7 +497,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "name": "⚡ Авто-Зарубеж",
                 "type": "url-test",
                 "hidden": True,
-                "url": "http://cp.cloudflare.com/generate_204",
+                "url": "http://www.gstatic.com/generate_204",
                 "interval": 150,
                 "proxies": (
                     foreign_names[:150] if len(foreign_names) >= 150
@@ -504,7 +508,7 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
                 "name": "⚡ Авто-Россия",
                 "type": "url-test",
                 "hidden": True,
-                "url": "http://cp.cloudflare.com/generate_204",
+                "url": "http://www.gstatic.com/generate_204",
                 "interval": 150,
                 "proxies": ru_names if ru_names else ["DIRECT"]
             }
