@@ -107,6 +107,8 @@ async def fetch_source(session: aiohttp.ClientSession, url: str) -> str:
     return ""
 
 
+# ─────────────────────────── VLESS ───────────────────────────
+
 def parse_vless_link(link: str) -> Dict[str, Any]:
     try:
         match = re.match(r'^vless://([^@]+)@([^:]+):(\d+)(?:\?([^#]*))?(?:#(.*))?$', link)
@@ -169,6 +171,102 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
         return {}
 
 
+# ─────────────────────────── VMESS ───────────────────────────
+
+def parse_vmess_link(link: str) -> Dict[str, Any]:
+    try:
+        b64 = link[len("vmess://"):]
+        decoded = decode_base64(b64)
+        if not decoded:
+            return {}
+        data = json.loads(decoded)
+
+        port = int(data.get("port", 443))
+        name = data.get("ps") or f"{data.get('add', '')}:{port}"
+
+        proxy = {
+            "name": name,
+            "type": "vmess",
+            "server": data.get("add", ""),
+            "port": port,
+            "uuid": data.get("id", ""),
+            "alterId": int(data.get("aid", 0)),
+            "cipher": data.get("scy") or data.get("cipher") or "auto",
+            "udp": True,
+        }
+
+        network = data.get("net", "tcp")
+        proxy["network"] = network
+
+        tls = str(data.get("tls", "")).lower()
+        if tls == "tls":
+            proxy["tls"] = True
+            if data.get("sni"):
+                proxy["servername"] = data["sni"]
+            if data.get("fp"):
+                proxy["client-fingerprint"] = data["fp"]
+            if data.get("alpn"):
+                proxy["alpn"] = data["alpn"].split(',') if isinstance(data["alpn"], str) else data["alpn"]
+
+        if network == "ws":
+            proxy["ws-opts"] = {
+                "path": data.get("path", "/"),
+                "headers": {"Host": data.get("host", data.get("add", ""))}
+            }
+        elif network == "grpc":
+            proxy["grpc-opts"] = {"grpc-service-name": data.get("path", "")}
+        elif network == "h2":
+            proxy["h2-opts"] = {
+                "host": [data.get("host", data.get("add", ""))],
+                "path": data.get("path", "/")
+            }
+
+        if not proxy["server"] or not proxy["uuid"]:
+            return {}
+
+        return proxy
+    except Exception:
+        return {}
+
+
+# ─────────────────────────── HYSTERIA 2 ───────────────────────────
+
+def parse_hy2_link(link: str) -> Dict[str, Any]:
+    try:
+        rest = link[len("hysteria2://") if link.startswith("hysteria2://") else len("hy2://"):]
+        match = re.match(r'^([^@]+)@([^:/?#]+):(\d+)(?:\?([^#]*))?(?:#(.*))?$', rest)
+        if not match:
+            return {}
+
+        password, host, port, query_string, name = match.groups()
+
+        proxy = {
+            "name": urllib.parse.unquote(name) if name else f"hy2-{host}:{port}",
+            "type": "hysteria2",
+            "server": host,
+            "port": int(port),
+            "password": urllib.parse.unquote(password),
+            "udp": True,
+        }
+
+        if query_string:
+            params = dict(urllib.parse.parse_qsl(query_string))
+            if "sni" in params:
+                proxy["sni"] = params["sni"]
+            if params.get("insecure", "0") == "1":
+                proxy["skip-cert-verify"] = True
+            if "obfs" in params:
+                proxy["obfs"] = params["obfs"]
+                if "obfs-password" in params:
+                    proxy["obfs-password"] = params["obfs-password"]
+
+        return proxy
+    except Exception:
+        return {}
+
+
+# ─────────────────────────── СБОРКА ───────────────────────────
+
 async def get_all_proxies() -> List[Dict[str, Any]]:
     proxies = []
     try:
@@ -185,22 +283,33 @@ async def get_all_proxies() -> List[Dict[str, Any]]:
         if not content:
             continue
 
-        # Декодируем HTML-сущности (&amp; → &) — критично для TG web-превью
         content = html.unescape(content)
 
-        if 'vless://' not in content:
+        has_proxy = any(p in content for p in ('vless://', 'vmess://', 'hysteria2://', 'hy2://'))
+        if not has_proxy:
             decoded = decode_base64(content)
-            if 'vless://' in decoded:
+            if any(p in decoded for p in ('vless://', 'vmess://', 'hysteria2://', 'hy2://')):
                 content = html.unescape(decoded)
 
-        # & исключён чтобы не цеплять HTML-мусор в хвост ключа
-        links = re.findall(r'(vless://[^\s"\'<>&\u0000-\u001F]+)', content)
-        for link in links:
+        for link in re.findall(r'(vless://[^\s"\'<>&\u0000-\u001F]+)', content):
             p = parse_vless_link(link)
             if p:
                 proxies.append(p)
 
-    logging.info(f"Extracted {len(proxies)} VLESS proxies in total")
+        for link in re.findall(r'(vmess://[^\s"\'<>&\u0000-\u001F]+)', content):
+            p = parse_vmess_link(link)
+            if p:
+                proxies.append(p)
+
+        for link in re.findall(r'((?:hysteria2|hy2)://[^\s"\'<>&\u0000-\u001F]+)', content):
+            p = parse_hy2_link(link)
+            if p:
+                proxies.append(p)
+
+    vless_count = sum(1 for p in proxies if p.get("type") == "vless")
+    vmess_count = sum(1 for p in proxies if p.get("type") == "vmess")
+    hy2_count   = sum(1 for p in proxies if p.get("type") == "hysteria2")
+    logging.info(f"Extracted {len(proxies)} proxies total: {vless_count} VLESS, {vmess_count} VMess, {hy2_count} Hy2")
     return proxies
 
 
@@ -210,7 +319,7 @@ def sanitize_proxy_names(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         clean_name = re.sub(r'[\r\n\t"\'<>\\]', '', proxy.get('name', 'Proxy'))
         clean_name = clean_name.strip()
         if not clean_name:
-            clean_name = f"vless-{proxy.get('server')}-{proxy.get('port')}"
+            clean_name = f"{proxy.get('type', 'proxy')}-{proxy.get('server')}-{proxy.get('port')}"
 
         final_name = clean_name
         counter = 1
@@ -226,12 +335,14 @@ def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen = set()
     unique = []
     for p in proxies:
-        key = f"{p.get('server')}:{p.get('port')}:{p.get('uuid')}"
+        secret = p.get('uuid') or p.get('password', '')
+        key = f"{p.get('type')}:{p.get('server')}:{p.get('port')}:{secret}"
         if key not in seen:
             seen.add(key)
             unique.append(p)
     logging.info(f"Deduplicated down to {len(unique)} proxies")
-    return sanitize_proxy_names(unique)
+    # sanitize здесь не вызываем — имена всё равно перезапишет resolve_countries
+    return unique
 
 
 async def check_tcp(proxy: Dict[str, Any]) -> bool:
@@ -239,7 +350,8 @@ async def check_tcp(proxy: Dict[str, Any]) -> bool:
         host = proxy.get('server')
         port = proxy.get('port')
         conn = asyncio.open_connection(host, port)
-        reader, writer = await asyncio.wait_for(conn, timeout=3.0)
+        # reader не нужен — используем _ чтобы явно обозначить что переменная игнорируется
+        _, writer = await asyncio.wait_for(conn, timeout=3.0)
         writer.close()
         await writer.wait_closed()
         return True
@@ -263,8 +375,6 @@ async def check_http(
     sem: asyncio.Semaphore
 ):
     url = f"http://127.0.0.1:{api_port}/proxies/{urllib.parse.quote(proxy['name'])}/delay"
-    # gstatic надёжнее cp.cloudflare.com для бесплатных проксей
-    # таймаут 7000ms — даём время медленным серверам ответить
     params = {"timeout": 7000, "url": "http://www.gstatic.com/generate_204"}
     async with sem:
         try:
@@ -296,51 +406,51 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     chunk_size = 100
     final_survivors = []
 
-    for i in range(0, len(proxies), chunk_size):
-        chunk = proxies[i:i + chunk_size]
-        logging.info(
-            f"Processing batch {i // chunk_size + 1} of "
-            f"{(len(proxies) - 1) // chunk_size + 1} ({len(chunk)} proxies)..."
-        )
+    # YAML-объект создаём один раз за пределами цикла
+    yaml = YAML()
+    yaml.indent(mapping=2, sequence=4, offset=2)
+    yaml.default_flow_style = False
 
-        yaml = YAML()
-        yaml.indent(mapping=2, sequence=4, offset=2)
-        yaml.default_flow_style = False
+    # Один ClientSession на все батчи
+    async with aiohttp.ClientSession() as session:
+        for i in range(0, len(proxies), chunk_size):
+            chunk = proxies[i:i + chunk_size]
+            logging.info(
+                f"Processing batch {i // chunk_size + 1} of "
+                f"{(len(proxies) - 1) // chunk_size + 1} ({len(chunk)} proxies)..."
+            )
 
-        temp_config = {
-            "port": 7890,
-            "external-controller": "127.0.0.1:9090",
-            "mode": "rule",
-            "proxies": chunk,
-            "proxy-groups": [
-                {"name": "PROXY", "type": "select", "proxies": [p["name"] for p in chunk]}
-            ],
-            "rules": ["MATCH,PROXY"]
-        }
+            temp_config = {
+                "port": 7890,
+                "external-controller": "127.0.0.1:9090",
+                "mode": "rule",
+                "proxies": chunk,
+                "proxy-groups": [
+                    {"name": "PROXY", "type": "select", "proxies": [p["name"] for p in chunk]}
+                ],
+                "rules": ["MATCH,PROXY"]
+            }
 
-        with open("temp_mihomo_config.yaml", "w", encoding="utf-8") as f:
-            yaml.dump(temp_config, f)
+            with open("temp_mihomo_config.yaml", "w", encoding="utf-8") as f:
+                yaml.dump(temp_config, f)
 
-        process = subprocess.Popen(
-            ["./mihomo", "-f", "temp_mihomo_config.yaml"],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL
-        )
-        # Даём Mihomo больше времени на старт и установку соединений
-        await asyncio.sleep(10)
+            process = subprocess.Popen(
+                ["./mihomo", "-f", "temp_mihomo_config.yaml"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL
+            )
+            await asyncio.sleep(10)
 
-        sem = asyncio.Semaphore(30)
-        async with aiohttp.ClientSession() as session:
+            sem = asyncio.Semaphore(30)
             tasks = [check_http(session, p, 9090, sem) for p in chunk]
             results = await asyncio.gather(*tasks)
 
-        process.terminate()
-        process.wait()
+            process.terminate()
+            process.wait()
 
-        # Порог 8000ms — не режем медленные но рабочие серверы
-        survivors = [(p, lat) for p, lat in results if lat < 8000]
-        final_survivors.extend(survivors)
-        await asyncio.sleep(3)
+            survivors = [(p, lat) for p, lat in results if lat < 8000]
+            final_survivors.extend(survivors)
+            await asyncio.sleep(3)
 
     if os.path.exists("temp_mihomo_config.yaml"):
         os.remove("temp_mihomo_config.yaml")
@@ -357,15 +467,18 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 
 def extract_country_from_name(name: str) -> str:
-    # 1. Поиск по эмодзи-флагам
-    for char in name:
-        if char in emoji.EMOJI_DATA:
-            if len(char) == 2 and '\U0001f1e6' <= char[0] <= '\U0001f1ff':
-                cc = chr(ord(char[0]) - 127397) + chr(ord(char[1]) - 127397)
-                if cc in COUNTRY_MAP:
-                    return cc
+    # ФИКС: флаг-эмодзи состоит из двух Unicode-кодпоинтов (региональных индикаторов).
+    # При итерации по строке Python отдаёт каждый кодпоинт по одному (len==1),
+    # поэтому len(char)==2 никогда не выполнялось. Используем emoji.emoji_list()
+    # который правильно группирует многокодпоинтные последовательности.
+    for item in emoji.emoji_list(name):
+        e = item['emoji']
+        codepoints = [ord(c) for c in e]
+        if len(codepoints) == 2 and all(0x1F1E6 <= cp <= 0x1F1FF for cp in codepoints):
+            cc = chr(codepoints[0] - 127397) + chr(codepoints[1] - 127397)
+            if cc in COUNTRY_MAP:
+                return cc
 
-    # 2. Поиск по [XX] паттерну и ключевым словам
     text_name = name.lower()
     match = re.search(r'\[([a-z]{2})\]', text_name)
     if match and match.group(1).upper() in COUNTRY_MAP:
@@ -407,7 +520,6 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
                 ) as r:
                     if r.status == 200:
                         for item in await r.json():
-                            # Cloudflare CDN — геолокация по IP ненадёжна
                             if 'Cloudflare' in item.get('org', ''):
                                 geo_map[item['query']] = 'UN'
                             else:
@@ -441,8 +553,8 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
     proxies = proxies[:600]
 
     all_proxy_names = [p['name'] for p in proxies]
-    ru_names = [name for name in all_proxy_names if "Россия" in name]
-    foreign_names = [name for name in all_proxy_names if "Россия" not in name]
+    ru_names      = [n for n in all_proxy_names if "Россия" in n]
+    foreign_names = [n for n in all_proxy_names if "Россия" not in n]
 
     config = {
         "proxies": proxies,
@@ -549,6 +661,7 @@ async def main():
     proxies = await stage_1_check(proxies)
     proxies = await stage_2_check(proxies)
     proxies = await resolve_countries(proxies)
+    # sanitize вызываем один раз — после того как resolve_countries проставил финальные имена
     proxies = sanitize_proxy_names(proxies)
     generate_yaml(proxies)
 
