@@ -1,15 +1,29 @@
 proxies:
-  - name: 🇬🇧 Великобритания
+  - name: 🇦🇹 Австрия
     type: vless
-    server: srv191.towersflowerss.com
-    port: 65000
-    uuid: b43a13be-150c-4a6a-8501-b71c1b6476fb
+    server: 89.208.209.53
+    port: 443
+    uuid: cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 2x8y-JiSEl8JJoiUm-V9aI0oY0vlgkYQxBeGriObc04
+      short-id: 0492027673ee8c08
+    servername: max.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇸🇬 Сингапур
+    type: vless
+    server: 141.193.213.21
+    port: 80
+    uuid: fac62eac-1eec-4260-a991-0cac2f8745a3
     udp: true
     network: ws
     ws-opts:
-      path: /
+      path: /@Tech_Sonic
       headers:
-        Host: srv191.towersflowerss.com
+        Host: free-server.techsonic.ggff.net
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -28,11 +42,13 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇬🇧 Великобритания
+      - 🇦🇹 Австрия
+      - 🇸🇬 Сингапур
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇬🇧 Великобритания
+      - 🇦🇹 Австрия
+      - 🇸🇬 Сингапур
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -43,14 +59,16 @@ proxy-groups:
     url: http://cp.cloudflare.com/generate_204
     interval: 150
     proxies:
-      - 🇬🇧 Великобритания
+      - 🇦🇹 Австрия
+      - 🇸🇬 Сингапур
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://cp.cloudflare.com/generate_204
     interval: 150
     proxies:
-      - 🇬🇧 Великобритания
+      - 🇦🇹 Австрия
+      - 🇸🇬 Сингапур
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
