@@ -1,4 +1,270 @@
-proxies: []
+proxies:
+  - name: 🇭🇰 Гонконг 5
+    type: vmess
+    server: 38.207.177.134
+    port: 39742
+    uuid: 36cf6565-bc71-4f8c-9e30-a9cc6156e583
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 1
+    type: vmess
+    server: 27.122.57.43
+    port: 11638
+    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 4
+    type: vmess
+    server: 45.192.101.134
+    port: 9527
+    uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: raw
+  - name: 🇭🇰 Гонконг 12
+    type: vmess
+    server: 47.239.69.43
+    port: 56698
+    uuid: a3de462b-0276-4003-8f34-536b0f9d340c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 2
+    type: vmess
+    server: 47.239.132.90
+    port: 47286
+    uuid: 0be3a336-85ad-4c42-930b-05318236e68c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 10
+    type: vmess
+    server: 8.210.239.58
+    port: 443
+    uuid: 5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: n1761296889.4u9ma.icu
+  - name: 🇮🇳 Индия
+    type: vmess
+    server: 172.232.103.186
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇮🇹 Италия
+    type: vmess
+    server: 45.92.70.236
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 3
+    type: vmess
+    server: 47.239.132.90
+    port: 47286
+    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇪🇸 Испания
+    type: vmess
+    server: 85.90.217.42
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🏳️ Неизвестно 2
+    type: vmess
+    server: 45.12.132.183
+    port: 8443
+    uuid: 6f1f1a18-ecc4-4513-890e-fd193042f564
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: pq-Hungary1.09vpn.com
+  - name: 🇭🇰 Гонконг 7
+    type: vmess
+    server: 154.205.136.122
+    port: 37849
+    uuid: 30e88f67-8445-43ca-ff2b-961bbf6339fc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ''
+  - name: 🇭🇰 Гонконг
+    type: vmess
+    server: 27.122.57.43
+    port: 11638
+    uuid: 0be3a336-85ad-4c42-930b-05318236e68c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🏳️ Неизвестно
+    type: vmess
+    server: 216.238.86.158
+    port: 34460
+    uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: none
+  - name: 🇮🇳 Индия 1
+    type: vmess
+    server: 152.67.8.205
+    port: 80
+    uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        Host: ''
+  - name: 🇭🇰 Гонконг 8
+    type: vmess
+    server: 47.242.163.203
+    port: 443
+    uuid: 78f61544-3393-4e6b-9c77-5deaa0c7471d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    servername: n1761296878.4u9ma.icu
+    ws-opts:
+      path: /
+      headers:
+        Host: ''
+  - name: 🇹🇷 Турция
+    type: vmess
+    server: 5.188.190.252
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 13
+    type: vmess
+    server: 47.239.69.43
+    port: 56698
+    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: raw
+  - name: 🇭🇰 Гонконг 9
+    type: vmess
+    server: 8.210.121.88
+    port: 51453
+    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 14
+    type: vmess
+    server: 47.239.69.43
+    port: 56698
+    uuid: 0be3a336-85ad-4c42-930b-05318236e68c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 15
+    type: vmess
+    server: 8.210.121.88
+    port: 51453
+    uuid: a3de462b-0276-4003-8f34-536b0f9d340c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🏳️ Неизвестно 1
+    type: vmess
+    server: 61.245.11.60
+    port: 80
+    uuid: a3e3a710-79f8-4ae0-b83c-607aab40d197
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: ''
+  - name: 🇭🇰 Гонконг 6
+    type: vmess
+    server: 213.156.141.52
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇰🇿 Казахстан
+    type: vmess
+    server: 38.107.234.57
+    port: 80
+    uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: ''
+  - name: 🇭🇰 Гонконг 11
+    type: vmess
+    server: 8.210.121.88
+    port: 51453
+    uuid: 0be3a336-85ad-4c42-930b-05318236e68c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇹🇭 Таиланд
+    type: vmess
+    server: 47.81.15.70
+    port: 4274
+    uuid: a3de462b-0276-4003-8f34-536b0f9d340c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -17,11 +283,61 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 Гонконг 5
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг 4
+      - 🇭🇰 Гонконг 12
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 10
+      - 🇮🇳 Индия
+      - 🇮🇹 Италия
+      - 🇭🇰 Гонконг 3
+      - 🇪🇸 Испания
+      - 🏳️ Неизвестно 2
+      - 🇭🇰 Гонконг 7
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно
+      - 🇮🇳 Индия 1
+      - 🇭🇰 Гонконг 8
+      - 🇹🇷 Турция
+      - 🇭🇰 Гонконг 13
+      - 🇭🇰 Гонконг 9
+      - 🇭🇰 Гонконг 14
+      - 🇭🇰 Гонконг 15
+      - 🏳️ Неизвестно 1
+      - 🇭🇰 Гонконг 6
+      - 🇰🇿 Казахстан
+      - 🇭🇰 Гонконг 11
+      - 🇹🇭 Таиланд
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 Гонконг 5
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг 4
+      - 🇭🇰 Гонконг 12
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 10
+      - 🇮🇳 Индия
+      - 🇮🇹 Италия
+      - 🇭🇰 Гонконг 3
+      - 🇪🇸 Испания
+      - 🏳️ Неизвестно 2
+      - 🇭🇰 Гонконг 7
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно
+      - 🇮🇳 Индия 1
+      - 🇭🇰 Гонконг 8
+      - 🇹🇷 Турция
+      - 🇭🇰 Гонконг 13
+      - 🇭🇰 Гонконг 9
+      - 🇭🇰 Гонконг 14
+      - 🇭🇰 Гонконг 15
+      - 🏳️ Неизвестно 1
+      - 🇭🇰 Гонконг 6
+      - 🇰🇿 Казахстан
+      - 🇭🇰 Гонконг 11
+      - 🇹🇭 Таиланд
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -32,14 +348,64 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - DIRECT
+      - 🇭🇰 Гонконг 5
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг 4
+      - 🇭🇰 Гонконг 12
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 10
+      - 🇮🇳 Индия
+      - 🇮🇹 Италия
+      - 🇭🇰 Гонконг 3
+      - 🇪🇸 Испания
+      - 🏳️ Неизвестно 2
+      - 🇭🇰 Гонконг 7
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно
+      - 🇮🇳 Индия 1
+      - 🇭🇰 Гонконг 8
+      - 🇹🇷 Турция
+      - 🇭🇰 Гонконг 13
+      - 🇭🇰 Гонконг 9
+      - 🇭🇰 Гонконг 14
+      - 🇭🇰 Гонконг 15
+      - 🏳️ Неизвестно 1
+      - 🇭🇰 Гонконг 6
+      - 🇰🇿 Казахстан
+      - 🇭🇰 Гонконг 11
+      - 🇹🇭 Таиланд
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - DIRECT
+      - 🇭🇰 Гонконг 5
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг 4
+      - 🇭🇰 Гонконг 12
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 10
+      - 🇮🇳 Индия
+      - 🇮🇹 Италия
+      - 🇭🇰 Гонконг 3
+      - 🇪🇸 Испания
+      - 🏳️ Неизвестно 2
+      - 🇭🇰 Гонконг 7
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно
+      - 🇮🇳 Индия 1
+      - 🇭🇰 Гонконг 8
+      - 🇹🇷 Турция
+      - 🇭🇰 Гонконг 13
+      - 🇭🇰 Гонконг 9
+      - 🇭🇰 Гонконг 14
+      - 🇭🇰 Гонконг 15
+      - 🏳️ Неизвестно 1
+      - 🇭🇰 Гонконг 6
+      - 🇰🇿 Казахстан
+      - 🇭🇰 Гонконг 11
+      - 🇹🇭 Таиланд
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
