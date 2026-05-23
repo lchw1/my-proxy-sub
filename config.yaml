@@ -1,120 +1,4 @@
-proxies:
-  - name: 🇭🇰 Гонконг 5
-    type: vmess
-    server: 47.239.69.43
-    port: 56698
-    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🏳️ Неизвестно
-    type: vmess
-    server: 45.12.132.183
-    port: 80
-    uuid: 703f722a-4bdf-4e9d-9afd-a681fdf87c74
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /vmess/
-      headers:
-        Host: ''
-  - name: 🇭🇰 Гонконг 1
-    type: vmess
-    server: 27.122.57.43
-    port: 11638
-    uuid: a3de462b-0276-4003-8f34-536b0f9d340c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 2
-    type: vmess
-    server: 38.207.177.134
-    port: 39742
-    uuid: 36cf6565-bc71-4f8c-9e30-a9cc6156e583
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇮🇳 Индия 1
-    type: vmess
-    server: 152.67.8.205
-    port: 80
-    uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: ''
-      headers:
-        Host: ''
-  - name: 🇭🇰 Гонконг 6
-    type: vmess
-    server: 47.239.69.43
-    port: 56698
-    uuid: 0be3a336-85ad-4c42-930b-05318236e68c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 3
-    type: vmess
-    server: 8.210.239.58
-    port: 443
-    uuid: 5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: n1761296889.4u9ma.icu
-  - name: 🇮🇳 Индия
-    type: vmess
-    server: 172.232.103.186
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 4
-    type: vmess
-    server: 47.239.69.43
-    port: 56698
-    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: raw
-  - name: 🏳️ Неизвестно 1
-    type: vmess
-    server: 47.250.149.51
-    port: 50018
-    uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /9665280c
-      headers:
-        Host: 47.250.149.51
-  - name: 🇭🇰 Гонконг
-    type: vmess
-    server: 27.122.57.43
-    port: 11638
-    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
+proxies: []
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -133,31 +17,11 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇭🇰 Гонконг 5
-      - 🏳️ Неизвестно
-      - 🇭🇰 Гонконг 1
-      - 🇭🇰 Гонконг 2
-      - 🇮🇳 Индия 1
-      - 🇭🇰 Гонконг 6
-      - 🇭🇰 Гонконг 3
-      - 🇮🇳 Индия
-      - 🇭🇰 Гонконг 4
-      - 🏳️ Неизвестно 1
-      - 🇭🇰 Гонконг
+      - DIRECT
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇭🇰 Гонконг 5
-      - 🏳️ Неизвестно
-      - 🇭🇰 Гонконг 1
-      - 🇭🇰 Гонконг 2
-      - 🇮🇳 Индия 1
-      - 🇭🇰 Гонконг 6
-      - 🇭🇰 Гонконг 3
-      - 🇮🇳 Индия
-      - 🇭🇰 Гонконг 4
-      - 🏳️ Неизвестно 1
-      - 🇭🇰 Гонконг
+      - DIRECT
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -168,34 +32,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇭🇰 Гонконг 5
-      - 🏳️ Неизвестно
-      - 🇭🇰 Гонконг 1
-      - 🇭🇰 Гонконг 2
-      - 🇮🇳 Индия 1
-      - 🇭🇰 Гонконг 6
-      - 🇭🇰 Гонконг 3
-      - 🇮🇳 Индия
-      - 🇭🇰 Гонконг 4
-      - 🏳️ Неизвестно 1
-      - 🇭🇰 Гонконг
+      - DIRECT
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇭🇰 Гонконг 5
-      - 🏳️ Неизвестно
-      - 🇭🇰 Гонконг 1
-      - 🇭🇰 Гонконг 2
-      - 🇮🇳 Индия 1
-      - 🇭🇰 Гонконг 6
-      - 🇭🇰 Гонконг 3
-      - 🇮🇳 Индия
-      - 🇭🇰 Гонконг 4
-      - 🏳️ Неизвестно 1
-      - 🇭🇰 Гонконг
+      - DIRECT
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
