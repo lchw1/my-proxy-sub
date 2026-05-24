@@ -1,4 +1,25 @@
-proxies: []
+proxies:
+  - name: 🇩🇪 Германия 1
+    type: vless
+    server: 93.123.84.128
+    port: 777
+    uuid: c9424b66-67dd-4dbf-ddbc-752514cc04a5
+    udp: true
+    network: tcp
+  - name: 🇩🇪 Германия 2
+    type: vless
+    server: 91.107.166.215
+    port: 51847
+    uuid: 09a601b8-ac43-4934-95e3-21e732ebfaf3
+    udp: true
+    network: tcp
+  - name: 🇩🇪 Германия
+    type: vless
+    server: 47.91.94.112
+    port: 10040
+    uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+    udp: true
+    network: tcp
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -17,11 +38,15 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - DIRECT
+      - 🇩🇪 Германия 1
+      - 🇩🇪 Германия 2
+      - 🇩🇪 Германия
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - DIRECT
+      - 🇩🇪 Германия 1
+      - 🇩🇪 Германия 2
+      - 🇩🇪 Германия
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -32,14 +57,18 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - DIRECT
+      - 🇩🇪 Германия 1
+      - 🇩🇪 Германия 2
+      - 🇩🇪 Германия
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - DIRECT
+      - 🇩🇪 Германия 1
+      - 🇩🇪 Германия 2
+      - 🇩🇪 Германия
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
