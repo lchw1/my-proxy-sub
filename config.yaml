@@ -1,18 +1,149 @@
 proxies:
-  - name: 🇩🇪 Германия
-    type: vless
-    server: 93.123.84.128
-    port: 777
-    uuid: c9424b66-67dd-4dbf-ddbc-752514cc04a5
+  - name: 🇮🇳 Индия 1
+    type: vmess
+    server: 152.67.8.205
+    port: 80
+    uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        Host: ''
+  - name: 🇹🇷 Турция
+    type: vmess
+    server: 5.188.190.252
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 1
+    cipher: auto
     udp: true
     network: tcp
-  - name: 🇩🇪 Германия 1
+  - name: 🏳️ Неизвестно
+    type: vmess
+    server: 47.250.45.234
+    port: 43063
+    uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers:
+        Host: ''
+  - name: 🏳️ Неизвестно 1
+    type: vmess
+    server: 47.250.149.51
+    port: 50018
+    uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /9665280c
+      headers:
+        Host: 47.250.149.51
+  - name: 🇭🇰 Гонконг 4
+    type: vmess
+    server: 27.122.57.43
+    port: 11638
+    uuid: a3de462b-0276-4003-8f34-536b0f9d340c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 1
+    type: vmess
+    server: 45.192.101.134
+    port: 9527
+    uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: raw
+  - name: 🇩🇪 Германия
     type: vless
     server: 91.107.166.215
     port: 51847
     uuid: 09a601b8-ac43-4934-95e3-21e732ebfaf3
     udp: true
     network: tcp
+  - name: 🇧🇷 Бразилия
+    type: vmess
+    server: 172.233.17.76
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇮🇳 Индия
+    type: vmess
+    server: 172.232.103.186
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇸🇬 Сингапур
+    type: vmess
+    server: 47.237.109.67
+    port: 29124
+    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг
+    type: vmess
+    server: 213.156.141.52
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 2
+    type: vmess
+    server: 38.207.177.134
+    port: 39742
+    uuid: 36cf6565-bc71-4f8c-9e30-a9cc6156e583
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 5
+    type: vmess
+    server: 47.238.130.197
+    port: 443
+    uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: n1753348736.lie5d.cyou
+  - name: 🇭🇰 Гонконг 3
+    type: vmess
+    server: 154.205.136.122
+    port: 37849
+    uuid: 30e88f67-8445-43ca-ff2b-961bbf6339fc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ''
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -31,13 +162,37 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
+      - 🇮🇳 Индия 1
+      - 🇹🇷 Турция
+      - 🏳️ Неизвестно
+      - 🏳️ Неизвестно 1
+      - 🇭🇰 Гонконг 4
+      - 🇭🇰 Гонконг 1
       - 🇩🇪 Германия
-      - 🇩🇪 Германия 1
+      - 🇧🇷 Бразилия
+      - 🇮🇳 Индия
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 5
+      - 🇭🇰 Гонконг 3
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
+      - 🇮🇳 Индия 1
+      - 🇹🇷 Турция
+      - 🏳️ Неизвестно
+      - 🏳️ Неизвестно 1
+      - 🇭🇰 Гонконг 4
+      - 🇭🇰 Гонконг 1
       - 🇩🇪 Германия
-      - 🇩🇪 Германия 1
+      - 🇧🇷 Бразилия
+      - 🇮🇳 Индия
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 5
+      - 🇭🇰 Гонконг 3
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -48,16 +203,40 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
+      - 🇮🇳 Индия 1
+      - 🇹🇷 Турция
+      - 🏳️ Неизвестно
+      - 🏳️ Неизвестно 1
+      - 🇭🇰 Гонконг 4
+      - 🇭🇰 Гонконг 1
       - 🇩🇪 Германия
-      - 🇩🇪 Германия 1
+      - 🇧🇷 Бразилия
+      - 🇮🇳 Индия
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 5
+      - 🇭🇰 Гонконг 3
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
+      - 🇮🇳 Индия 1
+      - 🇹🇷 Турция
+      - 🏳️ Неизвестно
+      - 🏳️ Неизвестно 1
+      - 🇭🇰 Гонконг 4
+      - 🇭🇰 Гонконг 1
       - 🇩🇪 Германия
-      - 🇩🇪 Германия 1
+      - 🇧🇷 Бразилия
+      - 🇮🇳 Индия
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 5
+      - 🇭🇰 Гонконг 3
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
