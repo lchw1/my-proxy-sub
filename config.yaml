@@ -1,5 +1,200 @@
 proxies:
-  - name: 🇺🇸 США 14
+  - name: 🇯🇵 Япония 1
+    type: vmess
+    server: 153.121.73.175
+    port: 49803
+    uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США 12
+    type: vmess
+    server: 84.17.41.2
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США 11
+    type: vmess
+    server: 216.106.185.141
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США 15
+    type: vmess
+    server: 67.220.85.46
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: aes-128-gcm
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США 5
+    type: vmess
+    server: 172.236.226.7
+    port: 2053
+    uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /usavm
+      headers:
+        Host: usaapp2.jisuyun.top
+  - name: 🇺🇸 США 3
+    type: vmess
+    server: 82.198.246.46
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇨🇦 Канада
+    type: vmess
+    server: 23.162.200.198
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 2
+    type: vmess
+    server: 154.205.136.122
+    port: 37849
+    uuid: 30e88f67-8445-43ca-ff2b-961bbf6339fc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ''
+  - name: 🇯🇵 Япония 2
+    type: vmess
+    server: 153.121.73.175
+    port: 32221
+    uuid: b06054ae-f249-438e-998a-8e67bd8df653
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ''
+  - name: 🇰🇷 Южная Корея
+    type: vmess
+    server: 146.56.112.110
+    port: 8888
+    uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 1
+    type: vmess
+    server: 213.156.141.52
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 4
+    type: vmess
+    server: 47.76.254.70
+    port: 443
+    uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: n1753101277.4u9ma.icu
+  - name: 🇯🇵 Япония
+    type: vmess
+    server: 172.104.80.66
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇨🇦 Канада 2
+    type: vmess
+    server: 104.17.77.77
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: none
+    udp: true
+    network: ws
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    ws-opts:
+      path: /lMnsZUN4/
+      headers:
+        Host: v2ray1.dozapp.xyz
+  - name: 🇺🇸 США 10
+    type: vmess
+    server: 104.233.214.176
+    port: 13581
+    uuid: d4d715a6-0a2e-4304-df2f-d5efd85a5a5d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: none
+  - name: 🇯🇵 Япония 3
+    type: vmess
+    server: 140.83.51.161
+    port: 25686
+    uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /cctv13.m3u8
+      headers:
+        Host: jp02.a0a.xyz
+  - name: 🇺🇸 США 1
+    type: vmess
+    server: 69.12.91.52
+    port: 3593
+    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇨🇦 Канада 1
+    type: vmess
+    server: 134.195.196.211
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США 2
+    type: vmess
+    server: 67.220.72.237
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США 16
     type: vmess
     server: 216.106.183.35
     port: 22324
@@ -8,16 +203,95 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇭🇰 Гонконг 1
+  - name: 🇭🇰 Гонконг 3
     type: vmess
-    server: 27.122.57.43
-    port: 11638
+    server: 45.192.101.134
+    port: 9527
+    uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: raw
+  - name: 🇺🇸 США 8
+    type: vmess
+    server: 23.226.135.232
+    port: 55310
+    uuid: 22066968-ef90-455e-b981-4bf782d25386
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇩🇪 Германия
+    type: vless
+    server: 199.247.6.113
+    port: 38682
+    uuid: bfe3d375-b152-4e7a-b2e0-ed80f2541138
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США 6
+    type: vmess
+    server: 69.12.91.52
+    port: 3593
     uuid: a3de462b-0276-4003-8f34-536b0f9d340c
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇺🇸 США 6
+  - name: 🇺🇸 США
+    type: vmess
+    server: 69.12.91.52
+    port: 3593
+    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🏳️ Неизвестно
+    type: vmess
+    server: 45.12.132.183
+    port: 8443
+    uuid: 6f1f1a18-ecc4-4513-890e-fd193042f564
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: pq-Hungary1.09vpn.com
+  - name: 🇺🇸 США 7
+    type: vmess
+    server: 150.230.41.135
+    port: 80
+    uuid: efbcfd80-5f2f-4e34-f4a0-cc75f0f67dec
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /cctv13.m3u8
+      headers:
+        Host: us02.a0a.xyz
+  - name: 🇸🇬 Сингапур 1
+    type: vmess
+    server: 149.88.23.207
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США 13
+    type: vmess
+    server: 38.91.107.49
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США 4
     type: vmess
     server: 103.179.142.212
     port: 22047
@@ -30,61 +304,7 @@ proxies:
       path: /
       headers:
         Host: ''
-  - name: 🇯🇵 Япония 2
-    type: vmess
-    server: 153.121.73.175
-    port: 49803
-    uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония
-    type: vmess
-    server: 172.104.80.66
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇺🇸 США 3
-    type: vmess
-    server: 69.12.91.52
-    port: 3593
-    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг
-    type: vmess
-    server: 27.122.57.43
-    port: 11638
-    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇧🇷 Бразилия
-    type: vmess
-    server: 172.233.17.76
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 3
-    type: vmess
-    server: 213.156.141.52
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇸🇬 Сингапур 1
+  - name: 🇸🇬 Сингапур
     type: vmess
     server: 149.88.23.202
     port: 18000
@@ -102,56 +322,29 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇯🇵 Япония 3
+  - name: 🏳️ Неизвестно 1
     type: vmess
-    server: 140.83.51.161
-    port: 25686
-    uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
+    server: 47.250.149.51
+    port: 50018
+    uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
-      path: /cctv13.m3u8
+      path: /9665280c
       headers:
-        Host: jp02.a0a.xyz
-  - name: 🇺🇸 США 11
+        Host: 47.250.149.51
+  - name: 🇧🇷 Бразилия
     type: vmess
-    server: 104.168.1.102
-    port: 8222
-    uuid: 0d9bd1bc-6d14-44f2-8bfa-dd6210d1b14f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: ''
-      headers:
-        Host: ''
-  - name: 🏳️ Неизвестно 2
-    type: vmess
-    server: 45.12.132.183
-    port: 8443
-    uuid: 6f1f1a18-ecc4-4513-890e-fd193042f564
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    ws-opts:
-      path: /vmess/
-      headers:
-        Host: pq-Hungary1.09vpn.com
-  - name: 🇺🇸 США 10
-    type: vmess
-    server: 67.220.72.237
+    server: 172.233.17.76
     port: 22324
     uuid: 04621bae-ab36-11ec-b909-0242ac120002
     alterId: 1
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇺🇸 США 7
+  - name: 🇺🇸 США 14
     type: vmess
     server: 38.110.1.246
     port: 18000
@@ -160,280 +353,15 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇺🇸 США 8
-    type: vmess
-    server: 38.91.107.49
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 6
-    type: vmess
-    server: 45.192.101.134
-    port: 9527
-    uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: raw
-  - name: 🇨🇦 Канада 2
-    type: vmess
-    server: 104.17.77.77
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: none
-    udp: true
-    network: ws
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    ws-opts:
-      path: /lMnsZUN4/
-      headers:
-        Host: v2ray1.dozapp.xyz
-  - name: 🇺🇸 США
-    type: vmess
-    server: 82.198.246.46
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇩🇪 Германия 1
-    type: vless
-    server: 91.107.166.215
-    port: 51847
-    uuid: 09a601b8-ac43-4934-95e3-21e732ebfaf3
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 8
-    type: vmess
-    server: 47.238.130.197
-    port: 443
-    uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: n1753348736.lie5d.cyou
-  - name: 🇺🇸 США 4
-    type: vmess
-    server: 84.17.41.2
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇸🇬 Сингапур
-    type: vmess
-    server: 149.88.23.207
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇰🇷 Южная Корея
-    type: vmess
-    server: 146.56.112.110
-    port: 8888
-    uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 2
+  - name: 🇭🇰 Гонконг
     type: vmess
     server: 27.122.57.43
     port: 11638
-    uuid: 0be3a336-85ad-4c42-930b-05318236e68c
+    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
-  - name: 🏳️ Неизвестно 1
-    type: vmess
-    server: 47.250.45.234
-    port: 43063
-    uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /arki?ed=2048
-      headers:
-        Host: ''
-  - name: 🇩🇪 Германия
-    type: vless
-    server: 5.75.198.184
-    port: 40043
-    uuid: 018ea8d5-01f6-4428-b61d-7335c66e2f10
-    udp: true
-    network: tcp
-  - name: 🇺🇸 США 13
-    type: vmess
-    server: 172.236.244.171
-    port: 2053
-    uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: usaapp1.jisuyun.top
-    ws-opts:
-      path: /usavm
-      headers:
-        Host: usaapp1.jisuyun.top
-  - name: 🇮🇳 Индия 1
-    type: vmess
-    server: 152.67.8.205
-    port: 80
-    uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: ''
-      headers:
-        Host: ''
-  - name: 🏳️ Неизвестно
-    type: vmess
-    server: 216.238.86.158
-    port: 34460
-    uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: none
-  - name: 🇺🇸 США 1
-    type: vmess
-    server: 67.220.85.46
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: aes-128-gcm
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 7
-    type: vmess
-    server: 8.210.239.58
-    port: 443
-    uuid: 5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: n1761296889.4u9ma.icu
-  - name: 🇺🇸 США 5
-    type: vmess
-    server: 216.106.185.141
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 4
-    type: vmess
-    server: 154.205.136.122
-    port: 37849
-    uuid: 30e88f67-8445-43ca-ff2b-961bbf6339fc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ''
-  - name: 🇨🇦 Канада
-    type: vmess
-    server: 23.162.200.198
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇺🇸 США 12
-    type: vmess
-    server: 172.236.226.7
-    port: 2053
-    uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    ws-opts:
-      path: /usavm
-      headers:
-        Host: usaapp2.jisuyun.top
-  - name: 🇺🇸 США 2
-    type: vmess
-    server: 23.226.135.232
-    port: 55310
-    uuid: 22066968-ef90-455e-b981-4bf782d25386
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 5
-    type: vmess
-    server: 47.76.254.70
-    port: 443
-    uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: n1753101277.4u9ma.icu
-  - name: 🇨🇦 Канада 1
-    type: vmess
-    server: 134.195.196.211
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇮🇳 Индия
-    type: vmess
-    server: 172.232.103.186
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 1
-    type: vmess
-    server: 153.121.73.175
-    port: 32221
-    uuid: b06054ae-f249-438e-998a-8e67bd8df653
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ''
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -452,93 +380,81 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇺🇸 США 14
-      - 🇭🇰 Гонконг 1
-      - 🇺🇸 США 6
-      - 🇯🇵 Япония 2
-      - 🇯🇵 Япония
-      - 🇺🇸 США 3
-      - 🇭🇰 Гонконг
-      - 🇧🇷 Бразилия
-      - 🇭🇰 Гонконг 3
-      - 🇸🇬 Сингапур 1
-      - 🇺🇸 США 9
-      - 🇯🇵 Япония 3
+      - 🇯🇵 Япония 1
+      - 🇺🇸 США 12
       - 🇺🇸 США 11
-      - 🏳️ Неизвестно 2
-      - 🇺🇸 США 10
-      - 🇺🇸 США 7
-      - 🇺🇸 США 8
-      - 🇭🇰 Гонконг 6
+      - 🇺🇸 США 15
+      - 🇺🇸 США 5
+      - 🇺🇸 США 3
+      - 🇨🇦 Канада
+      - 🇭🇰 Гонконг 2
+      - 🇯🇵 Япония 2
+      - 🇰🇷 Южная Корея
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг 4
+      - 🇯🇵 Япония
       - 🇨🇦 Канада 2
+      - 🇺🇸 США 10
+      - 🇯🇵 Япония 3
+      - 🇺🇸 США 1
+      - 🇨🇦 Канада 1
+      - 🇺🇸 США 2
+      - 🇺🇸 США 16
+      - 🇭🇰 Гонконг 3
+      - 🇺🇸 США 8
+      - 🇩🇪 Германия
+      - 🇺🇸 США 6
       - 🇺🇸 США
-      - 🇩🇪 Германия 1
-      - 🇭🇰 Гонконг 8
+      - 🏳️ Неизвестно
+      - 🇺🇸 США 7
+      - 🇸🇬 Сингапур 1
+      - 🇺🇸 США 13
       - 🇺🇸 США 4
       - 🇸🇬 Сингапур
-      - 🇰🇷 Южная Корея
-      - 🇭🇰 Гонконг 2
+      - 🇺🇸 США 9
       - 🏳️ Неизвестно 1
-      - 🇩🇪 Германия
-      - 🇺🇸 США 13
-      - 🇮🇳 Индия 1
-      - 🏳️ Неизвестно
-      - 🇺🇸 США 1
-      - 🇭🇰 Гонконг 7
-      - 🇺🇸 США 5
-      - 🇭🇰 Гонконг 4
-      - 🇨🇦 Канада
-      - 🇺🇸 США 12
-      - 🇺🇸 США 2
-      - 🇭🇰 Гонконг 5
-      - 🇨🇦 Канада 1
-      - 🇮🇳 Индия
-      - 🇯🇵 Япония 1
+      - 🇧🇷 Бразилия
+      - 🇺🇸 США 14
+      - 🇭🇰 Гонконг
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇺🇸 США 14
-      - 🇭🇰 Гонконг 1
-      - 🇺🇸 США 6
-      - 🇯🇵 Япония 2
-      - 🇯🇵 Япония
-      - 🇺🇸 США 3
-      - 🇭🇰 Гонконг
-      - 🇧🇷 Бразилия
-      - 🇭🇰 Гонконг 3
-      - 🇸🇬 Сингапур 1
-      - 🇺🇸 США 9
-      - 🇯🇵 Япония 3
+      - 🇯🇵 Япония 1
+      - 🇺🇸 США 12
       - 🇺🇸 США 11
-      - 🏳️ Неизвестно 2
-      - 🇺🇸 США 10
-      - 🇺🇸 США 7
-      - 🇺🇸 США 8
-      - 🇭🇰 Гонконг 6
+      - 🇺🇸 США 15
+      - 🇺🇸 США 5
+      - 🇺🇸 США 3
+      - 🇨🇦 Канада
+      - 🇭🇰 Гонконг 2
+      - 🇯🇵 Япония 2
+      - 🇰🇷 Южная Корея
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг 4
+      - 🇯🇵 Япония
       - 🇨🇦 Канада 2
+      - 🇺🇸 США 10
+      - 🇯🇵 Япония 3
+      - 🇺🇸 США 1
+      - 🇨🇦 Канада 1
+      - 🇺🇸 США 2
+      - 🇺🇸 США 16
+      - 🇭🇰 Гонконг 3
+      - 🇺🇸 США 8
+      - 🇩🇪 Германия
+      - 🇺🇸 США 6
       - 🇺🇸 США
-      - 🇩🇪 Германия 1
-      - 🇭🇰 Гонконг 8
+      - 🏳️ Неизвестно
+      - 🇺🇸 США 7
+      - 🇸🇬 Сингапур 1
+      - 🇺🇸 США 13
       - 🇺🇸 США 4
       - 🇸🇬 Сингапур
-      - 🇰🇷 Южная Корея
-      - 🇭🇰 Гонконг 2
+      - 🇺🇸 США 9
       - 🏳️ Неизвестно 1
-      - 🇩🇪 Германия
-      - 🇺🇸 США 13
-      - 🇮🇳 Индия 1
-      - 🏳️ Неизвестно
-      - 🇺🇸 США 1
-      - 🇭🇰 Гонконг 7
-      - 🇺🇸 США 5
-      - 🇭🇰 Гонконг 4
-      - 🇨🇦 Канада
-      - 🇺🇸 США 12
-      - 🇺🇸 США 2
-      - 🇭🇰 Гонконг 5
-      - 🇨🇦 Канада 1
-      - 🇮🇳 Индия
-      - 🇯🇵 Япония 1
+      - 🇧🇷 Бразилия
+      - 🇺🇸 США 14
+      - 🇭🇰 Гонконг
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -549,96 +465,84 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇺🇸 США 14
-      - 🇭🇰 Гонконг 1
-      - 🇺🇸 США 6
-      - 🇯🇵 Япония 2
-      - 🇯🇵 Япония
-      - 🇺🇸 США 3
-      - 🇭🇰 Гонконг
-      - 🇧🇷 Бразилия
-      - 🇭🇰 Гонконг 3
-      - 🇸🇬 Сингапур 1
-      - 🇺🇸 США 9
-      - 🇯🇵 Япония 3
+      - 🇯🇵 Япония 1
+      - 🇺🇸 США 12
       - 🇺🇸 США 11
-      - 🏳️ Неизвестно 2
-      - 🇺🇸 США 10
-      - 🇺🇸 США 7
-      - 🇺🇸 США 8
-      - 🇭🇰 Гонконг 6
+      - 🇺🇸 США 15
+      - 🇺🇸 США 5
+      - 🇺🇸 США 3
+      - 🇨🇦 Канада
+      - 🇭🇰 Гонконг 2
+      - 🇯🇵 Япония 2
+      - 🇰🇷 Южная Корея
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг 4
+      - 🇯🇵 Япония
       - 🇨🇦 Канада 2
+      - 🇺🇸 США 10
+      - 🇯🇵 Япония 3
+      - 🇺🇸 США 1
+      - 🇨🇦 Канада 1
+      - 🇺🇸 США 2
+      - 🇺🇸 США 16
+      - 🇭🇰 Гонконг 3
+      - 🇺🇸 США 8
+      - 🇩🇪 Германия
+      - 🇺🇸 США 6
       - 🇺🇸 США
-      - 🇩🇪 Германия 1
-      - 🇭🇰 Гонконг 8
+      - 🏳️ Неизвестно
+      - 🇺🇸 США 7
+      - 🇸🇬 Сингапур 1
+      - 🇺🇸 США 13
       - 🇺🇸 США 4
       - 🇸🇬 Сингапур
-      - 🇰🇷 Южная Корея
-      - 🇭🇰 Гонконг 2
+      - 🇺🇸 США 9
       - 🏳️ Неизвестно 1
-      - 🇩🇪 Германия
-      - 🇺🇸 США 13
-      - 🇮🇳 Индия 1
-      - 🏳️ Неизвестно
-      - 🇺🇸 США 1
-      - 🇭🇰 Гонконг 7
-      - 🇺🇸 США 5
-      - 🇭🇰 Гонконг 4
-      - 🇨🇦 Канада
-      - 🇺🇸 США 12
-      - 🇺🇸 США 2
-      - 🇭🇰 Гонконг 5
-      - 🇨🇦 Канада 1
-      - 🇮🇳 Индия
-      - 🇯🇵 Япония 1
+      - 🇧🇷 Бразилия
+      - 🇺🇸 США 14
+      - 🇭🇰 Гонконг
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇺🇸 США 14
-      - 🇭🇰 Гонконг 1
-      - 🇺🇸 США 6
-      - 🇯🇵 Япония 2
-      - 🇯🇵 Япония
-      - 🇺🇸 США 3
-      - 🇭🇰 Гонконг
-      - 🇧🇷 Бразилия
-      - 🇭🇰 Гонконг 3
-      - 🇸🇬 Сингапур 1
-      - 🇺🇸 США 9
-      - 🇯🇵 Япония 3
+      - 🇯🇵 Япония 1
+      - 🇺🇸 США 12
       - 🇺🇸 США 11
-      - 🏳️ Неизвестно 2
-      - 🇺🇸 США 10
-      - 🇺🇸 США 7
-      - 🇺🇸 США 8
-      - 🇭🇰 Гонконг 6
+      - 🇺🇸 США 15
+      - 🇺🇸 США 5
+      - 🇺🇸 США 3
+      - 🇨🇦 Канада
+      - 🇭🇰 Гонконг 2
+      - 🇯🇵 Япония 2
+      - 🇰🇷 Южная Корея
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг 4
+      - 🇯🇵 Япония
       - 🇨🇦 Канада 2
+      - 🇺🇸 США 10
+      - 🇯🇵 Япония 3
+      - 🇺🇸 США 1
+      - 🇨🇦 Канада 1
+      - 🇺🇸 США 2
+      - 🇺🇸 США 16
+      - 🇭🇰 Гонконг 3
+      - 🇺🇸 США 8
+      - 🇩🇪 Германия
+      - 🇺🇸 США 6
       - 🇺🇸 США
-      - 🇩🇪 Германия 1
-      - 🇭🇰 Гонконг 8
+      - 🏳️ Неизвестно
+      - 🇺🇸 США 7
+      - 🇸🇬 Сингапур 1
+      - 🇺🇸 США 13
       - 🇺🇸 США 4
       - 🇸🇬 Сингапур
-      - 🇰🇷 Южная Корея
-      - 🇭🇰 Гонконг 2
+      - 🇺🇸 США 9
       - 🏳️ Неизвестно 1
-      - 🇩🇪 Германия
-      - 🇺🇸 США 13
-      - 🇮🇳 Индия 1
-      - 🏳️ Неизвестно
-      - 🇺🇸 США 1
-      - 🇭🇰 Гонконг 7
-      - 🇺🇸 США 5
-      - 🇭🇰 Гонконг 4
-      - 🇨🇦 Канада
-      - 🇺🇸 США 12
-      - 🇺🇸 США 2
-      - 🇭🇰 Гонконг 5
-      - 🇨🇦 Канада 1
-      - 🇮🇳 Индия
-      - 🇯🇵 Япония 1
+      - 🇧🇷 Бразилия
+      - 🇺🇸 США 14
+      - 🇭🇰 Гонконг
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
