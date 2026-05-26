@@ -1,248 +1,4 @@
 proxies:
-  - name: 🇯🇵 Япония 17
-    type: vmess
-    server: 140.83.51.161
-    port: 25686
-    uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /cctv13.m3u8
-      headers:
-        Host: jp02.a0a.xyz
-  - name: 🏳️ Неизвестно 2
-    type: vmess
-    server: 45.12.132.183
-    port: 8443
-    uuid: 6f1f1a18-ecc4-4513-890e-fd193042f564
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    ws-opts:
-      path: /vmess/
-      headers:
-        Host: pq-Hungary1.09vpn.com
-  - name: 🇩🇪 Германия 1
-    type: vless
-    server: 91.107.166.215
-    port: 51847
-    uuid: 09a601b8-ac43-4934-95e3-21e732ebfaf3
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 14
-    type: vmess
-    server: 47.91.10.237
-    port: 23464
-    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 9
-    type: vmess
-    server: 8.210.239.58
-    port: 443
-    uuid: 5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: n1761296889.4u9ma.icu
-  - name: 🇭🇰 Гонконг 4
-    type: vmess
-    server: 213.156.141.52
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 12
-    type: vmess
-    server: 8.209.218.109
-    port: 38510
-    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🏳️ Неизвестно 3
-    type: vmess
-    server: 47.250.45.234
-    port: 8613
-    uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /arki?ed=2048
-      headers:
-        Host: ''
-  - name: 🇯🇵 Япония 4
-    type: vmess
-    server: 47.91.19.32
-    port: 15777
-    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 8
-    type: vmess
-    server: 47.242.163.203
-    port: 443
-    uuid: 78f61544-3393-4e6b-9c77-5deaa0c7471d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: n1761296878.4u9ma.icu
-    ws-opts:
-      path: /
-      headers:
-        Host: ''
-  - name: 🇯🇵 Япония 10
-    type: vmess
-    server: 47.91.19.32
-    port: 15777
-    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 13
-    type: vmess
-    server: 8.209.218.109
-    port: 38510
-    uuid: a3de462b-0276-4003-8f34-536b0f9d340c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 1
-    type: vmess
-    server: 27.122.57.43
-    port: 11638
-    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇩🇪 Германия
-    type: vless
-    server: 47.91.94.112
-    port: 10040
-    uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-    udp: true
-    network: tcp
-  - name: 🇧🇷 Бразилия
-    type: vmess
-    server: 172.233.17.76
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 9
-    type: vmess
-    server: 47.245.58.91
-    port: 12376
-    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇸🇬 Сингапур
-    type: vmess
-    server: 47.237.109.67
-    port: 29124
-    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🏳️ Неизвестно
-    type: vmess
-    server: 216.238.86.158
-    port: 34460
-    uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: none
-  - name: 🇯🇵 Япония
-    type: vmess
-    server: 153.121.73.175
-    port: 49803
-    uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇮🇳 Индия
-    type: vmess
-    server: 172.232.103.186
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 7
-    type: vmess
-    server: 47.91.10.237
-    port: 23464
-    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 16
-    type: vmess
-    server: 172.111.146.64
-    port: 80
-    uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /vmess/
-      headers:
-        Host: ''
-  - name: 🇯🇵 Япония 8
-    type: vmess
-    server: 47.74.59.195
-    port: 53521
-    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🏳️ Неизвестно 1
-    type: vmess
-    server: 47.250.149.51
-    port: 50018
-    uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /9665280c
-      headers:
-        Host: 47.250.149.51
   - name: 🇮🇳 Индия 1
     type: vmess
     server: 152.67.8.205
@@ -256,65 +12,52 @@ proxies:
       path: ''
       headers:
         Host: ''
-  - name: 🇯🇵 Япония 5
+  - name: 🇭🇰 Гонконг 1
     type: vmess
-    server: 47.74.59.195
-    port: 53521
-    uuid: 0be3a336-85ad-4c42-930b-05318236e68c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇹🇷 Турция
-    type: vmess
-    server: 5.188.190.252
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 15
-    type: vmess
-    server: 47.74.59.195
-    port: 53521
+    server: 27.122.57.43
+    port: 11638
     uuid: a3de462b-0276-4003-8f34-536b0f9d340c
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇯🇵 Япония 1
+  - name: 🏳️ Неизвестно 2
     type: vmess
-    server: 153.121.73.175
-    port: 32221
-    uuid: b06054ae-f249-438e-998a-8e67bd8df653
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ''
-  - name: 🇭🇰 Гонконг 3
-    type: vmess
-    server: 27.122.57.43
-    port: 11638
-    uuid: 0be3a336-85ad-4c42-930b-05318236e68c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 6
-    type: vmess
-    server: 154.205.136.122
-    port: 37849
-    uuid: 30e88f67-8445-43ca-ff2b-961bbf6339fc
+    server: 47.250.45.234
+    port: 43063
+    uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
-      path: /
+      path: /arki?ed=2048
       headers:
         Host: ''
-  - name: 🇭🇰 Гонконг 5
+  - name: 🏳️ Неизвестно 3
+    type: vmess
+    server: 45.12.132.183
+    port: 8443
+    uuid: 6f1f1a18-ecc4-4513-890e-fd193042f564
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: pq-Hungary1.09vpn.com
+  - name: 🇭🇰 Гонконг
+    type: vmess
+    server: 27.122.57.43
+    port: 11638
+    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 2
     type: vmess
     server: 38.207.177.134
     port: 39742
@@ -323,92 +66,37 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇯🇵 Япония 6
+  - name: 🇮🇳 Индия
     type: vmess
-    server: 47.91.10.237
-    port: 23464
-    uuid: 0be3a336-85ad-4c42-930b-05318236e68c
+    server: 172.232.103.186
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇭🇰 Гонконг 7
+  - name: 🏳️ Неизвестно 1
     type: vmess
-    server: 47.238.130.197
-    port: 443
-    uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
+    server: 47.250.45.234
+    port: 8613
+    uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    tls: true
     ws-opts:
-      path: /
+      path: /arki?ed=2048
       headers:
-        Host: n1753348736.lie5d.cyou
-  - name: 🇭🇰 Гонконг
+        Host: ''
+  - name: 🏳️ Неизвестно
     type: vmess
-    server: 27.122.57.43
-    port: 11638
-    uuid: a3de462b-0276-4003-8f34-536b0f9d340c
+    server: 216.238.86.158
+    port: 34460
+    uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
     alterId: 0
     cipher: auto
     udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 2
-    type: vmess
-    server: 27.122.57.43
-    port: 11638
-    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇸🇬 Сингапур 2
-    type: vmess
-    server: 149.88.23.207
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇸🇬 Сингапур 1
-    type: vmess
-    server: 149.88.23.202
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 3
-    type: vmess
-    server: 47.91.19.32
-    port: 15777
-    uuid: 0be3a336-85ad-4c42-930b-05318236e68c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 11
-    type: vmess
-    server: 47.245.58.91
-    port: 12376
-    uuid: 8bd1fbf2-cef1-4e54-aa5b-ba7bde574dd9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 2
-    type: vmess
-    server: 47.91.19.32
-    port: 15777
-    uuid: a3de462b-0276-4003-8f34-536b0f9d340c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
+    network: none
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -427,91 +115,27 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇯🇵 Япония 17
-      - 🏳️ Неизвестно 2
-      - 🇩🇪 Германия 1
-      - 🇯🇵 Япония 14
-      - 🇭🇰 Гонконг 9
-      - 🇭🇰 Гонконг 4
-      - 🇯🇵 Япония 12
-      - 🏳️ Неизвестно 3
-      - 🇯🇵 Япония 4
-      - 🇭🇰 Гонконг 8
-      - 🇯🇵 Япония 10
-      - 🇯🇵 Япония 13
-      - 🇭🇰 Гонконг 1
-      - 🇩🇪 Германия
-      - 🇧🇷 Бразилия
-      - 🇯🇵 Япония 9
-      - 🇸🇬 Сингапур
-      - 🏳️ Неизвестно
-      - 🇯🇵 Япония
-      - 🇮🇳 Индия
-      - 🇯🇵 Япония 7
-      - 🇯🇵 Япония 16
-      - 🇯🇵 Япония 8
-      - 🏳️ Неизвестно 1
       - 🇮🇳 Индия 1
-      - 🇯🇵 Япония 5
-      - 🇹🇷 Турция
-      - 🇯🇵 Япония 15
-      - 🇯🇵 Япония 1
-      - 🇭🇰 Гонконг 3
-      - 🇭🇰 Гонконг 6
-      - 🇭🇰 Гонконг 5
-      - 🇯🇵 Япония 6
-      - 🇭🇰 Гонконг 7
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно 3
       - 🇭🇰 Гонконг
       - 🇭🇰 Гонконг 2
-      - 🇸🇬 Сингапур 2
-      - 🇸🇬 Сингапур 1
-      - 🇯🇵 Япония 3
-      - 🇯🇵 Япония 11
-      - 🇯🇵 Япония 2
+      - 🇮🇳 Индия
+      - 🏳️ Неизвестно 1
+      - 🏳️ Неизвестно
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇯🇵 Япония 17
-      - 🏳️ Неизвестно 2
-      - 🇩🇪 Германия 1
-      - 🇯🇵 Япония 14
-      - 🇭🇰 Гонконг 9
-      - 🇭🇰 Гонконг 4
-      - 🇯🇵 Япония 12
-      - 🏳️ Неизвестно 3
-      - 🇯🇵 Япония 4
-      - 🇭🇰 Гонконг 8
-      - 🇯🇵 Япония 10
-      - 🇯🇵 Япония 13
-      - 🇭🇰 Гонконг 1
-      - 🇩🇪 Германия
-      - 🇧🇷 Бразилия
-      - 🇯🇵 Япония 9
-      - 🇸🇬 Сингапур
-      - 🏳️ Неизвестно
-      - 🇯🇵 Япония
-      - 🇮🇳 Индия
-      - 🇯🇵 Япония 7
-      - 🇯🇵 Япония 16
-      - 🇯🇵 Япония 8
-      - 🏳️ Неизвестно 1
       - 🇮🇳 Индия 1
-      - 🇯🇵 Япония 5
-      - 🇹🇷 Турция
-      - 🇯🇵 Япония 15
-      - 🇯🇵 Япония 1
-      - 🇭🇰 Гонконг 3
-      - 🇭🇰 Гонконг 6
-      - 🇭🇰 Гонконг 5
-      - 🇯🇵 Япония 6
-      - 🇭🇰 Гонконг 7
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно 3
       - 🇭🇰 Гонконг
       - 🇭🇰 Гонконг 2
-      - 🇸🇬 Сингапур 2
-      - 🇸🇬 Сингапур 1
-      - 🇯🇵 Япония 3
-      - 🇯🇵 Япония 11
-      - 🇯🇵 Япония 2
+      - 🇮🇳 Индия
+      - 🏳️ Неизвестно 1
+      - 🏳️ Неизвестно
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -522,94 +146,30 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇯🇵 Япония 17
-      - 🏳️ Неизвестно 2
-      - 🇩🇪 Германия 1
-      - 🇯🇵 Япония 14
-      - 🇭🇰 Гонконг 9
-      - 🇭🇰 Гонконг 4
-      - 🇯🇵 Япония 12
-      - 🏳️ Неизвестно 3
-      - 🇯🇵 Япония 4
-      - 🇭🇰 Гонконг 8
-      - 🇯🇵 Япония 10
-      - 🇯🇵 Япония 13
-      - 🇭🇰 Гонконг 1
-      - 🇩🇪 Германия
-      - 🇧🇷 Бразилия
-      - 🇯🇵 Япония 9
-      - 🇸🇬 Сингапур
-      - 🏳️ Неизвестно
-      - 🇯🇵 Япония
-      - 🇮🇳 Индия
-      - 🇯🇵 Япония 7
-      - 🇯🇵 Япония 16
-      - 🇯🇵 Япония 8
-      - 🏳️ Неизвестно 1
       - 🇮🇳 Индия 1
-      - 🇯🇵 Япония 5
-      - 🇹🇷 Турция
-      - 🇯🇵 Япония 15
-      - 🇯🇵 Япония 1
-      - 🇭🇰 Гонконг 3
-      - 🇭🇰 Гонконг 6
-      - 🇭🇰 Гонконг 5
-      - 🇯🇵 Япония 6
-      - 🇭🇰 Гонконг 7
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно 3
       - 🇭🇰 Гонконг
       - 🇭🇰 Гонконг 2
-      - 🇸🇬 Сингапур 2
-      - 🇸🇬 Сингапур 1
-      - 🇯🇵 Япония 3
-      - 🇯🇵 Япония 11
-      - 🇯🇵 Япония 2
+      - 🇮🇳 Индия
+      - 🏳️ Неизвестно 1
+      - 🏳️ Неизвестно
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇯🇵 Япония 17
-      - 🏳️ Неизвестно 2
-      - 🇩🇪 Германия 1
-      - 🇯🇵 Япония 14
-      - 🇭🇰 Гонконг 9
-      - 🇭🇰 Гонконг 4
-      - 🇯🇵 Япония 12
-      - 🏳️ Неизвестно 3
-      - 🇯🇵 Япония 4
-      - 🇭🇰 Гонконг 8
-      - 🇯🇵 Япония 10
-      - 🇯🇵 Япония 13
-      - 🇭🇰 Гонконг 1
-      - 🇩🇪 Германия
-      - 🇧🇷 Бразилия
-      - 🇯🇵 Япония 9
-      - 🇸🇬 Сингапур
-      - 🏳️ Неизвестно
-      - 🇯🇵 Япония
-      - 🇮🇳 Индия
-      - 🇯🇵 Япония 7
-      - 🇯🇵 Япония 16
-      - 🇯🇵 Япония 8
-      - 🏳️ Неизвестно 1
       - 🇮🇳 Индия 1
-      - 🇯🇵 Япония 5
-      - 🇹🇷 Турция
-      - 🇯🇵 Япония 15
-      - 🇯🇵 Япония 1
-      - 🇭🇰 Гонконг 3
-      - 🇭🇰 Гонконг 6
-      - 🇭🇰 Гонконг 5
-      - 🇯🇵 Япония 6
-      - 🇭🇰 Гонконг 7
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно 3
       - 🇭🇰 Гонконг
       - 🇭🇰 Гонконг 2
-      - 🇸🇬 Сингапур 2
-      - 🇸🇬 Сингапур 1
-      - 🇯🇵 Япония 3
-      - 🇯🇵 Япония 11
-      - 🇯🇵 Япония 2
+      - 🇮🇳 Индия
+      - 🏳️ Неизвестно 1
+      - 🏳️ Неизвестно
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
