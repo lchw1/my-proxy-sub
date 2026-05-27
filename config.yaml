@@ -1,14 +1,5 @@
 proxies:
-  - name: 🇸🇬 Сингапур 1
-    type: vmess
-    server: 149.88.23.207
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 2
+  - name: 🇭🇰 Гонконг 1
     type: vmess
     server: 154.205.136.122
     port: 37849
@@ -21,28 +12,6 @@ proxies:
       path: /
       headers:
         Host: ''
-  - name: 🏳️ Неизвестно
-    type: vmess
-    server: 216.238.86.158
-    port: 34460
-    uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: none
-  - name: 🏳️ Неизвестно 1
-    type: vmess
-    server: 47.250.149.51
-    port: 50018
-    uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /9665280c
-      headers:
-        Host: 47.250.149.51
   - name: 🏳️ Неизвестно 2
     type: vmess
     server: 61.245.11.60
@@ -56,6 +25,15 @@ proxies:
       path: /vmess/
       headers:
         Host: ''
+  - name: 🏳️ Неизвестно
+    type: vmess
+    server: 216.238.86.158
+    port: 34460
+    uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: none
   - name: 🇭🇰 Гонконг
     type: vmess
     server: 27.122.57.43
@@ -65,55 +43,19 @@ proxies:
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇰🇿 Казахстан
+  - name: 🏳️ Неизвестно 1
     type: vmess
-    server: 38.107.234.57
-    port: 80
-    uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+    server: 47.250.149.51
+    port: 50018
+    uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
-      path: /vmess/
+      path: /9665280c
       headers:
-        Host: ''
-  - name: 🇭🇰 Гонконг 1
-    type: vmess
-    server: 45.192.101.134
-    port: 9527
-    uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: raw
-  - name: 🇮🇹 Италия
-    type: vmess
-    server: 45.92.70.236
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇸🇬 Сингапур
-    type: vmess
-    server: 149.88.23.202
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇧🇷 Бразилия
-    type: vmess
-    server: 172.233.17.76
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
+        Host: 47.250.149.51
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -132,31 +74,19 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇸🇬 Сингапур 1
-      - 🇭🇰 Гонконг 2
-      - 🏳️ Неизвестно
-      - 🏳️ Неизвестно 1
-      - 🏳️ Неизвестно 2
-      - 🇭🇰 Гонконг
-      - 🇰🇿 Казахстан
       - 🇭🇰 Гонконг 1
-      - 🇮🇹 Италия
-      - 🇸🇬 Сингапур
-      - 🇧🇷 Бразилия
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно 1
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇸🇬 Сингапур 1
-      - 🇭🇰 Гонконг 2
-      - 🏳️ Неизвестно
-      - 🏳️ Неизвестно 1
-      - 🏳️ Неизвестно 2
-      - 🇭🇰 Гонконг
-      - 🇰🇿 Казахстан
       - 🇭🇰 Гонконг 1
-      - 🇮🇹 Италия
-      - 🇸🇬 Сингапур
-      - 🇧🇷 Бразилия
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно 1
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -167,34 +97,22 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇸🇬 Сингапур 1
-      - 🇭🇰 Гонконг 2
-      - 🏳️ Неизвестно
-      - 🏳️ Неизвестно 1
-      - 🏳️ Неизвестно 2
-      - 🇭🇰 Гонконг
-      - 🇰🇿 Казахстан
       - 🇭🇰 Гонконг 1
-      - 🇮🇹 Италия
-      - 🇸🇬 Сингапур
-      - 🇧🇷 Бразилия
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно 1
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇸🇬 Сингапур 1
-      - 🇭🇰 Гонконг 2
-      - 🏳️ Неизвестно
-      - 🏳️ Неизвестно 1
-      - 🏳️ Неизвестно 2
-      - 🇭🇰 Гонконг
-      - 🇰🇿 Казахстан
       - 🇭🇰 Гонконг 1
-      - 🇮🇹 Италия
-      - 🇸🇬 Сингапур
-      - 🇧🇷 Бразилия
+      - 🏳️ Неизвестно 2
+      - 🏳️ Неизвестно
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно 1
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
