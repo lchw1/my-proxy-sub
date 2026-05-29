@@ -1,902 +1,136 @@
 proxies:
-  - name: 🇫🇷 Франция
+  - name: 🇭🇰 Гонконг
     type: vmess
-    server: 185.248.33.173
-    port: 37393
-    uuid: 9631096d-3032-4942-9446-bdf12665682b
+    server: 47.243.220.171
+    port: 1337
+    uuid: rootface-telegram-hunt-server1
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /rootface-telegram-hunt-server
+      headers:
+        Host: 47.243.220.171
+  - name: 🏳️ Неизвестно
+    type: vmess
+    server: 216.238.86.158
+    port: 34460
+    uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: none
+  - name: 🏳️ Неизвестно 3
+    type: vmess
+    server: 45.12.132.183
+    port: 8443
+    uuid: 6f1f1a18-ecc4-4513-890e-fd193042f564
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
     ws-opts:
-      path: /speedtest
+      path: /vmess/
       headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 7
+        Host: pq-Hungary1.09vpn.com
+  - name: 🇮🇹 Италия
     type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: raw
-  - name: 🇫🇷 Франция 4
-    type: vmess
-    server: 185.248.33.173
-    port: 53860
-    uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
+    server: 57.131.32.191
+    port: 8443
+    uuid: 848af33c-81f2-40c9-93b2-4681d056936b
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
+    servername: OV-Italy1.09vpn.com
     ws-opts:
-      path: /speedtest
+      path: /vmess/
       headers:
-        Host: imafake.locker
-  - name: 🇫🇷 Франция 10
+        Host: OV-Italy1.09vpn.com
+  - name: 🇸🇬 Сингапур 1
     type: vmess
-    server: 185.248.33.173
-    port: 17576
-    uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 6
-    type: vmess
-    server: 109.61.109.204
-    port: 31574
-    uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 15
-    type: vmess
-    server: 155.254.126.249
-    port: 6001
-    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇺🇸 США 12
-    type: vmess
-    server: 169.197.142.22
+    server: 149.88.23.207
     port: 18000
     uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇳🇱 Нидерланды
+  - name: 🇸🇬 Сингапур
     type: vmess
-    server: 162.217.249.74
-    port: 45705
-    uuid: 5678b00f-9ed6-4982-9f8a-1a7306e25126
+    server: 149.88.23.202
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇯🇵 Япония 29
+  - name: 🇭🇰 Гонконг 1
     type: vmess
-    server: 109.61.109.204
-    port: 65440
-    uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 10
-    type: vmess
-    server: 109.61.109.204
-    port: 56225
-    uuid: c09f13ce-2cca-49b6-ad1e-597566cc89c6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 17
-    type: vmess
-    server: 109.61.109.204
-    port: 19241
-    uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 2
-    type: vmess
-    server: 38.207.163.135
+    server: 47.238.130.197
     port: 443
-    uuid: cbc05e45-ca53-4cd5-e880-af3a1a850e0e
+    uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: n1753348736.lie5d.cyou
+  - name: 🏳️ Неизвестно 1
+    type: vmess
+    server: 47.250.135.244
+    port: 10000
+    uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
     alterId: 0
     cipher: auto
     udp: true
     network: tcp
-  - name: 🇺🇸 США 11
+  - name: 🇰🇿 Казахстан
     type: vmess
-    server: 84.17.41.2
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇫🇷 Франция 6
-    type: vmess
-    server: 185.248.33.173
-    port: 42653
-    uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇫🇷 Франция 7
-    type: vmess
-    server: 185.248.33.173
-    port: 15417
-    uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 5
-    type: vmess
-    server: 109.61.109.204
-    port: 35240
-    uuid: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 1
-    type: vmess
-    server: 129.146.77.248
-    port: 39495
-    uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+    server: 38.107.234.57
+    port: 80
+    uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
-      path: /cctv13.m3u8
+      path: /vmess/
       headers:
-        Host: 129.146.77.248
-  - name: 🇯🇵 Япония 15
+        Host: ''
+  - name: 🇭🇰 Гонконг 2
     type: vmess
-    server: 109.61.109.204
-    port: 61328
-    uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 17
-    type: vmess
-    server: 216.106.183.35
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇺🇸 США 13
-    type: vmess
-    server: 38.110.1.246
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония
-    type: vmess
-    server: 172.104.80.66
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 28
-    type: vmess
-    server: 109.61.109.204
-    port: 11167
-    uuid: c50f9480-2e1d-40db-9458-630e79636663
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇫🇷 Франция 1
-    type: vmess
-    server: 185.248.33.173
-    port: 33462
-    uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 1
-    type: vmess
-    server: 140.83.51.161
-    port: 25686
-    uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /cctv13.m3u8
-      headers:
-        Host: jp02.a0a.xyz
-  - name: 🇺🇸 США 16
-    type: vmess
-    server: 155.254.126.249
-    port: 6004
-    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: null
-  - name: 🇯🇵 Япония 18
-    type: vmess
-    server: 109.61.109.204
-    port: 13473
-    uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 8
-    type: vmess
-    server: 38.114.123.42
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇺🇸 США 3
-    type: vmess
-    server: 67.220.72.237
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 26
-    type: vmess
-    server: 109.61.109.204
-    port: 29030
-    uuid: c09f13ce-2cca-49b6-ad1e-597566cc89c6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 4
-    type: vmess
-    server: 69.12.91.52
-    port: 3593
-    uuid: 1f2d0b2b-e214-4fc1-92cc-1c230be78d7c
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇺🇸 США 14
-    type: vmess
-    server: 67.220.85.46
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: aes-128-gcm
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 23
-    type: vmess
-    server: 109.61.109.204
-    port: 63171
-    uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 21
-    type: vmess
-    server: 109.61.109.204
-    port: 20291
-    uuid: 6d600864-32da-49fd-baf4-7df051762454
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 19
-    type: vmess
-    server: 109.61.109.204
-    port: 35298
-    uuid: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 10
-    type: vmess
-    server: 172.236.244.171
-    port: 2053
-    uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: usaapp1.jisuyun.top
-    ws-opts:
-      path: /usavm
-      headers:
-        Host: usaapp1.jisuyun.top
-  - name: 🇺🇸 США
-    type: vmess
-    server: 129.146.143.80
-    port: 48111
-    uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇫🇷 Франция 3
-    type: vmess
-    server: 185.248.33.173
-    port: 46723
-    uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 6
-    type: vmess
-    server: 172.236.226.7
-    port: 2053
-    uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd
+    server: 47.76.254.70
+    port: 443
+    uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
     alterId: 0
     cipher: auto
     udp: true
     network: ws
     tls: true
     ws-opts:
-      path: /usavm
+      path: /
       headers:
-        Host: usaapp2.jisuyun.top
-  - name: 🇯🇵 Япония 4
+        Host: n1753101277.4u9ma.icu
+  - name: 🏳️ Неизвестно 2
     type: vmess
-    server: 109.61.109.204
-    port: 20166
-    uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
+    server: 61.245.11.60
+    port: 80
+    uuid: a3e3a710-79f8-4ae0-b83c-607aab40d197
     alterId: 0
     cipher: auto
     udp: true
     network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
     ws-opts:
-      path: /speedtest
+      path: /vmess/
       headers:
-        Host: imafake.locker
-  - name: 🇫🇷 Франция 2
-    type: vmess
-    server: 185.248.33.173
-    port: 59253
-    uuid: 4ec66d81-9565-4d8e-ae58-2bacfde95f48
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇫🇷 Франция 8
-    type: vmess
-    server: 185.248.33.173
-    port: 38147
-    uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇫🇷 Франция 11
-    type: vmess
-    server: 185.248.33.173
-    port: 15663
-    uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 16
-    type: vmess
-    server: 109.61.109.204
-    port: 31182
-    uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇫🇷 Франция 9
-    type: vmess
-    server: 185.248.33.173
-    port: 20872
-    uuid: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇫🇷 Франция 13
-    type: vmess
-    server: 185.248.33.173
-    port: 12197
-    uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 7
-    type: vmess
-    server: 109.61.109.204
-    port: 28633
-    uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 9
-    type: vmess
-    server: 109.61.109.204
-    port: 49865
-    uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 20
-    type: vmess
-    server: 109.61.109.204
-    port: 10028
-    uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 12
-    type: vmess
-    server: 109.61.109.204
-    port: 13677
-    uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 18
-    type: vmess
-    server: 38.91.107.49
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 3
-    type: vmess
-    server: 109.61.109.204
-    port: 61989
-    uuid: c50f9480-2e1d-40db-9458-630e79636663
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 24
-    type: vmess
-    server: 109.61.109.204
-    port: 20936
-    uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇫🇷 Франция 12
-    type: vmess
-    server: 185.248.33.173
-    port: 29976
-    uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 11
-    type: vmess
-    server: 109.61.109.204
-    port: 13822
-    uuid: 3b475934-cb2a-4d96-b260-5e50cca5d430
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 8
-    type: vmess
-    server: 109.61.109.204
-    port: 43432
-    uuid: 6d600864-32da-49fd-baf4-7df051762454
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 25
-    type: vmess
-    server: 109.61.109.204
-    port: 57967
-    uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇰🇷 Южная Корея
-    type: vmess
-    server: 146.56.112.110
-    port: 8888
-    uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇺🇸 США 9
-    type: vmess
-    server: 216.106.185.141
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 27
-    type: vmess
-    server: 109.61.109.204
-    port: 64366
-    uuid: 9631096d-3032-4942-9446-bdf12665682b
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 14
-    type: vmess
-    server: 109.61.109.204
-    port: 32818
-    uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇫🇷 Франция 5
-    type: vmess
-    server: 185.248.33.173
-    port: 55122
-    uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 2
-    type: vmess
-    server: 109.61.109.204
-    port: 29913
-    uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇯🇵 Япония 13
-    type: vmess
-    server: 109.61.109.204
-    port: 64329
-    uuid: 3b475934-cb2a-4d96-b260-5e50cca5d430
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
-  - name: 🇺🇸 США 5
-    type: vmess
-    server: 82.198.246.46
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇯🇵 Япония 22
-    type: vmess
-    server: 109.61.109.204
-    port: 33991
-    uuid: b01d1e26-2f84-48da-88a1-1d06a77857f3
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    servername: imafake.locker
-    client-fingerprint: chrome
-    ws-opts:
-      path: /speedtest
-      headers:
-        Host: imafake.locker
+        Host: ''
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -915,139 +149,31 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇫🇷 Франция
-      - 🇺🇸 США 7
-      - 🇫🇷 Франция 4
-      - 🇫🇷 Франция 10
-      - 🇯🇵 Япония 6
-      - 🇺🇸 США 15
-      - 🇺🇸 США 12
-      - 🇳🇱 Нидерланды
-      - 🇯🇵 Япония 29
-      - 🇯🇵 Япония 10
-      - 🇯🇵 Япония 17
-      - 🇺🇸 США 2
-      - 🇺🇸 США 11
-      - 🇫🇷 Франция 6
-      - 🇫🇷 Франция 7
-      - 🇯🇵 Япония 5
-      - 🇺🇸 США 1
-      - 🇯🇵 Япония 15
-      - 🇺🇸 США 17
-      - 🇺🇸 США 13
-      - 🇯🇵 Япония
-      - 🇯🇵 Япония 28
-      - 🇫🇷 Франция 1
-      - 🇯🇵 Япония 1
-      - 🇺🇸 США 16
-      - 🇯🇵 Япония 18
-      - 🇺🇸 США 8
-      - 🇺🇸 США 3
-      - 🇯🇵 Япония 26
-      - 🇺🇸 США 4
-      - 🇺🇸 США 14
-      - 🇯🇵 Япония 23
-      - 🇯🇵 Япония 21
-      - 🇯🇵 Япония 19
-      - 🇺🇸 США 10
-      - 🇺🇸 США
-      - 🇫🇷 Франция 3
-      - 🇺🇸 США 6
-      - 🇯🇵 Япония 4
-      - 🇫🇷 Франция 2
-      - 🇫🇷 Франция 8
-      - 🇫🇷 Франция 11
-      - 🇯🇵 Япония 16
-      - 🇫🇷 Франция 9
-      - 🇫🇷 Франция 13
-      - 🇯🇵 Япония 7
-      - 🇯🇵 Япония 9
-      - 🇯🇵 Япония 20
-      - 🇯🇵 Япония 12
-      - 🇺🇸 США 18
-      - 🇯🇵 Япония 3
-      - 🇯🇵 Япония 24
-      - 🇫🇷 Франция 12
-      - 🇯🇵 Япония 11
-      - 🇯🇵 Япония 8
-      - 🇯🇵 Япония 25
-      - 🇰🇷 Южная Корея
-      - 🇺🇸 США 9
-      - 🇯🇵 Япония 27
-      - 🇯🇵 Япония 14
-      - 🇫🇷 Франция 5
-      - 🇯🇵 Япония 2
-      - 🇯🇵 Япония 13
-      - 🇺🇸 США 5
-      - 🇯🇵 Япония 22
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно
+      - 🏳️ Неизвестно 3
+      - 🇮🇹 Италия
+      - 🇸🇬 Сингапур 1
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 1
+      - 🇰🇿 Казахстан
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 2
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇫🇷 Франция
-      - 🇺🇸 США 7
-      - 🇫🇷 Франция 4
-      - 🇫🇷 Франция 10
-      - 🇯🇵 Япония 6
-      - 🇺🇸 США 15
-      - 🇺🇸 США 12
-      - 🇳🇱 Нидерланды
-      - 🇯🇵 Япония 29
-      - 🇯🇵 Япония 10
-      - 🇯🇵 Япония 17
-      - 🇺🇸 США 2
-      - 🇺🇸 США 11
-      - 🇫🇷 Франция 6
-      - 🇫🇷 Франция 7
-      - 🇯🇵 Япония 5
-      - 🇺🇸 США 1
-      - 🇯🇵 Япония 15
-      - 🇺🇸 США 17
-      - 🇺🇸 США 13
-      - 🇯🇵 Япония
-      - 🇯🇵 Япония 28
-      - 🇫🇷 Франция 1
-      - 🇯🇵 Япония 1
-      - 🇺🇸 США 16
-      - 🇯🇵 Япония 18
-      - 🇺🇸 США 8
-      - 🇺🇸 США 3
-      - 🇯🇵 Япония 26
-      - 🇺🇸 США 4
-      - 🇺🇸 США 14
-      - 🇯🇵 Япония 23
-      - 🇯🇵 Япония 21
-      - 🇯🇵 Япония 19
-      - 🇺🇸 США 10
-      - 🇺🇸 США
-      - 🇫🇷 Франция 3
-      - 🇺🇸 США 6
-      - 🇯🇵 Япония 4
-      - 🇫🇷 Франция 2
-      - 🇫🇷 Франция 8
-      - 🇫🇷 Франция 11
-      - 🇯🇵 Япония 16
-      - 🇫🇷 Франция 9
-      - 🇫🇷 Франция 13
-      - 🇯🇵 Япония 7
-      - 🇯🇵 Япония 9
-      - 🇯🇵 Япония 20
-      - 🇯🇵 Япония 12
-      - 🇺🇸 США 18
-      - 🇯🇵 Япония 3
-      - 🇯🇵 Япония 24
-      - 🇫🇷 Франция 12
-      - 🇯🇵 Япония 11
-      - 🇯🇵 Япония 8
-      - 🇯🇵 Япония 25
-      - 🇰🇷 Южная Корея
-      - 🇺🇸 США 9
-      - 🇯🇵 Япония 27
-      - 🇯🇵 Япония 14
-      - 🇫🇷 Франция 5
-      - 🇯🇵 Япония 2
-      - 🇯🇵 Япония 13
-      - 🇺🇸 США 5
-      - 🇯🇵 Япония 22
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно
+      - 🏳️ Неизвестно 3
+      - 🇮🇹 Италия
+      - 🇸🇬 Сингапур 1
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 1
+      - 🇰🇿 Казахстан
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 2
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -1058,142 +184,34 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇫🇷 Франция
-      - 🇺🇸 США 7
-      - 🇫🇷 Франция 4
-      - 🇫🇷 Франция 10
-      - 🇯🇵 Япония 6
-      - 🇺🇸 США 15
-      - 🇺🇸 США 12
-      - 🇳🇱 Нидерланды
-      - 🇯🇵 Япония 29
-      - 🇯🇵 Япония 10
-      - 🇯🇵 Япония 17
-      - 🇺🇸 США 2
-      - 🇺🇸 США 11
-      - 🇫🇷 Франция 6
-      - 🇫🇷 Франция 7
-      - 🇯🇵 Япония 5
-      - 🇺🇸 США 1
-      - 🇯🇵 Япония 15
-      - 🇺🇸 США 17
-      - 🇺🇸 США 13
-      - 🇯🇵 Япония
-      - 🇯🇵 Япония 28
-      - 🇫🇷 Франция 1
-      - 🇯🇵 Япония 1
-      - 🇺🇸 США 16
-      - 🇯🇵 Япония 18
-      - 🇺🇸 США 8
-      - 🇺🇸 США 3
-      - 🇯🇵 Япония 26
-      - 🇺🇸 США 4
-      - 🇺🇸 США 14
-      - 🇯🇵 Япония 23
-      - 🇯🇵 Япония 21
-      - 🇯🇵 Япония 19
-      - 🇺🇸 США 10
-      - 🇺🇸 США
-      - 🇫🇷 Франция 3
-      - 🇺🇸 США 6
-      - 🇯🇵 Япония 4
-      - 🇫🇷 Франция 2
-      - 🇫🇷 Франция 8
-      - 🇫🇷 Франция 11
-      - 🇯🇵 Япония 16
-      - 🇫🇷 Франция 9
-      - 🇫🇷 Франция 13
-      - 🇯🇵 Япония 7
-      - 🇯🇵 Япония 9
-      - 🇯🇵 Япония 20
-      - 🇯🇵 Япония 12
-      - 🇺🇸 США 18
-      - 🇯🇵 Япония 3
-      - 🇯🇵 Япония 24
-      - 🇫🇷 Франция 12
-      - 🇯🇵 Япония 11
-      - 🇯🇵 Япония 8
-      - 🇯🇵 Япония 25
-      - 🇰🇷 Южная Корея
-      - 🇺🇸 США 9
-      - 🇯🇵 Япония 27
-      - 🇯🇵 Япония 14
-      - 🇫🇷 Франция 5
-      - 🇯🇵 Япония 2
-      - 🇯🇵 Япония 13
-      - 🇺🇸 США 5
-      - 🇯🇵 Япония 22
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно
+      - 🏳️ Неизвестно 3
+      - 🇮🇹 Италия
+      - 🇸🇬 Сингапур 1
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 1
+      - 🇰🇿 Казахстан
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 2
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇫🇷 Франция
-      - 🇺🇸 США 7
-      - 🇫🇷 Франция 4
-      - 🇫🇷 Франция 10
-      - 🇯🇵 Япония 6
-      - 🇺🇸 США 15
-      - 🇺🇸 США 12
-      - 🇳🇱 Нидерланды
-      - 🇯🇵 Япония 29
-      - 🇯🇵 Япония 10
-      - 🇯🇵 Япония 17
-      - 🇺🇸 США 2
-      - 🇺🇸 США 11
-      - 🇫🇷 Франция 6
-      - 🇫🇷 Франция 7
-      - 🇯🇵 Япония 5
-      - 🇺🇸 США 1
-      - 🇯🇵 Япония 15
-      - 🇺🇸 США 17
-      - 🇺🇸 США 13
-      - 🇯🇵 Япония
-      - 🇯🇵 Япония 28
-      - 🇫🇷 Франция 1
-      - 🇯🇵 Япония 1
-      - 🇺🇸 США 16
-      - 🇯🇵 Япония 18
-      - 🇺🇸 США 8
-      - 🇺🇸 США 3
-      - 🇯🇵 Япония 26
-      - 🇺🇸 США 4
-      - 🇺🇸 США 14
-      - 🇯🇵 Япония 23
-      - 🇯🇵 Япония 21
-      - 🇯🇵 Япония 19
-      - 🇺🇸 США 10
-      - 🇺🇸 США
-      - 🇫🇷 Франция 3
-      - 🇺🇸 США 6
-      - 🇯🇵 Япония 4
-      - 🇫🇷 Франция 2
-      - 🇫🇷 Франция 8
-      - 🇫🇷 Франция 11
-      - 🇯🇵 Япония 16
-      - 🇫🇷 Франция 9
-      - 🇫🇷 Франция 13
-      - 🇯🇵 Япония 7
-      - 🇯🇵 Япония 9
-      - 🇯🇵 Япония 20
-      - 🇯🇵 Япония 12
-      - 🇺🇸 США 18
-      - 🇯🇵 Япония 3
-      - 🇯🇵 Япония 24
-      - 🇫🇷 Франция 12
-      - 🇯🇵 Япония 11
-      - 🇯🇵 Япония 8
-      - 🇯🇵 Япония 25
-      - 🇰🇷 Южная Корея
-      - 🇺🇸 США 9
-      - 🇯🇵 Япония 27
-      - 🇯🇵 Япония 14
-      - 🇫🇷 Франция 5
-      - 🇯🇵 Япония 2
-      - 🇯🇵 Япония 13
-      - 🇺🇸 США 5
-      - 🇯🇵 Япония 22
+      - 🇭🇰 Гонконг
+      - 🏳️ Неизвестно
+      - 🏳️ Неизвестно 3
+      - 🇮🇹 Италия
+      - 🇸🇬 Сингапур 1
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 1
+      - 🇰🇿 Казахстан
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 2
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
