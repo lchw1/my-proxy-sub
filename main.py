@@ -52,11 +52,11 @@ def parse_vless_link(link: str) -> Dict[str, Any]:
         if query_string:
             params = dict(urllib.parse.parse_qsl(query_string))
 
-            network = params.get("type", "tcp")
+            network = params.get("type", "tcp").lower()
             if network in ["vless", "vmess"]: network = "tcp"
             proxy["network"] = network
 
-            security = params.get("security", "")
+            security = params.get("security", "").lower()
             if security == "tls":
                 proxy["tls"] = True
                 if "sni" in params: proxy["servername"] = params["sni"]
