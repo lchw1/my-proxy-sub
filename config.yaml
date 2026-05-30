@@ -1,4 +1,141 @@
-proxies: []
+proxies:
+  - name: 🇸🇬 Сингапур
+    type: vmess
+    server: 149.88.23.207
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 2
+    type: vmess
+    server: 8.210.239.58
+    port: 443
+    uuid: 5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    servername: n1761296889.4u9ma.icu
+    ws-opts:
+      path: /
+      headers:
+        Host: n1761296889.4u9ma.icu
+  - name: 🏳️ Неизвестно 1
+    type: vmess
+    server: 45.12.132.183
+    port: 80
+    uuid: 703f722a-4bdf-4e9d-9afd-a681fdf87c74
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: ''
+  - name: 🏳️ Неизвестно
+    type: vmess
+    server: 45.12.132.183
+    port: 8443
+    uuid: 6f1f1a18-ecc4-4513-890e-fd193042f564
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: pq-Hungary1.09vpn.com
+  - name: 🇺🇸 США
+    type: vless
+    server: 155.117.127.137
+    port: 443
+    uuid: 5a20b5d0-3a98-4792-9559-95f4e24277ec
+    udp: true
+  - name: 🇹🇷 Турция
+    type: vmess
+    server: 5.188.190.252
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇬🇧 Великобритания
+    type: vmess
+    server: 57.128.174.124
+    port: 2053
+    uuid: d64d52b1-144f-4bce-a6d7-1324de187b1b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    tls: true
+    servername: uk.connfull.org
+    client-fingerprint: chrome
+  - name: 🇮🇹 Италия
+    type: vmess
+    server: 57.131.32.191
+    port: 8443
+    uuid: 848af33c-81f2-40c9-93b2-4681d056936b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    servername: OV-Italy1.09vpn.com
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: OV-Italy1.09vpn.com
+  - name: 🇸🇬 Сингапур 1
+    type: vmess
+    server: 149.88.23.202
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 1
+    type: vmess
+    server: 47.244.120.197
+    port: 36703
+    uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers:
+        Host: ''
+  - name: 🇭🇰 Гонконг
+    type: vmess
+    server: 213.156.141.52
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇮🇳 Индия
+    type: vmess
+    server: 152.67.8.205
+    port: 80
+    uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        Host: ''
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -17,11 +154,33 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - DIRECT
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 1
+      - 🏳️ Неизвестно
+      - 🇺🇸 США
+      - 🇹🇷 Турция
+      - 🇬🇧 Великобритания
+      - 🇮🇹 Италия
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг
+      - 🇮🇳 Индия
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - DIRECT
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 1
+      - 🏳️ Неизвестно
+      - 🇺🇸 США
+      - 🇹🇷 Турция
+      - 🇬🇧 Великобритания
+      - 🇮🇹 Италия
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг
+      - 🇮🇳 Индия
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -32,14 +191,36 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - DIRECT
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 1
+      - 🏳️ Неизвестно
+      - 🇺🇸 США
+      - 🇹🇷 Турция
+      - 🇬🇧 Великобритания
+      - 🇮🇹 Италия
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг
+      - 🇮🇳 Индия
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - DIRECT
+      - 🇸🇬 Сингапур
+      - 🇭🇰 Гонконг 2
+      - 🏳️ Неизвестно 1
+      - 🏳️ Неизвестно
+      - 🇺🇸 США
+      - 🇹🇷 Турция
+      - 🇬🇧 Великобритания
+      - 🇮🇹 Италия
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг 1
+      - 🇭🇰 Гонконг
+      - 🇮🇳 Индия
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
