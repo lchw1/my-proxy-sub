@@ -1,10 +1,160 @@
 proxies:
+  - name: 🇸🇬 Сингапур 1
+    type: vmess
+    server: 149.88.23.207
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 2
+    type: vmess
+    server: 8.210.239.58
+    port: 443
+    uuid: 5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    servername: n1761296889.4u9ma.icu
+    ws-opts:
+      path: /
+      headers:
+        Host: n1761296889.4u9ma.icu
+  - name: 🇭🇰 Гонконг 1
+    type: vmess
+    server: 47.238.130.197
+    port: 443
+    uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: n1753348736.lie5d.cyou
+  - name: 🏳️ Неизвестно 1
+    type: vmess
+    server: 45.12.132.183
+    port: 8443
+    uuid: 6f1f1a18-ecc4-4513-890e-fd193042f564
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: pq-Hungary1.09vpn.com
+  - name: 🇸🇬 Сингапур
+    type: vmess
+    server: 149.88.23.202
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇬🇧 Великобритания
+    type: vmess
+    server: 57.128.174.124
+    port: 2053
+    uuid: d64d52b1-144f-4bce-a6d7-1324de187b1b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+    tls: true
+    servername: uk.connfull.org
+    client-fingerprint: chrome
   - name: 🇺🇸 США
     type: vless
     server: 155.117.127.137
     port: 443
     uuid: 5a20b5d0-3a98-4792-9559-95f4e24277ec
     udp: true
+  - name: 🇮🇹 Италия
+    type: vmess
+    server: 57.131.32.191
+    port: 8443
+    uuid: 848af33c-81f2-40c9-93b2-4681d056936b
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    tls: true
+    servername: OV-Italy1.09vpn.com
+    ws-opts:
+      path: /vmess/
+      headers:
+        Host: OV-Italy1.09vpn.com
+  - name: 🇪🇸 Испания
+    type: vmess
+    server: 85.90.217.42
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🏳️ Неизвестно
+    type: vmess
+    server: 47.250.135.244
+    port: 10000
+    uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇮🇳 Индия
+    type: vmess
+    server: 152.67.8.205
+    port: 80
+    uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        Host: ''
+  - name: 🇭🇰 Гонконг
+    type: vmess
+    server: 213.156.141.52
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇹🇷 Турция
+    type: vmess
+    server: 5.188.190.252
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг 3
+    type: vmess
+    server: 47.244.120.197
+    port: 44867
+    uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /arki?ed=2048
+      headers:
+        Host: ''
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -23,11 +173,37 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 1
+      - 🇸🇬 Сингапур
+      - 🇬🇧 Великобритания
       - 🇺🇸 США
+      - 🇮🇹 Италия
+      - 🇪🇸 Испания
+      - 🏳️ Неизвестно
+      - 🇮🇳 Индия
+      - 🇭🇰 Гонконг
+      - 🇹🇷 Турция
+      - 🇭🇰 Гонконг 3
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 1
+      - 🇸🇬 Сингапур
+      - 🇬🇧 Великобритания
       - 🇺🇸 США
+      - 🇮🇹 Италия
+      - 🇪🇸 Испания
+      - 🏳️ Неизвестно
+      - 🇮🇳 Индия
+      - 🇭🇰 Гонконг
+      - 🇹🇷 Турция
+      - 🇭🇰 Гонконг 3
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -38,14 +214,40 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 1
+      - 🇸🇬 Сингапур
+      - 🇬🇧 Великобритания
       - 🇺🇸 США
+      - 🇮🇹 Италия
+      - 🇪🇸 Испания
+      - 🏳️ Неизвестно
+      - 🇮🇳 Индия
+      - 🇭🇰 Гонконг
+      - 🇹🇷 Турция
+      - 🇭🇰 Гонконг 3
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
+      - 🇸🇬 Сингапур 1
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 1
+      - 🏳️ Неизвестно 1
+      - 🇸🇬 Сингапур
+      - 🇬🇧 Великобритания
       - 🇺🇸 США
+      - 🇮🇹 Италия
+      - 🇪🇸 Испания
+      - 🏳️ Неизвестно
+      - 🇮🇳 Индия
+      - 🇭🇰 Гонконг
+      - 🇹🇷 Турция
+      - 🇭🇰 Гонконг 3
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
