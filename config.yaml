@@ -1,4 +1,71 @@
-proxies: []
+proxies:
+  - name: 🇯🇵 Япония 1
+    type: vmess
+    server: 140.83.51.161
+    port: 25686
+    uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /cctv13.m3u8
+      headers:
+        Host: jp02.a0a.xyz
+  - name: 🇰🇷 Южная Корея
+    type: vmess
+    server: 146.56.112.110
+    port: 8888
+    uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇺🇸 США
+    type: vmess
+    server: 57.151.100.27
+    port: 10086
+    uuid: 550e8400-e29b-41d4-a716-446655440000
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇭🇰 Гонконг
+    type: vmess
+    server: 213.156.141.52
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇸🇬 Сингапур 1
+    type: vmess
+    server: 149.88.23.202
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇯🇵 Япония
+    type: vmess
+    server: 172.104.80.66
+    port: 22324
+    uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    alterId: 1
+    cipher: auto
+    udp: true
+    network: tcp
+  - name: 🇸🇬 Сингапур
+    type: vmess
+    server: 149.88.23.207
+    port: 18000
+    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: tcp
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -17,11 +84,23 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - DIRECT
+      - 🇯🇵 Япония 1
+      - 🇰🇷 Южная Корея
+      - 🇺🇸 США
+      - 🇭🇰 Гонконг
+      - 🇸🇬 Сингапур 1
+      - 🇯🇵 Япония
+      - 🇸🇬 Сингапур
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - DIRECT
+      - 🇯🇵 Япония 1
+      - 🇰🇷 Южная Корея
+      - 🇺🇸 США
+      - 🇭🇰 Гонконг
+      - 🇸🇬 Сингапур 1
+      - 🇯🇵 Япония
+      - 🇸🇬 Сингапур
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -32,14 +111,26 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - DIRECT
+      - 🇯🇵 Япония 1
+      - 🇰🇷 Южная Корея
+      - 🇺🇸 США
+      - 🇭🇰 Гонконг
+      - 🇸🇬 Сингапур 1
+      - 🇯🇵 Япония
+      - 🇸🇬 Сингапур
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - DIRECT
+      - 🇯🇵 Япония 1
+      - 🇰🇷 Южная Корея
+      - 🇺🇸 США
+      - 🇭🇰 Гонконг
+      - 🇸🇬 Сингапур 1
+      - 🇯🇵 Япония
+      - 🇸🇬 Сингапур
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
