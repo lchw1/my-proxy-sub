@@ -1,63 +1,4 @@
-proxies:
-  - name: 🇸🇬 Сингапур
-    type: vmess
-    server: 149.88.23.207
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇸🇬 Сингапур 1
-    type: vmess
-    server: 149.88.23.202
-    port: 18000
-    uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 1
-    type: vmess
-    server: 103.85.73.72
-    port: 2510
-    uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: null
-  - name: 🇭🇰 Гонконг
-    type: vmess
-    server: 213.156.141.52
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇪🇸 Испания
-    type: vmess
-    server: 85.90.217.42
-    port: 22324
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: tcp
-  - name: 🇭🇰 Гонконг 2
-    type: vmess
-    server: 47.238.130.197
-    port: 443
-    uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
-    alterId: 0
-    cipher: auto
-    udp: true
-    network: ws
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: n1753348736.lie5d.cyou
+proxies: []
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -76,21 +17,11 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇸🇬 Сингапур
-      - 🇸🇬 Сингапур 1
-      - 🇭🇰 Гонконг 1
-      - 🇭🇰 Гонконг
-      - 🇪🇸 Испания
-      - 🇭🇰 Гонконг 2
+      - DIRECT
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇸🇬 Сингапур
-      - 🇸🇬 Сингапур 1
-      - 🇭🇰 Гонконг 1
-      - 🇭🇰 Гонконг
-      - 🇪🇸 Испания
-      - 🇭🇰 Гонконг 2
+      - DIRECT
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -101,24 +32,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇸🇬 Сингапур
-      - 🇸🇬 Сингапур 1
-      - 🇭🇰 Гонконг 1
-      - 🇭🇰 Гонконг
-      - 🇪🇸 Испания
-      - 🇭🇰 Гонконг 2
+      - DIRECT
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇸🇬 Сингапур
-      - 🇸🇬 Сингапур 1
-      - 🇭🇰 Гонконг 1
-      - 🇭🇰 Гонконг
-      - 🇪🇸 Испания
-      - 🇭🇰 Гонконг 2
+      - DIRECT
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
