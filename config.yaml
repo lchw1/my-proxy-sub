@@ -1,11 +1,4 @@
-proxies:
-  - name: 🇬🇧 Великобритания
-    type: vless
-    server: 159.65.92.206
-    port: 27774
-    uuid: c83014e0-ad3e-4ebd-9e8f-8f7a1f6088d6
-    udp: true
-    network: tcp
+proxies: []
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -24,11 +17,11 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - 🇬🇧 Великобритания
+      - DIRECT
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - 🇬🇧 Великобритания
+      - DIRECT
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
@@ -39,14 +32,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇬🇧 Великобритания
+      - DIRECT
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇬🇧 Великобритания
+      - DIRECT
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
