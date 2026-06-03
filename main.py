@@ -10,7 +10,6 @@ import subprocess
 import urllib.request
 import json
 
-
 from typing import List, Dict, Any
 from ruamel.yaml import YAML
 
@@ -232,7 +231,6 @@ async def check_http(session: aiohttp.ClientSession, proxy: Dict[str, Any], api_
     async with sem:
         try:
             async with session.get(url, params=params, timeout=5) as resp:
-
                 if resp.status == 200:
                     data = await resp.json()
                     if "delay" in data:
@@ -251,7 +249,6 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
     logging.info(f"Starting Stage 2 HTTP latency check via Mihomo for {len(proxies)} proxies...")
     chunk_size = 400
-
     final_survivors = []
 
     for i in range(0, len(proxies), chunk_size):
@@ -281,7 +278,6 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         )
         await asyncio.sleep(5)
 
-
         sem = asyncio.Semaphore(50)
 
         async with aiohttp.ClientSession() as session:
@@ -309,13 +305,6 @@ async def stage_2_check(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 def guess_country(old_name: str, server: str) -> str:
     text_name = old_name.lower()
-
-
-
-
-
-
-
 
     match = re.search(r'\[([a-z]{2})\]', text_name)
     if match and match.group(1).upper() in COUNTRY_MAP:
@@ -352,18 +341,12 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
                 logging.debug(f"GeoIP Error: {e}")
             await asyncio.sleep(1.5)
 
-
-
-
-
-
-
+    filtered_proxies = []
     for p in proxies:
         host = p['server']
         old_name = p['name']
 
         cc = guess_country(old_name, host)
-
 
         if cc == 'UN':
             api_cc = geo_map.get(host, 'UN')
@@ -372,17 +355,49 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
             elif api_cc != 'UN':
                 cc = api_cc 
 
-
-
-
-
+        # Блокировка конфигов из Канады (CA)
+        if cc == 'CA':
+            logging.info(f"Прокси {old_name} ({host}) заблокирован и пропущен (Канада)")
+            continue
 
         flag, c_name = COUNTRY_MAP.get(cc, (cc_to_flag(cc), cc if cc != 'UN' else "Неизвестно"))
         p['name'] = f"{flag} {c_name}"
+        filtered_proxies.append(p)
 
+    return filtered_proxies
 
+def load_raw_configs(folder_path="raw_configs") -> List[Dict[str, Any]]:
+    """
+    Загружает конфиги 'без разбора' из локальной папки.
+    Читает текстовые файлы, находит vless ссылки (включая base64) и преобразует в структуры для YAML.
+    """
+    proxies = []
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+        logging.info(f"Создана пустая папка '{folder_path}' для ручных конфигов.")
+        return proxies
 
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        if os.path.isfile(file_path):
+            try:
+                with open(file_path, "r", encoding="utf-8") as f:
+                    content = f.read()
+                
+                if 'vless://' not in content:
+                    decoded = decode_base64(content)
+                    if 'vless://' in decoded:
+                        content = decoded
 
+                links = re.findall(r'(vless://[^\s"\'<>]+)', content)
+                for link in links:
+                    p = parse_vless_link(link)
+                    if p:
+                        proxies.append(p)
+            except Exception as e:
+                logging.error(f"Ошибка чтения файла {filename} в {folder_path}: {e}")
+
+    logging.info(f"Загружено напрямую {len(proxies)} конфигов без разбора из папки {folder_path}")
     return proxies
 
 def generate_yaml(proxies: List[Dict[str, Any]]):
@@ -474,7 +489,6 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
         yaml.dump(config, f)
     logging.info(f"Generated config.yaml with {len(proxies)} proxies.")
 
-    # Генерируем статистику для сайта
     stats = {"total": len(proxies), "countries": {}}
     for p in proxies:
         parts = p['name'].split(' ')
@@ -489,13 +503,22 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
     logging.info("Generated stats.json for website.")
 
 async def main():
+    # 1. Сбор и полная проверка стандартных прокси по ссылкам из sources.txt
     proxies = await get_all_proxies()
     proxies = deduplicate_proxies(proxies)
     proxies = await stage_1_check(proxies)
     proxies = await stage_2_check(proxies)
     proxies = await resolve_countries(proxies)
-    proxies = sanitize_proxy_names(proxies)
-    generate_yaml(proxies)
+    
+    # 2. Загрузка «сырых» ручных конфигов (Они полностью обходят чеки и бан Канады)
+    raw_proxies = load_raw_configs("raw_configs")
+    
+    # Склеиваем оба списка в один финальный массив
+    total_proxies = proxies + raw_proxies
+    
+    # 3. Финальная нормализация имен и запись в файлы
+    total_proxies = sanitize_proxy_names(total_proxies)
+    generate_yaml(total_proxies)
 
 if __name__ == "__main__":
     asyncio.run(main())
