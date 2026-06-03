@@ -202,7 +202,7 @@ def deduplicate_proxies(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             seen.add(key)
             unique.append(p)
     logging.info(f"Deduplicated down to {len(unique)} proxies")
-    return sanitize_proxy_names(unique)
+    return unique
 
 async def check_tcp(proxy: Dict[str, Any]) -> bool:
     try:
@@ -366,39 +366,94 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
 
     return filtered_proxies
 
-def load_raw_configs(folder_path="raw_configs") -> List[Dict[str, Any]]:
+async def load_raw_configs(folder_path="raw_configs") -> List[Dict[str, Any]]:
     """
-    Загружает конфиги 'без разбора' из локальной папки.
-    Читает текстовые файлы, находит vless ссылки (включая base64) и преобразует в структуры для YAML.
+    Загружает конфиги 'без разбора' из локальной папки или файла.
+    Умеет скачивать интернет-ссылки, если они добавлены внутрь файлов.
     """
     proxies = []
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
-        logging.info(f"Создана пустая папка '{folder_path}' для ручных конфигов.")
         return proxies
 
-    for filename in os.listdir(folder_path):
-        file_path = os.path.join(folder_path, filename)
-        if os.path.isfile(file_path):
+    files_to_read = []
+    if os.path.isfile(folder_path):
+        files_to_read.append(folder_path)
+    else:
+        for filename in os.listdir(folder_path):
+            file_path = os.path.join(folder_path, filename)
+            if os.path.isfile(file_path) and filename != ".gitkeep":
+                files_to_read.append(file_path)
+
+    async def fetch_url(session, url):
+        try:
+            headers = {"User-Agent": "v2rayNG/1.8.12"}
+            async with session.get(url, headers=headers, timeout=15) as r:
+                if r.status == 200:
+                    return await r.text()
+        except Exception as e:
+            logging.error(f"Ошибка скачивания ссылки {url}: {e}")
+        return ""
+
+    async with aiohttp.ClientSession() as session:
+        for file_path in files_to_read:
             try:
                 with open(file_path, "r", encoding="utf-8") as f:
-                    content = f.read()
+                    lines = [line.strip() for line in f if line.strip()]
                 
-                if 'vless://' not in content:
-                    decoded = decode_base64(content)
-                    if 'vless://' in decoded:
-                        content = decoded
+                for line in lines:
+                    if line.startswith(("http://", "https://")):
+                        logging.info(f"Скачиваем приватную подписку напрямую: {line}")
+                        content = await fetch_url(session, line)
+                    else:
+                        content = line
 
-                links = re.findall(r'(vless://[^\s"\'<>]+)', content)
-                for link in links:
-                    p = parse_vless_link(link)
-                    if p:
-                        proxies.append(p)
+                    if content:
+                        if 'vless://' not in content:
+                            decoded = decode_base64(content)
+                            if 'vless://' in decoded: content = decoded
+
+                        links = re.findall(r'(vless://[^\s"\'<>]+)', content)
+                        for link in links:
+                            p = parse_vless_link(link)
+                            if p: proxies.append(p)
             except Exception as e:
-                logging.error(f"Ошибка чтения файла {filename} в {folder_path}: {e}")
+                logging.error(f"Ошибка обработки файла {file_path}: {e}")
 
     logging.info(f"Загружено напрямую {len(proxies)} конфигов без разбора из папки {folder_path}")
     return proxies
+
+def deduplicate_total_list(checked_proxies: List[Dict[str, Any]], raw_proxies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Система дубликатов: объединяет проверенные прокси и сырые конфиги,
+    исключая любые технические совпадения (server:port:uuid).
+    Приоритет отдается проверенным прокси (чтобы сохранить флаги и страны).
+    """
+    seen_keys = set()
+    final_list = []
+    
+    # 1. Сначала добавляем проверенные прокси из источников
+    for p in checked_proxies:
+        key = f"{p.get('server')}:{p.get('port')}:{p.get('uuid')}"
+        if key not in seen_keys:
+            seen_keys.add(key)
+            final_list.append(p)
+            
+    # 2. Затем добавляем прокси из папки, отсекая дубли
+    raw_skipped = 0
+    for p in raw_proxies:
+        key = f"{p.get('server')}:{p.get('port')}:{p.get('uuid')}"
+        if key not in seen_keys:
+            seen_keys.add(key)
+            final_list.append(p)
+        else:
+            raw_skipped += 1
+            
+    if raw_skipped > 0:
+        logging.info(f"[Система дубликатов] Удалено {raw_skipped} повторных прокси из папки raw_configs.")
+    logging.info(f"[Система дубликатов] Итого уникальных прокси пойдёт в сборку: {len(final_list)}")
+    
+    return final_list
 
 def generate_yaml(proxies: List[Dict[str, Any]]):
     if not proxies:
@@ -510,13 +565,13 @@ async def main():
     proxies = await stage_2_check(proxies)
     proxies = await resolve_countries(proxies)
     
-    # 2. Загрузка «сырых» ручных конфигов (Они полностью обходят чеки и бан Канады)
-    raw_proxies = load_raw_configs("raw_configs")
+    # 2. Загрузка ручных конфигов/подписок из папки raw_configs
+    raw_proxies = await load_raw_configs("raw_configs")
     
-    # Склеиваем оба списка в один финальный массив
-    total_proxies = proxies + raw_proxies
+    # 3. Применение системы умной дедупликации
+    total_proxies = deduplicate_total_list(proxies, raw_proxies)
     
-    # 3. Финальная нормализация имен и запись в файлы
+    # 4. Финальная нормализация уникальных имен и запись в файлы
     total_proxies = sanitize_proxy_names(total_proxies)
     generate_yaml(total_proxies)
 
