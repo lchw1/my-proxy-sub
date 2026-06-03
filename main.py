@@ -72,6 +72,13 @@ COUNTRY_KEYWORDS = {
     "brazil": "BR", "бразилия": "BR"
 }
 
+# Оптимизированные поисковые дорки для точного сбора
+GITHUB_SEARCH_QUERIES = [
+    "vless:// extension:txt pushed:>2025-01-01",
+    "vless:// extension:yaml pushed:>2025-01-01",
+    "vless:// filename:proxies.txt",
+]
+
 def cc_to_flag(cc: str) -> str:
     if not cc or len(cc) != 2 or cc == 'UN':
         return "🏳️"
@@ -366,6 +373,85 @@ async def resolve_countries(proxies: List[Dict[str, Any]]) -> List[Dict[str, Any
 
     return filtered_proxies
 
+async def fetch_raw_file(session: aiohttp.ClientSession, url: str) -> str:
+    try:
+        async with session.get(url, timeout=10) as resp:
+            if resp.status == 200:
+                return await resp.text()
+    except Exception:
+        pass
+    return ""
+
+async def search_github_proxies(token: str = None) -> List[Dict[str, Any]]:
+    """
+    Ищет публичные файлы с VLESS конфигами через GitHub Search API.
+    Реализована защита лимитов: максимум 500 ссылок.
+    """
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "my-proxy-sub-bot"
+    }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
+    found_links = []
+
+    async with aiohttp.ClientSession() as session:
+        for query in GITHUB_SEARCH_QUERIES:
+            url = "https://api.github.com/search/code"
+            params = {"q": query, "per_page": 10, "sort": "indexed", "order": "desc"}
+
+            try:
+                async with session.get(url, headers=headers, params=params, timeout=15) as resp:
+                    if resp.status == 403:
+                        logging.warning("GitHub API rate limit hit. Передайте GITHUB_TOKEN.")
+                        break
+                    if resp.status != 200:
+                        logging.warning(f"GitHub API вернул {resp.status} для запроса: {query}")
+                        continue
+
+                    data = await resp.json()
+                    items = data.get("items", [])
+                    logging.info(f"GitHub поиск '{query[:40]}...': найдено {len(items)} файлов")
+
+                    raw_tasks = []
+                    for item in items:
+                        raw_url = item.get("html_url", "").replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+                        if raw_url:
+                            raw_tasks.append(fetch_raw_file(session, raw_url))
+
+                    raw_contents = await asyncio.gather(*raw_tasks)
+                    for content in raw_contents:
+                        if content:
+                            if 'vless://' not in content:
+                                decoded = decode_base64(content)
+                                if 'vless://' in decoded: content = decoded
+                                
+                            links = re.findall(r'(vless://[^\s"\'<>\n]+)', content)
+                            found_links.extend(links)
+
+            except Exception as e:
+                logging.error(f"Ошибка GitHub Search: {e}")
+
+            # Защитный лимит на переполнение пула прокси
+            if len(found_links) > 500:
+                logging.info("[GitHub Search Hack] Достигнут лимит 500, прерываем.")
+                break
+
+            await asyncio.sleep(2)
+
+    logging.info(f"GitHub Spider: найдено {len(found_links)} VLESS ссылок")
+
+    proxies = []
+    # Обрезаем до 500 уникальных элементов
+    for link in list(set(found_links))[:500]:
+        p = parse_vless_link(link)
+        if p:
+            proxies.append(p)
+
+    return proxies
+
 async def load_raw_configs(folder_path="raw_configs") -> List[Dict[str, Any]]:
     """
     Загружает конфиги 'без разбора' из локальной папки или файла.
@@ -432,14 +518,12 @@ def deduplicate_total_list(checked_proxies: List[Dict[str, Any]], raw_proxies: L
     seen_keys = set()
     final_list = []
     
-    # 1. Сначала добавляем проверенные прокси из источников
     for p in checked_proxies:
         key = f"{p.get('server')}:{p.get('port')}:{p.get('uuid')}"
         if key not in seen_keys:
             seen_keys.add(key)
             final_list.append(p)
             
-    # 2. Затем добавляем прокси из папки, отсекая дубли
     raw_skipped = 0
     for p in raw_proxies:
         key = f"{p.get('server')}:{p.get('port')}:{p.get('uuid')}"
@@ -558,20 +642,27 @@ def generate_yaml(proxies: List[Dict[str, Any]]):
     logging.info("Generated stats.json for website.")
 
 async def main():
-    # 1. Сбор и полная проверка стандартных прокси по ссылкам из sources.txt
+    # 1. Сбор стандартных прокси по ссылкам из sources.txt
     proxies = await get_all_proxies()
+    
+    # 2. GitHub Spider (токен автоматически подтягивается из окружения Actions)
+    github_token = os.environ.get("GITHUB_TOKEN")
+    github_proxies = await search_github_proxies(token=github_token)
+    proxies.extend(github_proxies)
+    
+    # Полная проверка всей добытой кучи (удаление дубликатов, тесты связи, бан Канады)
     proxies = deduplicate_proxies(proxies)
     proxies = await stage_1_check(proxies)
     proxies = await stage_2_check(proxies)
     proxies = await resolve_countries(proxies)
     
-    # 2. Загрузка ручных конфигов/подписок из папки raw_configs
+    # 3. Raw конфиги (идут напрямую в обход проверок)
     raw_proxies = await load_raw_configs("raw_configs")
     
-    # 3. Применение системы умной дедупликации
+    # 4. Применение системы умной кросс-дедупликации
     total_proxies = deduplicate_total_list(proxies, raw_proxies)
     
-    # 4. Финальная нормализация уникальных имен и запись в файлы
+    # 5. Единственная финальная нормализация имен и запись файлов
     total_proxies = sanitize_proxy_names(total_proxies)
     generate_yaml(total_proxies)
 
