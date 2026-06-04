@@ -1,98 +1,17 @@
 proxies:
-  - name: Италия🇮🇹🔃
+  - name: 🇺🇦 Украина
     type: vless
-    server: 72.56.1.193
-    port: 443
-    uuid: 13416906-47f7-44f7-b2c6-c585fdfbd236
+    server: 95.164.44.237
+    port: 49790
+    uuid: 99210efd-1a49-4085-add3-d1d2e4fdd6c2
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: ZA9FAKAJSSVJ0EwM_WDD5D7wCwR7vUpEsrcTf5eirj4
-      short-id: e170b1cde00a4a90
-    servername: b.mediastreamer.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇫🇷 Франция 3
-    type: vless
-    server: 66.201.4.248
-    port: 443
-    uuid: 6048cd5b-621f-40c6-bf81-3855e4c069b1
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: L6EU_GCGptVyjp1Q60ZMmRAZVCCx6EVbW-gyv1Zk3zc
-      short-id: fad0a8e7
-    servername: usw.org
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇫🇮 Финляндия 5
-    type: vless
-    server: 45.15.152.167
-    port: 443
-    uuid: 180a65ce-f309-47ec-b8ee-2f7a9a8a0fe2
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 2lReHLDD5UCpT8FyBLPyrrIbi6MNKDBTArtCwI3NUQA
-      short-id: 4b1b
+      public-key: Xj6-HabAfXfu2dIz1orkRH5rAlbGMs0YMc7Zo4aARlU
+      short-id: 9d90d7ada8
     servername: yahoo.com
     client-fingerprint: chrome
-  - name: 🇷🇺 Россия 6
-    type: vless
-    server: 45.12.75.242
-    port: 26424
-    uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-      short-id: 23103e1e
-    servername: ya.ru
-    client-fingerprint: chrome
-  - name: 🇺🇸 США 13
-    type: vless
-    server: 2.26.88.0
-    port: 2040
-    uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
-      short-id: 53197c66aef53c44
-    servername: tradingview.com
-    client-fingerprint: qq
-  - name: 🇺🇸 США 9
-    type: vless
-    server: 23.26.0.148
-    port: 8443
-    uuid: 07ab8a15-a4a5-4a03-92b4-4e6a2e9aa5e7
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 3JGwSDrfkiCPdU3rvQP5m0z4Ag_UB_2w8Qq3VMXmo28
-      short-id: abc323
-    servername: sun6-22.userapi.com
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 16
-    type: vless
-    server: 144.124.253.4
-    port: 8443
-    uuid: 1cb91b20-49cc-59ff-8393-91808a4deede
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM
-      short-id: ffffffffff
-    servername: www.ozon.ru
-    client-fingerprint: random
   - name: Люксембург🇱🇺🔃
     type: vless
     server: 188.225.72.191
@@ -103,331 +22,38 @@ proxies:
     tls: true
     reality-opts:
       public-key: O1wt2XHNPwOjKEM8bXpLA3vtphuxeYlo6ct2kPjrTy0
-      short-id: bc9fedf23582c1
+      short-id: e4389a88
     servername: hhg.mediastreamer.ru
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇯🇵 Япония 7
+  - name: Нидерланды🇳🇱🟢LTE
     type: vless
-    server: 212.135.211.105
+    server: 84.201.148.135
     port: 443
-    uuid: 99e50b7b-e551-46b3-b74f-d39806835b10
+    uuid: 8cc7f785-c95a-4f34-b85f-dab4c777db33
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: 6bKr3dHLP8VjrlVFBNTAM3Bj0j0iGubvzTDPTmK08FI
-      short-id: ecf07d87f0521a0e
-    servername: www.cloudflare.com
+      public-key: I2_kghhhaGXa1t8_kWnRazwMd3q4lJpCzEUnXBYZN3E
+      short-id: 0d665f0a5b
+    servername: st.vk.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: Англия🇬🇧🔃
+  - name: 🇱🇻 LV 2
     type: vless
-    server: 147.45.184.118
-    port: 443
-    uuid: 15762fc8-d86b-4e0e-b69f-14917b64d754
+    server: 90.156.255.198
+    port: 51114
+    uuid: 8b575b35-3c7c-42b0-ac80-2aa6b0d7717c
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: 7JFfPdSXVW6a7gERNUG3tSqSf2i5vbiOZMjfFIkJH1Q
-      short-id: 3822a0f941fcf0a3
-    servername: oliv.mediastreamer.online
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇫🇷 Франция 4
-    type: vless
-    server: 194.33.34.167
-    port: 443
-    uuid: 391ff971-a901-415e-b0f1-e0c0047e7a24
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: enBIOTqlP6CHTvic3CLgpUd_AcJAAbAQIa-oFIk4dVU
-      short-id: 302e
+      public-key: lf7NJGZAcj3b-YdbsmD6oEISr0dZRjp_gM8ZhLHwb0U
+      short-id: 772e
     servername: yahoo.com
     client-fingerprint: chrome
-  - name: 🇳🇱 Нидерланды 11
-    type: vless
-    server: 144.31.157.56
-    port: 443
-    uuid: 3e0c34a4-1c38-4d93-88c6-5155e81f8b52
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: D-7qX4fqUFKDS2dQWFgGT4fXJnABnpM6IkU8SDHLMC0
-      short-id: 6ba85179e30d4fc2
-    servername: snapp.ir
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: Болгария🇧🇬🔃
-    type: vless
-    server: 185.76.241.156
-    port: 443
-    uuid: 4d1995d0-89f6-4778-b345-70654ec2f004
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: M2DqJbk7FUmkt95cIX_Ue01Ae9LI6WGgcqHW-XIwi3I
-      short-id: abb3538973
-    servername: iis.mediastreamer.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 📆
-    type: vless
-    server: localhost
-    port: 80
-    uuid: xxxxxxxxxx1
-    udp: true
-    network: tcp
-  - name: 🇸🇬 Сингапур 2
-    type: vless
-    server: 18.143.177.226
-    port: 22472
-    uuid: 4b79c2ed-528b-45e4-8997-e5d9de81e8e2
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: DEvHMT3zhxUxnuqJxq88Z_8413kiseb7YtzU719D4kg
-      short-id: 45cb8dfc393d9191
-    servername: www.sony.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: 🇩🇪 Германия 7
-    type: vless
-    server: 91.107.160.147
-    port: 80
-    uuid: 6af0d18d-30ac-4002-a25e-0a16ba00d637
-    udp: true
-    network: tcp
-    tls: true
-    servername: mrsibil.ezgateway.net
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
-  - name: 🇫🇮 Финляндия 1
-    type: vless
-    server: 65.109.192.37
-    port: 10964
-    uuid: 8926050b-c552-4e38-9a74-ca9658a3b078
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: LbSYmRt8INMMX6h_-Pzso_Qh2GfHcFOaoyV4IgBKPzs
-      short-id: 4e5e
-    servername: www.yahoo.com
-    client-fingerprint: chrome
-  - name: 🇬🇧 Великобритания 7
-    type: vless
-    server: 57.129.130.211
-    port: 52014
-    uuid: 00000000-0000-4000-8000-000000000000
-    udp: true
-    network: ws
-    tls: true
-    servername: ooa858iqkhza12.mesa.ip-ddns.com
-    ws-opts:
-      path: /@Marisa_kristifp=chrome
-      headers:
-        Host: ooa858iqkhza12.mesa.ip-ddns.com
-  - name: Германия🇩🇪2.0🟢LTE
-    type: vless
-    server: 46.182.24.52
-    port: 443
-    uuid: 27d5937d-d398-4923-8c09-b5b9a6befe3e
-    udp: true
-    network: grpc
-    tls: true
-    reality-opts:
-      public-key: wx54k6q59xd0Y50zWRpyQfZRC-fe0w0DYL-twuuV6l4
-      short-id: f8a9e52548
-    servername: ssdg.mediastreamer.online
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: ''
-  - name: 🇫🇮 Финляндия
-    type: vless
-    server: 193.233.23.196
-    port: 26048
-    uuid: 3007b043-acdf-43a4-900e-c7c015406f89
-    udp: true
-    network: tcp
-  - name: 🇩🇪 Германия 9
-    type: vless
-    server: 91.107.160.147
-    port: 80
-    uuid: b2abc854-ab55-42c6-b87a-0f8d958f63dc
-    udp: true
-    network: tcp
-    tls: true
-    servername: mrsibil.ezgateway.net
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
-  - name: 🇳🇱 Нидерланды 8
-    type: vless
-    server: 51.158.206.98
-    port: 23576
-    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-      short-id: '01'
-    servername: fuck.rkn
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: Литва🇱🇹🟢LTE
-    type: vless
-    server: 51.250.97.141
-    port: 443
-    uuid: c0cb0901-8075-4cae-ab2e-f5ee559a3ce7
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: _XzFwWlJRkJVyLKlHQN9bDzFKuNSwK6yVmV8qMQfniA
-      short-id: 79b71412df41df
-    servername: eh.vk.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇯🇵 Япония
-    type: vless
-    server: 96.62.214.87
-    port: 29745
-    uuid: f6f44df3-d229-4dd8-a944-e7bc3a4c6b94
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: zSOPQOHAiacl2VMETsLXTE_Gln5ECllb6YKy1oyv1V0
-      short-id: c3
-    servername: www.google.com
-    client-fingerprint: random
-  - name: 🇩🇪 Германия 3
-    type: vless
-    server: 91.107.191.12
-    port: 29376
-    uuid: 03bc875d-0d8e-49b6-9094-89a8159e65ee
-    udp: true
-    network: tcp
-  - name: 🇩🇪 Германия 17
-    type: vless
-    server: 185.189.58.195
-    port: 22096
-    uuid: 1cb6f6ef-c398-4193-9f66-8de17f9bd004
-    udp: true
-    network: ws
-    tls: true
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
-    ws-opts:
-      path: /ws
-      headers:
-        Host: 185.189.58.195
-  - name: 🇷🇺 Россия
-    type: vless
-    server: 213.108.2.130
-    port: 443
-    uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: c9eCHF41FReFLIdarpg8M5edw4_E133EJBzrvYS02Ck
-      short-id: cd9a5f0edff48da4
-    servername: cloudflare.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇺🇸 США 3
-    type: vless
-    server: 146.235.219.13
-    port: 2093
-    uuid: 00000000-0000-4000-8000-000000000000
-    udp: true
-    network: ws
-    tls: true
-    servername: ooa858iqkhza12.mesa.ip-ddns.com
-    ws-opts:
-      path: /@Marisa_kristifp=chrome
-      headers:
-        Host: ooa858iqkhza12.mesa.ip-ddns.com
-  - name: 🇳🇱 Нидерланды 14
-    type: vless
-    server: 163.172.214.188
-    port: 80
-    uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-    udp: true
-    network: ws
-    ws-opts:
-      path: /vless/
-      headers:
-        Host: 163.172.214.188
-  - name: 🇬🇧 Великобритания 12
-    type: vless
-    server: 31.76.126.129
-    port: 2040
-    uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
-      short-id: 53197c66aef53c44
-    servername: tradingview.com
-    client-fingerprint: qq
-  - name: 🇸🇬 Сингапур 4
-    type: vless
-    server: 18.143.151.84
-    port: 38967
-    uuid: 20ae58df-d562-40b3-908c-21b4881315d4
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: TFAGMtH1LB503O0SJadbPxBs8S_LACshWQpEIAyuS1g
-      short-id: 9b1cdc34dd5664
-    servername: www.icloud.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Латвия🇱🇻🔃
-    type: vless
-    server: 109.196.99.160
-    port: 443
-    uuid: 0abe80f7-65ed-48ab-a667-9c74c048d0e2
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: kllk-UkQtt0N5p1ktDPnkCfLukY3YcR9gpNx0-FGZzc
-      short-id: 1b
-    servername: ccf.stackline.online
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇩🇪 Германия 16
-    type: vless
-    server: 132.243.251.219
-    port: 2040
-    uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
-    udp: true
-    network: raw
-    tls: true
-    reality-opts:
-      public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
-      short-id: 53197c66aef53c44
-    servername: tradingview.com
-    client-fingerprint: chrome
-  - name: 🇬🇧 Великобритания 2
+  - name: 🇬🇧 Великобритания 3
     type: vless
     server: 31.76.106.50
     port: 8443
@@ -441,52 +67,20 @@ proxies:
     servername: roz1r.skystreamgame.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇬🇧 Великобритания
+  - name: 🇬🇧 Великобритания 1
     type: vless
-    server: 159.65.92.206
-    port: 27774
-    uuid: c83014e0-ad3e-4ebd-9e8f-8f7a1f6088d6
+    server: 3.8.160.120
+    port: 18633
+    uuid: 5da5bc00-ea44-462e-bdb7-7687346ad039
     udp: true
     network: tcp
-  - name: 🇯🇵 Япония 3
-    type: vless
-    server: 116.80.44.144
-    port: 27724
-    uuid: ebd8539d-e249-4a39-8f90-e8585e8cc35e
-    udp: true
-    network: raw
     tls: true
     reality-opts:
-      public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
-    servername: www.yahoo.co.jp
-    client-fingerprint: chrome
+      public-key: tpovASeNxNkqDfPZhr2raGUY6pis-9XSLCB6DrIEU1g
+      short-id: d9029b790f10b2e2
+    servername: www.yahoo.com
+    client-fingerprint: firefox
     flow: xtls-rprx-vision
-  - name: 🇺🇸 США 11
-    type: vless
-    server: 31.207.5.73
-    port: 443
-    uuid: 6d088fbd-528d-4f2a-be26-317dcda3c6ee
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: HlxgAXuwwby0lujjT2LKBPF0udWK4SVjtMPyKtiNdEw
-      short-id: 232cd9a21e42
-    servername: www.amd.com
-    client-fingerprint: chrome
-  - name: 🇵🇱 Польша 4
-    type: vless
-    server: 45.140.204.119
-    port: 443
-    uuid: 30143e07-b734-4bd6-867c-7daf4782cccb
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: vl5WQd9UDA3DvLxPPS1yF9ivUipxkxoxhaBRHpnyLho
-      short-id: 67fb
-    servername: yahoo.com
-    client-fingerprint: chrome
   - name: 🇷🇺 Россия 7
     type: vless
     server: 62.152.60.2
@@ -501,36 +95,68 @@ proxies:
     servername: helper-test.x5.ru
     client-fingerprint: firefox
     flow: xtls-rprx-vision
-  - name: 🇫🇷 Франция 2
+  - name: 🇳🇱 Нидерланды 10
     type: vless
-    server: 194.226.169.189
-    port: 443
-    uuid: 701bab46-9453-41e6-ad47-009aa3df47e9
+    server: 144.124.253.4
+    port: 8443
+    uuid: 1cb91b20-49cc-59ff-8393-91808a4deede
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
-      short-id: 3c6fc84d
-    servername: stats.vk-portal.net
-    client-fingerprint: chrome
+      public-key: bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM
+      short-id: ffffffffff
+    servername: www.ozon.ru
+    client-fingerprint: random
+  - name: 🇬🇧 Великобритания 6
+    type: vless
+    server: 31.76.53.0
+    port: 443
+    uuid: 749a5df1-2d12-45cf-80f3-f85ea6b2e405
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8
+    servername: google.com
+    client-fingerprint: random
     flow: xtls-rprx-vision
-  - name: 🇵🇱 Польша 1
+  - name: 🇳🇱 Нидерланды 15
     type: vless
-    server: 45.140.204.121
+    server: 62.238.32.25
     port: 443
-    uuid: 416560bf-9ebb-4a43-96b6-e353e3d3572a
+    uuid: 1b9e301d-cecd-4eb1-8b36-eef811c2696d
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: MYU0vSA5rfofPjIwynqoPsr60F_swjCHCDX0yJPKwT0
-      short-id: 08bf
-    servername: yahoo.com
+      public-key: 3LUIM_6cYceTgNt6LWnR8YSVrenpLsh-FIGDrmfjjwc
+      short-id: 5e841fab
+    servername: yastatic.net
     client-fingerprint: chrome
-  - name: 🇳🇱 Нидерланды 6
+  - name: 🇬🇧 Великобритания 2
     type: vless
-    server: 51.158.206.103
+    server: 51.89.229.134
+    port: 443
+    uuid: 53821f3c-5b03-456a-89f3-f8379f130752
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 4e4FI0siWxFtLCRCVDQurn1wLTuvKWhRY0zj1SaUcyw
+      short-id: a13a7cc5
+    servername: www.samsung.com
+    client-fingerprint: firefox
+  - name: App not supported
+    type: vless
+    server: 0.0.0.0
+    port: 1
+    uuid: 00000000-0000-0000-0000-000000000000
+    udp: true
+    network: tcp
+  - name: 🇳🇱 Нидерланды
+    type: vless
+    server: 51.158.206.98
     port: 23576
     uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     udp: true
@@ -542,128 +168,72 @@ proxies:
     servername: fuck.rkn
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇵🇱 Польша
+  - name: 🇳🇱 Нидерланды 18
     type: vless
-    server: 77.239.114.176
-    port: 19105
-    uuid: fb9e4c3a-936f-44c7-ac89-d5d422690fcf
+    server: 89.124.78.248
+    port: 8880
+    uuid: 92ecaa18-1c6d-4eb3-943c-c904571106c5
+    udp: true
+    network: tcp
+  - name: 🇬🇧 Великобритания 9
+    type: vless
+    server: 140.238.100.35
+    port: 1114
+    uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: IS6TNMONlIVvcUBvo2RXQvx2Jopcv4wzPyZhxPhWqT8
-      short-id: e6
-    servername: www.microsoft.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇫🇷 Франция 8
-    type: vless
-    server: 13.38.52.64
-    port: 15469
-    uuid: deb96819-bdaa-4f52-a536-d4751290ce47
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: Mr1b8zNNR1uPtf8dgfze_kBJbaVimS0NhJL0ff_2qm4
-      short-id: 0f8d9583dd332274
+      public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
+      short-id: 79a1e14b
     servername: yahoo.com
     client-fingerprint: firefox
     flow: xtls-rprx-vision
-  - name: 🇷🇺 Россия 5
+  - name: 🇸🇪 Швеция 1
     type: vless
-    server: 193.168.46.180
-    port: 443
-    uuid: ad02a6eb-52e1-468f-8316-aaa1f4f72d44
+    server: 109.120.132.142
+    port: 40617
+    uuid: d8d05386-e381-40a4-bb63-715c208b3ed3
+    udp: true
+    network: tcp
+  - name: 🇰🇷 Южная Корея 1
+    type: vless
+    server: 61.111.247.233
+    port: 34045
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
-      short-id: c1a7e9b4711d5f60
-    servername: rruu.persik.host
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: 🇺🇸 США 2
-    type: vless
-    server: 141.193.213.30
-    port: 443
-    uuid: a6d5a889-2a4a-4b31-8892-e0820188e921
-    udp: true
-    network: ws
-    tls: true
-    servername: www.genflix.co.id.cyylr.eu.cc
-    ws-opts:
-      path: /my-wbv
-      headers:
-        Host: www.genflix.co.id.cyylr.eu.cc
-  - name: 🇩🇪 Германия 13
-    type: vless
-    server: 178.215.238.148
-    port: 8443
-    uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
-      short-id: 478dc6
-    servername: eh.vk.com
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+      short-id: e8ab71d0
+    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
     client-fingerprint: chrome
-  - name: 🇸🇬 Сингапур 3
+  - name: 🇫🇷 Франция 8
     type: vless
-    server: 18.141.49.252
-    port: 35308
-    uuid: 779d227c-f7be-4b9d-a4a9-1197c734b4e7
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 4g1kpdmdbN6aNxeBYMj9WherunH9JSXsI_nKZTDiewE
-      short-id: fef8dcb8cafe30
-    servername: www.tesla.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 3
-    type: vless
-    server: 144.31.135.162
-    port: 9443
-    uuid: b54d36d1-43c3-4b8f-a5f8-cf6504db0562
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: MbYR2O0XBSeG74gGYpFIofXsILcf5lG2gc36GyURBXQ
-      short-id: 0199436dd359351b
-    servername: apple.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇷🇺 Россия 1
-    type: vless
-    server: 5.183.253.171
+    server: 194.33.34.167
     port: 443
-    uuid: 31fb98b7-e7a1-4b56-8c6a-3f060f06393c
+    uuid: 391ff971-a901-415e-b0f1-e0c0047e7a24
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28
-      short-id: '8248954896'
-    servername: eh.vk.com
+      public-key: enBIOTqlP6CHTvic3CLgpUd_AcJAAbAQIa-oFIk4dVU
+      short-id: 302e
+    servername: yahoo.com
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 10
+  - name: 🐢Бельгия🇧🇪🟢LTE
     type: vless
-    server: 94.156.117.79
-    port: 8443
-    uuid: 3dc68a32-43aa-4b5e-a60f-e11b27d03edc
+    server: 176.122.25.48
+    port: 443
+    uuid: 7a3cd1c3-161e-42ef-bd65-4094f16ab71a
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: XEOvGJLIn0iPDT1R71F8FCKet0XHg-NTn0sSxurlvV8
-      short-id: ce
-    servername: www.google.com
+      public-key: JH1FteoTVW6inmHDUgZATEXXxctafAXV2i7AFq352kc
+      short-id: '89186167'
+    servername: eh.vk.ru
     client-fingerprint: chrome
     flow: xtls-rprx-vision
   - name: YouTube_noADS-NEW📺
@@ -680,281 +250,101 @@ proxies:
     servername: cd.mediastreamer.ru
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: Дания🇩🇰🔃
+  - name: 🇨🇭 Швейцария 2
     type: vless
-    server: 217.149.29.108
+    server: 138.124.244.248
     port: 443
-    uuid: 5ab13648-fcb5-4a2f-87cc-d7b789b77859
+    uuid: 476caa1d-7c04-48ab-8de5-2c1af0d13a66
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: bN3dWWgQK1zuiuIGCeirpdO3RSWyoipkJM3u3SmqBBo
-      short-id: 7a95ed722f
-    servername: zz.mediastreamer.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇬🇧 Великобритания 6
-    type: vless
-    server: 31.76.53.0
-    port: 443
-    uuid: 749a5df1-2d12-45cf-80f3-f85ea6b2e405
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8
-    servername: google.com
-    client-fingerprint: random
-    flow: xtls-rprx-vision
-  - name: США🇺🇸🔃
-    type: vless
-    server: 186.246.6.39
-    port: 443
-    uuid: 87cc6a70-25e7-4884-a740-ebd1dfeb37bc
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: uIqBaMLxnJiQX5gqZUMRbxm-s51m4NcGxjyYuV89RQ0
-      short-id: 06ab963c5827
-    servername: kk.stackline.online
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: ➡️t.me/Strelka_vpn_bot
-    type: vless
-    server: localhost
-    port: 444
-    uuid: xxxxxxxxxx1
-    udp: true
-    network: tcp
-  - name: 🇺🇸 США 15
-    type: vless
-    server: 191.44.113.251
-    port: 443
-    uuid: b95dd8e5-2758-408f-be99-9362eecee609
-    udp: true
-    network: raw
-    tls: true
-    reality-opts:
-      public-key: BoWKSM1aSfcTRgKX_kZYPlauG0jLIqku3zPBAiHpUgs
-      short-id: 5ea7e22e889dabc5
+      public-key: PYX0lu3m0L_h28eW4186s63gRFHXoTc3K9wKeFewDUQ
+      short-id: e9a8
     servername: yahoo.com
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇵🇱 Польша 5
+  - name: 🇵🇱 Польша 1
     type: vless
-    server: 151.115.98.117
-    port: 8443
-    uuid: 07ab8a15-a4a5-4a03-92b4-4e6a2e9aa5e7
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: RlAi5R84YF3U7llMLLoEui7R7nXhNWYWWy8Zukoo0m8
-      short-id: 019ae4dcc8f3aae7
-    servername: api-maps.yandex.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇩🇪 Германия 12
-    type: vless
-    server: 78.17.147.65
+    server: 45.140.204.121
     port: 443
-    uuid: b67ed271-5a34-4d07-9970-f8ba27ca2c8a
+    uuid: 416560bf-9ebb-4a43-96b6-e353e3d3572a
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: gXc2c9NIWxhUTb7HoBCjvo-uB1L4iQj4TH38g4YhxHE
-      short-id: fcd9787f
-    servername: www.microsoft.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Нидерланды🇳🇱🟢LTE
-    type: vless
-    server: 84.201.148.135
-    port: 443
-    uuid: 8cc7f785-c95a-4f34-b85f-dab4c777db33
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: I2_kghhhaGXa1t8_kWnRazwMd3q4lJpCzEUnXBYZN3E
-      short-id: 4d6c8340
-    servername: st.vk.com
+      public-key: MYU0vSA5rfofPjIwynqoPsr60F_swjCHCDX0yJPKwT0
+      short-id: 08bf
+    servername: yahoo.com
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇩🇪 Германия 11
+  - name: 🇱🇻 LV 3
     type: vless
-    server: 108.165.236.173
+    server: 77.73.238.191
+    port: 16622
+    uuid: f2e9df1b-e0ba-4b37-a301-6aab8662c926
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: E5N_ckakvqgTOjiQ6Rmuwz1fchiT1-J3tH4cbzcH_GQ
+      short-id: 1c01d60ea915
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇺🇸 США
+    type: vless
+    server: 141.193.213.30
+    port: 443
+    uuid: d2992c0d-53cb-489c-85af-5eb80e6d9e79
+    udp: true
+    network: ws
+    tls: true
+    servername: blog.webex.com.cyylr.eu.cc
+    ws-opts:
+      path: /in-do
+      headers:
+        Host: blog.webex.com.cyylr.eu.cc
+  - name: 🇬🇧 Великобритания 7
+    type: vless
+    server: 31.76.85.88
     port: 2040
     uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
     udp: true
-    network: tcp
+    network: raw
     tls: true
     reality-opts:
       public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
       short-id: 53197c66aef53c44
     servername: tradingview.com
-    client-fingerprint: qq
-  - name: Германия🇩🇪🟢LTE
+    client-fingerprint: chrome
+  - name: Литва🇱🇹🔃
     type: vless
-    server: 84.201.146.244
+    server: 72.56.232.62
     port: 443
-    uuid: 53d4a8b3-938b-4cae-8d71-39c4ceb41124
+    uuid: 7866d923-5b99-4d0a-8e89-89714eefecab
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: EO_bdRRKRGch6S0usr_4OCEBqV7B70p2ixSoG6OW-UU
-      short-id: d4765044f0
+      public-key: wrBqKQI9sO6Do95nBOVWdF7wbUhcx65pj2JOX1PqMRg
+      short-id: 9e1d7f4ecb
+    servername: gpt.stackline.online
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: Финляндия🇫🇮🟢LTE🌟
+    type: vless
+    server: 51.250.47.27
+    port: 443
+    uuid: 7be4c48d-9f44-410f-b81f-1a223abb47bf
+    udp: true
+    network: grpc
+    tls: true
+    reality-opts:
+      public-key: 0vlyczKGGAZbev0skD7sP12VVsomgtYfNXyUMiZNOWo
+      short-id: 80c407a164
     servername: eh.vk.com
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇫🇮 Финляндия 6
-    type: vless
-    server: 45.15.152.167
-    port: 443
-    uuid: ea760105-1dce-4f5c-8f5a-233e96324155
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 2lReHLDD5UCpT8FyBLPyrrIbi6MNKDBTArtCwI3NUQA
-      short-id: 4b1b
-    servername: yahoo.com
-    client-fingerprint: chrome
-  - name: App not supported
-    type: vless
-    server: 0.0.0.0
-    port: 1
-    uuid: 00000000-0000-0000-0000-000000000000
-    udp: true
-    network: tcp
-  - name: 🇳🇱 Нидерланды 24
-    type: vless
-    server: 62.238.32.25
-    port: 443
-    uuid: 1b9e301d-cecd-4eb1-8b36-eef811c2696d
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 3LUIM_6cYceTgNt6LWnR8YSVrenpLsh-FIGDrmfjjwc
-      short-id: 5e841fab
-    servername: yastatic.net
-    client-fingerprint: chrome
-  - name: 🇯🇵 Япония 2
-    type: vless
-    server: 3.112.126.206
-    port: 54055
-    uuid: a6b071ef-0d82-4f46-b04b-3310b8d6ca82
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: OzoYp8homkMDMozggbwqswuBiWRykfmmszFpu2_YM1g
-      short-id: f0b670194e8d2401
-    servername: www.icloud.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: 🇺🇸 США
-    type: vless
-    server: 38.55.146.153
-    port: 13000
-    uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
-    udp: true
-  - name: 🇺🇸 США 6
-    type: vless
-    server: 44.242.50.106
-    port: 36895
-    uuid: 5c875449-ae7d-46f8-b919-5a29f271dfce
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: SKJQzoN8Lh8kqrDEyKzevbHHmfRhKe8XmzBxPYXF2A4
-      short-id: 5a585c3e894bf074
-    servername: www.icloud.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 13
-    type: vless
-    server: 163.172.213.174
-    port: 80
-    uuid: e73df646-1f62-41bf-8c50-653497d603d0
-    udp: true
-    network: ws
-    ws-opts:
-      path: /vless/
-      headers:
-        Host: 163.172.213.174
-  - name: Нидерланды🇳🇱🔃
-    type: vless
-    server: 72.56.235.173
-    port: 443
-    uuid: b384c880-5ce8-4aa5-95cb-de5173903f45
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: ZrCm9cwb012UziH20hXwmd2u1r3rxSxHVjmJJe558Sw
-      short-id: 88629bf8
-    servername: nr40.mediastreamer.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇺🇸 США 4
-    type: vless
-    server: 45.158.127.5
-    port: 443
-    uuid: 301d514e-4aa0-47b0-ba44-a0cb891cd52f
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4
-      short-id: a1b2c3d4
-    servername: www.samsung.com
-    client-fingerprint: chrome
-  - name: 🇳🇱 Нидерланды
-    type: vless
-    server: 193.22.229.138
-    port: 80
-    uuid: e30ba9e9-afc6-4236-803f-7b4ca30ce44b
-    udp: true
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: pimxpass.alex96336997.workers.dev
-  - name: 🇩🇪 Германия 15
-    type: vless
-    server: 23.26.37.120
-    port: 8443
-    uuid: dcba77d7-bb59-4802-b32c-37fd7011fca4
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-      short-id: 3ca620a7ed5f3196
-    servername: google.com
-    client-fingerprint: chrome
-  - name: 🇳🇱 Нидерланды 17
-    type: vless
-    server: 79.141.164.40
-    port: 28167
-    uuid: 703fe724-d2b9-40f9-934f-3089403a109d
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: edl7x700EJzY6NIN1pZXo-QiyRAScQCW5UO-0ZQXpA0
-      short-id: aabbccdd
-    servername: ya.ru
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇺🇸 США 17
+    grpc-opts:
+      grpc-service-name: ''
+  - name: 🇺🇸 США 8
     type: vless
     server: 2.26.88.109
     port: 443
@@ -967,79 +357,112 @@ proxies:
     servername: google.com
     client-fingerprint: random
     flow: xtls-rprx-vision
-  - name: 🐢Бельгия🇧🇪🟢LTE
+  - name: 🇮🇪 IE 1
     type: vless
-    server: 176.122.25.48
+    server: 193.57.138.53
+    port: 40921
+    uuid: b042a503-3cb9-461f-994d-28a642133b5e
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: heCmtLzcbUCR7Y1ZSomzRZpc45p9Qie9p_2W6Xw333A
+      short-id: c42db93ba6c62c
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇪🇸 Испания
+    type: vless
+    server: 195.96.132.125
     port: 443
-    uuid: 7a3cd1c3-161e-42ef-bd65-4094f16ab71a
+    uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: JH1FteoTVW6inmHDUgZATEXXxctafAXV2i7AFq352kc
-      short-id: 3877079df74f61
-    servername: eh.vk.ru
+      public-key: WM-LMz6slGkGPD3zEM8Ntat27n6p6EfbxRsjYmTykV4
+      short-id: 8237eb
+    servername: www.vk.ru
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: Финляндия🇫🇮🟢LTE
+  - name: 🇫🇮 Финляндия 2
     type: vless
-    server: 51.250.117.209
+    server: 144.31.82.47
+    port: 18038
+    uuid: a42c8b66-d0a7-4b49-9143-b98f1c84edba
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: UDLhjunZjP-5A6KBMeuWe3qp_FusLAshcQIcCF7EZh8
+      short-id: ce9f790791426d83
+    servername: www.microsoft.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 4
+    type: vless
+    server: 51.158.206.87
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: '01'
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 📆
+    type: vless
+    server: localhost
+    port: 80
+    uuid: xxxxxxxxxx1
+    udp: true
+    network: tcp
+  - name: 🇷🇺 Россия 1
+    type: vless
+    server: 213.108.2.130
     port: 443
-    uuid: fcbc50dc-154e-4e27-b309-1097bad25bcd
+    uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: D9CGr9Ki6Fh8B8bXMCSFv9IWqJY9oNMstKPLnfXF4k4
-      short-id: e5bfe8a1caeb90
-    servername: eh.vk.com
+      public-key: c9eCHF41FReFLIdarpg8M5edw4_E133EJBzrvYS02Ck
+      short-id: cd9a5f0edff48da4
+    servername: cloudflare.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 18
+  - name: 🇱🇻 LV 4
     type: vless
-    server: 88.218.120.60
-    port: 8443
-    uuid: 9c63bf8b-1c25-4b7e-9393-71aa99cad29d
+    server: 91.218.143.194
+    port: 43798
+    uuid: b7725d23-840a-4f8e-993c-69b40424cfc0
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: 1A4AgKQiz38mT1r1H0su7aAXBB7KnKOFzsQ3AdACVDs
-      short-id: 612d8fa72c
-    servername: un6-21.userapi.com
+      public-key: W3aiFnhZRvZuZP0Zyfy7888t-NbHc0RmMEyFa7fYShU
+      short-id: f71c22
+    servername: yahoo.com
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 15
+  - name: 🇸🇪 Швеция 3
     type: vless
-    server: 45.150.34.244
-    port: 55128
-    uuid: 8be98cb0-0942-4bc2-b2da-eec9e2e53f9f
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 7l16WkJYuCyfJG2ayNxM-IBh8J3bZvi_ntFcjokuASg
-      short-id: 7134a1b6e13dcb36
-    servername: www.sony.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 23
-    type: vless
-    server: 144.31.30.69
+    server: 194.238.57.104
     port: 443
-    uuid: f90cc83a-97ce-446d-8f80-30d3eef3351c
+    uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: 6ba85179e30d4fc2
-    servername: eh.vk.com
+      public-key: 56RJlIcxwncUs5m9QSfd3waHxm6vJFBKso5IkMSsyCA
+      short-id: 5d
+    servername: www.icloud.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇩🇪 Германия 10
+  - name: 🇸🇪 Швеция 4
     type: vless
-    server: 108.165.174.83
+    server: 150.241.75.255
     port: 2040
     uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
     udp: true
@@ -1048,64 +471,49 @@ proxies:
     reality-opts:
       public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
       short-id: 53197c66aef53c44
-    servername: apple.com
-    client-fingerprint: ios
-    flow: xtls-rprx-vision
-  - name: 🇸🇬 Сингапур 5
+    servername: tradingview.com
+    client-fingerprint: qq
+  - name: 🇸🇪 Швеция 5
     type: vless
-    server: 158.178.225.153
-    port: 41493
-    uuid: 00000000-0000-4000-8000-000000000000
-    udp: true
-    network: ws
-    tls: true
-    servername: 020g5uxcxmqlndg.luyuju.dpdns.org
-    client-fingerprint: firefox
-    ws-opts:
-      path: /%40Marisa_kristi
-      headers:
-        Host: 020g5uxcxmqlndg.luyuju.dpdns.org
-  - name: 🇺🇸 США 7
-    type: vless
-    server: 173.249.203.40
-    port: 16353
-    uuid: 00000000-0000-4000-8000-000000000000
-    udp: true
-    network: ws
-    tls: true
-    servername: r8wez3psbuhgs6lgju.sate.qzz.io
-    ws-opts:
-      path: /@Marisa_kristifp=chromefp=chrome
-      headers:
-        Host: r8wez3psbuhgs6lgju.sate.qzz.io
-  - name: 🇬🇧 Великобритания 1
-    type: vless
-    server: 3.8.160.120
-    port: 18633
-    uuid: 5da5bc00-ea44-462e-bdb7-7687346ad039
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: tpovASeNxNkqDfPZhr2raGUY6pis-9XSLCB6DrIEU1g
-      short-id: d9029b790f10b2e2
-    servername: www.yahoo.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: 🇵🇱 Польша 3
-    type: vless
-    server: 45.140.204.119
+    server: 89.22.230.82
     port: 443
-    uuid: dd9b5b35-c3bb-4e26-8b26-daedffcb3921
+    uuid: de3104b0-0c51-49df-8350-da4bbe654820
     udp: true
-    network: tcp
+    network: raw
     tls: true
     reality-opts:
-      public-key: vl5WQd9UDA3DvLxPPS1yF9ivUipxkxoxhaBRHpnyLho
-      short-id: 67fb
-    servername: yahoo.com
+      public-key: -RAcfPpW-nLcYpGpGUhTaS2UqddjRVuvxmwjvaafMhY
+      short-id: 830f1634ecfd57b8
+    servername: ya.ru
     client-fingerprint: chrome
-  - name: 🇬🇧 Великобритания 5
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 16
+    type: vless
+    server: 163.172.214.188
+    port: 8443
+    uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+    udp: true
+    network: ws
+    tls: true
+    servername: sc-thenetherlands1.09vpn.com
+    client-fingerprint: chrome
+    ws-opts:
+      path: /vless/
+      headers:
+        Host: 163.172.214.188
+  - name: 🇳🇱 Нидерланды 21
+    type: vless
+    server: 89.124.78.248
+    port: 1310
+    uuid: a114c37e-515c-4d30-b910-c7f019146cc0
+    udp: true
+    network: ws
+    ws-opts:
+      path: 
+        /@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia
+      headers:
+        Host: play.google.com
+  - name: 🇬🇧 Великобритания 10
     type: vless
     server: 31.76.126.141
     port: 2040
@@ -1118,20 +526,55 @@ proxies:
       short-id: 53197c66aef53c44
     servername: tradingview.com
     client-fingerprint: qq
-  - name: 🇺🇸 США 12
+  - name: Италия🇮🇹🔃
     type: vless
-    server: 2.26.88.94
-    port: 2040
-    uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
+    server: 72.56.1.193
+    port: 443
+    uuid: 13416906-47f7-44f7-b2c6-c585fdfbd236
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
-      short-id: 53197c66aef53c44
-    servername: tradingview.com
-    client-fingerprint: qq
-  - name: 🇬🇧 Великобритания 11
+      public-key: ZA9FAKAJSSVJ0EwM_WDD5D7wCwR7vUpEsrcTf5eirj4
+      short-id: 545d2bcf564a
+    servername: b.mediastreamer.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇫🇮 Финляндия 1
+    type: vless
+    server: 62.60.255.11
+    port: 443
+    uuid: ad8a53f2-b109-4873-9156-fc3bcb0d7fe4
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
+      short-id: 6ba85179e30d4fc2
+    servername: ya.ru
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 1
+    type: vless
+    server: 141.193.213.30
+    port: 443
+    uuid: a6d5a889-2a4a-4b31-8892-e0820188e921
+    udp: true
+    network: ws
+    tls: true
+    servername: www.genflix.co.id.cyylr.eu.cc
+    ws-opts:
+      path: /my-wbv
+      headers:
+        Host: www.genflix.co.id.cyylr.eu.cc
+  - name: Приложение не поддерживается
+    type: vless
+    server: 127.0.0.1
+    port: 1
+    uuid: 00000000-0000-0000-0000-000000000000
+    udp: true
+    network: tcp
+  - name: 🇬🇧 Великобритания 8
     type: vless
     server: 212.74.39.81
     port: 443
@@ -1145,19 +588,74 @@ proxies:
     servername: icloud.com
     client-fingerprint: firefox
     flow: xtls-rprx-vision
-  - name: 🇬🇧 Великобритания 8
+  - name: Литва🇱🇹🟢LTE
     type: vless
-    server: 167.71.128.110
-    port: 12306
-    uuid: 00000000-0000-4000-8000-000000000000
+    server: 51.250.97.141
+    port: 443
+    uuid: c0cb0901-8075-4cae-ab2e-f5ee559a3ce7
     udp: true
-    network: ws
+    network: tcp
     tls: true
-    servername: ooa858iqkhza12.mesa.ip-ddns.com
-    ws-opts:
-      path: /@Marisa_kristifp=chrome
-      headers:
-        Host: ooa858iqkhza12.mesa.ip-ddns.com
+    reality-opts:
+      public-key: _XzFwWlJRkJVyLKlHQN9bDzFKuNSwK6yVmV8qMQfniA
+      short-id: 9d39b2e0489a
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇫🇮 Финляндия 4
+    type: vless
+    server: 45.15.152.167
+    port: 443
+    uuid: 180a65ce-f309-47ec-b8ee-2f7a9a8a0fe2
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 2lReHLDD5UCpT8FyBLPyrrIbi6MNKDBTArtCwI3NUQA
+      short-id: 4b1b
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇺🇸 США 10
+    type: vless
+    server: 191.44.113.251
+    port: 443
+    uuid: b95dd8e5-2758-408f-be99-9362eecee609
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: BoWKSM1aSfcTRgKX_kZYPlauG0jLIqku3zPBAiHpUgs
+      short-id: 5ea7e22e889dabc5
+    servername: yahoo.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇭🇰 Гонконг 2
+    type: vless
+    server: 103.123.162.50
+    port: 10011
+    uuid: 17011a43-97e2-44b0-b0da-a2ea151ad75c
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 82bbZIdU-0s8fydncIhp9_sNDYQQH9ZY_7RVI5apXnk
+      short-id: 447f3a05ace2b748
+    servername: www.microsoft.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇭🇰 Гонконг 5
+    type: vless
+    server: 47.83.153.19
+    port: 59750
+    uuid: 9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg
+    servername: www.amd.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
   - name: 🇫🇷 Франция 7
     type: vless
     server: 52.47.86.31
@@ -1172,118 +670,7 @@ proxies:
     servername: yahoo.com
     client-fingerprint: firefox
     flow: xtls-rprx-vision
-  - name: 🇬🇧 Великобритания 3
-    type: vless
-    server: 31.76.54.130
-    port: 2040
-    uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
-      short-id: 53197c66aef53c44
-    servername: tradingview.com
-    client-fingerprint: qq
-  - name: 🇳🇱 Нидерланды 21
-    type: vless
-    server: 212.69.85.238
-    port: 34754
-    uuid: 35762c02-ff2b-4526-b41b-e96e5d99528b
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: MNw8WI6R7SDlWC71MClNgpxNGUa-nYN4nGHn9pG62Ss
-      short-id: '81'
-    servername: yahoo.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 19
-    type: vless
-    server: 89.124.78.248
-    port: 8880
-    uuid: 92ecaa18-1c6d-4eb3-943c-c904571106c5
-    udp: true
-    network: tcp
-  - name: 🇬🇧 Великобритания 10
-    type: vless
-    server: 45.140.167.190
-    port: 59801
-    uuid: 00000000-0000-4000-8000-000000000000
-    udp: true
-    network: ws
-    tls: true
-    servername: ooa858iqkhza12.mesa.ip-ddns.com
-    ws-opts:
-      path: /@Marisa_kristifp=chrome
-      headers:
-        Host: ooa858iqkhza12.mesa.ip-ddns.com
-  - name: 🇫🇮 Финляндия 4
-    type: vless
-    server: 83.219.97.101
-    port: 12291
-    uuid: 50a1c387-1e20-4399-900d-ef819adfd120
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 10YNYFgq3EsAG5nPI6loc8EjFLPJ56uTBkZHMkNHQHg
-      short-id: '025581'
-    servername: cloudflare.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇷🇺 Россия 8
-    type: vless
-    server: 217.16.19.6
-    port: 9443
-    uuid: afdb4da1-6c7f-489b-ab38-063f6d607ea0
-    udp: true
-    network: grpc
-    tls: true
-    reality-opts:
-      public-key: 1Ft21vrEzdxBXrTvxvxetfMqBrb-FtuSG1PDDhfCh2A
-      short-id: aaaa
-    servername: api-maps.yandex.ru
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: api-maps.yandex.ru
-  - name: 🇳🇱 Нидерланды 4
-    type: vless
-    server: 51.158.206.97
-    port: 23576
-    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-      short-id: '01'
-    servername: fuck.rkn
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇹🇷 Турция
-    type: vless
-    server: 185.181.211.81
-    port: 37141
-    uuid: 71310f0a-1c4f-492d-8dec-fd755639d08a
-    udp: true
-    network: tcp
-  - name: 🇺🇸 США 5
-    type: vless
-    server: 134.33.73.249
-    port: 54254
-    uuid: acba684c-4098-4eca-f519-828b09f96464
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: HFEz9fAOugljXea_ZVOUHMju08su8h0P9RANNcHP2y4
-      short-id: db35ffdc
-    servername: apple.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 12
+  - name: 🇳🇱 Нидерланды 17
     type: vless
     server: 51.158.206.25
     port: 23576
@@ -1297,160 +684,95 @@ proxies:
     servername: fuck.rkn
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇩🇪 Германия
+  - name: 🇰🇿 Казахстан
     type: vless
-    server: 89.116.46.210
-    port: 80
-    uuid: 88806cd6-9686-4eea-92c8-7f8baf7d1505
-    udp: true
-    network: ws
-    ws-opts:
-      path: /in-pdr
-      headers:
-        Host: unnes.ac.id.cyylr.eu.cc
-  - name: 🇺🇸 США 8
-    type: vless
-    server: 166.1.227.155
+    server: 46.247.40.229
     port: 8443
-    uuid: 07ab8a15-a4a5-4a03-92b4-4e6a2e9aa5e7
+    uuid: c5765da4-772f-4ff7-b96c-551ca7185529
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: 3JGwSDrfkiCPdU3rvQP5m0z4Ag_UB_2w8Qq3VMXmo28
-      short-id: abc323
-    servername: sun6-22.userapi.com
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: 🇫🇷 Франция 5
-    type: vless
-    server: 51.44.25.250
-    port: 44520
-    uuid: acd726d3-0128-44d8-a575-21013ff7740a
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: MrLRcU_2S2CpUc7VT3ajIavX5NYUiQdP6J5QTDFNGFU
-      short-id: 8897c56a495b26cc
-    servername: yahoo.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 22
-    type: vless
-    server: 51.158.206.29
-    port: 23576
-    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-      short-id: '01'
-    servername: fuck.rkn
+      public-key: mVdzom1e9afBTvsad76ZEsyQh9xSCZPUKo7CPPLaZAc
+      short-id: 196dad1410aa3891
+    servername: www.google.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇬🇧 Великобритания 4
+  - name: 🇫🇮 Финляндия
     type: vless
-    server: 51.89.229.134
+    server: 193.233.23.196
+    port: 26048
+    uuid: 3007b043-acdf-43a4-900e-c7c015406f89
+    udp: true
+    network: tcp
+  - name: 🇱🇻 LV
+    type: vless
+    server: 62.192.174.111
     port: 443
-    uuid: 53821f3c-5b03-456a-89f3-f8379f130752
+    uuid: 301d514e-4aa0-47b0-ba44-a0cb891cd52f
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: 4e4FI0siWxFtLCRCVDQurn1wLTuvKWhRY0zj1SaUcyw
-      short-id: a13a7cc5
+      public-key: OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4
+      short-id: a1b2c3d4
     servername: www.samsung.com
-    client-fingerprint: firefox
-  - name: 🇩🇪 Германия 4
-    type: vless
-    server: 82.27.2.239
-    port: 18034
-    uuid: telegramchannel-probabblynot
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: ph_rbwXTPE724CilY2K21PHfgfj32QL2oApFve6s1nQ
-      short-id: ef6a0ec24e7f
-    servername: refersion.com
     client-fingerprint: chrome
-  - name: Финляндия🇫🇮🔃
+  - name: 🇮🇪 IE
     type: vless
-    server: 109.196.101.214
+    server: 85.159.229.189
     port: 443
-    uuid: 94e51c91-6015-4270-94eb-afa9a8e125ea
+    uuid: 9f9f18f8-2557-4f18-928d-e7c334a0b068
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: gMBWY5R6Y9QyV1HMCvWvMSpuGgiaTJR9PclM4DTnKCg
-      short-id: 2e7c51290d
-    servername: kkr.mediastreamer.online
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇩🇪 Германия 2
+      public-key: jRh71f3CZSR8xkOMBX9wpaMe_3EYhjrxFELmls-AW0A
+      short-id: e6
+    servername: www.google.com
+    client-fingerprint: random
+  - name: 🇱🇻 LV 5
     type: vless
-    server: 51.195.99.254
-    port: 8080
-    uuid: cace7c3b-f7a0-4fd8-858b-5c5b9e7c1454
+    server: 83.222.20.64
+    port: 17910
+    uuid: 079c1b04-7ef9-4c49-8a7a-849a18ba7b9b
     udp: true
-    network: tcp
-  - name: 🇵🇱 Польша 2
-    type: vless
-    server: 45.140.204.119
-    port: 443
-    uuid: ac98c9f5-ef19-4bdd-9c5c-00244d7e2541
-    udp: true
-    network: tcp
+    network: raw
     tls: true
     reality-opts:
-      public-key: vl5WQd9UDA3DvLxPPS1yF9ivUipxkxoxhaBRHpnyLho
-      short-id: 67fb
+      public-key: KUhrhiJBplVCVCrAKP2KjIA_asOgkkvEEAxUJVofjgc
+      short-id: 8c09fb78b12f
     servername: yahoo.com
     client-fingerprint: chrome
-  - name: 🇷🇺 Россия 2
+  - name: 🇫🇷 Франция 4
     type: vless
-    server: 217.26.24.101
-    port: 23151
-    uuid: 9287f532-4150-48ff-a755-64b21e30e9c3
+    server: 51.44.16.107
+    port: 31413
+    uuid: 5454343b-541b-4c96-8c2a-52e81079d124
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: eP0MKUFOcNVSVFbHT8GgBLP4LIHZFq8JuVGlCAlH1HI
-    servername: cms-res-web.online.sberbank.ru
-    client-fingerprint: chrome
+      public-key: nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8
+      short-id: ead3d6f82a9d
+    servername: yahoo.com
+    client-fingerprint: firefox
     flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 9
+  - name: Болгария🇧🇬🔃
     type: vless
-    server: 45.67.136.114
-    port: 7443
-    uuid: 10484bee-8516-400a-9b1e-efb5144ad324
+    server: 185.76.241.156
+    port: 443
+    uuid: 4d1995d0-89f6-4778-b345-70654ec2f004
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-      short-id: d82fb387
-    servername: stackoverflow.com
+      public-key: M2DqJbk7FUmkt95cIX_Ue01Ae9LI6WGgcqHW-XIwi3I
+      short-id: 25d9
+    servername: iis.mediastreamer.ru
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇬🇧 Великобритания 9
-    type: vless
-    server: 159.65.30.90
-    port: 9377
-    uuid: 00000000-0000-4000-8000-000000000000
-    udp: true
-    network: ws
-    tls: true
-    servername: ooa858iqkhza12.mesa.ip-ddns.com
-    ws-opts:
-      path: /@Marisa_kristifp=chrome
-      headers:
-        Host: ooa858iqkhza12.mesa.ip-ddns.com
-  - name: 🇺🇸 США 14
+  - name: 🇺🇸 США 7
     type: vless
     server: 185.177.239.95
     port: 14793
@@ -1464,17 +786,186 @@ proxies:
     servername: www.sony.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇫🇷 Франция 9
+  - name: Германия🇩🇪2.0🟢LTE
     type: vless
-    server: 213.199.39.156
-    port: 30001
-    uuid: 3e5da4f6-93c4-4701-911b-1a5091d2430f
+    server: 46.182.24.52
+    port: 443
+    uuid: 27d5937d-d398-4923-8c09-b5b9a6befe3e
     udp: true
-    network: ws
-    ws-opts:
-      path: /ws
-      headers:
-        Host: 213.199.39.156
+    network: grpc
+    tls: true
+    reality-opts:
+      public-key: wx54k6q59xd0Y50zWRpyQfZRC-fe0w0DYL-twuuV6l4
+      short-id: 0aa81a1c95
+    servername: ssdg.mediastreamer.online
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: ''
+  - name: Франция🇫🇷🔃
+    type: vless
+    server: 85.239.36.50
+    port: 443
+    uuid: 2ca60201-3aa6-4363-b1f7-fd8537d11924
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: ug73uf5GIvObebhfAOQbNkHhp9nbckr07ARRknK3LFg
+      short-id: 4da0
+    servername: uts.connectvpn.tech
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🐢Чехия🇨🇿🟢LTE
+    type: vless
+    server: 146.185.197.90
+    port: 443
+    uuid: 12b998a9-1f84-44dd-8f6e-00588286fd25
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: tLIY95WzJpGsi02rk_G2SwMOiy10H0-5fGCh6fGDimI
+      short-id: b75a676bc8
+    servername: eh.vk.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇯🇵 Япония 3
+    type: vless
+    server: 212.135.211.105
+    port: 443
+    uuid: 99e50b7b-e551-46b3-b74f-d39806835b10
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 6bKr3dHLP8VjrlVFBNTAM3Bj0j0iGubvzTDPTmK08FI
+      short-id: ecf07d87f0521a0e
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: Израиль🇮🇱🔃
+    type: vless
+    server: 213.176.19.34
+    port: 443
+    uuid: 0bbe9df8-f015-4ab0-a8d2-dff3308f9665
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: xVp2DM16I2N4XHgVB3DkRUbvX8AYv4T8BPlWEniRxwE
+      short-id: e31eb9e0ffd4
+    servername: ee.stackline.online
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 20
+    type: vless
+    server: 144.31.135.162
+    port: 9443
+    uuid: b54d36d1-43c3-4b8f-a5f8-cf6504db0562
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: MbYR2O0XBSeG74gGYpFIofXsILcf5lG2gc36GyURBXQ
+      short-id: 0199436dd359351b
+    servername: apple.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇯🇵 Япония 1
+    type: vless
+    server: 96.62.214.87
+    port: 29745
+    uuid: f6f44df3-d229-4dd8-a944-e7bc3a4c6b94
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: zSOPQOHAiacl2VMETsLXTE_Gln5ECllb6YKy1oyv1V0
+      short-id: c3
+    servername: www.google.com
+    client-fingerprint: random
+  - name: 🇷🇺 Россия 2
+    type: vless
+    server: 193.168.46.180
+    port: 443
+    uuid: ad02a6eb-52e1-468f-8316-aaa1f4f72d44
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+      short-id: c1a7e9b4711d5f60
+    servername: rruu.persik.host
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 9
+    type: vless
+    server: 77.110.124.90
+    port: 8443
+    uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: Nlsu3xrYPB9ePk3pkcCPJbsuhsLrmAOeXMKaNAZyOww
+      short-id: 97783a46
+    servername: www.google.com
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+  - name: 🇬🇧 Великобритания 5
+    type: vless
+    server: 31.76.54.130
+    port: 2040
+    uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
+      short-id: 53197c66aef53c44
+    servername: tradingview.com
+    client-fingerprint: qq
+  - name: Дания🇩🇰🔃
+    type: vless
+    server: 217.149.29.108
+    port: 443
+    uuid: 5ab13648-fcb5-4a2f-87cc-d7b789b77859
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: bN3dWWgQK1zuiuIGCeirpdO3RSWyoipkJM3u3SmqBBo
+      short-id: 505c1633c3
+    servername: zz.mediastreamer.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇱🇻 LV 1
+    type: vless
+    server: 90.156.254.164
+    port: 19562
+    uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
+      short-id: 9e
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: Польша🇵🇱🔃
+    type: vless
+    server: 185.76.241.153
+    port: 443
+    uuid: 0e856167-074a-4de9-baf6-1ccaf687a976
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: JQeDn0ZNmvIh9FBYcJ8TlFdXtZwaExNBnNI4pjgQPxM
+      short-id: e801c45c94647a7e
+    servername: vvy.stackline.online
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
   - name: 🇳🇱 Нидерланды 1
     type: vless
     server: 51.158.206.8
@@ -1489,121 +980,114 @@ proxies:
     servername: fuck.rkn
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇩🇪 Германия 1
-    type: vless
-    server: 51.195.99.254
-    port: 8080
-    uuid: 47e16bc6-7a69-4450-a7ce-9971c14aec4f
-    udp: true
-    network: tcp
-  - name: 🇳🇱 Нидерланды 7
-    type: vless
-    server: 144.31.233.236
-    port: 9443
-    uuid: b54d36d1-43c3-4b8f-a5f8-cf6504db0562
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: MbYR2O0XBSeG74gGYpFIofXsILcf5lG2gc36GyURBXQ
-      short-id: 0199436dd359351b
-    servername: apple.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Израиль🇮🇱🔃
-    type: vless
-    server: 213.176.19.34
-    port: 443
-    uuid: 0bbe9df8-f015-4ab0-a8d2-dff3308f9665
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: xVp2DM16I2N4XHgVB3DkRUbvX8AYv4T8BPlWEniRxwE
-      short-id: f6
-    servername: ee.stackline.online
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🇫🇷 Франция 6
-    type: vless
-    server: 51.44.16.107
-    port: 31413
-    uuid: 5454343b-541b-4c96-8c2a-52e81079d124
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8
-      short-id: ead3d6f82a9d
-    servername: yahoo.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: 🇩🇪 Германия 14
-    type: vless
-    server: 23.26.37.121
-    port: 8443
-    uuid: dcba77d7-bb59-4802-b32c-37fd7011fca4
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-      short-id: 3ca620a7ed5f3196
-    servername: google.com
-    client-fingerprint: chrome
   - name: 🇳🇱 Нидерланды 2
     type: vless
+    server: 51.158.206.103
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: '01'
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 11
+    type: vless
     server: 88.218.120.60
-    port: 4443
+    port: 8443
     uuid: 9c63bf8b-1c25-4b7e-9393-71aa99cad29d
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: -psPIZaOXQOuX1O1BpZ0_zyXEvx1YwW6ouBIkYGb2Dg
+      public-key: 1A4AgKQiz38mT1r1H0su7aAXBB7KnKOFzsQ3AdACVDs
       short-id: 612d8fa72c
-    servername: sni4.streisand.lt
+    servername: un6-21.userapi.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇺🇸 США 16
+  - name: 🇸🇪 Швеция 2
     type: vless
-    server: 156.229.161.107
-    port: 10001
-    uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
+    server: 148.253.211.237
+    port: 443
+    uuid: '8546145579'
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
+      short-id: bdac121c7debdaba
+    servername: www.microsoft.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇯🇵 Япония 2
+    type: vless
+    server: 138.2.50.155
+    port: 44073
+    uuid: 11d29ec6-be66-4f59-97c6-7cff836ea318
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: 4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4
-      short-id: fb2c6678
+      public-key: Z3ZGnAOdKkzJ07gR_7_0k9_iTTFP6paDOrqx1rN2LU4
     servername: www.icloud.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇩🇪 Германия 6
+  - name: 🟢
     type: vless
-    server: 91.107.160.147
-    port: 443
-    uuid: 6af0d18d-30ac-4002-a25e-0a16ba00d637
+    server: localhost
+    port: 8443
+    uuid: xxxxxxxxxx3
     udp: true
     network: tcp
-    tls: true
-    servername: mrsibil.ezgateway.net
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
-  - name: 🇫🇮 Финляндия 2
+  - name: 🇭🇰 Гонконг
     type: vless
-    server: 144.31.82.47
-    port: 18038
-    uuid: a42c8b66-d0a7-4b49-9143-b98f1c84edba
+    server: 156.238.254.5
+    port: 23100
+    uuid: d5a17f2f-aa94-4b61-8574-ce0b301f9062
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: UDLhjunZjP-5A6KBMeuWe3qp_FusLAshcQIcCF7EZh8
-      short-id: ce9f790791426d83
-    servername: www.microsoft.com
+      public-key: H0HQU-snRgdfuIYOe9VkVHVn3mFqrHUD8lle55dilxU
+      short-id: 303a58f57b0d
+    servername: aws.amazon.com
+    client-fingerprint: chrome
+  - name: Финляндия🇫🇮🟢LTE
+    type: vless
+    server: 51.250.117.209
+    port: 443
+    uuid: fcbc50dc-154e-4e27-b309-1097bad25bcd
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: D9CGr9Ki6Fh8B8bXMCSFv9IWqJY9oNMstKPLnfXF4k4
+      short-id: 19b77adf9647
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇮🇹 Италия
+    type: vless
+    server: 204.216.216.23
+    port: 10086
+    uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+    udp: true
+    network: tcp
+  - name: Латвия🇱🇻🔃
+    type: vless
+    server: 109.196.99.160
+    port: 443
+    uuid: 0abe80f7-65ed-48ab-a667-9c74c048d0e2
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: kllk-UkQtt0N5p1ktDPnkCfLukY3YcR9gpNx0-FGZzc
+      short-id: af
+    servername: ccf.stackline.online
     client-fingerprint: chrome
     flow: xtls-rprx-vision
   - name: 🇰🇷 Южная Корея
@@ -1620,90 +1104,199 @@ proxies:
     servername: www.sony.com
     client-fingerprint: firefox
     flow: xtls-rprx-vision
-  - name: 🇯🇵 Япония 5
+  - name: 🇵🇱 Польша
     type: vless
-    server: 151.245.104.182
-    port: 443
-    uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
-    udp: true
-    network: ws
-    tls: true
-    servername: dongjing4.zqjsqapi.com
-    ws-opts:
-      path: /proxy
-      headers:
-        Host: 151.245.104.182
-  - name: 🇫🇷 Франция 1
-    type: vless
-    server: 5.196.51.152
-    port: 54809
-    uuid: 87e60810-bb71-41ea-a2a6-f05c8ab903ef
+    server: 77.239.114.176
+    port: 19105
+    uuid: fb9e4c3a-936f-44c7-ac89-d5d422690fcf
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: 06rvKjC9dE_Ndd-dw6B-0zAyEpn-jUs7mcNFAPQ_1G8
-      short-id: b4b3
-    servername: dash.cloudflare.com
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision-udp443
-  - name: 🇺🇸 США 10
-    type: vless
-    server: 167.104.223.14
-    port: 443
-    uuid: b67ed271-5a34-4d07-9970-f8ba27ca2c8a
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: gXc2c9NIWxhUTb7HoBCjvo-uB1L4iQj4TH38g4YhxHE
-      short-id: fcd9787f
+      public-key: IS6TNMONlIVvcUBvo2RXQvx2Jopcv4wzPyZhxPhWqT8
+      short-id: e6
     servername: www.microsoft.com
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: 🇫🇮 Финляндия 3
-    type: vless
-    server: 62.60.255.11
-    port: 443
-    uuid: ad8a53f2-b109-4873-9156-fc3bcb0d7fe4
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
-      short-id: 6ba85179e30d4fc2
-    servername: ya.ru
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - name: Польша🇵🇱🔃
-    type: vless
-    server: 185.76.241.153
-    port: 443
-    uuid: 0e856167-074a-4de9-baf6-1ccaf687a976
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: JQeDn0ZNmvIh9FBYcJ8TlFdXtZwaExNBnNI4pjgQPxM
-      short-id: 2d2d14b87d574b27
-    servername: vvy.stackline.online
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇳🇱 Нидерланды 20
+  - name: 🇷🇺 Россия 4
     type: vless
-    server: 89.124.78.248
-    port: 1310
-    uuid: a114c37e-515c-4d30-b910-c7f019146cc0
+    server: 193.168.46.180
+    port: 443
+    uuid: 96bdcc41-e5d4-4cce-9d58-870c9c25fdea
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+      short-id: c1a7e9b4711d5f60
+    servername: rruu.persik.host
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 4
+    type: vless
+    server: 47.253.226.114
+    port: 443
+    uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+    servername: www.cloudflare.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇸🇬 Сингапур 2
+    type: vless
+    server: 18.143.177.226
+    port: 22472
+    uuid: 4b79c2ed-528b-45e4-8997-e5d9de81e8e2
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: DEvHMT3zhxUxnuqJxq88Z_8413kiseb7YtzU719D4kg
+      short-id: 45cb8dfc393d9191
+    servername: www.sony.com
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+  - name: 🇫🇷 Франция 6
+    type: vless
+    server: 94.232.247.168
+    port: 41360
+    uuid: e16a35ea-6715-4e75-9845-d20358bd0876
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU
+      short-id: 1aab45
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: Англия🇬🇧🔃
+    type: vless
+    server: 147.45.184.118
+    port: 443
+    uuid: 15762fc8-d86b-4e0e-b69f-14917b64d754
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 7JFfPdSXVW6a7gERNUG3tSqSf2i5vbiOZMjfFIkJH1Q
+      short-id: 7cfbcba2939bd161
+    servername: oliv.mediastreamer.online
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 13
+    type: vless
+    server: 94.156.117.79
+    port: 8443
+    uuid: 3dc68a32-43aa-4b5e-a60f-e11b27d03edc
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: XEOvGJLIn0iPDT1R71F8FCKet0XHg-NTn0sSxurlvV8
+      short-id: ce
+    servername: www.google.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇷🇺 Россия 5
+    type: vless
+    server: 5.35.85.51
+    port: 8443
+    uuid: 888403d1-621b-481a-b5dc-7aca518a787b
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: BrGL0gTKK_Ir2VwJOa91Vd8870DswnOXhA6-F92RBGI
+      short-id: a987b6bd1781daa3
+    servername: www.kinopoisk.ru
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: 🇯🇵 Япония
+    type: vless
+    server: 3.112.126.206
+    port: 54055
+    uuid: a6b071ef-0d82-4f46-b04b-3310b8d6ca82
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: OzoYp8homkMDMozggbwqswuBiWRykfmmszFpu2_YM1g
+      short-id: f0b670194e8d2401
+    servername: www.icloud.com
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 8
+    type: vless
+    server: 45.150.34.244
+    port: 55128
+    uuid: 8be98cb0-0942-4bc2-b2da-eec9e2e53f9f
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 7l16WkJYuCyfJG2ayNxM-IBh8J3bZvi_ntFcjokuASg
+      short-id: 7134a1b6e13dcb36
+    servername: www.sony.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇫🇷 Франция
+    type: vless
+    server: 152.228.162.19
+    port: 80
+    uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
     udp: true
     network: ws
     ws-opts:
-      path: 
-        /@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia
+      path: /vless/
       headers:
-        Host: play.google.com
-  - name: 🇳🇱 Нидерланды 5
+        Host: 152.228.162.19
+  - name: 🇨🇭 Швейцария
     type: vless
-    server: 51.158.206.87
+    server: 5.182.36.56
+    port: 45886
+    uuid: 8338171d-2ea7-4015-bdea-492f3d5d4e60
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: zJeLZDPHoHMcAzBJh38tSavofNlkBrpADFx9jVVPil0
+      short-id: 94f9
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇭🇰 Гонконг 3
+    type: vless
+    server: 103.119.18.165
+    port: 8443
+    uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: vo6Xrwkla8OBS5O6lEinNvHXxW8DxCmb8HGHD86VzkU
+      short-id: 0e
+    servername: www.vk.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇫🇷 Франция 9
+    type: vless
+    server: 51.44.25.250
+    port: 44520
+    uuid: acd726d3-0128-44d8-a575-21013ff7740a
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: MrLRcU_2S2CpUc7VT3ajIavX5NYUiQdP6J5QTDFNGFU
+      short-id: 8897c56a495b26cc
+    servername: yahoo.com
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 3
+    type: vless
+    server: 51.158.206.29
     port: 23576
     uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
     udp: true
@@ -1715,21 +1308,95 @@ proxies:
     servername: fuck.rkn
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: Франция🇫🇷🔃
+  - name: 🇸🇬 Сингапур 4
     type: vless
-    server: 85.239.36.50
+    server: 158.178.225.153
+    port: 41493
+    uuid: 00000000-0000-4000-8000-000000000000
+    udp: true
+    network: ws
+    tls: true
+    servername: 020g5uxcxmqlndg.luyuju.dpdns.org
+    client-fingerprint: firefox
+    ws-opts:
+      path: /%40Marisa_kristi
+      headers:
+        Host: 020g5uxcxmqlndg.luyuju.dpdns.org
+  - name: 🇳🇱 Нидерланды 7
+    type: vless
+    server: 138.124.52.85
     port: 443
-    uuid: 2ca60201-3aa6-4363-b1f7-fd8537d11924
+    uuid: 09a4bf7f-f997-4174-8bef-9fab75aa186e
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: ug73uf5GIvObebhfAOQbNkHhp9nbckr07ARRknK3LFg
-      short-id: 4da0
-    servername: uts.connectvpn.tech
+      public-key: K7v4Rsxa-9lBsD_IQrzXREfIME_bFmwELHQAE3Yp1ng
+      short-id: b9988c11
+    servername: www.google.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇸🇬 Сингапур 6
+  - name: 🇭🇰 Гонконг 4
+    type: vless
+    server: 156.224.78.8
+    port: 10001
+    uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: D_kMOsg1KCtT0tudPFVDXGuEcSqZGtUYqBB-BiIxmls
+      short-id: f7223dab
+    servername: www.icloud.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇸🇪 Швеция
+    type: vless
+    server: 150.241.83.60
+    port: 443
+    uuid: ec13d921-3072-4e16-b2cd-af709f7f7894
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: xDFXqfhZ7-IQiFwXpXltNe2Axo5O33k4LAqDfAVtyz4
+      short-id: 7b
+    servername: www.icloud.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: ➡️t.me/Strelka_vpn_bot
+    type: vless
+    server: localhost
+    port: 444
+    uuid: xxxxxxxxxx1
+    udp: true
+    network: tcp
+  - name: 🇫🇷 Франция 1
+    type: vless
+    server: 213.199.39.156
+    port: 30001
+    uuid: 3e5da4f6-93c4-4701-911b-1a5091d2430f
+    udp: true
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: 213.199.39.156
+  - name: 🇳🇱 Нидерланды 6
+    type: vless
+    server: 144.31.30.69
+    port: 443
+    uuid: f90cc83a-97ce-446d-8f80-30d3eef3351c
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇸🇬 Сингапур 5
     type: vless
     server: 140.245.50.174
     port: 10000
@@ -1743,112 +1410,47 @@ proxies:
     servername: gateway.icloud.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇷🇺 Россия 3
+  - name: 🇳🇱 Нидерланды 9
     type: vless
-    server: 193.168.46.180
+    server: 144.31.157.56
     port: 443
-    uuid: 0b67fb82-c7d4-475c-8395-579049b6e743
+    uuid: 3e0c34a4-1c38-4d93-88c6-5155e81f8b52
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
-      short-id: c1a7e9b4711d5f60
-    servername: rruu.persik.host
+      public-key: D-7qX4fqUFKDS2dQWFgGT4fXJnABnpM6IkU8SDHLMC0
+      short-id: 6ba85179e30d4fc2
+    servername: snapp.ir
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 5
+    type: vless
+    server: 2.26.88.94
+    port: 2040
+    uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
+      short-id: 53197c66aef53c44
+    servername: tradingview.com
     client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: Приложение не поддерживается
-    type: vless
-    server: 127.0.0.1
-    port: 1
-    uuid: 00000000-0000-0000-0000-000000000000
-    udp: true
-    network: tcp
-  - name: 🇷🇺 Россия 4
-    type: vless
-    server: 193.168.46.180
-    port: 443
-    uuid: 02c7436b-e994-4d28-92fa-7ed2d87481bf
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
-      short-id: c1a7e9b4711d5f60
-    servername: rruu.persik.host
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-  - name: 🇰🇷 Южная Корея 1
-    type: vless
-    server: 61.111.247.233
-    port: 34045
-    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-      short-id: e8ab71d0
-    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-    client-fingerprint: chrome
-  - name: 🇩🇪 Германия 5
-    type: vless
-    server: 91.107.160.147
-    port: 80
-    uuid: 167a1892-1236-4355-92d5-97ee09256e09
-    udp: true
-    network: tcp
-    tls: true
-    servername: mrsibil.ezgateway.net
-    client-fingerprint: chrome
-    alpn:
-      - h2
-      - http/1.1
-  - name: Литва🇱🇹🔃
-    type: vless
-    server: 72.56.232.62
-    port: 443
-    uuid: 7866d923-5b99-4d0a-8e89-89714eefecab
-    udp: true
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: wrBqKQI9sO6Do95nBOVWdF7wbUhcx65pj2JOX1PqMRg
-      short-id: 99f0787064
-    servername: gpt.stackline.online
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - name: 🟢
-    type: vless
-    server: localhost
-    port: 8443
-    uuid: xxxxxxxxxx3
-    udp: true
-    network: tcp
   - name: 🇸🇬 Сингапур 1
     type: vless
-    server: 172.237.90.117
-    port: 14573
-    uuid: a6dd0cc9-eeb0-4226-9623-b3fc6e1b0b98
+    server: 18.143.151.84
+    port: 38967
+    uuid: 20ae58df-d562-40b3-908c-21b4881315d4
     udp: true
-    network: ws
-    ws-opts:
-      path: /FREE%20By%20Tharuwa%20%280767597317%29
-      headers:
-        Host: m.zoom.us
-  - name: 🇺🇸 США 1
-    type: vless
-    server: 141.193.213.30
-    port: 443
-    uuid: d2992c0d-53cb-489c-85af-5eb80e6d9e79
-    udp: true
-    network: ws
+    network: tcp
     tls: true
-    servername: blog.webex.com.cyylr.eu.cc
-    ws-opts:
-      path: /in-do
-      headers:
-        Host: blog.webex.com.cyylr.eu.cc
+    reality-opts:
+      public-key: TFAGMtH1LB503O0SJadbPxBs8S_LACshWQpEIAyuS1g
+      short-id: 9b1cdc34dd5664
+    servername: www.icloud.com
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
   - name: Германия🇩🇪🔃
     type: vless
     server: 147.45.99.33
@@ -1859,10 +1461,251 @@ proxies:
     tls: true
     reality-opts:
       public-key: 2hW1N1gQ_VmVgNbU5gMGVGTRDIjCZob_UREmn_wrf0w
-      short-id: 4f73251c4b7a5ece
+      short-id: 61b8ab52bc49
     servername: nnb.fasssst.online
     client-fingerprint: chrome
     flow: xtls-rprx-vision
+  - name: Нидерланды🇳🇱🔃
+    type: vless
+    server: 72.56.235.173
+    port: 443
+    uuid: b384c880-5ce8-4aa5-95cb-de5173903f45
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: ZrCm9cwb012UziH20hXwmd2u1r3rxSxHVjmJJe558Sw
+      short-id: 8fdd
+    servername: nr40.mediastreamer.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇵🇱 Польша 2
+    type: vless
+    server: 45.140.204.119
+    port: 443
+    uuid: 30143e07-b734-4bd6-867c-7daf4782cccb
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: vl5WQd9UDA3DvLxPPS1yF9ivUipxkxoxhaBRHpnyLho
+      short-id: 67fb
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇺🇸 США 2
+    type: vless
+    server: 104.168.30.161
+    port: 443
+    uuid: 7131f38f-9a4a-4e38-ae1d-aa9e132265ea
+    udp: true
+    network: tcp
+    tls: true
+    servername: proxy.wastech.org
+  - name: 🇷🇺 Россия
+    type: vless
+    server: 5.183.253.171
+    port: 443
+    uuid: 31fb98b7-e7a1-4b56-8c6a-3f060f06393c
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28
+      short-id: '8248954896'
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇫🇮 Финляндия 3
+    type: vless
+    server: 45.15.152.167
+    port: 443
+    uuid: ea760105-1dce-4f5c-8f5a-233e96324155
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 2lReHLDD5UCpT8FyBLPyrrIbi6MNKDBTArtCwI3NUQA
+      short-id: 4b1b
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇫🇷 Франция 5
+    type: vless
+    server: 13.38.52.64
+    port: 15469
+    uuid: deb96819-bdaa-4f52-a536-d4751290ce47
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: Mr1b8zNNR1uPtf8dgfze_kBJbaVimS0NhJL0ff_2qm4
+      short-id: 0f8d9583dd332274
+    servername: yahoo.com
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 6
+    type: vless
+    server: 2.26.88.0
+    port: 2040
+    uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
+      short-id: 53197c66aef53c44
+    servername: tradingview.com
+    client-fingerprint: qq
+  - name: 🇳🇱 Нидерланды 12
+    type: vless
+    server: 88.218.120.60
+    port: 4443
+    uuid: 9c63bf8b-1c25-4b7e-9393-71aa99cad29d
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: -psPIZaOXQOuX1O1BpZ0_zyXEvx1YwW6ouBIkYGb2Dg
+      short-id: 612d8fa72c
+    servername: sni4.streisand.lt
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 5
+    type: vless
+    server: 51.158.206.97
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: '01'
+    servername: fuck.rkn
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇫🇷 Франция 2
+    type: vless
+    server: 5.196.51.152
+    port: 54809
+    uuid: 87e60810-bb71-41ea-a2a6-f05c8ab903ef
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 06rvKjC9dE_Ndd-dw6B-0zAyEpn-jUs7mcNFAPQ_1G8
+      short-id: b4b3
+    servername: dash.cloudflare.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision-udp443
+  - name: 🇯🇵 Япония 4
+    type: vless
+    server: 116.80.44.144
+    port: 27724
+    uuid: ebd8539d-e249-4a39-8f90-e8585e8cc35e
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
+    servername: www.yahoo.co.jp
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: Германия🇩🇪🟢LTE
+    type: vless
+    server: 84.201.146.244
+    port: 443
+    uuid: 53d4a8b3-938b-4cae-8d71-39c4ceb41124
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: EO_bdRRKRGch6S0usr_4OCEBqV7B70p2ixSoG6OW-UU
+      short-id: 1af77992d22a55d3
+    servername: eh.vk.com
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 12
+    type: vless
+    server: 2.26.88.118
+    port: 8443
+    uuid: 785c7771-8d7f-48ca-bbc2-1a22e360d4d0
+    udp: true
+    network: grpc
+    tls: true
+    reality-opts:
+      public-key: TdT90qbeyM7WO0QCztOhKDGKOi2qaFFif0hO0cfK1E4
+      short-id: ea1058117be12087
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: max.ru
+  - name: 🇵🇱 Польша 4
+    type: vless
+    server: 45.140.204.119
+    port: 443
+    uuid: dd9b5b35-c3bb-4e26-8b26-daedffcb3921
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: vl5WQd9UDA3DvLxPPS1yF9ivUipxkxoxhaBRHpnyLho
+      short-id: 67fb
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇸🇬 Сингапур 3
+    type: vless
+    server: 18.141.49.252
+    port: 35308
+    uuid: 779d227c-f7be-4b9d-a4a9-1197c734b4e7
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 4g1kpdmdbN6aNxeBYMj9WherunH9JSXsI_nKZTDiewE
+      short-id: fef8dcb8cafe30
+    servername: www.tesla.com
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+  - name: США🇺🇸🔃
+    type: vless
+    server: 186.246.6.39
+    port: 443
+    uuid: 87cc6a70-25e7-4884-a740-ebd1dfeb37bc
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: uIqBaMLxnJiQX5gqZUMRbxm-s51m4NcGxjyYuV89RQ0
+      short-id: 96de6ee5be6e5f13
+    servername: kk.stackline.online
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇫🇷 Франция 3
+    type: vless
+    server: 194.226.169.189
+    port: 443
+    uuid: 701bab46-9453-41e6-ad47-009aa3df47e9
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
+      short-id: 3c6fc84d
+    servername: stats.vk-portal.net
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇷🇺 Россия 6
+    type: vless
+    server: 45.12.75.242
+    port: 26424
+    uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+      short-id: 23103e1e
+    servername: ya.ru
+    client-fingerprint: chrome
   - name: Россия🇷🇺
     type: vless
     server: 194.87.104.251
@@ -1873,8 +1716,64 @@ proxies:
     tls: true
     reality-opts:
       public-key: M462IdgnftzbjSuNVPReQtKVBehda__nLw6iAquHlws
-      short-id: b1bf0c0deb94
+      short-id: 97099e2fb3a9
     servername: bv.mediastreamer.online
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 11
+    type: vless
+    server: 167.104.223.14
+    port: 443
+    uuid: b67ed271-5a34-4d07-9970-f8ba27ca2c8a
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: gXc2c9NIWxhUTb7HoBCjvo-uB1L4iQj4TH38g4YhxHE
+      short-id: fcd9787f
+    servername: www.microsoft.com
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 США 3
+    type: vless
+    server: 44.242.50.106
+    port: 36895
+    uuid: 5c875449-ae7d-46f8-b919-5a29f271dfce
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: SKJQzoN8Lh8kqrDEyKzevbHHmfRhKe8XmzBxPYXF2A4
+      short-id: 5a585c3e894bf074
+    servername: www.icloud.com
+    client-fingerprint: firefox
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 14
+    type: vless
+    server: 79.141.164.40
+    port: 28167
+    uuid: 703fe724-d2b9-40f9-934f-3089403a109d
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: edl7x700EJzY6NIN1pZXo-QiyRAScQCW5UO-0ZQXpA0
+      short-id: aabbccdd
+    servername: ya.ru
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇬🇧 Великобритания 4
+    type: vless
+    server: 79.141.171.133
+    port: 443
+    uuid: 4c3fe585-ac09-41df-b284-888818888188
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: 0rtpNciTfV9TsoEc7Y8lS5LzBUzLppMnRY8bQC_bH3M
+      short-id: aabbccdd
+    servername: apple.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
   - name: 🇸🇬 Сингапур
@@ -1887,68 +1786,148 @@ proxies:
     tls: true
     servername: node1.nanonet.host
     client-fingerprint: chrome
-  - name: 🇯🇵 Япония 1
+  - name: 🇨🇭 Швейцария 1
     type: vless
-    server: 116.80.58.239
-    port: 39975
-    uuid: 15b84012-d261-4b4c-807a-061bb4a901fd
+    server: 5.182.36.251
+    port: 16331
+    uuid: d7dbeb1e-268c-465c-8f59-489f14703efd
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-    servername: cloudcircus.jp
+      public-key: wYtc0dMr5fw5bBQkbLNpTqtu0m4B9NKnOyEWjRJUmzk
+      short-id: 910aab
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: 🇹🇭 Таиланд
+    type: vless
+    server: 47.81.35.108
+    port: 443
+    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    servername: www.primevideo.com
+    client-fingerprint: chrome
+  - name: 🇫🇷 Франция 10
+    type: vless
+    server: 66.201.4.248
+    port: 443
+    uuid: 6048cd5b-621f-40c6-bf81-3855e4c069b1
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: L6EU_GCGptVyjp1Q60ZMmRAZVCCx6EVbW-gyv1Zk3zc
+      short-id: fad0a8e7
+    servername: usw.org
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇫🇷 Франция
+  - name: 🇷🇺 Россия 3
     type: vless
-    server: 57.128.81.193
+    server: 193.168.46.180
     port: 443
-    uuid: 53821f3c-5b03-456a-89f3-f8379f130752
+    uuid: 88855831-4384-4763-a283-b3f7d5e05b88
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: fXdtB8vImCUJMQBLcCNK7p1v3rVzx6HllaDLk8Vc4EU
-      short-id: 239dcd11
-    servername: www.samsung.com
+      public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+      short-id: c1a7e9b4711d5f60
+    servername: rruu.persik.host
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - name: 🇳🇱 Нидерланды 19
+    type: vless
+    server: 89.208.105.49
+    port: 8443
+    uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: QtTI_b8ywysyxqaLR-GNwsaUCPlmBdQgoWkxldRqkgw
+      short-id: cdbd559c7b
+    servername: www.google.com
+    client-fingerprint: edge
+    flow: xtls-rprx-vision
+  - name: 🇰🇿 Казахстан 1
+    type: vless
+    server: 109.248.170.119
+    port: 13447
+    uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+    udp: true
+    network: raw
+    tls: true
+    reality-opts:
+      public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+      short-id: '83'
+    servername: yahoo.com
+    client-fingerprint: chrome
+  - name: Финляндия🇫🇮🔃
+    type: vless
+    server: 109.196.101.214
+    port: 443
+    uuid: 94e51c91-6015-4270-94eb-afa9a8e125ea
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: gMBWY5R6Y9QyV1HMCvWvMSpuGgiaTJR9PclM4DTnKCg
+      short-id: 60ea2083ed6c
+    servername: kkr.mediastreamer.online
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - name: 🇭🇰 Гонконг 1
+    type: vless
+    server: 64.49.46.225
+    port: 57502
+    uuid: a4caef32-090f-4f17-b7fa-2808f205620d
+    udp: true
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: IOAu39FSiRk_VX4sfzCVZorWhUY0ikftPdHqcmNoY1c
+      short-id: ebfeeffb94d5bd5d
+    servername: www.tesla.com
     client-fingerprint: firefox
-  - name: 🇯🇵 Япония 4
+    flow: xtls-rprx-vision
+  - name: 🇫🇮 Финляндия 5
     type: vless
-    server: 138.2.50.155
-    port: 44073
-    uuid: 11d29ec6-be66-4f59-97c6-7cff836ea318
+    server: 83.219.97.101
+    port: 12291
+    uuid: 50a1c387-1e20-4399-900d-ef819adfd120
     udp: true
     network: tcp
     tls: true
     reality-opts:
-      public-key: Z3ZGnAOdKkzJ07gR_7_0k9_iTTFP6paDOrqx1rN2LU4
-    servername: www.icloud.com
+      public-key: 10YNYFgq3EsAG5nPI6loc8EjFLPJ56uTBkZHMkNHQHg
+      short-id: '025581'
+    servername: cloudflare.com
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - name: 🇯🇵 Япония 6
+  - name: 🇬🇧 Великобритания
     type: vless
-    server: 82.40.33.241
-    port: 53557
-    uuid: 00000000-0000-4000-8000-000000000000
+    server: 159.65.92.206
+    port: 27774
+    uuid: c83014e0-ad3e-4ebd-9e8f-8f7a1f6088d6
     udp: true
-    network: ws
-    tls: true
-    servername: nkeeiqgua2zzvt44excprl17zrg1.ovtc.xx.kg
-    ws-opts:
-      path: /@Marisa_kristifp=chrome
-      headers:
-        Host: nkeeiqgua2zzvt44excprl17zrg1.ovtc.xx.kg
-  - name: 🇩🇪 Германия 8
+    network: tcp
+  - name: 🇵🇱 Польша 3
     type: vless
-    server: 87.120.93.242
+    server: 45.140.204.119
     port: 443
-    uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
+    uuid: ac98c9f5-ef19-4bdd-9c5c-00244d7e2541
     udp: true
     network: tcp
     tls: true
-    servername: sub.sbrf-cdn342.ru
-    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: vl5WQd9UDA3DvLxPPS1yF9ivUipxkxoxhaBRHpnyLho
+      short-id: 67fb
+    servername: yahoo.com
+    client-fingerprint: chrome
 proxy-groups:
   - name: 🚀 Главный Выбор
     type: select
@@ -1967,632 +1946,617 @@ proxy-groups:
   - name: 🌐 Все серверы (Ручной)
     type: select
     proxies:
-      - Италия🇮🇹🔃
-      - 🇫🇷 Франция 3
-      - 🇫🇮 Финляндия 5
-      - 🇷🇺 Россия 6
-      - 🇺🇸 США 13
-      - 🇺🇸 США 9
-      - 🇳🇱 Нидерланды 16
+      - 🇺🇦 Украина
       - Люксембург🇱🇺🔃
-      - 🇯🇵 Япония 7
-      - Англия🇬🇧🔃
-      - 🇫🇷 Франция 4
-      - 🇳🇱 Нидерланды 11
-      - Болгария🇧🇬🔃
-      - 📆
-      - 🇸🇬 Сингапур 2
-      - 🇩🇪 Германия 7
-      - 🇫🇮 Финляндия 1
+      - Нидерланды🇳🇱🟢LTE
+      - 🇱🇻 LV 2
+      - 🇬🇧 Великобритания 3
+      - 🇬🇧 Великобритания 1
+      - 🇷🇺 Россия 7
+      - 🇳🇱 Нидерланды 10
+      - 🇬🇧 Великобритания 6
+      - 🇳🇱 Нидерланды 15
+      - 🇬🇧 Великобритания 2
+      - App not supported
+      - 🇳🇱 Нидерланды
+      - 🇳🇱 Нидерланды 18
+      - 🇬🇧 Великобритания 9
+      - 🇸🇪 Швеция 1
+      - 🇰🇷 Южная Корея 1
+      - 🇫🇷 Франция 8
+      - 🐢Бельгия🇧🇪🟢LTE
+      - YouTube_noADS-NEW📺
+      - 🇨🇭 Швейцария 2
+      - 🇵🇱 Польша 1
+      - 🇱🇻 LV 3
+      - 🇺🇸 США
       - 🇬🇧 Великобритания 7
-      - Германия🇩🇪2.0🟢LTE
-      - 🇫🇮 Финляндия
-      - 🇩🇪 Германия 9
-      - 🇳🇱 Нидерланды 8
+      - Литва🇱🇹🔃
+      - Финляндия🇫🇮🟢LTE🌟
+      - 🇺🇸 США 8
+      - 🇮🇪 IE 1
+      - 🇪🇸 Испания
+      - 🇫🇮 Финляндия 2
+      - 🇳🇱 Нидерланды 4
+      - 📆
+      - 🇷🇺 Россия 1
+      - 🇱🇻 LV 4
+      - 🇸🇪 Швеция 3
+      - 🇸🇪 Швеция 4
+      - 🇸🇪 Швеция 5
+      - 🇳🇱 Нидерланды 16
+      - 🇳🇱 Нидерланды 21
+      - 🇬🇧 Великобритания 10
+      - Италия🇮🇹🔃
+      - 🇫🇮 Финляндия 1
+      - 🇺🇸 США 1
+      - Приложение не поддерживается
+      - 🇬🇧 Великобритания 8
       - Литва🇱🇹🟢LTE
+      - 🇫🇮 Финляндия 4
+      - 🇺🇸 США 10
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 5
+      - 🇫🇷 Франция 7
+      - 🇳🇱 Нидерланды 17
+      - 🇰🇿 Казахстан
+      - 🇫🇮 Финляндия
+      - 🇱🇻 LV
+      - 🇮🇪 IE
+      - 🇱🇻 LV 5
+      - 🇫🇷 Франция 4
+      - Болгария🇧🇬🔃
+      - 🇺🇸 США 7
+      - Германия🇩🇪2.0🟢LTE
+      - Франция🇫🇷🔃
+      - 🐢Чехия🇨🇿🟢LTE
+      - 🇯🇵 Япония 3
+      - Израиль🇮🇱🔃
+      - 🇳🇱 Нидерланды 20
+      - 🇯🇵 Япония 1
+      - 🇷🇺 Россия 2
+      - 🇺🇸 США 9
+      - 🇬🇧 Великобритания 5
+      - Дания🇩🇰🔃
+      - 🇱🇻 LV 1
+      - Польша🇵🇱🔃
+      - 🇳🇱 Нидерланды 1
+      - 🇳🇱 Нидерланды 2
+      - 🇳🇱 Нидерланды 11
+      - 🇸🇪 Швеция 2
+      - 🇯🇵 Япония 2
+      - 🟢
+      - 🇭🇰 Гонконг
+      - Финляндия🇫🇮🟢LTE
+      - 🇮🇹 Италия
+      - Латвия🇱🇻🔃
+      - 🇰🇷 Южная Корея
+      - 🇵🇱 Польша
+      - 🇷🇺 Россия 4
+      - 🇺🇸 США 4
+      - 🇸🇬 Сингапур 2
+      - 🇫🇷 Франция 6
+      - Англия🇬🇧🔃
+      - 🇳🇱 Нидерланды 13
+      - 🇷🇺 Россия 5
       - 🇯🇵 Япония
-      - 🇩🇪 Германия 3
-      - 🇩🇪 Германия 17
+      - 🇳🇱 Нидерланды 8
+      - 🇫🇷 Франция
+      - 🇨🇭 Швейцария
+      - 🇭🇰 Гонконг 3
+      - 🇫🇷 Франция 9
+      - 🇳🇱 Нидерланды 3
+      - 🇸🇬 Сингапур 4
+      - 🇳🇱 Нидерланды 7
+      - 🇭🇰 Гонконг 4
+      - 🇸🇪 Швеция
+      - ➡️t.me/Strelka_vpn_bot
+      - 🇫🇷 Франция 1
+      - 🇳🇱 Нидерланды 6
+      - 🇸🇬 Сингапур 5
+      - 🇳🇱 Нидерланды 9
+      - 🇺🇸 США 5
+      - 🇸🇬 Сингапур 1
+      - Германия🇩🇪🔃
+      - Нидерланды🇳🇱🔃
+      - 🇵🇱 Польша 2
+      - 🇺🇸 США 2
       - 🇷🇺 Россия
+      - 🇫🇮 Финляндия 3
+      - 🇫🇷 Франция 5
+      - 🇺🇸 США 6
+      - 🇳🇱 Нидерланды 12
+      - 🇳🇱 Нидерланды 5
+      - 🇫🇷 Франция 2
+      - 🇯🇵 Япония 4
+      - Германия🇩🇪🟢LTE
+      - 🇺🇸 США 12
+      - 🇵🇱 Польша 4
+      - 🇸🇬 Сингапур 3
+      - США🇺🇸🔃
+      - 🇫🇷 Франция 3
+      - 🇷🇺 Россия 6
+      - Россия🇷🇺
+      - 🇺🇸 США 11
       - 🇺🇸 США 3
       - 🇳🇱 Нидерланды 14
-      - 🇬🇧 Великобритания 12
-      - 🇸🇬 Сингапур 4
-      - Латвия🇱🇻🔃
-      - 🇩🇪 Германия 16
-      - 🇬🇧 Великобритания 2
-      - 🇬🇧 Великобритания
-      - 🇯🇵 Япония 3
-      - 🇺🇸 США 11
-      - 🇵🇱 Польша 4
-      - 🇷🇺 Россия 7
-      - 🇫🇷 Франция 2
-      - 🇵🇱 Польша 1
-      - 🇳🇱 Нидерланды 6
-      - 🇵🇱 Польша
-      - 🇫🇷 Франция 8
-      - 🇷🇺 Россия 5
-      - 🇺🇸 США 2
-      - 🇩🇪 Германия 13
-      - 🇸🇬 Сингапур 3
-      - 🇳🇱 Нидерланды 3
-      - 🇷🇺 Россия 1
-      - 🇳🇱 Нидерланды 10
-      - YouTube_noADS-NEW📺
-      - Дания🇩🇰🔃
-      - 🇬🇧 Великобритания 6
-      - США🇺🇸🔃
-      - ➡️t.me/Strelka_vpn_bot
-      - 🇺🇸 США 15
-      - 🇵🇱 Польша 5
-      - 🇩🇪 Германия 12
-      - Нидерланды🇳🇱🟢LTE
-      - 🇩🇪 Германия 11
-      - Германия🇩🇪🟢LTE
-      - 🇫🇮 Финляндия 6
-      - App not supported
-      - 🇳🇱 Нидерланды 24
-      - 🇯🇵 Япония 2
-      - 🇺🇸 США
-      - 🇺🇸 США 6
-      - 🇳🇱 Нидерланды 13
-      - Нидерланды🇳🇱🔃
-      - 🇺🇸 США 4
-      - 🇳🇱 Нидерланды
-      - 🇩🇪 Германия 15
-      - 🇳🇱 Нидерланды 17
-      - 🇺🇸 США 17
-      - 🐢Бельгия🇧🇪🟢LTE
-      - Финляндия🇫🇮🟢LTE
-      - 🇳🇱 Нидерланды 18
-      - 🇳🇱 Нидерланды 15
-      - 🇳🇱 Нидерланды 23
-      - 🇩🇪 Германия 10
-      - 🇸🇬 Сингапур 5
-      - 🇺🇸 США 7
-      - 🇬🇧 Великобритания 1
-      - 🇵🇱 Польша 3
-      - 🇬🇧 Великобритания 5
-      - 🇺🇸 США 12
-      - 🇬🇧 Великобритания 11
-      - 🇬🇧 Великобритания 8
-      - 🇫🇷 Франция 7
-      - 🇬🇧 Великобритания 3
-      - 🇳🇱 Нидерланды 21
-      - 🇳🇱 Нидерланды 19
-      - 🇬🇧 Великобритания 10
-      - 🇫🇮 Финляндия 4
-      - 🇷🇺 Россия 8
-      - 🇳🇱 Нидерланды 4
-      - 🇹🇷 Турция
-      - 🇺🇸 США 5
-      - 🇳🇱 Нидерланды 12
-      - 🇩🇪 Германия
-      - 🇺🇸 США 8
-      - 🇫🇷 Франция 5
-      - 🇳🇱 Нидерланды 22
       - 🇬🇧 Великобритания 4
-      - 🇩🇪 Германия 4
-      - Финляндия🇫🇮🔃
-      - 🇩🇪 Германия 2
-      - 🇵🇱 Польша 2
-      - 🇷🇺 Россия 2
-      - 🇳🇱 Нидерланды 9
-      - 🇬🇧 Великобритания 9
-      - 🇺🇸 США 14
-      - 🇫🇷 Франция 9
-      - 🇳🇱 Нидерланды 1
-      - 🇩🇪 Германия 1
-      - 🇳🇱 Нидерланды 7
-      - Израиль🇮🇱🔃
-      - 🇫🇷 Франция 6
-      - 🇩🇪 Германия 14
-      - 🇳🇱 Нидерланды 2
-      - 🇺🇸 США 16
-      - 🇩🇪 Германия 6
-      - 🇫🇮 Финляндия 2
-      - 🇰🇷 Южная Корея
-      - 🇯🇵 Япония 5
-      - 🇫🇷 Франция 1
-      - 🇺🇸 США 10
-      - 🇫🇮 Финляндия 3
-      - Польша🇵🇱🔃
-      - 🇳🇱 Нидерланды 20
-      - 🇳🇱 Нидерланды 5
-      - Франция🇫🇷🔃
-      - 🇸🇬 Сингапур 6
-      - 🇷🇺 Россия 3
-      - Приложение не поддерживается
-      - 🇷🇺 Россия 4
-      - 🇰🇷 Южная Корея 1
-      - 🇩🇪 Германия 5
-      - Литва🇱🇹🔃
-      - 🟢
-      - 🇸🇬 Сингапур 1
-      - 🇺🇸 США 1
-      - Германия🇩🇪🔃
-      - Россия🇷🇺
       - 🇸🇬 Сингапур
-      - 🇯🇵 Япония 1
-      - 🇫🇷 Франция
-      - 🇯🇵 Япония 4
-      - 🇯🇵 Япония 6
-      - 🇩🇪 Германия 8
+      - 🇨🇭 Швейцария 1
+      - 🇹🇭 Таиланд
+      - 🇫🇷 Франция 10
+      - 🇷🇺 Россия 3
+      - 🇳🇱 Нидерланды 19
+      - 🇰🇿 Казахстан 1
+      - Финляндия🇫🇮🔃
+      - 🇭🇰 Гонконг 1
+      - 🇫🇮 Финляндия 5
+      - 🇬🇧 Великобритания
+      - 🇵🇱 Польша 3
   - name: 🌍 Зарубеж (Ручной)
     type: select
     proxies:
-      - Италия🇮🇹🔃
-      - 🇫🇷 Франция 3
-      - 🇫🇮 Финляндия 5
-      - 🇺🇸 США 13
-      - 🇺🇸 США 9
-      - 🇳🇱 Нидерланды 16
+      - 🇺🇦 Украина
       - Люксембург🇱🇺🔃
-      - 🇯🇵 Япония 7
-      - Англия🇬🇧🔃
-      - 🇫🇷 Франция 4
-      - 🇳🇱 Нидерланды 11
-      - Болгария🇧🇬🔃
-      - 📆
-      - 🇸🇬 Сингапур 2
-      - 🇩🇪 Германия 7
-      - 🇫🇮 Финляндия 1
+      - Нидерланды🇳🇱🟢LTE
+      - 🇱🇻 LV 2
+      - 🇬🇧 Великобритания 3
+      - 🇬🇧 Великобритания 1
+      - 🇳🇱 Нидерланды 10
+      - 🇬🇧 Великобритания 6
+      - 🇳🇱 Нидерланды 15
+      - 🇬🇧 Великобритания 2
+      - App not supported
+      - 🇳🇱 Нидерланды
+      - 🇳🇱 Нидерланды 18
+      - 🇬🇧 Великобритания 9
+      - 🇸🇪 Швеция 1
+      - 🇰🇷 Южная Корея 1
+      - 🇫🇷 Франция 8
+      - 🐢Бельгия🇧🇪🟢LTE
+      - YouTube_noADS-NEW📺
+      - 🇨🇭 Швейцария 2
+      - 🇵🇱 Польша 1
+      - 🇱🇻 LV 3
+      - 🇺🇸 США
       - 🇬🇧 Великобритания 7
-      - Германия🇩🇪2.0🟢LTE
-      - 🇫🇮 Финляндия
-      - 🇩🇪 Германия 9
-      - 🇳🇱 Нидерланды 8
+      - Литва🇱🇹🔃
+      - Финляндия🇫🇮🟢LTE🌟
+      - 🇺🇸 США 8
+      - 🇮🇪 IE 1
+      - 🇪🇸 Испания
+      - 🇫🇮 Финляндия 2
+      - 🇳🇱 Нидерланды 4
+      - 📆
+      - 🇱🇻 LV 4
+      - 🇸🇪 Швеция 3
+      - 🇸🇪 Швеция 4
+      - 🇸🇪 Швеция 5
+      - 🇳🇱 Нидерланды 16
+      - 🇳🇱 Нидерланды 21
+      - 🇬🇧 Великобритания 10
+      - Италия🇮🇹🔃
+      - 🇫🇮 Финляндия 1
+      - 🇺🇸 США 1
+      - Приложение не поддерживается
+      - 🇬🇧 Великобритания 8
       - Литва🇱🇹🟢LTE
+      - 🇫🇮 Финляндия 4
+      - 🇺🇸 США 10
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 5
+      - 🇫🇷 Франция 7
+      - 🇳🇱 Нидерланды 17
+      - 🇰🇿 Казахстан
+      - 🇫🇮 Финляндия
+      - 🇱🇻 LV
+      - 🇮🇪 IE
+      - 🇱🇻 LV 5
+      - 🇫🇷 Франция 4
+      - Болгария🇧🇬🔃
+      - 🇺🇸 США 7
+      - Германия🇩🇪2.0🟢LTE
+      - Франция🇫🇷🔃
+      - 🐢Чехия🇨🇿🟢LTE
+      - 🇯🇵 Япония 3
+      - Израиль🇮🇱🔃
+      - 🇳🇱 Нидерланды 20
+      - 🇯🇵 Япония 1
+      - 🇺🇸 США 9
+      - 🇬🇧 Великобритания 5
+      - Дания🇩🇰🔃
+      - 🇱🇻 LV 1
+      - Польша🇵🇱🔃
+      - 🇳🇱 Нидерланды 1
+      - 🇳🇱 Нидерланды 2
+      - 🇳🇱 Нидерланды 11
+      - 🇸🇪 Швеция 2
+      - 🇯🇵 Япония 2
+      - 🟢
+      - 🇭🇰 Гонконг
+      - Финляндия🇫🇮🟢LTE
+      - 🇮🇹 Италия
+      - Латвия🇱🇻🔃
+      - 🇰🇷 Южная Корея
+      - 🇵🇱 Польша
+      - 🇺🇸 США 4
+      - 🇸🇬 Сингапур 2
+      - 🇫🇷 Франция 6
+      - Англия🇬🇧🔃
+      - 🇳🇱 Нидерланды 13
       - 🇯🇵 Япония
-      - 🇩🇪 Германия 3
-      - 🇩🇪 Германия 17
+      - 🇳🇱 Нидерланды 8
+      - 🇫🇷 Франция
+      - 🇨🇭 Швейцария
+      - 🇭🇰 Гонконг 3
+      - 🇫🇷 Франция 9
+      - 🇳🇱 Нидерланды 3
+      - 🇸🇬 Сингапур 4
+      - 🇳🇱 Нидерланды 7
+      - 🇭🇰 Гонконг 4
+      - 🇸🇪 Швеция
+      - ➡️t.me/Strelka_vpn_bot
+      - 🇫🇷 Франция 1
+      - 🇳🇱 Нидерланды 6
+      - 🇸🇬 Сингапур 5
+      - 🇳🇱 Нидерланды 9
+      - 🇺🇸 США 5
+      - 🇸🇬 Сингапур 1
+      - Германия🇩🇪🔃
+      - Нидерланды🇳🇱🔃
+      - 🇵🇱 Польша 2
+      - 🇺🇸 США 2
+      - 🇫🇮 Финляндия 3
+      - 🇫🇷 Франция 5
+      - 🇺🇸 США 6
+      - 🇳🇱 Нидерланды 12
+      - 🇳🇱 Нидерланды 5
+      - 🇫🇷 Франция 2
+      - 🇯🇵 Япония 4
+      - Германия🇩🇪🟢LTE
+      - 🇺🇸 США 12
+      - 🇵🇱 Польша 4
+      - 🇸🇬 Сингапур 3
+      - США🇺🇸🔃
+      - 🇫🇷 Франция 3
+      - 🇺🇸 США 11
       - 🇺🇸 США 3
       - 🇳🇱 Нидерланды 14
-      - 🇬🇧 Великобритания 12
-      - 🇸🇬 Сингапур 4
-      - Латвия🇱🇻🔃
-      - 🇩🇪 Германия 16
-      - 🇬🇧 Великобритания 2
-      - 🇬🇧 Великобритания
-      - 🇯🇵 Япония 3
-      - 🇺🇸 США 11
-      - 🇵🇱 Польша 4
-      - 🇫🇷 Франция 2
-      - 🇵🇱 Польша 1
-      - 🇳🇱 Нидерланды 6
-      - 🇵🇱 Польша
-      - 🇫🇷 Франция 8
-      - 🇺🇸 США 2
-      - 🇩🇪 Германия 13
-      - 🇸🇬 Сингапур 3
-      - 🇳🇱 Нидерланды 3
-      - 🇳🇱 Нидерланды 10
-      - YouTube_noADS-NEW📺
-      - Дания🇩🇰🔃
-      - 🇬🇧 Великобритания 6
-      - США🇺🇸🔃
-      - ➡️t.me/Strelka_vpn_bot
-      - 🇺🇸 США 15
-      - 🇵🇱 Польша 5
-      - 🇩🇪 Германия 12
-      - Нидерланды🇳🇱🟢LTE
-      - 🇩🇪 Германия 11
-      - Германия🇩🇪🟢LTE
-      - 🇫🇮 Финляндия 6
-      - App not supported
-      - 🇳🇱 Нидерланды 24
-      - 🇯🇵 Япония 2
-      - 🇺🇸 США
-      - 🇺🇸 США 6
-      - 🇳🇱 Нидерланды 13
-      - Нидерланды🇳🇱🔃
-      - 🇺🇸 США 4
-      - 🇳🇱 Нидерланды
-      - 🇩🇪 Германия 15
-      - 🇳🇱 Нидерланды 17
-      - 🇺🇸 США 17
-      - 🐢Бельгия🇧🇪🟢LTE
-      - Финляндия🇫🇮🟢LTE
-      - 🇳🇱 Нидерланды 18
-      - 🇳🇱 Нидерланды 15
-      - 🇳🇱 Нидерланды 23
-      - 🇩🇪 Германия 10
-      - 🇸🇬 Сингапур 5
-      - 🇺🇸 США 7
-      - 🇬🇧 Великобритания 1
-      - 🇵🇱 Польша 3
-      - 🇬🇧 Великобритания 5
-      - 🇺🇸 США 12
-      - 🇬🇧 Великобритания 11
-      - 🇬🇧 Великобритания 8
-      - 🇫🇷 Франция 7
-      - 🇬🇧 Великобритания 3
-      - 🇳🇱 Нидерланды 21
-      - 🇳🇱 Нидерланды 19
-      - 🇬🇧 Великобритания 10
-      - 🇫🇮 Финляндия 4
-      - 🇳🇱 Нидерланды 4
-      - 🇹🇷 Турция
-      - 🇺🇸 США 5
-      - 🇳🇱 Нидерланды 12
-      - 🇩🇪 Германия
-      - 🇺🇸 США 8
-      - 🇫🇷 Франция 5
-      - 🇳🇱 Нидерланды 22
       - 🇬🇧 Великобритания 4
-      - 🇩🇪 Германия 4
-      - Финляндия🇫🇮🔃
-      - 🇩🇪 Германия 2
-      - 🇵🇱 Польша 2
-      - 🇳🇱 Нидерланды 9
-      - 🇬🇧 Великобритания 9
-      - 🇺🇸 США 14
-      - 🇫🇷 Франция 9
-      - 🇳🇱 Нидерланды 1
-      - 🇩🇪 Германия 1
-      - 🇳🇱 Нидерланды 7
-      - Израиль🇮🇱🔃
-      - 🇫🇷 Франция 6
-      - 🇩🇪 Германия 14
-      - 🇳🇱 Нидерланды 2
-      - 🇺🇸 США 16
-      - 🇩🇪 Германия 6
-      - 🇫🇮 Финляндия 2
-      - 🇰🇷 Южная Корея
-      - 🇯🇵 Япония 5
-      - 🇫🇷 Франция 1
-      - 🇺🇸 США 10
-      - 🇫🇮 Финляндия 3
-      - Польша🇵🇱🔃
-      - 🇳🇱 Нидерланды 20
-      - 🇳🇱 Нидерланды 5
-      - Франция🇫🇷🔃
-      - 🇸🇬 Сингапур 6
-      - Приложение не поддерживается
-      - 🇰🇷 Южная Корея 1
-      - 🇩🇪 Германия 5
-      - Литва🇱🇹🔃
-      - 🟢
-      - 🇸🇬 Сингапур 1
-      - 🇺🇸 США 1
-      - Германия🇩🇪🔃
       - 🇸🇬 Сингапур
-      - 🇯🇵 Япония 1
-      - 🇫🇷 Франция
-      - 🇯🇵 Япония 4
-      - 🇯🇵 Япония 6
-      - 🇩🇪 Германия 8
+      - 🇨🇭 Швейцария 1
+      - 🇹🇭 Таиланд
+      - 🇫🇷 Франция 10
+      - 🇳🇱 Нидерланды 19
+      - 🇰🇿 Казахстан 1
+      - Финляндия🇫🇮🔃
+      - 🇭🇰 Гонконг 1
+      - 🇫🇮 Финляндия 5
+      - 🇬🇧 Великобритания
+      - 🇵🇱 Польша 3
   - name: 🐻 Россия (Ручной)
     type: select
     proxies:
-      - 🇷🇺 Россия 6
-      - 🇷🇺 Россия
       - 🇷🇺 Россия 7
-      - 🇷🇺 Россия 5
       - 🇷🇺 Россия 1
-      - 🇷🇺 Россия 8
       - 🇷🇺 Россия 2
-      - 🇷🇺 Россия 3
       - 🇷🇺 Россия 4
+      - 🇷🇺 Россия 5
+      - 🇷🇺 Россия
+      - 🇷🇺 Россия 6
       - Россия🇷🇺
+      - 🇷🇺 Россия 3
   - name: ⚡ Лучший пинг (Все)
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - Италия🇮🇹🔃
-      - 🇫🇷 Франция 3
-      - 🇫🇮 Финляндия 5
-      - 🇷🇺 Россия 6
-      - 🇺🇸 США 13
-      - 🇺🇸 США 9
-      - 🇳🇱 Нидерланды 16
+      - 🇺🇦 Украина
       - Люксембург🇱🇺🔃
-      - 🇯🇵 Япония 7
-      - Англия🇬🇧🔃
-      - 🇫🇷 Франция 4
-      - 🇳🇱 Нидерланды 11
-      - Болгария🇧🇬🔃
-      - 📆
-      - 🇸🇬 Сингапур 2
-      - 🇩🇪 Германия 7
-      - 🇫🇮 Финляндия 1
+      - Нидерланды🇳🇱🟢LTE
+      - 🇱🇻 LV 2
+      - 🇬🇧 Великобритания 3
+      - 🇬🇧 Великобритания 1
+      - 🇷🇺 Россия 7
+      - 🇳🇱 Нидерланды 10
+      - 🇬🇧 Великобритания 6
+      - 🇳🇱 Нидерланды 15
+      - 🇬🇧 Великобритания 2
+      - App not supported
+      - 🇳🇱 Нидерланды
+      - 🇳🇱 Нидерланды 18
+      - 🇬🇧 Великобритания 9
+      - 🇸🇪 Швеция 1
+      - 🇰🇷 Южная Корея 1
+      - 🇫🇷 Франция 8
+      - 🐢Бельгия🇧🇪🟢LTE
+      - YouTube_noADS-NEW📺
+      - 🇨🇭 Швейцария 2
+      - 🇵🇱 Польша 1
+      - 🇱🇻 LV 3
+      - 🇺🇸 США
       - 🇬🇧 Великобритания 7
-      - Германия🇩🇪2.0🟢LTE
-      - 🇫🇮 Финляндия
-      - 🇩🇪 Германия 9
-      - 🇳🇱 Нидерланды 8
+      - Литва🇱🇹🔃
+      - Финляндия🇫🇮🟢LTE🌟
+      - 🇺🇸 США 8
+      - 🇮🇪 IE 1
+      - 🇪🇸 Испания
+      - 🇫🇮 Финляндия 2
+      - 🇳🇱 Нидерланды 4
+      - 📆
+      - 🇷🇺 Россия 1
+      - 🇱🇻 LV 4
+      - 🇸🇪 Швеция 3
+      - 🇸🇪 Швеция 4
+      - 🇸🇪 Швеция 5
+      - 🇳🇱 Нидерланды 16
+      - 🇳🇱 Нидерланды 21
+      - 🇬🇧 Великобритания 10
+      - Италия🇮🇹🔃
+      - 🇫🇮 Финляндия 1
+      - 🇺🇸 США 1
+      - Приложение не поддерживается
+      - 🇬🇧 Великобритания 8
       - Литва🇱🇹🟢LTE
+      - 🇫🇮 Финляндия 4
+      - 🇺🇸 США 10
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 5
+      - 🇫🇷 Франция 7
+      - 🇳🇱 Нидерланды 17
+      - 🇰🇿 Казахстан
+      - 🇫🇮 Финляндия
+      - 🇱🇻 LV
+      - 🇮🇪 IE
+      - 🇱🇻 LV 5
+      - 🇫🇷 Франция 4
+      - Болгария🇧🇬🔃
+      - 🇺🇸 США 7
+      - Германия🇩🇪2.0🟢LTE
+      - Франция🇫🇷🔃
+      - 🐢Чехия🇨🇿🟢LTE
+      - 🇯🇵 Япония 3
+      - Израиль🇮🇱🔃
+      - 🇳🇱 Нидерланды 20
+      - 🇯🇵 Япония 1
+      - 🇷🇺 Россия 2
+      - 🇺🇸 США 9
+      - 🇬🇧 Великобритания 5
+      - Дания🇩🇰🔃
+      - 🇱🇻 LV 1
+      - Польша🇵🇱🔃
+      - 🇳🇱 Нидерланды 1
+      - 🇳🇱 Нидерланды 2
+      - 🇳🇱 Нидерланды 11
+      - 🇸🇪 Швеция 2
+      - 🇯🇵 Япония 2
+      - 🟢
+      - 🇭🇰 Гонконг
+      - Финляндия🇫🇮🟢LTE
+      - 🇮🇹 Италия
+      - Латвия🇱🇻🔃
+      - 🇰🇷 Южная Корея
+      - 🇵🇱 Польша
+      - 🇷🇺 Россия 4
+      - 🇺🇸 США 4
+      - 🇸🇬 Сингапур 2
+      - 🇫🇷 Франция 6
+      - Англия🇬🇧🔃
+      - 🇳🇱 Нидерланды 13
+      - 🇷🇺 Россия 5
       - 🇯🇵 Япония
-      - 🇩🇪 Германия 3
-      - 🇩🇪 Германия 17
+      - 🇳🇱 Нидерланды 8
+      - 🇫🇷 Франция
+      - 🇨🇭 Швейцария
+      - 🇭🇰 Гонконг 3
+      - 🇫🇷 Франция 9
+      - 🇳🇱 Нидерланды 3
+      - 🇸🇬 Сингапур 4
+      - 🇳🇱 Нидерланды 7
+      - 🇭🇰 Гонконг 4
+      - 🇸🇪 Швеция
+      - ➡️t.me/Strelka_vpn_bot
+      - 🇫🇷 Франция 1
+      - 🇳🇱 Нидерланды 6
+      - 🇸🇬 Сингапур 5
+      - 🇳🇱 Нидерланды 9
+      - 🇺🇸 США 5
+      - 🇸🇬 Сингапур 1
+      - Германия🇩🇪🔃
+      - Нидерланды🇳🇱🔃
+      - 🇵🇱 Польша 2
+      - 🇺🇸 США 2
       - 🇷🇺 Россия
+      - 🇫🇮 Финляндия 3
+      - 🇫🇷 Франция 5
+      - 🇺🇸 США 6
+      - 🇳🇱 Нидерланды 12
+      - 🇳🇱 Нидерланды 5
+      - 🇫🇷 Франция 2
+      - 🇯🇵 Япония 4
+      - Германия🇩🇪🟢LTE
+      - 🇺🇸 США 12
+      - 🇵🇱 Польша 4
+      - 🇸🇬 Сингапур 3
+      - США🇺🇸🔃
+      - 🇫🇷 Франция 3
+      - 🇷🇺 Россия 6
+      - Россия🇷🇺
+      - 🇺🇸 США 11
       - 🇺🇸 США 3
       - 🇳🇱 Нидерланды 14
-      - 🇬🇧 Великобритания 12
-      - 🇸🇬 Сингапур 4
-      - Латвия🇱🇻🔃
-      - 🇩🇪 Германия 16
-      - 🇬🇧 Великобритания 2
-      - 🇬🇧 Великобритания
-      - 🇯🇵 Япония 3
-      - 🇺🇸 США 11
-      - 🇵🇱 Польша 4
-      - 🇷🇺 Россия 7
-      - 🇫🇷 Франция 2
-      - 🇵🇱 Польша 1
-      - 🇳🇱 Нидерланды 6
-      - 🇵🇱 Польша
-      - 🇫🇷 Франция 8
-      - 🇷🇺 Россия 5
-      - 🇺🇸 США 2
-      - 🇩🇪 Германия 13
-      - 🇸🇬 Сингапур 3
-      - 🇳🇱 Нидерланды 3
-      - 🇷🇺 Россия 1
-      - 🇳🇱 Нидерланды 10
-      - YouTube_noADS-NEW📺
-      - Дания🇩🇰🔃
-      - 🇬🇧 Великобритания 6
-      - США🇺🇸🔃
-      - ➡️t.me/Strelka_vpn_bot
-      - 🇺🇸 США 15
-      - 🇵🇱 Польша 5
-      - 🇩🇪 Германия 12
-      - Нидерланды🇳🇱🟢LTE
-      - 🇩🇪 Германия 11
-      - Германия🇩🇪🟢LTE
-      - 🇫🇮 Финляндия 6
-      - App not supported
-      - 🇳🇱 Нидерланды 24
-      - 🇯🇵 Япония 2
-      - 🇺🇸 США
-      - 🇺🇸 США 6
-      - 🇳🇱 Нидерланды 13
-      - Нидерланды🇳🇱🔃
-      - 🇺🇸 США 4
-      - 🇳🇱 Нидерланды
-      - 🇩🇪 Германия 15
-      - 🇳🇱 Нидерланды 17
-      - 🇺🇸 США 17
-      - 🐢Бельгия🇧🇪🟢LTE
-      - Финляндия🇫🇮🟢LTE
-      - 🇳🇱 Нидерланды 18
-      - 🇳🇱 Нидерланды 15
-      - 🇳🇱 Нидерланды 23
-      - 🇩🇪 Германия 10
-      - 🇸🇬 Сингапур 5
-      - 🇺🇸 США 7
-      - 🇬🇧 Великобритания 1
-      - 🇵🇱 Польша 3
-      - 🇬🇧 Великобритания 5
-      - 🇺🇸 США 12
-      - 🇬🇧 Великобритания 11
-      - 🇬🇧 Великобритания 8
-      - 🇫🇷 Франция 7
-      - 🇬🇧 Великобритания 3
-      - 🇳🇱 Нидерланды 21
-      - 🇳🇱 Нидерланды 19
-      - 🇬🇧 Великобритания 10
-      - 🇫🇮 Финляндия 4
-      - 🇷🇺 Россия 8
-      - 🇳🇱 Нидерланды 4
-      - 🇹🇷 Турция
-      - 🇺🇸 США 5
-      - 🇳🇱 Нидерланды 12
-      - 🇩🇪 Германия
-      - 🇺🇸 США 8
-      - 🇫🇷 Франция 5
-      - 🇳🇱 Нидерланды 22
       - 🇬🇧 Великобритания 4
-      - 🇩🇪 Германия 4
-      - Финляндия🇫🇮🔃
-      - 🇩🇪 Германия 2
-      - 🇵🇱 Польша 2
-      - 🇷🇺 Россия 2
-      - 🇳🇱 Нидерланды 9
-      - 🇬🇧 Великобритания 9
-      - 🇺🇸 США 14
-      - 🇫🇷 Франция 9
-      - 🇳🇱 Нидерланды 1
-      - 🇩🇪 Германия 1
-      - 🇳🇱 Нидерланды 7
-      - Израиль🇮🇱🔃
-      - 🇫🇷 Франция 6
-      - 🇩🇪 Германия 14
-      - 🇳🇱 Нидерланды 2
-      - 🇺🇸 США 16
-      - 🇩🇪 Германия 6
-      - 🇫🇮 Финляндия 2
-      - 🇰🇷 Южная Корея
-      - 🇯🇵 Япония 5
-      - 🇫🇷 Франция 1
-      - 🇺🇸 США 10
-      - 🇫🇮 Финляндия 3
-      - Польша🇵🇱🔃
-      - 🇳🇱 Нидерланды 20
-      - 🇳🇱 Нидерланды 5
-      - Франция🇫🇷🔃
-      - 🇸🇬 Сингапур 6
-      - 🇷🇺 Россия 3
-      - Приложение не поддерживается
-      - 🇷🇺 Россия 4
-      - 🇰🇷 Южная Корея 1
-      - 🇩🇪 Германия 5
-      - Литва🇱🇹🔃
-      - 🟢
-      - 🇸🇬 Сингапур 1
-      - 🇺🇸 США 1
-      - Германия🇩🇪🔃
-      - Россия🇷🇺
       - 🇸🇬 Сингапур
-      - 🇯🇵 Япония 1
-      - 🇫🇷 Франция
-      - 🇯🇵 Япония 4
-      - 🇯🇵 Япония 6
+      - 🇨🇭 Швейцария 1
+      - 🇹🇭 Таиланд
+      - 🇫🇷 Франция 10
+      - 🇷🇺 Россия 3
+      - 🇳🇱 Нидерланды 19
+      - 🇰🇿 Казахстан 1
+      - Финляндия🇫🇮🔃
+      - 🇭🇰 Гонконг 1
+      - 🇫🇮 Финляндия 5
+      - 🇬🇧 Великобритания
+      - 🇵🇱 Польша 3
   - name: ⚡ Авто-Зарубеж
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - Италия🇮🇹🔃
-      - 🇫🇷 Франция 3
-      - 🇫🇮 Финляндия 5
-      - 🇺🇸 США 13
-      - 🇺🇸 США 9
-      - 🇳🇱 Нидерланды 16
+      - 🇺🇦 Украина
       - Люксембург🇱🇺🔃
-      - 🇯🇵 Япония 7
-      - Англия🇬🇧🔃
-      - 🇫🇷 Франция 4
-      - 🇳🇱 Нидерланды 11
-      - Болгария🇧🇬🔃
-      - 📆
-      - 🇸🇬 Сингапур 2
-      - 🇩🇪 Германия 7
-      - 🇫🇮 Финляндия 1
+      - Нидерланды🇳🇱🟢LTE
+      - 🇱🇻 LV 2
+      - 🇬🇧 Великобритания 3
+      - 🇬🇧 Великобритания 1
+      - 🇳🇱 Нидерланды 10
+      - 🇬🇧 Великобритания 6
+      - 🇳🇱 Нидерланды 15
+      - 🇬🇧 Великобритания 2
+      - App not supported
+      - 🇳🇱 Нидерланды
+      - 🇳🇱 Нидерланды 18
+      - 🇬🇧 Великобритания 9
+      - 🇸🇪 Швеция 1
+      - 🇰🇷 Южная Корея 1
+      - 🇫🇷 Франция 8
+      - 🐢Бельгия🇧🇪🟢LTE
+      - YouTube_noADS-NEW📺
+      - 🇨🇭 Швейцария 2
+      - 🇵🇱 Польша 1
+      - 🇱🇻 LV 3
+      - 🇺🇸 США
       - 🇬🇧 Великобритания 7
-      - Германия🇩🇪2.0🟢LTE
-      - 🇫🇮 Финляндия
-      - 🇩🇪 Германия 9
-      - 🇳🇱 Нидерланды 8
+      - Литва🇱🇹🔃
+      - Финляндия🇫🇮🟢LTE🌟
+      - 🇺🇸 США 8
+      - 🇮🇪 IE 1
+      - 🇪🇸 Испания
+      - 🇫🇮 Финляндия 2
+      - 🇳🇱 Нидерланды 4
+      - 📆
+      - 🇱🇻 LV 4
+      - 🇸🇪 Швеция 3
+      - 🇸🇪 Швеция 4
+      - 🇸🇪 Швеция 5
+      - 🇳🇱 Нидерланды 16
+      - 🇳🇱 Нидерланды 21
+      - 🇬🇧 Великобритания 10
+      - Италия🇮🇹🔃
+      - 🇫🇮 Финляндия 1
+      - 🇺🇸 США 1
+      - Приложение не поддерживается
+      - 🇬🇧 Великобритания 8
       - Литва🇱🇹🟢LTE
+      - 🇫🇮 Финляндия 4
+      - 🇺🇸 США 10
+      - 🇭🇰 Гонконг 2
+      - 🇭🇰 Гонконг 5
+      - 🇫🇷 Франция 7
+      - 🇳🇱 Нидерланды 17
+      - 🇰🇿 Казахстан
+      - 🇫🇮 Финляндия
+      - 🇱🇻 LV
+      - 🇮🇪 IE
+      - 🇱🇻 LV 5
+      - 🇫🇷 Франция 4
+      - Болгария🇧🇬🔃
+      - 🇺🇸 США 7
+      - Германия🇩🇪2.0🟢LTE
+      - Франция🇫🇷🔃
+      - 🐢Чехия🇨🇿🟢LTE
+      - 🇯🇵 Япония 3
+      - Израиль🇮🇱🔃
+      - 🇳🇱 Нидерланды 20
+      - 🇯🇵 Япония 1
+      - 🇺🇸 США 9
+      - 🇬🇧 Великобритания 5
+      - Дания🇩🇰🔃
+      - 🇱🇻 LV 1
+      - Польша🇵🇱🔃
+      - 🇳🇱 Нидерланды 1
+      - 🇳🇱 Нидерланды 2
+      - 🇳🇱 Нидерланды 11
+      - 🇸🇪 Швеция 2
+      - 🇯🇵 Япония 2
+      - 🟢
+      - 🇭🇰 Гонконг
+      - Финляндия🇫🇮🟢LTE
+      - 🇮🇹 Италия
+      - Латвия🇱🇻🔃
+      - 🇰🇷 Южная Корея
+      - 🇵🇱 Польша
+      - 🇺🇸 США 4
+      - 🇸🇬 Сингапур 2
+      - 🇫🇷 Франция 6
+      - Англия🇬🇧🔃
+      - 🇳🇱 Нидерланды 13
       - 🇯🇵 Япония
-      - 🇩🇪 Германия 3
-      - 🇩🇪 Германия 17
+      - 🇳🇱 Нидерланды 8
+      - 🇫🇷 Франция
+      - 🇨🇭 Швейцария
+      - 🇭🇰 Гонконг 3
+      - 🇫🇷 Франция 9
+      - 🇳🇱 Нидерланды 3
+      - 🇸🇬 Сингапур 4
+      - 🇳🇱 Нидерланды 7
+      - 🇭🇰 Гонконг 4
+      - 🇸🇪 Швеция
+      - ➡️t.me/Strelka_vpn_bot
+      - 🇫🇷 Франция 1
+      - 🇳🇱 Нидерланды 6
+      - 🇸🇬 Сингапур 5
+      - 🇳🇱 Нидерланды 9
+      - 🇺🇸 США 5
+      - 🇸🇬 Сингапур 1
+      - Германия🇩🇪🔃
+      - Нидерланды🇳🇱🔃
+      - 🇵🇱 Польша 2
+      - 🇺🇸 США 2
+      - 🇫🇮 Финляндия 3
+      - 🇫🇷 Франция 5
+      - 🇺🇸 США 6
+      - 🇳🇱 Нидерланды 12
+      - 🇳🇱 Нидерланды 5
+      - 🇫🇷 Франция 2
+      - 🇯🇵 Япония 4
+      - Германия🇩🇪🟢LTE
+      - 🇺🇸 США 12
+      - 🇵🇱 Польша 4
+      - 🇸🇬 Сингапур 3
+      - США🇺🇸🔃
+      - 🇫🇷 Франция 3
+      - 🇺🇸 США 11
       - 🇺🇸 США 3
       - 🇳🇱 Нидерланды 14
-      - 🇬🇧 Великобритания 12
-      - 🇸🇬 Сингапур 4
-      - Латвия🇱🇻🔃
-      - 🇩🇪 Германия 16
-      - 🇬🇧 Великобритания 2
-      - 🇬🇧 Великобритания
-      - 🇯🇵 Япония 3
-      - 🇺🇸 США 11
-      - 🇵🇱 Польша 4
-      - 🇫🇷 Франция 2
-      - 🇵🇱 Польша 1
-      - 🇳🇱 Нидерланды 6
-      - 🇵🇱 Польша
-      - 🇫🇷 Франция 8
-      - 🇺🇸 США 2
-      - 🇩🇪 Германия 13
-      - 🇸🇬 Сингапур 3
-      - 🇳🇱 Нидерланды 3
-      - 🇳🇱 Нидерланды 10
-      - YouTube_noADS-NEW📺
-      - Дания🇩🇰🔃
-      - 🇬🇧 Великобритания 6
-      - США🇺🇸🔃
-      - ➡️t.me/Strelka_vpn_bot
-      - 🇺🇸 США 15
-      - 🇵🇱 Польша 5
-      - 🇩🇪 Германия 12
-      - Нидерланды🇳🇱🟢LTE
-      - 🇩🇪 Германия 11
-      - Германия🇩🇪🟢LTE
-      - 🇫🇮 Финляндия 6
-      - App not supported
-      - 🇳🇱 Нидерланды 24
-      - 🇯🇵 Япония 2
-      - 🇺🇸 США
-      - 🇺🇸 США 6
-      - 🇳🇱 Нидерланды 13
-      - Нидерланды🇳🇱🔃
-      - 🇺🇸 США 4
-      - 🇳🇱 Нидерланды
-      - 🇩🇪 Германия 15
-      - 🇳🇱 Нидерланды 17
-      - 🇺🇸 США 17
-      - 🐢Бельгия🇧🇪🟢LTE
-      - Финляндия🇫🇮🟢LTE
-      - 🇳🇱 Нидерланды 18
-      - 🇳🇱 Нидерланды 15
-      - 🇳🇱 Нидерланды 23
-      - 🇩🇪 Германия 10
-      - 🇸🇬 Сингапур 5
-      - 🇺🇸 США 7
-      - 🇬🇧 Великобритания 1
-      - 🇵🇱 Польша 3
-      - 🇬🇧 Великобритания 5
-      - 🇺🇸 США 12
-      - 🇬🇧 Великобритания 11
-      - 🇬🇧 Великобритания 8
-      - 🇫🇷 Франция 7
-      - 🇬🇧 Великобритания 3
-      - 🇳🇱 Нидерланды 21
-      - 🇳🇱 Нидерланды 19
-      - 🇬🇧 Великобритания 10
-      - 🇫🇮 Финляндия 4
-      - 🇳🇱 Нидерланды 4
-      - 🇹🇷 Турция
-      - 🇺🇸 США 5
-      - 🇳🇱 Нидерланды 12
-      - 🇩🇪 Германия
-      - 🇺🇸 США 8
-      - 🇫🇷 Франция 5
-      - 🇳🇱 Нидерланды 22
       - 🇬🇧 Великобритания 4
-      - 🇩🇪 Германия 4
-      - Финляндия🇫🇮🔃
-      - 🇩🇪 Германия 2
-      - 🇵🇱 Польша 2
-      - 🇳🇱 Нидерланды 9
-      - 🇬🇧 Великобритания 9
-      - 🇺🇸 США 14
-      - 🇫🇷 Франция 9
-      - 🇳🇱 Нидерланды 1
-      - 🇩🇪 Германия 1
-      - 🇳🇱 Нидерланды 7
-      - Израиль🇮🇱🔃
-      - 🇫🇷 Франция 6
-      - 🇩🇪 Германия 14
-      - 🇳🇱 Нидерланды 2
-      - 🇺🇸 США 16
-      - 🇩🇪 Германия 6
-      - 🇫🇮 Финляндия 2
-      - 🇰🇷 Южная Корея
-      - 🇯🇵 Япония 5
-      - 🇫🇷 Франция 1
-      - 🇺🇸 США 10
-      - 🇫🇮 Финляндия 3
-      - Польша🇵🇱🔃
-      - 🇳🇱 Нидерланды 20
-      - 🇳🇱 Нидерланды 5
-      - Франция🇫🇷🔃
-      - 🇸🇬 Сингапур 6
-      - Приложение не поддерживается
-      - 🇰🇷 Южная Корея 1
-      - 🇩🇪 Германия 5
-      - Литва🇱🇹🔃
-      - 🟢
-      - 🇸🇬 Сингапур 1
-      - 🇺🇸 США 1
-      - Германия🇩🇪🔃
       - 🇸🇬 Сингапур
-      - 🇯🇵 Япония 1
-      - 🇫🇷 Франция
-      - 🇯🇵 Япония 4
-      - 🇯🇵 Япония 6
-      - 🇩🇪 Германия 8
+      - 🇨🇭 Швейцария 1
+      - 🇹🇭 Таиланд
+      - 🇫🇷 Франция 10
+      - 🇳🇱 Нидерланды 19
+      - 🇰🇿 Казахстан 1
+      - Финляндия🇫🇮🔃
+      - 🇭🇰 Гонконг 1
+      - 🇫🇮 Финляндия 5
+      - 🇬🇧 Великобритания
+      - 🇵🇱 Польша 3
   - name: ⚡ Авто-Россия
     type: url-test
     hidden: true
     url: http://www.gstatic.com/generate_204
     interval: 150
     proxies:
-      - 🇷🇺 Россия 6
-      - 🇷🇺 Россия
       - 🇷🇺 Россия 7
-      - 🇷🇺 Россия 5
       - 🇷🇺 Россия 1
-      - 🇷🇺 Россия 8
       - 🇷🇺 Россия 2
-      - 🇷🇺 Россия 3
       - 🇷🇺 Россия 4
+      - 🇷🇺 Россия 5
+      - 🇷🇺 Россия
+      - 🇷🇺 Россия 6
       - Россия🇷🇺
+      - 🇷🇺 Россия 3
 rules:
   - MATCH,🚀 Главный Выбор
